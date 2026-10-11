@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-10-11T06:44:21Z",
- "data_as_of": "2026-10-11T06:44:21Z",
- "rendered_at": "2026-10-11T06:44:21Z",
+ "generated_at": "2026-10-11T13:46:30Z",
+ "data_as_of": "2026-10-11T13:46:30Z",
+ "rendered_at": "2026-10-11T13:46:30Z",
  "source": "https://github.com/ihrtkaii/secnet-internships",
  "h1b_window": "FY2022–2023",
- "count": 562,
+ "count": 560,
  "jobs": [
   {
    "id": "workday:workday:/job/USA-CA-Pleasanton/Cybersecurity-Engineer-Intern_JR-0110809",
@@ -6172,31 +6172,6 @@
    "remote": false
   },
   {
-   "id": "workday:magna:/job/Holland-Michigan-US/Magna-Engineered-Glass--IT-Intern--part-time-_R00261528",
-   "company": "Magna International",
-   "title": "Magna Engineered Glass: IT Intern (part-time)",
-   "season": "Not stated",
-   "seasons": null,
-   "season_inferred": true,
-   "category": "IT Support / Ops",
-   "location": "Holland, Michigan, US",
-   "url": "https://magna.wd3.myworkdayjobs.com/Magna/job/Holland-Michigan-US/Magna-Engineered-Glass--IT-Intern--part-time-_R00261528",
-   "posted_at": "2026-09-11T00:00:00Z",
-   "posted_at_source": "date_only",
-   "first_seen_at": "2026-09-11T21:11:13Z",
-   "sponsorship": "unknown",
-   "salary": null,
-   "skills": [
-    "Python",
-    "JavaScript",
-    "HTML/CSS"
-   ],
-   "source": "workday",
-   "h1b_approvals": 141,
-   "program": "Internship",
-   "remote": false
-  },
-  {
    "id": "oracle:edbz.fa.us2.oraclecloud.com:25017542",
    "company": "Texas Instruments",
    "title": "Systems Engineering Intern - MS/PhD",
@@ -6307,27 +6282,6 @@
    "skills": [],
    "source": "workday",
    "h1b_approvals": 2,
-   "program": "Internship",
-   "remote": false
-  },
-  {
-   "id": "workday:vermeer:/job/Piedmont-South-Carolina-USA/Systems-Engineer-Intern_REQ-22256",
-   "company": "Vermeer",
-   "title": "Systems Engineer Intern",
-   "season": "Not stated",
-   "seasons": null,
-   "season_inferred": true,
-   "category": "Systems & Cloud Infra",
-   "location": "Piedmont, South Carolina, USA",
-   "url": "https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Piedmont-South-Carolina-USA/Systems-Engineer-Intern_REQ-22256",
-   "posted_at": "2026-09-11T00:00:00Z",
-   "posted_at_source": "date_only",
-   "first_seen_at": "2026-09-11T16:40:09Z",
-   "sponsorship": "unknown",
-   "salary": null,
-   "skills": [],
-   "source": "workday",
-   "h1b_approvals": null,
    "program": "Internship",
    "remote": false
   },

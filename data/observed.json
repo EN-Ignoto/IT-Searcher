@@ -656,6 +656,27 @@
     }
    }
   },
+  "cmu": {
+   "name": "Cmu",
+   "cycles": {
+    "Summer 2027": {
+     "first_posted": "2026-10-07",
+     "role_ids": [
+      "workday:cmu:/job/Pittsburgh-PA/AI-Security-Research-Intern---Summer-2027_2025199-1",
+      "workday:cmu:/job/Pittsburgh-PA/AI-Security-Software-Engineer-Intern---Summer-2027_2025200-1",
+      "workday:cmu:/job/Pittsburgh-PA/Malware-Analysis-Intern---Summer-2027_2025185-1"
+     ],
+     "count": 3
+    },
+    "Fall 2026": {
+     "first_posted": "2026-09-02",
+     "role_ids": [
+      "workday:cmu:/job/Pittsburgh-PA/AI-Security-Research-Intern---Sept-2026---May-2027-_2025068-2"
+     ],
+     "count": 1
+    }
+   }
+  },
   "cno financial group": {
    "name": "CNO Financial Group",
    "cycles": {
@@ -2256,5 +2277,5 @@
    }
   }
  },
- "updated_at": "2026-10-11T13:46:30Z"
+ "updated_at": "2026-10-11T19:49:58Z"
 }

@@ -591,6 +591,18 @@
     }
    }
   },
+  "captech consulting": {
+   "name": "CapTech Consulting",
+   "cycles": {
+    "Summer 2027": {
+     "first_posted": "2026-10-12",
+     "role_ids": [
+      "smartrecruiters:CapTechConsulting:744000155060459"
+     ],
+     "count": 1
+    }
+   }
+  },
   "centene": {
    "name": "Centene",
    "cycles": {
@@ -2277,5 +2289,5 @@
    }
   }
  },
- "updated_at": "2026-10-12T06:48:36Z"
+ "updated_at": "2026-10-12T16:20:35Z"
 }

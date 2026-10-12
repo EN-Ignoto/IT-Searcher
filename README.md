@@ -6,11 +6,11 @@
 
 [![CI](https://img.shields.io/github/actions/workflow/status/ihrtkaii/secnet-internships/ci.yml?branch=main&label=tests&style=flat-square&color=3fb950)](https://github.com/ihrtkaii/secnet-internships/actions/workflows/ci.yml)&nbsp;[![Open roles](https://img.shields.io/badge/dynamic/json?label=open%20roles&query=open_total&url=https%3A%2F%2Fihrtkaii.github.io%2Fsecnet-internships%2Fapi%2Fstats.json&color=2f81f7&style=flat-square)](https://ihrtkaii.github.io/secnet-internships/)&nbsp;![Updates](https://img.shields.io/badge/updates-every%203%20hours-3fb950?style=flat-square)&nbsp;[![RSS](https://img.shields.io/badge/RSS-subscribe-e67e22?style=flat-square)](https://ihrtkaii.github.io/secnet-internships/feed.xml)
 
-### 564 open roles (492 listed below) · 66 new this week
+### 563 open roles (491 listed below) · 66 new this week
 
-4,740 employers tracked · data as of Oct 12, 2026 at 00:48 UTC
+4,740 employers tracked · data as of Oct 12, 2026 at 06:48 UTC
 
-_412 have a cycle the employer stated · 152 are recent postings whose cycle isn't stated (listed separately, never mixed in)._
+_412 have a cycle the employer stated · 151 are recent postings whose cycle isn't stated (listed separately, never mixed in)._
 
 **[🖥️ Live dashboard](https://ihrtkaii.github.io/secnet-internships/)** · **[📡 RSS](https://ihrtkaii.github.io/secnet-internships/feed.xml)** · **[⚙️ JSON API](https://ihrtkaii.github.io/secnet-internships/api/jobs.json)**
 
@@ -190,7 +190,7 @@ This tracks security and networking internships specifically, because the major 
 | Northrop Grumman | 2026 Part-Time Cyber Security Engineering Intern - Aurora CO 🇺🇸 | Security (general) | United States-Colorado-Aurora | No skills listed | Aug 31, 2026 | [Apply](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Colorado-Aurora/XMLNAME-2026-Part-Time-Cyber-Security-Engineering-Intern---Aurora-CO_R10248520) |
 | Rocket Companies | Security Services Intern - Fall 2026 | Security (general) | Detroit, MI | No skills listed | Jul 30, 2026 | [Apply](https://quickenloans.wd5.myworkdayjobs.com/rocket_careers/job/Detroit-MI/Security-Services-Intern---Fall-2026_R-082242) |
 
-### Recently posted — cycle not stated  (49 roles)
+### Recently posted — cycle not stated  (48 roles)
 
 These postings never name a cycle, not in the title and not in the posting text, so neither do we. They're recent tech internships (posted within the last few weeks), often exactly the early drops worth applying to first; we just can't tell you which cycle they're for, and we'd rather say so than guess. The moment a posting's own text states a cycle, the role moves up into that section automatically.
 
@@ -227,7 +227,6 @@ These postings never name a cycle, not in the title and not in the posting text,
 | Northern Trust ✓ | Risk and Compliance Intern 🛂 | GRC / Risk | Chicago, IL | No skills listed | Sep 09, 2026 | [Apply](https://ntrs.wd1.myworkdayjobs.com/northerntrust/job/Chicago-IL/Risk-and-Compliance-Intern_R160771-1) |
 | Zachry Group | Cyber Security Specialist I - Intern | Security (general) | Stonington +5 more | HTML/CSS | Sep 09, 2026 | [Apply](https://fa-evfm-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1029/job/15624) |
 | Gilead Sciences ✓ | Intern - Development - Governance, Risk & Analysis 🛂 | GRC / Risk | United States - California - Foster City | No skills listed | Sep 08, 2026 | [Apply](https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---Foster-City/Intern---Development---Governance--Risk---Analysis_R0054675) |
-| Harbinger Motors | Intern, Cybersecurity | Security (general) | Garden Grove, CA | Python, Bash | Sep 05, 2026 | [Apply](https://job-boards.greenhouse.io/harbingermotors/jobs/5231842007) |
 | Cisco | Security Consulting Engineer I (Intern) - United States | Security (general) | RTP, North Carolina, US | Python, Java, C++, Terraform | Sep 03, 2026 | [Apply](https://cisco.wd5.myworkdayjobs.com/cisco_careers/job/RTP-North-Carolina-US/Security-Consulting-Engineer-I--Intern----United-States_2024817) |
 | IEX | Cyber Security Analyst Intern | Security (general) | New York | Python, Ruby, Bash | Sep 02, 2026 | [Apply](https://job-boards.greenhouse.io/iex-interns/jobs/8173713) |
 | Hewlett Packard (HP) | Software Product Security Engineer Intern 🛂 _(2 openings)_ | AppSec / Product Sec | Spring, Texas, United States of America | Python, C++, C#, TypeScript | Sep 02, 2026 | [Apply](https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Spring-Texas-United-States-of-America/Software-Product-Security-Engineer-Intern_UNI4744-1) [#2](https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Spring-Texas-United-States-of-America/Software-Product-Security-Engineer-Intern_UNI4740-1) |
@@ -664,7 +663,7 @@ Internships posted per week, from each role's real published date - redrawn auto
 
 A small Python engine reads public company hiring feeds directly, keeps the roles that match the scope above, de-duplicates across sources, records each role's published date once (so it never shifts), and regenerates this page through GitHub Actions. It polls every company concurrently (async) with retry/backoff and per-host rate limits. The full source is in this repo.
 
-_Engine (last run): 4,569 of 5,021 registered boards returned successfully across 12 ATS platforms (97% of boards attempted, 91% of the full registry) · completed in 1119.5s · 596 board(s) returned a capped result set, so their roles were not eligible to be closed this run · employer or source-derived date on 99% of open roles._
+_Engine (last run): 4,540 of 5,021 registered boards returned successfully across 12 ATS platforms (97% of boards attempted, 90% of the full registry) · completed in 1177.5s · 590 board(s) returned a capped result set, so their roles were not eligible to be closed this run · employer or source-derived date on 99% of open roles._
 
 ## How this list is built
 

@@ -5,15 +5,15 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-11T19:49:58Z</updated>
+  <updated>2026-10-12T00:48:01Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
   <entry>
-    <id>urn:intern-engine:workday:cmu:/job/Pittsburgh-PA/Malware-Analysis-Intern---Summer-2027_2025185-1</id>
-    <title>Cmu: Malware Analysis Intern - Summer 2027 🛂</title>
-    <link href="https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/Malware-Analysis-Intern---Summer-2027_2025185-1"/>
+    <id>urn:intern-engine:workday:cmu:/job/Pittsburgh-PA/AI-Security-Research-Intern---Sept-2026---May-2027-_2025068-2</id>
+    <title>Cmu: AI Security Research Intern  (Sept 2026 - May 2027) 🛂</title>
+    <link href="https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/AI-Security-Research-Intern---Sept-2026---May-2027-_2025068-2"/>
     <updated>2026-10-11T19:49:58Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · SOC / Detection · Pittsburgh, PA · Python, C++ · sponsorship: no-sponsorship</summary>
+    <category term="Fall 2026"/>
+    <summary>Fall 2026 · Security (general) · Pittsburgh, PA · Python, PyTorch, TensorFlow, LLMs · sponsorship: no-sponsorship</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:cmu:/job/Pittsburgh-PA/AI-Security-Research-Intern---Summer-2027_2025199-1</id>
@@ -32,12 +32,12 @@
     <summary>Summer 2027 · Security (general) · Pittsburgh, PA · Python, PyTorch, TensorFlow, Computer Vision · sponsorship: no-sponsorship</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:cmu:/job/Pittsburgh-PA/AI-Security-Research-Intern---Sept-2026---May-2027-_2025068-2</id>
-    <title>Cmu: AI Security Research Intern  (Sept 2026 - May 2027) 🛂</title>
-    <link href="https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/AI-Security-Research-Intern---Sept-2026---May-2027-_2025068-2"/>
+    <id>urn:intern-engine:workday:cmu:/job/Pittsburgh-PA/Malware-Analysis-Intern---Summer-2027_2025185-1</id>
+    <title>Cmu: Malware Analysis Intern - Summer 2027 🛂</title>
+    <link href="https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/Malware-Analysis-Intern---Summer-2027_2025185-1"/>
     <updated>2026-10-11T19:49:58Z</updated>
-    <category term="Fall 2026"/>
-    <summary>Fall 2026 · Security (general) · Pittsburgh, PA · Python, PyTorch, TensorFlow, LLMs · sponsorship: no-sponsorship</summary>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · SOC / Detection · Pittsburgh, PA · Python, C++ · sponsorship: no-sponsorship</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:workday:/job/USA-CA-Pleasanton/Cybersecurity-Engineer-Intern_JR-0110809</id>

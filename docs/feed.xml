@@ -5,15 +5,15 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-13T00:55:50Z</updated>
+  <updated>2026-10-13T07:25:20Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
   <entry>
-    <id>urn:intern-engine:oracle:hdhl.fa.us6.oraclecloud.com:1008240</id>
-    <title>Stantec: Bridge Design Intern - Infrastructure (Summer 2027)</title>
-    <link href="https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008240"/>
-    <updated>2026-10-13T00:55:50Z</updated>
+    <id>urn:intern-engine:workday:globalhr:/job/US-IA-CEDAR-RAPIDS-106--400-Collins-Rd-NE--BLDG-106/XMLNAME-2027-Co-Op---Summer-Fall-Systems-Engineer---Onsite_01871438</id>
+    <title>RTX: 2027 Co-Op - Summer/Fall Systems Engineer - Onsite</title>
+    <link href="https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-IA-CEDAR-RAPIDS-106--400-Collins-Rd-NE--BLDG-106/XMLNAME-2027-Co-Op---Summer-Fall-Systems-Engineer---Onsite_01871438"/>
+    <updated>2026-10-13T07:25:20Z</updated>
     <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Columbia, SC, United States</summary>
+    <summary>Summer 2027 · Systems &amp; Cloud Infra · US-IA-CEDAR RAPIDS-106 ~ 400 Collins Rd NE ~ BLDG 106 · Python, C++</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:greenhouse:asteraearlycareer2027:4743021005</id>
@@ -22,6 +22,14 @@
     <updated>2026-10-13T00:55:50Z</updated>
     <category term="Not stated"/>
     <summary>Not stated · Security (general) · San Jose, CA · $35/hr · H-1B track record: ~29 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:oracle:hdhl.fa.us6.oraclecloud.com:1008240</id>
+    <title>Stantec: Bridge Design Intern - Infrastructure (Summer 2027)</title>
+    <link href="https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008240"/>
+    <updated>2026-10-13T00:55:50Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Systems &amp; Cloud Infra · Columbia, SC, United States</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:gdit:/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273</id>
@@ -798,13 +806,5 @@
     <updated>2026-09-30T22:33:49Z</updated>
     <category term="Fall 2026"/>
     <summary>Fall 2026 · Security (general) · Lone Tree, CO · Linux · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:snc:/job/Plano-TX/Systems-Engineer-I--For-2026-Interns-Only-_R0030603</id>
-    <title>Sierra Nevada Corporation: Systems Engineer I (For 2026 Interns Only) 🇺🇸</title>
-    <link href="https://snc.wd1.myworkdayjobs.com/snc_external_career_site/job/Plano-TX/Systems-Engineer-I--For-2026-Interns-Only-_R0030603"/>
-    <updated>2026-09-30T22:33:49Z</updated>
-    <category term="Fall 2026"/>
-    <summary>2 openings · Fall 2026 · Systems &amp; Cloud Infra · Plano, TX · MATLAB · sponsorship: citizens-only</summary>
   </entry>
 </feed>

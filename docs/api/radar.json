@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-13T00:55:50Z",
- "data_as_of": "2026-10-13T00:55:50Z",
- "rendered_at": "2026-10-13T00:55:50Z",
+ "generated_at": "2026-10-13T07:25:20Z",
+ "data_as_of": "2026-10-13T07:25:20Z",
+ "rendered_at": "2026-10-13T07:25:21Z",
  "cycle": "Summer 2027",
  "source": "https://github.com/ihrtkaii/secnet-internships",
  "companies": [
@@ -454,25 +454,6 @@
    "days_until": -50,
    "status": "open",
    "url": "https://dmainc.wd5.myworkdayjobs.com/dma/job/Fort-Wayne-IN/Cybersecurity-Intern---Summer-2027_REQ742",
-   "note": "",
-   "provenance": {
-    "type": "engine-observed",
-    "cycle": "Summer 2027",
-    "observed_on": "2026-08-24"
-   }
-  },
-  {
-   "company": "Markel Group, Inc.",
-   "last_cycle_posted": "",
-   "posted_on": "2026-08-24",
-   "precision": "day",
-   "rolling": false,
-   "confidence": "verified",
-   "source": "engine",
-   "expected": "2026-08-24",
-   "days_until": -50,
-   "status": "open",
-   "url": "https://markelcorp.wd5.myworkdayjobs.com/GlobalCareers/job/Richmond-VA/Markel-2027-IT-Internship-Program_R0023805",
    "note": "",
    "provenance": {
     "type": "engine-observed",
@@ -2662,6 +2643,25 @@
     "type": "engine-observed",
     "cycle": "Summer 2027",
     "observed_on": "2026-08-03"
+   }
+  },
+  {
+   "company": "Markel Group, Inc.",
+   "last_cycle_posted": "",
+   "posted_on": "2026-08-24",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-08-24",
+   "days_until": -50,
+   "status": "dropped",
+   "url": "",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-08-24"
    }
   },
   {

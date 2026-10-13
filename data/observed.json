@@ -491,9 +491,10 @@
     "Summer 2027": {
      "first_posted": "2026-09-09",
      "role_ids": [
-      "smartrecruiters:BoschGroup:744000148540185"
+      "smartrecruiters:BoschGroup:744000148540185",
+      "smartrecruiters:BoschGroup:744000155101377"
      ],
-     "count": 1
+     "count": 2
     }
    }
   },
@@ -945,9 +946,10 @@
      "first_posted": "2026-09-23",
      "role_ids": [
       "workday:gdit:/job/USA-LA-Bossier-City/GDIT-Summer-Internship-Program---Summer-2027-AI-Network-Engineering-Internship_RQ228934-2",
-      "workday:gdit:/job/USA-LA-Bossier-City/GDIT-Summer-Internship-Program---Summer-2027-Cybersecurity-Associate-Internship_RQ228929-2"
+      "workday:gdit:/job/USA-LA-Bossier-City/GDIT-Summer-Internship-Program---Summer-2027-Cybersecurity-Associate-Internship_RQ228929-2",
+      "workday:gdit:/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273"
      ],
-     "count": 2
+     "count": 3
     }
    }
   },
@@ -1586,9 +1588,10 @@
       "workday:ngc:/job/United-States-Oklahoma-Oklahoma-City/XMLNAME-2027-Intern---Systems-Engineering_R10248653",
       "workday:ngc:/job/United-States-Utah-Roy/XMLNAME-2027-Cyber-Systems-Engineer-Intern---Roy-UT_R10249471",
       "workday:ngc:/job/United-States-Utah-Roy/XMLNAME-2027-Systems-Engineering-Intern--Roy-UT_R10248475",
-      "workday:ngc:/job/United-States-Utah-Roy/XMLNAME-2027-Systems-Security-Engineering-Intern---Roy-UT_R10249815"
+      "workday:ngc:/job/United-States-Utah-Roy/XMLNAME-2027-Systems-Security-Engineering-Intern---Roy-UT_R10249815",
+      "workday:ngc:/job/United-States-Virginia-Chantilly/XMLNAME-2027-Software-Engineer-Intern---Chantilly-VA_R10255633"
      ],
-     "count": 23
+     "count": 24
     },
     "Fall 2026": {
      "first_posted": "2026-08-31",
@@ -1965,9 +1968,10 @@
       "oracle:hdhl.fa.us6.oraclecloud.com:1008077",
       "oracle:hdhl.fa.us6.oraclecloud.com:1008089",
       "oracle:hdhl.fa.us6.oraclecloud.com:1008180",
-      "oracle:hdhl.fa.us6.oraclecloud.com:1008210"
+      "oracle:hdhl.fa.us6.oraclecloud.com:1008210",
+      "oracle:hdhl.fa.us6.oraclecloud.com:1008240"
      ],
-     "count": 18
+     "count": 19
     },
     "Fall 2026": {
      "first_posted": "2026-09-02",
@@ -2289,5 +2293,5 @@
    }
   }
  },
- "updated_at": "2026-10-12T16:20:35Z"
+ "updated_at": "2026-10-13T00:55:50Z"
 }

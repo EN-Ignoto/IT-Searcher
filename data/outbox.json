@@ -1,6 +1,22 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "oracle:hdhl.fa.us6.oraclecloud.com:1008240",
+      "greenhouse:asteraearlycareer2027:4743021005",
+      "smartrecruiters:BoschGroup:744000155120934",
+      "smartrecruiters:BoschGroup:744000155101377",
+      "workday:gdit:/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273",
+      "workday:hpe:/job/All-Tennessee-United-States-of-America/HPC-AI-System-Admin-HW-SW-Service-Engineer-Intern_1213404",
+      "workday:ngc:/job/United-States-Virginia-Chantilly/XMLNAME-2027-Software-Engineer-Intern---Chantilly-VA_R10255633"
+    ],
+    "telegram": [
+      "oracle:hdhl.fa.us6.oraclecloud.com:1008240",
+      "greenhouse:asteraearlycareer2027:4743021005",
+      "smartrecruiters:BoschGroup:744000155120934",
+      "smartrecruiters:BoschGroup:744000155101377",
+      "workday:gdit:/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273",
+      "workday:hpe:/job/All-Tennessee-United-States-of-America/HPC-AI-System-Admin-HW-SW-Service-Engineer-Intern_1213404",
+      "workday:ngc:/job/United-States-Virginia-Chantilly/XMLNAME-2027-Software-Engineer-Intern---Chantilly-VA_R10255633"
+    ]
   }
 }

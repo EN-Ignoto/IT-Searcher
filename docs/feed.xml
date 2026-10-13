@@ -5,8 +5,48 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-12T16:20:35Z</updated>
+  <updated>2026-10-13T00:55:50Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
+  <entry>
+    <id>urn:intern-engine:oracle:hdhl.fa.us6.oraclecloud.com:1008240</id>
+    <title>Stantec: Bridge Design Intern - Infrastructure (Summer 2027)</title>
+    <link href="https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008240"/>
+    <updated>2026-10-13T00:55:50Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Systems &amp; Cloud Infra · Columbia, SC, United States</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:asteraearlycareer2027:4743021005</id>
+    <title>Astera Labs: CyberSecurity Engineer Intern</title>
+    <link href="https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4743021005"/>
+    <updated>2026-10-13T00:55:50Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · Security (general) · San Jose, CA · $35/hr · H-1B track record: ~29 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:gdit:/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273</id>
+    <title>General Dynamics Information Technology: 2027 Summer Intern - Defense Agencies (Cybersecurity) 🇺🇸</title>
+    <link href="https://gdit.wd5.myworkdayjobs.com/gdit_earlytalent/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273"/>
+    <updated>2026-10-13T00:55:50Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · USA VA Falls Church · sponsorship: citizens-only · H-1B track record: ~28 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:hpe:/job/All-Tennessee-United-States-of-America/HPC-AI-System-Admin-HW-SW-Service-Engineer-Intern_1213404</id>
+    <title>Hewlett Packard Enterprise: HPC/AI System Admin HW/SW Service Engineer Intern</title>
+    <link href="https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/All-Tennessee-United-States-of-America/HPC-AI-System-Admin-HW-SW-Service-Engineer-Intern_1213404"/>
+    <updated>2026-10-13T00:55:50Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · Systems &amp; Cloud Infra · All, Tennessee, United States of America · HTML/CSS, Linux · H-1B track record: ~499 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:ngc:/job/United-States-Virginia-Chantilly/XMLNAME-2027-Software-Engineer-Intern---Chantilly-VA_R10255633</id>
+    <title>Northrop Grumman: 2027 Systems Engineer Intern - Chantilly VA 🇺🇸</title>
+    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Virginia-Chantilly/XMLNAME-2027-Software-Engineer-Intern---Chantilly-VA_R10255633"/>
+    <updated>2026-10-13T00:55:50Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States-Virginia-Chantilly · $21.5–$39/hr · sponsorship: citizens-only</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:smartrecruiters:CapTechConsulting:744000155060459</id>
     <title>CapTech Consulting: Consulting Internship: Business Systems Analyst (Summer 2027) 🛂</title>
@@ -93,7 +133,7 @@
     <link href="https://jobs.smartrecruiters.com/BoschGroup/744000154757409"/>
     <updated>2026-10-09T18:38:39Z</updated>
     <category term="Not stated"/>
-    <summary>Not stated · Security (general) · Farmington Hills, MI, United States · LLMs · H-1B track record: ~188 approvals (FY2022–2023)</summary>
+    <summary>2 openings · Not stated · Security (general) · Farmington Hills, MI, United States · LLMs · H-1B track record: ~188 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:alliance:/job/Franklin-Tennessee---United-States-of-America/Corporate-Security-Intern---Summer-2027---Franklin--TN_R00214220</id>
@@ -514,7 +554,7 @@
   <entry>
     <id>urn:intern-engine:workday:expedia:/job/Washington---Seattle-Campus/Security-Engineering-Intern---2027---Seattle_R-110310</id>
     <title>Expedia Group: Security Engineering Intern - 2027 - Seattle</title>
-    <link href="https://expedia.wd108.myworkdayjobs.com/private/job/Washington---Seattle-Campus/Security-Engineering-Intern---2027---Seattle_R-110310"/>
+    <link href="https://expedia.wd108.myworkdayjobs.com/search/job/Washington---Seattle-Campus/Security-Engineering-Intern---2027---Seattle_R-110310-1"/>
     <updated>2026-10-05T22:27:28Z</updated>
     <category term="Summer 2027"/>
     <summary>Summer 2027 · Security (general) · Washington - Seattle Campus · $45/hr · Python, Java, C++, C#, Linux</summary>
@@ -766,45 +806,5 @@
     <updated>2026-09-30T22:33:49Z</updated>
     <category term="Fall 2026"/>
     <summary>2 openings · Fall 2026 · Systems &amp; Cloud Infra · Plano, TX · MATLAB · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:uva:/job/Charlottesville-VA/Network-Engineering-Intern--Student-Wage-_R0087677</id>
-    <title>University of Virginia: Network Engineering Intern (Student Wage)</title>
-    <link href="https://uva.wd1.myworkdayjobs.com/uvastudentjobs/job/Charlottesville-VA/Network-Engineering-Intern--Student-Wage-_R0087677"/>
-    <updated>2026-09-30T22:33:49Z</updated>
-    <category term="Fall 2026"/>
-    <summary>Fall 2026 · Network / Telecom · Charlottesville, VA · Python, Bash · H-1B track record: ~271 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:rfsmart:5425409008</id>
-    <title>RF-SMART: Service Delivery Intern (IT Helpdesk) - Summer 2027 🛂</title>
-    <link href="https://job-boards.greenhouse.io/rfsmart/jobs/5425409008"/>
-    <updated>2026-09-30T18:25:07Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · IT Support / Ops · Jacksonville, Florida, United States · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:oracle:fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com:40648</id>
-    <title>Nokia: Optical System Engineer Co-Op</title>
-    <link href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/40648"/>
-    <updated>2026-09-30T18:25:07Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Network / Telecom · United States</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:oracle:hdhl.fa.us6.oraclecloud.com:1008052</id>
-    <title>Stantec: Data Science Intern - Infrastructure (Summer 2027)</title>
-    <link href="https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008052"/>
-    <updated>2026-09-30T18:25:07Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Orlando, FL, United States</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:oracle:hdhl.fa.us6.oraclecloud.com:1008053</id>
-    <title>Stantec: Project Coordinator Intern - Infrastructure (Summer 2027)</title>
-    <link href="https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008053"/>
-    <updated>2026-09-30T18:25:07Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Raleigh, NC, United States</summary>
   </entry>
 </feed>

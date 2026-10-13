@@ -77,9 +77,10 @@
     "Summer 2027": {
      "first_posted": "2026-09-24",
      "role_ids": [
-      "workday:adient:/job/Plymouth-MI/IT-Intern_R-29354"
+      "workday:adient:/job/Plymouth-MI/IT-Intern_R-29354",
+      "workday:adient:/job/Plymouth-MI/IT-Intern_R-29529"
      ],
-     "count": 1
+     "count": 2
     }
    }
   },
@@ -781,6 +782,18 @@
     }
    }
   },
+  "draper": {
+   "name": "Draper",
+   "cycles": {
+    "Summer 2027": {
+     "first_posted": "2026-10-13",
+     "role_ids": [
+      "workday:draper:/job/Cambridge-MA/Classified-Cybersecurity-IT-Internship--Summer-2027-_JR003021"
+     ],
+     "count": 1
+    }
+   }
+  },
   "dtcc": {
    "name": "DTCC",
    "cycles": {
@@ -1313,6 +1326,18 @@
       "workday:marvell:/job/Santa-Clara-CA/AI-Native-Development-Platform-Engineer-Intern--MS---Summer-2027_2603848-1"
      ],
      "count": 2
+    }
+   }
+  },
+  "mary free bed rehabilitation hospital": {
+   "name": "Mary Free Bed Rehabilitation Hospital",
+   "cycles": {
+    "Summer 2027": {
+     "first_posted": "2026-10-13",
+     "role_ids": [
+      "workday:maryfreebed:/job/Grand-Rapids-MI/IT-Intern---Summer-2027_JB103360"
+     ],
+     "count": 1
     }
    }
   },
@@ -2294,5 +2319,5 @@
    }
   }
  },
- "updated_at": "2026-10-13T07:25:20Z"
+ "updated_at": "2026-10-13T17:14:21Z"
 }

@@ -5,8 +5,40 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-13T07:25:20Z</updated>
+  <updated>2026-10-13T17:14:21Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
+  <entry>
+    <id>urn:intern-engine:lever:azul:8f41ceaf-8835-4fc7-ba57-9384487d59db</id>
+    <title>Azul Systems: IT Intern, AI and Operations</title>
+    <link href="https://jobs.lever.co/azul/8f41ceaf-8835-4fc7-ba57-9384487d59db"/>
+    <updated>2026-10-13T17:14:21Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · IT Support / Ops · Sunnyvale, CA · 25 USD/hr</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:borgwarner:/job/Auburn-Hills---Michigan---USA/IT-Service-Desk-Intern--Year-Round-_R2026-4037</id>
+    <title>BorgWarner: IT Service Desk Intern (Year-Round)</title>
+    <link href="https://borgwarner.wd5.myworkdayjobs.com/BorgWarner_Careers/job/Auburn-Hills---Michigan---USA/IT-Service-Desk-Intern--Year-Round-_R2026-4037"/>
+    <updated>2026-10-13T17:14:21Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · IT Support / Ops · Auburn Hills - Michigan - USA · sponsorship: offers</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:draper:/job/Cambridge-MA/Classified-Cybersecurity-IT-Internship--Summer-2027-_JR003021</id>
+    <title>Draper: Classified Cybersecurity/IT Internship (Summer 2027) 🇺🇸</title>
+    <link href="https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Classified-Cybersecurity-IT-Internship--Summer-2027-_JR003021"/>
+    <updated>2026-10-13T17:14:21Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · Cambridge, MA · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:maryfreebed:/job/Grand-Rapids-MI/IT-Intern---Summer-2027_JB103360</id>
+    <title>Mary Free Bed Rehabilitation Hospital: IT Intern - Summer 2027</title>
+    <link href="https://maryfreebed.wd12.myworkdayjobs.com/mfb/job/Grand-Rapids-MI/IT-Intern---Summer-2027_JB103360"/>
+    <updated>2026-10-13T17:14:21Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · IT Support / Ops · Grand Rapids, MI · $18/hr</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:globalhr:/job/US-IA-CEDAR-RAPIDS-106--400-Collins-Rd-NE--BLDG-106/XMLNAME-2027-Co-Op---Summer-Fall-Systems-Engineer---Onsite_01871438</id>
     <title>RTX: 2027 Co-Op - Summer/Fall Systems Engineer - Onsite</title>
@@ -667,9 +699,9 @@
     <id>urn:intern-engine:workday:hcsc:/job/TX---Richardson/Early-Careers---Vulnerability-Management-Intern_R0059514</id>
     <title>HCSC: Early Careers - Vulnerability Management Intern 🛂</title>
     <link href="https://hcsc.wd1.myworkdayjobs.com/HCSC_External/job/TX---Richardson/Early-Careers---Vulnerability-Management-Intern_R0059514"/>
-    <updated>2026-10-09T23:11:25Z</updated>
+    <updated>2026-10-02T18:08:07Z</updated>
     <category term="Not stated"/>
-    <summary>Not stated · Security (general) · TX - Richardson · sponsorship: no-sponsorship · status: closed</summary>
+    <summary>Not stated · Security (general) · TX - Richardson · sponsorship: no-sponsorship</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:vanguard:/job/Malvern-PA/College-to-Corporate-IT-Internship-Application-Development--PA-_182757</id>
@@ -774,37 +806,5 @@
     <updated>2026-10-01T13:20:11Z</updated>
     <category term="Summer 2027"/>
     <summary>Summer 2027 · Security (general) · El Segundo, California, United States · Python, Bash · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:avav:/job/Simi-Valley-CA/XMLNAME--Digital-Business-Technology-Infrastructure--DBT--Intern_8885</id>
-    <title>Avav: Digital Business Technology Infrastructure (DBT) Intern 🇺🇸</title>
-    <link href="https://avav.wd1.myworkdayjobs.com/avav/job/Simi-Valley-CA/XMLNAME--Digital-Business-Technology-Infrastructure--DBT--Intern_8885"/>
-    <updated>2026-10-01T13:20:11Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · Simi Valley, CA · dbt, AWS · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:kla:/job/Milpitas-CA/Mechatronics-Systems-Engineering-Internship_2641532-1</id>
-    <title>KLA: Mechatronics/Systems Engineering Internship</title>
-    <link href="https://kla.wd1.myworkdayjobs.com/Search/job/Milpitas-CA/Mechatronics-Systems-Engineering-Internship_2641532-1"/>
-    <updated>2026-09-30T22:33:49Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · Milpitas, CA · $26–$50/hr · H-1B track record: ~369 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:snc:/job/Dayton-OH/Systems-Engineer-I--For-2026-Interns-Only-_R0030589</id>
-    <title>Sierra Nevada Corporation: Systems Engineer I (For 2026 Interns Only) 🇺🇸</title>
-    <link href="https://snc.wd1.myworkdayjobs.com/snc_external_career_site/job/Dayton-OH/Systems-Engineer-I--For-2026-Interns-Only-_R0030589"/>
-    <updated>2026-09-30T22:33:49Z</updated>
-    <category term="Fall 2026"/>
-    <summary>Fall 2026 · Systems &amp; Cloud Infra · Dayton, OH · MATLAB · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:snc:/job/Lone-Tree-CO/Systems-Security-Engineer-I--For-2026-Interns-Only-_R0030608</id>
-    <title>Sierra Nevada Corporation: Systems Security Engineer I (For 2026 Interns Only) 🇺🇸</title>
-    <link href="https://snc.wd1.myworkdayjobs.com/snc_external_career_site/job/Lone-Tree-CO/Systems-Security-Engineer-I--For-2026-Interns-Only-_R0030608"/>
-    <updated>2026-09-30T22:33:49Z</updated>
-    <category term="Fall 2026"/>
-    <summary>Fall 2026 · Security (general) · Lone Tree, CO · Linux · sponsorship: citizens-only</summary>
   </entry>
 </feed>

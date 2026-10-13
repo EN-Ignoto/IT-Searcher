@@ -1,20 +1,6 @@
 {
   "pending": {
-    "discord": [
-      "lever:azul:8f41ceaf-8835-4fc7-ba57-9384487d59db",
-      "workday:adient:/job/Plymouth-MI/IT-Intern_R-29529",
-      "workday:borgwarner:/job/Auburn-Hills---Michigan---USA/IT-Service-Desk-Intern--Year-Round-_R2026-4037",
-      "workday:draper:/job/Cambridge-MA/Classified-Cybersecurity-IT-Internship--Summer-2027-_JR003021",
-      "workday:hcsc:/job/TX---Richardson/Early-Careers---Vulnerability-Management-Intern_R0059514",
-      "workday:maryfreebed:/job/Grand-Rapids-MI/IT-Intern---Summer-2027_JB103360"
-    ],
-    "telegram": [
-      "lever:azul:8f41ceaf-8835-4fc7-ba57-9384487d59db",
-      "workday:adient:/job/Plymouth-MI/IT-Intern_R-29529",
-      "workday:borgwarner:/job/Auburn-Hills---Michigan---USA/IT-Service-Desk-Intern--Year-Round-_R2026-4037",
-      "workday:draper:/job/Cambridge-MA/Classified-Cybersecurity-IT-Internship--Summer-2027-_JR003021",
-      "workday:hcsc:/job/TX---Richardson/Early-Careers---Vulnerability-Management-Intern_R0059514",
-      "workday:maryfreebed:/job/Grand-Rapids-MI/IT-Intern---Summer-2027_JB103360"
-    ]
+    "discord": [],
+    "telegram": []
   }
 }

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-14T12:01:30Z",
- "data_as_of": "2026-10-14T12:01:30Z",
- "rendered_at": "2026-10-14T12:01:30Z",
+ "generated_at": "2026-10-14T17:21:18Z",
+ "data_as_of": "2026-10-14T17:21:18Z",
+ "rendered_at": "2026-10-14T17:21:19Z",
  "cycle": "Summer 2027",
  "source": "https://github.com/ihrtkaii/secnet-internships",
  "companies": [
@@ -1716,25 +1716,6 @@
    }
   },
   {
-   "company": "Robinhood",
-   "last_cycle_posted": "",
-   "posted_on": "2026-09-16",
-   "precision": "day",
-   "rolling": false,
-   "confidence": "verified",
-   "source": "engine",
-   "expected": "2026-09-16",
-   "days_until": -28,
-   "status": "open",
-   "url": "https://boards.greenhouse.io/robinhood/jobs/8207970?t=gh_src=&gh_jid=8207970",
-   "note": "",
-   "provenance": {
-    "type": "engine-observed",
-    "cycle": "Summer 2027",
-    "observed_on": "2026-09-16"
-   }
-  },
-  {
    "company": "GM financial",
    "last_cycle_posted": "",
    "posted_on": "2026-09-17",
@@ -2890,6 +2871,25 @@
     "type": "engine-observed",
     "cycle": "Summer 2027",
     "observed_on": "2026-09-14"
+   }
+  },
+  {
+   "company": "Robinhood",
+   "last_cycle_posted": "",
+   "posted_on": "2026-09-16",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-09-16",
+   "days_until": -28,
+   "status": "dropped",
+   "url": "",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-09-16"
    }
   },
   {

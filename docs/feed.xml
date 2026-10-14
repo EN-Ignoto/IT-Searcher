@@ -5,8 +5,72 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-14T12:01:30Z</updated>
+  <updated>2026-10-14T17:21:18Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
+  <entry>
+    <id>urn:intern-engine:workday:centene:/job/Remote-MO/Cloud-Security-Incident-Response-Analyst-Intern--Undergraduate---Summer-2027-_1667738-1</id>
+    <title>Centene: Cloud Security Incident Response Analyst Intern (Undergraduate - Summer 2027)</title>
+    <link href="https://centene.wd5.myworkdayjobs.com/Centene_External/job/Remote-MO/Cloud-Security-Incident-Response-Analyst-Intern--Undergraduate---Summer-2027-_1667738-1"/>
+    <updated>2026-10-14T17:21:18Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · SOC / Detection · Remote-MO · $18–$26/hr · AWS, Azure</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:copart:/job/Dallas-TX---Headquarters/DevOps-Engineer-Intern_JR111751</id>
+    <title>Copart: DevOps Engineer Intern</title>
+    <link href="https://copart.wd12.myworkdayjobs.com/copart/job/Dallas-TX---Headquarters/DevOps-Engineer-Intern_JR111751"/>
+    <updated>2026-10-14T17:21:18Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · Systems &amp; Cloud Infra · Dallas, TX - Headquarters · Python, Java, Bash, PyTorch, TensorFlow · H-1B track record: ~83 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:ngc:/job/United-States-Texas-San-Antonio/XMLNAME-2027-Cyber-Software-Engineer-Intern---San-Antonio-TX_R10256037</id>
+    <title>Northrop Grumman: 2027 Cyber Software Engineer Intern - San Antonio TX 🇺🇸</title>
+    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Texas-San-Antonio/XMLNAME-2027-Cyber-Software-Engineer-Intern---San-Antonio-TX_R10256037"/>
+    <updated>2026-10-14T17:21:18Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · United States-Texas-San Antonio · $17.5–$31.5/hr · Git · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--Returning-_JR-022677</id>
+    <title>Paloaltonetworks: Intern - Security Researcher (Returning)</title>
+    <link href="https://paloaltonetworks.wd5.myworkdayjobs.com/hidden-private-pawn-temp-gateway-147258369/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--Returning-_JR-022677"/>
+    <updated>2026-10-14T17:21:18Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · Security (general) · Office - USA - CA - Headquarters · Python, PyTorch, TensorFlow, scikit-learn, LLMs</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--PhD-_JR-022416</id>
+    <title>Paloaltonetworks: Intern - Security Researcher (PhD)</title>
+    <link href="https://paloaltonetworks.wd5.myworkdayjobs.com/hidden-private-pawn-temp-gateway-147258369/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--PhD-_JR-022416"/>
+    <updated>2026-10-14T17:21:18Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · Security (general) · Office - USA - CA - Headquarters · Python, PyTorch, TensorFlow, scikit-learn, LLMs</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:qtsdatacenters:/job/US-GA-Atlanta-Suwanee-1-DC1/Summer-2027-Internship--Information-Security-Operations-Analyst_R2026-2273</id>
+    <title>QTS: Summer 2027 Internship: Information Security Operations Analyst 🇺🇸</title>
+    <link href="https://qtsdatacenters.wd5.myworkdayjobs.com/qts/job/US-GA-Atlanta-Suwanee-1-DC1/Summer-2027-Internship--Information-Security-Operations-Analyst_R2026-2273"/>
+    <updated>2026-10-14T17:21:18Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · SOC / Detection · US GA Atlanta Suwanee 1 DC1 · Python, Java, Tableau · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:tranetechnologies:/job/St-Paul-Minnesota/Systems-Engineer-Intern_JR-16745</id>
+    <title>Tranetechnologies: Systems Engineer Intern</title>
+    <link href="https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers/job/St-Paul-Minnesota/Systems-Engineer-Intern_JR-16745"/>
+    <updated>2026-10-14T17:21:18Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · Systems &amp; Cloud Infra · St Paul, Minnesota</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:tranetechnologies:/job/La-Crosse-Wisconsin/Business-Systems-Analyst-Internship_JR-13688</id>
+    <title>Tranetechnologies: Business Systems Analyst Internship</title>
+    <link href="https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers/job/La-Crosse-Wisconsin/Business-Systems-Analyst-Internship_JR-13688"/>
+    <updated>2026-10-14T17:21:18Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · Systems &amp; Cloud Infra · La Crosse, Wisconsin</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:greenhouse:inversionspace:4743497005</id>
     <title>Inversion Space: RF Engineer - Internship 🇺🇸</title>
@@ -331,9 +395,9 @@
     <id>urn:intern-engine:workday:hcsc:/job/IL---Downers-Grove/Early-Careers---Systems-Analyst-Intern--Downers-Grove-_R0059499</id>
     <title>HCSC: Early Careers - Systems Analyst Intern (Downers Grove) 🛂</title>
     <link href="https://hcsc.wd1.myworkdayjobs.com/HCSC_External/job/IL---Downers-Grove/Early-Careers---Systems-Analyst-Intern--Downers-Grove-_R0059499"/>
-    <updated>2026-10-09T23:11:25Z</updated>
+    <updated>2026-10-08T01:16:28Z</updated>
     <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · IL - Downers Grove · Python, Java · sponsorship: no-sponsorship · status: closed</summary>
+    <summary>Not stated · Systems &amp; Cloud Infra · IL - Downers Grove · Python, Java · sponsorship: no-sponsorship</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:hpe:/job/Sunnyvale-California-United-States-of-America/Networking--Power--Intern_1214229</id>
@@ -742,69 +806,5 @@
     <updated>2026-10-02T18:08:07Z</updated>
     <category term="Summer 2027"/>
     <summary>Summer 2027 · Security (general) · Malvern, PA</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:memx:5441811008</id>
-    <title>MEMX: Enterprise IT Intern, Summer 2027 (Hybrid, NYC)</title>
-    <link href="https://job-boards.greenhouse.io/memx/jobs/5441811008"/>
-    <updated>2026-10-02T00:55:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · IT Support / Ops · United States</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:atcllc:/job/Pewaukee-WI/Intern---Cyber-Security-Summer-2027_R0003307</id>
-    <title>ATC: Intern - Cyber Security Summer 2027</title>
-    <link href="https://atcllc.wd5.myworkdayjobs.com/atcllc/job/Pewaukee-WI/Intern---Cyber-Security-Summer-2027_R0003307"/>
-    <updated>2026-10-02T00:55:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Pewaukee, WI · $23–$27/hr</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:oracle:hdhl.fa.us6.oraclecloud.com:1008089</id>
-    <title>Stantec: Transportation Engineering Intern - Infrastructure (Summer 2027)</title>
-    <link href="https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008089"/>
-    <updated>2026-10-01T20:37:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Atlanta, GA, United States</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:globalfoundries:/job/USA---Texas---Austin/End-Markets-Intern--Communications-Infrastructure-and-Datacenter--Summer-2027-_JR-2604224</id>
-    <title>GlobalFoundries: End Markets Intern, Communications Infrastructure and Datacenter (Summer 2027)</title>
-    <link href="https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---Texas---Austin/End-Markets-Intern--Communications-Infrastructure-and-Datacenter--Summer-2027-_JR-2604224"/>
-    <updated>2026-10-01T20:37:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · USA - Texas - Austin</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:moog:/job/Buffalo-NY/Intern--Systems-Engineering_R-26-20392</id>
-    <title>Moog: Intern, Systems Engineering</title>
-    <link href="https://moog.wd5.myworkdayjobs.com/moog_external_career_site/job/Buffalo-NY/Intern--Systems-Engineering_R-26-20392"/>
-    <updated>2026-10-01T20:37:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Buffalo, NY</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:ngc:/job/United-States-Florida-Melbourne/XMLNAME-2027-Intern---Systems-Engineering---Nuclear-Survivability-Ionizing-Radiation_R10251198</id>
-    <title>Northrop Grumman: 2027 Intern - Systems Engineering - Nuclear Survivability/Ionizing Radiation 🇺🇸</title>
-    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Florida-Melbourne/XMLNAME-2027-Intern---Systems-Engineering---Nuclear-Survivability-Ionizing-Radiation_R10251198"/>
-    <updated>2026-10-01T20:37:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States-Florida-Melbourne · $18.5–$33.5/hr · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:rb:/job/Chicago-IL/Summer-2027-Intern-Cloud-Engineering_R-0000033614</id>
-    <title>The Federal Reserve System: Summer 2027 Intern-Cloud Engineering 🛂</title>
-    <link href="https://rb.wd5.myworkdayjobs.com/FRS/job/Chicago-IL/Summer-2027-Intern-Cloud-Engineering_R-0000033614"/>
-    <updated>2026-10-01T20:37:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Cloud Platform · Chicago, IL · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:rb:/job/Chicago-IL/Summer-2027-Intern-Cybersecurity-and-Information-Security_R-0000033612-1</id>
-    <title>The Federal Reserve System: Summer 2027 Intern-Cybersecurity and Information Security 🛂</title>
-    <link href="https://rb.wd5.myworkdayjobs.com/FRS/job/Chicago-IL/Summer-2027-Intern-Cybersecurity-and-Information-Security_R-0000033612-1"/>
-    <updated>2026-10-01T20:37:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Chicago, IL · sponsorship: no-sponsorship</summary>
   </entry>
 </feed>

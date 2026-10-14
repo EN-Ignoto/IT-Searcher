@@ -1,6 +1,26 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "workday:centene:/job/Remote-MO/Cloud-Security-Incident-Response-Analyst-Intern--Undergraduate---Summer-2027-_1667738-1",
+      "workday:copart:/job/Dallas-TX---Headquarters/DevOps-Engineer-Intern_JR111751",
+      "workday:hcsc:/job/IL---Downers-Grove/Early-Careers---Systems-Analyst-Intern--Downers-Grove-_R0059499",
+      "workday:ngc:/job/United-States-Texas-San-Antonio/XMLNAME-2027-Cyber-Software-Engineer-Intern---San-Antonio-TX_R10256037",
+      "workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--Returning-_JR-022677",
+      "workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--PhD-_JR-022416",
+      "workday:qtsdatacenters:/job/US-GA-Atlanta-Suwanee-1-DC1/Summer-2027-Internship--Information-Security-Operations-Analyst_R2026-2273",
+      "workday:tranetechnologies:/job/St-Paul-Minnesota/Systems-Engineer-Intern_JR-16745",
+      "workday:tranetechnologies:/job/La-Crosse-Wisconsin/Business-Systems-Analyst-Internship_JR-13688"
+    ],
+    "telegram": [
+      "workday:centene:/job/Remote-MO/Cloud-Security-Incident-Response-Analyst-Intern--Undergraduate---Summer-2027-_1667738-1",
+      "workday:copart:/job/Dallas-TX---Headquarters/DevOps-Engineer-Intern_JR111751",
+      "workday:hcsc:/job/IL---Downers-Grove/Early-Careers---Systems-Analyst-Intern--Downers-Grove-_R0059499",
+      "workday:ngc:/job/United-States-Texas-San-Antonio/XMLNAME-2027-Cyber-Software-Engineer-Intern---San-Antonio-TX_R10256037",
+      "workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--Returning-_JR-022677",
+      "workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--PhD-_JR-022416",
+      "workday:qtsdatacenters:/job/US-GA-Atlanta-Suwanee-1-DC1/Summer-2027-Internship--Information-Security-Operations-Analyst_R2026-2273",
+      "workday:tranetechnologies:/job/St-Paul-Minnesota/Systems-Engineer-Intern_JR-16745",
+      "workday:tranetechnologies:/job/La-Crosse-Wisconsin/Business-Systems-Analyst-Internship_JR-13688"
+    ]
   }
 }

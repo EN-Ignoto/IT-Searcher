@@ -5,8 +5,32 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-13T22:56:13Z</updated>
+  <updated>2026-10-14T05:05:08Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
+  <entry>
+    <id>urn:intern-engine:greenhouse:inversionspace:4743497005</id>
+    <title>Inversion Space: RF Engineer - Internship 🇺🇸</title>
+    <link href="https://job-boards.greenhouse.io/inversionspace/jobs/4743497005"/>
+    <updated>2026-10-14T05:05:08Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · Network / Telecom · Playa Vista, California, United States · Python, MATLAB · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:ngc:/job/United-States-Maryland-Annapolis/XMLNAME-2027-S-W-Cybersecurity-Intern---Annapolis-MD_R10254705</id>
+    <title>Northrop Grumman: 2027 S/W Cybersecurity Intern – Annapolis MD 🇺🇸</title>
+    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Maryland-Annapolis/XMLNAME-2027-S-W-Cybersecurity-Intern---Annapolis-MD_R10254705"/>
+    <updated>2026-10-14T05:05:08Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · United States-Maryland-Annapolis · $20.5–$37.25/hr · Linux · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:ngc:/job/United-States-Maryland-Annapolis/XMLNAME-2027-Systems-Engineering-Intern---Annapolis-MD_R10254656</id>
+    <title>Northrop Grumman: 2027 Systems Engineering Intern – Annapolis MD 🇺🇸</title>
+    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Maryland-Annapolis/XMLNAME-2027-Systems-Engineering-Intern---Annapolis-MD_R10254656"/>
+    <updated>2026-10-14T05:05:08Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States-Maryland-Annapolis · $20.5–$37.25/hr · sponsorship: citizens-only</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:lever:azul:8f41ceaf-8835-4fc7-ba57-9384487d59db</id>
     <title>Azul Systems: IT Intern, AI and Operations</title>
@@ -782,29 +806,5 @@
     <updated>2026-10-01T20:37:57Z</updated>
     <category term="Summer 2027"/>
     <summary>Summer 2027 · Security (general) · Chicago, IL · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:rb:/job/Chicago-IL/Summer-2027-Intern-Networking-and-Computer-Engineering_R-0000033610</id>
-    <title>The Federal Reserve System: Summer 2027 Intern-Networking and Computer Engineering 🛂</title>
-    <link href="https://rb.wd5.myworkdayjobs.com/FRS/job/Chicago-IL/Summer-2027-Intern-Networking-and-Computer-Engineering_R-0000033610"/>
-    <updated>2026-10-01T20:37:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Network / Telecom · Chicago, IL · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:rb:/job/Cleveland-OH/TS---Application-Security-Intern---2027_R-0000033625</id>
-    <title>The Federal Reserve System: TS - Application Security Intern - 2027 🇺🇸</title>
-    <link href="https://rb.wd5.myworkdayjobs.com/FRS/job/Cleveland-OH/TS---Application-Security-Intern---2027_R-0000033625"/>
-    <updated>2026-10-01T20:37:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · AppSec / Product Sec · Cleveland, OH · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:vardaspace:8005821003</id>
-    <title>Varda Space: Cybersecurity Internship - Summer 2027 🇺🇸</title>
-    <link href="https://job-boards.greenhouse.io/vardaspace/jobs/8005821003"/>
-    <updated>2026-10-01T13:20:11Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · El Segundo, California, United States · Python, Bash · sponsorship: citizens-only</summary>
   </entry>
 </feed>

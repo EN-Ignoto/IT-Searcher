@@ -1,6 +1,14 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "greenhouse:inversionspace:4743497005",
+      "workday:ngc:/job/United-States-Maryland-Annapolis/XMLNAME-2027-S-W-Cybersecurity-Intern---Annapolis-MD_R10254705",
+      "workday:ngc:/job/United-States-Maryland-Annapolis/XMLNAME-2027-Systems-Engineering-Intern---Annapolis-MD_R10254656"
+    ],
+    "telegram": [
+      "greenhouse:inversionspace:4743497005",
+      "workday:ngc:/job/United-States-Maryland-Annapolis/XMLNAME-2027-S-W-Cybersecurity-Intern---Annapolis-MD_R10254705",
+      "workday:ngc:/job/United-States-Maryland-Annapolis/XMLNAME-2027-Systems-Engineering-Intern---Annapolis-MD_R10254656"
+    ]
   }
 }

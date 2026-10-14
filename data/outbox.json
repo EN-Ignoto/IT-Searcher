@@ -1,6 +1,24 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "workday:cubic:/job/San-Diego-California/Systems-Engineering-Execution-Intern_REQ_50178",
+      "workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017931",
+      "workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017927",
+      "workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017929",
+      "workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017930",
+      "workday:generalmotors:/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Intern---AI-ML-Engineer--Autonomous-Vehicle-ML-Infrastructure_JR-202622410",
+      "workday:hyperiongrp:/job/New-York--1350-Avenue-Of-The-Americas/Underwriting-Intern_R0019772-1",
+      "workday:philips:/job/San-Diego-California-United-States/Intern---Systems-Engineering--Sustaining---Design-Controls----San-Diego--CA---Summer-2027_593052"
+    ],
+    "telegram": [
+      "workday:cubic:/job/San-Diego-California/Systems-Engineering-Execution-Intern_REQ_50178",
+      "workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017931",
+      "workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017927",
+      "workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017929",
+      "workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017930",
+      "workday:generalmotors:/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Intern---AI-ML-Engineer--Autonomous-Vehicle-ML-Infrastructure_JR-202622410",
+      "workday:hyperiongrp:/job/New-York--1350-Avenue-Of-The-Americas/Underwriting-Intern_R0019772-1",
+      "workday:philips:/job/San-Diego-California-United-States/Intern---Systems-Engineering--Sustaining---Design-Controls----San-Diego--CA---Summer-2027_593052"
+    ]
   }
 }

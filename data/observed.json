@@ -967,6 +967,18 @@
     }
    }
   },
+  "general motors": {
+   "name": "General Motors",
+   "cycles": {
+    "Summer 2027": {
+     "first_posted": "2026-10-14",
+     "role_ids": [
+      "workday:generalmotors:/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Intern---AI-ML-Engineer--Autonomous-Vehicle-ML-Infrastructure_JR-202622410"
+     ],
+     "count": 1
+    }
+   }
+  },
   "globalfoundries": {
    "name": "GlobalFoundries",
    "cycles": {
@@ -1091,6 +1103,18 @@
     }
    }
   },
+  "howden": {
+   "name": "Howden",
+   "cycles": {
+    "Summer 2027": {
+     "first_posted": "2026-10-14",
+     "role_ids": [
+      "workday:hyperiongrp:/job/New-York--1350-Avenue-Of-The-Americas/Underwriting-Intern_R0019772-1"
+     ],
+     "count": 1
+    }
+   }
+  },
   "hp iq": {
    "name": "HP IQ",
    "cycles": {
@@ -1163,6 +1187,18 @@
      "first_posted": "2026-09-23",
      "role_ids": [
       "workday:insulet:/job/San-Diego-California/Intern--DevOps-Engineer--June-August-2027--Onsite-_REQ-2026-18202"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "inversion space": {
+   "name": "Inversion Space",
+   "cycles": {
+    "Summer 2027": {
+     "first_posted": "2026-10-13",
+     "role_ids": [
+      "greenhouse:inversionspace:4743497005"
      ],
      "count": 1
     }
@@ -1715,9 +1751,10 @@
     "Summer 2027": {
      "first_posted": "2026-10-06",
      "role_ids": [
-      "workday:philips:/job/Bothell-Washington-United-States/Intern--Systems-Engineering--Oral-Healthcare---Bothell--WA---Summer-2027_592938"
+      "workday:philips:/job/Bothell-Washington-United-States/Intern--Systems-Engineering--Oral-Healthcare---Bothell--WA---Summer-2027_592938",
+      "workday:philips:/job/San-Diego-California-United-States/Intern---Systems-Engineering--Sustaining---Design-Controls----San-Diego--CA---Summer-2027_593052"
      ],
-     "count": 1
+     "count": 2
     }
    }
   },
@@ -2324,5 +2361,5 @@
    }
   }
  },
- "updated_at": "2026-10-14T17:21:18Z"
+ "updated_at": "2026-10-14T21:52:41Z"
 }

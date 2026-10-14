@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-14T17:21:18Z",
- "data_as_of": "2026-10-14T17:21:18Z",
- "rendered_at": "2026-10-14T17:21:19Z",
+ "generated_at": "2026-10-14T21:52:41Z",
+ "data_as_of": "2026-10-14T21:52:41Z",
+ "rendered_at": "2026-10-14T21:52:41Z",
  "cycle": "Summer 2027",
  "source": "https://github.com/ihrtkaii/secnet-internships",
  "companies": [
@@ -1602,25 +1602,6 @@
    }
   },
   {
-   "company": "HMH",
-   "last_cycle_posted": "",
-   "posted_on": "2026-09-14",
-   "precision": "day",
-   "rolling": false,
-   "confidence": "verified",
-   "source": "engine",
-   "expected": "2026-09-14",
-   "days_until": -30,
-   "status": "open",
-   "url": "https://hmhw.wd12.myworkdayjobs.com/hmh_careers/job/Houston-TX/IT-Intern_JR102416",
-   "note": "",
-   "provenance": {
-    "type": "engine-observed",
-    "cycle": "Summer 2027",
-    "observed_on": "2026-09-14"
-   }
-  },
-  {
    "company": "The Aerospace Corporation",
    "last_cycle_posted": "",
    "posted_on": "2026-09-14",
@@ -1764,7 +1745,7 @@
    "expected": "2026-09-18",
    "days_until": -26,
    "status": "open",
-   "url": "https://centene.wd5.myworkdayjobs.com/Centene_External/job/Remote-MO/Cybersecurity-Summer-2027-Intern--Undergraduate-_1660514",
+   "url": "https://centene.wd5.myworkdayjobs.com/Centene_External/job/Remote-MO/Cloud-Security-Incident-Response-Analyst-Intern--Undergraduate---Summer-2027-_1667738-1",
    "note": "",
    "provenance": {
     "type": "engine-observed",
@@ -2590,6 +2571,25 @@
    }
   },
   {
+   "company": "Inversion Space",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-13",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-13",
+   "days_until": -1,
+   "status": "open",
+   "url": "https://job-boards.greenhouse.io/inversionspace/jobs/4743497005",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-10-13"
+   }
+  },
+  {
    "company": "Mary Free Bed Rehabilitation Hospital",
    "last_cycle_posted": "",
    "posted_on": "2026-10-13",
@@ -2606,6 +2606,44 @@
     "type": "engine-observed",
     "cycle": "Summer 2027",
     "observed_on": "2026-10-13"
+   }
+  },
+  {
+   "company": "General Motors",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-14",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-14",
+   "days_until": 0,
+   "status": "open",
+   "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Intern---AI-ML-Engineer--Autonomous-Vehicle-ML-Infrastructure_JR-202622410",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-10-14"
+   }
+  },
+  {
+   "company": "Howden",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-14",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-14",
+   "days_until": 0,
+   "status": "open",
+   "url": "https://hyperiongrp.wd3.myworkdayjobs.com/Hyperion_External/job/New-York--1350-Avenue-Of-The-Americas/Underwriting-Intern_R0019772-1",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-10-14"
    }
   },
   {
@@ -2855,6 +2893,25 @@
    }
   },
   {
+   "company": "HMH",
+   "last_cycle_posted": "",
+   "posted_on": "2026-09-14",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-09-14",
+   "days_until": -30,
+   "status": "dropped",
+   "url": "",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-09-14"
+   }
+  },
+  {
    "company": "Schroders",
    "last_cycle_posted": "",
    "posted_on": "2026-09-14",
@@ -2969,5 +3026,5 @@
    }
   }
  ],
- "count": 156
+ "count": 159
 }

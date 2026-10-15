@@ -1,24 +1,6 @@
 {
   "pending": {
-    "discord": [
-      "workday:brookfield:/job/Chicago-Illinois/IT-Intern--Summer-Internship-6-7-2027---8-13-2027-_R2052380-1",
-      "lever:reply:7bb0afb0-cea1-4e7a-b51e-1c529f37d843",
-      "greenhouse:generalmatter:5448019008",
-      "smartrecruiters:LLNL:3743990016164736",
-      "smartrecruiters:LLNL:3743990016164416",
-      "smartrecruiters:LLNL:3743990016164366",
-      "smartrecruiters:LLNL:3743990016164196",
-      "workday:markelcorp:/job/Richmond-VA/Markel-2027-IT-Internship-Program_R0023805"
-    ],
-    "telegram": [
-      "workday:brookfield:/job/Chicago-Illinois/IT-Intern--Summer-Internship-6-7-2027---8-13-2027-_R2052380-1",
-      "lever:reply:7bb0afb0-cea1-4e7a-b51e-1c529f37d843",
-      "greenhouse:generalmatter:5448019008",
-      "smartrecruiters:LLNL:3743990016164736",
-      "smartrecruiters:LLNL:3743990016164416",
-      "smartrecruiters:LLNL:3743990016164366",
-      "smartrecruiters:LLNL:3743990016164196",
-      "workday:markelcorp:/job/Richmond-VA/Markel-2027-IT-Internship-Program_R0023805"
-    ]
+    "discord": [],
+    "telegram": []
   }
 }

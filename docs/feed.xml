@@ -5,16 +5,8 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-14T21:52:41Z</updated>
+  <updated>2026-10-15T00:22:23Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
-  <entry>
-    <id>urn:intern-engine:workday:cubic:/job/San-Diego-California/Systems-Engineering-Execution-Intern_REQ_50178</id>
-    <title>Cubic: Systems Engineering Execution Intern</title>
-    <link href="https://cubic.wd1.myworkdayjobs.com/cubic_USA_careers/job/San-Diego-California/Systems-Engineering-Execution-Intern_REQ_50178"/>
-    <updated>2026-10-14T21:52:41Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · San Diego, California</summary>
-  </entry>
   <entry>
     <id>urn:intern-engine:workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017927</id>
     <title>Astreya: AI Infrastructure DC Design Intern</title>
@@ -22,6 +14,14 @@
     <updated>2026-10-14T21:52:41Z</updated>
     <category term="Not stated"/>
     <summary>4 openings · Not stated · Systems &amp; Cloud Infra · Remote, CA</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:cubic:/job/San-Diego-California/Systems-Engineering-Execution-Intern_REQ_50178</id>
+    <title>Cubic: Systems Engineering Execution Intern</title>
+    <link href="https://cubic.wd1.myworkdayjobs.com/cubic_USA_careers/job/San-Diego-California/Systems-Engineering-Execution-Intern_REQ_50178"/>
+    <updated>2026-10-14T21:52:41Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · Systems &amp; Cloud Infra · San Diego, California</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:generalmotors:/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Intern---AI-ML-Engineer--Autonomous-Vehicle-ML-Infrastructure_JR-202622410</id>

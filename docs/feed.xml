@@ -5,7 +5,7 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-15T04:51:19Z</updated>
+  <updated>2026-10-15T11:39:30Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
   <entry>
     <id>urn:intern-engine:oracle:ebxs.fa.us2.oraclecloud.com:310031</id>
@@ -83,9 +83,9 @@
     <id>urn:intern-engine:workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--PhD-_JR-022416</id>
     <title>Paloaltonetworks: Intern - Security Researcher (PhD)</title>
     <link href="https://paloaltonetworks.wd5.myworkdayjobs.com/hidden-private-pawn-temp-gateway-147258369/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--PhD-_JR-022416"/>
-    <updated>2026-10-14T17:21:18Z</updated>
+    <updated>2026-10-15T11:39:30Z</updated>
     <category term="Not stated"/>
-    <summary>Not stated · Security (general) · Office - USA - CA - Headquarters · Python, PyTorch, TensorFlow, scikit-learn, LLMs</summary>
+    <summary>Not stated · Security (general) · Office - USA - CA - Headquarters · Python, PyTorch, TensorFlow, scikit-learn, LLMs · status: closed</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--Returning-_JR-022677</id>
@@ -203,9 +203,9 @@
     <id>urn:intern-engine:workday:gdit:/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273</id>
     <title>General Dynamics Information Technology: 2027 Summer Intern - Defense Agencies (Cybersecurity) 🇺🇸</title>
     <link href="https://gdit.wd5.myworkdayjobs.com/gdit_earlytalent/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273"/>
-    <updated>2026-10-13T00:55:50Z</updated>
+    <updated>2026-10-15T11:39:30Z</updated>
     <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · USA VA Falls Church · sponsorship: citizens-only · H-1B track record: ~28 approvals (FY2022–2023)</summary>
+    <summary>Summer 2027 · Security (general) · USA VA Falls Church · sponsorship: citizens-only · status: closed · H-1B track record: ~28 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:hpe:/job/All-Tennessee-United-States-of-America/HPC-AI-System-Admin-HW-SW-Service-Engineer-Intern_1213404</id>

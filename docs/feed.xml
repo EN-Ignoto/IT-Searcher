@@ -5,8 +5,16 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-15T00:22:23Z</updated>
+  <updated>2026-10-15T04:51:19Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
+  <entry>
+    <id>urn:intern-engine:oracle:ebxs.fa.us2.oraclecloud.com:310031</id>
+    <title>Michael Baker International: IT Support Desk Intern</title>
+    <link href="https://ebxs.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/job/310031"/>
+    <updated>2026-10-15T04:51:19Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · IT Support / Ops · Moon Township, PA, United States · $18–$22/hr · H-1B track record: ~42 approvals (FY2022–2023)</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017927</id>
     <title>Astreya: AI Infrastructure DC Design Intern</title>
@@ -571,9 +579,9 @@
     <id>urn:intern-engine:workday:globalhr:/job/US-IA-CEDAR-RAPIDS-131--5450-C-Ave-NE--BLDG-131/Co-Op-Systems-Engineering_01879621</id>
     <title>RTX: Co-Op Systems Engineering 🛂</title>
     <link href="https://globalhr.wd5.myworkdayjobs.com/Private_Posting_No_TMP/job/US-IA-CEDAR-RAPIDS-131--5450-C-Ave-NE--BLDG-131/Co-Op-Systems-Engineering_01879621"/>
-    <updated>2026-10-06T20:29:41Z</updated>
+    <updated>2026-10-15T04:51:19Z</updated>
     <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · US-IA-CEDAR RAPIDS-131 ~ 5450 C Ave NE ~ BLDG 131 · sponsorship: no-sponsorship</summary>
+    <summary>Not stated · Systems &amp; Cloud Infra · US-IA-CEDAR RAPIDS-131 ~ 5450 C Ave NE ~ BLDG 131 · sponsorship: no-sponsorship · status: closed</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:granite:/job/Santa-Maria-California/IT-Intern_R0000008253-1</id>
@@ -798,13 +806,5 @@
     <updated>2026-10-02T18:08:07Z</updated>
     <category term="Not stated"/>
     <summary>Not stated · GRC / Risk · US DC Main Office · $30/hr</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:caci:/job/Ashburn-VA-US/Systems-Engineer-Intern---Summer-2027_333048</id>
-    <title>CACI: Systems Engineer Intern - Summer 2027</title>
-    <link href="https://caci.wd1.myworkdayjobs.com/external/job/Ashburn-VA-US/Systems-Engineer-Intern---Summer-2027_333048"/>
-    <updated>2026-10-02T18:08:07Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Ashburn, VA, US</summary>
   </entry>
 </feed>

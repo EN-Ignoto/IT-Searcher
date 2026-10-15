@@ -5,8 +5,48 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-15T17:13:25Z</updated>
+  <updated>2026-10-15T21:34:54Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
+  <entry>
+    <id>urn:intern-engine:greenhouse:generalmatter:5448019008</id>
+    <title>General Matter: Summer 2027 Internship - Information Security Engineer</title>
+    <link href="https://job-boards.greenhouse.io/generalmatter/jobs/5448019008"/>
+    <updated>2026-10-15T21:34:54Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · Los Angeles, CA · $32–$46/hr · Python, C++, Rust, TypeScript, AWS</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164736</id>
+    <title>Lawrence Livermore National Laboratory (LLNL): Power Systems Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164736"/>
+    <updated>2026-10-15T21:34:54Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, C++, MATLAB · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164416</id>
+    <title>Lawrence Livermore National Laboratory (LLNL): Power Systems Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164416"/>
+    <updated>2026-10-15T21:34:54Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, C++, MATLAB · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164366</id>
+    <title>Lawrence Livermore National Laboratory (LLNL): Critical Infrastructure Analysis Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164366"/>
+    <updated>2026-10-15T21:34:54Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164196</id>
+    <title>Lawrence Livermore National Laboratory (LLNL): Critical Infrastructure Analysis Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164196"/>
+    <updated>2026-10-15T21:34:54Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · sponsorship: citizens-only</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:emcins:/job/Iowa/Cybersecurity-Intern_R6590</id>
     <title>EMC Insurance: Cybersecurity Intern</title>
@@ -766,45 +806,5 @@
     <updated>2026-10-05T22:27:28Z</updated>
     <category term="Not stated"/>
     <summary>Not stated · Security (general) · Golden, CO · Python, Java, C++, PyTorch, TensorFlow</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:tamus:/job/Laredo-TX/Intern--Information-Technology--OIT--Help-Desk-_R-097705</id>
-    <title>Texas A&amp;M International University: Intern- Information Technology (OIT- Help Desk)</title>
-    <link href="https://tamus.wd1.myworkdayjobs.com/TAMIU_Student_Employment/job/Laredo-TX/Intern--Information-Technology--OIT--Help-Desk-_R-097705"/>
-    <updated>2026-10-05T22:27:28Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · IT Support / Ops · Laredo, TX</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:nc:/job/Wake-County-NC/IT-Service-Desk-Intern_JR-125278</id>
-    <title>State of North Carolina: IT Service Desk Intern</title>
-    <link href="https://nc.wd108.myworkdayjobs.com/NC_Careers/job/Wake-County-NC/IT-Service-Desk-Intern_JR-125278"/>
-    <updated>2026-10-05T06:28:29Z</updated>
-    <category term="Spring 2027"/>
-    <summary>Spring 2027 · IT Support / Ops · Wake County, NC · status: closed</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:globalhr:/job/US-IA-CEDAR-RAPIDS-112--400-Collins-Rd-NE--BLDG-112/Avionics-Test-Engineering--Systems-Engineer-Intern--Onsite-_01876518</id>
-    <title>RTX: Avionics Test Engineering -Systems Engineer Intern (Onsite) 🇺🇸</title>
-    <link href="https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-IA-CEDAR-RAPIDS-112--400-Collins-Rd-NE--BLDG-112/Avionics-Test-Engineering--Systems-Engineer-Intern--Onsite-_01876518"/>
-    <updated>2026-10-04T06:03:21Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · US-IA-CEDAR RAPIDS-112 ~ 400 Collins Rd NE ~ BLDG 112 · MATLAB · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:generac:/job/USA---CO-Fort-Collins/Micro-Grid-Systems-Engineering-Co-Op---Summer-Intern_JR17249</id>
-    <title>Generac: Micro-Grid Systems Engineering Co-Op</title>
-    <link href="https://generac.wd5.myworkdayjobs.com/external/job/USA---CO-Fort-Collins/Micro-Grid-Systems-Engineering-Co-Op---Summer-Intern_JR17249"/>
-    <updated>2026-10-02T22:30:03Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · USA - CO Fort Collins</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:labcorp:/job/Durham-NC/Intern---AWS-PostgreSQL-Database-Administrator_2632108</id>
-    <title>LabCorp: Intern - AWS PostgreSQL Database Administrator 🛂</title>
-    <link href="https://labcorp.wd1.myworkdayjobs.com/external/job/Durham-NC/Intern---AWS-PostgreSQL-Database-Administrator_2632108"/>
-    <updated>2026-10-02T22:30:03Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Cloud Platform · Durham NC · AWS, PostgreSQL, Terraform · sponsorship: no-sponsorship</summary>
   </entry>
 </feed>

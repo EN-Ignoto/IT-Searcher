@@ -1,6 +1,16 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "lever:cfsenergy:a05832ae-41df-4e2d-ab86-dd3e2c4877d4",
+      "workday:icf:/job/Reston-VA/XMLNAME-2027-Summer-Intern--Cloud-Engineer--AWS-Azure---Reston--VA-_R2603554",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Cloud-Engineering-Intern_R-00194668",
+      "workday:mastercard:/job/OFallon-Missouri/Platform-Engineering-Intern--Summer-2027---St-Louis--MO--US_R-284880"
+    ],
+    "telegram": [
+      "lever:cfsenergy:a05832ae-41df-4e2d-ab86-dd3e2c4877d4",
+      "workday:icf:/job/Reston-VA/XMLNAME-2027-Summer-Intern--Cloud-Engineer--AWS-Azure---Reston--VA-_R2603554",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Cloud-Engineering-Intern_R-00194668",
+      "workday:mastercard:/job/OFallon-Missouri/Platform-Engineering-Intern--Summer-2027---St-Louis--MO--US_R-284880"
+    ]
   }
 }

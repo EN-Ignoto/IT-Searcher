@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-16T11:32:51Z",
- "data_as_of": "2026-10-16T11:32:51Z",
- "rendered_at": "2026-10-16T11:32:52Z",
+ "generated_at": "2026-10-16T16:54:25Z",
+ "data_as_of": "2026-10-16T16:54:25Z",
+ "rendered_at": "2026-10-16T16:54:26Z",
  "cycle": "Summer 2027",
  "source": "https://github.com/ihrtkaii/secnet-internships",
  "companies": [
@@ -2514,6 +2514,25 @@
    }
   },
   {
+   "company": "Commonwealth Fusion Systems",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-09",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-09",
+   "days_until": -7,
+   "status": "open",
+   "url": "https://jobs.lever.co/cfsenergy/a05832ae-41df-4e2d-ab86-dd3e2c4877d4",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-10-09"
+   }
+  },
+  {
    "company": "Workday",
    "last_cycle_posted": "",
    "posted_on": "2026-10-09",
@@ -2663,6 +2682,25 @@
     "type": "engine-observed",
     "cycle": "Summer 2027",
     "observed_on": "2026-10-15"
+   }
+  },
+  {
+   "company": "ICF",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-16",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-16",
+   "days_until": 0,
+   "status": "open",
+   "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site/job/Reston-VA/XMLNAME-2027-Summer-Intern--Cloud-Engineer--AWS-Azure---Reston--VA-_R2603554",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-10-16"
    }
   },
   {
@@ -3045,5 +3083,5 @@
    }
   }
  ],
- "count": 160
+ "count": 162
 }

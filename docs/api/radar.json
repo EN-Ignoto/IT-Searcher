@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-16T21:17:25Z",
- "data_as_of": "2026-10-16T21:17:25Z",
- "rendered_at": "2026-10-16T21:17:26Z",
+ "generated_at": "2026-10-16T23:51:34Z",
+ "data_as_of": "2026-10-16T23:51:34Z",
+ "rendered_at": "2026-10-16T23:51:35Z",
  "cycle": "Summer 2027",
  "source": "https://github.com/ihrtkaii/secnet-internships",
  "companies": [
@@ -2467,7 +2467,7 @@
    "expected": "2026-10-07",
    "days_until": -9,
    "status": "open",
-   "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/97071",
+   "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/97070",
    "note": "",
    "provenance": {
     "type": "engine-observed",

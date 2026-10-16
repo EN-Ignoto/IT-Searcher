@@ -5,20 +5,36 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-16T00:06:05Z</updated>
+  <updated>2026-10-16T04:39:57Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016165636</id>
-    <title>Lawrence Livermore National Laboratory (LLNL): Cybersecurity Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016165636"/>
+    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016165496</id>
+    <title>Lawrence Livermore National Laboratory (LLNL): Critical Infrastructure Analysis Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016165496"/>
     <updated>2026-10-16T00:06:05Z</updated>
     <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, Java, C++, MATLAB, Docker · sponsorship: citizens-only</summary>
+    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016165506</id>
+    <title>Lawrence Livermore National Laboratory (LLNL): Power Systems Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016165506"/>
+    <updated>2026-10-16T00:06:05Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, C++, MATLAB · sponsorship: citizens-only</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:smartrecruiters:LLNL:3743990016165586</id>
     <title>Lawrence Livermore National Laboratory (LLNL): Cybersecurity Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
     <link href="https://jobs.smartrecruiters.com/LLNL/3743990016165586"/>
+    <updated>2026-10-16T00:06:05Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, Java, C++, MATLAB, Docker · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016165636</id>
+    <title>Lawrence Livermore National Laboratory (LLNL): Cybersecurity Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016165636"/>
     <updated>2026-10-16T00:06:05Z</updated>
     <category term="Summer 2027"/>
     <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, Java, C++, MATLAB, Docker · sponsorship: citizens-only</summary>
@@ -35,9 +51,9 @@
     <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164196</id>
     <title>Lawrence Livermore National Laboratory (LLNL): Critical Infrastructure Analysis Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
     <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164196"/>
-    <updated>2026-10-15T21:34:54Z</updated>
+    <updated>2026-10-16T04:39:57Z</updated>
     <category term="Summer 2027"/>
-    <summary>2 openings · Summer 2027 · Security (general) · Livermore, CA, United States · sponsorship: citizens-only</summary>
+    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · sponsorship: citizens-only · status: closed</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164366</id>
@@ -59,9 +75,9 @@
     <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164736</id>
     <title>Lawrence Livermore National Laboratory (LLNL): Power Systems Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
     <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164736"/>
-    <updated>2026-10-15T21:34:54Z</updated>
+    <updated>2026-10-16T04:39:57Z</updated>
     <category term="Summer 2027"/>
-    <summary>2 openings · Summer 2027 · Security (general) · Livermore, CA, United States · Python, C++, MATLAB · sponsorship: citizens-only</summary>
+    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, C++, MATLAB · sponsorship: citizens-only · status: closed</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:emcins:/job/Iowa/Cybersecurity-Intern_R6590</id>
@@ -790,21 +806,5 @@
     <updated>2026-10-05T22:27:28Z</updated>
     <category term="Summer 2027"/>
     <summary>Summer 2027 · Systems &amp; Cloud Infra · Okemos, MI, United States</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:caci:/job/High-Point-NC-US/Network-Engineer-Intern---Summer-2027_332843</id>
-    <title>CACI: Network Engineer Intern - Summer 2027</title>
-    <link href="https://caci.wd1.myworkdayjobs.com/external/job/High-Point-NC-US/Network-Engineer-Intern---Summer-2027_332843"/>
-    <updated>2026-10-05T22:27:28Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Network / Telecom · High Point, NC, US</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:expedia:/job/Washington---Seattle-Campus/Security-Engineering-Intern---2027---Seattle_R-110310</id>
-    <title>Expedia Group: Security Engineering Intern - 2027 - Seattle</title>
-    <link href="https://expedia.wd108.myworkdayjobs.com/search/job/Washington---Seattle-Campus/Security-Engineering-Intern---2027---Seattle_R-110310-1"/>
-    <updated>2026-10-05T22:27:28Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Washington - Seattle Campus · $45/hr · Python, Java, C++, C#, Linux</summary>
   </entry>
 </feed>

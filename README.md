@@ -6,9 +6,9 @@
 
 [![CI](https://img.shields.io/github/actions/workflow/status/ihrtkaii/secnet-internships/ci.yml?branch=main&label=tests&style=flat-square&color=3fb950)](https://github.com/ihrtkaii/secnet-internships/actions/workflows/ci.yml)&nbsp;[![Open roles](https://img.shields.io/badge/dynamic/json?label=open%20roles&query=open_total&url=https%3A%2F%2Fihrtkaii.github.io%2Fsecnet-internships%2Fapi%2Fstats.json&color=2f81f7&style=flat-square)](https://ihrtkaii.github.io/secnet-internships/)&nbsp;![Updates](https://img.shields.io/badge/updates-every%203%20hours-3fb950?style=flat-square)&nbsp;[![RSS](https://img.shields.io/badge/RSS-subscribe-e67e22?style=flat-square)](https://ihrtkaii.github.io/secnet-internships/feed.xml)
 
-### 582 open roles (479 listed below) · 53 new this week
+### 582 open roles (479 listed below) · 49 new this week
 
-4,788 employers tracked · data as of Oct 18, 2026 at 16:04 UTC
+4,788 employers tracked · data as of Oct 18, 2026 at 20:53 UTC
 
 _438 have a cycle the employer stated · 144 are recent postings whose cycle isn't stated (listed separately, never mixed in)._
 
@@ -251,9 +251,9 @@ These postings never name a cycle, not in the title and not in the posting text,
 | Northrop Grumman | 2027 Systems Engineering Intern - Aurora CO 🇺🇸 🆕 | Systems & Cloud Infra | United States-Colorado-Aurora | No skills listed | Oct 16, 2026 | [Apply](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Colorado-Aurora/XMLNAME-2027-Systems-Engineering-Intern---Aurora-CO_R10256237) |
 | Northrop Grumman | 2027 Systems Engineering Intern - Colorado Springs CO 🇺🇸 🆕 | Systems & Cloud Infra | United States-Colorado-Colorado Springs | No skills listed | Oct 16, 2026 | [Apply](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Colorado-Colorado-Springs/XMLNAME-2027-Systems-Engineering-Intern---Colorado-Springs-CO_R10256088) |
 | Sierra Nevada Corporation | Systems Engineering Intern - Summer 2027 (For SNC Summer 2026 Interns Only) 🇺🇸 🆕 | Systems & Cloud Infra | Lone Tree, CO | MATLAB | Oct 16, 2026 | [Apply](https://snc.wd1.myworkdayjobs.com/snc_external_career_site/job/Lone-Tree-CO/Systems-Engineering-Intern---Summer-2027--For-SNC-Summer-2026-Interns-Only-_R0031097) |
-| ICF ✓ | 2027 Summer Intern, Cloud Engineer (AWS/Azure) (Reston, VA) 🛂 🆕 | Cloud Platform | Reston, VA | AWS, Azure, Terraform, Git | Oct 16, 2026 | [Apply](https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site/job/Reston-VA/XMLNAME-2027-Summer-Intern--Cloud-Engineer--AWS-Azure---Reston--VA-_R2603554) |
-| Leidos ✓ 🆁 | Cloud Engineering Intern 🇺🇸 🆕 | Cloud Platform | 6314 Remote/Teleworker US | Azure | Oct 16, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Cloud-Engineering-Intern_R-00194668) |
-| Mastercard | Platform Engineering Intern, Summer 2027 – St. Louis, MO, US 🆕 | Systems & Cloud Infra | O'Fallon, Missouri | Java, AWS, GCP, Azure | Oct 16, 2026 | [Apply](https://mastercard.wd1.myworkdayjobs.com/Campus/job/OFallon-Missouri/Platform-Engineering-Intern--Summer-2027---St-Louis--MO--US_R-284880) |
+| ICF ✓ | 2027 Summer Intern, Cloud Engineer (AWS/Azure) (Reston, VA) 🛂 | Cloud Platform | Reston, VA | AWS, Azure, Terraform, Git | Oct 16, 2026 | [Apply](https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site/job/Reston-VA/XMLNAME-2027-Summer-Intern--Cloud-Engineer--AWS-Azure---Reston--VA-_R2603554) |
+| Leidos ✓ 🆁 | Cloud Engineering Intern 🇺🇸 | Cloud Platform | 6314 Remote/Teleworker US | Azure | Oct 16, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Cloud-Engineering-Intern_R-00194668) |
+| Mastercard | Platform Engineering Intern, Summer 2027 – St. Louis, MO, US | Systems & Cloud Infra | O'Fallon, Missouri | Java, AWS, GCP, Azure | Oct 16, 2026 | [Apply](https://mastercard.wd1.myworkdayjobs.com/Campus/job/OFallon-Missouri/Platform-Engineering-Intern--Summer-2027---St-Louis--MO--US_R-284880) |
 | Lawrence Livermore National Laboratory (LLNL) | Critical Infrastructure Analysis Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸 | Security (general) | Livermore, CA, United States | No skills listed | Oct 15, 2026 | [Apply](https://jobs.smartrecruiters.com/LLNL/3743990016165496) |
 | Lawrence Livermore National Laboratory (LLNL) | Power Systems Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸 | Security (general) | Livermore, CA, United States | Python, C++, MATLAB | Oct 15, 2026 | [Apply](https://jobs.smartrecruiters.com/LLNL/3743990016165506) |
 | Lawrence Livermore National Laboratory (LLNL) | Cybersecurity Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸 | Security (general) | Livermore, CA, United States | Python, Java, C++, MATLAB | Oct 15, 2026 | [Apply](https://jobs.smartrecruiters.com/LLNL/3743990016165586) |
@@ -272,7 +272,7 @@ These postings never name a cycle, not in the title and not in the posting text,
 | Stantec | Bridge Design Intern - Infrastructure (Summer 2027) | Systems & Cloud Infra | Columbia, SC, United States | No skills listed | Oct 12, 2026 | [Apply](https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008240) |
 | Northrop Grumman | 2027 Systems Engineer Intern - Chantilly VA 🇺🇸 | Systems & Cloud Infra | United States-Virginia-Chantilly | No skills listed | Oct 12, 2026 | [Apply](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Virginia-Chantilly/XMLNAME-2027-Software-Engineer-Intern---Chantilly-VA_R10255633) |
 | CapTech Consulting | Consulting Internship: Business Systems Analyst (Summer 2027) 🛂 | Systems & Cloud Infra | Richmond, VA, United States | Python, SQL | Oct 12, 2026 | [Apply](https://jobs.smartrecruiters.com/CapTechConsulting/744000155060459) |
-| Commonwealth Fusion Systems | Intern - Nuclear/Systems Engineer - Summer 2027 🆕 | Systems & Cloud Infra | Devens, MA | Python, C++ | Oct 09, 2026 | [Apply](https://jobs.lever.co/cfsenergy/a05832ae-41df-4e2d-ab86-dd3e2c4877d4) |
+| Commonwealth Fusion Systems | Intern - Nuclear/Systems Engineer - Summer 2027 | Systems & Cloud Infra | Devens, MA | Python, C++ | Oct 09, 2026 | [Apply](https://jobs.lever.co/cfsenergy/a05832ae-41df-4e2d-ab86-dd3e2c4877d4) |
 | MEMX | Data Center Operations Intern, Summer 2027 (Hybrid, NYC) | Systems & Cloud Infra | United States | Linux | Oct 09, 2026 | [Apply](https://job-boards.greenhouse.io/memx/jobs/5449276008) |
 | Nissan | EA & Cloud Intern - Summer 2027 - Franklin, TN 🛂 | Cloud Platform | Franklin +1 more | Python, LLMs, AWS, Git | Oct 09, 2026 | [Apply](https://alliance.wd3.myworkdayjobs.com/nissanjobs/job/Franklin-Tennessee---United-States-of-America/EA---Cloud-Intern---Summer-2027---Franklin--TN_R00214214) |
 | Stantec | Civil/Transportation Engineering Intern - Infrastructure (Summer 2027) | Systems & Cloud Infra | Charleston +5 more | No skills listed | Oct 08, 2026 | [Apply](https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008210) |
@@ -653,7 +653,7 @@ Internships posted per week, from each role's real published date - redrawn auto
 
 A small Python engine reads public company hiring feeds directly, keeps the roles that match the scope above, de-duplicates across sources, records each role's published date once (so it never shifts), and regenerates this page through GitHub Actions. It polls every company concurrently (async) with retry/backoff and per-host rate limits. The full source is in this repo.
 
-_Engine (last run): 4,685 of 5,075 registered boards returned successfully across 12 ATS platforms (99% of boards attempted, 92% of the full registry) · completed in 978.6s · 645 board(s) returned a capped result set, so their roles were not eligible to be closed this run · employer or source-derived date on 99% of open roles._
+_Engine (last run): 4,592 of 5,075 registered boards returned successfully across 12 ATS platforms (97% of boards attempted, 90% of the full registry) · completed in 1071.4s · 601 board(s) returned a capped result set, so their roles were not eligible to be closed this run · employer or source-derived date on 99% of open roles._
 
 ## How this list is built
 

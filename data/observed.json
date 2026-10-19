@@ -966,6 +966,18 @@
     }
    }
   },
+  "generac": {
+   "name": "Generac",
+   "cycles": {
+    "Summer 2027": {
+     "first_posted": "2026-10-19",
+     "role_ids": [
+      "workday:generac:/job/USA---CO-Fort-Collins/Micro-Grid-Systems-Engineering-Summer-Intern_JR17432"
+     ],
+     "count": 1
+    }
+   }
+  },
   "general dynamics information technology": {
    "name": "General Dynamics Information Technology",
    "cycles": {
@@ -2360,6 +2372,13 @@
       "oracle:emit.fa.ca3.oraclecloud.com:97071"
      ],
      "count": 2
+    },
+    "Fall 2026": {
+     "first_posted": "2026-10-19",
+     "role_ids": [
+      "oracle:emit.fa.ca3.oraclecloud.com:97816"
+     ],
+     "count": 1
     }
    }
   },
@@ -2413,5 +2432,5 @@
    }
   }
  },
- "updated_at": "2026-10-19T13:21:15Z"
+ "updated_at": "2026-10-19T20:50:47Z"
 }

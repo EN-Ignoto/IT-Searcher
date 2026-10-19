@@ -1,24 +1,6 @@
 {
   "pending": {
-    "discord": [
-      "oracle:emit.fa.ca3.oraclecloud.com:97816",
-      "workday:americancentury:/job/Kansas-City-Missouri/Infrastructure-Automation-Engineer-Intern_R0005750",
-      "smartrecruiters:BoschGroup:744000156323136",
-      "workday:generac:/job/USA---CO-Fort-Collins/Micro-Grid-Systems-Engineering-Summer-Intern_JR17432",
-      "workday:gfs:/job/Wyoming-Michigan/Store-Administrative-Support-Internship_R-57416",
-      "workday:intel:/job/US-Oregon-Hillsboro/Cloud-Analytics---Application-PhD-Intern_JR0288170",
-      "greenhouse:internrecruiting:8288817",
-      "workday:snc:/job/Lone-Tree-CO/RF-Engineer-Intern_R0031110"
-    ],
-    "telegram": [
-      "oracle:emit.fa.ca3.oraclecloud.com:97816",
-      "workday:americancentury:/job/Kansas-City-Missouri/Infrastructure-Automation-Engineer-Intern_R0005750",
-      "smartrecruiters:BoschGroup:744000156323136",
-      "workday:generac:/job/USA---CO-Fort-Collins/Micro-Grid-Systems-Engineering-Summer-Intern_JR17432",
-      "workday:gfs:/job/Wyoming-Michigan/Store-Administrative-Support-Internship_R-57416",
-      "workday:intel:/job/US-Oregon-Hillsboro/Cloud-Analytics---Application-PhD-Intern_JR0288170",
-      "greenhouse:internrecruiting:8288817",
-      "workday:snc:/job/Lone-Tree-CO/RF-Engineer-Intern_R0031110"
-    ]
+    "discord": [],
+    "telegram": []
   }
 }

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-20T17:14:43Z",
- "data_as_of": "2026-10-20T17:14:43Z",
- "rendered_at": "2026-10-20T17:14:43Z",
+ "generated_at": "2026-10-20T21:51:24Z",
+ "data_as_of": "2026-10-20T21:51:24Z",
+ "rendered_at": "2026-10-20T21:51:24Z",
  "cycle": "Summer 2027",
  "source": "https://github.com/ihrtkaii/secnet-internships",
  "companies": [
@@ -852,7 +852,7 @@
    "expected": "2026-08-31",
    "days_until": -50,
    "status": "open",
-   "url": "https://mastercard.wd1.myworkdayjobs.com/Campus/job/Arlington-Virginia/Security-Infrastructure-Engineering---Architecture-Intern--Summer-2027---Arlington--VA--US_R-284924",
+   "url": "https://mastercard.wd1.myworkdayjobs.com/Campus/job/OFallon-Missouri/Platform-Engineering-Intern--Summer-2027---St-Louis--MO--US_R-284880",
    "note": "",
    "provenance": {
     "type": "engine-observed",
@@ -2353,7 +2353,7 @@
    "expected": "2026-10-07",
    "days_until": -13,
    "status": "open",
-   "url": "https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/AI-Security-Research-Intern---Summer-2027_2025199-1",
+   "url": "https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/AI-Security-Software-Engineer-Intern---Summer-2027_2025200-1",
    "note": "",
    "provenance": {
     "type": "engine-observed",
@@ -2682,6 +2682,63 @@
     "type": "engine-observed",
     "cycle": "Summer 2027",
     "observed_on": "2026-10-19"
+   }
+  },
+  {
+   "company": "Highmark Health",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-20",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-20",
+   "days_until": 0,
+   "status": "open",
+   "url": "https://highmarkhealth.wd1.myworkdayjobs.com/highmark/job/Pittsburgh-PA-15222-FAP-5th-Avenue-Place/Summer-2027-Risk-and-Compliance-Management-Undergraduate-Intern_J287733",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-10-20"
+   }
+  },
+  {
+   "company": "Illumio",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-20",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-20",
+   "days_until": 0,
+   "status": "open",
+   "url": "https://jobs.ashbyhq.com/illumio/09d4895b-6de4-4d22-bbc3-aa45f2b24260",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-10-20"
+   }
+  },
+  {
+   "company": "Skydio",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-20",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-20",
+   "days_until": 0,
+   "status": "open",
+   "url": "https://jobs.ashbyhq.com/skydio/1ac972b1-8094-4765-8869-63e1c4d50dea",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Summer 2027",
+    "observed_on": "2026-10-20"
    }
   },
   {
@@ -3121,5 +3178,5 @@
    }
   }
  ],
- "count": 164
+ "count": 167
 }

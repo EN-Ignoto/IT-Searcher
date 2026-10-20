@@ -1,6 +1,18 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "ashby:illumio:09d4895b-6de4-4d22-bbc3-aa45f2b24260",
+      "ashby:illumio:8708e622-900e-458a-96b3-ae339329a56d",
+      "ashby:skydio:1ac972b1-8094-4765-8869-63e1c4d50dea",
+      "workday:highmarkhealth:/job/Pittsburgh-PA-15222-FAP-5th-Avenue-Place/Summer-2027-Risk-and-Compliance-Management-Undergraduate-Intern_J287733",
+      "workday:motorolasolutions:/job/Massachusetts-Remote-Work/Presale-Systems-Engineer---Summer-2027-Internship_R69640"
+    ],
+    "telegram": [
+      "ashby:illumio:09d4895b-6de4-4d22-bbc3-aa45f2b24260",
+      "ashby:illumio:8708e622-900e-458a-96b3-ae339329a56d",
+      "ashby:skydio:1ac972b1-8094-4765-8869-63e1c4d50dea",
+      "workday:highmarkhealth:/job/Pittsburgh-PA-15222-FAP-5th-Avenue-Place/Summer-2027-Risk-and-Compliance-Management-Undergraduate-Intern_J287733",
+      "workday:motorolasolutions:/job/Massachusetts-Remote-Work/Presale-Systems-Engineer---Summer-2027-Internship_R69640"
+    ]
   }
 }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-20T05:28:24Z",
-  "fetched_at": "2026-10-20T05:28:24Z",
-  "duration_seconds": 868.3,
+  "generated_at": "2026-10-20T11:48:00Z",
+  "fetched_at": "2026-10-20T11:48:00Z",
+  "duration_seconds": 1222.8,
   "companies_total": 5078,
   "companies_by_source": {
     "greenhouse": 1127,
@@ -17,36 +17,37 @@
     "breezy": 16,
     "eightfold": 1
   },
-  "quarantined": 332,
-  "fetched_ok": 4683,
-  "fetch_errors": 63,
+  "quarantined": 322,
+  "fetched_ok": 4633,
+  "fetch_errors": 123,
   "errors_by_source": {
-    "workday": 12,
-    "greenhouse": 2,
+    "workday": 75,
+    "workable": 44,
     "lever": 1,
-    "workable": 48
+    "ashby": 1,
+    "greenhouse": 2
   },
-  "fetch_success_rate": 0.987,
-  "fetch_success_rate_registry": 0.922,
-  "snapshots_complete": 4046,
-  "snapshots_partial": 637,
+  "fetch_success_rate": 0.974,
+  "fetch_success_rate_registry": 0.912,
+  "snapshots_complete": 4020,
+  "snapshots_partial": 613,
   "partial_by_reason": {
-    "result-cap": 631,
-    "malformed-response": 6
+    "result-cap": 595,
+    "malformed-response": 18
   },
-  "degraded_fetches": 6,
-  "roles_matched": 380,
-  "dropped_no_year_in_title": 151,
-  "dropped_no_year_undated": 123,
+  "degraded_fetches": 18,
+  "roles_matched": 369,
+  "dropped_no_year_in_title": 146,
+  "dropped_no_year_undated": 118,
   "dropped_no_year_dated_too_old": 28,
   "dropped_no_year_dated_in_future": 0,
   "dropped_no_year_unparsable_date": 0,
   "dropped_no_year_inference_disabled": 0,
   "dropped_no_year_by_reason": {
     "dated-too-old": 28,
-    "undated": 123
+    "undated": 118
   },
-  "dropped_offcycle_by_text": 94,
+  "dropped_offcycle_by_text": 89,
   "roles_cycle_inferred": 150,
   "roles_by_source": {
     "amazon": 1,
@@ -73,10 +74,10 @@
     "offers": 3
   },
   "posted_date_coverage": 0.998,
-  "enriched_this_run": 31,
-  "enrichment_detail_fetches": 3,
+  "enriched_this_run": 28,
+  "enrichment_detail_fetches": 0,
   "purged_this_run": 0,
-  "new_this_run": 3,
+  "new_this_run": 0,
   "open_total": 592,
   "detection_latency": {
     "median_minutes": 140.7,
@@ -89,5 +90,5 @@
     "median_days": 21.0,
     "sample_size": 100
   },
-  "rendered_at": "2026-10-20T05:28:25Z"
+  "rendered_at": "2026-10-20T11:48:00Z"
 }

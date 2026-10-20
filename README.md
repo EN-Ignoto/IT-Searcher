@@ -6,11 +6,11 @@
 
 [![CI](https://img.shields.io/github/actions/workflow/status/ihrtkaii/secnet-internships/ci.yml?branch=main&label=tests&style=flat-square&color=3fb950)](https://github.com/ihrtkaii/secnet-internships/actions/workflows/ci.yml)&nbsp;[![Open roles](https://img.shields.io/badge/dynamic/json?label=open%20roles&query=open_total&url=https%3A%2F%2Fihrtkaii.github.io%2Fsecnet-internships%2Fapi%2Fstats.json&color=2f81f7&style=flat-square)](https://ihrtkaii.github.io/secnet-internships/)&nbsp;![Updates](https://img.shields.io/badge/updates-every%203%20hours-3fb950?style=flat-square)&nbsp;[![RSS](https://img.shields.io/badge/RSS-subscribe-e67e22?style=flat-square)](https://ihrtkaii.github.io/secnet-internships/feed.xml)
 
-### 591 open roles (487 listed below) · 59 new this week
+### 592 open roles (487 listed below) · 56 new this week
 
-4,790 employers tracked · data as of Oct 20, 2026 at 00:34 UTC
+4,790 employers tracked · data as of Oct 20, 2026 at 05:28 UTC
 
-_441 have a cycle the employer stated · 150 are recent postings whose cycle isn't stated (listed separately, never mixed in)._
+_442 have a cycle the employer stated · 150 are recent postings whose cycle isn't stated (listed separately, never mixed in)._
 
 **[🖥️ Live dashboard](https://ihrtkaii.github.io/secnet-internships/)** · **[📡 RSS](https://ihrtkaii.github.io/secnet-internships/feed.xml)** · **[⚙️ JSON API](https://ihrtkaii.github.io/secnet-internships/api/jobs.json)**
 
@@ -69,10 +69,11 @@ This tracks security and networking internships specifically, because the major 
 
 ## 🔐 Security
 
-### Summer 2027  (104 employer-stated)
+### Summer 2027  (102 employer-stated)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| Arch Capital Group | Security Operations Intern 🆕 | SOC / Detection | Greensboro, NC United States of America | No skills listed | Oct 19, 2026 | [Apply](https://archgroup.wd1.myworkdayjobs.com/careers/job/Greensboro-NC-United-States-of-America/Security-Operations-Intern_R26_1016) |
 | Centene 🆁 | IAM Analyst Intern (Undergraduate - Summer 2027) | Cloud & Infra Sec | Remote-MO | No skills listed | Oct 16, 2026 | [Apply](https://centene.wd5.myworkdayjobs.com/Centene_External/job/Remote-MO/IAM-Analyst-Intern--Undergraduate---Summer-2027-_1667747) |
 | Lawrence Livermore National Laboratory (LLNL) | Critical Infrastructure Analysis Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸 | Security (general) | Livermore, CA, United States | No skills listed | Oct 15, 2026 | [Apply](https://jobs.smartrecruiters.com/LLNL/3743990016165496) |
 | Lawrence Livermore National Laboratory (LLNL) | Power Systems Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸 | Security (general) | Livermore, CA, United States | Python, C++, MATLAB | Oct 15, 2026 | [Apply](https://jobs.smartrecruiters.com/LLNL/3743990016165506) |
@@ -117,7 +118,6 @@ This tracks security and networking internships specifically, because the major 
 | General Dynamics Information Technology ✓ | GDIT Summer Internship Program – Summer 2027 Cybersecurity Associate Internship 🇺🇸 | Security (general) | USA LA Bossier City | No skills listed | Sep 23, 2026 | [Apply](https://gdit.wd5.myworkdayjobs.com/gdit_earlytalent/job/USA-LA-Bossier-City/GDIT-Summer-Internship-Program---Summer-2027-Cybersecurity-Associate-Internship_RQ228929-2) |
 | Marvell | Security Verification/Validation Engineer Intern, BS - Summer 2027 | Security (general) | Chandler, AZ | Linux, Verilog | Sep 23, 2026 | [Apply](https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Chandler-AZ/Security-Verification-Validation-Engineer-Intern--BS---Summer-2027_2604148-1) |
 | Bracco | Product Security Engineering Intern | AppSec / Product Sec | USA, Eden Prairie, Minnesota, 55344 | Python, C++, C#, .NET | Sep 22, 2026 | [Apply](https://bracco.wd103.myworkdayjobs.com/braccocareers/job/USA-Eden-Prairie-Minnesota-55344/Product-Security-Engineering-Intern_JR100318) |
-| Western Alliance | Summer 2027 Internship - Phoenix, AZ - IT Security | Security (general) | Phoenix, AZ | No skills listed | Sep 21, 2026 | [Apply](https://wd5.myworkdaysite.com/recruiting/westernalliancebank/WAB/job/Phoenix-AZ/Summer-2027-Internship---Phoenix--AZ---IT-Security_R13775) |
 | Centene 🆁 | Cybersecurity Summer 2027 Intern (Undergraduate) | Security (general) | Remote-MO | No skills listed | Sep 18, 2026 | [Apply](https://centene.wd5.myworkdayjobs.com/Centene_External/job/Remote-MO/Cybersecurity-Summer-2027-Intern--Undergraduate-_1660514) |
 | Motorola | Cyber Security - 2027 Summer Internship (Chicago Hybrid) 🛂 | Security (general) | Chicago, IL, More... | Python, Java, LLMs, AWS | Sep 18, 2026 | [Apply](https://motorolasolutions.wd5.myworkdayjobs.com/Careers/job/Chicago-IL/Cyber-Security---2027-Summer-Internship--Chicago-Hybrid-_R68369) |
 | Netsmart | Security Analyst Future (Summer 2027 Internship) | Security (general) | Overland Park, KS | SQL, AWS, Azure | Sep 18, 2026 | [Apply](https://ntst.wd1.myworkdayjobs.com/careers/job/Overland-Park-KS/Security-Analyst-Future--Summer-2027-Internship-_R015669) |
@@ -143,7 +143,6 @@ This tracks security and networking internships specifically, because the major 
 | IAT Insurance Group | Cyber Security Internship 🛂 | Security (general) | Raleigh NC | No skills listed | Sep 01, 2026 | [Apply](https://iatinsurancegroup.wd1.myworkdayjobs.com/iat/job/Raleigh-NC/Cyber-Security-Internship_JR100410) |
 | Armanino ✓ | Summer 2027 IT Audit Intern (Dallas) | GRC / Risk | Dallas, Texas | No skills listed | Sep 01, 2026 | [Apply](https://armaninollp.wd1.myworkdayjobs.com/Armanino/job/Dallas-Texas/Summer-2027-IT-Audit-Intern--Dallas-_JR104286) |
 | Armanino ✓ | Summer 2027 IT Audit Intern (Denver) | GRC / Risk | Denver, Colorado | No skills listed | Sep 01, 2026 | [Apply](https://armaninollp.wd1.myworkdayjobs.com/Armanino/job/Denver-Colorado/Summer-2027-IT-Audit-Intern_JR104282) |
-| Armanino ✓ | Summer 2027 IT Audit Intern (Saint Louis) | GRC / Risk | St. Louis, Missouri | No skills listed | Sep 01, 2026 | [Apply](https://armaninollp.wd1.myworkdayjobs.com/Armanino/job/St-Louis-Missouri/Summer-2027-IT-Audit-Intern--Denver-_JR104283) |
 | Booz Allen | University - 2027 Summer Games Cyber Security Intern - Annapolis Junction, MD 🇺🇸 | Security (general) | Annapolis Junction, MD | Linux | Sep 01, 2026 | [Apply](https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Annapolis-Junction-MD/University---2027-Summer-Games-Cyber-Security-Intern---Annapolis-Junction--MD_R0248414) |
 | Booz Allen | University - 2027 Summer Games Cyber Security Intern - Ft. Walton Beach, FL 🇺🇸 | Security (general) | Fort Walton Beach, FL | Linux | Sep 01, 2026 | [Apply](https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Fort-Walton-Beach-FL/University---2027-Summer-Games-Cyber-Security-Intern---Ft-Walton-Beach--FL_R0248416) |
 | HP IQ | Software Engineering Intern, Security Intern (Summer 2027) | Security (general) | San Francisco, CA | Python, Java, C++ | Aug 31, 2026 | [Apply](https://job-boards.greenhouse.io/hpiq/jobs/6116398004) |
@@ -176,7 +175,6 @@ This tracks security and networking internships specifically, because the major 
 | American Express ✓ | Campus Undergraduate Summer Internship Program - 2027 Cybersecurity Analyst, Enterprise Technology Services- New York, NY | Security (general) | New York, NY, United States | Python, Bash | Aug 17, 2026 | [Apply](https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011878) |
 | American Express ✓ | Campus Graduate Masters Summer Internship Program - 2027 Cybersecurity Analyst, Enterprise Technology Services- New York, NY | Security (general) | New York, NY, United States | Python, Bash | Aug 17, 2026 | [Apply](https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011893) |
 | American Express ✓ | Campus Undergraduate Summer Internship Program - 2027 Cybersecurity Analyst, Enterprise Technology Services- Atlanta, GA | Security (general) | Atlanta, GA, United States | Python, Bash | Aug 17, 2026 | [Apply](https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011908) |
-| American Express ✓ | Campus Graduate Masters Summer Internship Program - 2027 Cybersecurity Analyst, Enterprise Technology Services- Atlanta, GA | Security (general) | Atlanta, GA, United States | Python, Bash | Aug 17, 2026 | [Apply](https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011913) |
 
 ### Fall 2026  (6 employer-stated)
 
@@ -242,12 +240,14 @@ These postings never name a cycle, not in the title and not in the posting text,
 
 ## 🌐 Network & Infrastructure
 
-### Summer 2027  (199 employer-stated)
+### Summer 2027  (201 employer-stated)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
-| GlobalFoundries | AI/ML Systems Engineering Intern (Summer 2027) 🆕 | Systems & Cloud Infra | USA - Texas - Richardson | Python, PyTorch, TensorFlow, Pandas | Oct 19, 2026 | [Apply](https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---Texas---Richardson/AI-ML-Systems-Engineering-Intern--Summer-2027-_JR-2604051) |
+| Verizon Communications | Basking Ridge, NJ: V Teamer for a Day: Verizon Consumer Group: Call Routing Optimization Engineering Summer 2027 Internship 🆕 | Network / Telecom | Basking Ridge, New Jersey | LLMs | Oct 20, 2026 | [Apply](https://verizon.wd12.myworkdayjobs.com/verizon-careers/job/Basking-Ridge-New-Jersey/Basking-Ridge--NJ--V-Teamer-for-a-Day--Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102394) |
+| Verizon Communications | Verizon Consumer Group: Call Routing Optimization Engineering Summer 2027 Internship 🆕 | Network / Telecom | Basking Ridge, New Jersey | LLMs | Oct 20, 2026 | [Apply](https://verizon.wd12.myworkdayjobs.com/verizon-careers/job/Basking-Ridge-New-Jersey/Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102398) |
 | Rocket Lab | Ground Systems Engineering Intern Summer 2027 🇺🇸 🆕 | Systems & Cloud Infra | Stennis Space Center, MS | Python, C++, MATLAB | Oct 19, 2026 | [Apply](https://job-boards.greenhouse.io/rocketlab/jobs/8007202003) |
+| GlobalFoundries | AI/ML Systems Engineering Intern (Summer 2027) 🆕 | Systems & Cloud Infra | USA - Texas - Richardson | Python, PyTorch, TensorFlow, Pandas | Oct 19, 2026 | [Apply](https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---Texas---Richardson/AI-ML-Systems-Engineering-Intern--Summer-2027-_JR-2604051) |
 | Generac | Micro-Grid Systems Engineering Summer Intern 🆕 | Systems & Cloud Infra | USA - CO Fort Collins | No skills listed | Oct 19, 2026 | [Apply](https://generac.wd5.myworkdayjobs.com/external/job/USA---CO-Fort-Collins/Micro-Grid-Systems-Engineering-Summer-Intern_JR17432) |
 | WSP | Mechanical Engineering Intern (Mission Critical/Data Center) - Summer 2027 | Systems & Cloud Infra | Herndon, VA, United States | No skills listed | Oct 16, 2026 | [Apply](https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/97070) |
 | Northrop Grumman | 2027 Systems Engineering Intern - Aurora CO 🇺🇸 | Systems & Cloud Infra | United States-Colorado-Aurora | No skills listed | Oct 16, 2026 | [Apply](https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Colorado-Aurora/XMLNAME-2027-Systems-Engineering-Intern---Aurora-CO_R10256237) |
@@ -617,15 +617,17 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 | 🎯 Grant Thornton | Aug 25 | dropped Aug 25 · closed | 🗓️ dropped |
 | 🎯 MKS Instruments | Aug 26 | dropped Aug 26 · closed | 🗓️ dropped |
 
-_163 companies on the [full radar](https://ihrtkaii.github.io/secnet-internships/#radar). **163** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
+_164 companies on the [full radar](https://ihrtkaii.github.io/secnet-internships/#radar). **164** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
 <details>
-<summary><strong>Recently closed</strong>: 18 roles that left the list in the last 14 days</summary>
+<summary><strong>Recently closed</strong>: 20 roles that left the list in the last 14 days</summary>
 
 _Why each one left is in the last column, because the two reasons carry different evidence. **Gone from feed** = two consecutive complete reads of the employer's board no longer returned it (strong, but not the employer telling us directly). **Out of scope** = still posted, but it no longer passes our filters. That's our call, not theirs. **Not recorded** = closed before we started tracking the reason._
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Armanino | Summer 2027 IT Audit Intern (Saint Louis) | Summer 2027 | 2026-10-20 | gone from feed |
+| Western Alliance | Summer 2027 Internship - Phoenix, AZ - IT Security | Summer 2027 | 2026-10-20 | gone from feed |
 | Duke Energy | Local IT Support Internship (Huntersville, NC) - Summer 2027 | Summer 2027 | 2026-10-20 | gone from feed |
 | Meijer | Information Security Intern- Summer 2027 | Summer 2027 | 2026-10-20 | gone from feed |
 | GM financial | Intern - Business Systems Analyst | Summer 2027 | 2026-10-17 | gone from feed |
@@ -662,7 +664,7 @@ Internships posted per week, from each role's real published date - redrawn auto
 
 A small Python engine reads public company hiring feeds directly, keeps the roles that match the scope above, de-duplicates across sources, records each role's published date once (so it never shifts), and regenerates this page through GitHub Actions. It polls every company concurrently (async) with retry/backoff and per-host rate limits. The full source is in this repo.
 
-_Engine (last run): 4,600 of 5,078 registered boards returned successfully across 12 ATS platforms (96% of boards attempted, 90% of the full registry) · completed in 1009.7s · 587 board(s) returned a capped result set, so their roles were not eligible to be closed this run · employer or source-derived date on 99% of open roles._
+_Engine (last run): 4,683 of 5,078 registered boards returned successfully across 12 ATS platforms (98% of boards attempted, 92% of the full registry) · completed in 868.3s · 637 board(s) returned a capped result set, so their roles were not eligible to be closed this run · employer or source-derived date on 99% of open roles._
 
 ## How this list is built
 

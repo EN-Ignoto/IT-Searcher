@@ -5,8 +5,16 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-20T11:48:00Z</updated>
+  <updated>2026-10-20T17:14:43Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
+  <entry>
+    <id>urn:intern-engine:workday:hcsc:/job/IL---Chicago/Early-Careers---Governance--Risk---Compliance--GRC--Intern_R0059509</id>
+    <title>HCSC: Early Careers - Governance, Risk &amp; Compliance (GRC) Intern 🛂</title>
+    <link href="https://hcsc.wd1.myworkdayjobs.com/HCSC_External/job/IL---Chicago/Early-Careers---Governance--Risk---Compliance--GRC--Intern_R0059509"/>
+    <updated>2026-10-20T17:14:43Z</updated>
+    <category term="Not stated"/>
+    <summary>Not stated · GRC / Risk · IL - Chicago · sponsorship: no-sponsorship</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:archgroup:/job/Greensboro-NC-United-States-of-America/Security-Operations-Intern_R26_1016</id>
     <title>Arch Capital Group: Security Operations Intern</title>
@@ -798,13 +806,5 @@
     <updated>2026-10-06T20:29:41Z</updated>
     <category term="Not stated"/>
     <summary>Not stated · Systems &amp; Cloud Infra · New York · $45/hr · Python, Rust, Bash, Linux, Git</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:iex-interns:8173713</id>
-    <title>IEX: Cyber Security Analyst Intern</title>
-    <link href="https://job-boards.greenhouse.io/iex-interns/jobs/8173713"/>
-    <updated>2026-10-06T20:29:41Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Security (general) · New York · $35/hr · Python, Ruby, Bash</summary>
   </entry>
 </feed>

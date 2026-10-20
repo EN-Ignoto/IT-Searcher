@@ -1,6 +1,16 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "workday:costar:/job/US-VA-Arlington/Security-Engineer-Intern---Arlington--VA_R39727",
+      "workday:hcsc:/job/IL---Chicago/Early-Careers---Governance--Risk---Compliance--GRC--Intern_R0059509",
+      "workday:snc:/job/Lone-Tree-CO/Systems-Engineering-Intern--Summer-2027-_R0031166-1",
+      "workday:snc:/job/Lone-Tree-CO/Systems-Engineering-Intern--Summer-2027-_R0031180"
+    ],
+    "telegram": [
+      "workday:costar:/job/US-VA-Arlington/Security-Engineer-Intern---Arlington--VA_R39727",
+      "workday:hcsc:/job/IL---Chicago/Early-Careers---Governance--Risk---Compliance--GRC--Intern_R0059509",
+      "workday:snc:/job/Lone-Tree-CO/Systems-Engineering-Intern--Summer-2027-_R0031166-1",
+      "workday:snc:/job/Lone-Tree-CO/Systems-Engineering-Intern--Summer-2027-_R0031180"
+    ]
   }
 }

@@ -1,16 +1,6 @@
 {
   "pending": {
-    "discord": [
-      "ashby:reflect-orbital:8f4f8e74-b386-41b4-8154-7e5e50a34205",
-      "workday:globalfoundries:/job/USA---Texas---Richardson/AI-ML-Systems-Engineering-Intern--Summer-2027-_JR-2604051",
-      "workday:ptc:/job/Boston-MA-USA/Global-Security-Co-Op_JR112886",
-      "greenhouse:rocketlab:8007202003"
-    ],
-    "telegram": [
-      "ashby:reflect-orbital:8f4f8e74-b386-41b4-8154-7e5e50a34205",
-      "workday:globalfoundries:/job/USA---Texas---Richardson/AI-ML-Systems-Engineering-Intern--Summer-2027-_JR-2604051",
-      "workday:ptc:/job/Boston-MA-USA/Global-Security-Co-Op_JR112886",
-      "greenhouse:rocketlab:8007202003"
-    ]
+    "discord": [],
+    "telegram": []
   }
 }

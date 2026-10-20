@@ -1024,9 +1024,10 @@
      "role_ids": [
       "workday:globalfoundries:/job/USA---New-York---Malta/Cybersecurity-Intern--Summer-2027-_JR-2604459",
       "workday:globalfoundries:/job/USA---Texas---Austin/End-Markets-Intern--Communications-Infrastructure-and-Datacenter--Summer-2027-_JR-2604224",
+      "workday:globalfoundries:/job/USA---Texas---Richardson/AI-ML-Systems-Engineering-Intern--Summer-2027-_JR-2604051",
       "workday:globalfoundries:/job/USA---Texas---Richardson/Systems-Engineering-Intern--Summer-2027-_JR-2604044"
      ],
-     "count": 3
+     "count": 4
     }
    }
   },
@@ -1910,9 +1911,10 @@
       "greenhouse:rocketlab:7987046003",
       "greenhouse:rocketlab:7990138003",
       "greenhouse:rocketlab:7990270003",
-      "greenhouse:rocketlab:7990272003"
+      "greenhouse:rocketlab:7990272003",
+      "greenhouse:rocketlab:8007202003"
      ],
-     "count": 8
+     "count": 9
     }
    }
   },
@@ -2432,5 +2434,5 @@
    }
   }
  },
- "updated_at": "2026-10-19T20:50:47Z"
+ "updated_at": "2026-10-20T00:34:02Z"
 }

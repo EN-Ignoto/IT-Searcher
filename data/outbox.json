@@ -1,14 +1,6 @@
 {
   "pending": {
-    "discord": [
-      "workday:archgroup:/job/Greensboro-NC-United-States-of-America/Security-Operations-Intern_R26_1016",
-      "workday:verizon:/job/Basking-Ridge-New-Jersey/Basking-Ridge--NJ--V-Teamer-for-a-Day--Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102394",
-      "workday:verizon:/job/Basking-Ridge-New-Jersey/Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102398"
-    ],
-    "telegram": [
-      "workday:archgroup:/job/Greensboro-NC-United-States-of-America/Security-Operations-Intern_R26_1016",
-      "workday:verizon:/job/Basking-Ridge-New-Jersey/Basking-Ridge--NJ--V-Teamer-for-a-Day--Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102394",
-      "workday:verizon:/job/Basking-Ridge-New-Jersey/Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102398"
-    ]
+    "discord": [],
+    "telegram": []
   }
 }

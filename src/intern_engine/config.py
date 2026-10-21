@@ -89,7 +89,8 @@ def validate_config(raw: object) -> dict:
 
     cfg = {**DEFAULTS, **raw}
     cfg["cycles"] = _string_list(cfg.get("cycles"), "cycles")
-    if not all(re.fullmatch(r"(?:Summer|Fall|Spring|Winter) 20\d{2}", c)
+    if not all((cfg.get("opportunity_scope") == "it" and c in {"Orlando area", "Remote — Florida / US", "Stretch — Orlando area", "Stretch — remote"})
+               or re.fullmatch(r"(?:Summer|Fall|Spring|Winter) 20\d{2}", c)
                for c in cfg["cycles"]):
         raise ConfigError("cycles must use labels such as 'Summer 2027'")
 
@@ -98,6 +99,9 @@ def validate_config(raw: object) -> dict:
     unknown = [r for r in cfg["regions"] if r.casefold() not in supported]
     if unknown:
         raise ConfigError(f"unsupported regions: {', '.join(unknown)}")
+
+    if cfg.get("opportunity_scope", "legacy") not in {"legacy", "it"}:
+        raise ConfigError("opportunity_scope must be legacy or it")
 
     if cfg.get("role_scope") not in {"tech", "all"}:
         raise ConfigError("role_scope must be 'tech' or 'all'")

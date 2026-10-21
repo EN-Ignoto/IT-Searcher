@@ -44,6 +44,8 @@ jobs:
         run: actionlint
       - name: Tests (pytest)
         run: python -m pytest -q
+      - name: Render artifacts for the configured scope
+        run: python run.py render
       - name: Verify committed artifacts match the store
         env:
           # CI validates artifact identity/arithmetic without making a code PR

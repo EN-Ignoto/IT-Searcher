@@ -2119,6 +2119,18 @@
     }
    }
   },
+  "smith nephew": {
+   "name": "Smith+Nephew",
+   "cycles": {
+    "Summer 2027": {
+     "first_posted": "2026-10-21",
+     "role_ids": [
+      "workday:smithnephew:/job/Andover-MA/Intern-Systems-Engineering_R92955-1"
+     ],
+     "count": 1
+    }
+   }
+  },
   "solar turbines": {
    "name": "Solar Turbines",
    "cycles": {
@@ -2501,5 +2513,5 @@
    }
   }
  },
- "updated_at": "2026-10-21T05:04:46Z"
+ "updated_at": "2026-10-21T11:59:33Z"
 }

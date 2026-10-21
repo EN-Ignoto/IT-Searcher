@@ -15,7 +15,7 @@ import os
 from datetime import UTC, datetime, timedelta
 from xml.sax.saxutils import escape, quoteattr
 
-from . import config, filters, grouping, h1b, paths, radar, sponsorship
+from . import config, filters, filters_it, grouping, h1b, paths, radar, sponsorship
 
 # Big enough that a burst day (or a role that opened and closed between two
 # reader polls) still fits; 50 could drop roles from the feed unseen.
@@ -93,6 +93,11 @@ def write_feed(store_data: dict, data_as_of: str | None = None) -> int:
     )
     entries = []
     for record in store_data.values():
+        if config.load_config().get("opportunity_scope") == "it" and (
+            not filters_it.is_opportunity(record.get("title") or "")
+            or not filters_it.bucket(record.get("title") or "", record.get("location") or "")
+        ):
+            continue
         try:
             seen = datetime.strptime(_first_seen(record)[:19], "%Y-%m-%dT%H:%M:%S") \
                 .replace(tzinfo=UTC)

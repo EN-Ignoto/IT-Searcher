@@ -94,7 +94,8 @@ async def fetch(company: dict, net: Net) -> Fetch:
 
     jobs: dict[str, Job] = {}  # keyed by job id: the keyword searches overlap
     incomplete_reason: str | None = None
-    for keyword in _KEYWORDS:
+    for keyword in (_KEYWORDS + (("help desk", "service desk", "IT support", "IT technician", "junior", "entry level")
+                        if company.get("opportunity_scope") == "it" else ())):
         exhausted = False
         offset = 0
         trusted_total: int | None = None

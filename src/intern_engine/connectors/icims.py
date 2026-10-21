@@ -119,7 +119,8 @@ async def fetch(company: dict, net: Net) -> Fetch:
     jobs: dict[str, Job] = {}   # the two search terms overlap
     incomplete_reason: str | None = None
 
-    for term in _SEARCH_TERMS:
+    for term in (_SEARCH_TERMS + (("help desk", "service desk", "IT support", "IT technician", "junior", "entry level")
+                        if company.get("opportunity_scope") == "it" else ())):
         exhausted = False
         seen_pages: set[tuple[str, ...]] = set()
         for page in range(_MAX_PAGES):

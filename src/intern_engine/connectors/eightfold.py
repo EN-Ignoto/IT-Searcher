@@ -63,7 +63,7 @@ async def fetch(company: dict, net: Net) -> Fetch:
     while start < _MAX:
         params = {
             "domain": company.get("domain", ""),
-            "query": "intern",
+            "query": "" if company.get("opportunity_scope") == "it" else "intern",
             "num": _PAGE,
             "start": start,
             "sort_by": "timestamp",

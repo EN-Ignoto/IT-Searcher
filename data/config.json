@@ -1,22 +1,28 @@
 {
   "cycles": [
-    "Summer 2027",
-    "Fall 2026"
+    "Orlando area",
+    "Remote \u2014 Florida / US",
+    "Stretch \u2014 Orlando area",
+    "Stretch \u2014 remote"
   ],
   "regions": [
     "US"
   ],
   "role_scope": "tech",
-  "max_age_days": 270,
+  "max_age_days": 120,
   "max_per_company": 10,
   "allowlist_only": false,
   "include_international": false,
   "section_limits": {
-    "Summer 2027": 300,
-    "Fall 2026": 150
+    "Orlando area": 200,
+    "Remote \u2014 Florida / US": 200,
+    "Stretch \u2014 Orlando area": 200,
+    "Stretch \u2014 remote": 200
   },
   "supabase_url": "",
   "supabase_publishable_key": "",
   "infer_undated": true,
-  "infer_max_age_days": 120
+  "infer_max_age_days": 120,
+  "opportunity_scope": "it",
+  "default_cycle": "Orlando area"
 }

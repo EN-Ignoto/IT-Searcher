@@ -190,6 +190,45 @@
     }
    }
   },
+  "allstate insurance": {
+   "name": "Allstate Insurance Company",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-06-14",
+     "role_ids": [
+      "workday:allstate:/job/US---Remote/Cloud-Product-Security-Engineer_R29721",
+      "workday:allstate:/job/US---Remote/FinOps-Engineer--Cloud---Kubernetes-Optimization_R35621",
+      "workday:allstate:/job/US---Remote/Platform-Consultant---Cyber-Platforms--Data----Tooling_R31084",
+      "workday:allstate:/job/USA---TX-Remote/AI-Cloud-Platform-Engineer_R35902"
+     ],
+     "count": 4
+    }
+   }
+  },
+  "alphasense": {
+   "name": "AlphaSense",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-08-20",
+     "role_ids": [
+      "greenhouse:alphasense:8495375002"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "alteryx": {
+   "name": "Alteryx",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-10",
+     "role_ids": [
+      "workday:alteryx:/job/US---Remote/InfoSec-Analyst_R12418"
+     ],
+     "count": 1
+    }
+   }
+  },
   "amazon": {
    "name": "Amazon",
    "cycles": {
@@ -242,6 +281,18 @@
     }
    }
   },
+  "amplify": {
+   "name": "Amplify",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-19",
+     "role_ids": [
+      "ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f"
+     ],
+     "count": 1
+    }
+   }
+  },
   "anduril": {
    "name": "Anduril",
    "cycles": {
@@ -249,6 +300,18 @@
      "first_posted": "2026-10-05",
      "role_ids": [
       "greenhouse:andurilindustries:5257690007"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "anthropic": {
+   "name": "Anthropic",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-29",
+     "role_ids": [
+      "greenhouse:anthropic:5439369008"
      ],
      "count": 1
     }
@@ -278,6 +341,30 @@
     }
    }
   },
+  "aptiv": {
+   "name": "Aptiv",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-09",
+     "role_ids": [
+      "workday:aptiv:/job/USA-Remote-Worksite/Linux-Development-Engineer---eLxr-Distribution_J000693019"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "arcadis": {
+   "name": "Arcadis",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-19",
+     "role_ids": [
+      "oracle:ebcs.fa.em2.oraclecloud.com:45248"
+     ],
+     "count": 1
+    }
+   }
+  },
   "arch capital group": {
    "name": "Arch Capital Group",
    "cycles": {
@@ -287,6 +374,43 @@
       "workday:archgroup:/job/Greensboro-NC-United-States-of-America/Security-Operations-Intern_R26_1016"
      ],
      "count": 1
+    }
+   }
+  },
+  "arista networks": {
+   "name": "Arista Networks",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-17",
+     "role_ids": [
+      "smartrecruiters:AristaNetworks:744000150196345"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "arize ai": {
+   "name": "Arize AI",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-21",
+     "role_ids": [
+      "greenhouse:arizeai:6203635004"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "armada": {
+   "name": "Armada",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-08-28",
+     "role_ids": [
+      "greenhouse:armada:5409777008",
+      "greenhouse:armada:5439105008"
+     ],
+     "count": 2
     }
    }
   },
@@ -429,6 +553,32 @@
     }
    }
   },
+  "beyondtrust": {
+   "name": "BeyondTrust",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-08",
+     "role_ids": [
+      "greenhouse:beyondtrust:8185856",
+      "greenhouse:beyondtrust:8256040",
+      "greenhouse:beyondtrust:8279128"
+     ],
+     "count": 3
+    }
+   }
+  },
+  "bigcommerce": {
+   "name": "BigCommerce",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-20",
+     "role_ids": [
+      "workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100"
+     ],
+     "count": 1
+    }
+   }
+  },
   "bluecross blueshield of nebraska": {
    "name": "BlueCross BlueShield of Nebraska",
    "cycles": {
@@ -452,6 +602,24 @@
       "oracle:eofe.fa.us2.oraclecloud.com:81277"
      ],
      "count": 3
+    },
+    "Orlando area": {
+     "first_posted": "2026-10-13",
+     "role_ids": [
+      "oracle:eofe.fa.us2.oraclecloud.com:82292"
+     ],
+     "count": 1
+    },
+    "Stretch — Orlando area": {
+     "first_posted": "2026-10-15",
+     "role_ids": [
+      "oracle:eofe.fa.us2.oraclecloud.com:76056",
+      "oracle:eofe.fa.us2.oraclecloud.com:82202",
+      "oracle:eofe.fa.us2.oraclecloud.com:82730",
+      "oracle:eofe.fa.us2.oraclecloud.com:82801",
+      "oracle:eofe.fa.us2.oraclecloud.com:82806"
+     ],
+     "count": 5
     }
    }
   },
@@ -519,6 +687,19 @@
      "role_ids": [
       "workday:bracco:/job/USA-Eden-Prairie-Minnesota-55344/Product-Security-Engineering-Intern_JR100318",
       "workday:bracco:/job/USA-Eden-Prairie-Minnesota-55344/Systems-Engineering-Co-op-Intern_JR100323"
+     ],
+     "count": 2
+    }
+   }
+  },
+  "brg": {
+   "name": "BRG",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2025-11-14",
+     "role_ids": [
+      "workday:thinkbrg:/job/Remote---USA/Ai-Lab-Infrastructure-Engineer_JR100335",
+      "workday:thinkbrg:/job/Remote---USA/Consultant---Cybersecurity_JR101155"
      ],
      "count": 2
     }
@@ -593,6 +774,18 @@
     }
    }
   },
+  "cadwell": {
+   "name": "Cadwell",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-21",
+     "role_ids": [
+      "greenhouse:cadwell:4398741009"
+     ],
+     "count": 1
+    }
+   }
+  },
   "cai": {
    "name": "CAI",
    "cycles": {
@@ -600,6 +793,18 @@
      "first_posted": "2026-09-15",
      "role_ids": [
       "workday:cai:/job/California/Cybersecurity-Analyst-Intern_R8488"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "capital technology group": {
+   "name": "Capital Technology Group",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-19",
+     "role_ids": [
+      "greenhouse:capitaltg:5268774007"
      ],
      "count": 1
     }
@@ -617,6 +822,19 @@
     }
    }
   },
+  "cdw": {
+   "name": "CDW Corporation",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-09",
+     "role_ids": [
+      "workday:cdw:/job/Remote--USA/Consulting-Solution-Executive---Hybrid-Infrastructure_R26_00002797",
+      "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00002917"
+     ],
+     "count": 2
+    }
+   }
+  },
   "centene": {
    "name": "Centene",
    "cycles": {
@@ -628,6 +846,18 @@
       "workday:centene:/job/Remote-MO/IAM-Analyst-Intern--Undergraduate---Summer-2027-_1667747"
      ],
      "count": 3
+    }
+   }
+  },
+  "cerebras": {
+   "name": "Cerebras",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-21",
+     "role_ids": [
+      "ashby:cerebras:84a9df6b-fe96-4711-8106-971d829b6dc2"
+     ],
+     "count": 1
     }
    }
   },
@@ -652,6 +882,20 @@
       "greenhouse:charlesriverassociates:8128811"
      ],
      "count": 1
+    }
+   }
+  },
+  "ciena": {
+   "name": "Ciena",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-08-27",
+     "role_ids": [
+      "workday:ciena:/job/Remote-US-CA/Network-Solutions-Engineer---Onsite-at-Vandenberg-Space-Force-Base_R031478",
+      "workday:ciena:/job/Remote-US-IL/Network-Solutions-Engineer--On-site--Scott-Air-Force-Base--IL_R031414",
+      "workday:ciena:/job/Remote-US-MD/Network-Solutions-Engineer---Onsite-at-Scott-AFB--IL_R031595"
+     ],
+     "count": 3
     }
    }
   },
@@ -718,6 +962,18 @@
     }
    }
   },
+  "college board": {
+   "name": "College Board",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-21",
+     "role_ids": [
+      "workday:collegeboard:/job/Remote---USA/Cyber-Threat-Hunter_REQ002976"
+     ],
+     "count": 1
+    }
+   }
+  },
   "commonwealth fusion systems": {
    "name": "Commonwealth Fusion Systems",
    "cycles": {
@@ -740,6 +996,18 @@
       "workday:conagrabrands:/job/Omaha-Nebraska/IT-Infrastructure-Internship---Summer-2027_Req-039788"
      ],
      "count": 2
+    }
+   }
+  },
+  "conduent": {
+   "name": "Conduent",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-24",
+     "role_ids": [
+      "oracle:egua.fa.us2.oraclecloud.com:25591"
+     ],
+     "count": 1
     }
    }
   },
@@ -780,6 +1048,19 @@
       "workday:cox:/job/Atlanta-GA/Infrastructure-Operations-Intern---Summer-2027_R202682357"
      ],
      "count": 4
+    }
+   }
+  },
+  "deepgram": {
+   "name": "Deepgram",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-07-03",
+     "role_ids": [
+      "ashby:deepgram:d75d6f84-1d54-4354-a364-609b48267658",
+      "ashby:deepgram:f424ef6a-c27f-4984-9e77-40a1ad16ae28"
+     ],
+     "count": 2
     }
    }
   },
@@ -849,6 +1130,30 @@
     }
    }
   },
+  "echodyne": {
+   "name": "Echodyne",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-09",
+     "role_ids": [
+      "greenhouse:echodynecorp:4719776006"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "eight sleep": {
+   "name": "Eight Sleep",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-09",
+     "role_ids": [
+      "ashby:eightsleep:0ae8cdbe-8100-4f59-b702-16d836ab5550"
+     ],
+     "count": 1
+    }
+   }
+  },
   "elanco": {
    "name": "Elanco",
    "cycles": {
@@ -886,6 +1191,18 @@
     }
    }
   },
+  "evercommerce": {
+   "name": "EverCommerce",
+   "cycles": {
+    "Stretch — Orlando area": {
+     "first_posted": "2026-10-14",
+     "role_ids": [
+      "workday:evercommerce:/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1"
+     ],
+     "count": 1
+    }
+   }
+  },
   "expedia group": {
    "name": "Expedia Group",
    "cycles": {
@@ -910,6 +1227,18 @@
       "workday:rb:/job/Cleveland-OH/TS---Application-Security-Intern---2027_R-0000033625"
      ],
      "count": 4
+    }
+   }
+  },
+  "ferrovial": {
+   "name": "Ferrovial",
+   "cycles": {
+    "Stretch — Orlando area": {
+     "first_posted": "2026-10-12",
+     "role_ids": [
+      "workday:ferrovial:/job/Kissimmee-FL/Webber---Landscape-Technician---Infrastructure-Management_JR19742"
+     ],
+     "count": 1
     }
    }
   },
@@ -1028,6 +1357,19 @@
     }
    }
   },
+  "gitlab": {
+   "name": "GitLab",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-25",
+     "role_ids": [
+      "greenhouse:gitlab:8831350002",
+      "greenhouse:gitlab:8889193002"
+     ],
+     "count": 2
+    }
+   }
+  },
   "globalfoundries": {
    "name": "GlobalFoundries",
    "cycles": {
@@ -1070,6 +1412,41 @@
       "oracle:ehzq.fa.us2.oraclecloud.com:115752"
      ],
      "count": 5
+    }
+   }
+  },
+  "guidehouse": {
+   "name": "Guidehouse",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-09",
+     "role_ids": [
+      "workday:guidehouse:/job/US---Remote-Any-location/Cloud-and-Health-AI-FinOps-and-Technology-Value-Optimization_43870",
+      "workday:guidehouse:/job/US---Remote-Any-location/Database-Engineer---Oracle---Cloud-Platforms_45321",
+      "workday:guidehouse:/job/US---Remote-Any-location/Information-Security-Systems-Officer--ISSO-_44761"
+     ],
+     "count": 3
+    },
+    "Remote — Florida / US": {
+     "first_posted": "2026-09-23",
+     "role_ids": [
+      "workday:guidehouse:/job/US---Remote-Any-location/IT-Service-Desk-Specialist_41730",
+      "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44797",
+      "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798"
+     ],
+     "count": 3
+    }
+   }
+  },
+  "handshake": {
+   "name": "Handshake",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-05",
+     "role_ids": [
+      "ashby:handshake:7f607c0b-291d-4c17-9897-6d8c5d35eb00"
+     ],
+     "count": 1
     }
    }
   },
@@ -1255,6 +1632,26 @@
     }
    }
   },
+  "impactadvisors": {
+   "name": "Impactadvisors",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-09-02",
+     "role_ids": [
+      "workday:impactadvisors:/job/US-Remote/Cloud-ERP-Implementation-Intern_R101899",
+      "workday:impactadvisors:/job/US-Remote/Entry-Level-IT-Advisory-Consultant_R101837"
+     ],
+     "count": 2
+    },
+    "Stretch — remote": {
+     "first_posted": "2026-10-15",
+     "role_ids": [
+      "workday:impactadvisors:/job/US-Remote/IT-Infrastructure-Design-Engineer_R102100"
+     ],
+     "count": 1
+    }
+   }
+  },
   "ing": {
    "name": "ING",
    "cycles": {
@@ -1274,6 +1671,30 @@
      "first_posted": "2026-09-23",
      "role_ids": [
       "workday:insulet:/job/San-Diego-California/Intern--DevOps-Engineer--June-August-2027--Onsite-_REQ-2026-18202"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "intapp": {
+   "name": "Intapp",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-21",
+     "role_ids": [
+      "workday:intapp:/job/US-AL-Remote/Cloud-Platform-Engineer_R2025433-1"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "intelerad": {
+   "name": "Intelerad",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-14",
+     "role_ids": [
+      "smartrecruiters:Intelerad:744000155587469"
      ],
      "count": 1
     }
@@ -1313,6 +1734,13 @@
       "workday:jabil:/job/St-PetersburgTampa-FL/Computer-Systems-Analyst-Intern_J2464586-1"
      ],
      "count": 1
+    },
+    "Stretch — remote": {
+     "first_posted": "2026-10-02",
+     "role_ids": [
+      "workday:jabil:/job/Remote---USA/Onsite-Data-Center-Inventory-Specialist_J2466794"
+     ],
+     "count": 1
     }
    }
   },
@@ -1340,6 +1768,13 @@
       "workday:labcorp:/job/Indianapolis-IN/Intern---IT-Operations_2631321"
      ],
      "count": 3
+    },
+    "Stretch — Orlando area": {
+     "first_posted": "2026-10-20",
+     "role_ids": [
+      "workday:labcorp:/job/Kissimmee-FL/Phlebotomist-Full-Time-Floater-Kissimmee-St-Cloud-FL_2634838"
+     ],
+     "count": 1
     }
    }
   },
@@ -1409,6 +1844,52 @@
       "workday:leidos:/job/Whitehall-OH/Cybersecurity-Analyst-Intern_R-00190669"
      ],
      "count": 15
+    },
+    "Remote — Florida / US": {
+     "first_posted": "2026-09-28",
+     "role_ids": [
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Cloud-Engineering-Intern_R-00194668",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Data-Center-Design-Intern_R-00193261",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/IT-Desktop-Engineering-Intern_R-00194524",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057"
+     ],
+     "count": 4
+    },
+    "Stretch — remote": {
+     "first_posted": "2026-10-06",
+     "role_ids": [
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Cyber-Security-Subject-Matter-Expert_R-00194019"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "leland": {
+   "name": "Leland",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-07-15",
+     "role_ids": [
+      "ashby:leland:35e87638-d6d9-4135-bb96-ebb61404a2d9",
+      "ashby:leland:65051650-cb59-419e-969b-58028aec69bf",
+      "ashby:leland:bb9e0dca-a9aa-48eb-b09c-936ea70facd3"
+     ],
+     "count": 3
+    }
+   }
+  },
+  "link solutions": {
+   "name": "Link Solutions",
+   "cycles": {
+    "Stretch — Orlando area": {
+     "first_posted": "2026-09-30",
+     "role_ids": [
+      "smartrecruiters:LinkSolutionsInc:744000152736767",
+      "smartrecruiters:LinkSolutionsInc:744000152747719",
+      "smartrecruiters:LinkSolutionsInc:744000154130955",
+      "smartrecruiters:LinkSolutionsInc:744000156069440"
+     ],
+     "count": 4
     }
    }
   },
@@ -1596,6 +2077,19 @@
     }
    }
   },
+  "mirantis": {
+   "name": "Mirantis",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-07-17",
+     "role_ids": [
+      "smartrecruiters:Mirantis:744000138380407",
+      "smartrecruiters:Mirantis:744000149056099"
+     ],
+     "count": 2
+    }
+   }
+  },
   "mks instruments": {
    "name": "MKS Instruments",
    "cycles": {
@@ -1603,6 +2097,18 @@
      "first_posted": "2026-08-26",
      "role_ids": [
       "workday:mksinst:/job/Andover-MA/XMLNAME-2027-Summer-BI-Data-Analytics-IT-Intern_R20657"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "molina healthcare": {
+   "name": "Molina Healthcare",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-08-28",
+     "role_ids": [
+      "oracle:hckd.fa.us2.oraclecloud.com:2038964"
      ],
      "count": 1
     }
@@ -1680,6 +2186,18 @@
     }
    }
   },
+  "nash": {
+   "name": "Nash",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-20",
+     "role_ids": [
+      "ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861"
+     ],
+     "count": 1
+    }
+   }
+  },
   "national information solutions cooperative nisc": {
    "name": "National Information Solutions Cooperative (NISC)",
    "cycles": {
@@ -1718,6 +2236,18 @@
       "workday:alliance:/job/Franklin-Tennessee---United-States-of-America/IS-IT-Intern---Summer-2027---Franklin--TN_R00214212"
      ],
      "count": 4
+    }
+   }
+  },
+  "northab": {
+   "name": "NorthAB",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-30",
+     "role_ids": [
+      "workday:nabancard:/job/US---Remote/DevOps-Engineer_JR101983"
+     ],
+     "count": 1
     }
    }
   },
@@ -1810,6 +2340,30 @@
     }
    }
   },
+  "one brief": {
+   "name": "One Brief",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-07-24",
+     "role_ids": [
+      "ashby:onebrief:37b29b15-09e4-41fb-90ef-848d00f00f25"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "openai": {
+   "name": "OpenAI",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-07-22",
+     "role_ids": [
+      "ashby:openai:6ba0ce24-ad32-4c3b-b49c-b373be9a8480"
+     ],
+     "count": 1
+    }
+   }
+  },
   "oshkosh": {
    "name": "Oshkosh",
    "cycles": {
@@ -1817,6 +2371,18 @@
      "first_posted": "2026-08-31",
      "role_ids": [
       "workday:oshkoshcorporation:/job/Dodge-Center-Minnesota-United-States/Digital-Technology-Intern---Systems-Analyst--Summer-2027-_R49791"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "pdi technologies": {
+   "name": "PDI Technologies",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-13",
+     "role_ids": [
+      "lever:pditechnologies:56f66a9d-8766-40bd-91bc-3be14ba8cd72"
      ],
      "count": 1
     }
@@ -1856,6 +2422,13 @@
       "workday:philips:/job/San-Diego-California-United-States/Intern---Systems-Engineering--Sustaining---Design-Controls----San-Diego--CA---Summer-2027_593052"
      ],
      "count": 2
+    },
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-02",
+     "role_ids": [
+      "workday:philips:/job/United-States-of-America---Remote-Based-United-States/Technical-Support-Engineer--New-England-_588904"
+     ],
+     "count": 1
     }
    }
   },
@@ -1874,6 +2447,30 @@
     }
    }
   },
+  "planet": {
+   "name": "Planet",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-13",
+     "role_ids": [
+      "greenhouse:planetlabs:8221849"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "planet technologies": {
+   "name": "Planet Technologies",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-07-08",
+     "role_ids": [
+      "lever:planettechnologies:5ef319be-c6dc-4a79-b52f-8b82881e81ed"
+     ],
+     "count": 1
+    }
+   }
+  },
   "protective life": {
    "name": "Protective Life",
    "cycles": {
@@ -1881,6 +2478,18 @@
      "first_posted": "2026-09-21",
      "role_ids": [
       "lever:protective:32a8a257-c5d4-4b77-bf0b-d08dbb93b752"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "ptc": {
+   "name": "PTC",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-24",
+     "role_ids": [
+      "workday:ptc:/job/Remote-USA/Cloud-Service-Engineer_JR112727"
      ],
      "count": 1
     }
@@ -1894,6 +2503,45 @@
      "role_ids": [
       "workday:qtsdatacenters:/job/Irving-TX/Summer-2027-Internship--Internal-Data-Center-Infrastructure-Projects_R2026-1906",
       "workday:qtsdatacenters:/job/US-GA-Atlanta-Suwanee-1-DC1/Summer-2027-Internship--Information-Security-Operations-Analyst_R2026-2273"
+     ],
+     "count": 2
+    }
+   }
+  },
+  "ramp": {
+   "name": "Ramp",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-07-07",
+     "role_ids": [
+      "ashby:ramp:13fe8467-b624-4f30-8aad-af441dfb1797",
+      "ashby:ramp:6a3f42e6-00d6-4e9d-9caa-9663ffac6d53"
+     ],
+     "count": 2
+    }
+   }
+  },
+  "republic services": {
+   "name": "Republic Services",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-01",
+     "role_ids": [
+      "workday:republic:/job/Remote---USA/Field-IT-Engineer_R-185804-1",
+      "workday:republic:/job/Remote---USA/Field-IT-Engineer_R-185805-1"
+     ],
+     "count": 2
+    }
+   }
+  },
+  "resolve tech solutions": {
+   "name": "Resolve Tech Solutions",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2025-10-15",
+     "role_ids": [
+      "workday:resolvetech:/job/US-Remote---NY/Microsoft-and-Cloud-Billing-Specialist_R1224",
+      "workday:resolvetech:/job/US-Remote---TX/Devops-Engineer_R1120"
      ],
      "count": 2
     }
@@ -2023,6 +2671,38 @@
     }
    }
   },
+  "runpod": {
+   "name": "Runpod",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-07-10",
+     "role_ids": [
+      "ashby:runpod:1d14340c-c9bd-4754-80f4-5c83980cd413",
+      "ashby:runpod:475e7a21-59af-4ef4-b2a3-6a0e60fc1356"
+     ],
+     "count": 2
+    },
+    "Remote — Florida / US": {
+     "first_posted": "2026-07-30",
+     "role_ids": [
+      "ashby:runpod:4843a2de-5094-4157-b2b1-ab7bb8876f67"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "ryder system": {
+   "name": "Ryder System",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-05",
+     "role_ids": [
+      "workday:ryder:/job/USA---Coral-Gables-FL-HQ/Information-Technology-Corporate-Fellowship---Hiring-Our-Heroes---Remote_R185920"
+     ],
+     "count": 1
+    }
+   }
+  },
   "s c electric": {
    "name": "S&C Electric Company",
    "cycles": {
@@ -2051,6 +2731,18 @@
     }
    }
   },
+  "salesloft": {
+   "name": "Salesloft",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-08-10",
+     "role_ids": [
+      "greenhouse:salesloft:8119953"
+     ],
+     "count": 1
+    }
+   }
+  },
   "schonfeld": {
    "name": "Schonfeld",
    "cycles": {
@@ -2071,6 +2763,18 @@
      "first_posted": "2026-09-14",
      "role_ids": [
       "oracle:ekbq.fa.em2.oraclecloud.com:2061"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "shi international": {
+   "name": "SHI International",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-19",
+     "role_ids": [
+      "workday:shi:/job/US---Remote/Solutions-Engineer---Cloud---DevOps_JR3909-1"
      ],
      "count": 1
     }
@@ -2116,6 +2820,20 @@
       "ashby:skydio:1ac972b1-8094-4765-8869-63e1c4d50dea"
      ],
      "count": 1
+    },
+    "Stretch — remote": {
+     "first_posted": "2026-07-15",
+     "role_ids": [
+      "ashby:skydio:b00f626d-d88c-49b1-8868-7cc8a1aaf579"
+     ],
+     "count": 1
+    },
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-02",
+     "role_ids": [
+      "ashby:skydio:3ac81a34-b7fe-4142-9d29-12bcc1376182"
+     ],
+     "count": 1
     }
    }
   },
@@ -2131,6 +2849,18 @@
     }
    }
   },
+  "snyk": {
+   "name": "Snyk",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-09-03",
+     "role_ids": [
+      "workday:snyk:/job/United-States---NC-Remote/Senior-Technical-Support-Engineer_JR100795"
+     ],
+     "count": 1
+    }
+   }
+  },
   "solar turbines": {
    "name": "Solar Turbines",
    "cycles": {
@@ -2138,6 +2868,26 @@
      "first_posted": "2026-07-23",
      "role_ids": [
       "workday:cat:/job/San-Diego-California/XMLNAME-2027-IT-Intern_R0000381898"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "sosi": {
+   "name": "SOSi",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-07-01",
+     "role_ids": [
+      "smartrecruiters:SOSi1:3743990013881284",
+      "smartrecruiters:SOSi1:3743990015353726"
+     ],
+     "count": 2
+    },
+    "Remote — Florida / US": {
+     "first_posted": "2026-06-30",
+     "role_ids": [
+      "smartrecruiters:SOSi1:3743990013868576"
      ],
      "count": 1
     }
@@ -2181,6 +2931,44 @@
     }
    }
   },
+  "stripe": {
+   "name": "Stripe",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-14",
+     "role_ids": [
+      "greenhouse:stripe:8171095"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "supplyhouse com": {
+   "name": "SupplyHouse.com",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-08-18",
+     "role_ids": [
+      "greenhouse:supplyhouse:6140301004"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "tailscale": {
+   "name": "Tailscale",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-06-30",
+     "role_ids": [
+      "greenhouse:tailscale:4710785005",
+      "greenhouse:tailscale:4726153005",
+      "greenhouse:tailscale:4733404005"
+     ],
+     "count": 3
+    }
+   }
+  },
   "tarrant regional water district": {
    "name": "Tarrant Regional Water District",
    "cycles": {
@@ -2214,6 +3002,30 @@
      "first_posted": "2026-09-01",
      "role_ids": [
       "oracle:ebgj.fa.us2.oraclecloud.com:253297"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "thumbtack": {
+   "name": "Thumbtack",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-02",
+     "role_ids": [
+      "ashby:thumbtack:2c3b12ee-1729-4b2b-ad4d-d753c87bec03"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "tines": {
+   "name": "Tines",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-15",
+     "role_ids": [
+      "greenhouse:tines:6225649004"
      ],
      "count": 1
     }
@@ -2256,6 +3068,18 @@
     }
    }
   },
+  "turner townsend": {
+   "name": "Turner & Townsend",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-20",
+     "role_ids": [
+      "smartrecruiters:TurnerTownsend:744000156636625"
+     ],
+     "count": 1
+    }
+   }
+  },
   "u s bank": {
    "name": "U.S. Bank",
    "cycles": {
@@ -2265,6 +3089,20 @@
       "workday:usbank:/job/Cincinnati-OH/XMLNAME-2027-Information-Security-Summer-Intern_2026-0025770"
      ],
      "count": 1
+    }
+   }
+  },
+  "unisys": {
+   "name": "Unisys",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-06",
+     "role_ids": [
+      "workday:unisys:/job/USA-CT-Remote/IBM-MQ-System-Administrator_REQ576368",
+      "workday:unisys:/job/USA-Remote/L2-NOC--Windows--Night-Shift_REQ576447",
+      "workday:unisys:/job/USA-Remote/Level-2-NOC-Systems-Administrator---Network-Focus_REQ574037"
+     ],
+     "count": 3
     }
    }
   },
@@ -2278,6 +3116,27 @@
       "workday:hcmportal:/job/US---UPS-TECHNOLOGY-HEADQUARTERS--DATACENTER-NJRAR/UPS-Information-Security-Summer-2027-Internship---NJ_R26029761"
      ],
      "count": 2
+    }
+   }
+  },
+  "university of central florida": {
+   "name": "University of Central Florida",
+   "cycles": {
+    "Stretch — Orlando area": {
+     "first_posted": "2026-10-16",
+     "role_ids": [
+      "workday:ucf:/job/Orlando-FL-Main-Campus/Information-Security-Professional-II_R114453"
+     ],
+     "count": 1
+    },
+    "Orlando area": {
+     "first_posted": "2026-10-14",
+     "role_ids": [
+      "workday:ucf:/job/Orlando-FL-Main-Campus/IT-Client-Support-Specialist-II_R114400",
+      "workday:ucf:/job/Orlando-FL-Main-Campus/IT-Client-Support-Specialist-II_R114411",
+      "workday:ucf:/job/Orlando-FL-Main-Campus/Systems-Administrator-I_R114410"
+     ],
+     "count": 3
     }
    }
   },
@@ -2300,6 +3159,18 @@
      "first_posted": "2026-09-28",
      "role_ids": [
       "workday:upbound:/job/Plano-TX/Cybersecurity-Intern_R-100776"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "usertesting": {
+   "name": "UserTesting",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-21",
+     "role_ids": [
+      "workday:usertesting:/job/Remote---US/IT-System-Administrator---AI_R-101222"
      ],
      "count": 1
     }
@@ -2352,6 +3223,30 @@
     }
    }
   },
+  "velera": {
+   "name": "Velera",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-09",
+     "role_ids": [
+      "workday:velera:/job/Remote-USA/Network-Administrator-II---REMOTE_9700"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "vercel": {
+   "name": "Vercel",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-06-25",
+     "role_ids": [
+      "greenhouse:vercel:6102335004"
+     ],
+     "count": 1
+    }
+   }
+  },
   "verizon communications": {
    "name": "Verizon Communications",
    "cycles": {
@@ -2376,6 +3271,18 @@
      "first_posted": "2026-08-25",
      "role_ids": [
       "greenhouse:verkada:5213881007"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "voyager technologies": {
+   "name": "Voyager Technologies",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-10-03",
+     "role_ids": [
+      "greenhouse:voyagertechnologiesinc:4410292009"
      ],
      "count": 1
     }
@@ -2414,6 +3321,18 @@
      "first_posted": "2026-09-21",
      "role_ids": [
       "workday:westernalliancebank:/job/Phoenix-AZ/Summer-2027-Internship---Phoenix--AZ---IT-Security_R13775"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "wiz": {
+   "name": "Wiz",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-09-24",
+     "role_ids": [
+      "greenhouse:wizinc:4711762006"
      ],
      "count": 1
     }
@@ -2499,6 +3418,42 @@
     }
    }
   },
+  "zillow": {
+   "name": "Zillow",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-09-23",
+     "role_ids": [
+      "workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "zoom": {
+   "name": "Zoom",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-15",
+     "role_ids": [
+      "workday:zoom:/job/Remote--US/Technical-Account-Engineer_R19756"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "zscaler": {
+   "name": "Zscaler",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-08-20",
+     "role_ids": [
+      "greenhouse:zscaler:5208829007"
+     ],
+     "count": 1
+    }
+   }
+  },
   "zurn elkay water solutions": {
    "name": "Zurn Elkay Water Solutions",
    "cycles": {
@@ -2513,5 +3468,5 @@
    }
   }
  },
- "updated_at": "2026-10-21T11:59:33Z"
+ "updated_at": "2026-10-21T21:07:04Z"
 }

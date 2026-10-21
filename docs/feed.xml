@@ -1,810 +1,810 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://ihrtkaii.github.io/secnet-internships/feed.xml</id>
-  <title>Summer 2027 &amp; Fall 2026 Tech Internships — new roles</title>
+  <id>https://en-ignoto.github.io/IT-Searcher/feed.xml</id>
+  <title>Orlando area &amp; Remote — Florida / US &amp; Stretch — Orlando area &amp; Stretch — remote Tech Internships — new roles</title>
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
-  <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
-  <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-21T11:59:33Z</updated>
-  <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
-  <entry>
-    <id>urn:intern-engine:workday:smithnephew:/job/Andover-MA/Intern-Systems-Engineering_R92955-1</id>
-    <title>Smith+Nephew: Intern Systems Engineering</title>
-    <link href="https://smithnephew.wd5.myworkdayjobs.com/External/job/Andover-MA/Intern-Systems-Engineering_R92955-1"/>
-    <updated>2026-10-21T11:59:33Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Andover, MA · MATLAB · H-1B track record: ~77 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:globalhr:/job/US-IA-CEDAR-RAPIDS-130--5350-C-Ave-NE--BLDG-130/Systems-Engineer-Co-Op---Algorithms--Spring-Summer-2027----Onsite_01881510</id>
-    <title>RTX: Systems Engineer Co-Op – Algorithms (Spring/Summer 2027) - Remote 🇺🇸</title>
-    <link href="https://globalhr.wd5.myworkdayjobs.com/Private_Posting_No_TMP/job/US-IA-CEDAR-RAPIDS-130--5350-C-Ave-NE--BLDG-130/Systems-Engineer-Co-Op---Algorithms--Spring-Summer-2027----Onsite_01881510"/>
-    <updated>2026-10-21T05:04:46Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · US-IA-CEDAR RAPIDS-130 ~ 5350 C Ave NE ~ BLDG 130 · MATLAB · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:smithnephew:/job/Andover-MA/Co-Op-Systems-Engineering_R92954</id>
-    <title>Smith+Nephew: Co-Op Systems Engineering</title>
-    <link href="https://smithnephew.wd5.myworkdayjobs.com/External/job/Andover-MA/Co-Op-Systems-Engineering_R92954"/>
-    <updated>2026-10-21T05:04:46Z</updated>
-    <category term="Winter 2027"/>
-    <summary>Winter 2027 · Systems &amp; Cloud Infra · Andover, MA · MATLAB · status: closed · H-1B track record: ~77 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:heidelbergmaterials:/job/Irving-TX/IT-Intern_JR10018993</id>
-    <title>Heidelberg Materials: IT Intern</title>
-    <link href="https://heidelbergmaterials.wd3.myworkdayjobs.com/global_hm_career_site/job/Irving-TX/IT-Intern_JR10018993"/>
-    <updated>2026-10-21T00:24:02Z</updated>
-    <category term="Not stated"/>
-    <summary>2 openings · Not stated · IT Support / Ops · Irving, TX</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:trustage:/job/Wisconsin---Remote/Enterprise-Information---Technology-Internship--Hybrid-_R-012155</id>
-    <title>TruStage: Information Technology - Development and Infrastructure Internship (hybrid)</title>
-    <link href="https://trustage.wd1.myworkdayjobs.com/TruStage/job/Wisconsin---Remote/Enterprise-Information---Technology-Internship--Hybrid-_R-012155"/>
-    <updated>2026-10-21T00:24:02Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Wisconsin - Remote · C#, JavaScript, React, Angular, .NET</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:illumio:09d4895b-6de4-4d22-bbc3-aa45f2b24260</id>
-    <title>Illumio: Security Research, Intern</title>
-    <link href="https://jobs.ashbyhq.com/illumio/09d4895b-6de4-4d22-bbc3-aa45f2b24260"/>
-    <updated>2026-10-20T21:51:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Sunnyvale, California - HQ · $37 per hour · Python, SQL, PyTorch, scikit-learn, Pandas · H-1B track record: ~25 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:illumio:8708e622-900e-458a-96b3-ae339329a56d</id>
-    <title>Illumio: Engineering Intern, Product Security</title>
-    <link href="https://jobs.ashbyhq.com/illumio/8708e622-900e-458a-96b3-ae339329a56d"/>
-    <updated>2026-10-20T21:51:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · AppSec / Product Sec · Sunnyvale, California - HQ · $37 per hour · Python, C++, Ruby · H-1B track record: ~25 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:skydio:1ac972b1-8094-4765-8869-63e1c4d50dea</id>
-    <title>Skydio: Wireless Hardware Engineer Intern - Summer 2027</title>
-    <link href="https://jobs.ashbyhq.com/skydio/1ac972b1-8094-4765-8869-63e1c4d50dea"/>
-    <updated>2026-10-20T21:51:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Network / Telecom · San Mateo, California, United States · $47/hr · Python · H-1B track record: ~26 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:highmarkhealth:/job/Pittsburgh-PA-15222-FAP-5th-Avenue-Place/Summer-2027-Risk-and-Compliance-Management-Undergraduate-Intern_J287733</id>
-    <title>Highmark Health: Summer 2027 Risk and Compliance Management Undergraduate Intern 🛂</title>
-    <link href="https://highmarkhealth.wd1.myworkdayjobs.com/highmark/job/Pittsburgh-PA-15222-FAP-5th-Avenue-Place/Summer-2027-Risk-and-Compliance-Management-Undergraduate-Intern_J287733"/>
-    <updated>2026-10-20T21:51:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · GRC / Risk · Pittsburgh PA, 15222, FAP, 5th Avenue Place · sponsorship: no-sponsorship · H-1B track record: ~92 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:motorolasolutions:/job/Massachusetts-Remote-Work/Presale-Systems-Engineer---Summer-2027-Internship_R69640</id>
-    <title>Motorola: Presale Systems Engineer - Summer 2027 Internship 🛂</title>
-    <link href="https://motorolasolutions.wd5.myworkdayjobs.com/Careers/job/Massachusetts-Remote-Work/Presale-Systems-Engineer---Summer-2027-Internship_R69640"/>
-    <updated>2026-10-20T21:51:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Massachusetts Remote Work, More... · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:hcsc:/job/IL---Chicago/Early-Careers---Governance--Risk---Compliance--GRC--Intern_R0059509</id>
-    <title>HCSC: Early Careers - Governance, Risk &amp; Compliance (GRC) Intern 🛂</title>
-    <link href="https://hcsc.wd1.myworkdayjobs.com/HCSC_External/job/IL---Chicago/Early-Careers---Governance--Risk---Compliance--GRC--Intern_R0059509"/>
-    <updated>2026-10-20T17:14:43Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · GRC / Risk · IL - Chicago · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:archgroup:/job/Greensboro-NC-United-States-of-America/Security-Operations-Intern_R26_1016</id>
-    <title>Arch Capital Group: Security Operations Intern</title>
-    <link href="https://archgroup.wd1.myworkdayjobs.com/careers/job/Greensboro-NC-United-States-of-America/Security-Operations-Intern_R26_1016"/>
-    <updated>2026-10-20T05:28:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · SOC / Detection · Greensboro, NC United States of America · $26/hr</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:verizon:/job/Basking-Ridge-New-Jersey/Basking-Ridge--NJ--V-Teamer-for-a-Day--Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102394</id>
-    <title>Verizon Communications: Basking Ridge, NJ: V Teamer for a Day: Verizon Consumer Group: Call Routing Optimization Engineering Summer 2027 Internship</title>
-    <link href="https://verizon.wd12.myworkdayjobs.com/verizon-careers/job/Basking-Ridge-New-Jersey/Basking-Ridge--NJ--V-Teamer-for-a-Day--Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102394"/>
-    <updated>2026-10-20T05:28:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Network / Telecom · Basking Ridge, New Jersey · $27/hr · LLMs</summary>
+  <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
+  <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
+  <updated>2026-10-21T21:07:04Z</updated>
+  <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:rippling:aalyria-careers:c8c3ebca-c203-47fd-a4af-f72727ade02c</id>
+    <title>Aalyria: Site Reliability Engineer, Commercial</title>
+    <link href="https://ats.rippling.com/aalyria-careers/jobs/c8c3ebca-c203-47fd-a4af-f72727ade02c"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote (United States)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:rippling:aalyria-careers:27e9f512-e14b-4ba4-aefb-0f05a63fa21a</id>
+    <title>Aalyria: Site Reliability Engineer, USG</title>
+    <link href="https://ats.rippling.com/aalyria-careers/jobs/27e9f512-e14b-4ba4-aefb-0f05a63fa21a"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote (United States)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f</id>
+    <title>Amplify: Summer 2027: IT Services Intern</title>
+    <link href="https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote - United States · $30 per hour · Linux</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:oracle:ebcs.fa.em2.oraclecloud.com:45248</id>
+    <title>Arcadis: Pursuit Leader - Digital Infrastructure (REMOTE)</title>
+    <link href="https://ebcs.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/45248"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Washington, DC, United States</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82292</id>
+    <title>BNY: Vice President, Technology Service Desk/On-Site Support</title>
+    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82292"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Orlando area"/>
+    <summary>Orlando area · IT Support / Ops · Lake Mary, FL, United States</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82801</id>
+    <title>BNY: Cloud Operations Site Reliability Engineer (SRE)</title>
+    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82801"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>2 openings · Stretch — Orlando area · Cloud Platform · Pittsburgh, PA, United States; Lake Mary, FL, United States · Python, SQL, Bash, AWS, GCP</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:76056</id>
+    <title>BNY: Vice President, Production Services Infrastructure Support</title>
+    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/76056"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Boston, MA, United States; Pittsburgh, PA, United States; Lake Mary, FL, United States · $185k/yr · Python, Azure, Linux, Git</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82730</id>
+    <title>BNY: Vice President, Infrastructure Solution Engineer</title>
+    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82730"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Lake Mary, FL, United States; Pittsburgh, PA, United States · SQL</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82202</id>
+    <title>BNY: Vice President, Production Services Infrastructure Support</title>
+    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82202"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Pittsburgh, PA, United States; Lake Mary, FL, United States · LLMs, GCP</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Consulting-Solution-Executive---Hybrid-Infrastructure_R26_00002797</id>
+    <title>CDW Corporation: Consulting Solution Executive – Hybrid Infrastructure</title>
+    <link href="https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Consulting-Solution-Executive---Hybrid-Infrastructure_R26_00002797"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote – USA · H-1B track record: ~52 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00002917</id>
+    <title>CDW Corporation: Solution Specialist - Networking</title>
+    <link href="https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Solution-Specialist---Networking_R26_00002917"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote – USA · H-1B track record: ~52 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:cerebras:84a9df6b-fe96-4711-8106-971d829b6dc2</id>
+    <title>Cerebras: Network Security Engineer (Remote)</title>
+    <link href="https://jobs.ashbyhq.com/cerebras/84a9df6b-fe96-4711-8106-971d829b6dc2"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote (US) · Python, AWS, Terraform</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:rippling:conceptplus:48e2f47b-abef-4a36-bbc7-d89cc7f4fa5b</id>
+    <title>Concept Plus: Cloud Engineer, OCI</title>
+    <link href="https://ats.rippling.com/conceptplus/jobs/48e2f47b-abef-4a36-bbc7-d89cc7f4fa5b"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:verizon:/job/Basking-Ridge-New-Jersey/Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102398</id>
-    <title>Verizon Communications: Verizon Consumer Group: Call Routing Optimization Engineering Summer 2027 Internship</title>
-    <link href="https://verizon.wd12.myworkdayjobs.com/verizon-careers/job/Basking-Ridge-New-Jersey/Verizon-Consumer-Group--Call-Routing-Optimization-Engineering-Summer-2027-Internship_R-1102398"/>
-    <updated>2026-10-20T05:28:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Network / Telecom · Basking Ridge, New Jersey · $27/hr · LLMs</summary>
+    <id>urn:intern-engine:rippling:conceptplus:2c97993e-3b2f-47fb-bfce-6d1784b4f7c8</id>
+    <title>Concept Plus: Cyber Analyst</title>
+    <link href="https://ats.rippling.com/conceptplus/jobs/2c97993e-3b2f-47fb-bfce-6d1784b4f7c8"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:ashby:reflect-orbital:8f4f8e74-b386-41b4-8154-7e5e50a34205</id>
-    <title>Reflect Orbital: IT Support Specialist Intern</title>
-    <link href="https://jobs.ashbyhq.com/reflect-orbital/8f4f8e74-b386-41b4-8154-7e5e50a34205"/>
-    <updated>2026-10-20T00:34:02Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · IT Support / Ops · Hawthorne, CA · $27 – $31 per hour · Python, Bash, AWS, Linux</summary>
+    <id>urn:intern-engine:rippling:conceptplus:f5477a46-c213-4f19-ba1c-933409cbcc68</id>
+    <title>Concept Plus: Help Desk Specialist</title>
+    <link href="https://ats.rippling.com/conceptplus/jobs/f5477a46-c213-4f19-ba1c-933409cbcc68"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote (California, US)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:greenhouse:rocketlab:8007202003</id>
-    <title>Rocket Lab: Ground Systems Engineering Intern Summer 2027 🇺🇸</title>
-    <link href="https://job-boards.greenhouse.io/rocketlab/jobs/8007202003"/>
-    <updated>2026-10-20T00:34:02Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Stennis Space Center, MS · Python, C++, MATLAB · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:rippling:conceptplus:f9ddd964-6bb4-4baf-8826-10e891c5270b</id>
+    <title>Concept Plus: SOC Analyst (WarU E-ITSS)</title>
+    <link href="https://ats.rippling.com/conceptplus/jobs/f9ddd964-6bb4-4baf-8826-10e891c5270b"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:globalfoundries:/job/USA---Texas---Richardson/AI-ML-Systems-Engineering-Intern--Summer-2027-_JR-2604051</id>
-    <title>GlobalFoundries: AI/ML Systems Engineering Intern (Summer 2027)</title>
-    <link href="https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---Texas---Richardson/AI-ML-Systems-Engineering-Intern--Summer-2027-_JR-2604051"/>
-    <updated>2026-10-20T00:34:02Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · USA - Texas - Richardson · Python, PyTorch, TensorFlow, Pandas</summary>
+    <id>urn:intern-engine:oracle:egua.fa.us2.oraclecloud.com:25591</id>
+    <title>Conduent: Cyber Security Operations Engineer</title>
+    <link href="https://egua.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/25591"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote US, United States · Python, AWS, Azure, Git</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:ptc:/job/Boston-MA-USA/Global-Security-Co-Op_JR112886</id>
-    <title>PTC: Global Security Co-Op</title>
-    <link href="https://ptc.wd1.myworkdayjobs.com/ptc/job/Boston-MA-USA/Global-Security-Co-Op_JR112886"/>
-    <updated>2026-10-20T00:34:02Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Security (general) · Boston, MA, USA · H-1B track record: ~80 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:ashby:deepgram:f424ef6a-c27f-4984-9e77-40a1ad16ae28</id>
+    <title>Deepgram: Platform Engineer - AI/ML Infrastructure (Kubernetes &amp; Terraform)</title>
+    <link href="https://jobs.ashbyhq.com/deepgram/f424ef6a-c27f-4984-9e77-40a1ad16ae28"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · USA - Remote · $136K – $240K • Offers Equity • Offers Bonus • Multiple Ranges · Kubernetes, Terraform, Python, Bash, AWS</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:greenhouse:internrecruiting:8288817</id>
-    <title>Internrecruiting: Technical Support Engineer Co-op</title>
-    <link href="https://job-boards.greenhouse.io/internrecruiting/jobs/8288817"/>
-    <updated>2026-10-19T20:50:46Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · IT Support / Ops · Wakefield, MA · SQL</summary>
+    <id>urn:intern-engine:ashby:deepgram:d75d6f84-1d54-4354-a364-609b48267658</id>
+    <title>Deepgram: Partner Success Engineer (Infrastructure)</title>
+    <link href="https://jobs.ashbyhq.com/deepgram/d75d6f84-1d54-4354-a364-609b48267658"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · USA - Remote · $195K – $235K • Offers Equity · Python, TypeScript, Kubernetes, Docker</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:oracle:emit.fa.ca3.oraclecloud.com:97816</id>
-    <title>WSP: Electrical Engineering Intern (Mission Critical/Data Center) - Fall 2026 - Spring 2027</title>
-    <link href="https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/97816"/>
-    <updated>2026-10-19T20:50:46Z</updated>
-    <category term="Fall 2026"/>
-    <summary>Fall 2026 · Systems &amp; Cloud Infra · New York, NY, United States</summary>
+    <id>urn:intern-engine:rippling:dlb-associates:2ede91cd-77c3-47c8-881c-c93cf9834623</id>
+    <title>DLB Associates: SkillBridge - Data Center Commissioning Field Technician</title>
+    <link href="https://ats.rippling.com/dlb-associates/jobs/2ede91cd-77c3-47c8-881c-c93cf9834623"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:BoschGroup:744000156323136</id>
-    <title>Bosch: AI Research Intern: Wireless Foundation Models</title>
-    <link href="https://jobs.smartrecruiters.com/BoschGroup/744000156323136"/>
-    <updated>2026-10-19T20:50:46Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Network / Telecom · Pittsburgh, PA, United States · Python, PyTorch · H-1B track record: ~188 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:ferrovial:/job/Kissimmee-FL/Webber---Landscape-Technician---Infrastructure-Management_JR19742</id>
+    <title>Ferrovial: Webber - Landscape Technician - Infrastructure Management</title>
+    <link href="https://ferrovial.wd3.myworkdayjobs.com/ferrovial_career_site/job/Kissimmee-FL/Webber---Landscape-Technician---Infrastructure-Management_JR19742"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Kissimmee, FL</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:generac:/job/USA---CO-Fort-Collins/Micro-Grid-Systems-Engineering-Summer-Intern_JR17432</id>
-    <title>Generac: Micro-Grid Systems Engineering Summer Intern</title>
-    <link href="https://generac.wd5.myworkdayjobs.com/external/job/USA---CO-Fort-Collins/Micro-Grid-Systems-Engineering-Summer-Intern_JR17432"/>
-    <updated>2026-10-19T20:50:46Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · USA - CO Fort Collins</summary>
+    <id>urn:intern-engine:ashby:handshake:7f607c0b-291d-4c17-9897-6d8c5d35eb00</id>
+    <title>Handshake: AI Red Teamer, Cybersecurity (Remote)</title>
+    <link href="https://jobs.ashbyhq.com/handshake/7f607c0b-291d-4c17-9897-6d8c5d35eb00"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote (USA) · $65 – $125 per hour · Python, C++, JavaScript, Bash, LLMs</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:gfs:/job/Wyoming-Michigan/Store-Administrative-Support-Internship_R-57416</id>
-    <title>Gordon Food Service: Retail IT Support Internship</title>
-    <link href="https://gfs.wd5.myworkdayjobs.com/usjobs-gen-gfs/job/Wyoming-Michigan/Store-Administrative-Support-Internship_R-57416"/>
-    <updated>2026-10-19T20:50:46Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · IT Support / Ops · Wyoming, Michigan · Linux · H-1B track record: ~21 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:rippling:journaltech:51940ae6-681d-4d45-bcf1-54028d3ce1d0</id>
+    <title>Journal Technologies: Intermediate Technical Support Analyst</title>
+    <link href="https://ats.rippling.com/journaltech/jobs/51940ae6-681d-4d45-bcf1-54028d3ce1d0"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:intel:/job/US-Oregon-Hillsboro/Cloud-Analytics---Application-PhD-Intern_JR0288170</id>
-    <title>Intel: Cloud Analytics - Application PhD Intern</title>
-    <link href="https://intel.wd1.myworkdayjobs.com/external/job/US-Oregon-Hillsboro/Cloud-Analytics---Application-PhD-Intern_JR0288170"/>
-    <updated>2026-10-19T20:50:46Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Cloud Platform · US, Oregon, Hillsboro · Python, SQL, PyTorch, Computer Vision, Kubernetes · H-1B track record: ~4.8k approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:ashby:leland:bb9e0dca-a9aa-48eb-b09c-936ea70facd3</id>
+    <title>Leland: Cybersecurity Coach</title>
+    <link href="https://jobs.ashbyhq.com/leland/bb9e0dca-a9aa-48eb-b09c-936ea70facd3"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - USA</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:snc:/job/Lone-Tree-CO/RF-Engineer-Intern_R0031110</id>
-    <title>Sierra Nevada Corporation: RF Engineer Intern 🇺🇸</title>
-    <link href="https://snc.wd1.myworkdayjobs.com/snc_external_career_site/job/Lone-Tree-CO/RF-Engineer-Intern_R0031110"/>
-    <updated>2026-10-19T20:50:46Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Network / Telecom · Lone Tree, CO · MATLAB · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:ashby:leland:35e87638-d6d9-4135-bb96-ebb61404a2d9</id>
+    <title>Leland: IT Management Coach</title>
+    <link href="https://jobs.ashbyhq.com/leland/35e87638-d6d9-4135-bb96-ebb61404a2d9"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote - USA</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:oracle:emit.fa.ca3.oraclecloud.com:97070</id>
-    <title>WSP: Mechanical Engineering Intern (Mission Critical/Data Center) - Summer 2027</title>
-    <link href="https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/97070"/>
-    <updated>2026-10-16T21:17:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Herndon, VA, United States</summary>
+    <id>urn:intern-engine:ashby:leland:65051650-cb59-419e-969b-58028aec69bf</id>
+    <title>Leland: Site Reliability &amp; Engineering Coach</title>
+    <link href="https://jobs.ashbyhq.com/leland/65051650-cb59-419e-969b-58028aec69bf"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote - USA</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:centene:/job/Remote-MO/IAM-Analyst-Intern--Undergraduate---Summer-2027-_1667747</id>
-    <title>Centene: IAM Analyst Intern (Undergraduate - Summer 2027)</title>
-    <link href="https://centene.wd5.myworkdayjobs.com/Centene_External/job/Remote-MO/IAM-Analyst-Intern--Undergraduate---Summer-2027-_1667747"/>
-    <updated>2026-10-16T21:17:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Cloud &amp; Infra Sec · Remote-MO · $18–$26/hr</summary>
+    <id>urn:intern-engine:oracle:hckd.fa.us2.oraclecloud.com:2038964</id>
+    <title>Molina Healthcare: AVP, Infrastructure (IaC / Multi-Cloud Architecture / AI) - REMOTE</title>
+    <link href="https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2038964"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · United States · SQL · H-1B track record: ~49 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:ngc:/job/United-States-Colorado-Aurora/XMLNAME-2027-Systems-Engineering-Intern---Aurora-CO_R10256237</id>
-    <title>Northrop Grumman: 2027 Systems Engineering Intern - Aurora CO 🇺🇸</title>
-    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Colorado-Aurora/XMLNAME-2027-Systems-Engineering-Intern---Aurora-CO_R10256237"/>
-    <updated>2026-10-16T21:17:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States-Colorado-Aurora · $26.75–$33.5/hr · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861</id>
+    <title>Nash: Technical Support Specialist , US East Coast</title>
+    <link href="https://jobs.ashbyhq.com/nash/48e32fea-837b-4c7c-8246-c347543d1861"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote, US · $75K – $95K • Offers Equity</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:ngc:/job/United-States-Colorado-Colorado-Springs/XMLNAME-2027-Systems-Engineering-Intern---Colorado-Springs-CO_R10256088</id>
-    <title>Northrop Grumman: 2027 Systems Engineering Intern - Colorado Springs CO 🇺🇸</title>
-    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Colorado-Colorado-Springs/XMLNAME-2027-Systems-Engineering-Intern---Colorado-Springs-CO_R10256088"/>
-    <updated>2026-10-16T21:17:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States-Colorado-Colorado Springs · $24.25–$30.5/hr · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:ashby:onebrief:37b29b15-09e4-41fb-90ef-848d00f00f25</id>
+    <title>One Brief: Infrastructure Engineer 🇺🇸</title>
+    <link href="https://jobs.ashbyhq.com/onebrief/37b29b15-09e4-41fb-90ef-848d00f00f25"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States | Remote · $180K – $290K • Offers Equity • Multiple Ranges · Python, Rust, TypeScript, AWS, Azure · sponsorship: citizens-only</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:snc:/job/Lone-Tree-CO/Systems-Engineering-Intern---Summer-2027--For-SNC-Summer-2026-Interns-Only-_R0031097</id>
-    <title>Sierra Nevada Corporation: Systems Engineering Intern - Summer 2027 (For SNC Summer 2026 Interns Only) 🇺🇸</title>
-    <link href="https://snc.wd1.myworkdayjobs.com/snc_external_career_site/job/Lone-Tree-CO/Systems-Engineering-Intern---Summer-2027--For-SNC-Summer-2026-Interns-Only-_R0031097"/>
-    <updated>2026-10-16T21:17:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Lone Tree, CO · MATLAB · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:ashby:openai:6ba0ce24-ad32-4c3b-b49c-b373be9a8480</id>
+    <title>OpenAI: Data Center Compute, OpenHouse Savannah 2026</title>
+    <link href="https://jobs.ashbyhq.com/openai/6ba0ce24-ad32-4c3b-b49c-b373be9a8480"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · US - Remote · $125K – $400K • Offers Equity · H-1B track record: ~15 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:lever:cfsenergy:a05832ae-41df-4e2d-ab86-dd3e2c4877d4</id>
-    <title>Commonwealth Fusion Systems: Intern - Nuclear/Systems Engineer - Summer 2027</title>
-    <link href="https://jobs.lever.co/cfsenergy/a05832ae-41df-4e2d-ab86-dd3e2c4877d4"/>
-    <updated>2026-10-16T16:54:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Devens, MA · 25–38 USD/hr · Python, C++</summary>
+    <id>urn:intern-engine:rippling:patientnow:19feb150-fa2b-4a72-85a0-f678a7f7c070</id>
+    <title>PatientNow: Technical Support Specialist</title>
+    <link href="https://ats.rippling.com/patientnow/jobs/19feb150-fa2b-4a72-85a0-f678a7f7c070"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:icf:/job/Reston-VA/XMLNAME-2027-Summer-Intern--Cloud-Engineer--AWS-Azure---Reston--VA-_R2603554</id>
-    <title>ICF: 2027 Summer Intern, Cloud Engineer (AWS/Azure) (Reston, VA) 🛂</title>
-    <link href="https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site/job/Reston-VA/XMLNAME-2027-Summer-Intern--Cloud-Engineer--AWS-Azure---Reston--VA-_R2603554"/>
-    <updated>2026-10-16T16:54:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Cloud Platform · Reston, VA · $27/hr · AWS, Azure, Terraform, Git · sponsorship: no-sponsorship · H-1B track record: ~35 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:lever:pditechnologies:56f66a9d-8766-40bd-91bc-3be14ba8cd72</id>
+    <title>PDI Technologies: Network Operations Analyst II</title>
+    <link href="https://jobs.lever.co/pditechnologies/56f66a9d-8766-40bd-91bc-3be14ba8cd72"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote US · AWS</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Cloud-Engineering-Intern_R-00194668</id>
-    <title>Leidos: Cloud Engineering Intern 🇺🇸</title>
-    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Cloud-Engineering-Intern_R-00194668"/>
-    <updated>2026-10-16T16:54:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Cloud Platform · 6314 Remote/Teleworker US · Azure · sponsorship: citizens-only · H-1B track record: ~79 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:lever:planettechnologies:5ef319be-c6dc-4a79-b52f-8b82881e81ed</id>
+    <title>Planet Technologies: Cloud Managed Services Consultant</title>
+    <link href="https://jobs.lever.co/planettechnologies/5ef319be-c6dc-4a79-b52f-8b82881e81ed"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Eastern US - Remote · AWS, Azure, Kubernetes, Linux</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:mastercard:/job/OFallon-Missouri/Platform-Engineering-Intern--Summer-2027---St-Louis--MO--US_R-284880</id>
-    <title>Mastercard: Platform Engineering Intern, Summer 2027 – St. Louis, MO, US</title>
-    <link href="https://mastercard.wd1.myworkdayjobs.com/Campus/job/OFallon-Missouri/Platform-Engineering-Intern--Summer-2027---St-Louis--MO--US_R-284880"/>
-    <updated>2026-10-16T16:54:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · O'Fallon, Missouri · $25–$30/hr · Java, AWS, GCP, Azure, Kubernetes</summary>
+    <id>urn:intern-engine:ashby:ramp:13fe8467-b624-4f30-8aad-af441dfb1797</id>
+    <title>Ramp: Technical Consultant, Strategic, Oracle Cloud</title>
+    <link href="https://jobs.ashbyhq.com/ramp/13fe8467-b624-4f30-8aad-af441dfb1797"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote (US) · $191K – $291K • Offers Equity • Multiple Ranges</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016165496</id>
-    <title>Lawrence Livermore National Laboratory (LLNL): Critical Infrastructure Analysis Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016165496"/>
-    <updated>2026-10-16T00:06:05Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:ashby:ramp:6a3f42e6-00d6-4e9d-9caa-9663ffac6d53</id>
+    <title>Ramp: Technical Consultant, Enterprise, Oracle Cloud</title>
+    <link href="https://jobs.ashbyhq.com/ramp/6a3f42e6-00d6-4e9d-9caa-9663ffac6d53"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote (US) · $158K – $242K • Offers Equity • Multiple Ranges</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016165506</id>
-    <title>Lawrence Livermore National Laboratory (LLNL): Power Systems Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016165506"/>
-    <updated>2026-10-16T00:06:05Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, C++, MATLAB · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:rippling:rippling:c92d6b7d-3c78-4f3c-ac0a-9a95b8e28e72</id>
+    <title>Rippling: Implementation Specialist, IT</title>
+    <link href="https://ats.rippling.com/rippling/jobs/c92d6b7d-3c78-4f3c-ac0a-9a95b8e28e72"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016165586</id>
-    <title>Lawrence Livermore National Laboratory (LLNL): Cybersecurity Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016165586"/>
-    <updated>2026-10-16T00:06:05Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, Java, C++, MATLAB, Docker · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:rippling:rippling:eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd</id>
+    <title>Rippling: Technical Support Specialist, Platform</title>
+    <link href="https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016165636</id>
-    <title>Lawrence Livermore National Laboratory (LLNL): Cybersecurity Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016165636"/>
-    <updated>2026-10-16T00:06:05Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, Java, C++, MATLAB, Docker · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:ashby:runpod:475e7a21-59af-4ef4-b2a3-6a0e60fc1356</id>
+    <title>Runpod: Cloud Infrastructure Security Engineer (Systems/Kernel) 🛂</title>
+    <link href="https://jobs.ashbyhq.com/runpod/475e7a21-59af-4ef4-b2a3-6a0e60fc1356"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - USA · Python, Rust, Kubernetes, Docker, Linux · sponsorship: no-sponsorship</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:greenhouse:generalmatter:5448019008</id>
-    <title>General Matter: Summer 2027 Internship - Information Security Engineer</title>
-    <link href="https://job-boards.greenhouse.io/generalmatter/jobs/5448019008"/>
-    <updated>2026-10-15T21:34:54Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Los Angeles, CA · $32–$46/hr · Python, C++, Rust, TypeScript, AWS</summary>
+    <id>urn:intern-engine:ashby:runpod:1d14340c-c9bd-4754-80f4-5c83980cd413</id>
+    <title>Runpod: Site Reliability Engineer 🛂</title>
+    <link href="https://jobs.ashbyhq.com/runpod/1d14340c-c9bd-4754-80f4-5c83980cd413"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote - USA · Python, Bash, Linux · sponsorship: no-sponsorship</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164196</id>
-    <title>Lawrence Livermore National Laboratory (LLNL): Critical Infrastructure Analysis Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164196"/>
-    <updated>2026-10-16T04:39:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · sponsorship: citizens-only · status: closed</summary>
+    <id>urn:intern-engine:ashby:runpod:4843a2de-5094-4157-b2b1-ab7bb8876f67</id>
+    <title>Runpod: Technical Support Engineer (L2) 🛂</title>
+    <link href="https://jobs.ashbyhq.com/runpod/4843a2de-5094-4157-b2b1-ab7bb8876f67"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote - USA · Python, JavaScript, SQL, PyTorch, LLMs · sponsorship: no-sponsorship</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164366</id>
-    <title>Lawrence Livermore National Laboratory (LLNL): Critical Infrastructure Analysis Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164366"/>
-    <updated>2026-10-15T21:34:54Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:ashby:skydio:b00f626d-d88c-49b1-8868-7cc8a1aaf579</id>
+    <title>Skydio: Drone Platform Integration &amp; Network Support Engineer</title>
+    <link href="https://jobs.ashbyhq.com/skydio/b00f626d-d88c-49b1-8868-7cc8a1aaf579"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · US Remote · Python, Bash, LLMs, AWS, Linux · H-1B track record: ~26 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164416</id>
-    <title>Lawrence Livermore National Laboratory (LLNL): Power Systems Undergraduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164416"/>
-    <updated>2026-10-15T21:34:54Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, C++, MATLAB · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:ashby:skydio:3ac81a34-b7fe-4142-9d29-12bcc1376182</id>
+    <title>Skydio: Technical Support Specialist</title>
+    <link href="https://jobs.ashbyhq.com/skydio/3ac81a34-b7fe-4142-9d29-12bcc1376182"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · US Remote · H-1B track record: ~26 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LLNL:3743990016164736</id>
-    <title>Lawrence Livermore National Laboratory (LLNL): Power Systems Graduate Intern - Cyber and Critical Infrastructure Summer Institute - Summer 2027 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LLNL/3743990016164736"/>
-    <updated>2026-10-16T04:39:57Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Livermore, CA, United States · Python, C++, MATLAB · sponsorship: citizens-only · status: closed</summary>
+    <id>urn:intern-engine:ashby:thumbtack:2c3b12ee-1729-4b2b-ad4d-d753c87bec03</id>
+    <title>Thumbtack: IT Systems Engineer II</title>
+    <link href="https://jobs.ashbyhq.com/thumbtack/2c3b12ee-1729-4b2b-ad4d-d753c87bec03"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote, United States · Python, Terraform, Git · H-1B track record: ~36 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:emcins:/job/Iowa/Cybersecurity-Intern_R6590</id>
-    <title>EMC Insurance: Cybersecurity Intern</title>
-    <link href="https://emcins.wd5.myworkdayjobs.com/EMC_Careers/job/Iowa/Cybersecurity-Intern_R6590"/>
-    <updated>2026-10-15T17:13:25Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Security (general) · Iowa</summary>
+    <id>urn:intern-engine:rippling:topdoglaw:eb47df12-fe35-4ed8-9e9f-44f8ac6e54c2</id>
+    <title>TopDog Law: IT Security Systems Administrator</title>
+    <link href="https://ats.rippling.com/topdoglaw/jobs/eb47df12-fe35-4ed8-9e9f-44f8ac6e54c2"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:motorolasolutions:/job/Georgia-US-Offsite/Presales-Systems-Engineer---2027-Internship_R69503</id>
-    <title>Motorola: Presales Systems Engineer - 2027 Internship 🛂</title>
-    <link href="https://motorolasolutions.wd5.myworkdayjobs.com/Careers/job/Georgia-US-Offsite/Presales-Systems-Engineer---2027-Internship_R69503"/>
-    <updated>2026-10-15T17:13:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Georgia, US Offsite, More... · sponsorship: no-sponsorship</summary>
+    <id>urn:intern-engine:rippling:topdoglaw:6628e255-42c8-4b5c-9aca-2a66056d537f</id>
+    <title>TopDog Law: Jr. IT Helpdesk Specialist (Pacific Standard Time)</title>
+    <link href="https://ats.rippling.com/topdoglaw/jobs/6628e255-42c8-4b5c-9aca-2a66056d537f"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:oracle:ebxs.fa.us2.oraclecloud.com:310031</id>
-    <title>Michael Baker International: IT Support Desk Intern</title>
-    <link href="https://ebxs.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/job/310031"/>
-    <updated>2026-10-15T04:51:19Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · IT Support / Ops · Moon Township, PA, United States · $18–$22/hr · H-1B track record: ~42 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:allstate:/job/USA---TX-Remote/AI-Cloud-Platform-Engineer_R35902</id>
+    <title>Allstate Insurance Company: AI Cloud Platform Engineer 🛂</title>
+    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/USA---TX-Remote/AI-Cloud-Platform-Engineer_R35902"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · USA - TX (Remote) · Python, SQL, Azure, Terraform, Git · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:astreya:/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017927</id>
-    <title>Astreya: AI Infrastructure DC Design Intern</title>
-    <link href="https://astreya.wd5.myworkdayjobs.com/life-at-astreya-opportunities/job/Remote-CA/AI-Infrastructure-DC-Design-Intern_R0017927"/>
-    <updated>2026-10-14T21:52:41Z</updated>
-    <category term="Not stated"/>
-    <summary>4 openings · Not stated · Systems &amp; Cloud Infra · Remote, CA</summary>
+    <id>urn:intern-engine:workday:allstate:/job/US---Remote/FinOps-Engineer--Cloud---Kubernetes-Optimization_R35621</id>
+    <title>Allstate Insurance Company: FinOps Engineer, Cloud &amp; Kubernetes Optimization 🛂</title>
+    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/US---Remote/FinOps-Engineer--Cloud---Kubernetes-Optimization_R35621"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · US - Remote · Kubernetes, Python, SQL, AWS, GCP · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:cubic:/job/San-Diego-California/Systems-Engineering-Execution-Intern_REQ_50178</id>
-    <title>Cubic: Systems Engineering Execution Intern</title>
-    <link href="https://cubic.wd1.myworkdayjobs.com/cubic_USA_careers/job/San-Diego-California/Systems-Engineering-Execution-Intern_REQ_50178"/>
-    <updated>2026-10-14T21:52:41Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · San Diego, California</summary>
+    <id>urn:intern-engine:workday:allstate:/job/US---Remote/Cloud-Product-Security-Engineer_R29721</id>
+    <title>Allstate Insurance Company: Cloud Product Security Engineer 🛂</title>
+    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/US---Remote/Cloud-Product-Security-Engineer_R29721"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · US - Remote · $90.7k–$195.7k/yr · Python, Java, JavaScript, AWS, Azure · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:generalmotors:/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Intern---AI-ML-Engineer--Autonomous-Vehicle-ML-Infrastructure_JR-202622410</id>
-    <title>General Motors: 2027 Intern - AI/ML Engineer, Autonomous Vehicle ML Infrastructure</title>
-    <link href="https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Sunnyvale-California-United-States-of-America/XMLNAME-2027-Intern---AI-ML-Engineer--Autonomous-Vehicle-ML-Infrastructure_JR-202622410"/>
-    <updated>2026-10-14T21:52:41Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Sunnyvale, California, United States of America · Python, Java, C++, Kubernetes, Hadoop · H-1B track record: ~928 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:allstate:/job/US---Remote/Platform-Consultant---Cyber-Platforms--Data----Tooling_R31084</id>
+    <title>Allstate Insurance Company: Platform Consultant — Cyber Platforms, Data, &amp; Tooling 🛂</title>
+    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/US---Remote/Platform-Consultant---Cyber-Platforms--Data----Tooling_R31084"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · US - Remote · Java, Rust, JavaScript, Spring, AWS · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:hyperiongrp:/job/New-York--1350-Avenue-Of-The-Americas/Underwriting-Intern_R0019772-1</id>
-    <title>Howden: Underwriting Intern, Cyber</title>
-    <link href="https://hyperiongrp.wd3.myworkdayjobs.com/Hyperion_External/job/New-York--1350-Avenue-Of-The-Americas/Underwriting-Intern_R0019772-1"/>
-    <updated>2026-10-14T21:52:41Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · New York – 1350 Avenue Of The Americas · $22/hr</summary>
+    <id>urn:intern-engine:greenhouse:alphasense:8495375002</id>
+    <title>AlphaSense: Cloud Support Engineer</title>
+    <link href="https://job-boards.greenhouse.io/alphasense/jobs/8495375002"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote - United States · Python, Java, JavaScript, LLMs, GraphQL</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:philips:/job/San-Diego-California-United-States/Intern---Systems-Engineering--Sustaining---Design-Controls----San-Diego--CA---Summer-2027_593052</id>
-    <title>Philips: Intern – Systems Engineering (Sustaining &amp; Design Controls) - San Diego, CA - Summer 2027</title>
-    <link href="https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/San-Diego-California-United-States/Intern---Systems-Engineering--Sustaining---Design-Controls----San-Diego--CA---Summer-2027_593052"/>
-    <updated>2026-10-14T21:52:41Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · San Diego, California, United States</summary>
+    <id>urn:intern-engine:workday:alteryx:/job/US---Remote/InfoSec-Analyst_R12418</id>
+    <title>Alteryx: Information Security Analyst</title>
+    <link href="https://alteryx.wd108.myworkdayjobs.com/AlteryxCareers/job/US---Remote/InfoSec-Analyst_R12418"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · US - Remote · AWS, GCP, Azure · H-1B track record: ~20 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:centene:/job/Remote-MO/Cloud-Security-Incident-Response-Analyst-Intern--Undergraduate---Summer-2027-_1667738-1</id>
-    <title>Centene: Cloud Security Incident Response Analyst Intern (Undergraduate - Summer 2027)</title>
-    <link href="https://centene.wd5.myworkdayjobs.com/Centene_External/job/Remote-MO/Cloud-Security-Incident-Response-Analyst-Intern--Undergraduate---Summer-2027-_1667738-1"/>
-    <updated>2026-10-14T17:21:18Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · SOC / Detection · Remote-MO · $18–$26/hr · AWS, Azure</summary>
+    <id>urn:intern-engine:greenhouse:anthropic:5439369008</id>
+    <title>Anthropic: Data Center Global Repairs Program Support</title>
+    <link href="https://job-boards.greenhouse.io/anthropic/jobs/5439369008"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote-Friendly, United States · sponsorship: offers</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:copart:/job/Dallas-TX---Headquarters/DevOps-Engineer-Intern_JR111751</id>
-    <title>Copart: DevOps Engineer Intern</title>
-    <link href="https://copart.wd12.myworkdayjobs.com/copart/job/Dallas-TX---Headquarters/DevOps-Engineer-Intern_JR111751"/>
-    <updated>2026-10-14T17:21:18Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · Dallas, TX - Headquarters · Python, Java, Bash, PyTorch, TensorFlow · H-1B track record: ~83 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:aptiv:/job/USA-Remote-Worksite/Linux-Development-Engineer---eLxr-Distribution_J000693019</id>
+    <title>Aptiv: Linux Development Engineer – eLxr Distribution</title>
+    <link href="https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/USA-Remote-Worksite/Linux-Development-Engineer---eLxr-Distribution_J000693019"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · USA Remote Worksite · Linux, Python, C++, Bash, AWS · H-1B track record: ~251 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:ngc:/job/United-States-Texas-San-Antonio/XMLNAME-2027-Cyber-Software-Engineer-Intern---San-Antonio-TX_R10256037</id>
-    <title>Northrop Grumman: 2027 Cyber Software Engineer Intern - San Antonio TX 🇺🇸</title>
-    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Texas-San-Antonio/XMLNAME-2027-Cyber-Software-Engineer-Intern---San-Antonio-TX_R10256037"/>
-    <updated>2026-10-14T17:21:18Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · United States-Texas-San Antonio · $17.5–$31.5/hr · Git · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:smartrecruiters:AristaNetworks:744000150196345</id>
+    <title>Arista Networks: FedRAMP Site Reliability Engineer (FedSRE) - CloudVision 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/AristaNetworks/744000150196345"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote, , United States (Remote) · Python, Go, Bash, GCP, Kubernetes · sponsorship: citizens-only · H-1B track record: ~182 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--PhD-_JR-022416</id>
-    <title>Paloaltonetworks: Intern - Security Researcher (PhD)</title>
-    <link href="https://paloaltonetworks.wd5.myworkdayjobs.com/hidden-private-pawn-temp-gateway-147258369/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--PhD-_JR-022416"/>
-    <updated>2026-10-15T11:39:30Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Security (general) · Office - USA - CA - Headquarters · Python, PyTorch, TensorFlow, scikit-learn, LLMs · status: closed</summary>
+    <id>urn:intern-engine:greenhouse:arizeai:6203635004</id>
+    <title>Arize AI: DevOps Engineer</title>
+    <link href="https://job-boards.greenhouse.io/arizeai/jobs/6203635004"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote (United States) · LLMs, AWS, GCP, Azure, Kubernetes</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:paloaltonetworks:/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--Returning-_JR-022677</id>
-    <title>Paloaltonetworks: Intern - Security Researcher (Returning)</title>
-    <link href="https://paloaltonetworks.wd5.myworkdayjobs.com/hidden-private-pawn-temp-gateway-147258369/job/Office---USA---CA---Headquarters/Intern---Security-Researcher--Returning-_JR-022677"/>
-    <updated>2026-10-16T11:32:51Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Security (general) · Office - USA - CA - Headquarters · Python, PyTorch, TensorFlow, scikit-learn, LLMs · status: closed</summary>
+    <id>urn:intern-engine:greenhouse:armada:5409777008</id>
+    <title>Armada: Data Center Constructability Engineer</title>
+    <link href="https://job-boards.greenhouse.io/armada/jobs/5409777008"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States (Remote)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:qtsdatacenters:/job/US-GA-Atlanta-Suwanee-1-DC1/Summer-2027-Internship--Information-Security-Operations-Analyst_R2026-2273</id>
-    <title>QTS: Summer 2027 Internship: Information Security Operations Analyst 🇺🇸</title>
-    <link href="https://qtsdatacenters.wd5.myworkdayjobs.com/qts/job/US-GA-Atlanta-Suwanee-1-DC1/Summer-2027-Internship--Information-Security-Operations-Analyst_R2026-2273"/>
-    <updated>2026-10-14T17:21:18Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · SOC / Detection · US GA Atlanta Suwanee 1 DC1 · Python, Java, Tableau · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:greenhouse:armada:5439105008</id>
+    <title>Armada: Data Center Structural Engineer</title>
+    <link href="https://job-boards.greenhouse.io/armada/jobs/5439105008"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States (Remote)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:tranetechnologies:/job/La-Crosse-Wisconsin/Business-Systems-Analyst-Internship_JR-13688</id>
-    <title>Tranetechnologies: Business Systems Analyst Internship</title>
-    <link href="https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers/job/La-Crosse-Wisconsin/Business-Systems-Analyst-Internship_JR-13688"/>
-    <updated>2026-10-14T17:21:18Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · La Crosse, Wisconsin</summary>
+    <id>urn:intern-engine:greenhouse:beyondtrust:8279128</id>
+    <title>BeyondTrust: Cloud Network Engineer</title>
+    <link href="https://job-boards.greenhouse.io/beyondtrust/jobs/8279128"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote United States · Python, AWS, Azure, Terraform</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:tranetechnologies:/job/St-Paul-Minnesota/Systems-Engineer-Intern_JR-16745</id>
-    <title>Tranetechnologies: Systems Engineer Intern</title>
-    <link href="https://tranetechnologies.wd12.myworkdayjobs.com/trane_technologies_careers/job/St-Paul-Minnesota/Systems-Engineer-Intern_JR-16745"/>
-    <updated>2026-10-14T17:21:18Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · St Paul, Minnesota</summary>
+    <id>urn:intern-engine:greenhouse:beyondtrust:8185856</id>
+    <title>BeyondTrust: Cyber Defense Engineer</title>
+    <link href="https://job-boards.greenhouse.io/beyondtrust/jobs/8185856"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote Canada | Remote United States · Python, LLMs</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:greenhouse:inversionspace:4743497005</id>
-    <title>Inversion Space: RF Engineer - Summer Internship 2027 🇺🇸</title>
-    <link href="https://job-boards.greenhouse.io/inversionspace/jobs/4743497005"/>
-    <updated>2026-10-14T05:05:08Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Network / Telecom · Playa Vista, California, United States · Python, MATLAB · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:greenhouse:beyondtrust:8256040</id>
+    <title>BeyondTrust: Site Reliability Engineer</title>
+    <link href="https://job-boards.greenhouse.io/beyondtrust/jobs/8256040"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote United States · AWS, Kubernetes, Terraform</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:ngc:/job/United-States-Maryland-Annapolis/XMLNAME-2027-S-W-Cybersecurity-Intern---Annapolis-MD_R10254705</id>
-    <title>Northrop Grumman: 2027 S/W Cybersecurity Intern – Annapolis MD 🇺🇸</title>
-    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Maryland-Annapolis/XMLNAME-2027-S-W-Cybersecurity-Intern---Annapolis-MD_R10254705"/>
-    <updated>2026-10-14T05:05:08Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · United States-Maryland-Annapolis · $20.5–$37.25/hr · Linux · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100</id>
+    <title>BigCommerce: Technical Support Representative - Remote</title>
+    <link href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · United States - Remote · JavaScript, HTML/CSS · H-1B track record: ~26 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:ngc:/job/United-States-Maryland-Annapolis/XMLNAME-2027-Systems-Engineering-Intern---Annapolis-MD_R10254656</id>
-    <title>Northrop Grumman: 2027 Systems Engineering Intern – Annapolis MD 🇺🇸</title>
-    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Maryland-Annapolis/XMLNAME-2027-Systems-Engineering-Intern---Annapolis-MD_R10254656"/>
-    <updated>2026-10-14T05:05:08Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States-Maryland-Annapolis · $20.5–$37.25/hr · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:workday:thinkbrg:/job/Remote---USA/Consultant---Cybersecurity_JR101155</id>
+    <title>BRG: Consultant - Cybersecurity</title>
+    <link href="https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site/job/Remote---USA/Consultant---Cybersecurity_JR101155"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - USA · $130k–$150k/yr</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:lever:azul:8f41ceaf-8835-4fc7-ba57-9384487d59db</id>
-    <title>Azul Systems: IT Intern, AI and Operations</title>
-    <link href="https://jobs.lever.co/azul/8f41ceaf-8835-4fc7-ba57-9384487d59db"/>
-    <updated>2026-10-13T17:14:21Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · IT Support / Ops · Sunnyvale, CA · 25 USD/hr</summary>
+    <id>urn:intern-engine:workday:thinkbrg:/job/Remote---USA/Ai-Lab-Infrastructure-Engineer_JR100335</id>
+    <title>BRG: AI Lab Infrastructure Engineer</title>
+    <link href="https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site/job/Remote---USA/Ai-Lab-Infrastructure-Engineer_JR100335"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - USA · Python, Java, LLMs, AWS, Terraform</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:borgwarner:/job/Auburn-Hills---Michigan---USA/IT-Service-Desk-Intern--Year-Round-_R2026-4037</id>
-    <title>BorgWarner: IT Service Desk Intern (Year-Round)</title>
-    <link href="https://borgwarner.wd5.myworkdayjobs.com/BorgWarner_Careers/job/Auburn-Hills---Michigan---USA/IT-Service-Desk-Intern--Year-Round-_R2026-4037"/>
-    <updated>2026-10-13T17:14:21Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · IT Support / Ops · Auburn Hills - Michigan - USA · sponsorship: offers</summary>
+    <id>urn:intern-engine:greenhouse:cadwell:4398741009</id>
+    <title>Cadwell: Cloud Site Reliability Engineer</title>
+    <link href="https://job-boards.greenhouse.io/cadwell/jobs/4398741009"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote, USA · Python, TypeScript, JavaScript, Bash, AWS</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:draper:/job/Cambridge-MA/Classified-Cybersecurity-IT-Internship--Summer-2027-_JR003021</id>
-    <title>Draper: Classified Cybersecurity/IT Internship (Summer 2027) 🇺🇸</title>
-    <link href="https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Classified-Cybersecurity-IT-Internship--Summer-2027-_JR003021"/>
-    <updated>2026-10-13T17:14:21Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Cambridge, MA · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:greenhouse:capitaltg:5268774007</id>
+    <title>Capital Technology Group: CyberArk SME / DevOps Engineer 🇺🇸</title>
+    <link href="https://boards.greenhouse.io/capitaltg/jobs/5268774007?gh_jid=5268774007"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote (US) · Python, AWS, Azure, Terraform, Linux · sponsorship: citizens-only</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:maryfreebed:/job/Grand-Rapids-MI/IT-Intern---Summer-2027_JB103360</id>
-    <title>Mary Free Bed Rehabilitation Hospital: IT Intern - Summer 2027</title>
-    <link href="https://maryfreebed.wd12.myworkdayjobs.com/mfb/job/Grand-Rapids-MI/IT-Intern---Summer-2027_JB103360"/>
-    <updated>2026-10-13T17:14:21Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · IT Support / Ops · Grand Rapids, MI · $18/hr</summary>
+    <id>urn:intern-engine:workday:ciena:/job/Remote-US-MD/Network-Solutions-Engineer---Onsite-at-Scott-AFB--IL_R031595</id>
+    <title>Ciena: Network Solutions Engineer - Hybrid - Fort Meade, Maryland 🇺🇸</title>
+    <link href="https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US-MD/Network-Solutions-Engineer---Onsite-at-Scott-AFB--IL_R031595"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote-US-MD · sponsorship: citizens-only · H-1B track record: ~43 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:globalhr:/job/US-IA-CEDAR-RAPIDS-106--400-Collins-Rd-NE--BLDG-106/XMLNAME-2027-Co-Op---Summer-Fall-Systems-Engineer---Onsite_01871438</id>
-    <title>RTX: 2027 Co-Op - Summer/Fall Systems Engineer - Onsite</title>
-    <link href="https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-IA-CEDAR-RAPIDS-106--400-Collins-Rd-NE--BLDG-106/XMLNAME-2027-Co-Op---Summer-Fall-Systems-Engineer---Onsite_01871438"/>
-    <updated>2026-10-13T07:25:20Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · US-IA-CEDAR RAPIDS-106 ~ 400 Collins Rd NE ~ BLDG 106 · Python, C++</summary>
+    <id>urn:intern-engine:workday:ciena:/job/Remote-US-IL/Network-Solutions-Engineer--On-site--Scott-Air-Force-Base--IL_R031414</id>
+    <title>Ciena: Network Solutions Engineer, On-site: Scott Air Force Base, IL 🇺🇸</title>
+    <link href="https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US-IL/Network-Solutions-Engineer--On-site--Scott-Air-Force-Base--IL_R031414"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote-US-IL · sponsorship: citizens-only · H-1B track record: ~43 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:greenhouse:asteraearlycareer2027:4743021005</id>
-    <title>Astera Labs: CyberSecurity Engineer Intern</title>
-    <link href="https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4743021005"/>
-    <updated>2026-10-13T00:55:50Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Security (general) · San Jose, CA · $35/hr · H-1B track record: ~29 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:ciena:/job/Remote-US-CA/Network-Solutions-Engineer---Onsite-at-Vandenberg-Space-Force-Base_R031478</id>
+    <title>Ciena: Network Solutions Engineer - Onsite at Vandenberg Space Force Base 🇺🇸</title>
+    <link href="https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US-CA/Network-Solutions-Engineer---Onsite-at-Vandenberg-Space-Force-Base_R031478"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote-US-CA · sponsorship: citizens-only · H-1B track record: ~43 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:oracle:hdhl.fa.us6.oraclecloud.com:1008240</id>
-    <title>Stantec: Bridge Design Intern - Infrastructure (Summer 2027)</title>
-    <link href="https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008240"/>
-    <updated>2026-10-13T00:55:50Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Columbia, SC, United States</summary>
+    <id>urn:intern-engine:workday:collegeboard:/job/Remote---USA/Cyber-Threat-Hunter_REQ002976</id>
+    <title>College Board: Cyber Threat Hunter</title>
+    <link href="https://collegeboard.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Cyber-Threat-Hunter_REQ002976"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - USA · Python, Bash, LLMs, AWS, Kubernetes · H-1B track record: ~13 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:gdit:/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273</id>
-    <title>General Dynamics Information Technology: 2027 Summer Intern - Defense Agencies (Cybersecurity) 🇺🇸</title>
-    <link href="https://gdit.wd5.myworkdayjobs.com/gdit_earlytalent/job/USA-VA-Falls-Church/XMLNAME-2027-Summer-Intern---Defense-Agencies--Cybersecurity-_RQ230273"/>
-    <updated>2026-10-15T11:39:30Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · USA VA Falls Church · sponsorship: citizens-only · status: closed · H-1B track record: ~28 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:greenhouse:echodynecorp:4719776006</id>
+    <title>Echodyne: Solutions Engineer - Critical Infrastructure 🇺🇸</title>
+    <link href="https://job-boards.greenhouse.io/echodynecorp/jobs/4719776006"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - US · Python, MATLAB, Linux · sponsorship: citizens-only</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:hpe:/job/All-Tennessee-United-States-of-America/HPC-AI-System-Admin-HW-SW-Service-Engineer-Intern_1213404</id>
-    <title>Hewlett Packard Enterprise: HPC/AI System Admin HW/SW Service Engineer Intern</title>
-    <link href="https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/All-Tennessee-United-States-of-America/HPC-AI-System-Admin-HW-SW-Service-Engineer-Intern_1213404"/>
-    <updated>2026-10-13T00:55:50Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · All, Tennessee, United States of America · HTML/CSS, Linux · H-1B track record: ~499 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:evercommerce:/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1</id>
+    <title>EverCommerce: EverPro - Systems Administrator (Orlando, Florida) 🇺🇸</title>
+    <link href="https://evercommerce.wd1.myworkdayjobs.com/evercommerce_careers/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Orlando, Florida · $62k–$70k/yr · sponsorship: citizens-only</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:ngc:/job/United-States-Virginia-Chantilly/XMLNAME-2027-Software-Engineer-Intern---Chantilly-VA_R10255633</id>
-    <title>Northrop Grumman: 2027 Systems Engineer Intern - Chantilly VA 🇺🇸</title>
-    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Virginia-Chantilly/XMLNAME-2027-Software-Engineer-Intern---Chantilly-VA_R10255633"/>
-    <updated>2026-10-13T00:55:50Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States-Virginia-Chantilly · $21.5–$39/hr · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:greenhouse:gitlab:8889193002</id>
+    <title>GitLab: Cloud Platform Engineer</title>
+    <link href="https://job-boards.greenhouse.io/gitlab/jobs/8889193002"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote, Canada; Remote, United States · Python, Bash, AWS, GCP, Azure</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:CapTechConsulting:744000155060459</id>
-    <title>CapTech Consulting: Consulting Internship: Business Systems Analyst (Summer 2027) 🛂</title>
-    <link href="https://jobs.smartrecruiters.com/CapTechConsulting/744000155060459"/>
-    <updated>2026-10-12T16:20:35Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Richmond, VA, United States · $30/hr · Python, SQL · sponsorship: no-sponsorship</summary>
+    <id>urn:intern-engine:greenhouse:gitlab:8831350002</id>
+    <title>GitLab: Distinguished Engineer, Core DevOps</title>
+    <link href="https://job-boards.greenhouse.io/gitlab/jobs/8831350002"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote, Canada; Remote, United Kingdom; Remote, United States · LLMs, Git</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:cmu:/job/Pittsburgh-PA/AI-Security-Research-Intern---Sept-2026---May-2027-_2025068-2</id>
-    <title>Cmu: AI Security Research Intern  (Sept 2026 - May 2027) 🛂</title>
-    <link href="https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/AI-Security-Research-Intern---Sept-2026---May-2027-_2025068-2"/>
-    <updated>2026-10-11T19:49:58Z</updated>
-    <category term="Fall 2026"/>
-    <summary>Fall 2026 · Security (general) · Pittsburgh, PA · Python, PyTorch, TensorFlow, LLMs · sponsorship: no-sponsorship</summary>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Cloud-and-Health-AI-FinOps-and-Technology-Value-Optimization_43870</id>
+    <title>Guidehouse: Cloud and Health AI FinOps and Technology Value Optimization</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cloud-and-Health-AI-FinOps-and-Technology-Value-Optimization_43870"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · US - Remote (Any location) · Azure · H-1B track record: ~68 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:cmu:/job/Pittsburgh-PA/AI-Security-Research-Intern---Summer-2027_2025199-1</id>
-    <title>Cmu: AI Security Research Intern – Summer 2027 🛂</title>
-    <link href="https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/AI-Security-Research-Intern---Summer-2027_2025199-1"/>
-    <updated>2026-10-20T21:51:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Pittsburgh, PA · Python, PyTorch, TensorFlow, LLMs · sponsorship: no-sponsorship · status: closed</summary>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44797</id>
+    <title>Guidehouse: ServiceNow Help Desk Support</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44797"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>2 openings · Remote — Florida / US · IT Support / Ops · US - Remote (Any location) · Tableau · H-1B track record: ~68 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:cmu:/job/Pittsburgh-PA/AI-Security-Software-Engineer-Intern---Summer-2027_2025200-1</id>
-    <title>Cmu: AI Security Software Engineer Intern – Summer 2027 🛂</title>
-    <link href="https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/AI-Security-Software-Engineer-Intern---Summer-2027_2025200-1"/>
-    <updated>2026-10-11T19:49:58Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Pittsburgh, PA · Python, PyTorch, TensorFlow, Computer Vision · sponsorship: no-sponsorship</summary>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/IT-Service-Desk-Specialist_41730</id>
+    <title>Guidehouse: IT Service Desk Specialist 🇺🇸</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/IT-Service-Desk-Specialist_41730"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · US - Remote (Any location) · Linux · sponsorship: citizens-only · H-1B track record: ~68 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:cmu:/job/Pittsburgh-PA/Malware-Analysis-Intern---Summer-2027_2025185-1</id>
-    <title>Cmu: Malware Analysis Intern - Summer 2027 🛂</title>
-    <link href="https://cmu.wd115.myworkdayjobs.com/sei/job/Pittsburgh-PA/Malware-Analysis-Intern---Summer-2027_2025185-1"/>
-    <updated>2026-10-11T19:49:58Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · SOC / Detection · Pittsburgh, PA · Python, C++ · sponsorship: no-sponsorship</summary>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Information-Security-Systems-Officer--ISSO-_44761</id>
+    <title>Guidehouse: Information Security Systems Officer (ISSO)</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Information-Security-Systems-Officer--ISSO-_44761"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · US - Remote (Any location) · H-1B track record: ~68 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:workday:/job/USA-CA-Pleasanton/Cybersecurity-Engineer-Intern_JR-0110809</id>
-    <title>Workday: Cybersecurity Engineer Intern 🛂</title>
-    <link href="https://workday.wd5.myworkdayjobs.com/Workday_Early_Career/job/USA-CA-Pleasanton/Cybersecurity-Engineer-Intern_JR-0110809"/>
-    <updated>2026-10-10T17:43:05Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · USA, CA, Pleasanton · Python, Java, TypeScript, JavaScript, AWS · sponsorship: no-sponsorship · H-1B track record: ~581 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Database-Engineer---Oracle---Cloud-Platforms_45321</id>
+    <title>Guidehouse: Database Engineer – Oracle &amp; Cloud Platforms</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Database-Engineer---Oracle---Cloud-Platforms_45321"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · US - Remote (Any location) · Python, SQL, Bash, Azure, Terraform · H-1B track record: ~68 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:greenhouse:affirm:8011375003</id>
-    <title>Affirm: IT Engineer Intern (Early Careers Summer 2027)</title>
-    <link href="https://job-boards.greenhouse.io/affirm/jobs/8011375003"/>
-    <updated>2026-10-09T23:11:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Other · San Francisco, California, United States · Python, Java, C++, JavaScript, React · H-1B track record: ~158 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/Cloud-ERP-Implementation-Intern_R101899</id>
+    <title>Impactadvisors: Cloud ERP Implementation Intern</title>
+    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/Cloud-ERP-Implementation-Intern_R101899"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · Cloud Platform · US Remote · $25/hr</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:greenhouse:memx:5449276008</id>
-    <title>MEMX: Data Center Operations Intern, Summer 2027 (Hybrid, NYC)</title>
-    <link href="https://job-boards.greenhouse.io/memx/jobs/5449276008"/>
-    <updated>2026-10-09T23:11:25Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States · Linux</summary>
+    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/Entry-Level-IT-Advisory-Consultant_R101837</id>
+    <title>Impactadvisors: Entry-Level IT Advisory Consultant 🛂</title>
+    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/Entry-Level-IT-Advisory-Consultant_R101837"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · US Remote · sponsorship: no-sponsorship</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:ashby:eightsleep:0ae8cdbe-8100-4f59-b702-16d836ab5550</id>
-    <title>Eight Sleep: Security &amp; IT Intern 🛂</title>
-    <link href="https://jobs.ashbyhq.com/eightsleep/0ae8cdbe-8100-4f59-b702-16d836ab5550"/>
-    <updated>2026-10-09T18:38:39Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Security (general) · Remote - US · Python, Git · sponsorship: no-sponsorship</summary>
+    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/IT-Infrastructure-Design-Engineer_R102100</id>
+    <title>Impactadvisors: IT Infrastructure Design Engineer</title>
+    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/IT-Infrastructure-Design-Engineer_R102100"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · US Remote · Linux</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:greenhouse:arcesiumllc:5257199007</id>
-    <title>Arcesium: Infrastructure Engineer Intern</title>
-    <link href="https://job-boards.greenhouse.io/arcesiumllc/jobs/5257199007"/>
-    <updated>2026-10-09T18:38:39Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · New York · Python, Java, LLMs, AWS, Kubernetes · H-1B track record: ~11 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:intapp:/job/US-AL-Remote/Cloud-Platform-Engineer_R2025433-1</id>
+    <title>Intapp: Cloud Platform Engineer</title>
+    <link href="https://intapp.wd1.myworkdayjobs.com/Intapp/job/US-AL-Remote/Cloud-Platform-Engineer_R2025433-1"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · US AL Remote · Python, Bash, LLMs, AWS, Azure · H-1B track record: ~22 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:BoschGroup:744000154757409</id>
-    <title>Bosch: Information Security and Privacy Intern</title>
-    <link href="https://jobs.smartrecruiters.com/BoschGroup/744000154757409"/>
-    <updated>2026-10-09T18:38:39Z</updated>
-    <category term="Not stated"/>
-    <summary>2 openings · Not stated · Security (general) · Farmington Hills, MI, United States · LLMs · H-1B track record: ~188 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:smartrecruiters:Intelerad:744000155587469</id>
+    <title>Intelerad: Product Owner (Cloud and Platform) - HL7/DICOM</title>
+    <link href="https://jobs.smartrecruiters.com/Intelerad/744000155587469"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote, UNITED STATES, United States (Hybrid) · $86.25k–$115k/yr · AWS, Azure, Terraform, Linux</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:alliance:/job/Franklin-Tennessee---United-States-of-America/Corporate-Security-Intern---Summer-2027---Franklin--TN_R00214220</id>
-    <title>Nissan: Corporate Security Intern - Summer 2027 - Franklin, TN 🛂</title>
-    <link href="https://alliance.wd3.myworkdayjobs.com/nissanjobs/job/Franklin-Tennessee---United-States-of-America/Corporate-Security-Intern---Summer-2027---Franklin--TN_R00214220"/>
-    <updated>2026-10-09T18:38:39Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Franklin, Tennessee - United States of America · sponsorship: no-sponsorship</summary>
+    <id>urn:intern-engine:workday:jabil:/job/Remote---USA/Onsite-Data-Center-Inventory-Specialist_J2466794</id>
+    <title>Jabil: Onsite Data Center Inventory Specialist</title>
+    <link href="https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Remote---USA/Onsite-Data-Center-Inventory-Specialist_J2466794"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - USA · H-1B track record: ~69 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:alliance:/job/Franklin-Tennessee---United-States-of-America/EA---Cloud-Intern---Summer-2027---Franklin--TN_R00214214</id>
-    <title>Nissan: EA &amp; Cloud Intern - Summer 2027 - Franklin, TN 🛂</title>
-    <link href="https://alliance.wd3.myworkdayjobs.com/nissanjobs/job/Franklin-Tennessee---United-States-of-America/EA---Cloud-Intern---Summer-2027---Franklin--TN_R00214214"/>
-    <updated>2026-10-09T18:38:39Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Cloud Platform · Franklin, Tennessee - United States of America · Python, LLMs, AWS, Git · sponsorship: no-sponsorship</summary>
+    <id>urn:intern-engine:workday:labcorp:/job/Kissimmee-FL/Phlebotomist-Full-Time-Floater-Kissimmee-St-Cloud-FL_2634838</id>
+    <title>LabCorp: Phlebotomist-Full Time/Floater-Kissimmee/St. Cloud. FL</title>
+    <link href="https://labcorp.wd1.myworkdayjobs.com/external/job/Kissimmee-FL/Phlebotomist-Full-Time-Floater-Kissimmee-St-Cloud-FL_2634838"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Cloud Platform · Kissimmee FL</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:allisontransmission:/job/Indianapolis-IN/IT-Security-Analyst-Internship---Summer-2027_R008295</id>
-    <title>Allison Transmission: IT Security Analyst Internship - Summer 2027</title>
-    <link href="https://allisontransmission.wd1.myworkdayjobs.com/ATI-External/job/Indianapolis-IN/IT-Security-Analyst-Internship---Summer-2027_R008295"/>
-    <updated>2026-10-09T18:38:39Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Indianapolis, IN · H-1B track record: ~10 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/IT-Desktop-Engineering-Intern_R-00194524</id>
+    <title>Leidos: IT Desktop Engineering Intern 🇺🇸</title>
+    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/IT-Desktop-Engineering-Intern_R-00194524"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · 6314 Remote/Teleworker US · sponsorship: citizens-only · H-1B track record: ~79 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:oracle:cva.fa.us1.oraclecloud.com:10255</id>
-    <title>Standard Aero: Co-op, IT Analyst: Spring</title>
-    <link href="https://cva.fa.us1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3/job/10255"/>
-    <updated>2026-10-09T10:44:39Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Other · Cincinnati, OH, United States · SQL</summary>
+    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057</id>
+    <title>Leidos: Network Site Design Intern 🇺🇸</title>
+    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · Network / Telecom · 6314 Remote/Teleworker US · sponsorship: citizens-only · H-1B track record: ~79 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:oracle:cva.fa.us1.oraclecloud.com:10479</id>
-    <title>Standard Aero: Intern, IT Analyst: Summer</title>
-    <link href="https://cva.fa.us1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3/job/10479"/>
-    <updated>2026-10-09T10:44:39Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Other · Cincinnati, OH, United States · SQL</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:hpe:/job/San-Jose-California-United-States-of-America/Wireless-Networking-Intern_1214969</id>
-    <title>Hewlett Packard Enterprise: Wireless Networking Intern</title>
-    <link href="https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/San-Jose-California-United-States-of-America/Wireless-Networking-Intern_1214969"/>
-    <updated>2026-10-09T10:44:39Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Network / Telecom · San Jose, California, United States of America · Python, SQL, Bash, PyTorch, TensorFlow · H-1B track record: ~499 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:oracle:hdhl.fa.us6.oraclecloud.com:1008210</id>
-    <title>Stantec: Civil/Transportation Engineering Intern - Infrastructure (Summer 2027)</title>
-    <link href="https://hdhl.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1008210"/>
-    <updated>2026-10-08T19:05:45Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Charleston, SC, United States; Columbia, SC, United States</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:applebank:/job/New-York-NY/XMLNAME-2027-Summer-Intern--Information-Security_2026-1416</id>
-    <title>Apple Bank: 2027 Summer Intern- Information Security 🛂</title>
-    <link href="https://applebank.wd5.myworkdayjobs.com/applebankcareers/job/New-York-NY/XMLNAME-2027-Summer-Intern--Information-Security_2026-1416"/>
-    <updated>2026-10-08T19:05:45Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · New York, NY · $24/hr · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:gfs:/job/Wyoming-Michigan/Software-Engineer-Intern--Transportation-Routing--_R-58374</id>
-    <title>Gordon Food Service: Software Engineer Intern (Transportation Routing )</title>
-    <link href="https://gfs.wd5.myworkdayjobs.com/usjobs-gen-gfs/job/Wyoming-Michigan/Software-Engineer-Intern--Transportation-Routing--_R-58374"/>
-    <updated>2026-10-08T19:05:45Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Network / Telecom · Wyoming, Michigan · LLMs · H-1B track record: ~21 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:hcsc:/job/TX---Richardson/Early-Careers---Security-Data-Classification-Intern_R0059513</id>
-    <title>HCSC: Early Careers - Security Data Classification Intern 🛂</title>
-    <link href="https://hcsc.wd1.myworkdayjobs.com/HCSC_External/job/TX---Richardson/Early-Careers---Security-Data-Classification-Intern_R0059513"/>
-    <updated>2026-10-08T19:05:45Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Security (general) · TX - Richardson · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:ngc:/job/United-States-California-McClellan/XMLNAME-2027-Systems-Engineer-Intern---McClellan-CA_R10255163</id>
-    <title>Northrop Grumman: 2027-Systems Engineer Intern - McClellan CA 🇺🇸</title>
-    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-California-McClellan/XMLNAME-2027-Systems-Engineer-Intern---McClellan-CA_R10255163"/>
-    <updated>2026-10-08T19:05:45Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States-California-McClellan · $21.5–$39/hr · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:rhsc:/job/Okemos-MI/Internship--Government-Programs-Network_JR101489-1</id>
-    <title>Delta Dental: Internship- Government Programs Network</title>
-    <link href="https://rhsc.wd5.myworkdayjobs.com/delta_dental_of_michigan/job/Okemos-MI/Internship--Government-Programs-Network_JR101489-1"/>
-    <updated>2026-10-08T19:05:45Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Network / Telecom · Okemos, MI</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:ngc:/job/United-States-Maryland-Baltimore/XMLNAME-2027-Electrical-Systems-Engineer-Intern---Baltimore-MD_R10255010</id>
-    <title>Northrop Grumman: 2027 Electrical/Systems Engineer Intern - Baltimore MD 🇺🇸</title>
-    <link href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Maryland-Baltimore/XMLNAME-2027-Electrical-Systems-Engineer-Intern---Baltimore-MD_R10255010"/>
-    <updated>2026-10-08T10:44:26Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · United States-Maryland-Baltimore · $20.5–$37.25/hr · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:aero:/job/El-Segundo-CA/XMLNAME-2027-Network-Systems-Grad-Intern_R016836</id>
-    <title>The Aerospace Corporation: 2027 Network Systems Grad Intern 🇺🇸</title>
-    <link href="https://aero.wd5.myworkdayjobs.com/external/job/El-Segundo-CA/XMLNAME-2027-Network-Systems-Grad-Intern_R016836"/>
-    <updated>2026-10-08T01:16:28Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Network / Telecom · El Segundo, CA · Python, C++ · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:alliance:/job/Canton-Mississippi---United-States-of-America/Systems-Engineer-Intern---Summer-2027---Canton--MS_R00214882</id>
-    <title>Nissan: Systems Engineer Intern - Summer 2027 - Canton, MS 🛂</title>
-    <link href="https://alliance.wd3.myworkdayjobs.com/nissanjobs/job/Canton-Mississippi---United-States-of-America/Systems-Engineer-Intern---Summer-2027---Canton--MS_R00214882"/>
-    <updated>2026-10-08T01:16:28Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Systems &amp; Cloud Infra · Canton, Mississippi - United States of America · Python, C#, SQL · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:alliance:/job/Franklin-Tennessee---United-States-of-America/IS-IT-Intern---Summer-2027---Franklin--TN_R00214212</id>
-    <title>Nissan: IS/IT Intern - Summer 2027 - Franklin, TN 🛂</title>
-    <link href="https://alliance.wd3.myworkdayjobs.com/nissanjobs/job/Franklin-Tennessee---United-States-of-America/IS-IT-Intern---Summer-2027---Franklin--TN_R00214212"/>
-    <updated>2026-10-08T01:16:28Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · IT Support / Ops · Franklin, Tennessee - United States of America · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:hcsc:/job/IL---Downers-Grove/Early-Careers---Systems-Analyst-Intern--Downers-Grove-_R0059499</id>
-    <title>HCSC: Early Careers - Systems Analyst Intern (Downers Grove) 🛂</title>
-    <link href="https://hcsc.wd1.myworkdayjobs.com/HCSC_External/job/IL---Downers-Grove/Early-Careers---Systems-Analyst-Intern--Downers-Grove-_R0059499"/>
-    <updated>2026-10-20T21:51:24Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Systems &amp; Cloud Infra · IL - Downers Grove · Python, Java · sponsorship: no-sponsorship · status: closed</summary>
+    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Cyber-Security-Subject-Matter-Expert_R-00194019</id>
+    <title>Leidos: Cyber Security Subject Matter Expert 🇺🇸</title>
+    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Cyber-Security-Subject-Matter-Expert_R-00194019"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · 6314 Remote/Teleworker US · Python, SQL, AWS, Azure, Linux · sponsorship: citizens-only · H-1B track record: ~79 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000152747719</id>
+    <title>Link Solutions: Systems Administrator (Intermediate-Level)</title>
+    <link href="https://jobs.smartrecruiters.com/LinkSolutionsInc/744000152747719"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Orlando, FL, United States · $80k–$100k/yr · Linux</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000156069440</id>
+    <title>Link Solutions: IT Service Management Coordinator</title>
+    <link href="https://jobs.smartrecruiters.com/LinkSolutionsInc/744000156069440"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · IT Support / Ops · Orlando, FL, United States · $60k–$70k/yr</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000152736767</id>
+    <title>Link Solutions: Information Security Specialist (Intermediate-Level) 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LinkSolutionsInc/744000152736767"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Security / IT · Orlando, FL, United States · $80k–$90k/yr · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000154130955</id>
+    <title>Link Solutions: Network Administrator (Intermediate-Level) 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LinkSolutionsInc/744000154130955"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Network / Telecom · Orlando, FL, United States · $80k–$90k/yr · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:Mirantis:744000149056099</id>
+    <title>Mirantis: AI Storage Infrastructure Engineer - remote in the US</title>
+    <link href="https://jobs.smartrecruiters.com/Mirantis/744000149056099"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote, USA, United States (Remote) · AWS, Kubernetes, Terraform, Linux · H-1B track record: ~11 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:Mirantis:744000138380407</id>
+    <title>Mirantis: AI Infrastructure &amp; Platform Operations Engineer (remote in the US)</title>
+    <link href="https://jobs.smartrecruiters.com/Mirantis/744000138380407"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote, USA , United States (Remote) · AWS, Kubernetes, Linux · H-1B track record: ~11 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:nabancard:/job/US---Remote/DevOps-Engineer_JR101983</id>
+    <title>NorthAB: DevOps Engineer</title>
+    <link href="https://nabancard.wd1.myworkdayjobs.com/nab/job/US---Remote/DevOps-Engineer_JR101983"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · US - Remote · Python, SQL, Bash, Git, PostgreSQL</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:philips:/job/United-States-of-America---Remote-Based-United-States/Technical-Support-Engineer--New-England-_588904</id>
+    <title>Philips: Technical Support Engineer (New England)</title>
+    <link href="https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/United-States-of-America---Remote-Based-United-States/Technical-Support-Engineer--New-England-_588904"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · United States of America - Remote Based, United States · Vue</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:planetlabs:8221849</id>
+    <title>Planet: Infrastructure Solutions Engineer</title>
+    <link href="https://job-boards.greenhouse.io/planetlabs/jobs/8221849"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States, Remote · Python, LLMs, GCP, Kubernetes, Terraform</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:ptc:/job/Remote-USA/Cloud-Service-Engineer_JR112727</id>
+    <title>PTC: Cloud Service Engineer 🇺🇸</title>
+    <link href="https://ptc.wd1.myworkdayjobs.com/ptc/job/Remote-USA/Cloud-Service-Engineer_JR112727"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote, USA · Java, AWS, Azure, Linux · sponsorship: citizens-only · H-1B track record: ~80 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:republic:/job/Remote---USA/Field-IT-Engineer_R-185804-1</id>
+    <title>Republic Services: Field IT Engineer (Texas &amp; Louisiana)</title>
+    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Field-IT-Engineer_R-185804-1"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote - USA · H-1B track record: ~19 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:republic:/job/Remote---USA/Field-IT-Engineer_R-185805-1</id>
+    <title>Republic Services: Field IT Engineer (Tennessee, Kentucky &amp; Indiana)</title>
+    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Field-IT-Engineer_R-185805-1"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote - USA · H-1B track record: ~19 approvals (FY2022–2023)</summary>
   </entry>
 </feed>

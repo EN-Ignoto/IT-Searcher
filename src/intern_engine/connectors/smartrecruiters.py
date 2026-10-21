@@ -100,7 +100,8 @@ async def fetch(company: dict, net: Net) -> Fetch:
 
     jobs: dict[str, Job] = {}
     incomplete_reason: str | None = None
-    for query in _QUERIES:
+    for query in (_QUERIES + (("help desk", "service desk", "IT support", "IT technician", "junior", "entry level")
+                        if company.get("opportunity_scope") == "it" else ())):
         exhausted = False
         trusted_total: int | None = None
         for offset in range(0, _MAX_JOBS, _PAGE_SIZE):

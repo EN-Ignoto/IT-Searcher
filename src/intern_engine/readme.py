@@ -17,6 +17,7 @@ from urllib.parse import quote
 from . import (
     config,
     filters,
+    filters_it,
     filters_secnet,
     grouping,
     h1b,
@@ -251,6 +252,20 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
     below. The pitch table links to its anchor, so advertising it when the
     section is absent leaves a link that scrolls nowhere.
     """
+    if cfg.get("opportunity_scope") == "it":
+        pages = config.pages_base()
+        return [
+            "# 🖥️ Orlando IT Jobs & Internships", "",
+            "Help desk, desktop support, networking, systems, cloud, and related IT opportunities.", "",
+            f"**{total_open} open postings** · Data as of {data_as_of or 'last collection'}", "",
+            f"[Search dashboard]({pages}/) · [CSV]({pages}/internships.csv) · [RSS]({pages}/feed.xml)", "",
+            "Nearby-city coverage includes Orlando, Lake Mary, Sanford, Winter Park, Kissimmee, "
+            "and surrounding communities. This is city matching, not a measured driving radius.", "",
+            "Remote postings need US or Florida location evidence. Confirm state eligibility on the employer page.", "",
+            "**Stretch** means the title lacks a clear junior, internship, or routine support signal. "
+            "Experience requirements and schedule must be checked in the posting; this is a broad discovery list, "
+            "not a guarantee of eligibility. Senior and management titles are excluded.", "",
+        ]
     count_phrase = f"{total_open} open roles"
     if shown is not None and shown != total_open:
         count_phrase = f"{total_open} open roles ({shown} listed below)"
@@ -267,10 +282,10 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
     return [
         '<div align="center">',
         "",
-        "# 🔐 Summer 2027 Security & Networking Internships",
+        "# 🔐 Entry-Level IT Jobs & Internships",
         "",
-        "**A self-updating engine that tracks security, networking, and "
-        "infrastructure internships so you don't have to.**",
+        "**A self-updating engine that tracks IT support, networking, and "
+        "infrastructure jobs and internships so you don't have to.**",
         "",
         f"[![CI](https://img.shields.io/github/actions/workflow/status/{repo}/ci.yml"
         f"?branch=main&label=tests&style=flat-square&color=3fb950)]"
@@ -298,7 +313,7 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
         "</div>",
         "",
         "This is my version of an open-source internship tracker, filtered to "
-        "security, networking, and infrastructure roles. It reads company hiring "
+        "IT support, networking, and infrastructure roles. It reads company hiring "
         "feeds every 3 hours and keeps one list with the newest roles on top. "
         f"Browse and search it on the [live dashboard]({pages}/).",
         "",
@@ -347,13 +362,13 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
         "",
         "| | |",
         "|---|---|",
-        "| **Roles** | Cybersecurity, network engineering, systems/infrastructure, "
-        "and IT operations internships |",
+        "| **Roles** | Help desk, desktop support, junior network engineering, systems/infrastructure, "
+        "and IT operations jobs and internships |",
         f"| **Region** | {region}"
         + (" (primary), with a separate International section"
            if config.include_international(cfg) else "")
         + " |",
-        f"| **Cycles** | {cycles_phrase} |",
+        f"| **Sections** | {cycles_phrase} |",
         "",
         "## About",
         "",
@@ -476,7 +491,7 @@ def _footer() -> list[str]:
         "Derived from [zshah101/Automated-List-Of-Summer-2027-and-Fall-2026-Tech-"
         "Internships](https://github.com/zshah101/Automated-List-Of-Summer-2027-"
         "and-Fall-2026-Tech-Internships) (MIT), with a replacement filter module "
-        "for security and networking titles.",
+        "for Orlando-area IT opportunities.",
         "",
     ]
 
@@ -695,22 +710,22 @@ def generate(store_data: dict, data_as_of: str | None = None) -> dict:
         track_sections = [
             (heading, cycle,
              [r for r in rows
-              if track in filters_secnet.tracks_of(r.get("title") or "")])
+              if track in (filters_it if cfg.get("opportunity_scope") == "it" else filters_secnet).tracks_of(r.get("title") or "")])
             for heading, cycle, rows in sections
         ]
         track_sections = [(h, c, r) for h, c, r in track_sections if r]
         track_rolling = [
             r for r in rolling_rows
-            if track in filters_secnet.tracks_of(r.get("title") or "")
+            if track in (filters_it if cfg.get("opportunity_scope") == "it" else filters_secnet).tracks_of(r.get("title") or "")
         ]
         if not track_sections and not track_rolling:
             continue
 
-        lines.append(f"## {TRACK_TITLES[track]}")
+        lines.append("## 🖥️ IT Support, Networks & Infrastructure" if cfg.get("opportunity_scope") == "it" and track == "network" else f"## {TRACK_TITLES[track]}")
         lines.append("")
 
         for heading, cycle, rows in track_sections:
-            lines.append(f"### {heading}  ({len(rows)} employer-stated)")
+            lines.append(f"### {heading}  ({len(rows)} roles)" if cfg.get("opportunity_scope") == "it" else f"### {heading}  ({len(rows)} employer-stated)")
             lines.append("")
             lines.append("| Company | Role | Category | Location | Skills | Posted | Apply |")
             lines.append("|---|---|---|---|---|---|---|")
@@ -722,7 +737,7 @@ def generate(store_data: dict, data_as_of: str | None = None) -> dict:
                 f"### Recently posted — cycle not stated  ({len(track_rolling)} roles)",
                 "",
                 "These postings never name a cycle, not in the title and not in the "
-                "posting text, so neither do we. They're recent tech internships "
+                "posting text, so neither do we. They're recent IT jobs & internships "
                 "(posted within the last few weeks), often exactly the early drops "
                 "worth applying to first; we just can't tell you which cycle "
                 "they're for, and we'd rather say so than guess. The moment a "

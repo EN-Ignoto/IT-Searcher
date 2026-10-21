@@ -5,11 +5,27 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://ihrtkaii.github.io/secnet-internships/feed.xml" rel="self"/>
   <link href="https://github.com/ihrtkaii/secnet-internships"/>
-  <updated>2026-10-20T21:51:24Z</updated>
+  <updated>2026-10-21T00:24:02Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/ihrtkaii/secnet-internships</uri></author>
   <entry>
+    <id>urn:intern-engine:workday:heidelbergmaterials:/job/Irving-TX/IT-Intern_JR10018993</id>
+    <title>Heidelberg Materials: IT Intern</title>
+    <link href="https://heidelbergmaterials.wd3.myworkdayjobs.com/global_hm_career_site/job/Irving-TX/IT-Intern_JR10018993"/>
+    <updated>2026-10-21T00:24:02Z</updated>
+    <category term="Not stated"/>
+    <summary>2 openings · Not stated · IT Support / Ops · Irving, TX</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:trustage:/job/Wisconsin---Remote/Enterprise-Information---Technology-Internship--Hybrid-_R-012155</id>
+    <title>TruStage: Information Technology - Development and Infrastructure Internship (hybrid)</title>
+    <link href="https://trustage.wd1.myworkdayjobs.com/TruStage/job/Wisconsin---Remote/Enterprise-Information---Technology-Internship--Hybrid-_R-012155"/>
+    <updated>2026-10-21T00:24:02Z</updated>
+    <category term="Summer 2027"/>
+    <summary>Summer 2027 · Systems &amp; Cloud Infra · Wisconsin - Remote · C#, JavaScript, React, Angular, .NET</summary>
+  </entry>
+  <entry>
     <id>urn:intern-engine:ashby:illumio:09d4895b-6de4-4d22-bbc3-aa45f2b24260</id>
-    <title>Illumio: Security Research Intern</title>
+    <title>Illumio: Security Research, Intern</title>
     <link href="https://jobs.ashbyhq.com/illumio/09d4895b-6de4-4d22-bbc3-aa45f2b24260"/>
     <updated>2026-10-20T21:51:24Z</updated>
     <category term="Summer 2027"/>
@@ -790,21 +806,5 @@
     <updated>2026-10-07T19:14:56Z</updated>
     <category term="Summer 2027"/>
     <summary>Summer 2027 · Systems &amp; Cloud Infra · St. Petersburg/Tampa, FL · Python, SQL, GraphQL · H-1B track record: ~69 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:mastercard:/job/Arlington-Virginia/Security-Infrastructure-Engineering---Architecture-Intern--Summer-2027---Arlington--VA--US_R-284924</id>
-    <title>Mastercard: Security Infrastructure Engineering &amp; Architecture Intern, Summer 2027 – Arlington, VA, US</title>
-    <link href="https://mastercard.wd1.myworkdayjobs.com/Campus/job/Arlington-Virginia/Security-Infrastructure-Engineering---Architecture-Intern--Summer-2027---Arlington--VA--US_R-284924"/>
-    <updated>2026-10-20T21:51:24Z</updated>
-    <category term="Summer 2027"/>
-    <summary>Summer 2027 · Security (general) · Arlington, Virginia · $35–$46/hr · Python, Java · status: closed</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:tenstorrentuniversity:5256686007</id>
-    <title>Tenstorrent: AI Software Intern - Cloud, Infrastructure &amp; Data Centre Deployment (USA)</title>
-    <link href="https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5256686007"/>
-    <updated>2026-10-07T10:28:10Z</updated>
-    <category term="Not stated"/>
-    <summary>Not stated · Cloud Platform · Austin, Texas, United States; Santa Clara, California, United States · $50/hr · Python, Bash, Kubernetes, Linux</summary>
   </entry>
 </feed>

@@ -1,6 +1,14 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "workday:heidelbergmaterials:/job/Irving-TX/IT-Intern_JR10018993",
+      "workday:heidelbergmaterials:/job/Irving-TX/IT-Intern_JR10019234",
+      "workday:trustage:/job/Wisconsin---Remote/Enterprise-Information---Technology-Internship--Hybrid-_R-012155"
+    ],
+    "telegram": [
+      "workday:heidelbergmaterials:/job/Irving-TX/IT-Intern_JR10018993",
+      "workday:heidelbergmaterials:/job/Irving-TX/IT-Intern_JR10019234",
+      "workday:trustage:/job/Wisconsin---Remote/Enterprise-Information---Technology-Internship--Hybrid-_R-012155"
+    ]
   }
 }

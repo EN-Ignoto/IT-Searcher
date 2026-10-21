@@ -186,6 +186,8 @@ def program_type(title: str) -> str:
     intern = bool(re.search(r"\bintern(?:ship)?s?\b", title or "", re.IGNORECASE))
     if coop and intern:
         return "Internship / Co-op"
+    if not coop and not intern and not is_internship(title):
+        return "Entry-level job"
     return "Co-op" if coop else "Internship"
 
 

@@ -19,6 +19,7 @@ def test_accept_it_opportunities(title):
     'Security Guard', 'Software Engineer Intern',
     'Mechanical Systems Engineering Intern',
     'Cloud Sales Intern', 'Provider Network Intern',
+    'Data Science Intern - Infrastructure (Summer 2027)',
 ])
 def test_reject_unrelated_or_experienced_roles(title):
     assert not filters_it.is_opportunity(title)

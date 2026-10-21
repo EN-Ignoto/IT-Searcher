@@ -372,6 +372,11 @@ def generate(store_data: dict, stats: dict) -> None:
     # "8 openings" instead of eight rows a reader has to scroll past.
     display_jobs = grouping.group(open_jobs)
     cfg = config.load_config()
+    if cfg.get("opportunity_scope") == "it":
+        # Stable sorting keeps newest-first within each local/remote group.
+        open_jobs.sort(key=lambda r: config.cycles(cfg).index(r.get("season"))
+                       if r.get("season") in config.cycles(cfg) else 99)
+        display_jobs = grouping.group(open_jobs)
     try:
         data_as_of_dt = datetime.strptime(
             (stats.get("fetched_at") or stats.get("generated_at") or "")[:19],
@@ -955,6 +960,21 @@ def generate(store_data: dict, stats: dict) -> None:
 </body></html>"""
 
     os.makedirs(paths.DOCS_DIR, exist_ok=True)
+    if cfg.get("opportunity_scope") == "it":
+        local_count = sum(1 for r in open_jobs if r.get("season") in {"Orlando area", "Stretch — Orlando area"})
+        old_hero = _hero(stats, open_jobs, proven_roles)
+        new_hero = old_hero.replace(f'<div class="hnum">{len(open_jobs)}</div><div class="hlbl">with a stated cycle</div>',
+                                   f'<div class="hnum">{local_count}</div><div class="hlbl">Orlando area</div>')
+        new_hero = new_hero.replace("the employer named it, we didn't guess", "nearby cities, including local stretch roles")
+        html_doc = html_doc.replace(old_hero, new_hero)
+        html_doc = html_doc.replace("All cycles", "All sections").replace("<th>Cycle</th>", "<th>Section</th>")
+        html_doc = html_doc.replace("Internships &amp; co-ops", "All opportunity types")
+        html_doc = html_doc.replace('<option value="Internship">Internships</option>',
+                                   '<option value="Entry-level job">Jobs</option><option value="Internship">Internships</option>')
+        html_doc = html_doc.replace('cycle the employer actually stated, in the title or the posting text',
+                                   'location/fit section assigned by this tracker')
+        html_doc = html_doc.replace('employer-stated cycle only', 'assigned section only')
+        html_doc = html_doc.replace('Roles by cycle', 'Roles by section')
     with open(paths.DASHBOARD_PATH, "w", encoding="utf-8") as f:
         f.write(html_doc)
 

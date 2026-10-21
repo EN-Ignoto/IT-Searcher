@@ -86,6 +86,10 @@ def cmd_render() -> None:
     """
     store_data = store.load(paths.JOBS_PATH)
     stats = pipeline.load_stats()
+    cfg = pipeline.config.load_config()
+    if cfg.get("opportunity_scope") == "it":
+        pipeline._close_out_of_scope(store_data, cfg)
+        store.save(paths.JOBS_PATH, store_data)
     # The store just changed, so the fetch-time counts in stats.json describe a
     # different dataset. Recompute the ones derived from the store; leave the
     # fetch metrics (which only a real run can produce) as the last run's.

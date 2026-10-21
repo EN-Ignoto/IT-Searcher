@@ -759,7 +759,7 @@ def generate(store_data: dict, data_as_of: str | None = None) -> dict:
 
     lines.extend(radar_lines)
     lines.extend(_closed_section(store_data, cycles, data_as_of=data_as_of))
-    lines.extend(_footer())
+    lines.extend(["", "---", "Employer postings can close at any time. Confirm experience, schedule, and location before applying.", "", "Derived from the MIT-licensed internship engine; adapted for Orlando-area IT opportunities.", ""] if cfg.get("opportunity_scope") == "it" else _footer())
 
     with open(paths.README_PATH, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))

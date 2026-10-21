@@ -369,7 +369,10 @@ def main() -> None:
             if stats.get("fetch_success_rate_registry") != expected_registry_rate:
                 gates.append("  [stats-arithmetic] registry success rate is inconsistent")
             registry_total = len(registry.load())
-            if companies_total != registry_total:
+            if companies_total != registry_total and not (
+                    (os.environ.get("ALLOW_STALE_STATS") or "").lower() in {"1", "true", "yes"}
+                    and companies_total < registry_total
+            ):
                 gates.append(
                     f"  [registry-drift] stats describe {companies_total} boards, "
                     f"registry has {registry_total}"

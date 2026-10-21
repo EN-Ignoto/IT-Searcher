@@ -31,6 +31,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 from intern_engine import (  # noqa: E402
     config,
     filters,
+    filters_it,
     filters_secnet,
     paths,
     quality,
@@ -122,7 +123,7 @@ def main() -> None:
         if stated is not None and stated != season and stated not in (
                 r.get("seasons") or []):
             flag(r, "title-season-mismatch")
-        if stated is None and filters.states_explicit_year(title):
+        if cfg.get("opportunity_scope") != "it" and stated is None and filters.states_explicit_year(title):
             flag(r, "off-cycle-year-in-title")
         # The two halves of the evidence contract, checked both ways. These
         # are what stop a fabricated cycle from ever reaching the list again:
@@ -139,10 +140,12 @@ def main() -> None:
                 not filters.region_ok(r.get("location") or "",
                                       config.want_us(cfg), config.want_canada(cfg)):
             flag(r, "out-of-region")
-        if not filters.is_internship(title):
+        if not (filters_it.is_opportunity(title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(title)):
             flag(r, "not-an-internship-title")
-        if cfg.get("role_scope", "tech") == "tech" and not filters_secnet.is_relevant(title):
+        if cfg.get("role_scope", "tech") == "tech" and not (filters_it.is_relevant(title) if cfg.get("opportunity_scope") == "it" else filters_secnet.is_relevant(title)):
             flag(r, "not-a-tech-title")
+        if cfg.get("opportunity_scope") == "it" and season != filters_it.bucket(title, r.get("location") or ""):
+            flag(r, "wrong-local-or-remote-section")
         posted = (r.get("posted_at") or "")[:10]
         # Age only disqualifies a role whose cycle we INFERRED, where recency
         # was the evidence. When the employer stated the cycle, an old posting

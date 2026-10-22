@@ -384,7 +384,6 @@ def generate(store_data: dict, stats: dict) -> None:
         ).replace(tzinfo=UTC)
     except ValueError:
         data_as_of_dt = datetime.now(UTC)
-    data_as_of = data_as_of_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
     updated = data_as_of_dt.strftime("%b %d, %Y at %H:%M UTC")
     if config.include_international(cfg):
         region = "US + International"
@@ -576,6 +575,10 @@ def generate(store_data: dict, stats: dict) -> None:
               text-transform:uppercase; font-size:11px; letter-spacing:.05em; }}
   .rt {{ font-weight:600; }}
   .nowrap {{ white-space:nowrap; }}
+  .savedpanel {{ margin:24px 0; padding:18px; border:1px solid var(--border); border-radius:12px; }}
+  .savedpanel summary {{ cursor:pointer; font-size:20px; font-weight:650; }}
+  .savedcard {{ padding:16px 0; border-bottom:1px solid var(--border); }}
+  .savedcard p {{ margin:8px 0; }}
   .c-save {{ width:34px; padding-right:0; }}
   .star {{ background:none; border:0; color:#55606f; font-size:17px;
            cursor:pointer; padding:0 2px; line-height:1;
@@ -681,6 +684,7 @@ def generate(store_data: dict, stats: dict) -> None:
 </style></head><body><div class="wrap">
   <header class="top">
     <h1>{"Orlando-area" if cfg.get("opportunity_scope") == "it" else escape(region)} IT jobs & internships</h1>
+    <p class="sub">Refresh scheduled hourly. The fresh feed keeps postings for {config.max_age_days(cfg)} days; undated roles expire {config.max_age_days(cfg)} days after first discovery. Start with Last 24 hours or Last 48 hours to apply early.</p>
     <p class="sub">Local opportunities first; remote and stretch roles have separate section filters. Confirm experience, schedule, and remote-state eligibility with the employer.</p>
     <p class="sub">Read straight from {stats.get('companies_total', 0):,} employer
     job boards. Data as of {escape(updated)}.</p>
@@ -695,6 +699,7 @@ def generate(store_data: dict, stats: dict) -> None:
     showing)</span></h2>
   <div class="filters" id="filters">
     <input id="q" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
+    <button id="viewsaved" class="ghost" type="button">Saved for later</button>
     <select id="cycle"><option value="">All cycles</option>{_options(cycles)}</select>
     <label class="chk" title="Show only the roles you've starred (stored in this browser)">
       <input id="savedonly" type="checkbox"><span>★ saved (<span id="savedn">0</span>)</span></label>
@@ -707,9 +712,10 @@ def generate(store_data: dict, stats: dict) -> None:
         <select id="cat"><option value="">All categories</option>{_options(categories)}</select>
         <select id="age">
           <option value="">Posted anytime</option>
+          <option value="1">Last 24 hours</option>
           <option value="2">Last 48 hours</option>
           <option value="7">Last 7 days</option>
-          <option value="30">Last 30 days</option>
+          <option value="14">Last 14 days</option>
         </select>
         <select id="spon" title="What the posting itself says about visa sponsorship">
           <option value="">Any sponsorship status</option>
@@ -748,6 +754,14 @@ def generate(store_data: dict, stats: dict) -> None:
   <p id="empty" class="muted empty" hidden>No roles match those filters.
     <button class="ghost" type="button" id="reset2">Clear filters</button></p>
 
+  <details id="savedpanel" class="savedpanel">
+    <summary>Saved for later (<span id="savedtotal">0</span>)</summary>
+    <p class="muted">Your saved links stay here even after leaving the fresh feed. Check the employer page before applying.
+    Saved in this browser only; Export saved gives you a CSV backup.</p>
+    <p id="storagewarning" role="status" hidden>Browser storage is unavailable. Export your saved roles before closing this page.</p>
+    <div id="savedlist"></div>
+  </details>
+
   {_signup_section(cfg)}
   {_radar_section(store_data, cfg, data_as_of_dt)}
 
@@ -768,6 +782,7 @@ def generate(store_data: dict, stats: dict) -> None:
   Employer Data Hub</a>) — a history, not a promise; no ✓ only means no confident
   match. Roles can close at any time; always confirm on the company's own site.</footer>
 </div>
+<script src="saved-roles.js"></script>
 <script>
 (function () {{
   var q = document.getElementById('q'), cycle = document.getElementById('cycle'),
@@ -786,30 +801,25 @@ def generate(store_data: dict, stats: dict) -> None:
   // Deliberately localStorage and nothing else: a tracker that needs an account
   // is a tracker most people bounce off, and we have no business holding anyone's
   // application list on a server. Everything here stays in this browser.
-  var KEY = 'ie.saved.v1', saved = {{}};
-  try {{ saved = JSON.parse(localStorage.getItem(KEY) || '{{}}') || {{}}; }} catch (e) {{ saved = {{}}; }}
-  // Remove ids no longer present in the current artifact. Otherwise the badge
-  // counts invisible roles that cannot be viewed, exported, or unstarred.
-  //
-  // A row can stand for several requisitions (an employer that opened the same
-  // job three times). Every one of those ids has to count as present, and a
-  // star on a requisition that is now represented by a sibling has to MOVE to
-  // the surviving row — otherwise folding the display would quietly delete
-  // roles a reader had saved.
-  var currentIds = {{}};
-  rows.forEach(function (tr) {{
-    var ids = (tr.dataset.ids || tr.dataset.id).split('|');
-    ids.forEach(function (id) {{ currentIds[id] = true; }});
-    if (ids.length > 1 && !saved[tr.dataset.id]) {{
-      for (var i = 0; i < ids.length; i++) {{
-        if (saved[ids[i]]) {{ saved[tr.dataset.id] = saved[ids[i]]; break; }}
-      }}
-    }}
-    ids.forEach(function (id) {{ if (id !== tr.dataset.id) delete saved[id]; }});
-  }});
-  Object.keys(saved).forEach(function (id) {{ if (!currentIds[id]) delete saved[id]; }});
+  var KEY = 'ie.saved.v1', saved = Object.create(null), currentIds = {{}};
+  function rowSnapshot(tr) {{
+    var td = tr.cells, link = tr.querySelector('a[href]');
+    return {{id: tr.dataset.id, ids: (tr.dataset.ids || tr.dataset.id).split('|'),
+      company: td[1].innerText.trim(), title: td[2].innerText.trim(),
+      season: td[3].innerText.trim(), category: td[4].innerText.trim(),
+      location: td[5].innerText.trim(), salary: td[6].innerText.trim(),
+      posted: tr.dataset.posted || '', url: link ? link.href : ''}};
+  }}
+  try {{ saved = SavedRoleStore.parse(localStorage.getItem(KEY)); }} catch (e) {{
+    document.getElementById('storagewarning').hidden = false;
+  }}
+  var current = rows.map(rowSnapshot);
+  current.forEach(function (row) {{ currentIds[row.id] = true; }});
+  saved = SavedRoleStore.reconcile(saved, current);
   function persist() {{
-    try {{ localStorage.setItem(KEY, JSON.stringify(saved)); }} catch (e) {{ /* private mode */ }}
+    try {{ localStorage.setItem(KEY, JSON.stringify(saved)); }} catch (e) {{
+      document.getElementById('storagewarning').hidden = false;
+    }}
   }}
   persist();
   function savedCount() {{ return Object.keys(saved).length; }}
@@ -822,14 +832,35 @@ def generate(store_data: dict, stats: dict) -> None:
     }}
     tr.classList.toggle('saved', on);
   }}
-  function paintAll() {{ rows.forEach(paintRow); savedn.textContent = savedCount(); }}
+  function paintSavedList() {{
+    var list = document.getElementById('savedlist'); list.replaceChildren();
+    document.getElementById('savedtotal').textContent = savedCount();
+    Object.keys(saved).sort(function (a,b) {{ return saved[b].savedAt - saved[a].savedAt; }}).forEach(function (id) {{
+      var item = saved[id], card = document.createElement('article'); card.className = 'savedcard';
+      var title = document.createElement(item.url ? 'a' : 'strong');
+      title.textContent = (item.company ? item.company + ' — ' : '') + (item.title || 'Saved role');
+      if (item.url) {{ title.href = item.url; title.target = '_blank'; title.rel = 'noopener'; }}
+      var info = document.createElement('p'); info.className = 'muted';
+      info.textContent = [item.location, item.posted ? 'Posted ' + item.posted : 'Posting date unknown',
+        currentIds[id] ? 'In the current fresh feed' : 'No longer in the fresh feed — check employer'].filter(Boolean).join(' · ');
+      var remove = document.createElement('button'); remove.type = 'button'; remove.className = 'ghost';
+      remove.textContent = 'Remove saved role';
+      remove.addEventListener('click', function () {{ delete saved[id]; persist(); paintAll(); apply(); }});
+      card.append(title, info, remove); list.appendChild(card);
+    }});
+    if (!savedCount()) {{ var emptySaved = document.createElement('p'); emptySaved.textContent = 'Click ☆ beside a role to save it here.'; list.appendChild(emptySaved); }}
+  }}
+  function paintAll() {{ rows.forEach(paintRow); savedn.textContent = savedCount(); paintSavedList(); }}
+  document.getElementById('viewsaved').addEventListener('click', function () {{
+    var panel = document.getElementById('savedpanel'); panel.open = true; panel.scrollIntoView({{behavior:'smooth',block:'start'}});
+  }});
 
   document.getElementById('rows').addEventListener('click', function (ev) {{
     var btn = ev.target.closest ? ev.target.closest('.star') : null;
     if (!btn) return;
     var tr = btn.closest('tr'), id = tr.dataset.id;
-    if (saved[id]) {{ delete saved[id]; }} else {{ saved[id] = Date.now(); }}
-    persist(); paintRow(tr); savedn.textContent = savedCount();
+    if (saved[id]) {{ delete saved[id]; }} else {{ saved[id] = SavedRoleStore.snapshot(rowSnapshot(tr)); }}
+    persist(); paintAll();
     if (savedonly.checked) apply();
   }});
 
@@ -844,23 +875,21 @@ def generate(store_data: dict, stats: dict) -> None:
   document.getElementById('export').addEventListener('click', function () {{
     var head = ['company', 'role', 'cycle', 'category', 'location', 'salary', 'posted', 'url'],
         lines = [head.join(',')];
-    rows.forEach(function (tr) {{
-      if (!saved[tr.dataset.id]) return;
-      var td = tr.cells, link = tr.querySelector('a[href]');
-      lines.push([td[1], td[2], td[3], td[4], td[5], td[6], td[7]]
-        .map(function (c) {{ return csvCell(c.innerText.trim()); }})
-        .concat(csvCell(link ? link.href : '')).join(','));
+    Object.keys(saved).forEach(function (id) {{
+      var item = saved[id];
+      lines.push([item.company, item.title, item.season, item.category, item.location,
+                  item.salary, item.posted, item.url].map(csvCell).join(','));
     }});
     if (lines.length === 1) {{ alert('Star a few roles first — then this exports them.'); return; }}
     var blob = new Blob([lines.join('\\n')], {{ type: 'text/csv;charset=utf-8' }}),
         a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'my-saved-internships.csv';
+    a.download = 'my-saved-it-roles.csv';
     a.click(); URL.revokeObjectURL(a.href);
   }});
 
   function cutoffISO(days) {{
-    var d = new Date(new Date({json.dumps(data_as_of)}).getTime() - days * 86400000);
+    var d = new Date(Date.now() - days * 86400000);
     return d.toISOString().slice(0, 10);
   }}
   // What each sponsorship option actually means. The old single "F-1 friendly"
@@ -930,7 +959,8 @@ def generate(store_data: dict, stats: dict) -> None:
     (fit.addEventListener ? fit.addEventListener('change', sync)
                           : fit.addListener(sync));
   }}
-  paintAll();
+  age.value = '7';
+  paintAll(); apply();
   // Radar search (separate list, separate box).
   var rq = document.getElementById('rq');
   if (rq) {{

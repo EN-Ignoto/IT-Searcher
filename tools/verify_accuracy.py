@@ -33,6 +33,7 @@ from intern_engine import (  # noqa: E402
     filters,
     filters_it,
     filters_secnet,
+    freshness,
     paths,
     quality,
     registry,
@@ -151,7 +152,10 @@ def main() -> None:
         # was the evidence. When the employer stated the cycle, an old posting
         # is just an early one — Amazon's "Fall 2026 (US)" internship opened
         # long before the cycle and is still both open and still Fall 2026.
-        if cutoff and posted and posted < cutoff and r.get("season_inferred"):
+        if ((cfg.get("opportunity_scope") == "it" and freshness.expired(
+                r.get("posted_at"), r.get("first_seen_at"), config.max_age_days(cfg)))
+                or (cfg.get("opportunity_scope") != "it" and cutoff and posted
+                    and posted < cutoff and r.get("season_inferred"))):
             flag(r, "older-than-max-age")
         if not posted:
             # A warning, not a violation: some boards genuinely publish no

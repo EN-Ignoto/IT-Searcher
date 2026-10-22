@@ -42,6 +42,8 @@ jobs:
         run: ruff check src tests tools run.py
       - name: Validate GitHub Actions workflows
         run: actionlint
+      - name: Saved-role persistence tests
+        run: node --test tests/test_saved_roles.cjs
       - name: Tests (pytest)
         run: python -m pytest -q
       - name: Render artifacts for the configured scope

@@ -2,11 +2,8 @@ name: Update IT opportunities
 
 on:
   schedule:
-    # Minutes 7 and 37, not 0 and 30. GitHub queues scheduled workflows
-    # globally and the top of the hour is the busiest slot on the platform —
-    # measured Aug 3-5, only 32 of 144 expected runs actually fired, averaging
-    # 138 minutes apart. Off-peak minutes get dropped less often.
-    - cron: "7 */3 * * *"  # every 3 hours (UTC)
+    # Repeat hourly, away from the busiest top-of-hour slot.
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       render_only:
@@ -31,7 +28,7 @@ jobs:
     # by a Runner of type hosted") were a platform incident that no repo-side
     # setting prevents; recovery is handled by retry.yml instead.
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0

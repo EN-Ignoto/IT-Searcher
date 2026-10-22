@@ -21,7 +21,7 @@ name: Retry a run that never got a runner
 
 on:
   workflow_run:
-    workflows: ["Update internships", "Discover companies", "Audit inferred cycles", "CI", "pages build and deployment"]
+    workflows: ["Update IT opportunities", "Discover companies", "Audit inferred cycles", "CI", "pages build and deployment"]
     types: [completed]
     branches: [main]
 

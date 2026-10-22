@@ -28,6 +28,7 @@ from . import (
     filters,
     filters_it,
     filters_secnet,
+    freshness,
     health,
     models,
     names,
@@ -570,7 +571,11 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
             # "Software Development Engineer Internship - Fall 2026 (US)" was
             # posted early and is still open and still for Fall 2026. Closing it
             # for being old was us overriding what the company wrote.
-            if cutoff and posted_day and posted_day < cutoff and (inferred or (cfg.get("opportunity_scope") == "it" and not filters_it.is_internship(job.title))):
+            prior = existing.get(stored_owner(job) or job.id) or {}
+            too_old = freshness.expired(job.posted_at, prior.get("first_seen_at"), max_age)
+            if ((cfg.get("opportunity_scope") == "it" and too_old)
+                    or (cfg.get("opportunity_scope") != "it" and cutoff and posted_day
+                        and posted_day < cutoff and inferred)):
                 continue
             job.season = season
             job.season_inferred = inferred
@@ -721,6 +726,8 @@ def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None
                 and not quality.is_recognized(company)
             )
             or expired_unstated
+            or (cfg.get("opportunity_scope") == "it" and freshness.expired(
+                record.get("posted_at"), record.get("first_seen_at"), config.max_age_days(cfg)))
         )
         if not rejected:
             continue
@@ -772,6 +779,14 @@ def run_update() -> tuple[dict, dict, list[str]]:
         offcycle = offcycle_sticky
         still = []
         for job in kept:
+            if cfg.get("opportunity_scope") == "it" and freshness.expired(
+                job.posted_at, (existing.get(job.id) or {}).get("first_seen_at"),
+                config.max_age_days(cfg)
+            ):
+                record = existing.get(job.id)
+                if record:
+                    record.update(is_open=False, closed_at=ts, closed_reason="out-of-scope")
+                continue
             # NOT_STATED survives alongside the tracked cycles: it isn't a
             # cycle claim, it's the absence of one, and those roles have their
             # own section. Only a real OFF-cycle label ("Summer 2026") drops.

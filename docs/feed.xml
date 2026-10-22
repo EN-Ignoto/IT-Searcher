@@ -8,28 +8,372 @@
   <updated>2026-10-21T21:07:04Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
   <entry>
-    <id>urn:intern-engine:rippling:aalyria-careers:c8c3ebca-c203-47fd-a4af-f72727ade02c</id>
-    <title>Aalyria: Site Reliability Engineer, Commercial</title>
-    <link href="https://ats.rippling.com/aalyria-careers/jobs/c8c3ebca-c203-47fd-a4af-f72727ade02c"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote (United States)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:rippling:aalyria-careers:27e9f512-e14b-4ba4-aefb-0f05a63fa21a</id>
-    <title>Aalyria: Site Reliability Engineer, USG</title>
-    <link href="https://ats.rippling.com/aalyria-careers/jobs/27e9f512-e14b-4ba4-aefb-0f05a63fa21a"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote (United States)</summary>
-  </entry>
-  <entry>
     <id>urn:intern-engine:ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f</id>
     <title>Amplify: Summer 2027: IT Services Intern</title>
     <link href="https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f"/>
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Remote — Florida / US"/>
     <summary>Remote — Florida / US · IT Support / Ops · Remote - United States · $30 per hour · Linux</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:cerebras:84a9df6b-fe96-4711-8106-971d829b6dc2</id>
+    <title>Cerebras: Network Security Engineer (Remote)</title>
+    <link href="https://jobs.ashbyhq.com/cerebras/84a9df6b-fe96-4711-8106-971d829b6dc2"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote (US) · Python, AWS, Terraform · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:deepgram:d75d6f84-1d54-4354-a364-609b48267658</id>
+    <title>Deepgram: Partner Success Engineer (Infrastructure)</title>
+    <link href="https://jobs.ashbyhq.com/deepgram/d75d6f84-1d54-4354-a364-609b48267658"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · USA - Remote · $195K – $235K • Offers Equity · Python, TypeScript, Kubernetes, Docker · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:deepgram:f424ef6a-c27f-4984-9e77-40a1ad16ae28</id>
+    <title>Deepgram: Platform Engineer - AI/ML Infrastructure (Kubernetes &amp; Terraform)</title>
+    <link href="https://jobs.ashbyhq.com/deepgram/f424ef6a-c27f-4984-9e77-40a1ad16ae28"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · USA - Remote · $136K – $240K • Offers Equity • Offers Bonus • Multiple Ranges · Kubernetes, Terraform, Python, Bash, AWS · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:handshake:7f607c0b-291d-4c17-9897-6d8c5d35eb00</id>
+    <title>Handshake: AI Red Teamer, Cybersecurity (Remote)</title>
+    <link href="https://jobs.ashbyhq.com/handshake/7f607c0b-291d-4c17-9897-6d8c5d35eb00"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote (USA) · $65 – $125 per hour · Python, C++, JavaScript, Bash, LLMs · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:leland:35e87638-d6d9-4135-bb96-ebb61404a2d9</id>
+    <title>Leland: IT Management Coach</title>
+    <link href="https://jobs.ashbyhq.com/leland/35e87638-d6d9-4135-bb96-ebb61404a2d9"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote - USA · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:leland:65051650-cb59-419e-969b-58028aec69bf</id>
+    <title>Leland: Site Reliability &amp; Engineering Coach</title>
+    <link href="https://jobs.ashbyhq.com/leland/65051650-cb59-419e-969b-58028aec69bf"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote - USA · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:leland:bb9e0dca-a9aa-48eb-b09c-936ea70facd3</id>
+    <title>Leland: Cybersecurity Coach</title>
+    <link href="https://jobs.ashbyhq.com/leland/bb9e0dca-a9aa-48eb-b09c-936ea70facd3"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - USA · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861</id>
+    <title>Nash: Technical Support Specialist , US East Coast</title>
+    <link href="https://jobs.ashbyhq.com/nash/48e32fea-837b-4c7c-8246-c347543d1861"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote, US · $75K – $95K • Offers Equity</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:onebrief:37b29b15-09e4-41fb-90ef-848d00f00f25</id>
+    <title>One Brief: Infrastructure Engineer 🇺🇸</title>
+    <link href="https://jobs.ashbyhq.com/onebrief/37b29b15-09e4-41fb-90ef-848d00f00f25"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States | Remote · $180K – $290K • Offers Equity • Multiple Ranges · Python, Rust, TypeScript, AWS, Azure · sponsorship: citizens-only · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:openai:6ba0ce24-ad32-4c3b-b49c-b373be9a8480</id>
+    <title>OpenAI: Data Center Compute, OpenHouse Savannah 2026</title>
+    <link href="https://jobs.ashbyhq.com/openai/6ba0ce24-ad32-4c3b-b49c-b373be9a8480"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · US - Remote · $125K – $400K • Offers Equity · status: closed · H-1B track record: ~15 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:ramp:13fe8467-b624-4f30-8aad-af441dfb1797</id>
+    <title>Ramp: Technical Consultant, Strategic, Oracle Cloud</title>
+    <link href="https://jobs.ashbyhq.com/ramp/13fe8467-b624-4f30-8aad-af441dfb1797"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote (US) · $191K – $291K • Offers Equity • Multiple Ranges · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:ramp:6a3f42e6-00d6-4e9d-9caa-9663ffac6d53</id>
+    <title>Ramp: Technical Consultant, Enterprise, Oracle Cloud</title>
+    <link href="https://jobs.ashbyhq.com/ramp/6a3f42e6-00d6-4e9d-9caa-9663ffac6d53"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote (US) · $158K – $242K • Offers Equity • Multiple Ranges · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:runpod:1d14340c-c9bd-4754-80f4-5c83980cd413</id>
+    <title>Runpod: Site Reliability Engineer 🛂</title>
+    <link href="https://jobs.ashbyhq.com/runpod/1d14340c-c9bd-4754-80f4-5c83980cd413"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote - USA · Python, Bash, Linux · sponsorship: no-sponsorship · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:runpod:475e7a21-59af-4ef4-b2a3-6a0e60fc1356</id>
+    <title>Runpod: Cloud Infrastructure Security Engineer (Systems/Kernel) 🛂</title>
+    <link href="https://jobs.ashbyhq.com/runpod/475e7a21-59af-4ef4-b2a3-6a0e60fc1356"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - USA · Python, Rust, Kubernetes, Docker, Linux · sponsorship: no-sponsorship · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:runpod:4843a2de-5094-4157-b2b1-ab7bb8876f67</id>
+    <title>Runpod: Technical Support Engineer (L2) 🛂</title>
+    <link href="https://jobs.ashbyhq.com/runpod/4843a2de-5094-4157-b2b1-ab7bb8876f67"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote - USA · Python, JavaScript, SQL, PyTorch, LLMs · sponsorship: no-sponsorship · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:skydio:3ac81a34-b7fe-4142-9d29-12bcc1376182</id>
+    <title>Skydio: Technical Support Specialist</title>
+    <link href="https://jobs.ashbyhq.com/skydio/3ac81a34-b7fe-4142-9d29-12bcc1376182"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · US Remote · status: closed · H-1B track record: ~26 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:skydio:b00f626d-d88c-49b1-8868-7cc8a1aaf579</id>
+    <title>Skydio: Drone Platform Integration &amp; Network Support Engineer</title>
+    <link href="https://jobs.ashbyhq.com/skydio/b00f626d-d88c-49b1-8868-7cc8a1aaf579"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · US Remote · Python, Bash, LLMs, AWS, Linux · status: closed · H-1B track record: ~26 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:thumbtack:2c3b12ee-1729-4b2b-ad4d-d753c87bec03</id>
+    <title>Thumbtack: IT Systems Engineer II</title>
+    <link href="https://jobs.ashbyhq.com/thumbtack/2c3b12ee-1729-4b2b-ad4d-d753c87bec03"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote, United States · Python, Terraform, Git · status: closed · H-1B track record: ~36 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:alphasense:8495375002</id>
+    <title>AlphaSense: Cloud Support Engineer</title>
+    <link href="https://job-boards.greenhouse.io/alphasense/jobs/8495375002"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote - United States · Python, Java, JavaScript, LLMs, GraphQL · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:anthropic:5439369008</id>
+    <title>Anthropic: Data Center Global Repairs Program Support</title>
+    <link href="https://job-boards.greenhouse.io/anthropic/jobs/5439369008"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote-Friendly, United States · sponsorship: offers · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:arizeai:6203635004</id>
+    <title>Arize AI: DevOps Engineer</title>
+    <link href="https://job-boards.greenhouse.io/arizeai/jobs/6203635004"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote (United States) · LLMs, AWS, GCP, Azure, Kubernetes · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:armada:5409777008</id>
+    <title>Armada: Data Center Constructability Engineer</title>
+    <link href="https://job-boards.greenhouse.io/armada/jobs/5409777008"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States (Remote) · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:armada:5439105008</id>
+    <title>Armada: Data Center Structural Engineer</title>
+    <link href="https://job-boards.greenhouse.io/armada/jobs/5439105008"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States (Remote) · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:beyondtrust:8185856</id>
+    <title>BeyondTrust: Cyber Defense Engineer</title>
+    <link href="https://job-boards.greenhouse.io/beyondtrust/jobs/8185856"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote Canada | Remote United States · Python, LLMs · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:beyondtrust:8256040</id>
+    <title>BeyondTrust: Site Reliability Engineer</title>
+    <link href="https://job-boards.greenhouse.io/beyondtrust/jobs/8256040"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote United States · AWS, Kubernetes, Terraform · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:beyondtrust:8279128</id>
+    <title>BeyondTrust: Cloud Network Engineer</title>
+    <link href="https://job-boards.greenhouse.io/beyondtrust/jobs/8279128"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote United States · Python, AWS, Azure, Terraform</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:cadwell:4398741009</id>
+    <title>Cadwell: Cloud Site Reliability Engineer</title>
+    <link href="https://job-boards.greenhouse.io/cadwell/jobs/4398741009"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote, USA · Python, TypeScript, JavaScript, Bash, AWS · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:capitaltg:5268774007</id>
+    <title>Capital Technology Group: CyberArk SME / DevOps Engineer 🇺🇸</title>
+    <link href="https://boards.greenhouse.io/capitaltg/jobs/5268774007?gh_jid=5268774007"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote (US) · Python, AWS, Azure, Terraform, Linux · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:echodynecorp:4719776006</id>
+    <title>Echodyne: Solutions Engineer - Critical Infrastructure 🇺🇸</title>
+    <link href="https://job-boards.greenhouse.io/echodynecorp/jobs/4719776006"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - US · Python, MATLAB, Linux · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:gitlab:8831350002</id>
+    <title>GitLab: Distinguished Engineer, Core DevOps</title>
+    <link href="https://job-boards.greenhouse.io/gitlab/jobs/8831350002"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote, Canada; Remote, United Kingdom; Remote, United States · LLMs, Git · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:gitlab:8889193002</id>
+    <title>GitLab: Cloud Platform Engineer</title>
+    <link href="https://job-boards.greenhouse.io/gitlab/jobs/8889193002"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote, Canada; Remote, United States · Python, Bash, AWS, GCP, Azure</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:planetlabs:8221849</id>
+    <title>Planet: Infrastructure Solutions Engineer</title>
+    <link href="https://job-boards.greenhouse.io/planetlabs/jobs/8221849"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States, Remote · Python, LLMs, GCP, Kubernetes, Terraform</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:salesloft:8119953</id>
+    <title>Salesloft: Salesforce Business Systems Administrator</title>
+    <link href="https://www.salesloft.com/company/careers?gh_jid=8119953"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States, Remote · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:stripe:8171095</id>
+    <title>Stripe: Strategy &amp; Operations, Infrastructure</title>
+    <link href="https://stripe.com/jobs/search?gh_jid=8171095"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote US · SQL · status: closed · H-1B track record: ~441 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:supplyhouse:6140301004</id>
+    <title>SupplyHouse.com: Network Engineer 🛂</title>
+    <link href="https://boards.greenhouse.io/supplyhouse/jobs/6140301004?gh_jid=6140301004"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote, Remote, United States · $88.083k–$132.124k/yr · GCP, Azure · sponsorship: no-sponsorship · status: closed · H-1B track record: ~12 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:tailscale:4710785005</id>
+    <title>Tailscale: Windows Engineer</title>
+    <link href="https://job-boards.greenhouse.io/tailscale/jobs/4710785005"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote (United States) · C# · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:tailscale:4726153005</id>
+    <title>Tailscale: Security Infrastructure Engineer</title>
+    <link href="https://job-boards.greenhouse.io/tailscale/jobs/4726153005"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote (United States) · AWS, Kubernetes, Terraform · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:tailscale:4733404005</id>
+    <title>Tailscale: Infrastructure Engineer</title>
+    <link href="https://job-boards.greenhouse.io/tailscale/jobs/4733404005"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote (United States) · Go, AWS, Kubernetes</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:tines:6225649004</id>
+    <title>Tines: Technical Support Engineer II - Federal 🇺🇸</title>
+    <link href="https://job-boards.greenhouse.io/tines/jobs/6225649004"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · United States (Remote) · Python, JavaScript, SQL, Ruby, LLMs · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:vercel:6102335004</id>
+    <title>Vercel: Security Engineer, Cloud</title>
+    <link href="https://job-boards.greenhouse.io/vercel/jobs/6102335004"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - United States · AWS, GCP, Kubernetes, Terraform · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:voyagertechnologiesinc:4410292009</id>
+    <title>Voyager Technologies: Concur Systems Administrator</title>
+    <link href="https://job-boards.greenhouse.io/voyagertechnologiesinc/jobs/4410292009"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - United States · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:wizinc:4711762006</id>
+    <title>Wiz: Security Engineer, Product &amp; Production Infrastructure 🛂</title>
+    <link href="https://www.wiz.io/careers/job/4711762006/:title?gh_jid=4711762006"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - USA · Python, AWS, GCP, Azure, Kubernetes · sponsorship: no-sponsorship · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:greenhouse:zscaler:5208829007</id>
+    <title>Zscaler: AI DevOps Engineer</title>
+    <link href="https://job-boards.greenhouse.io/zscaler/jobs/5208829007"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote - USA; San Jose, California, USA · Python, Bash, AWS, GCP, Azure · status: closed · H-1B track record: ~162 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:lever:pditechnologies:56f66a9d-8766-40bd-91bc-3be14ba8cd72</id>
+    <title>PDI Technologies: Network Operations Analyst II</title>
+    <link href="https://jobs.lever.co/pditechnologies/56f66a9d-8766-40bd-91bc-3be14ba8cd72"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote US · AWS</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:lever:planettechnologies:5ef319be-c6dc-4a79-b52f-8b82881e81ed</id>
+    <title>Planet Technologies: Cloud Managed Services Consultant</title>
+    <link href="https://jobs.lever.co/planettechnologies/5ef319be-c6dc-4a79-b52f-8b82881e81ed"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Eastern US - Remote · AWS, Azure, Kubernetes, Linux · status: closed</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:oracle:ebcs.fa.em2.oraclecloud.com:45248</id>
@@ -40,20 +384,12 @@
     <summary>Stretch — remote · Systems &amp; Cloud Infra · Washington, DC, United States</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82292</id>
-    <title>BNY: Vice President, Technology Service Desk/On-Site Support</title>
-    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82292"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Orlando area"/>
-    <summary>Orlando area · IT Support / Ops · Lake Mary, FL, United States</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82801</id>
-    <title>BNY: Cloud Operations Site Reliability Engineer (SRE)</title>
-    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82801"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — Orlando area"/>
-    <summary>2 openings · Stretch — Orlando area · Cloud Platform · Pittsburgh, PA, United States; Lake Mary, FL, United States · Python, SQL, Bash, AWS, GCP</summary>
+    <id>urn:intern-engine:oracle:egua.fa.us2.oraclecloud.com:25591</id>
+    <title>Conduent: Cyber Security Operations Engineer</title>
+    <link href="https://egua.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/25591"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote US, United States · Python, AWS, Azure, Git · status: closed</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:76056</id>
@@ -64,14 +400,6 @@
     <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Boston, MA, United States; Pittsburgh, PA, United States; Lake Mary, FL, United States · $185k/yr · Python, Azure, Linux, Git</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82730</id>
-    <title>BNY: Vice President, Infrastructure Solution Engineer</title>
-    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82730"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — Orlando area"/>
-    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Lake Mary, FL, United States; Pittsburgh, PA, United States · SQL</summary>
-  </entry>
-  <entry>
     <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82202</id>
     <title>BNY: Vice President, Production Services Infrastructure Support</title>
     <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82202"/>
@@ -80,36 +408,52 @@
     <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Pittsburgh, PA, United States; Lake Mary, FL, United States · LLMs, GCP</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Consulting-Solution-Executive---Hybrid-Infrastructure_R26_00002797</id>
-    <title>CDW Corporation: Consulting Solution Executive – Hybrid Infrastructure</title>
-    <link href="https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Consulting-Solution-Executive---Hybrid-Infrastructure_R26_00002797"/>
+    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82292</id>
+    <title>BNY: Vice President, Technology Service Desk/On-Site Support</title>
+    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82292"/>
     <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote – USA · H-1B track record: ~52 approvals (FY2022–2023)</summary>
+    <category term="Orlando area"/>
+    <summary>Orlando area · IT Support / Ops · Lake Mary, FL, United States</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00002917</id>
-    <title>CDW Corporation: Solution Specialist - Networking</title>
-    <link href="https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Solution-Specialist---Networking_R26_00002917"/>
+    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82730</id>
+    <title>BNY: Vice President, Infrastructure Solution Engineer</title>
+    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82730"/>
     <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Network / Telecom · Remote – USA · H-1B track record: ~52 approvals (FY2022–2023)</summary>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Lake Mary, FL, United States; Pittsburgh, PA, United States · SQL</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:ashby:cerebras:84a9df6b-fe96-4711-8106-971d829b6dc2</id>
-    <title>Cerebras: Network Security Engineer (Remote)</title>
-    <link href="https://jobs.ashbyhq.com/cerebras/84a9df6b-fe96-4711-8106-971d829b6dc2"/>
+    <id>urn:intern-engine:oracle:eofe.fa.us2.oraclecloud.com:82801</id>
+    <title>BNY: Cloud Operations Site Reliability Engineer (SRE)</title>
+    <link href="https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82801"/>
     <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · Remote (US) · Python, AWS, Terraform</summary>
+    <category term="Stretch — Orlando area"/>
+    <summary>2 openings · Stretch — Orlando area · Cloud Platform · Pittsburgh, PA, United States; Lake Mary, FL, United States · Python, SQL, Bash, AWS, GCP</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:rippling:conceptplus:48e2f47b-abef-4a36-bbc7-d89cc7f4fa5b</id>
-    <title>Concept Plus: Cloud Engineer, OCI</title>
-    <link href="https://ats.rippling.com/conceptplus/jobs/48e2f47b-abef-4a36-bbc7-d89cc7f4fa5b"/>
+    <id>urn:intern-engine:oracle:hckd.fa.us2.oraclecloud.com:2038964</id>
+    <title>Molina Healthcare: AVP, Infrastructure (IaC / Multi-Cloud Architecture / AI) - REMOTE</title>
+    <link href="https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2038964"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · United States · SQL · status: closed · H-1B track record: ~49 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:rippling:aalyria-careers:27e9f512-e14b-4ba4-aefb-0f05a63fa21a</id>
+    <title>Aalyria: Site Reliability Engineer, USG</title>
+    <link href="https://ats.rippling.com/aalyria-careers/jobs/27e9f512-e14b-4ba4-aefb-0f05a63fa21a"/>
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · Remote (United States)</summary>
+    <summary>Stretch — remote · IT Support / Ops · Remote (United States)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:rippling:aalyria-careers:c8c3ebca-c203-47fd-a4af-f72727ade02c</id>
+    <title>Aalyria: Site Reliability Engineer, Commercial</title>
+    <link href="https://ats.rippling.com/aalyria-careers/jobs/c8c3ebca-c203-47fd-a4af-f72727ade02c"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote (United States)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:rippling:conceptplus:2c97993e-3b2f-47fb-bfce-6d1784b4f7c8</id>
@@ -118,6 +462,14 @@
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Stretch — remote"/>
     <summary>Stretch — remote · Security / IT · Remote (United States)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:rippling:conceptplus:48e2f47b-abef-4a36-bbc7-d89cc7f4fa5b</id>
+    <title>Concept Plus: Cloud Engineer, OCI</title>
+    <link href="https://ats.rippling.com/conceptplus/jobs/48e2f47b-abef-4a36-bbc7-d89cc7f4fa5b"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote (United States)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:rippling:conceptplus:f5477a46-c213-4f19-ba1c-933409cbcc68</id>
@@ -136,52 +488,12 @@
     <summary>Stretch — remote · Security / IT · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:oracle:egua.fa.us2.oraclecloud.com:25591</id>
-    <title>Conduent: Cyber Security Operations Engineer</title>
-    <link href="https://egua.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/25591"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · Remote US, United States · Python, AWS, Azure, Git</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:deepgram:f424ef6a-c27f-4984-9e77-40a1ad16ae28</id>
-    <title>Deepgram: Platform Engineer - AI/ML Infrastructure (Kubernetes &amp; Terraform)</title>
-    <link href="https://jobs.ashbyhq.com/deepgram/f424ef6a-c27f-4984-9e77-40a1ad16ae28"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · USA - Remote · $136K – $240K • Offers Equity • Offers Bonus • Multiple Ranges · Kubernetes, Terraform, Python, Bash, AWS</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:deepgram:d75d6f84-1d54-4354-a364-609b48267658</id>
-    <title>Deepgram: Partner Success Engineer (Infrastructure)</title>
-    <link href="https://jobs.ashbyhq.com/deepgram/d75d6f84-1d54-4354-a364-609b48267658"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · USA - Remote · $195K – $235K • Offers Equity · Python, TypeScript, Kubernetes, Docker</summary>
-  </entry>
-  <entry>
     <id>urn:intern-engine:rippling:dlb-associates:2ede91cd-77c3-47c8-881c-c93cf9834623</id>
     <title>DLB Associates: SkillBridge - Data Center Commissioning Field Technician</title>
     <link href="https://ats.rippling.com/dlb-associates/jobs/2ede91cd-77c3-47c8-881c-c93cf9834623"/>
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Stretch — remote"/>
     <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote (United States)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:ferrovial:/job/Kissimmee-FL/Webber---Landscape-Technician---Infrastructure-Management_JR19742</id>
-    <title>Ferrovial: Webber - Landscape Technician - Infrastructure Management</title>
-    <link href="https://ferrovial.wd3.myworkdayjobs.com/ferrovial_career_site/job/Kissimmee-FL/Webber---Landscape-Technician---Infrastructure-Management_JR19742"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — Orlando area"/>
-    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Kissimmee, FL</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:handshake:7f607c0b-291d-4c17-9897-6d8c5d35eb00</id>
-    <title>Handshake: AI Red Teamer, Cybersecurity (Remote)</title>
-    <link href="https://jobs.ashbyhq.com/handshake/7f607c0b-291d-4c17-9897-6d8c5d35eb00"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · Remote (USA) · $65 – $125 per hour · Python, C++, JavaScript, Bash, LLMs</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:rippling:journaltech:51940ae6-681d-4d45-bcf1-54028d3ce1d0</id>
@@ -192,100 +504,12 @@
     <summary>Remote — Florida / US · IT Support / Ops · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:ashby:leland:bb9e0dca-a9aa-48eb-b09c-936ea70facd3</id>
-    <title>Leland: Cybersecurity Coach</title>
-    <link href="https://jobs.ashbyhq.com/leland/bb9e0dca-a9aa-48eb-b09c-936ea70facd3"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · Remote - USA</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:leland:35e87638-d6d9-4135-bb96-ebb61404a2d9</id>
-    <title>Leland: IT Management Coach</title>
-    <link href="https://jobs.ashbyhq.com/leland/35e87638-d6d9-4135-bb96-ebb61404a2d9"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote - USA</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:leland:65051650-cb59-419e-969b-58028aec69bf</id>
-    <title>Leland: Site Reliability &amp; Engineering Coach</title>
-    <link href="https://jobs.ashbyhq.com/leland/65051650-cb59-419e-969b-58028aec69bf"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote - USA</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:oracle:hckd.fa.us2.oraclecloud.com:2038964</id>
-    <title>Molina Healthcare: AVP, Infrastructure (IaC / Multi-Cloud Architecture / AI) - REMOTE</title>
-    <link href="https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2038964"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · United States · SQL · H-1B track record: ~49 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861</id>
-    <title>Nash: Technical Support Specialist , US East Coast</title>
-    <link href="https://jobs.ashbyhq.com/nash/48e32fea-837b-4c7c-8246-c347543d1861"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote, US · $75K – $95K • Offers Equity</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:onebrief:37b29b15-09e4-41fb-90ef-848d00f00f25</id>
-    <title>One Brief: Infrastructure Engineer 🇺🇸</title>
-    <link href="https://jobs.ashbyhq.com/onebrief/37b29b15-09e4-41fb-90ef-848d00f00f25"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States | Remote · $180K – $290K • Offers Equity • Multiple Ranges · Python, Rust, TypeScript, AWS, Azure · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:openai:6ba0ce24-ad32-4c3b-b49c-b373be9a8480</id>
-    <title>OpenAI: Data Center Compute, OpenHouse Savannah 2026</title>
-    <link href="https://jobs.ashbyhq.com/openai/6ba0ce24-ad32-4c3b-b49c-b373be9a8480"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · US - Remote · $125K – $400K • Offers Equity · H-1B track record: ~15 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
     <id>urn:intern-engine:rippling:patientnow:19feb150-fa2b-4a72-85a0-f678a7f7c070</id>
     <title>PatientNow: Technical Support Specialist</title>
     <link href="https://ats.rippling.com/patientnow/jobs/19feb150-fa2b-4a72-85a0-f678a7f7c070"/>
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Remote — Florida / US"/>
     <summary>Remote — Florida / US · IT Support / Ops · Remote (United States)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:lever:pditechnologies:56f66a9d-8766-40bd-91bc-3be14ba8cd72</id>
-    <title>PDI Technologies: Network Operations Analyst II</title>
-    <link href="https://jobs.lever.co/pditechnologies/56f66a9d-8766-40bd-91bc-3be14ba8cd72"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Network / Telecom · Remote US · AWS</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:lever:planettechnologies:5ef319be-c6dc-4a79-b52f-8b82881e81ed</id>
-    <title>Planet Technologies: Cloud Managed Services Consultant</title>
-    <link href="https://jobs.lever.co/planettechnologies/5ef319be-c6dc-4a79-b52f-8b82881e81ed"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · Eastern US - Remote · AWS, Azure, Kubernetes, Linux</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:ramp:13fe8467-b624-4f30-8aad-af441dfb1797</id>
-    <title>Ramp: Technical Consultant, Strategic, Oracle Cloud</title>
-    <link href="https://jobs.ashbyhq.com/ramp/13fe8467-b624-4f30-8aad-af441dfb1797"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · Remote (US) · $191K – $291K • Offers Equity • Multiple Ranges</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:ramp:6a3f42e6-00d6-4e9d-9caa-9663ffac6d53</id>
-    <title>Ramp: Technical Consultant, Enterprise, Oracle Cloud</title>
-    <link href="https://jobs.ashbyhq.com/ramp/6a3f42e6-00d6-4e9d-9caa-9663ffac6d53"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · Remote (US) · $158K – $242K • Offers Equity • Multiple Ranges</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:rippling:rippling:c92d6b7d-3c78-4f3c-ac0a-9a95b8e28e72</id>
@@ -304,52 +528,12 @@
     <summary>Remote — Florida / US · IT Support / Ops · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:ashby:runpod:475e7a21-59af-4ef4-b2a3-6a0e60fc1356</id>
-    <title>Runpod: Cloud Infrastructure Security Engineer (Systems/Kernel) 🛂</title>
-    <link href="https://jobs.ashbyhq.com/runpod/475e7a21-59af-4ef4-b2a3-6a0e60fc1356"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · Remote - USA · Python, Rust, Kubernetes, Docker, Linux · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:runpod:1d14340c-c9bd-4754-80f4-5c83980cd413</id>
-    <title>Runpod: Site Reliability Engineer 🛂</title>
-    <link href="https://jobs.ashbyhq.com/runpod/1d14340c-c9bd-4754-80f4-5c83980cd413"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote - USA · Python, Bash, Linux · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:runpod:4843a2de-5094-4157-b2b1-ab7bb8876f67</id>
-    <title>Runpod: Technical Support Engineer (L2) 🛂</title>
-    <link href="https://jobs.ashbyhq.com/runpod/4843a2de-5094-4157-b2b1-ab7bb8876f67"/>
+    <id>urn:intern-engine:rippling:topdoglaw:6628e255-42c8-4b5c-9aca-2a66056d537f</id>
+    <title>TopDog Law: Jr. IT Helpdesk Specialist (Pacific Standard Time)</title>
+    <link href="https://ats.rippling.com/topdoglaw/jobs/6628e255-42c8-4b5c-9aca-2a66056d537f"/>
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote - USA · Python, JavaScript, SQL, PyTorch, LLMs · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:skydio:b00f626d-d88c-49b1-8868-7cc8a1aaf579</id>
-    <title>Skydio: Drone Platform Integration &amp; Network Support Engineer</title>
-    <link href="https://jobs.ashbyhq.com/skydio/b00f626d-d88c-49b1-8868-7cc8a1aaf579"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Network / Telecom · US Remote · Python, Bash, LLMs, AWS, Linux · H-1B track record: ~26 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:skydio:3ac81a34-b7fe-4142-9d29-12bcc1376182</id>
-    <title>Skydio: Technical Support Specialist</title>
-    <link href="https://jobs.ashbyhq.com/skydio/3ac81a34-b7fe-4142-9d29-12bcc1376182"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · US Remote · H-1B track record: ~26 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:thumbtack:2c3b12ee-1729-4b2b-ad4d-d753c87bec03</id>
-    <title>Thumbtack: IT Systems Engineer II</title>
-    <link href="https://jobs.ashbyhq.com/thumbtack/2c3b12ee-1729-4b2b-ad4d-d753c87bec03"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote, United States · Python, Terraform, Git · H-1B track record: ~36 approvals (FY2022–2023)</summary>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote (United States)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:rippling:topdoglaw:eb47df12-fe35-4ed8-9e9f-44f8ac6e54c2</id>
@@ -360,308 +544,12 @@
     <summary>Stretch — remote · Security / IT · Remote (United States)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:rippling:topdoglaw:6628e255-42c8-4b5c-9aca-2a66056d537f</id>
-    <title>TopDog Law: Jr. IT Helpdesk Specialist (Pacific Standard Time)</title>
-    <link href="https://ats.rippling.com/topdoglaw/jobs/6628e255-42c8-4b5c-9aca-2a66056d537f"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote (United States)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:allstate:/job/USA---TX-Remote/AI-Cloud-Platform-Engineer_R35902</id>
-    <title>Allstate Insurance Company: AI Cloud Platform Engineer 🛂</title>
-    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/USA---TX-Remote/AI-Cloud-Platform-Engineer_R35902"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · USA - TX (Remote) · Python, SQL, Azure, Terraform, Git · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:allstate:/job/US---Remote/FinOps-Engineer--Cloud---Kubernetes-Optimization_R35621</id>
-    <title>Allstate Insurance Company: FinOps Engineer, Cloud &amp; Kubernetes Optimization 🛂</title>
-    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/US---Remote/FinOps-Engineer--Cloud---Kubernetes-Optimization_R35621"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · US - Remote · Kubernetes, Python, SQL, AWS, GCP · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:allstate:/job/US---Remote/Cloud-Product-Security-Engineer_R29721</id>
-    <title>Allstate Insurance Company: Cloud Product Security Engineer 🛂</title>
-    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/US---Remote/Cloud-Product-Security-Engineer_R29721"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · US - Remote · $90.7k–$195.7k/yr · Python, Java, JavaScript, AWS, Azure · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:allstate:/job/US---Remote/Platform-Consultant---Cyber-Platforms--Data----Tooling_R31084</id>
-    <title>Allstate Insurance Company: Platform Consultant — Cyber Platforms, Data, &amp; Tooling 🛂</title>
-    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/US---Remote/Platform-Consultant---Cyber-Platforms--Data----Tooling_R31084"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · US - Remote · Java, Rust, JavaScript, Spring, AWS · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:alphasense:8495375002</id>
-    <title>AlphaSense: Cloud Support Engineer</title>
-    <link href="https://job-boards.greenhouse.io/alphasense/jobs/8495375002"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · Remote - United States · Python, Java, JavaScript, LLMs, GraphQL</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:alteryx:/job/US---Remote/InfoSec-Analyst_R12418</id>
-    <title>Alteryx: Information Security Analyst</title>
-    <link href="https://alteryx.wd108.myworkdayjobs.com/AlteryxCareers/job/US---Remote/InfoSec-Analyst_R12418"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · US - Remote · AWS, GCP, Azure · H-1B track record: ~20 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:anthropic:5439369008</id>
-    <title>Anthropic: Data Center Global Repairs Program Support</title>
-    <link href="https://job-boards.greenhouse.io/anthropic/jobs/5439369008"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote-Friendly, United States · sponsorship: offers</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:aptiv:/job/USA-Remote-Worksite/Linux-Development-Engineer---eLxr-Distribution_J000693019</id>
-    <title>Aptiv: Linux Development Engineer – eLxr Distribution</title>
-    <link href="https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/USA-Remote-Worksite/Linux-Development-Engineer---eLxr-Distribution_J000693019"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · USA Remote Worksite · Linux, Python, C++, Bash, AWS · H-1B track record: ~251 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
     <id>urn:intern-engine:smartrecruiters:AristaNetworks:744000150196345</id>
     <title>Arista Networks: FedRAMP Site Reliability Engineer (FedSRE) - CloudVision 🇺🇸</title>
     <link href="https://jobs.smartrecruiters.com/AristaNetworks/744000150196345"/>
-    <updated>2026-10-21T21:07:04Z</updated>
+    <updated>2026-10-22T12:02:41Z</updated>
     <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · Remote, , United States (Remote) · Python, Go, Bash, GCP, Kubernetes · sponsorship: citizens-only · H-1B track record: ~182 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:arizeai:6203635004</id>
-    <title>Arize AI: DevOps Engineer</title>
-    <link href="https://job-boards.greenhouse.io/arizeai/jobs/6203635004"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote (United States) · LLMs, AWS, GCP, Azure, Kubernetes</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:armada:5409777008</id>
-    <title>Armada: Data Center Constructability Engineer</title>
-    <link href="https://job-boards.greenhouse.io/armada/jobs/5409777008"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States (Remote)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:armada:5439105008</id>
-    <title>Armada: Data Center Structural Engineer</title>
-    <link href="https://job-boards.greenhouse.io/armada/jobs/5439105008"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States (Remote)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:beyondtrust:8279128</id>
-    <title>BeyondTrust: Cloud Network Engineer</title>
-    <link href="https://job-boards.greenhouse.io/beyondtrust/jobs/8279128"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Network / Telecom · Remote United States · Python, AWS, Azure, Terraform</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:beyondtrust:8185856</id>
-    <title>BeyondTrust: Cyber Defense Engineer</title>
-    <link href="https://job-boards.greenhouse.io/beyondtrust/jobs/8185856"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · Remote Canada | Remote United States · Python, LLMs</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:beyondtrust:8256040</id>
-    <title>BeyondTrust: Site Reliability Engineer</title>
-    <link href="https://job-boards.greenhouse.io/beyondtrust/jobs/8256040"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote United States · AWS, Kubernetes, Terraform</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100</id>
-    <title>BigCommerce: Technical Support Representative - Remote</title>
-    <link href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · United States - Remote · JavaScript, HTML/CSS · H-1B track record: ~26 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:thinkbrg:/job/Remote---USA/Consultant---Cybersecurity_JR101155</id>
-    <title>BRG: Consultant - Cybersecurity</title>
-    <link href="https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site/job/Remote---USA/Consultant---Cybersecurity_JR101155"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · Remote - USA · $130k–$150k/yr</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:thinkbrg:/job/Remote---USA/Ai-Lab-Infrastructure-Engineer_JR100335</id>
-    <title>BRG: AI Lab Infrastructure Engineer</title>
-    <link href="https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site/job/Remote---USA/Ai-Lab-Infrastructure-Engineer_JR100335"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - USA · Python, Java, LLMs, AWS, Terraform</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:cadwell:4398741009</id>
-    <title>Cadwell: Cloud Site Reliability Engineer</title>
-    <link href="https://job-boards.greenhouse.io/cadwell/jobs/4398741009"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · Remote, USA · Python, TypeScript, JavaScript, Bash, AWS</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:capitaltg:5268774007</id>
-    <title>Capital Technology Group: CyberArk SME / DevOps Engineer 🇺🇸</title>
-    <link href="https://boards.greenhouse.io/capitaltg/jobs/5268774007?gh_jid=5268774007"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote (US) · Python, AWS, Azure, Terraform, Linux · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:ciena:/job/Remote-US-MD/Network-Solutions-Engineer---Onsite-at-Scott-AFB--IL_R031595</id>
-    <title>Ciena: Network Solutions Engineer - Hybrid - Fort Meade, Maryland 🇺🇸</title>
-    <link href="https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US-MD/Network-Solutions-Engineer---Onsite-at-Scott-AFB--IL_R031595"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Network / Telecom · Remote-US-MD · sponsorship: citizens-only · H-1B track record: ~43 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:ciena:/job/Remote-US-IL/Network-Solutions-Engineer--On-site--Scott-Air-Force-Base--IL_R031414</id>
-    <title>Ciena: Network Solutions Engineer, On-site: Scott Air Force Base, IL 🇺🇸</title>
-    <link href="https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US-IL/Network-Solutions-Engineer--On-site--Scott-Air-Force-Base--IL_R031414"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Network / Telecom · Remote-US-IL · sponsorship: citizens-only · H-1B track record: ~43 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:ciena:/job/Remote-US-CA/Network-Solutions-Engineer---Onsite-at-Vandenberg-Space-Force-Base_R031478</id>
-    <title>Ciena: Network Solutions Engineer - Onsite at Vandenberg Space Force Base 🇺🇸</title>
-    <link href="https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US-CA/Network-Solutions-Engineer---Onsite-at-Vandenberg-Space-Force-Base_R031478"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Network / Telecom · Remote-US-CA · sponsorship: citizens-only · H-1B track record: ~43 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:collegeboard:/job/Remote---USA/Cyber-Threat-Hunter_REQ002976</id>
-    <title>College Board: Cyber Threat Hunter</title>
-    <link href="https://collegeboard.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Cyber-Threat-Hunter_REQ002976"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · Remote - USA · Python, Bash, LLMs, AWS, Kubernetes · H-1B track record: ~13 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:echodynecorp:4719776006</id>
-    <title>Echodyne: Solutions Engineer - Critical Infrastructure 🇺🇸</title>
-    <link href="https://job-boards.greenhouse.io/echodynecorp/jobs/4719776006"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - US · Python, MATLAB, Linux · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:evercommerce:/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1</id>
-    <title>EverCommerce: EverPro - Systems Administrator (Orlando, Florida) 🇺🇸</title>
-    <link href="https://evercommerce.wd1.myworkdayjobs.com/evercommerce_careers/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — Orlando area"/>
-    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Orlando, Florida · $62k–$70k/yr · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:gitlab:8889193002</id>
-    <title>GitLab: Cloud Platform Engineer</title>
-    <link href="https://job-boards.greenhouse.io/gitlab/jobs/8889193002"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · Remote, Canada; Remote, United States · Python, Bash, AWS, GCP, Azure</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:gitlab:8831350002</id>
-    <title>GitLab: Distinguished Engineer, Core DevOps</title>
-    <link href="https://job-boards.greenhouse.io/gitlab/jobs/8831350002"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote, Canada; Remote, United Kingdom; Remote, United States · LLMs, Git</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Cloud-and-Health-AI-FinOps-and-Technology-Value-Optimization_43870</id>
-    <title>Guidehouse: Cloud and Health AI FinOps and Technology Value Optimization</title>
-    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cloud-and-Health-AI-FinOps-and-Technology-Value-Optimization_43870"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · US - Remote (Any location) · Azure · H-1B track record: ~68 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44797</id>
-    <title>Guidehouse: ServiceNow Help Desk Support</title>
-    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44797"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>2 openings · Remote — Florida / US · IT Support / Ops · US - Remote (Any location) · Tableau · H-1B track record: ~68 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/IT-Service-Desk-Specialist_41730</id>
-    <title>Guidehouse: IT Service Desk Specialist 🇺🇸</title>
-    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/IT-Service-Desk-Specialist_41730"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · US - Remote (Any location) · Linux · sponsorship: citizens-only · H-1B track record: ~68 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Information-Security-Systems-Officer--ISSO-_44761</id>
-    <title>Guidehouse: Information Security Systems Officer (ISSO)</title>
-    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Information-Security-Systems-Officer--ISSO-_44761"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · US - Remote (Any location) · H-1B track record: ~68 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Database-Engineer---Oracle---Cloud-Platforms_45321</id>
-    <title>Guidehouse: Database Engineer – Oracle &amp; Cloud Platforms</title>
-    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Database-Engineer---Oracle---Cloud-Platforms_45321"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · US - Remote (Any location) · Python, SQL, Bash, Azure, Terraform · H-1B track record: ~68 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/Cloud-ERP-Implementation-Intern_R101899</id>
-    <title>Impactadvisors: Cloud ERP Implementation Intern</title>
-    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/Cloud-ERP-Implementation-Intern_R101899"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · Cloud Platform · US Remote · $25/hr</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/Entry-Level-IT-Advisory-Consultant_R101837</id>
-    <title>Impactadvisors: Entry-Level IT Advisory Consultant 🛂</title>
-    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/Entry-Level-IT-Advisory-Consultant_R101837"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · US Remote · sponsorship: no-sponsorship</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/IT-Infrastructure-Design-Engineer_R102100</id>
-    <title>Impactadvisors: IT Infrastructure Design Engineer</title>
-    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/IT-Infrastructure-Design-Engineer_R102100"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · US Remote · Linux</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:intapp:/job/US-AL-Remote/Cloud-Platform-Engineer_R2025433-1</id>
-    <title>Intapp: Cloud Platform Engineer</title>
-    <link href="https://intapp.wd1.myworkdayjobs.com/Intapp/job/US-AL-Remote/Cloud-Platform-Engineer_R2025433-1"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · US AL Remote · Python, Bash, LLMs, AWS, Azure · H-1B track record: ~22 approvals (FY2022–2023)</summary>
+    <summary>Stretch — remote · Security / IT · Remote, , United States (Remote) · Python, Go, Bash, GCP, Kubernetes · sponsorship: citizens-only · status: closed · H-1B track record: ~182 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:smartrecruiters:Intelerad:744000155587469</id>
@@ -672,52 +560,28 @@
     <summary>Stretch — remote · Cloud Platform · Remote, UNITED STATES, United States (Hybrid) · $86.25k–$115k/yr · AWS, Azure, Terraform, Linux</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:jabil:/job/Remote---USA/Onsite-Data-Center-Inventory-Specialist_J2466794</id>
-    <title>Jabil: Onsite Data Center Inventory Specialist</title>
-    <link href="https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Remote---USA/Onsite-Data-Center-Inventory-Specialist_J2466794"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - USA · H-1B track record: ~69 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:labcorp:/job/Kissimmee-FL/Phlebotomist-Full-Time-Floater-Kissimmee-St-Cloud-FL_2634838</id>
-    <title>LabCorp: Phlebotomist-Full Time/Floater-Kissimmee/St. Cloud. FL</title>
-    <link href="https://labcorp.wd1.myworkdayjobs.com/external/job/Kissimmee-FL/Phlebotomist-Full-Time-Floater-Kissimmee-St-Cloud-FL_2634838"/>
-    <updated>2026-10-21T21:07:04Z</updated>
+    <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000152736767</id>
+    <title>Link Solutions: Information Security Specialist (Intermediate-Level) 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LinkSolutionsInc/744000152736767"/>
+    <updated>2026-10-22T12:02:41Z</updated>
     <category term="Stretch — Orlando area"/>
-    <summary>Stretch — Orlando area · Cloud Platform · Kissimmee FL</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/IT-Desktop-Engineering-Intern_R-00194524</id>
-    <title>Leidos: IT Desktop Engineering Intern 🇺🇸</title>
-    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/IT-Desktop-Engineering-Intern_R-00194524"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · 6314 Remote/Teleworker US · sponsorship: citizens-only · H-1B track record: ~79 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057</id>
-    <title>Leidos: Network Site Design Intern 🇺🇸</title>
-    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · Network / Telecom · 6314 Remote/Teleworker US · sponsorship: citizens-only · H-1B track record: ~79 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Cyber-Security-Subject-Matter-Expert_R-00194019</id>
-    <title>Leidos: Cyber Security Subject Matter Expert 🇺🇸</title>
-    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Cyber-Security-Subject-Matter-Expert_R-00194019"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · 6314 Remote/Teleworker US · Python, SQL, AWS, Azure, Linux · sponsorship: citizens-only · H-1B track record: ~79 approvals (FY2022–2023)</summary>
+    <summary>Stretch — Orlando area · Security / IT · Orlando, FL, United States · $80k–$90k/yr · sponsorship: citizens-only · status: closed</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000152747719</id>
     <title>Link Solutions: Systems Administrator (Intermediate-Level)</title>
     <link href="https://jobs.smartrecruiters.com/LinkSolutionsInc/744000152747719"/>
-    <updated>2026-10-21T21:07:04Z</updated>
+    <updated>2026-10-22T12:02:41Z</updated>
     <category term="Stretch — Orlando area"/>
-    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Orlando, FL, United States · $80k–$100k/yr · Linux</summary>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Orlando, FL, United States · $80k–$100k/yr · Linux · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000154130955</id>
+    <title>Link Solutions: Network Administrator (Intermediate-Level) 🇺🇸</title>
+    <link href="https://jobs.smartrecruiters.com/LinkSolutionsInc/744000154130955"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Network / Telecom · Orlando, FL, United States · $80k–$90k/yr · sponsorship: citizens-only · status: closed</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000156069440</id>
@@ -728,83 +592,219 @@
     <summary>Stretch — Orlando area · IT Support / Ops · Orlando, FL, United States · $60k–$70k/yr</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000152736767</id>
-    <title>Link Solutions: Information Security Specialist (Intermediate-Level) 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LinkSolutionsInc/744000152736767"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — Orlando area"/>
-    <summary>Stretch — Orlando area · Security / IT · Orlando, FL, United States · $80k–$90k/yr · sponsorship: citizens-only</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:smartrecruiters:LinkSolutionsInc:744000154130955</id>
-    <title>Link Solutions: Network Administrator (Intermediate-Level) 🇺🇸</title>
-    <link href="https://jobs.smartrecruiters.com/LinkSolutionsInc/744000154130955"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — Orlando area"/>
-    <summary>Stretch — Orlando area · Network / Telecom · Orlando, FL, United States · $80k–$90k/yr · sponsorship: citizens-only</summary>
+    <id>urn:intern-engine:smartrecruiters:Mirantis:744000138380407</id>
+    <title>Mirantis: AI Infrastructure &amp; Platform Operations Engineer (remote in the US)</title>
+    <link href="https://jobs.smartrecruiters.com/Mirantis/744000138380407"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote, USA , United States (Remote) · AWS, Kubernetes, Linux · status: closed · H-1B track record: ~11 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:smartrecruiters:Mirantis:744000149056099</id>
     <title>Mirantis: AI Storage Infrastructure Engineer - remote in the US</title>
     <link href="https://jobs.smartrecruiters.com/Mirantis/744000149056099"/>
-    <updated>2026-10-21T21:07:04Z</updated>
+    <updated>2026-10-22T12:02:41Z</updated>
     <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote, USA, United States (Remote) · AWS, Kubernetes, Terraform, Linux · H-1B track record: ~11 approvals (FY2022–2023)</summary>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote, USA, United States (Remote) · AWS, Kubernetes, Terraform, Linux · status: closed · H-1B track record: ~11 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:smartrecruiters:Mirantis:744000138380407</id>
-    <title>Mirantis: AI Infrastructure &amp; Platform Operations Engineer (remote in the US)</title>
-    <link href="https://jobs.smartrecruiters.com/Mirantis/744000138380407"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote, USA , United States (Remote) · AWS, Kubernetes, Linux · H-1B track record: ~11 approvals (FY2022–2023)</summary>
+    <id>urn:intern-engine:smartrecruiters:SOSi1:3743990013868576</id>
+    <title>SOSi: Help Desk Representative</title>
+    <link href="https://jobs.smartrecruiters.com/SOSi1/3743990013868576"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote, Florida, United States (Remote) · status: closed</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:nabancard:/job/US---Remote/DevOps-Engineer_JR101983</id>
-    <title>NorthAB: DevOps Engineer</title>
-    <link href="https://nabancard.wd1.myworkdayjobs.com/nab/job/US---Remote/DevOps-Engineer_JR101983"/>
-    <updated>2026-10-21T21:07:04Z</updated>
+    <id>urn:intern-engine:smartrecruiters:SOSi1:3743990013881284</id>
+    <title>SOSi: Cloud Web Developer</title>
+    <link href="https://jobs.smartrecruiters.com/SOSi1/3743990013881284"/>
+    <updated>2026-10-22T12:02:41Z</updated>
     <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · US - Remote · Python, SQL, Bash, Git, PostgreSQL</summary>
+    <summary>Stretch — remote · Cloud Platform · Remote, FL, United States (Remote) · JavaScript, React, Angular, HTML/CSS, GraphQL · status: closed</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:philips:/job/United-States-of-America---Remote-Based-United-States/Technical-Support-Engineer--New-England-_588904</id>
-    <title>Philips: Technical Support Engineer (New England)</title>
-    <link href="https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/United-States-of-America---Remote-Based-United-States/Technical-Support-Engineer--New-England-_588904"/>
+    <id>urn:intern-engine:smartrecruiters:SOSi1:3743990015353726</id>
+    <title>SOSi: DevOps Engineer</title>
+    <link href="https://jobs.smartrecruiters.com/SOSi1/3743990015353726"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote, Remote, United States (Remote) · AWS, GCP, Azure, Kubernetes, Docker · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:smartrecruiters:TurnerTownsend:744000156636625</id>
+    <title>Turner &amp; Townsend: Scheduler / Planner - Data Center Construction (Portuguese Speaking)</title>
+    <link href="https://jobs.smartrecruiters.com/TurnerTownsend/744000156636625"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · USA wide, , United States (Remote) · H-1B track record: ~75 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:allstate:/job/US---Remote/Cloud-Product-Security-Engineer_R29721</id>
+    <title>Allstate Insurance Company: Cloud Product Security Engineer 🛂</title>
+    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/US---Remote/Cloud-Product-Security-Engineer_R29721"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · US - Remote · $90.7k–$195.7k/yr · Python, Java, JavaScript, AWS, Azure · sponsorship: no-sponsorship · status: closed · H-1B track record: ~50 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:allstate:/job/US---Remote/FinOps-Engineer--Cloud---Kubernetes-Optimization_R35621</id>
+    <title>Allstate Insurance Company: FinOps Engineer, Cloud &amp; Kubernetes Optimization 🛂</title>
+    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/US---Remote/FinOps-Engineer--Cloud---Kubernetes-Optimization_R35621"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · US - Remote · Kubernetes, Python, SQL, AWS, GCP · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:allstate:/job/US---Remote/Platform-Consultant---Cyber-Platforms--Data----Tooling_R31084</id>
+    <title>Allstate Insurance Company: Platform Consultant — Cyber Platforms, Data, &amp; Tooling 🛂</title>
+    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/US---Remote/Platform-Consultant---Cyber-Platforms--Data----Tooling_R31084"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · US - Remote · Java, Rust, JavaScript, Spring, AWS · sponsorship: no-sponsorship · status: closed · H-1B track record: ~50 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:allstate:/job/USA---TX-Remote/AI-Cloud-Platform-Engineer_R35902</id>
+    <title>Allstate Insurance Company: AI Cloud Platform Engineer 🛂</title>
+    <link href="https://allstate.wd5.myworkdayjobs.com/allstate_careers/job/USA---TX-Remote/AI-Cloud-Platform-Engineer_R35902"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · USA - TX (Remote) · Python, SQL, Azure, Terraform, Git · sponsorship: no-sponsorship · H-1B track record: ~50 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:alteryx:/job/US---Remote/InfoSec-Analyst_R12418</id>
+    <title>Alteryx: Information Security Analyst</title>
+    <link href="https://alteryx.wd108.myworkdayjobs.com/AlteryxCareers/job/US---Remote/InfoSec-Analyst_R12418"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · US - Remote · AWS, GCP, Azure · status: closed · H-1B track record: ~20 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:aptiv:/job/USA-Remote-Worksite/Linux-Development-Engineer---eLxr-Distribution_J000693019</id>
+    <title>Aptiv: Linux Development Engineer – eLxr Distribution</title>
+    <link href="https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/USA-Remote-Worksite/Linux-Development-Engineer---eLxr-Distribution_J000693019"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · USA Remote Worksite · Linux, Python, C++, Bash, AWS · H-1B track record: ~251 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100</id>
+    <title>BigCommerce: Technical Support Representative - Remote</title>
+    <link href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100"/>
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · United States of America - Remote Based, United States · Vue</summary>
+    <summary>Remote — Florida / US · IT Support / Ops · United States - Remote · JavaScript, HTML/CSS · H-1B track record: ~26 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:greenhouse:planetlabs:8221849</id>
-    <title>Planet: Infrastructure Solutions Engineer</title>
-    <link href="https://job-boards.greenhouse.io/planetlabs/jobs/8221849"/>
+    <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Consulting-Solution-Executive---Hybrid-Infrastructure_R26_00002797</id>
+    <title>CDW Corporation: Consulting Solution Executive – Hybrid Infrastructure</title>
+    <link href="https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Consulting-Solution-Executive---Hybrid-Infrastructure_R26_00002797"/>
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · United States, Remote · Python, LLMs, GCP, Kubernetes, Terraform</summary>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote – USA · H-1B track record: ~52 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:ptc:/job/Remote-USA/Cloud-Service-Engineer_JR112727</id>
-    <title>PTC: Cloud Service Engineer 🇺🇸</title>
-    <link href="https://ptc.wd1.myworkdayjobs.com/ptc/job/Remote-USA/Cloud-Service-Engineer_JR112727"/>
+    <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00002917</id>
+    <title>CDW Corporation: Solution Specialist - Networking</title>
+    <link href="https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Solution-Specialist---Networking_R26_00002917"/>
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · Remote, USA · Java, AWS, Azure, Linux · sponsorship: citizens-only · H-1B track record: ~80 approvals (FY2022–2023)</summary>
+    <summary>Stretch — remote · Network / Telecom · Remote – USA · H-1B track record: ~52 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:republic:/job/Remote---USA/Field-IT-Engineer_R-185804-1</id>
-    <title>Republic Services: Field IT Engineer (Texas &amp; Louisiana)</title>
-    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Field-IT-Engineer_R-185804-1"/>
-    <updated>2026-10-21T21:07:04Z</updated>
+    <id>urn:intern-engine:workday:ciena:/job/Remote-US-CA/Network-Solutions-Engineer---Onsite-at-Vandenberg-Space-Force-Base_R031478</id>
+    <title>Ciena: Network Solutions Engineer - Onsite at Vandenberg Space Force Base 🇺🇸</title>
+    <link href="https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US-CA/Network-Solutions-Engineer---Onsite-at-Vandenberg-Space-Force-Base_R031478"/>
+    <updated>2026-10-22T12:02:41Z</updated>
     <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote - USA · H-1B track record: ~19 approvals (FY2022–2023)</summary>
+    <summary>Stretch — remote · Network / Telecom · Remote-US-CA · sponsorship: citizens-only · status: closed · H-1B track record: ~43 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:republic:/job/Remote---USA/Field-IT-Engineer_R-185805-1</id>
-    <title>Republic Services: Field IT Engineer (Tennessee, Kentucky &amp; Indiana)</title>
-    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Field-IT-Engineer_R-185805-1"/>
+    <id>urn:intern-engine:workday:ciena:/job/Remote-US-IL/Network-Solutions-Engineer--On-site--Scott-Air-Force-Base--IL_R031414</id>
+    <title>Ciena: Network Solutions Engineer, On-site: Scott Air Force Base, IL 🇺🇸</title>
+    <link href="https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US-IL/Network-Solutions-Engineer--On-site--Scott-Air-Force-Base--IL_R031414"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote-US-IL · sponsorship: citizens-only · status: closed · H-1B track record: ~43 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:ciena:/job/Remote-US-MD/Network-Solutions-Engineer---Onsite-at-Scott-AFB--IL_R031595</id>
+    <title>Ciena: Network Solutions Engineer - Hybrid - Fort Meade, Maryland 🇺🇸</title>
+    <link href="https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US-MD/Network-Solutions-Engineer---Onsite-at-Scott-AFB--IL_R031595"/>
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote - USA · H-1B track record: ~19 approvals (FY2022–2023)</summary>
+    <summary>Stretch — remote · Network / Telecom · Remote-US-MD · sponsorship: citizens-only · H-1B track record: ~43 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:collegeboard:/job/Remote---USA/Cyber-Threat-Hunter_REQ002976</id>
+    <title>College Board: Cyber Threat Hunter</title>
+    <link href="https://collegeboard.wd1.myworkdayjobs.com/Careers/job/Remote---USA/Cyber-Threat-Hunter_REQ002976"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - USA · Python, Bash, LLMs, AWS, Kubernetes · H-1B track record: ~13 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:evercommerce:/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1</id>
+    <title>EverCommerce: EverPro - Systems Administrator (Orlando, Florida) 🇺🇸</title>
+    <link href="https://evercommerce.wd1.myworkdayjobs.com/evercommerce_careers/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Orlando, Florida · $62k–$70k/yr · sponsorship: citizens-only</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:ferrovial:/job/Kissimmee-FL/Webber---Landscape-Technician---Infrastructure-Management_JR19742</id>
+    <title>Ferrovial: Webber - Landscape Technician - Infrastructure Management</title>
+    <link href="https://ferrovial.wd3.myworkdayjobs.com/ferrovial_career_site/job/Kissimmee-FL/Webber---Landscape-Technician---Infrastructure-Management_JR19742"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Systems &amp; Cloud Infra · Kissimmee, FL</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Cloud-and-Health-AI-FinOps-and-Technology-Value-Optimization_43870</id>
+    <title>Guidehouse: Cloud and Health AI FinOps and Technology Value Optimization</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cloud-and-Health-AI-FinOps-and-Technology-Value-Optimization_43870"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · US - Remote (Any location) · Azure · status: closed · H-1B track record: ~68 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Database-Engineer---Oracle---Cloud-Platforms_45321</id>
+    <title>Guidehouse: Database Engineer – Oracle &amp; Cloud Platforms</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Database-Engineer---Oracle---Cloud-Platforms_45321"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · US - Remote (Any location) · Python, SQL, Bash, Azure, Terraform · H-1B track record: ~68 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/IT-Service-Desk-Specialist_41730</id>
+    <title>Guidehouse: IT Service Desk Specialist 🇺🇸</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/IT-Service-Desk-Specialist_41730"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · US - Remote (Any location) · Linux · sponsorship: citizens-only · status: closed · H-1B track record: ~68 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Information-Security-Systems-Officer--ISSO-_44761</id>
+    <title>Guidehouse: Information Security Systems Officer (ISSO)</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Information-Security-Systems-Officer--ISSO-_44761"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · US - Remote (Any location) · status: closed · H-1B track record: ~68 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44797</id>
+    <title>Guidehouse: ServiceNow Help Desk Support</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44797"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>2 openings · Remote — Florida / US · IT Support / Ops · US - Remote (Any location) · Tableau · status: closed · H-1B track record: ~68 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/Cloud-ERP-Implementation-Intern_R101899</id>
+    <title>Impactadvisors: Cloud ERP Implementation Intern</title>
+    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/Cloud-ERP-Implementation-Intern_R101899"/>
+    <updated>2026-10-22T12:02:41Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · Cloud Platform · US Remote · $25/hr · status: closed</summary>
   </entry>
 </feed>

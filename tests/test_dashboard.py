@@ -35,11 +35,13 @@ def _stats():
     }
 
 
-def test_dashboard_uses_fetch_time_and_prunes_ghost_saves():
+def test_dashboard_uses_fetch_time_and_preserves_saved_snapshots():
     dashboard.generate(_store(), _stats())
     html = open(paths.DASHBOARD_PATH, encoding="utf-8").read()
     assert "Data as of Aug 06, 2026 at 14:08 UTC" in html
-    assert "if (!currentIds[id]) delete saved[id]" in html
+    assert "SavedRoleStore.reconcile(saved, current)" in html
+    assert 'id="savedpanel"' in html
+    assert "if (!currentIds[id]) delete saved[id]" not in html
 
 
 def test_no_signup_form_when_no_mailer_is_configured():
@@ -152,6 +154,5 @@ def test_a_star_on_an_absorbed_requisition_moves_to_the_surviving_row():
     # exactly that to any sibling id, silently.
     html = _render({str(i): _opening(str(i)) for i in range(3)})
     assert 'data-ids="0|1|2"' in html
-    assert "if (saved[ids[i]]) { saved[tr.dataset.id] = saved[ids[i]]; break; }" in html
-    # And every one of those ids still counts as present.
-    assert "ids.forEach(function (id) { currentIds[id] = true; });" in html
+    assert "SavedRoleStore.reconcile(saved, current)" in html
+    assert "ids: (tr.dataset.ids || tr.dataset.id).split('|')" in html

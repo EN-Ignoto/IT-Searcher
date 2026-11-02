@@ -1,9 +1,9 @@
 {
   "cycles": [
     "Orlando area",
-    "Remote \u2014 Florida / US",
-    "Stretch \u2014 Orlando area",
-    "Stretch \u2014 remote"
+    "Remote — Florida / US",
+    "Stretch — Orlando area",
+    "Stretch — remote"
   ],
   "regions": [
     "US"
@@ -15,14 +15,15 @@
   "include_international": false,
   "section_limits": {
     "Orlando area": 200,
-    "Remote \u2014 Florida / US": 200,
-    "Stretch \u2014 Orlando area": 200,
-    "Stretch \u2014 remote": 200
+    "Remote — Florida / US": 200,
+    "Stretch — Orlando area": 200,
+    "Stretch — remote": 200
   },
   "supabase_url": "",
   "supabase_publishable_key": "",
   "infer_undated": true,
   "infer_max_age_days": 120,
   "opportunity_scope": "it",
-  "default_cycle": "Orlando area"
+  "default_cycle": "Orlando area",
+  "feed_start_date": "2026-11-02"
 }

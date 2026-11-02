@@ -48,38 +48,34 @@
  "dropped_offcycle_by_text": 0,
  "roles_cycle_inferred": 0,
  "roles_by_source": {
-  "ashby": 3,
-  "greenhouse": 7,
-  "lever": 1,
-  "oracle": 7,
-  "rippling": 13,
-  "smartrecruiters": 3,
-  "workday": 27
+  "ashby": 2,
+  "greenhouse": 1,
+  "oracle": 2,
+  "rippling": 12,
+  "workday": 6
  },
  "roles_by_cycle": {
-  "Remote — Florida / US": 14,
-  "Stretch — remote": 33,
-  "Stretch — Orlando area": 10,
-  "Orlando area": 4
+  "Remote — Florida / US": 8,
+  "Stretch — remote": 12,
+  "Stretch — Orlando area": 3
  },
  "roles_by_region": {
-  "US": 61
+  "US": 23
  },
  "sponsorship_counts": {
-  "unknown": 45,
-  "no-sponsorship": 8,
-  "citizens-only": 8
+  "unknown": 21,
+  "citizens-only": 2
  },
- "posted_date_coverage": 0.787,
+ "posted_date_coverage": 0.478,
  "enriched_this_run": 134,
  "enrichment_detail_fetches": 105,
  "purged_this_run": 0,
  "new_this_run": 133,
- "open_total": 61,
+ "open_total": 23,
  "detection_latency": {
-  "median_minutes": 141.9,
-  "p95_minutes": 8668.7,
-  "sample_size": 23,
+  "median_minutes": null,
+  "p95_minutes": null,
+  "sample_size": 0,
   "window_days": 7,
   "basis": "roles published in the window with an exact source timestamp"
  },
@@ -87,6 +83,6 @@
   "median_days": 20,
   "sample_size": 107
  },
- "rendered_at": "2026-10-22T12:02:41Z",
+ "rendered_at": "2026-11-02T05:26:34Z",
  "stats_basis": "counts recomputed from the store; fetch metrics from the last run"
 }

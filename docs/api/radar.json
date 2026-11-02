@@ -1,7 +1,7 @@
 {
  "generated_at": "2026-10-21T21:07:04Z",
  "data_as_of": "2026-10-21T21:07:04Z",
- "rendered_at": "2026-10-22T12:02:41Z",
+ "rendered_at": "2026-11-02T05:26:34Z",
  "cycle": "Orlando area",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "companies": [
@@ -15,8 +15,8 @@
    "source": "engine",
    "expected": "2026-10-13",
    "days_until": -8,
-   "status": "open",
-   "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/82292",
+   "status": "dropped",
+   "url": "",
    "note": "",
    "provenance": {
     "type": "engine-observed",
@@ -34,8 +34,8 @@
    "source": "engine",
    "expected": "2026-10-14",
    "days_until": -7,
-   "status": "open",
-   "url": "https://ucf.wd1.myworkdayjobs.com/careers/job/Orlando-FL-Main-Campus/IT-Client-Support-Specialist-II_R114400",
+   "status": "dropped",
+   "url": "",
    "note": "",
    "provenance": {
     "type": "engine-observed",

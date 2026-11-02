@@ -1,6 +1,12 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "workday:crowdstrike:/job/USA---Remote/Technical-Support_R30773",
+      "workday:guidehouse:/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309"
+    ],
+    "telegram": [
+      "workday:crowdstrike:/job/USA---Remote/Technical-Support_R30773",
+      "workday:guidehouse:/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309"
+    ]
   }
 }

@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**0 open postings** · Data as of 2026-11-02T07:09:56Z
+**2 open postings** · Data as of 2026-11-02T16:42:52Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -16,7 +16,19 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 
 **Stretch** means the title lacks a clear junior, internship, or routine support signal. Experience requirements and schedule must be checked in the posting; this is a broad discovery list, not a guarantee of eligibility. Senior and management titles are excluded.
 
-_No matching roles right now, the list fills as companies post. Star it and check back._
+## 🖥️ IT Support, Networks & Infrastructure
+
+### Remote — Florida / US  (1 roles)
+
+| Company | Role | Category | Location | Skills | Posted | Apply |
+|---|---|---|---|---|---|---|
+| Crowdstrike ✓ 🆁 | Technical Support 🆕 | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
+
+### Stretch — remote  (1 roles)
+
+| Company | Role | Category | Location | Skills | Posted | Apply |
+|---|---|---|---|---|---|---|
+| Guidehouse ✓ 🆁 | Cyber Forensic Analyst Journeyman 🆕 | Security / IT | US - Remote (Any location) | No skills listed | Nov 02, 2026 | [Apply](https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309) |
 
 <a id="drop-radar"></a>
 

@@ -1,9 +1,54 @@
 {
- "generated_at": "2026-11-02T07:09:56Z",
- "data_as_of": "2026-11-02T07:09:56Z",
- "rendered_at": "2026-11-02T07:09:56Z",
+ "generated_at": "2026-11-02T16:42:52Z",
+ "data_as_of": "2026-11-02T16:42:52Z",
+ "rendered_at": "2026-11-02T16:42:52Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 0,
- "jobs": []
+ "count": 2,
+ "jobs": [
+  {
+   "id": "workday:crowdstrike:/job/USA---Remote/Technical-Support_R30773",
+   "company": "Crowdstrike",
+   "title": "Technical Support",
+   "season": "Remote — Florida / US",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "IT Support / Ops",
+   "location": "USA - Remote",
+   "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773",
+   "posted_at": "2026-11-02T00:00:00Z",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-11-02T16:42:52Z",
+   "sponsorship": "unknown",
+   "salary": "$70k–$115k/yr",
+   "skills": [
+    "Linux"
+   ],
+   "source": "workday",
+   "h1b_approvals": 99,
+   "program": "Entry-level job",
+   "remote": true
+  },
+  {
+   "id": "workday:guidehouse:/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309",
+   "company": "Guidehouse",
+   "title": "Cyber Forensic Analyst Journeyman",
+   "season": "Stretch — remote",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "Security / IT",
+   "location": "US - Remote (Any location)",
+   "url": "https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309",
+   "posted_at": "2026-11-02T00:00:00Z",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-11-02T16:42:52Z",
+   "sponsorship": "unknown",
+   "salary": null,
+   "skills": [],
+   "source": "workday",
+   "h1b_approvals": 68,
+   "program": "Entry-level job",
+   "remote": true
+  }
+ ]
 }

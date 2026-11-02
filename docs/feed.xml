@@ -5,8 +5,24 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-02T07:09:56Z</updated>
+  <updated>2026-11-02T16:42:52Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:workday:crowdstrike:/job/USA---Remote/Technical-Support_R30773</id>
+    <title>Crowdstrike: Technical Support</title>
+    <link href="https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773"/>
+    <updated>2026-11-02T16:42:52Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · USA - Remote · $70k–$115k/yr · Linux · H-1B track record: ~99 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309</id>
+    <title>Guidehouse: Cyber Forensic Analyst Journeyman</title>
+    <link href="https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309"/>
+    <updated>2026-11-02T16:42:52Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · US - Remote (Any location) · H-1B track record: ~68 approvals (FY2022–2023)</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f</id>
     <title>Amplify: Summer 2027: IT Services Intern</title>
@@ -790,21 +806,5 @@
     <updated>2026-10-22T12:02:41Z</updated>
     <category term="Stretch — remote"/>
     <summary>Stretch — remote · IT Support / Ops · Remote - USA · status: closed · H-1B track record: ~19 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:republic:/job/Remote---USA/Field-IT-Engineer_R-185805-1</id>
-    <title>Republic Services: Field IT Engineer (Tennessee, Kentucky &amp; Indiana)</title>
-    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Field-IT-Engineer_R-185805-1"/>
-    <updated>2026-10-22T12:02:41Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote - USA · status: closed · H-1B track record: ~19 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:ryder:/job/USA---Coral-Gables-FL-HQ/Information-Technology-Corporate-Fellowship---Hiring-Our-Heroes---Remote_R185920</id>
-    <title>Ryder System: Information Technology Corporate Fellowship - Hiring Our Heroes - Remote</title>
-    <link href="https://ryder.wd5.myworkdayjobs.com/RyderCareers/job/USA---Coral-Gables-FL-HQ/Information-Technology-Corporate-Fellowship---Hiring-Our-Heroes---Remote_R185920"/>
-    <updated>2026-10-22T12:02:41Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · USA - Coral Gables FL HQ · status: closed · H-1B track record: ~58 approvals (FY2022–2023)</summary>
   </entry>
 </feed>

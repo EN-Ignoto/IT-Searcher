@@ -837,6 +837,12 @@ def run_update() -> tuple[dict, dict, list[str]]:
     new_ids = store.upsert(existing, rows, complete_keys, enriched_ids,
                            seen_ids=seen_ids,
                            classifier_version=sponsorship.VERSION)
+    # Upsert preserves authoritative dates and can reopen previously closed rows.
+    # Validate the merged records too, including boards that failed this run and
+    # roles that crossed the age boundary while collection was in progress.
+    _close_out_of_scope(existing, cfg, blocklist)
+    new_ids = [jid for jid in new_ids if existing[jid].get("is_open")]
+    kept = [job for job in kept if existing.get(job.id, {}).get("is_open")]
     purged = store.purge(existing)
     store.save(paths.JOBS_PATH, existing)
 

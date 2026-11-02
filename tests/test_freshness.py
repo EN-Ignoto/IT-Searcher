@@ -116,3 +116,14 @@ def test_non_entry_and_non_it_false_positives_are_excluded(title):
 ])
 def test_state_restricted_remote_roles_are_not_claimed_as_florida(location):
     assert filters_it.location_group(location) is None
+
+
+@pytest.mark.parametrize('posted, seen, excluded', [
+    ('2026-10-22', '2026-11-03', True),
+    (None, '2026-10-22', True),
+    ('2026-11-02', '2026-10-22', False),
+    (None, None, False),
+])
+def test_fresh_start_does_not_reintroduce_the_old_batch(posted, seen, excluded):
+    cfg = {'opportunity_scope': 'it', 'feed_start_date': '2026-11-02'}
+    assert pipeline._before_feed_start(posted, seen, cfg) == excluded

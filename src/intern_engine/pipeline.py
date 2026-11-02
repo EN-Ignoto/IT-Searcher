@@ -572,7 +572,8 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
             # posted early and is still open and still for Fall 2026. Closing it
             # for being old was us overriding what the company wrote.
             prior = existing.get(stored_owner(job) or job.id) or {}
-            too_old = freshness.expired(job.posted_at, prior.get("first_seen_at"), max_age)
+            too_old = (freshness.expired(job.posted_at, prior.get("first_seen_at"), max_age)
+                       or _before_feed_start(job.posted_at, prior.get("first_seen_at"), cfg))
             if ((cfg.get("opportunity_scope") == "it" and too_old)
                     or (cfg.get("opportunity_scope") != "it" and cutoff and posted_day
                         and posted_day < cutoff and inferred)):
@@ -663,6 +664,16 @@ def _close_region_out_of_scope(existing: dict, cfg: dict) -> int:
     return n
 
 
+def _before_feed_start(posted_at, first_seen_at, cfg):
+    """A deliberate fresh-start boundary, independent of the rolling age limit."""
+    start = cfg.get("feed_start_date")
+    if not start or cfg.get("opportunity_scope") != "it":
+        return False
+    boundary = datetime.strptime(start, "%Y-%m-%d").date()
+    evidence = _parse_iso(posted_at) or _parse_iso(first_seen_at)
+    return bool(evidence and evidence.date() < boundary)
+
+
 def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None) -> int:
     """Apply every deterministic product-scope rule to the full open store.
 
@@ -726,6 +737,7 @@ def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None
                 and not quality.is_recognized(company)
             )
             or expired_unstated
+            or _before_feed_start(record.get("posted_at"), record.get("first_seen_at"), cfg)
             or (cfg.get("opportunity_scope") == "it" and freshness.expired(
                 record.get("posted_at"), record.get("first_seen_at"), config.max_age_days(cfg)))
         )

@@ -8,14 +8,18 @@ from . import filters_secnet as legacy
 BUCKETS = ["Orlando area", "Remote — Florida / US", "Stretch — Orlando area", "Stretch — remote"]
 ENTRY_LEVEL = BUCKETS[0]
 INTERNSHIPS = BUCKETS[0]
-SENIOR = re.compile(r"\b(senior|sr\.?|staff|principal|lead|manager|director|head|vp|architect|iii|iv|[4-9])\b", re.I)
+SENIOR = re.compile(r"\b(senior|sr\.?|staff|principal|lead|manager|director|head|vp|vice president|architect|iii|iv|[4-9])\b", re.I)
 ENTRY = re.compile(r"\b(entry[ -]level|junior|jr|associate|trainee|graduate|new grad|early career|(?:administrator|engineer|technician|analyst) (?:i|1)|level[ -]?(?:1|i)|tier[ -]?(?:1|i))\b", re.I)
 SUPPORT = re.compile(r"\b(help[ -]?desk|service desk|desktop support|it support|computer technician|pc technician|it technician|it specialist|technical support|end[ -]user|field support|support technician|support specialist)\b", re.I)
 IT = re.compile(r"\b(information technology|it|help[ -]?desk|service desk|desktop|sysadmin|systems? administrat\w*|network|networking|noc|data cent(?:er|re)|cloud|infrastructure|linux|windows|technical support|computer technician|pc technician|end[ -]user|devops|site reliability|cyber\w*|infosec|soc analyst|information security)\b", re.I)
-EXCLUDE = re.compile(r"\b(sales|marketing|recruit\w*|mechanical|aerospace|electrical|embedded|firmware|software|civil|manufacturing|financial|data scien\w*|data engineer|machine learning|provider network|social network|security guard|physical security|loss prevention)\b", re.I)
+EXCLUDE = re.compile(r"\b(sales|marketing|recruit\w*|mechanical|aerospace|electrical|embedded|firmware|software|civil|manufacturing|landscape|construction|financial|data scien\w*|data engineer|machine learning|provider network|social network|security guard|physical security|loss prevention)\b", re.I)
 CITIES = re.compile(r"\b(orlando|winter park|winter garden|lake mary|sanford|kissimmee|altamonte springs|maitland|apopka|oviedo|longwood|casselberry|lake buena vista|celebration|ocoee|windermere|winter springs|sanford|st[.]? cloud|clermont|tavares|mount dora)\b", re.I)
 FL = re.compile(r"\b(fl|florida)\b", re.I)
 OTHER_STATE = re.compile(r",\s*(?:AL|AK|AZ|AR|CA|CO|CT|DE|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY)\b")
+REMOTE_STATE = re.compile(
+    r"\b(?:AL|AK|AZ|AR|CA|CO|CT|DE|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY)\b"
+    r"|\b(?:Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|Wisconsin|Wyoming)\b"
+)
 REMOTE = re.compile(r"\b(remote|work from home|anywhere)\b", re.I)
 US = re.compile(r"\b(united states|usa|u\.s\.|us|nationwide)\b", re.I)
 
@@ -43,7 +47,7 @@ def location_group(location: str, title: str = "") -> str | None:
     if REMOTE.search(text + " " + title):
         if FL.search(text):
             return "remote"
-        if US.search(text) and not OTHER_STATE.search(text):
+        if US.search(text) and not REMOTE_STATE.search(text):
             return "remote"
     return None
 

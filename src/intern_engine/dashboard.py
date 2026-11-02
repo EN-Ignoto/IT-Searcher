@@ -315,7 +315,7 @@ def _radar_section(store_data: dict, cfg: dict, data_as_of: datetime | None = No
     drop date to Google/Apple Calendar and get a reminder a week before.</span></p>
   <div class="filters"><input id="rq" type="search"
     placeholder="Search the radar — is your target company on it?" autocomplete="off"></div>
-  <div class="tscroll">
+  <div class="tscroll" tabindex="0" aria-label="Job results, scroll horizontally for more details">
   <table><thead><tr><th>Company</th><th>Typical opening</th><th>Expected</th>
   <th>Confidence</th><th>Status</th>
   </tr></thead><tbody id="rrows">{_radar_rows(rows)}</tbody></table>
@@ -417,7 +417,7 @@ def generate(store_data: dict, stats: dict) -> None:
     html_doc = f"""<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Internship Engine - Live Dashboard</title>
+<title>IT Searcher · Your job workspace</title>
 <meta name="description" content="Summer 2027 & Fall 2026 IT jobs & internships, refreshed every 3 hours. Auto-detected visa sponsorship flags, proven H-1B sponsor badges, email alerts.">
 <meta property="og:title" content="Internship Engine - Live Dashboard">
 <meta property="og:description" content="{len(open_jobs)} open IT jobs & internships, refreshed every 3 hours. Visa-sponsorship flags + proven H-1B sponsor badges for international students.">
@@ -433,6 +433,15 @@ def generate(store_data: dict, stats: dict) -> None:
            --shadow:0 1px 2px #0006, 0 8px 24px -12px #000a;
            --shadow-lift:0 2px 4px #0007, 0 16px 32px -14px #000c;
            --ease:cubic-bezier(.2,.7,.3,1); }}
+  .workspace {{ padding:24px; margin-bottom:24px; background:linear-gradient(120deg,#142b40,#15201f); border:1px solid #315069; border-radius:18px; }}
+  .workspace h2 {{ margin-top:0; font-size:27px; }}
+  .quick {{ display:flex; flex-wrap:wrap; gap:10px; }}
+  .quick button {{ min-height:44px; }}
+  #freshstatus {{ padding:10px 14px; border-left:3px solid var(--star); background:#0003; }}
+  .filters {{ border:1px solid var(--line); border-radius:12px; padding:14px !important; }}
+  .filters select, .filters input, button {{ min-height:40px; }}
+  tbody tr:hover {{ background:#203047; }}
+  a:focus-visible, button:focus-visible {{ outline:3px solid var(--accent); outline-offset:3px; }}
   * {{ box-sizing:border-box; }}
   body {{ margin:0; background:var(--bg); color:var(--txt);
           font:15px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -695,10 +704,23 @@ def generate(store_data: dict, stats: dict) -> None:
   </header>
   <div class="hero">{_hero(stats, open_jobs, proven_roles)}</div>
 
+  <section class="workspace" aria-label="Job workspace">
+    <h2>Your next IT opportunity</h2>
+    <p>Find a role, check the employer requirements, and save your shortlist.</p>
+    <p class="muted">Fresh start: {escape(cfg.get('feed_start_date') or 'not set')} · Posted dates come from employers; undated roles use first discovery.</p>
+    <p id="freshstatus" role="status"></p>
+    <nav class="quick" aria-label="Quick job filters">
+      <button class="ghost" data-view="fresh">New this week</button>
+      <button class="ghost" data-view="local">Local opportunities</button>
+      <button class="ghost" data-view="intern">Internships</button>
+      <button class="ghost" data-view="all">All active jobs</button>
+    </nav>
+  </section>
   <h2 id="roles">Open roles <span class="muted">(<span id="count">{len(open_jobs)}</span>
     showing)</span></h2>
   <div class="filters" id="filters">
-    <input id="q" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
+    <input id="q" aria-label="Search jobs" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
+    <select id="sort" aria-label="Sort jobs"><option value="new">Newest first</option><option value="company">Company A–Z</option><option value="role">Role A–Z</option></select>
     <button id="viewsaved" class="ghost" type="button">Saved for later</button>
     <select id="cycle"><option value="">All cycles</option>{_options(cycles)}</select>
     <label class="chk" title="Show only the roles you've starred (stored in this browser)">
@@ -710,7 +732,7 @@ def generate(store_data: dict, stats: dict) -> None:
       <summary>More filters</summary>
       <div class="fbody">
         <select id="cat"><option value="">All categories</option>{_options(categories)}</select>
-        <select id="age">
+        <select id="age" aria-label="Posting age">
           <option value="">Posted anytime</option>
           <option value="1">Last 24 hours</option>
           <option value="2">Last 48 hours</option>
@@ -745,13 +767,13 @@ def generate(store_data: dict, stats: dict) -> None:
   <span class="tag tag-guess">not stated</span> = the posting names no cycle
   anywhere, so we don't guess one<span class="note-long">; a plain tag is the
   cycle the employer actually stated, in the title or the posting text</span>.</p>
-  <div class="tscroll">
+  <div class="tscroll" tabindex="0" aria-label="Job results, scroll horizontally for more details">
   <table><thead><tr><th class="c-save" title="Save"></th><th>Company</th><th>Role</th>
   <th>Cycle</th><th>Category</th>
   <th>Location</th><th>Salary</th><th>Posted</th><th></th></tr></thead>
   <tbody id="rows">{_rows(display_jobs)}</tbody></table>
   </div>
-  <p id="empty" class="muted empty" hidden>No roles match those filters.
+  <p id="empty" class="muted empty" hidden>No matching jobs yet. Try clearing filters; new postings will appear after a successful collection.
     <button class="ghost" type="button" id="reset2">Clear filters</button></p>
 
   <details id="savedpanel" class="savedpanel">
@@ -759,7 +781,7 @@ def generate(store_data: dict, stats: dict) -> None:
     <p class="muted">Your saved links stay here even after leaving the fresh feed. Check the employer page before applying.
     Saved in this browser only; Export saved gives you a CSV backup.</p>
     <p id="storagewarning" role="status" hidden>Browser storage is unavailable. Export your saved roles before closing this page.</p>
-    <div id="savedlist"></div>
+    <button id="clearsaved" class="ghost" type="button">Clear saved jobs</button><div id="savedlist"></div>
   </details>
 
   {_signup_section(cfg)}
@@ -904,7 +926,34 @@ def generate(store_data: dict, stats: dict) -> None:
     if (mode === 'restricted') return restricted;
     return true;
   }}
+  document.querySelectorAll('[data-view]').forEach(function(btn) {{
+    btn.addEventListener('click', function() {{
+      reset();
+      if (btn.dataset.view === 'fresh') age.value = '7';
+      if (btn.dataset.view === 'local') cycle.value = 'Orlando area';
+      if (btn.dataset.view === 'intern') program.value = 'Internship';
+      apply();
+    }});
+  }});
+  document.getElementById('clearsaved').addEventListener('click', function() {{
+    if (!savedCount() || !window.confirm('Clear all saved jobs in this browser?')) return;
+    saved = Object.create(null); persist(); paintAll(); apply();
+  }});
+  var sort = document.getElementById('sort');
+  sort.addEventListener('change', apply);
+  var lastFetch = new Date({json.dumps(stats.get('fetched_at') or stats.get('generated_at') or '')});
+  document.getElementById('freshstatus').textContent =
+    !Number.isFinite(lastFetch.getTime()) ? 'Collection time unavailable.' :
+    Date.now() - lastFetch.getTime() > 86400000 ?
+    'Collection is overdue. Last fetched ' + lastFetch.toLocaleString() + '. Results may be incomplete.' :
+    'Last collection: ' + lastFetch.toLocaleString() + '. Hourly checks are scheduled.';
   function apply() {{
+    rows.sort(function(a,b) {{
+      if (sort.value === 'company') return a.cells[1].textContent.localeCompare(b.cells[1].textContent);
+      if (sort.value === 'role') return a.cells[2].textContent.localeCompare(b.cells[2].textContent);
+      return (b.dataset.posted || '').localeCompare(a.dataset.posted || '');
+    }});
+    rows.forEach(function(tr) {{ document.getElementById('rows').appendChild(tr); }});
     var text = q.value.trim().toLowerCase(), cy = cycle.value, ca = cat.value,
         sp = spon.value, proven = h1b.checked, shown = 0,
         minPosted = age.value ? cutoffISO(parseInt(age.value, 10)) : '',
@@ -959,7 +1008,7 @@ def generate(store_data: dict, stats: dict) -> None:
     (fit.addEventListener ? fit.addEventListener('change', sync)
                           : fit.addListener(sync));
   }}
-  age.value = '7';
+  age.value = '';
   paintAll(); apply();
   // Radar search (separate list, separate box).
   var rq = document.getElementById('rq');

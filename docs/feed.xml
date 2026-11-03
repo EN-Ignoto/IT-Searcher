@@ -5,8 +5,24 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-02T16:42:52Z</updated>
+  <updated>2026-11-03T00:07:24Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:workday:baldwin:/job/Remote-US/Business-Systems-Administrator_JR110424</id>
+    <title>Baldwin Group: Business Systems Administrator (Insurance Systems)</title>
+    <link href="https://baldwin.wd1.myworkdayjobs.com/Baldwin/job/Remote-US/Business-Systems-Administrator_JR110424"/>
+    <updated>2026-11-03T00:07:24Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote US · SQL</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:cloudbreak:/job/Remote-Anywhere-in-US/ML-DevOps-Engineer-1_JR-0884</id>
+    <title>Equiti: ML/DevOps Engineer</title>
+    <link href="https://cloudbreak.wd12.myworkdayjobs.com/Equiti/job/Remote-Anywhere-in-US/ML-DevOps-Engineer-1_JR-0884"/>
+    <updated>2026-11-03T00:07:24Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · Remote Anywhere in US · Python, Bash, AWS, GCP, Azure</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:crowdstrike:/job/USA---Remote/Technical-Support_R30773</id>
     <title>Crowdstrike: Technical Support</title>
@@ -790,21 +806,5 @@
     <updated>2026-10-22T12:02:41Z</updated>
     <category term="Remote — Florida / US"/>
     <summary>Remote — Florida / US · IT Support / Ops · United States of America - Remote Based, United States · Vue · status: closed</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:ptc:/job/Remote-USA/Cloud-Service-Engineer_JR112727</id>
-    <title>PTC: Cloud Service Engineer 🇺🇸</title>
-    <link href="https://ptc.wd1.myworkdayjobs.com/ptc/job/Remote-USA/Cloud-Service-Engineer_JR112727"/>
-    <updated>2026-10-22T12:02:41Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Cloud Platform · Remote, USA · Java, AWS, Azure, Linux · sponsorship: citizens-only · status: closed · H-1B track record: ~80 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:republic:/job/Remote---USA/Field-IT-Engineer_R-185804-1</id>
-    <title>Republic Services: Field IT Engineer (Texas &amp; Louisiana)</title>
-    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Field-IT-Engineer_R-185804-1"/>
-    <updated>2026-10-22T12:02:41Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · IT Support / Ops · Remote - USA · status: closed · H-1B track record: ~19 approvals (FY2022–2023)</summary>
   </entry>
 </feed>

@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**2 open postings** · Data as of 2026-11-02T16:42:52Z
+**4 open postings** · Data as of 2026-11-03T00:07:24Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -24,10 +24,12 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 |---|---|---|---|---|---|---|
 | Crowdstrike ✓ 🆁 | Technical Support 🆕 | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
 
-### Stretch — remote  (1 roles)
+### Stretch — remote  (3 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| Baldwin Group 🆁 | Business Systems Administrator (Insurance Systems) 🆕 | Systems & Cloud Infra | Remote US | SQL | Nov 02, 2026 | [Apply](https://baldwin.wd1.myworkdayjobs.com/Baldwin/job/Remote-US/Business-Systems-Administrator_JR110424) |
+| Equiti 🆁 | ML/DevOps Engineer 🆕 | IT Support / Ops | Remote Anywhere in US | Python, Bash, AWS, GCP | Nov 02, 2026 | [Apply](https://cloudbreak.wd12.myworkdayjobs.com/Equiti/job/Remote-Anywhere-in-US/ML-DevOps-Engineer-1_JR-0884) |
 | Guidehouse ✓ 🆁 | Cyber Forensic Analyst Journeyman 🆕 | Security / IT | US - Remote (Any location) | No skills listed | Nov 02, 2026 | [Apply](https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309) |
 
 <a id="drop-radar"></a>

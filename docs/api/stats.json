@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-03T00:07:24Z",
- "fetched_at": "2026-11-03T00:07:24Z",
- "duration_seconds": 1982.3,
+ "generated_at": "2026-11-03T07:27:46Z",
+ "fetched_at": "2026-11-03T07:27:46Z",
+ "duration_seconds": 2129.5,
  "companies_total": 5090,
  "companies_by_source": {
   "greenhouse": 1127,
@@ -17,25 +17,24 @@
   "breezy": 16,
   "eightfold": 1
  },
- "quarantined": 357,
- "fetched_ok": 4709,
- "fetch_errors": 24,
+ "quarantined": 322,
+ "fetched_ok": 4726,
+ "fetch_errors": 42,
  "errors_by_source": {
-  "lever": 5,
-  "workday": 13,
-  "ashby": 5,
-  "rippling": 1
+  "workday": 4,
+  "greenhouse": 1,
+  "workable": 37
  },
- "fetch_success_rate": 0.995,
- "fetch_success_rate_registry": 0.925,
- "snapshots_complete": 3982,
- "snapshots_partial": 727,
+ "fetch_success_rate": 0.991,
+ "fetch_success_rate_registry": 0.928,
+ "snapshots_complete": 4006,
+ "snapshots_partial": 720,
  "partial_by_reason": {
-  "result-cap": 688,
-  "malformed-response": 37,
-  "pagination-stalled": 2
+  "result-cap": 698,
+  "malformed-response": 21,
+  "pagination-stalled": 1
  },
- "degraded_fetches": 39,
+ "degraded_fetches": 22,
  "roles_matched": 4,
  "dropped_no_year_in_title": 0,
  "dropped_no_year_undated": 0,
@@ -50,8 +49,8 @@
   "workday": 4
  },
  "roles_by_cycle": {
-  "Remote — Florida / US": 1,
-  "Stretch — remote": 3
+  "Stretch — remote": 3,
+  "Remote — Florida / US": 1
  },
  "roles_by_region": {
   "US": 4
@@ -60,10 +59,10 @@
   "unknown": 4
  },
  "posted_date_coverage": 1.0,
- "enriched_this_run": 3,
- "enrichment_detail_fetches": 3,
+ "enriched_this_run": 1,
+ "enrichment_detail_fetches": 1,
  "purged_this_run": 0,
- "new_this_run": 2,
+ "new_this_run": 0,
  "open_total": 4,
  "detection_latency": {
   "median_minutes": null,
@@ -76,5 +75,5 @@
   "median_days": 20,
   "sample_size": 107
  },
- "rendered_at": "2026-11-03T00:07:24Z"
+ "rendered_at": "2026-11-03T07:27:46Z"
 }

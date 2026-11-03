@@ -1,6 +1,12 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "oracle:edix.fa.us2.oraclecloud.com:8966",
+      "workday:centific:/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1"
+    ],
+    "telegram": [
+      "oracle:edix.fa.us2.oraclecloud.com:8966",
+      "workday:centific:/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1"
+    ]
   }
 }

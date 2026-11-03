@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**6 open postings** · Data as of 2026-11-03T15:48:19Z
+**8 open postings** · Data as of 2026-11-03T21:40:36Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -18,19 +18,21 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 
 ## 🖥️ IT Support, Networks & Infrastructure
 
-### Remote — Florida / US  (1 roles)
+### Remote — Florida / US  (2 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| Corsair 🆁 | Technical Support Specialist 🆕 | IT Support / Ops | Remote (US), United States | No skills listed | Nov 03, 2026 | [Apply](https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8966) |
 | Crowdstrike ✓ 🆁 | Technical Support 🆕 | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
 
-### Stretch — remote  (5 roles)
+### Stretch — remote  (6 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| Centific 🆁 | Data Center Project Coordinator 🆕 | Systems & Cloud Infra | Remote Work( USA) | LLMs | Nov 03, 2026 | [Apply](https://centific.wd1.myworkdayjobs.com/Centific_Global/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1) |
 | Republic Services ✓ 🆁 | Information Security Analyst 🆕 | Security / IT | USA - Remote | No skills listed | Nov 03, 2026 | [Apply](https://republic.wd5.myworkdayjobs.com/Republic/job/USA---Remote/Information-Security-Analyst_R-187780-1) |
 | Unisys ✓ 🆁 | Level 2 NOC Systems Administrator – Linux/Unix Focus 🆕 | Network / Telecom | USA Remote | Linux, Python, Bash | Nov 03, 2026 | [Apply](https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786) |
-| Baldwin Group 🆁 | Business Systems Administrator (Insurance Systems) 🆕 | Systems & Cloud Infra | Remote US | SQL | Nov 02, 2026 | [Apply](https://baldwin.wd1.myworkdayjobs.com/Baldwin/job/Remote-US/Business-Systems-Administrator_JR110424) |
+| Baldwin Group 🆁 | Business Systems Administrator ( EPIC AMS and Brokerage Builder)  - Insurance Systems) 🆕 | Systems & Cloud Infra | Remote US | SQL | Nov 02, 2026 | [Apply](https://baldwin.wd1.myworkdayjobs.com/Baldwin/job/Remote-US/Business-Systems-Administrator_JR110424) |
 | Equiti 🆁 | ML/DevOps Engineer 🆕 | IT Support / Ops | Remote Anywhere in US | Python, Bash, AWS, GCP | Nov 02, 2026 | [Apply](https://cloudbreak.wd12.myworkdayjobs.com/Equiti/job/Remote-Anywhere-in-US/ML-DevOps-Engineer-1_JR-0884) |
 | Guidehouse ✓ 🆁 | Cyber Forensic Analyst Journeyman 🆕 | Security / IT | US - Remote (Any location) | No skills listed | Nov 02, 2026 | [Apply](https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309) |
 

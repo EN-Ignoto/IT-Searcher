@@ -861,6 +861,18 @@
     }
    }
   },
+  "centific": {
+   "name": "Centific",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-11-03",
+     "role_ids": [
+      "workday:centific:/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1"
+     ],
+     "count": 1
+    }
+   }
+  },
   "cerebras": {
    "name": "Cerebras",
    "cycles": {
@@ -1030,6 +1042,18 @@
      "first_posted": "2026-08-18",
      "role_ids": [
       "workday:clr:/job/Oklahoma-City-OK/IT-Intern--Summer-2027-_R02593-1"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "corsair": {
+   "name": "Corsair",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-03",
+     "role_ids": [
+      "oracle:edix.fa.us2.oraclecloud.com:8966"
      ],
      "count": 1
     }
@@ -3507,5 +3531,5 @@
    }
   }
  },
- "updated_at": "2026-11-03T15:48:19Z"
+ "updated_at": "2026-11-03T21:40:36Z"
 }

@@ -5,8 +5,24 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-03T15:48:19Z</updated>
+  <updated>2026-11-03T21:40:36Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:oracle:edix.fa.us2.oraclecloud.com:8966</id>
+    <title>Corsair: Technical Support Specialist</title>
+    <link href="https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8966"/>
+    <updated>2026-11-03T21:40:36Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote (US), United States</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:centific:/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1</id>
+    <title>Centific: Data Center Project Coordinator</title>
+    <link href="https://centific.wd1.myworkdayjobs.com/Centific_Global/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1"/>
+    <updated>2026-11-03T21:40:36Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote Work( USA) · LLMs</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:republic:/job/USA---Remote/Information-Security-Analyst_R-187780-1</id>
     <title>Republic Services: Information Security Analyst</title>
@@ -25,7 +41,7 @@
   </entry>
   <entry>
     <id>urn:intern-engine:workday:baldwin:/job/Remote-US/Business-Systems-Administrator_JR110424</id>
-    <title>Baldwin Group: Business Systems Administrator (Insurance Systems)</title>
+    <title>Baldwin Group: Business Systems Administrator ( EPIC AMS and Brokerage Builder)  - Insurance Systems)</title>
     <link href="https://baldwin.wd1.myworkdayjobs.com/Baldwin/job/Remote-US/Business-Systems-Administrator_JR110424"/>
     <updated>2026-11-03T00:07:24Z</updated>
     <category term="Stretch — remote"/>
@@ -790,21 +806,5 @@
     <updated>2026-10-22T12:02:41Z</updated>
     <category term="Stretch — remote"/>
     <summary>Stretch — remote · Security / IT · 6314 Remote/Teleworker US · Python, SQL, AWS, Azure, Linux · sponsorship: citizens-only · status: closed · H-1B track record: ~79 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/IT-Desktop-Engineering-Intern_R-00194524</id>
-    <title>Leidos: IT Desktop Engineering Intern 🇺🇸</title>
-    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/IT-Desktop-Engineering-Intern_R-00194524"/>
-    <updated>2026-11-02T05:26:34Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · 6314 Remote/Teleworker US · sponsorship: citizens-only · status: closed · H-1B track record: ~79 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057</id>
-    <title>Leidos: Network Site Design Intern 🇺🇸</title>
-    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057"/>
-    <updated>2026-11-02T05:44:00Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · Network / Telecom · 6314 Remote/Teleworker US · sponsorship: citizens-only · status: closed · H-1B track record: ~79 approvals (FY2022–2023)</summary>
   </entry>
 </feed>

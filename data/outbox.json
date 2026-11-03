@@ -1,12 +1,6 @@
 {
   "pending": {
-    "discord": [
-      "workday:baldwin:/job/Remote-US/Business-Systems-Administrator_JR110424",
-      "workday:cloudbreak:/job/Remote-Anywhere-in-US/ML-DevOps-Engineer-1_JR-0884"
-    ],
-    "telegram": [
-      "workday:baldwin:/job/Remote-US/Business-Systems-Administrator_JR110424",
-      "workday:cloudbreak:/job/Remote-Anywhere-in-US/ML-DevOps-Engineer-1_JR-0884"
-    ]
+    "discord": [],
+    "telegram": []
   }
 }

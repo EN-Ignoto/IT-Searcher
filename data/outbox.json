@@ -1,6 +1,12 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "workday:republic:/job/USA---Remote/Information-Security-Analyst_R-187780-1",
+      "workday:unisys:/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786"
+    ],
+    "telegram": [
+      "workday:republic:/job/USA---Remote/Information-Security-Analyst_R-187780-1",
+      "workday:unisys:/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786"
+    ]
   }
 }

@@ -1,0 +1,517 @@
+name: Restore entry-level IT search
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: intern-engine-writer
+  cancel-in-progress: false
+jobs:
+  repair:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: main
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.11'
+      - name: Apply reviewed entry-level filtering fix
+        run: |
+          git apply <<'ENTRY_SEARCH_PATCH'
+          diff --git a/data/config.json b/data/config.json
+          index a3bd2648..b62dbcbb 100644
+          --- a/data/config.json
+          +++ b/data/config.json
+          @@ -1,9 +1,7 @@
+           {
+             "cycles": [
+               "Orlando area",
+          -    "Remote — Florida / US",
+          -    "Stretch — Orlando area",
+          -    "Stretch — remote"
+          +    "Remote \u2014 Florida / US"
+             ],
+             "regions": [
+               "US"
+          @@ -15,15 +13,12 @@
+             "include_international": false,
+             "section_limits": {
+               "Orlando area": 200,
+          -    "Remote — Florida / US": 200,
+          -    "Stretch — Orlando area": 200,
+          -    "Stretch — remote": 200
+          +    "Remote \u2014 Florida / US": 200
+             },
+             "supabase_url": "",
+             "supabase_publishable_key": "",
+             "infer_undated": true,
+             "infer_max_age_days": 120,
+             "opportunity_scope": "it",
+          -  "default_cycle": "Orlando area",
+          -  "feed_start_date": "2026-11-02"
+          +  "default_cycle": "Orlando area"
+           }
+          diff --git a/run.py b/run.py
+          index e81f8e8c..b4aba26d 100644
+          --- a/run.py
+          +++ b/run.py
+          @@ -114,7 +114,7 @@ def cmd_update() -> None:
+               # otherwise a run the gate would reject could still reach the mirror.
+               # Queue, don't send: these roles aren't published until the workflow's
+               # commit lands, and an alert for an unpublished role is a broken promise.
+          -    pending = outbox.queue(new_ids)
+          +    pending = [] if pipeline.config.load_config().get("opportunity_scope") == "it" else outbox.queue(new_ids)
+               print("Update complete:")
+               for k, v in stats.items():
+                   print(f"  {k:<24} {v}")
+          diff --git a/src/intern_engine/dashboard.py b/src/intern_engine/dashboard.py
+          index 81b21691..89eab53b 100644
+          --- a/src/intern_engine/dashboard.py
+          +++ b/src/intern_engine/dashboard.py
+          @@ -694,7 +694,7 @@ def generate(store_data: dict, stats: dict) -> None:
+             <header class="top">
+               <h1>{"Orlando-area" if cfg.get("opportunity_scope") == "it" else escape(region)} IT jobs & internships</h1>
+               <p class="sub">Refresh scheduled hourly. The fresh feed keeps postings for {config.max_age_days(cfg)} days; undated roles expire {config.max_age_days(cfg)} days after first discovery. Start with Last 24 hours or Last 48 hours to apply early.</p>
+          -    <p class="sub">Local opportunities first; remote and stretch roles have separate section filters. Confirm experience, schedule, and remote-state eligibility with the employer.</p>
+          +    <p class="sub">Entry-level IT jobs and paid internships only. Experienced, unverified, and unpaid roles are excluded. Confirm schedule and remote-state eligibility with the employer.</p>
+               <p class="sub">Read straight from {stats.get('companies_total', 0):,} employer
+               job boards. Data as of {escape(updated)}.</p>
+               <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
+          @@ -784,15 +784,17 @@ def generate(store_data: dict, stats: dict) -> None:
+               <button id="clearsaved" class="ghost" type="button">Clear saved jobs</button><div id="savedlist"></div>
+             </details>
+           
+          -  {_signup_section(cfg)}
+          -  {_radar_section(store_data, cfg, data_as_of_dt)}
+          +  {_signup_section(cfg) if cfg.get("opportunity_scope") != "it" else ""}
+          +  {_radar_section(store_data, cfg, data_as_of_dt) if cfg.get("opportunity_scope") != "it" else ""}
+           
+          +  <section{' hidden' if cfg.get("opportunity_scope") == "it" else ''}>
+             <h2>Internships posted per week</h2>
+             <p class="muted" style="margin:0 0 8px">Real published dates across every role the
+             engine has tracked — watch this spike when {escape(config.cycles(cfg)[0])}
+             recruiting opens up.</p>
+             {trends.svg_bar_chart(trends.weekly_postings(store_data, now=data_as_of_dt))}
+           
+          +  </section>
+             {_engine_panel(stats, by_category, _history_points())}
+           
+             <footer>Generated by the engine on each run across
+          @@ -1044,7 +1046,7 @@ def generate(store_data: dict, stats: dict) -> None:
+                   old_hero = _hero(stats, open_jobs, proven_roles)
+                   new_hero = old_hero.replace(f'<div class="hnum">{len(open_jobs)}</div><div class="hlbl">with a stated cycle</div>',
+                                              f'<div class="hnum">{local_count}</div><div class="hlbl">Orlando area</div>')
+          -        new_hero = new_hero.replace("the employer named it, we didn't guess", "nearby cities, including local stretch roles")
+          +        new_hero = new_hero.replace("the employer named it, we didn't guess", "nearby cities; entry-level IT only")
+                   html_doc = html_doc.replace(old_hero, new_hero)
+                   html_doc = html_doc.replace("All cycles", "All sections").replace("<th>Cycle</th>", "<th>Section</th>")
+                   html_doc = html_doc.replace("Internships &amp; co-ops", "All opportunity types")
+          diff --git a/src/intern_engine/enrich.py b/src/intern_engine/enrich.py
+          index aec79803..7439872f 100644
+          --- a/src/intern_engine/enrich.py
+          +++ b/src/intern_engine/enrich.py
+          @@ -13,7 +13,7 @@ from __future__ import annotations
+           import asyncio
+           import re
+           
+          -from . import filters, skills, sponsorship
+          +from . import filters, filters_it, skills, sponsorship
+           from .models import Job
+           from .net import Net
+           
+          @@ -131,6 +131,10 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
+                   nonlocal fetched
+                   prior = existing.get(job.id) or {}
+                   has_inline_evidence = job.description is not None
+          +        fit_current = prior.get("entry_fit_version") == filters_it.FIT_VERSION
+          +        if fit_current:
+          +            job.entry_fit = prior.get("entry_fit")
+          +            job.entry_fit_version = filters_it.FIT_VERSION
+                   # A verdict is settled only while the classifier that produced it is
+                   # still current. Records stamped with an older classifier_v (or none)
+                   # are re-read once, so rule improvements reach the WHOLE live list
+          @@ -139,7 +143,7 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
+                   settled = current and bool(
+                       prior.get("enriched_at") or prior.get("sponsorship", "unknown") != "unknown"
+                   )
+          -        if settled and prior.get("skills") is not None and not has_inline_evidence:
+          +        if settled and fit_current and prior.get("skills") is not None and not has_inline_evidence:
+                       job.sponsorship = prior.get("sponsorship", "unknown")
+                       return None  # already settled on an earlier run
+                   # (settled but skills missing = record predates skill tags; re-fetch once)
+          @@ -171,6 +175,8 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
+                   # A description carried by the current list payload, or fetched now to
+                   # backfill old metadata, is fresher evidence than a stored verdict. The
+                   # old short-circuit froze changed Lever/Ashby-style postings forever.
+          +        job.entry_fit = filters_it.assess_fit(job.title, text)
+          +        job.entry_fit_version = filters_it.FIT_VERSION
+                   job.sponsorship = sponsorship.classify(text)
+                   job.skills = skills.extract(text, job.title)
+                   if not job.salary:
+          diff --git a/src/intern_engine/filters_it.py b/src/intern_engine/filters_it.py
+          index 66be8220..4a2b11f0 100644
+          --- a/src/intern_engine/filters_it.py
+          +++ b/src/intern_engine/filters_it.py
+          @@ -1,18 +1,18 @@
+          -"""Orlando-first IT opportunities; title signals indicate fit, not eligibility."""
+          +"""Orlando-first entry-level IT opportunities and internships."""
+           from __future__ import annotations
+           
+           import re
+           
+           from . import filters_secnet as legacy
+           
+          -BUCKETS = ["Orlando area", "Remote — Florida / US", "Stretch — Orlando area", "Stretch — remote"]
+          +BUCKETS = ["Orlando area", "Remote — Florida / US"]
+           ENTRY_LEVEL = BUCKETS[0]
+           INTERNSHIPS = BUCKETS[0]
+          -SENIOR = re.compile(r"\b(senior|sr\.?|staff|principal|lead|manager|director|head|vp|vice president|architect|iii|iv|[4-9])\b", re.I)
+          +SENIOR = re.compile(r"\b(senior|sr\.?|staff|principal|lead|manager|director|head|vp|vice president|architect|intermediate|mid[ -]level|journeyman|expert|sme|ii|iii|iv|[2-9]|tier[ -]?[2-9]|level[ -]?[2-9])\b", re.I)
+           ENTRY = re.compile(r"\b(entry[ -]level|junior|jr|associate|trainee|graduate|new grad|early career|(?:administrator|engineer|technician|analyst) (?:i|1)|level[ -]?(?:1|i)|tier[ -]?(?:1|i))\b", re.I)
+           SUPPORT = re.compile(r"\b(help[ -]?desk|service desk|desktop support|it support|computer technician|pc technician|it technician|it specialist|technical support|end[ -]user|field support|support technician|support specialist)\b", re.I)
+           IT = re.compile(r"\b(information technology|it|help[ -]?desk|service desk|desktop|sysadmin|systems? administrat\w*|network|networking|noc|data cent(?:er|re)|cloud|infrastructure|linux|windows|technical support|computer technician|pc technician|end[ -]user|devops|site reliability|cyber\w*|infosec|soc analyst|information security)\b", re.I)
+          -EXCLUDE = re.compile(r"\b(sales|marketing|recruit\w*|mechanical|aerospace|electrical|embedded|firmware|software|civil|manufacturing|landscape|construction|financial|data scien\w*|data engineer|machine learning|provider network|social network|security guard|physical security|loss prevention)\b", re.I)
+          +EXCLUDE = re.compile(r"\b(sales|marketing|recruit\w*|mechanical|aerospace|electrical|embedded|firmware|software|civil|manufacturing|landscape|construction|financial|data scien\w*|data engineer|machine learning|provider network|social network|security guard|physical security|loss prevention|hvac|commissioning|facilities|electrician|plumbing|phlebotomist|product owner|project coordinator)\b", re.I)
+           CITIES = re.compile(r"\b(orlando|winter park|winter garden|lake mary|sanford|kissimmee|altamonte springs|maitland|apopka|oviedo|longwood|casselberry|lake buena vista|celebration|ocoee|windermere|winter springs|sanford|st[.]? cloud|clermont|tavares|mount dora)\b", re.I)
+           FL = re.compile(r"\b(fl|florida)\b", re.I)
+           OTHER_STATE = re.compile(r",\s*(?:AL|AK|AZ|AR|CA|CO|CT|DE|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY)\b")
+          @@ -35,8 +35,40 @@ def is_internship(title: str) -> bool:
+           
+           
+           def is_opportunity(title: str) -> bool:
+          -    # Unmarked IT/network/system roles remain discoverable as stretches.
+          -    return is_relevant(title) and not bool(SENIOR.search(title))
+          +    # Generic engineer/admin/analyst titles are not evidence of entry-level fit.
+          +    return bool(is_relevant(title) and not SENIOR.search(title)
+          +                and (is_internship(title) or ENTRY.search(title)
+          +                     or SUPPORT.search(title)
+          +                     or re.search(r"\b(?:data cent(?:er|re)|network|noc) technician\b", title, re.I)))
+          +
+          +
+          +FIT_VERSION = 1
+          +_EXPERIENCE = re.compile(
+          +    r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)"
+          +    r"\s*(?:\+|(?:-|–|to)\s*\d{1,2})?\s*years?"
+          +    r"(?:['’]s?)?\s+(?:of\s+)?(?:[\w/-]+\s+){0,6}experience\b", re.I)
+          +_WORD_NUMBERS = dict(zip('one two three four five six seven eight nine ten'.split(), range(1, 11), strict=True))
+          +
+          +
+          +def assess_fit(title: str, description: str | None) -> str:
+          +    """Require positive junior evidence; block experienced and unpaid postings.
+          +
+          +    Unknown descriptions remain unverified, rather than silently claiming fit.
+          +    Three or more years excludes the role, including ambiguous preferred text:
+          +    this feed deliberately favors precision for a first IT job.
+          +    """
+          +    from .sponsorship import strip_html
+          +    if not is_opportunity(title):
+          +        return "rejected"
+          +    text = strip_html(description or "")
+          +    if re.search(r"\b(?:unpaid|volunteer|without compensation)\b", title + " " + text, re.I):
+          +        return "rejected"
+          +    for match in _EXPERIENCE.finditer(text):
+          +        value = match.group(1).lower()
+          +        years = int(value) if value.isdigit() else _WORD_NUMBERS[value]
+          +        if years >= 3:
+          +            return "rejected"
+          +    return "eligible" if text.strip() else "unverified"
+           
+           
+           def location_group(location: str, title: str = "") -> str | None:
+          @@ -58,10 +90,8 @@ def is_stretch(title: str) -> bool:
+           
+           def bucket(title: str, location: str) -> str | None:
+               group = location_group(location, title)
+          -    if not group:
+          +    if not group or not is_opportunity(title):
+                   return None
+          -    if is_stretch(title):
+          -        return BUCKETS[2] if group == "local" else BUCKETS[3]
+               return BUCKETS[0] if group == "local" else BUCKETS[1]
+           
+           
+          diff --git a/src/intern_engine/models.py b/src/intern_engine/models.py
+          index 06e06671..b75cab00 100644
+          --- a/src/intern_engine/models.py
+          +++ b/src/intern_engine/models.py
+          @@ -125,6 +125,8 @@ class Job:
+               # requisition.  Keeping them prevents a board-alias change from looking
+               # like a brand-new role (and therefore sending a duplicate alert).
+               aliases: list[str] | None = None
+          +    entry_fit: str | None = None
+          +    entry_fit_version: int | None = None
+           
+           
+           @dataclass
+          diff --git a/src/intern_engine/pipeline.py b/src/intern_engine/pipeline.py
+          index e48beb5a..6697b131 100644
+          --- a/src/intern_engine/pipeline.py
+          +++ b/src/intern_engine/pipeline.py
+          @@ -719,7 +719,10 @@ def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None
+                       record.get("season_inferred") and posted and posted.date() < infer_cutoff
+                   )
+                   rejected = (
+          -            (bool(title) and not (filters_it.is_opportunity(title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(title)))
+          +            (cfg.get("opportunity_scope") == "it" and (
+          +                record.get("entry_fit") != "eligible"
+          +                or record.get("entry_fit_version") != filters_it.FIT_VERSION))
+          +            or (bool(title) and not (filters_it.is_opportunity(title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(title)))
+                       or (bool(title) and tech_only and not (filters_it.is_relevant(title) if cfg.get("opportunity_scope") == "it" else filters_secnet.is_relevant(title)))
+                       or (
+                           has_cycle_evidence
+          @@ -791,6 +794,12 @@ def run_update() -> tuple[dict, dict, list[str]]:
+                   offcycle = offcycle_sticky
+                   still = []
+                   for job in kept:
+          +            if cfg.get("opportunity_scope") == "it" and job.entry_fit != "eligible":
+          +                record = existing.get(job.id)
+          +                if record:
+          +                    record.update(is_open=False, closed_at=ts, closed_reason="out-of-scope",
+          +                                  entry_fit=job.entry_fit, entry_fit_version=job.entry_fit_version)
+          +                continue
+                       if cfg.get("opportunity_scope") == "it" and freshness.expired(
+                           job.posted_at, (existing.get(job.id) or {}).get("first_seen_at"),
+                           config.max_age_days(cfg)
+          diff --git a/src/intern_engine/publish.py b/src/intern_engine/publish.py
+          index 166ff672..35acf62d 100644
+          --- a/src/intern_engine/publish.py
+          +++ b/src/intern_engine/publish.py
+          @@ -94,7 +94,9 @@ def write_feed(store_data: dict, data_as_of: str | None = None) -> int:
+               entries = []
+               for record in store_data.values():
+                   if config.load_config().get("opportunity_scope") == "it" and (
+          -            not filters_it.is_opportunity(record.get("title") or "")
+          +            record.get("entry_fit") != "eligible"
+          +            or record.get("entry_fit_version") != filters_it.FIT_VERSION
+          +            or not filters_it.is_opportunity(record.get("title") or "")
+                       or not filters_it.bucket(record.get("title") or "", record.get("location") or "")
+                   ):
+                       continue
+          diff --git a/src/intern_engine/readme.py b/src/intern_engine/readme.py
+          index 45e8abc1..acf9f61a 100644
+          --- a/src/intern_engine/readme.py
+          +++ b/src/intern_engine/readme.py
+          @@ -265,9 +265,9 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
+                       "Nearby-city coverage includes Orlando, Lake Mary, Sanford, Winter Park, Kissimmee, "
+                       "and surrounding communities. This is city matching, not a measured driving radius.", "",
+                       "Remote postings need US or Florida location evidence. Confirm state eligibility on the employer page.", "",
+          -            "**Stretch** means the title lacks a clear junior, internship, or routine support signal. "
+          -            "Experience requirements and schedule must be checked in the posting; this is a broad discovery list, "
+          -            "not a guarantee of eligibility. Senior and management titles are excluded.", "",
+          +            "Entry-level IT jobs and paid internships only. Generic engineering roles, senior titles, "
+          +            "postings asking for 3+ years of experience, unpaid roles, and roles without readable "
+          +            "requirements are excluded. Applications are manual on the employer website.", "",
+                   ]
+               count_phrase = f"{total_open} open roles"
+               if shown is not None and shown != total_open:
+          diff --git a/src/intern_engine/store.py b/src/intern_engine/store.py
+          index 31e6b5b7..79f076ca 100644
+          --- a/src/intern_engine/store.py
+          +++ b/src/intern_engine/store.py
+          @@ -142,7 +142,7 @@ def save(path: str, data: dict) -> None:
+           _REFRESH_FIELDS = (
+               "title", "location", "url",
+               "season", "season_inferred", "seasons", "category", "company", "source",
+          -    "company_slug",
+          +    "company_slug", "entry_fit", "entry_fit_version",
+           )
+           
+           
+          diff --git a/tests/test_enrich.py b/tests/test_enrich.py
+          index f4855b70..952dcefb 100644
+          --- a/tests/test_enrich.py
+          +++ b/tests/test_enrich.py
+          @@ -44,7 +44,7 @@ class TestEnrich:
+                   job = _job(jid="greenhouse:acme:9", source="greenhouse")
+                   existing = {"greenhouse:acme:9": {
+                       "sponsorship": "citizens-only", "enriched_at": "x", "skills": ["Python"],
+          -            "classifier_v": sponsorship.VERSION,
+          +            "classifier_v": sponsorship.VERSION, "entry_fit": "eligible", "entry_fit_version": 1,
+                   }}
+                   enriched, fetched = _run(enrich.enrich_jobs([job], existing, net))
+                   assert job.sponsorship == "citizens-only"
+          diff --git a/tests/test_filters_it.py b/tests/test_filters_it.py
+          index 74ab317d..3f5e8b83 100644
+          --- a/tests/test_filters_it.py
+          +++ b/tests/test_filters_it.py
+          @@ -35,9 +35,9 @@ def test_location_scope(location, expected):
+               assert filters_it.location_group(location) == expected
+           
+           
+          -def test_broad_network_role_is_labeled_stretch():
+          -    assert filters_it.is_opportunity("Network Engineer")
+          -    assert filters_it.bucket("Network Engineer", "Orlando, FL") == "Stretch — Orlando area"
+          +def test_broad_network_role_is_excluded():
+          +    assert not filters_it.is_opportunity("Network Engineer")
+          +    assert filters_it.bucket("Network Engineer", "Orlando, FL") is None
+               assert filters_it.bucket("Help Desk Technician", "Orlando, FL") == "Orlando area"
+           
+           
+          @@ -54,14 +54,14 @@ def test_pipeline_accepts_regular_local_job_without_internship_cycle():
+                           location, f"https://example.com/{i}")
+                       for i, (title, location) in enumerate([
+                           ("Help Desk Technician", "Orlando, FL"),
+          -                ("Network Engineer", "Lake Mary, FL"),
+          +                ("Junior Network Engineer", "Lake Mary, FL"),
+                           ("IT Intern Summer 2027", "Remote - United States"),
+                           ("IT Technician", "Seattle, WA"),
+                           ("Senior IT Support Specialist", "Orlando, FL"),
+                       ])]
+               kept, *_ = pipeline._keep_matching([(company, Fetch(jobs), None)], cfg, {})
+               assert [j.title for j in kept] == [j.title for j in jobs[:3]]
+          -    assert [j.season for j in kept] == [filters_it.BUCKETS[i] for i in (0, 2, 1)]
+          +    assert [j.season for j in kept] == [filters_it.BUCKETS[i] for i in (0, 0, 1)]
+           
+           
+           def test_scope_migrates_local_record_and_closes_nonlocal_record():
+          @@ -72,9 +72,68 @@ def test_scope_migrates_local_record_and_closes_nonlocal_record():
+                   "default_cycle": filters_it.BUCKETS[0],
+               })
+               records = {loc: {"title": "IT Intern Summer 2027", "location": loc,
+          -                     "company": "Acme", "is_open": True, "season": "Summer 2027"}
+          +                     "company": "Acme", "is_open": True, "season": "Summer 2027",
+          +                     "entry_fit": "eligible", "entry_fit_version": filters_it.FIT_VERSION}
+                          for loc in ("Orlando, FL", "Seattle, WA")}
+               pipeline._close_out_of_scope(records, cfg)
+               assert records["Orlando, FL"]["is_open"]
+               assert records["Orlando, FL"]["season"] == filters_it.BUCKETS[0]
+               assert not records["Seattle, WA"]["is_open"]
+          +
+          +
+          +@pytest.mark.parametrize('title', [
+          +    'Level 2 NOC Systems Administrator', 'Technical Support Engineer II',
+          +    'Intermediate Technical Support Analyst', 'Cyber Forensic Analyst Journeyman',
+          +    'Cloud - Bare Metal Infrastructure Engineer',
+          +    'Field Service Technician HVAC - Data Center',
+          +    'Network & Wireless Infrastructure Engineer', 'Senior IT Intern',
+          +])
+          +def test_actual_bad_feed_titles_are_rejected(title):
+          +    assert not filters_it.is_opportunity(title)
+          +
+          +
+          +@pytest.mark.parametrize('text,expected', [
+          +    ('No experience required. Paid internship.', 'eligible'),
+          +    ('Qualifications: 0–2 years of IT support experience.', 'eligible'),
+          +    ('Minimum three years of technical support experience.', 'rejected'),
+          +    ('Requires 5+ years of experience with Linux.', 'rejected'),
+          +    ('<p>3–5 years of related experience</p>', 'rejected'),
+          +    ('This is an unpaid internship.', 'rejected'),
+          +    ('Volunteer IT support opportunity', 'rejected'),
+          +    (None, 'unverified'), ('', 'unverified'),
+          +])
+          +def test_requirements_override_junior_title(text, expected):
+          +    assert filters_it.assess_fit('IT Support Intern', text) == expected
+          +
+          +
+          +def test_old_unverified_and_rejected_records_cannot_survive_render():
+          +    from intern_engine import config, pipeline
+          +    cfg = config.validate_config({
+          +        'opportunity_scope': 'it', 'cycles': filters_it.BUCKETS,
+          +        'default_cycle': filters_it.BUCKETS[0], 'max_age_days': 0,
+          +    })
+          +    records = {verdict: dict(title='Help Desk Technician', company='Acme',
+          +                            location='Orlando, FL', is_open=True,
+          +                            season=filters_it.BUCKETS[0], entry_fit=verdict,
+          +                            entry_fit_version=filters_it.FIT_VERSION)
+          +               for verdict in ('eligible', 'rejected', None)}
+          +    pipeline._close_out_of_scope(records, cfg)
+          +    assert records['eligible']['is_open']
+          +    assert not records['rejected']['is_open']
+          +    assert not records[None]['is_open']
+          +
+          +
+          +def test_old_sponsorship_cache_must_not_skip_entry_requirements():
+          +    import asyncio
+          +
+          +    from intern_engine import enrich, sponsorship
+          +    from intern_engine.models import Job
+          +    job = Job('greenhouse:acme:9', 'greenhouse', 'Acme', 'acme',
+          +              'Help Desk Technician', 'Orlando, FL', 'https://example.com/9')
+          +    existing = {job.id: dict(sponsorship='unknown', enriched_at='old', skills=[],
+          +                            classifier_v=sponsorship.VERSION)}
+          +    class Net:
+          +        async def get_json(self, url):
+          +            return {'content': '<p>Requires 5 years of IT experience.</p>'}
+          +    asyncio.run(enrich.enrich_jobs([job], existing, Net()))
+          +    assert job.entry_fit == 'rejected'
+          diff --git a/tests/test_freshness.py b/tests/test_freshness.py
+          index f59fa47c..804372d0 100644
+          --- a/tests/test_freshness.py
+          +++ b/tests/test_freshness.py
+          @@ -37,7 +37,8 @@ def test_old_internships_and_undated_discoveries_leave_active_feed():
+               }
+               for row in records.values():
+                   row.update(company='Acme', location='Orlando, FL', is_open=True,
+          -                   season=filters_it.BUCKETS[0])
+          +                   season=filters_it.BUCKETS[0], entry_fit="eligible",
+          +                   entry_fit_version=filters_it.FIT_VERSION)
+               pipeline._close_out_of_scope(records, cfg)
+               assert not records['intern']['is_open']
+               assert not records['undated']['is_open']
+          diff --git a/tools/verify_accuracy.py b/tools/verify_accuracy.py
+          index 9fdae36a..faa6063e 100644
+          --- a/tools/verify_accuracy.py
+          +++ b/tools/verify_accuracy.py
+          @@ -147,6 +147,11 @@ def main() -> None:
+                       flag(r, "not-a-tech-title")
+                   if cfg.get("opportunity_scope") == "it" and season != filters_it.bucket(title, r.get("location") or ""):
+                       flag(r, "wrong-local-or-remote-section")
+          +        if cfg.get("opportunity_scope") == "it" and (
+          +            r.get("entry_fit") != "eligible"
+          +            or r.get("entry_fit_version") != filters_it.FIT_VERSION
+          +        ):
+          +            flag(r, "entry-fit-unverified")
+                   posted = (r.get("posted_at") or "")[:10]
+                   # Age only disqualifies a role whose cycle we INFERRED, where recency
+                   # was the evidence. When the employer stated the cycle, an old posting
+          ENTRY_SEARCH_PATCH
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Verify the repaired engine
+        run: |
+          python -m pytest -q
+          ruff check src tests tools run.py
+          node --test tests/test_saved_roles.cjs
+      - name: Refresh local employers and known entry-level sources
+        env:
+          WORKDAY_PROXY: ${{ secrets.WORKDAY_PROXY }}
+        run: |
+          python - <<'PYTHON'
+          import sys
+          sys.path.insert(0, 'src')
+          import run
+          from intern_engine import pipeline, registry, store, paths, filters_it
+          # First refresh is focused for quick verification. The hourly update
+          # continues scanning the complete unchanged employer registry.
+          companies = registry.load()
+          records = store.load(paths.JOBS_PATH)
+          keys = {(r['source'], r['company_slug']) for r in records.values()
+                  if filters_it.is_opportunity(r['title'])
+                  and filters_it.location_group(r['location'], r['title'])}
+          nearby = {'University of Central Florida', 'The Walt Disney Company',
+                    'NBCUniversal', 'Leidos', 'Marriott Vacations Worldwide',
+                    'Hilton Worldwide'}
+          focused = [c for c in companies
+                     if (c['ats'], c['slug']) in keys or c['name'] in nearby]
+          assert focused, 'No source boards selected'
+          print(f'Focused live check: {len(focused)} employer boards', flush=True)
+          pipeline._load_companies = lambda: focused
+          run.cmd_update()
+          PYTHON
+      - name: Verify published artifacts
+        run: python tools/verify_accuracy.py
+      - name: Save repaired search and results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add run.py src tests tools data/config.json README.md data docs
+          git commit -m 'Fix entry-level IT search, verify requirements, and refresh relevant employers'
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            if [ "$(git rev-parse origin/main)" = "$(git rev-parse HEAD)" ]; then exit 0; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
+            sleep $((attempt * 5))
+          done

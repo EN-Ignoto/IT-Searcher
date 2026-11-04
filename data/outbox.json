@@ -1,6 +1,14 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "workable:christie-lites-3:26D143E2E2",
+      "ashby:render:a22230e6-803d-4e2e-82f8-ff5f500cdc3d",
+      "workday:munters:/job/Remote---Florida/Field-Service-Technician-HVAC---Data-Center_R13936"
+    ],
+    "telegram": [
+      "workable:christie-lites-3:26D143E2E2",
+      "ashby:render:a22230e6-803d-4e2e-82f8-ff5f500cdc3d",
+      "workday:munters:/job/Remote---Florida/Field-Service-Technician-HVAC---Data-Center_R13936"
+    ]
   }
 }

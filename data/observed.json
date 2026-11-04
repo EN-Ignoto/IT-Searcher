@@ -909,6 +909,18 @@
     }
    }
   },
+  "christie": {
+   "name": "Christie",
+   "cycles": {
+    "Stretch — Orlando area": {
+     "first_posted": "2026-11-03",
+     "role_ids": [
+      "workable:christie-lites-3:26D143E2E2"
+     ],
+     "count": 1
+    }
+   }
+  },
   "ciena": {
    "name": "Ciena",
    "cycles": {
@@ -2235,6 +2247,18 @@
     }
    }
   },
+  "munters": {
+   "name": "Munters",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-11-03",
+     "role_ids": [
+      "workday:munters:/job/Remote---Florida/Field-Service-Technician-HVAC---Data-Center_R13936"
+     ],
+     "count": 1
+    }
+   }
+  },
   "muon space": {
    "name": "Muon Space",
    "cycles": {
@@ -2579,6 +2603,18 @@
       "ashby:ramp:6a3f42e6-00d6-4e9d-9caa-9663ffac6d53"
      ],
      "count": 2
+    }
+   }
+  },
+  "render": {
+   "name": "Render",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-11-04",
+     "role_ids": [
+      "ashby:render:a22230e6-803d-4e2e-82f8-ff5f500cdc3d"
+     ],
+     "count": 1
     }
    }
   },
@@ -3531,5 +3567,5 @@
    }
   }
  },
- "updated_at": "2026-11-03T21:40:36Z"
+ "updated_at": "2026-11-04T02:06:01Z"
 }

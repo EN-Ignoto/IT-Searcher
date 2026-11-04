@@ -5,8 +5,32 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-03T21:40:36Z</updated>
+  <updated>2026-11-04T02:06:01Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:workable:christie-lites-3:26D143E2E2</id>
+    <title>Christie: Network &amp; Wireless Infrastructure Engineer</title>
+    <link href="https://apply.workable.com/christie-lites-3/j/26D143E2E2/"/>
+    <updated>2026-11-04T02:06:01Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Network / Telecom · Orlando, Florida, United States</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:render:a22230e6-803d-4e2e-82f8-ff5f500cdc3d</id>
+    <title>Render: Cloud - Bare Metal Infrastructure Engineer</title>
+    <link href="https://jobs.ashbyhq.com/render/a22230e6-803d-4e2e-82f8-ff5f500cdc3d"/>
+    <updated>2026-11-04T02:06:01Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Cloud Platform · Remote: United States · $230K – $290K • Offers Equity · Python, LLMs, Kubernetes, Linux</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:munters:/job/Remote---Florida/Field-Service-Technician-HVAC---Data-Center_R13936</id>
+    <title>Munters: Field Service Technician HVAC - Data Center</title>
+    <link href="https://munters.wd3.myworkdayjobs.com/external_careers/job/Remote---Florida/Field-Service-Technician-HVAC---Data-Center_R13936"/>
+    <updated>2026-11-04T02:06:01Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - Florida · $30–$50/hr</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:oracle:edix.fa.us2.oraclecloud.com:8966</id>
     <title>Corsair: Technical Support Specialist</title>
@@ -782,29 +806,5 @@
     <updated>2026-11-02T05:26:34Z</updated>
     <category term="Stretch — remote"/>
     <summary>Stretch — remote · Systems &amp; Cloud Infra · US Remote · Linux · status: closed</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:jabil:/job/Remote---USA/Onsite-Data-Center-Inventory-Specialist_J2466794</id>
-    <title>Jabil: Onsite Data Center Inventory Specialist</title>
-    <link href="https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Remote---USA/Onsite-Data-Center-Inventory-Specialist_J2466794"/>
-    <updated>2026-10-22T12:02:41Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote - USA · status: closed · H-1B track record: ~69 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:labcorp:/job/Kissimmee-FL/Phlebotomist-Full-Time-Floater-Kissimmee-St-Cloud-FL_2634838</id>
-    <title>LabCorp: Phlebotomist-Full Time/Floater-Kissimmee/St. Cloud. FL</title>
-    <link href="https://labcorp.wd1.myworkdayjobs.com/external/job/Kissimmee-FL/Phlebotomist-Full-Time-Floater-Kissimmee-St-Cloud-FL_2634838"/>
-    <updated>2026-11-02T05:44:00Z</updated>
-    <category term="Stretch — Orlando area"/>
-    <summary>Stretch — Orlando area · Cloud Platform · Kissimmee FL · status: closed</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Cyber-Security-Subject-Matter-Expert_R-00194019</id>
-    <title>Leidos: Cyber Security Subject Matter Expert 🇺🇸</title>
-    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Cyber-Security-Subject-Matter-Expert_R-00194019"/>
-    <updated>2026-10-22T12:02:41Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Security / IT · 6314 Remote/Teleworker US · Python, SQL, AWS, Azure, Linux · sponsorship: citizens-only · status: closed · H-1B track record: ~79 approvals (FY2022–2023)</summary>
   </entry>
 </feed>

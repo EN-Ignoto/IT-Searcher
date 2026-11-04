@@ -1,6 +1,14 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287",
+      "workday:cdw:/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232",
+      "lever:ion:541086b5-9de1-4f65-8038-f9690100b442"
+    ],
+    "telegram": [
+      "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287",
+      "workday:cdw:/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232",
+      "lever:ion:541086b5-9de1-4f65-8038-f9690100b442"
+    ]
   }
 }

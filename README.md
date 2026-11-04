@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**11 open postings** · Data as of 2026-11-04T02:06:01Z
+**14 open postings** · Data as of 2026-11-04T18:34:40Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -23,7 +23,7 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
 | Corsair 🆁 | Technical Support Specialist 🆕 | IT Support / Ops | Remote (US), United States | No skills listed | Nov 03, 2026 | [Apply](https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8966) |
-| Crowdstrike ✓ 🆁 | Technical Support 🆕 | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
+| Crowdstrike ✓ 🆁 | Technical Support | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
 
 ### Stretch — Orlando area  (1 roles)
 
@@ -31,18 +31,21 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 |---|---|---|---|---|---|---|
 | Christie | Network & Wireless Infrastructure Engineer 🆕 | Network / Telecom | Orlando, Florida, United States | No skills listed | Nov 03, 2026 | [Apply](https://apply.workable.com/christie-lites-3/j/26D143E2E2/) |
 
-### Stretch — remote  (8 roles)
+### Stretch — remote  (11 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| CDW Corporation ✓ 🆁 | Solution Specialist - Networking 🆕 | Network / Telecom | Remote – USA | No skills listed | Nov 04, 2026 | [Apply](https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Solution-Specialist---Networking_R26_00003287) |
+| ION Group 🆁 | Freelance Reporter/Analyst – Cybersecurity and AI Law Report and Anti-Corruption Report 🆕 | Security / IT | Remote US | No skills listed | Nov 04, 2026 | [Apply](https://jobs.lever.co/ion/541086b5-9de1-4f65-8038-f9690100b442) |
 | Render 🆁 | Cloud - Bare Metal Infrastructure Engineer 🆕 | Cloud Platform | Remote: United States | Python, LLMs, Kubernetes, Linux | Nov 04, 2026 | [Apply](https://jobs.ashbyhq.com/render/a22230e6-803d-4e2e-82f8-ff5f500cdc3d) |
+| CDW Corporation ✓ 🆁 | Microsoft Infrastructure Support Engineer 🆕 | Systems & Cloud Infra | Remote – USA | Azure | Nov 03, 2026 | [Apply](https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232) |
 | Munters 🆁 | Field Service Technician HVAC - Data Center 🆕 | Systems & Cloud Infra | Remote - Florida | No skills listed | Nov 03, 2026 | [Apply](https://munters.wd3.myworkdayjobs.com/external_careers/job/Remote---Florida/Field-Service-Technician-HVAC---Data-Center_R13936) |
 | Centific 🆁 | Data Center Project Coordinator 🆕 | Systems & Cloud Infra | Remote Work( USA) | LLMs | Nov 03, 2026 | [Apply](https://centific.wd1.myworkdayjobs.com/Centific_Global/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1) |
 | Republic Services ✓ 🆁 | Information Security Analyst 🆕 | Security / IT | USA - Remote | No skills listed | Nov 03, 2026 | [Apply](https://republic.wd5.myworkdayjobs.com/Republic/job/USA---Remote/Information-Security-Analyst_R-187780-1) |
 | Unisys ✓ 🆁 | Level 2 NOC Systems Administrator – Linux/Unix Focus 🆕 | Network / Telecom | USA Remote | Linux, Python, Bash | Nov 03, 2026 | [Apply](https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786) |
 | Baldwin Group 🆁 | Business Systems Administrator ( EPIC AMS and Brokerage Builder)  - Insurance Systems) 🆕 | Systems & Cloud Infra | Remote US | SQL | Nov 02, 2026 | [Apply](https://baldwin.wd1.myworkdayjobs.com/Baldwin/job/Remote-US/Business-Systems-Administrator_JR110424) |
 | Equiti 🆁 | ML/DevOps Engineer 🆕 | IT Support / Ops | Remote Anywhere in US | Python, Bash, AWS, GCP | Nov 02, 2026 | [Apply](https://cloudbreak.wd12.myworkdayjobs.com/Equiti/job/Remote-Anywhere-in-US/ML-DevOps-Engineer-1_JR-0884) |
-| Guidehouse ✓ 🆁 | Cyber Forensic Analyst Journeyman 🆕 | Security / IT | US - Remote (Any location) | No skills listed | Nov 02, 2026 | [Apply](https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309) |
+| Guidehouse ✓ 🆁 | Cyber Forensic Analyst Journeyman | Security / IT | US - Remote (Any location) | No skills listed | Nov 02, 2026 | [Apply](https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cyber-Forensic-Analyst-Journeyman_45309) |
 
 <a id="drop-radar"></a>
 

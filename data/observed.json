@@ -841,9 +841,11 @@
      "first_posted": "2026-10-09",
      "role_ids": [
       "workday:cdw:/job/Remote--USA/Consulting-Solution-Executive---Hybrid-Infrastructure_R26_00002797",
-      "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00002917"
+      "workday:cdw:/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232",
+      "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00002917",
+      "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287"
      ],
-     "count": 2
+     "count": 4
     }
    }
   },
@@ -1780,6 +1782,18 @@
      "first_posted": "2026-10-13",
      "role_ids": [
       "greenhouse:inversionspace:4743497005"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "ion group": {
+   "name": "ION Group",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-11-04",
+     "role_ids": [
+      "lever:ion:541086b5-9de1-4f65-8038-f9690100b442"
      ],
      "count": 1
     }
@@ -3567,5 +3581,5 @@
    }
   }
  },
- "updated_at": "2026-11-04T02:06:01Z"
+ "updated_at": "2026-11-04T18:34:40Z"
 }

@@ -5,15 +5,31 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-04T02:06:01Z</updated>
+  <updated>2026-11-04T18:34:40Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
   <entry>
-    <id>urn:intern-engine:workable:christie-lites-3:26D143E2E2</id>
-    <title>Christie: Network &amp; Wireless Infrastructure Engineer</title>
-    <link href="https://apply.workable.com/christie-lites-3/j/26D143E2E2/"/>
-    <updated>2026-11-04T02:06:01Z</updated>
-    <category term="Stretch — Orlando area"/>
-    <summary>Stretch — Orlando area · Network / Telecom · Orlando, Florida, United States</summary>
+    <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287</id>
+    <title>CDW Corporation: Solution Specialist - Networking</title>
+    <link href="https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Solution-Specialist---Networking_R26_00003287"/>
+    <updated>2026-11-04T18:34:40Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Network / Telecom · Remote – USA · H-1B track record: ~52 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232</id>
+    <title>CDW Corporation: Microsoft Infrastructure Support Engineer</title>
+    <link href="https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232"/>
+    <updated>2026-11-04T18:34:40Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote – USA · Azure · H-1B track record: ~52 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:lever:ion:541086b5-9de1-4f65-8038-f9690100b442</id>
+    <title>ION Group: Freelance Reporter/Analyst – Cybersecurity and AI Law Report and Anti-Corruption Report</title>
+    <link href="https://jobs.lever.co/ion/541086b5-9de1-4f65-8038-f9690100b442"/>
+    <updated>2026-11-04T18:34:40Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote US</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:ashby:render:a22230e6-803d-4e2e-82f8-ff5f500cdc3d</id>
@@ -22,6 +38,14 @@
     <updated>2026-11-04T02:06:01Z</updated>
     <category term="Stretch — remote"/>
     <summary>Stretch — remote · Cloud Platform · Remote: United States · $230K – $290K • Offers Equity · Python, LLMs, Kubernetes, Linux</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workable:christie-lites-3:26D143E2E2</id>
+    <title>Christie: Network &amp; Wireless Infrastructure Engineer</title>
+    <link href="https://apply.workable.com/christie-lites-3/j/26D143E2E2/"/>
+    <updated>2026-11-04T02:06:01Z</updated>
+    <category term="Stretch — Orlando area"/>
+    <summary>Stretch — Orlando area · Network / Telecom · Orlando, Florida, United States</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:munters:/job/Remote---Florida/Field-Service-Technician-HVAC---Data-Center_R13936</id>
@@ -782,29 +806,5 @@
     <updated>2026-10-22T12:02:41Z</updated>
     <category term="Remote — Florida / US"/>
     <summary>2 openings · Remote — Florida / US · IT Support / Ops · US - Remote (Any location) · Tableau · status: closed · H-1B track record: ~68 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/Cloud-ERP-Implementation-Intern_R101899</id>
-    <title>Impactadvisors: Cloud ERP Implementation Intern</title>
-    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/Cloud-ERP-Implementation-Intern_R101899"/>
-    <updated>2026-10-22T12:02:41Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · Cloud Platform · US Remote · $25/hr · status: closed</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/Entry-Level-IT-Advisory-Consultant_R101837</id>
-    <title>Impactadvisors: Entry-Level IT Advisory Consultant 🛂</title>
-    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/Entry-Level-IT-Advisory-Consultant_R101837"/>
-    <updated>2026-10-22T12:02:41Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · US Remote · sponsorship: no-sponsorship · status: closed</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:impactadvisors:/job/US-Remote/IT-Infrastructure-Design-Engineer_R102100</id>
-    <title>Impactadvisors: IT Infrastructure Design Engineer</title>
-    <link href="https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/IT-Infrastructure-Design-Engineer_R102100"/>
-    <updated>2026-11-02T05:26:34Z</updated>
-    <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · US Remote · Linux · status: closed</summary>
   </entry>
 </feed>

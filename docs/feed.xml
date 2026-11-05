@@ -5,16 +5,8 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-05T00:20:42Z</updated>
+  <updated>2026-11-05T07:31:41Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
-  <entry>
-    <id>urn:intern-engine:oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642</id>
-    <title>ADT: Remote Customer Technical Support</title>
-    <link href="https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642"/>
-    <updated>2026-11-05T00:20:42Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States · $17/hr · H-1B track record: ~39 approvals (FY2022–2023)</summary>
-  </entry>
   <entry>
     <id>urn:intern-engine:ashby:equip:829ff280-4d61-4b23-a754-af75e1282203</id>
     <title>Equip Health: IT Operations Specialist</title>
@@ -22,6 +14,14 @@
     <updated>2026-11-05T00:20:42Z</updated>
     <category term="Stretch — remote"/>
     <summary>Stretch — remote · IT Support / Ops · Remote - USA · $81K – $90K • Offers Bonus · AWS</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642</id>
+    <title>ADT: Remote Customer Technical Support</title>
+    <link href="https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642"/>
+    <updated>2026-11-05T00:20:42Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States · $17/hr · H-1B track record: ~39 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:ciena:/job/Remote-US/Advisor--Regional-Services-Product-Line-Management--Global-Cloud-Networking--GCN-_R031997</id>

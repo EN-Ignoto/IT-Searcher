@@ -5,8 +5,24 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-05T16:13:18Z</updated>
+  <updated>2026-11-05T22:39:58Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289</id>
+    <title>CDW Corporation: IT Service Desk- 6AM - 6PM</title>
+    <link href="https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289"/>
+    <updated>2026-11-05T22:39:58Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote – USA · H-1B track record: ~52 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722</id>
+    <title>Pennmutual: Information Security Engineer 1</title>
+    <link href="https://pennmutual.wd1.myworkdayjobs.com/_penn-careers/job/Remote---United-States/Information-Security-Engineer-1_R-100722"/>
+    <updated>2026-11-05T22:39:58Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · Security / IT · Remote - United States · AWS</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/IT-Asset-Analyst_R-00196272</id>
     <title>Leidos: IT Asset Analyst 🇺🇸</title>
@@ -99,9 +115,9 @@
     <id>urn:intern-engine:workday:centific:/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1</id>
     <title>Centific: Data Center Project Coordinator</title>
     <link href="https://centific.wd1.myworkdayjobs.com/Centific_Global/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1"/>
-    <updated>2026-11-03T21:40:36Z</updated>
+    <updated>2026-11-05T22:39:58Z</updated>
     <category term="Stretch — remote"/>
-    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote Work( USA) · LLMs</summary>
+    <summary>Stretch — remote · Systems &amp; Cloud Infra · Remote Work( USA) · LLMs · status: closed</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:republic:/job/USA---Remote/Information-Security-Analyst_R-187780-1</id>

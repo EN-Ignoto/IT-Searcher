@@ -858,6 +858,13 @@
       "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287"
      ],
      "count": 4
+    },
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-05",
+     "role_ids": [
+      "workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289"
+     ],
+     "count": 1
     }
    }
   },
@@ -2525,6 +2532,18 @@
     }
    }
   },
+  "pennmutual": {
+   "name": "Pennmutual",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-05",
+     "role_ids": [
+      "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722"
+     ],
+     "count": 1
+    }
+   }
+  },
   "pentair": {
    "name": "Pentair",
    "cycles": {
@@ -3607,5 +3626,5 @@
    }
   }
  },
- "updated_at": "2026-11-05T16:13:18Z"
+ "updated_at": "2026-11-05T22:39:58Z"
 }

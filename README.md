@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**18 open postings** · Data as of 2026-11-05T16:13:18Z
+**19 open postings** · Data as of 2026-11-05T22:39:58Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -18,12 +18,14 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 
 ## 🖥️ IT Support, Networks & Infrastructure
 
-### Remote — Florida / US  (3 roles)
+### Remote — Florida / US  (5 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| CDW Corporation ✓ 🆁 | IT Service Desk- 6AM - 6PM 🆕 | IT Support / Ops | Remote – USA | No skills listed | Nov 05, 2026 | [Apply](https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289) |
+| Pennmutual 🆁 | Information Security Engineer 1 🆕 | Security / IT | Remote - United States | AWS | Nov 05, 2026 | [Apply](https://pennmutual.wd1.myworkdayjobs.com/_penn-careers/job/Remote---United-States/Information-Security-Engineer-1_R-100722) |
 | ADT ✓ 🆁 | Remote Customer Technical Support 🆕 | IT Support / Ops | United States +48 more | No skills listed | Nov 04, 2026 | [Apply](https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642) |
-| Corsair 🆁 | Technical Support Specialist 🆕 | IT Support / Ops | Remote (US), United States | No skills listed | Nov 03, 2026 | [Apply](https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8966) |
+| Corsair 🆁 | Technical Support Specialist | IT Support / Ops | Remote (US), United States | No skills listed | Nov 03, 2026 | [Apply](https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8966) |
 | Crowdstrike ✓ 🆁 | Technical Support | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
 
 ### Stretch — Orlando area  (1 roles)
@@ -32,7 +34,7 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 |---|---|---|---|---|---|---|
 | Christie | Network & Wireless Infrastructure Engineer 🆕 | Network / Telecom | Orlando, Florida, United States | No skills listed | Nov 03, 2026 | [Apply](https://apply.workable.com/christie-lites-3/j/26D143E2E2/) |
 
-### Stretch — remote  (14 roles)
+### Stretch — remote  (13 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -44,7 +46,6 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 | Render 🆁 | Cloud - Bare Metal Infrastructure Engineer 🆕 | Cloud Platform | Remote: United States | Python, LLMs, Kubernetes, Linux | Nov 04, 2026 | [Apply](https://jobs.ashbyhq.com/render/a22230e6-803d-4e2e-82f8-ff5f500cdc3d) |
 | CDW Corporation ✓ 🆁 | Microsoft Infrastructure Support Engineer 🆕 | Systems & Cloud Infra | Remote – USA | Azure | Nov 03, 2026 | [Apply](https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232) |
 | Munters 🆁 | Field Service Technician HVAC - Data Center 🆕 | Systems & Cloud Infra | Remote - Florida | No skills listed | Nov 03, 2026 | [Apply](https://munters.wd3.myworkdayjobs.com/external_careers/job/Remote---Florida/Field-Service-Technician-HVAC---Data-Center_R13936) |
-| Centific 🆁 | Data Center Project Coordinator 🆕 | Systems & Cloud Infra | Remote Work( USA) | LLMs | Nov 03, 2026 | [Apply](https://centific.wd1.myworkdayjobs.com/Centific_Global/job/Remote-Work-USA/Data-Center-Project-Coordinator_JR108561-1) |
 | Republic Services ✓ 🆁 | Information Security Analyst | Security / IT | USA - Remote | No skills listed | Nov 03, 2026 | [Apply](https://republic.wd5.myworkdayjobs.com/Republic/job/USA---Remote/Information-Security-Analyst_R-187780-1) |
 | Unisys ✓ 🆁 | Level 2 NOC Systems Administrator – Linux/Unix Focus | Network / Telecom | USA Remote | Linux, Python, Bash | Nov 03, 2026 | [Apply](https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786) |
 | Baldwin Group 🆁 | Business Systems Administrator ( EPIC AMS and Brokerage Builder)  - Insurance Systems) | Systems & Cloud Infra | Remote US | SQL | Nov 02, 2026 | [Apply](https://baldwin.wd1.myworkdayjobs.com/Baldwin/job/Remote-US/Business-Systems-Administrator_JR110424) |
@@ -73,6 +74,7 @@ _Why each one left is in the last column, because the two reasons carry differen
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Centific | Data Center Project Coordinator | Stretch — remote | 2026-11-05 | gone from feed |
 | Amplify | Summer 2027: IT Services Intern | Remote — Florida / US | 2026-11-02 | out of scope |
 | Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-02 | out of scope |
 | Capital Technology Group | CyberArk SME / DevOps Engineer | Stretch — remote | 2026-11-02 | out of scope |
@@ -112,7 +114,6 @@ _Why each one left is in the last column, because the two reasons carry differen
 | Concept Plus | Help Desk Specialist | Remote — Florida / US | 2026-11-02 | out of scope |
 | Intelerad | Product Owner (Cloud and Platform) - HL7/DICOM | Stretch — remote | 2026-11-02 | out of scope |
 | Link Solutions | IT Service Management Coordinator | Stretch — Orlando area | 2026-11-02 | out of scope |
-| Turner & Townsend | Scheduler / Planner - Data Center Construction (Portuguese Speaking) | Stretch — remote | 2026-11-02 | out of scope |
 
 </details>
 

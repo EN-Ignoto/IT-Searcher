@@ -3,12 +3,18 @@
     "discord": [
       "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287",
       "workday:cdw:/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232",
-      "lever:ion:541086b5-9de1-4f65-8038-f9690100b442"
+      "lever:ion:541086b5-9de1-4f65-8038-f9690100b442",
+      "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642",
+      "ashby:equip:829ff280-4d61-4b23-a754-af75e1282203",
+      "workday:ciena:/job/Remote-US/Advisor--Regional-Services-Product-Line-Management--Global-Cloud-Networking--GCN-_R031997"
     ],
     "telegram": [
       "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287",
       "workday:cdw:/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232",
-      "lever:ion:541086b5-9de1-4f65-8038-f9690100b442"
+      "lever:ion:541086b5-9de1-4f65-8038-f9690100b442",
+      "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642",
+      "ashby:equip:829ff280-4d61-4b23-a754-af75e1282203",
+      "workday:ciena:/job/Remote-US/Advisor--Regional-Services-Product-Line-Management--Global-Cloud-Networking--GCN-_R031997"
     ]
   }
 }

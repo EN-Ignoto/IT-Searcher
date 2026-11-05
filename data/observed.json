@@ -84,6 +84,18 @@
     }
    }
   },
+  "adt": {
+   "name": "ADT",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-04",
+     "role_ids": [
+      "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642"
+     ],
+     "count": 1
+    }
+   }
+  },
   "advanced space": {
    "name": "Advanced Space",
    "cycles": {
@@ -931,9 +943,10 @@
      "role_ids": [
       "workday:ciena:/job/Remote-US-CA/Network-Solutions-Engineer---Onsite-at-Vandenberg-Space-Force-Base_R031478",
       "workday:ciena:/job/Remote-US-IL/Network-Solutions-Engineer--On-site--Scott-Air-Force-Base--IL_R031414",
-      "workday:ciena:/job/Remote-US-MD/Network-Solutions-Engineer---Onsite-at-Scott-AFB--IL_R031595"
+      "workday:ciena:/job/Remote-US-MD/Network-Solutions-Engineer---Onsite-at-Scott-AFB--IL_R031595",
+      "workday:ciena:/job/Remote-US/Advisor--Regional-Services-Product-Line-Management--Global-Cloud-Networking--GCN-_R031997"
      ],
-     "count": 3
+     "count": 4
     }
    }
   },
@@ -1238,6 +1251,18 @@
       "workday:equifax:/job/USA---Missouri---St-Louis---Lackland/Site-Reliability-Engineer-Intern_J00178674"
      ],
      "count": 2
+    }
+   }
+  },
+  "equip health": {
+   "name": "Equip Health",
+   "cycles": {
+    "Stretch — remote": {
+     "first_posted": "2026-11-04",
+     "role_ids": [
+      "ashby:equip:829ff280-4d61-4b23-a754-af75e1282203"
+     ],
+     "count": 1
     }
    }
   },
@@ -3581,5 +3606,5 @@
    }
   }
  },
- "updated_at": "2026-11-04T18:34:40Z"
+ "updated_at": "2026-11-05T00:20:42Z"
 }

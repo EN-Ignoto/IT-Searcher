@@ -1,0 +1,1 @@
+Full job-search refresh requested on 2026-11-06 after the entry-level IT matching repairs. This file is a controlled trigger for update.yml; the workflow must run the full collection, not render-only.

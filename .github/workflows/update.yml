@@ -1,6 +1,12 @@
 name: Update IT opportunities
 
 on:
+  push:
+    branches: [main]
+    # Push a refresh request file to start a real full scan immediately,
+    # without depending on GitHub's delayed scheduled-event delivery.
+    paths:
+      - ".github/refresh-request.txt"
   schedule:
     # Repeat hourly, away from the busiest top-of-hour slot.
     - cron: "17 * * * *"

@@ -212,3 +212,27 @@ def test_preferences_do_not_become_hard_requirements(description, expected):
 def test_benefit_words_are_not_unpaid_job_evidence(description, expected):
     assert filters_it.assess_fit("IT Support Intern",
                                  description + " Compensation: $19 per hour.") == expected
+
+
+@pytest.mark.parametrize("title", [
+    "IT Operations Specialist",
+    "IT Asset Analyst",
+    "IT Asset Coordinator",
+    "Computer Support Specialist",
+    "Technology Support Technician",
+])
+def test_first_it_operations_and_asset_jobs_are_eligible_title_scope(title):
+    assert filters_it.is_opportunity(title)
+    assert filters_it.bucket(title, "Kissimmee, FL") == "Orlando area"
+    assert filters_it.assess_fit(title, "Troubleshoot Windows workstations; no experience required.") == "eligible"
+
+
+@pytest.mark.parametrize("title", [
+    "IT Operations Manager",
+    "IT Asset Analyst II",
+    "Senior Computer Support Specialist",
+    "Cloud Infrastructure Engineer",
+    "Data Center Project Coordinator",
+])
+def test_foundation_expansion_does_not_include_senior_or_generic_roles(title):
+    assert not filters_it.is_opportunity(title)

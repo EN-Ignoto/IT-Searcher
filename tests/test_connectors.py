@@ -13,6 +13,7 @@ from intern_engine.connectors import (
     eightfold,
     greenhouse,
     icims,
+    jobicy,
     lever,
     oracle,
     recruitee,
@@ -1032,3 +1033,45 @@ class TestIcimsDates:
 
     def test_a_missing_date_is_none_not_today(self):
         assert self._job().posted_at is None
+
+
+# Jobicy is a seven-day *rolling* feed, never a complete closure snapshot.
+_JOBICY_BOARD = {"ats": "jobicy", "slug": "us-remote-it", "name": "Jobicy US Remote IT Jobs"}
+
+
+def test_jobicy_remote_support_normalization():
+    payload = {"success": True, "jobs": [{
+        "id": 101, "jobTitle": "Help Desk Technician",
+        "companyName": "Example Employer", "jobGeo": "USA",
+        "jobLevel": "Entry-level", "jobType": ["Part-Time"],
+        "jobDescription": "Troubleshoot Windows and laptop hardware. Paid role.",
+        "url": "https://jobicy.com/jobs/help-desk-technician",
+        "pubDate": "2026-11-06T12:00:00+00:00",
+    }, {
+        "id": 102, "jobTitle": "Help Desk Manager",
+        "companyName": "Example Employer", "jobGeo": "USA",
+        "jobLevel": "Senior", "url": "https://jobicy.com/jobs/manager",
+    }, {
+        "id": 103, "jobTitle": "IT Support Specialist",
+        "companyName": "Example Employer", "jobGeo": "Canada",
+        "url": "https://jobicy.com/jobs/canadian-role",
+    }]}
+    result = _fetch(jobicy.fetch(_JOBICY_BOARD, FakeNet(payload)))
+    assert not result.complete
+    assert result.incomplete_reason == INCOMPLETE_CAPPED
+    assert len(result.jobs) == 1
+    role = result.jobs[0]
+    assert role.title == "Help Desk Technician"
+    assert role.company == "Example Employer"
+    assert role.location.startswith("Remote - United States")
+    assert role.description.startswith("Troubleshoot Windows and laptop")
+    assert role.posted_at == "2026-11-06T12:00:00+00:00"
+
+
+def test_jobicy_malformed_and_empty_sources_cannot_close_old_roles():
+    malformed = _fetch(jobicy.fetch(_JOBICY_BOARD, FakeNet({"error": "blocked", "jobs": []})))
+    assert not malformed.complete
+    assert malformed.incomplete_reason == INCOMPLETE_MALFORMED
+    empty = _fetch(jobicy.fetch(_JOBICY_BOARD, FakeNet({"success": True, "jobs": []})))
+    assert not empty.complete
+    assert empty.incomplete_reason == INCOMPLETE_CAPPED

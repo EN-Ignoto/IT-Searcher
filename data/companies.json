@@ -29528,5 +29528,10 @@
     "name": "Zus Health",
     "slug": "zushealth",
     "ats": "lever"
+  },
+  {
+    "name": "Jobicy US Remote IT Jobs",
+    "slug": "us-remote-it",
+    "ats": "jobicy"
   }
 ]

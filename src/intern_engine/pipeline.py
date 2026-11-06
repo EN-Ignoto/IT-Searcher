@@ -47,6 +47,7 @@ from .connectors import (
     eightfold,
     greenhouse,
     icims,
+    jobicy,
     lever,
     oracle,
     recruitee,
@@ -60,6 +61,7 @@ from .net import HostLimiter, Net
 CONNECTORS = {
     "greenhouse": greenhouse.fetch,
     "icims": icims.fetch,
+    "jobicy": jobicy.fetch,
     "lever": lever.fetch,
     "ashby": ashby.fetch,
     "smartrecruiters": smartrecruiters.fetch,
@@ -436,6 +438,7 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
     )
 
     existing = existing or {}
+    diagnostic = Counter()
     kept = []
     succeeded: set[str] = set()
     complete: set[str] = set()
@@ -500,15 +503,18 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
         if allowlist_only and not quality.is_recognized(company["name"]):
             continue
         for job in jobs:
+            diagnostic['fetched_listings'] += 1
             if not (filters_it.is_opportunity(job.title) if cfg.get("opportunity_scope") == "it"
                     else filters.is_internship(job.title)):
                 continue
+            diagnostic['title_pass'] += 1
             if tech_only and not (filters_it.is_relevant(job.title) if cfg.get("opportunity_scope") == "it"
                                   else filters_secnet.is_relevant(job.title)):
                 continue
             season = filters_it.bucket(job.title, job.location) if cfg.get("opportunity_scope") == "it" else filters.detect_season(job.title, cycles)
             if cfg.get("opportunity_scope") == "it" and season is None:
                 continue
+            diagnostic['location_pass'] += 1
             inferred = False
             unstated_reason: str | None = None
             if season is None:
@@ -578,6 +584,7 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
                     or (cfg.get("opportunity_scope") != "it" and cutoff and posted_day
                         and posted_day < cutoff and inferred)):
                 continue
+            diagnostic['age_pass'] += 1
             job.season = season
             job.season_inferred = inferred
             if not inferred:
@@ -592,6 +599,8 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
             if job.posted_at and not job.posted_at_source:
                 job.posted_at_source = models.date_source(job.posted_at)
             kept.append(job)
+    if cfg.get('opportunity_scope') == 'it':
+        print('IT intake funnel: ' + json.dumps(dict(diagnostic), sort_keys=True), flush=True)
     return (kept, succeeded, complete, seen_ids, errors, errors_by_ats,
             dropped_no_year, dropped_offcycle, rejected)
 
@@ -793,6 +802,9 @@ def run_update() -> tuple[dict, dict, list[str]]:
         ts = store.now_iso()
         offcycle = offcycle_sticky
         still = []
+        if cfg.get('opportunity_scope') == 'it':
+            verdicts = dict(Counter(job.entry_fit or 'no-evidence' for job in kept))
+            print('IT requirement verdicts: ' + json.dumps(verdicts, sort_keys=True), flush=True)
         for job in kept:
             if cfg.get("opportunity_scope") == "it" and job.entry_fit != "eligible":
                 record = existing.get(job.id)

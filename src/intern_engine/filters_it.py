@@ -10,8 +10,16 @@ ENTRY_LEVEL = BUCKETS[0]
 INTERNSHIPS = BUCKETS[0]
 SENIOR = re.compile(r"\b(senior|sr\.?|staff|principal|lead|manager|director|head|vp|vice president|architect|intermediate|mid[ -]level|journeyman|expert|sme|ii|iii|iv|[2-9]|tier[ -]?[2-9]|level[ -]?[2-9])\b", re.I)
 ENTRY = re.compile(r"\b(entry[ -]level|junior|jr|associate|trainee|graduate|new grad|early career|(?:administrator|engineer|technician|analyst) (?:i|1)|level[ -]?(?:1|i)|tier[ -]?(?:1|i))\b", re.I)
+# Specific first-job operations paths; do not admit generic infrastructure roles.
+FOUNDATION = re.compile(
+    r"\b(?:it operations (?:specialist|technician|associate)"
+    r"|it asset (?:analyst|technician|coordinator|specialist)"
+    r"|computer support (?:specialist|technician)"
+    r"|technology support (?:specialist|technician)"
+    r"|computer systems technician)\b", re.I,
+)
 SUPPORT = re.compile(r"\b(help[ -]?desk|service desk|desktop support|it support|computer technician|pc technician|it technician|it specialist|technical support|end[ -]user|field support|support technician|support specialist)\b", re.I)
-IT = re.compile(r"\b(information technology|it|help[ -]?desk|service desk|desktop|sysadmin|systems? administrat\w*|network|networking|noc|data cent(?:er|re)|cloud|infrastructure|linux|windows|technical support|computer technician|pc technician|end[ -]user|devops|site reliability|cyber\w*|infosec|soc analyst|information security)\b", re.I)
+IT = re.compile(r"\b(information technology|it|help[ -]?desk|service desk|desktop|sysadmin|systems? administrat\w*|network|networking|noc|data cent(?:er|re)|cloud|infrastructure|linux|windows|technical support|computer support|technology support|computer technician|pc technician|end[ -]user|devops|site reliability|cyber\w*|infosec|soc analyst|information security)\b", re.I)
 EXCLUDE = re.compile(r"\b(sales|marketing|recruit\w*|mechanical|aerospace|electrical|embedded|firmware|software|civil|manufacturing|landscape|construction|financial|data scien\w*|data engineer|machine learning|provider network|social network|security guard|physical security|loss prevention|hvac|commissioning|facilities|electrician|plumbing|phlebotomist|product owner|project coordinator|diagnostic\w*|reporter|scrum master|product line|clinical|veterinary|medical device)\b", re.I)
 CITIES = re.compile(r"\b(orlando|winter park|winter garden|lake mary|sanford|kissimmee|poinciana|davenport|haines city|hunters creek|dr[.]? phillips|buenaventura lakes|four corners|altamonte springs|maitland|apopka|oviedo|longwood|casselberry|lake buena vista|celebration|ocoee|windermere|winter springs|st[.]? cloud|clermont|tavares|mount dora)\b", re.I)
 FL = re.compile(r"\b(fl|florida)\b", re.I)
@@ -38,11 +46,11 @@ def is_opportunity(title: str) -> bool:
     # Generic engineer/admin/analyst titles are not evidence of entry-level fit.
     return bool(is_relevant(title) and not SENIOR.search(title)
                 and (is_internship(title) or ENTRY.search(title)
-                     or SUPPORT.search(title)
+                     or SUPPORT.search(title) or FOUNDATION.search(title)
                      or re.search(r"\b(?:data cent(?:er|re)|network|noc) technician\b", title, re.I)))
 
 
-FIT_VERSION = 4
+FIT_VERSION = 5
 _EXPERIENCE = re.compile(
     r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)"
     r"\s*(?:\+|(?:-|–|to)\s*\d{1,2})?\s*years?"
@@ -54,8 +62,8 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
     """Require positive junior evidence; block experienced and unpaid postings.
 
     Unknown descriptions remain unverified, rather than silently claiming fit.
-    Two or more years excludes the role, including ambiguous preferred text:
-    this feed deliberately favors precision for a first IT job.
+    Mandatory two-year requirements and 3+ years preferred are excluded.
+    A two-year preference can be considered for a first IT job.
     """
     from .sponsorship import strip_html
     if not is_opportunity(title):
@@ -129,7 +137,7 @@ def bucket(title: str, location: str) -> str | None:
 
 
 def categorize(title: str) -> str:
-    if SUPPORT.search(title):
+    if SUPPORT.search(title) or FOUNDATION.search(title):
         return "IT Support / Ops"
     if legacy.SECURITY_RE.search(title):
         return "Security / IT"

@@ -1,19 +1,19 @@
 {
   "cycles": [
     "Orlando area",
-    "Remote \u2014 Florida / US"
+    "Remote — Florida / US"
   ],
   "regions": [
     "US"
   ],
   "role_scope": "tech",
-  "max_age_days": 14,
+  "max_age_days": 30,
   "max_per_company": 10,
   "allowlist_only": false,
   "include_international": false,
   "section_limits": {
     "Orlando area": 200,
-    "Remote \u2014 Florida / US": 200
+    "Remote — Florida / US": 200
   },
   "supabase_url": "",
   "supabase_publishable_key": "",

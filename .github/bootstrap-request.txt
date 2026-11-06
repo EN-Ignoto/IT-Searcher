@@ -1,1 +1,2 @@
 Run fast full-classification bootstrap for live IT support sources, requested 2026-11-06.
+Retry bootstrap after fixing actual US location field representation (2026-11-06).

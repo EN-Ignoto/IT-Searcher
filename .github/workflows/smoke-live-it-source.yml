@@ -40,6 +40,11 @@ jobs:
                   response.raise_for_status()
                   data = response.json()
                   jobs = data.get("jobs", [])
+                  if query == "help desk" and jobs:
+                      import json
+                      sample = jobs[0]
+                      keys = ("guid", "applicationLink", "expiryDate", "pubDate", "seniority", "locationRestrictions", "employmentType", "title")
+                      print("Himalayas sample fields:", json.dumps({key: sample.get(key) for key in keys}), flush=True)
                   relevant = [j for j in jobs if filters_it.is_opportunity(j.get("title", ""))]
                   count += len(relevant)
                   print(f"Himalayas {query}: {len(jobs)} candidates, {len(relevant)} first-job titles", flush=True)

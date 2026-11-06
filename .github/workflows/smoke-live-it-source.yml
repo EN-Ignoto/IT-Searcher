@@ -21,6 +21,32 @@ jobs:
           python-version: "3.11"
       - name: Install production dependencies
         run: pip install -r requirements.txt
+      - name: Check Himalayas entry-level IT availability
+        run: |
+          python - <<'PY'
+          import httpx
+          import sys
+
+          sys.path.insert(0, "src")
+          from intern_engine import filters_it
+
+          queries = ("help desk", "IT support", "desktop support", "network technician", "IT technician")
+          count = 0
+          with httpx.Client(timeout=20, follow_redirects=True) as client:
+              for query in queries:
+                  response = client.get("https://himalayas.app/jobs/api/search", params={
+                      "q": query, "country": "US", "sort": "recent", "page": 1,
+                  })
+                  response.raise_for_status()
+                  data = response.json()
+                  jobs = data.get("jobs", [])
+                  relevant = [j for j in jobs if filters_it.is_opportunity(j.get("title", ""))]
+                  count += len(relevant)
+                  print(f"Himalayas {query}: {len(jobs)} candidates, {len(relevant)} first-job titles", flush=True)
+                  for job in relevant[:5]:
+                      print(" -", job.get("title"), "|", job.get("companyName"), "|", job.get("guid"), flush=True)
+          print(f"Himalayas relevant candidate titles: {count}", flush=True)
+          PY
       - name: Fetch live US remote IT support posts
         run: |
           python - <<'PY'

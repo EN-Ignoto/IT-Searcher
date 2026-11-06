@@ -1,0 +1,64 @@
+name: Verify live IT job source
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/jobicy-smoke-request.txt"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.11"
+      - name: Install production dependencies
+        run: pip install -r requirements.txt
+      - name: Fetch live US remote IT support posts
+        run: |
+          python - <<'PY'
+          import asyncio
+          import json
+          import sys
+          import httpx
+
+          sys.path.insert(0, "src")
+          from intern_engine import filters_it
+          from intern_engine.connectors import jobicy
+          from intern_engine.net import HostLimiter, Net
+
+          async def main():
+              async with httpx.AsyncClient(
+                  timeout=httpx.Timeout(20.0, connect=10.0),
+                  follow_redirects=True,
+              ) as session:
+                  source = {"name": "Jobicy US Remote IT Jobs",
+                            "slug": "us-remote-it", "ats": "jobicy"}
+                  result = await jobicy.fetch(source, Net(session, HostLimiter()))
+              matched = [j for j in result.jobs
+                         if filters_it.bucket(j.title, j.location)]
+              verdicts = {}
+              for j in matched:
+                  verdict = filters_it.assess_fit(j.title, j.description, j.location)
+                  verdicts[verdict] = verdicts.get(verdict, 0) + 1
+              print("Jobicy live result:",
+                    json.dumps({
+                        "parsed_us_roles": len(result.jobs),
+                        "first_job_titles": len(matched),
+                        "requirement_verdicts": verdicts,
+                        "complete_lifecycle_snapshot": result.complete,
+                        "incomplete_reason": result.incomplete_reason,
+                    }, sort_keys=True), flush=True)
+              for job in matched[:12]:
+                  print(job.title, "|", job.company, "|", job.url, flush=True)
+              if not result.jobs:
+                  raise SystemExit("No parsable US jobs returned. Check API access or filters.")
+          asyncio.run(main())
+          PY

@@ -28,6 +28,8 @@ def test_reject_unrelated_or_experienced_roles(title):
 @pytest.mark.parametrize("location, expected", [
     ("Orlando, FL", "local"), ("Lake Mary, Florida", "local"),
     ("Sanford, NC", None), ("Miami, FL", None),
+    ("Poinciana, FL", "local"), ("Davenport, Florida", "local"),
+    ("Haines City, FL", "local"), ("Hunters Creek, FL", "local"),
     ("Remote - United States", "remote"), ("Remote, FL", "remote"),
     ("Remote, CA", None), ("Remote - Canada", None), ("Remote", None),
 ])
@@ -186,3 +188,27 @@ def test_remote_label_cannot_override_required_california_attendance():
     assert filters_it.assess_fit(
         'Technical Support Specialist', 'Troubleshoot PCs and Windows.',
         'Remote (US), United States') == 'eligible'
+
+
+@pytest.mark.parametrize("description,expected", [
+    ("2 years of service desk experience preferred. Troubleshoot Windows PCs.", "eligible"),
+    ("Preferred: 2+ years of IT support experience.", "eligible"),
+    ("2 years of technical support experience is a plus.", "eligible"),
+    ("Minimum 2 years of IT support experience required.", "rejected"),
+    ("Must have 2 years of relevant experience.", "rejected"),
+    ("3+ years of IT support experience preferred.", "rejected"),
+    ("Requires 5+ years of related work experience.", "rejected"),
+])
+def test_preferences_do_not_become_hard_requirements(description, expected):
+    assert filters_it.assess_fit("Help Desk Technician", description) == expected
+
+
+@pytest.mark.parametrize("description,expected", [
+    ("Paid volunteer days and unpaid parental leave are included in benefits.", "eligible"),
+    ("This is an unpaid internship.", "rejected"),
+    ("Volunteer IT support opportunity", "rejected"),
+    ("This position is unpaid.", "rejected"),
+])
+def test_benefit_words_are_not_unpaid_job_evidence(description, expected):
+    assert filters_it.assess_fit("IT Support Intern",
+                                 description + " Compensation: $19 per hour.") == expected

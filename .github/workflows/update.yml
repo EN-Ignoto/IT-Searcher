@@ -10,6 +10,10 @@ on:
         description: Rebuild the published tracker from saved data without a fresh collection
         type: boolean
         default: false
+      allow_feed_collapse:
+        description: Allow a manual refresh to publish a sharp drop in open jobs
+        type: boolean
+        default: false
 
 permissions:
   contents: write             # needed so the bot can commit the refreshed data
@@ -65,6 +69,14 @@ jobs:
           MAX_STATS_AGE_HOURS: "2"
           ALLOW_STALE_STATS: ${{ inputs.render_only && '1' || '0' }}
         run: python tools/verify_accuracy.py
+
+      # Keep the last published feed when filters unexpectedly remove almost
+      # all jobs. Manual overrides should follow confirmation of genuine closures.
+      - name: Prevent unexpected feed collapse
+        if: ${{ !inputs.render_only }}
+        env:
+          ALLOW_FEED_COLLAPSE: ${{ inputs.allow_feed_collapse && '1' || '0' }}
+        run: python tools/check_feed_collapse.py
 
       # Alerts are sent by a LATER step, on purpose: an alert promises the role
       # is on the list, so nothing goes out until this push actually lands.

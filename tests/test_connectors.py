@@ -1104,10 +1104,14 @@ def test_himalayas_requires_us_location_and_keeps_original_apply_link():
         {**row, "guid": row["guid"] + "-expired",
          "expiryDate": int((now - timedelta(days=1)).timestamp())},
     ]}
+    # Production API uses names like ["United States"], not just alpha2 dicts.
+    payload["jobs"].append({**row, "guid": row["guid"] + "-strus",
+                            "locationRestrictions": ["United States"],
+                            "employmentType": "Full Time"})
     result = _fetch(himalayas.fetch(_HIMALAYAS_BOARD, FakeNet(payload)))
     assert not result.complete
     assert result.incomplete_reason == INCOMPLETE_CAPPED
-    assert len(result.jobs) == 1
+    assert len(result.jobs) == 2
     job = result.jobs[0]
     assert job.company == "Example IT Employer (via Himalayas)"
     assert job.url == row["applicationLink"]

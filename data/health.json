@@ -1665,8 +1665,8 @@
     "last_error": "malformed-response"
   },
   "workday:availity:availity_careers_us": {
-    "consecutive_failures": 1,
-    "last_attempt_at": "2026-11-06T20:17:34Z",
+    "consecutive_failures": 2,
+    "last_attempt_at": "2026-11-06T20:22:36Z",
     "last_error": "ReadTimeout: "
   },
   "workday:aviagen:aviagen-careers": {
@@ -2215,8 +2215,8 @@
     "last_error": "malformed-response"
   },
   "workday:leidos:external": {
-    "consecutive_failures": 2,
-    "last_attempt_at": "2026-11-06T20:17:34Z",
+    "consecutive_failures": 3,
+    "last_attempt_at": "2026-11-06T20:22:36Z",
     "last_error": "malformed-response"
   },
   "workday:lighting:jobs-and-careers": {

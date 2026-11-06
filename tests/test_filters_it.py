@@ -166,3 +166,23 @@ def test_focused_refresh_does_not_mistake_pagination_caps_for_failure():
     assert usable_snapshot_rate(22, 10, {'malformed-response': 10}) < 0.70
     assert usable_snapshot_rate(22, 10, {'pagination-stalled': 10}) < 0.70
     assert usable_snapshot_rate(22, 10, {'result-cap': 11}) < 0.70
+
+
+@pytest.mark.parametrize('text,expected', [
+    ('Bachelor or Master Degree in a computer-related field or 1-3 years equivalent work experience required.', 'rejected'),
+    ("Bachelor's degree in IT required.", 'rejected'),
+    ("Bachelor's degree preferred. No prior experience required.", 'eligible'),
+    ("Currently pursuing a bachelor's degree required. Paid internship.", 'eligible'),
+])
+def test_completed_degree_is_not_the_same_as_current_student(text, expected):
+    assert filters_it.assess_fit('IT Support Technician', text) == expected
+
+
+def test_remote_label_cannot_override_required_california_attendance():
+    assert filters_it.assess_fit(
+        'Technical Support Specialist',
+        'Required Skills: Ability to work on-site in Milpitas, California.',
+        'Remote (US), United States') == 'rejected'
+    assert filters_it.assess_fit(
+        'Technical Support Specialist', 'Troubleshoot PCs and Windows.',
+        'Remote (US), United States') == 'eligible'

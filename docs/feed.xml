@@ -5,22 +5,6 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-06T20:17:35Z</updated>
+  <updated>2026-11-06T20:22:36Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
-  <entry>
-    <id>urn:intern-engine:workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722</id>
-    <title>Pennmutual: Information Security Engineer 1</title>
-    <link href="https://pennmutual.wd1.myworkdayjobs.com/_penn-careers/job/Remote---United-States/Information-Security-Engineer-1_R-100722"/>
-    <updated>2026-11-05T22:39:58Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · Security / IT · Remote - United States · AWS</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:oracle:edix.fa.us2.oraclecloud.com:8966</id>
-    <title>Corsair: Technical Support Specialist</title>
-    <link href="https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8966"/>
-    <updated>2026-11-03T21:40:36Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote (US), United States</summary>
-  </entry>
 </feed>

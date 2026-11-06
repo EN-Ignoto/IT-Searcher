@@ -1,54 +1,9 @@
 {
- "generated_at": "2026-11-06T20:17:35Z",
- "data_as_of": "2026-11-06T20:17:35Z",
- "rendered_at": "2026-11-06T20:17:35Z",
+ "generated_at": "2026-11-06T20:22:36Z",
+ "data_as_of": "2026-11-06T20:22:36Z",
+ "rendered_at": "2026-11-06T20:22:36Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 2,
- "jobs": [
-  {
-   "id": "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
-   "company": "Pennmutual",
-   "title": "Information Security Engineer 1",
-   "season": "Remote — Florida / US",
-   "seasons": null,
-   "season_inferred": false,
-   "category": "Security / IT",
-   "location": "Remote - United States",
-   "url": "https://pennmutual.wd1.myworkdayjobs.com/_penn-careers/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
-   "posted_at": "2026-11-05T00:00:00Z",
-   "posted_at_source": "date_only",
-   "first_seen_at": "2026-11-05T22:39:58Z",
-   "sponsorship": "unknown",
-   "salary": null,
-   "skills": [
-    "AWS"
-   ],
-   "source": "workday",
-   "h1b_approvals": null,
-   "program": "Entry-level job",
-   "remote": true
-  },
-  {
-   "id": "oracle:edix.fa.us2.oraclecloud.com:8966",
-   "company": "Corsair",
-   "title": "Technical Support Specialist",
-   "season": "Remote — Florida / US",
-   "seasons": null,
-   "season_inferred": false,
-   "category": "IT Support / Ops",
-   "location": "Remote (US), United States",
-   "url": "https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8966",
-   "posted_at": "2026-11-03",
-   "posted_at_source": "date_only",
-   "first_seen_at": "2026-11-03T21:40:36Z",
-   "sponsorship": "unknown",
-   "salary": null,
-   "skills": [],
-   "source": "oracle",
-   "h1b_approvals": null,
-   "program": "Entry-level job",
-   "remote": true
-  }
- ]
+ "count": 0,
+ "jobs": []
 }

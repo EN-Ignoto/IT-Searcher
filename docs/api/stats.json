@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-06T20:17:35Z",
- "fetched_at": "2026-11-06T20:17:35Z",
- "duration_seconds": 89.5,
+ "generated_at": "2026-11-06T20:22:36Z",
+ "fetched_at": "2026-11-06T20:22:36Z",
+ "duration_seconds": 89.6,
  "companies_total": 33,
  "collection_boards": [
   "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:cx_1",
@@ -60,7 +60,7 @@
   "malformed-response": 1
  },
  "degraded_fetches": 1,
- "roles_matched": 2,
+ "roles_matched": 0,
  "dropped_no_year_in_title": 0,
  "dropped_no_year_undated": 0,
  "dropped_no_year_dated_too_old": 0,
@@ -70,25 +70,16 @@
  "dropped_no_year_by_reason": {},
  "dropped_offcycle_by_text": 0,
  "roles_cycle_inferred": 0,
- "roles_by_source": {
-  "oracle": 1,
-  "workday": 1
- },
- "roles_by_cycle": {
-  "Remote — Florida / US": 2
- },
- "roles_by_region": {
-  "US": 2
- },
- "sponsorship_counts": {
-  "unknown": 2
- },
- "posted_date_coverage": 1.0,
+ "roles_by_source": {},
+ "roles_by_cycle": {},
+ "roles_by_region": {},
+ "sponsorship_counts": {},
+ "posted_date_coverage": 0.0,
  "enriched_this_run": 7,
  "enrichment_detail_fetches": 6,
  "purged_this_run": 0,
  "new_this_run": 0,
- "open_total": 2,
+ "open_total": 0,
  "detection_latency": {
   "median_minutes": 350.2,
   "p95_minutes": 355.8,
@@ -100,5 +91,5 @@
   "median_days": 20.0,
   "sample_size": 108
  },
- "rendered_at": "2026-11-06T20:17:35Z"
+ "rendered_at": "2026-11-06T20:22:36Z"
 }

@@ -42,7 +42,7 @@ def is_opportunity(title: str) -> bool:
                      or re.search(r"\b(?:data cent(?:er|re)|network|noc) technician\b", title, re.I)))
 
 
-FIT_VERSION = 2
+FIT_VERSION = 3
 _EXPERIENCE = re.compile(
     r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)"
     r"\s*(?:\+|(?:-|–|to)\s*\d{1,2})?\s*years?"
@@ -50,7 +50,7 @@ _EXPERIENCE = re.compile(
 _WORD_NUMBERS = dict(zip('one two three four five six seven eight nine ten'.split(), range(1, 11), strict=True))
 
 
-def assess_fit(title: str, description: str | None) -> str:
+def assess_fit(title: str, description: str | None, location: str = "") -> str:
     """Require positive junior evidence; block experienced and unpaid postings.
 
     Unknown descriptions remain unverified, rather than silently claiming fit.
@@ -63,6 +63,19 @@ def assess_fit(title: str, description: str | None) -> str:
     text = strip_html(description or "")
     if re.search(r"\b(?:unpaid|volunteer|without compensation)\b", title + " " + text, re.I):
         return "rejected"
+    # A current undergraduate does not yet meet a completed bachelor's
+    # requirement. Preserve student/pursuing wording and preferred degrees.
+    for match in re.finditer(
+            r"[^.]{0,60}\b(?:bachelor\w*|master\w*)(?:['’]s)?[^.]{0,200}\brequired\b",
+            text, re.I):
+        if not re.search(r"\b(?:pursuing|enrolled|student|toward|preferred)\b", match.group(), re.I):
+            return "rejected"
+    if location_group(location, title) == "remote":
+        for match in re.finditer(
+                r"\b(?:ability to|must|required to|expected to)\s+(?:work|be|report)"
+                r"[^.]{0,30}\bon[ -]?site\b[^.]{0,100}", text, re.I):
+            if location_group(match.group()) != "local":
+                return "rejected"
     for match in _EXPERIENCE.finditer(text):
         value = match.group(1).lower()
         years = int(value) if value.isdigit() else _WORD_NUMBERS[value]

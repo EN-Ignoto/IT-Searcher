@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**2 open postings** · Data as of 2026-11-06T20:17:35Z
+**0 open postings** · Data as of 2026-11-06T20:22:36Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -16,14 +16,7 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 
 Entry-level IT jobs and paid internships only. Generic engineering roles, senior titles, postings asking for 2+ years of experience, unpaid roles, and roles without readable requirements are excluded. Applications are manual on the employer website.
 
-## 🖥️ IT Support, Networks & Infrastructure
-
-### Remote — Florida / US  (2 roles)
-
-| Company | Role | Category | Location | Skills | Posted | Apply |
-|---|---|---|---|---|---|---|
-| Pennmutual 🆁 | Information Security Engineer 1 🆕 | Security / IT | Remote - United States | AWS | Nov 05, 2026 | [Apply](https://pennmutual.wd1.myworkdayjobs.com/_penn-careers/job/Remote---United-States/Information-Security-Engineer-1_R-100722) |
-| Corsair 🆁 | Technical Support Specialist | IT Support / Ops | Remote (US), United States | No skills listed | Nov 03, 2026 | [Apply](https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8966) |
+_No matching roles right now, the list fills as companies post. Star it and check back._
 
 <a id="drop-radar"></a>
 
@@ -41,16 +34,18 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 _2 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **2** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
 <details>
-<summary><strong>Recently closed</strong>: 23 roles that left the list in the last 14 days</summary>
+<summary><strong>Recently closed</strong>: 25 roles that left the list in the last 14 days</summary>
 
 _Why each one left is in the last column, because the two reasons carry different evidence. **Gone from feed** = two consecutive complete reads of the employer's board no longer returned it (strong, but not the employer telling us directly). **Out of scope** = still posted, but it no longer passes our filters. That's our call, not theirs. **Not recorded** = closed before we started tracking the reason._
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Corsair | Technical Support Specialist | Remote — Florida / US | 2026-11-06 | out of scope |
 | ADT | Remote Customer Technical Support | Remote — Florida / US | 2026-11-06 | out of scope |
 | CDW Corporation | IT Service Desk- 6AM - 6PM | Remote — Florida / US | 2026-11-06 | out of scope |
 | Crowdstrike | Technical Support | Remote — Florida / US | 2026-11-06 | out of scope |
 | Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-06 | out of scope |
+| Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-06 | out of scope |
 | Zoetis | Diagnostics Technical Support Representative | Remote — Florida / US | 2026-11-06 | out of scope |
 | Amplify | Summer 2027: IT Services Intern | Remote — Florida / US | 2026-11-02 | out of scope |
 | Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-02 | out of scope |

@@ -12,6 +12,7 @@ from intern_engine.connectors import (
     breezy,
     eightfold,
     greenhouse,
+    himalayas,
     icims,
     jobicy,
     lever,
@@ -1075,3 +1076,48 @@ def test_jobicy_malformed_and_empty_sources_cannot_close_old_roles():
     empty = _fetch(jobicy.fetch(_JOBICY_BOARD, FakeNet({"success": True, "jobs": []})))
     assert not empty.complete
     assert empty.incomplete_reason == INCOMPLETE_CAPPED
+
+
+_HIMALAYAS_BOARD = {"ats": "himalayas", "slug": "us-remote-it",
+                    "name": "Himalayas US Remote Jobs"}
+
+
+def test_himalayas_requires_us_location_and_keeps_original_apply_link():
+    from datetime import UTC, datetime, timedelta
+
+    now = datetime.now(UTC)
+    row = {
+        "title": "Help Desk Technician", "companyName": "Example IT Employer",
+        "guid": "https://himalayas.app/companies/example/jobs/help-desk-tech",
+        "applicationLink": "https://himalayas.app/companies/example/jobs/help-desk-tech",
+        "locationRestrictions": [{"alpha2": "US", "name": "United States"}],
+        "seniority": ["Entry-level"], "employmentType": ["Part Time"],
+        "description": "Troubleshoot Windows and Linux laptops. $22 hourly.",
+        "pubDate": int(now.timestamp()),
+        "expiryDate": int((now + timedelta(days=3)).timestamp()),
+    }
+    payload = {"jobs": [
+        row,
+        {**row, "guid": row["guid"] + "-canada",
+         "locationRestrictions": [{"alpha2": "CA"}]},
+        {**row, "guid": row["guid"] + "-senior", "seniority": ["Senior"]},
+        {**row, "guid": row["guid"] + "-expired",
+         "expiryDate": int((now - timedelta(days=1)).timestamp())},
+    ]}
+    result = _fetch(himalayas.fetch(_HIMALAYAS_BOARD, FakeNet(payload)))
+    assert not result.complete
+    assert result.incomplete_reason == INCOMPLETE_CAPPED
+    assert len(result.jobs) == 1
+    job = result.jobs[0]
+    assert job.company == "Example IT Employer (via Himalayas)"
+    assert job.url == row["applicationLink"]
+    assert job.title == "Help Desk Technician"
+    assert job.posted_at is not None
+    assert job.location == "Remote - United States"
+
+
+def test_himalayas_malformed_response_does_not_close_existing_jobs():
+    result = _fetch(himalayas.fetch(_HIMALAYAS_BOARD, FakeNet({"error": "rate limited"})))
+    assert result.jobs == []
+    assert not result.complete
+    assert result.incomplete_reason == INCOMPLETE_MALFORMED

@@ -1664,6 +1664,11 @@
     "last_attempt_at": "2026-11-06T18:39:58Z",
     "last_error": "malformed-response"
   },
+  "workday:availity:availity_careers_us": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-06T20:17:34Z",
+    "last_error": "ReadTimeout: "
+  },
   "workday:aviagen:aviagen-careers": {
     "consecutive_failures": 2,
     "last_attempt_at": "2026-11-06T18:39:58Z",
@@ -1823,11 +1828,6 @@
     "consecutive_failures": 2,
     "last_attempt_at": "2026-11-06T18:39:58Z",
     "last_error": "HTTPStatusError: Client error '429 Too Many Requests' for url 'https://ccf.wd1.myworkdayjobs.com/wday/cxs/ccf/ClevelandClinicCareers/jobs'\nFor more information check: https://developer.mozilla.org/en-"
-  },
-  "workday:cdw:careers": {
-    "consecutive_failures": 1,
-    "last_attempt_at": "2026-11-06T18:39:58Z",
-    "last_error": "HTTPStatusError: Client error '429 Too Many Requests' for url 'https://cdw.wd5.myworkdayjobs.com/wday/cxs/cdw/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTT"
   },
   "workday:centerstone:centerstonecareers": {
     "consecutive_failures": 2,
@@ -2215,8 +2215,8 @@
     "last_error": "malformed-response"
   },
   "workday:leidos:external": {
-    "consecutive_failures": 1,
-    "last_attempt_at": "2026-11-06T18:39:58Z",
+    "consecutive_failures": 2,
+    "last_attempt_at": "2026-11-06T20:17:34Z",
     "last_error": "malformed-response"
   },
   "workday:lighting:jobs-and-careers": {
@@ -2705,11 +2705,6 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://wmeimg.wd1.myworkdayjobs.com/wday/cxs/wmeimg/ENDEAVOR/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP"
   },
   "workday:wvumedicine:wvuh": {
-    "consecutive_failures": 1,
-    "last_attempt_at": "2026-11-06T18:39:58Z",
-    "last_error": "malformed-response"
-  },
-  "workday:zillow:zillow_group_external": {
     "consecutive_failures": 1,
     "last_attempt_at": "2026-11-06T18:39:58Z",
     "last_error": "malformed-response"

@@ -1,39 +1,66 @@
 {
- "generated_at": "2026-11-06T18:39:58Z",
- "fetched_at": "2026-11-06T18:39:58Z",
- "duration_seconds": 2409.5,
- "companies_total": 5090,
+ "generated_at": "2026-11-06T20:17:35Z",
+ "fetched_at": "2026-11-06T20:17:35Z",
+ "duration_seconds": 89.5,
+ "companies_total": 33,
+ "collection_boards": [
+  "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:cx_1",
+  "ashby:amplify",
+  "workday:availity:availity_careers_us",
+  "workday:bigcommerce:commerce",
+  "workday:cdw:careers",
+  "oracle:edix.fa.us2.oraclecloud.com:cx_1",
+  "workday:crowdstrike:crowdstrikecareers",
+  "ashby:eightsleep",
+  "workday:guidehouse:external",
+  "oracle:efet.fa.us2.oraclecloud.com:cx_1009",
+  "workday:impactadvisors:impactadvisors",
+  "workday:talentmanagementsolution:jonassoftwarecanada",
+  "workday:leidos:external",
+  "workday:mymvw:mvw",
+  "workday:talentmanagementsolution:jonassoftwareusa",
+  "ashby:nash",
+  "smartrecruiters:nbcuniversal3",
+  "rippling:patientnow",
+  "workday:pennmutual:_penn-careers",
+  "workday:talentmanagementsolution:perseus-careers",
+  "workday:philips:jobs-and-careers",
+  "rippling:rippling",
+  "smartrecruiters:rrsgroup",
+  "ashby:runpod",
+  "ashby:skydio",
+  "smartrecruiters:sosi1",
+  "workday:disney:disneycareer",
+  "workday:disney:disneycareerdc",
+  "rippling:topdoglaw",
+  "workday:ucf:careers",
+  "workday:wexinc:wexinc",
+  "workday:zillow:zillow_group_external",
+  "workday:zoom:zoom"
+ ],
  "companies_by_source": {
-  "greenhouse": 1127,
-  "lever": 421,
-  "ashby": 804,
-  "recruitee": 3,
-  "workday": 1865,
-  "smartrecruiters": 308,
-  "rippling": 173,
-  "workable": 207,
-  "oracle": 164,
-  "amazon": 1,
-  "breezy": 16,
-  "eightfold": 1
+  "oracle": 3,
+  "ashby": 5,
+  "workday": 19,
+  "smartrecruiters": 3,
+  "rippling": 3
  },
- "quarantined": 333,
- "fetched_ok": 4649,
- "fetch_errors": 108,
+ "quarantined": 0,
+ "fetched_ok": 32,
+ "fetch_errors": 1,
  "errors_by_source": {
-  "workday": 53,
-  "workable": 55
+  "workday": 1
  },
- "fetch_success_rate": 0.977,
- "fetch_success_rate_registry": 0.913,
- "snapshots_complete": 3942,
- "snapshots_partial": 707,
+ "fetch_success_rate": 0.97,
+ "fetch_success_rate_registry": 0.97,
+ "snapshots_complete": 22,
+ "snapshots_partial": 10,
  "partial_by_reason": {
-  "result-cap": 605,
-  "malformed-response": 102
+  "result-cap": 9,
+  "malformed-response": 1
  },
- "degraded_fetches": 102,
- "roles_matched": 20,
+ "degraded_fetches": 1,
+ "roles_matched": 2,
  "dropped_no_year_in_title": 0,
  "dropped_no_year_undated": 0,
  "dropped_no_year_dated_too_old": 0,
@@ -44,30 +71,24 @@
  "dropped_offcycle_by_text": 0,
  "roles_cycle_inferred": 0,
  "roles_by_source": {
-  "ashby": 2,
-  "lever": 1,
-  "oracle": 2,
-  "workable": 1,
-  "workday": 18
+  "oracle": 1,
+  "workday": 1
  },
  "roles_by_cycle": {
-  "Stretch — remote": 16,
-  "Remote — Florida / US": 7,
-  "Stretch — Orlando area": 1
+  "Remote — Florida / US": 2
  },
  "roles_by_region": {
-  "US": 24
+  "US": 2
  },
  "sponsorship_counts": {
-  "unknown": 23,
-  "citizens-only": 1
+  "unknown": 2
  },
  "posted_date_coverage": 1.0,
  "enriched_this_run": 7,
- "enrichment_detail_fetches": 4,
+ "enrichment_detail_fetches": 6,
  "purged_this_run": 0,
- "new_this_run": 3,
- "open_total": 24,
+ "new_this_run": 0,
+ "open_total": 2,
  "detection_latency": {
   "median_minutes": 350.2,
   "p95_minutes": 355.8,
@@ -79,5 +100,5 @@
   "median_days": 20.0,
   "sample_size": 108
  },
- "rendered_at": "2026-11-06T18:39:58Z"
+ "rendered_at": "2026-11-06T20:17:35Z"
 }

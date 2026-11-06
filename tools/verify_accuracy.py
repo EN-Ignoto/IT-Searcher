@@ -80,6 +80,23 @@ _REQUIRED_STATS = {
 }
 
 
+def usable_snapshot_rate(complete, partial, reasons):
+    """Intentional result caps are usable; malformed/stalled responses are not."""
+    capped = reasons.get("result-cap", 0) if isinstance(reasons, dict) else 0
+    capped = capped if isinstance(capped, int) and 0 <= capped <= partial else 0
+    return (complete + capped) / max(complete + partial, 1)
+
+
+def valid_collection_scope(boards, companies_total, companies):
+    """A focused refresh must name exactly the known boards it measured."""
+    known = {registry.board_key(c) for c in companies}
+    return (isinstance(boards, list) and bool(boards)
+            and all(isinstance(key, str) for key in boards)
+            and len(boards) == companies_total
+            and len(set(boards)) == len(boards)
+            and set(boards) <= known)
+
+
 def main() -> None:
     cfg = config.load_config()
     cycles = config.cycles(cfg)
@@ -147,6 +164,11 @@ def main() -> None:
             flag(r, "not-a-tech-title")
         if cfg.get("opportunity_scope") == "it" and season != filters_it.bucket(title, r.get("location") or ""):
             flag(r, "wrong-local-or-remote-section")
+        if cfg.get("opportunity_scope") == "it" and (
+            r.get("entry_fit") != "eligible"
+            or r.get("entry_fit_version") != filters_it.FIT_VERSION
+        ):
+            flag(r, "entry-fit-unverified")
         posted = (r.get("posted_at") or "")[:10]
         # Age only disqualifies a role whose cycle we INFERRED, where recency
         # was the evidence. When the employer stated the cycle, an old posting
@@ -316,10 +338,12 @@ def main() -> None:
         partial_by_reason = stats.get("partial_by_reason")
         if isinstance(complete, int) and isinstance(partial, int):
             total = complete + partial
-            if total and complete / total < _MIN_COMPLETE_SNAPSHOT_RATE:
+            # A planned pagination cap is not a broken source. Those boards
+            # cannot close missing roles, but the returned postings are valid.
+            if total and usable_snapshot_rate(complete, partial, partial_by_reason) < _MIN_COMPLETE_SNAPSHOT_RATE:
                 gates.append(
                     f"  [snapshot-quality] only {complete}/{total} sources returned a "
-                    f"complete snapshot (floor {_MIN_COMPLETE_SNAPSHOT_RATE:.0%})"
+                    f"complete snapshot and too few safely capped (floor {_MIN_COMPLETE_SNAPSHOT_RATE:.0%})"
                 )
             # The health half of the same measurement: boards that answered with
             # something we could not parse or could not page through.
@@ -372,8 +396,13 @@ def main() -> None:
                 gates.append("  [stats-arithmetic] fetch_success_rate is inconsistent")
             if stats.get("fetch_success_rate_registry") != expected_registry_rate:
                 gates.append("  [stats-arithmetic] registry success rate is inconsistent")
-            registry_total = len(registry.load())
-            if companies_total != registry_total and not (
+            companies = registry.load()
+            registry_total = len(companies)
+            scoped = "collection_boards" in stats
+            valid_scope = valid_collection_scope(stats.get("collection_boards"), companies_total, companies)
+            if scoped and not valid_scope:
+                gates.append("  [collection-scope] invalid, duplicate, or unknown board identities")
+            if not valid_scope and companies_total != registry_total and not (
                     (os.environ.get("ALLOW_STALE_STATS") or "").lower() in {"1", "true", "yes"}
                     and companies_total < registry_total
             ):

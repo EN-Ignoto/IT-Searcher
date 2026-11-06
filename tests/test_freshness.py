@@ -37,7 +37,8 @@ def test_old_internships_and_undated_discoveries_leave_active_feed():
     }
     for row in records.values():
         row.update(company='Acme', location='Orlando, FL', is_open=True,
-                   season=filters_it.BUCKETS[0])
+                   season=filters_it.BUCKETS[0], entry_fit="eligible",
+                   entry_fit_version=filters_it.FIT_VERSION)
     pipeline._close_out_of_scope(records, cfg)
     assert not records['intern']['is_open']
     assert not records['undated']['is_open']

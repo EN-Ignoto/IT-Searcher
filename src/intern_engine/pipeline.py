@@ -719,7 +719,10 @@ def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None
             record.get("season_inferred") and posted and posted.date() < infer_cutoff
         )
         rejected = (
-            (bool(title) and not (filters_it.is_opportunity(title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(title)))
+            (cfg.get("opportunity_scope") == "it" and (
+                record.get("entry_fit") != "eligible"
+                or record.get("entry_fit_version") != filters_it.FIT_VERSION))
+            or (bool(title) and not (filters_it.is_opportunity(title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(title)))
             or (bool(title) and tech_only and not (filters_it.is_relevant(title) if cfg.get("opportunity_scope") == "it" else filters_secnet.is_relevant(title)))
             or (
                 has_cycle_evidence
@@ -791,6 +794,12 @@ def run_update() -> tuple[dict, dict, list[str]]:
         offcycle = offcycle_sticky
         still = []
         for job in kept:
+            if cfg.get("opportunity_scope") == "it" and job.entry_fit != "eligible":
+                record = existing.get(job.id)
+                if record:
+                    record.update(is_open=False, closed_at=ts, closed_reason="out-of-scope",
+                                  entry_fit=job.entry_fit, entry_fit_version=job.entry_fit_version)
+                continue
             if cfg.get("opportunity_scope") == "it" and freshness.expired(
                 job.posted_at, (existing.get(job.id) or {}).get("first_seen_at"),
                 config.max_age_days(cfg)
@@ -963,6 +972,7 @@ def _build_stats(companies, benched, succeeded, complete_keys, errors, errors_by
         "fetched_at": fetched_at,
         "duration_seconds": duration,
         "companies_total": len(companies),
+        "collection_boards": [registry.board_key(c) for c in companies],
         "companies_by_source": dict(Counter(c["ats"] for c in companies)),
         "quarantined": len(benched),
         "fetched_ok": len(succeeded),

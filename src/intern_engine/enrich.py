@@ -13,7 +13,7 @@ from __future__ import annotations
 import asyncio
 import re
 
-from . import filters, skills, sponsorship
+from . import filters, filters_it, skills, sponsorship
 from .models import Job
 from .net import Net
 
@@ -131,6 +131,10 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
         nonlocal fetched
         prior = existing.get(job.id) or {}
         has_inline_evidence = job.description is not None
+        fit_current = prior.get("entry_fit_version") == filters_it.FIT_VERSION
+        if fit_current:
+            job.entry_fit = prior.get("entry_fit")
+            job.entry_fit_version = filters_it.FIT_VERSION
         # A verdict is settled only while the classifier that produced it is
         # still current. Records stamped with an older classifier_v (or none)
         # are re-read once, so rule improvements reach the WHOLE live list
@@ -139,7 +143,7 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
         settled = current and bool(
             prior.get("enriched_at") or prior.get("sponsorship", "unknown") != "unknown"
         )
-        if settled and prior.get("skills") is not None and not has_inline_evidence:
+        if settled and fit_current and prior.get("skills") is not None and not has_inline_evidence:
             job.sponsorship = prior.get("sponsorship", "unknown")
             return None  # already settled on an earlier run
         # (settled but skills missing = record predates skill tags; re-fetch once)
@@ -171,6 +175,8 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
         # A description carried by the current list payload, or fetched now to
         # backfill old metadata, is fresher evidence than a stored verdict. The
         # old short-circuit froze changed Lever/Ashby-style postings forever.
+        job.entry_fit = filters_it.assess_fit(job.title, text)
+        job.entry_fit_version = filters_it.FIT_VERSION
         job.sponsorship = sponsorship.classify(text)
         job.skills = skills.extract(text, job.title)
         if not job.salary:

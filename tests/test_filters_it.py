@@ -35,9 +35,9 @@ def test_location_scope(location, expected):
     assert filters_it.location_group(location) == expected
 
 
-def test_broad_network_role_is_labeled_stretch():
-    assert filters_it.is_opportunity("Network Engineer")
-    assert filters_it.bucket("Network Engineer", "Orlando, FL") == "Stretch — Orlando area"
+def test_broad_network_role_is_excluded():
+    assert not filters_it.is_opportunity("Network Engineer")
+    assert filters_it.bucket("Network Engineer", "Orlando, FL") is None
     assert filters_it.bucket("Help Desk Technician", "Orlando, FL") == "Orlando area"
 
 
@@ -54,14 +54,14 @@ def test_pipeline_accepts_regular_local_job_without_internship_cycle():
                 location, f"https://example.com/{i}")
             for i, (title, location) in enumerate([
                 ("Help Desk Technician", "Orlando, FL"),
-                ("Network Engineer", "Lake Mary, FL"),
+                ("Junior Network Engineer", "Lake Mary, FL"),
                 ("IT Intern Summer 2027", "Remote - United States"),
                 ("IT Technician", "Seattle, WA"),
                 ("Senior IT Support Specialist", "Orlando, FL"),
             ])]
     kept, *_ = pipeline._keep_matching([(company, Fetch(jobs), None)], cfg, {})
     assert [j.title for j in kept] == [j.title for j in jobs[:3]]
-    assert [j.season for j in kept] == [filters_it.BUCKETS[i] for i in (0, 2, 1)]
+    assert [j.season for j in kept] == [filters_it.BUCKETS[i] for i in (0, 0, 1)]
 
 
 def test_scope_migrates_local_record_and_closes_nonlocal_record():
@@ -72,9 +72,97 @@ def test_scope_migrates_local_record_and_closes_nonlocal_record():
         "default_cycle": filters_it.BUCKETS[0],
     })
     records = {loc: {"title": "IT Intern Summer 2027", "location": loc,
-                     "company": "Acme", "is_open": True, "season": "Summer 2027"}
+                     "company": "Acme", "is_open": True, "season": "Summer 2027",
+                     "entry_fit": "eligible", "entry_fit_version": filters_it.FIT_VERSION}
                for loc in ("Orlando, FL", "Seattle, WA")}
     pipeline._close_out_of_scope(records, cfg)
     assert records["Orlando, FL"]["is_open"]
     assert records["Orlando, FL"]["season"] == filters_it.BUCKETS[0]
     assert not records["Seattle, WA"]["is_open"]
+
+
+@pytest.mark.parametrize('title', [
+    'Level 2 NOC Systems Administrator', 'Technical Support Engineer II',
+    'Intermediate Technical Support Analyst', 'Cyber Forensic Analyst Journeyman',
+    'Cloud - Bare Metal Infrastructure Engineer',
+    'Field Service Technician HVAC - Data Center',
+    'Network & Wireless Infrastructure Engineer', 'Senior IT Intern',
+])
+def test_actual_bad_feed_titles_are_rejected(title):
+    assert not filters_it.is_opportunity(title)
+
+
+@pytest.mark.parametrize('text,expected', [
+    ('No experience required. Paid internship.', 'eligible'),
+    ('Paid internship. Qualifications: 0–2 years of IT support experience.', 'eligible'),
+    ('Minimum three years of technical support experience.', 'rejected'),
+    ('Requires 5+ years of experience with Linux.', 'rejected'),
+    ('<p>3–5 years of related experience</p>', 'rejected'),
+    ('This is an unpaid internship.', 'rejected'),
+    ('Volunteer IT support opportunity', 'rejected'),
+    (None, 'unverified'), ('', 'unverified'),
+])
+def test_requirements_override_junior_title(text, expected):
+    assert filters_it.assess_fit('IT Support Intern', text) == expected
+
+
+def test_old_unverified_and_rejected_records_cannot_survive_render():
+    from intern_engine import config, pipeline
+    cfg = config.validate_config({
+        'opportunity_scope': 'it', 'cycles': filters_it.BUCKETS,
+        'default_cycle': filters_it.BUCKETS[0], 'max_age_days': 0,
+    })
+    records = {verdict: dict(title='Help Desk Technician', company='Acme',
+                            location='Orlando, FL', is_open=True,
+                            season=filters_it.BUCKETS[0], entry_fit=verdict,
+                            entry_fit_version=filters_it.FIT_VERSION)
+               for verdict in ('eligible', 'rejected', None)}
+    pipeline._close_out_of_scope(records, cfg)
+    assert records['eligible']['is_open']
+    assert not records['rejected']['is_open']
+    assert not records[None]['is_open']
+
+
+def test_old_sponsorship_cache_must_not_skip_entry_requirements():
+    import asyncio
+
+    from intern_engine import enrich, sponsorship
+    from intern_engine.models import Job
+    job = Job('greenhouse:acme:9', 'greenhouse', 'Acme', 'acme',
+              'Help Desk Technician', 'Orlando, FL', 'https://example.com/9')
+    existing = {job.id: dict(sponsorship='unknown', enriched_at='old', skills=[],
+                            classifier_v=sponsorship.VERSION)}
+    class Net:
+        async def get_json(self, url):
+            return {'content': '<p>Requires 5 years of IT experience.</p>'}
+    asyncio.run(enrich.enrich_jobs([job], existing, Net()))
+    assert job.entry_fit == 'rejected'
+
+
+@pytest.mark.parametrize('title,text,expected', [
+    ('Help Desk Technician', 'Requires 2 years of IT experience.', 'rejected'),
+    ('Help Desk Technician', '0-2 years of experience. Windows troubleshooting.', 'eligible'),
+    ('Diagnostics Technical Support Representative', 'No experience required.', 'rejected'),
+    ('IT Intern', 'Learn networking and Windows administration.', 'unverified'),
+    ('IT Intern', 'Compensation: $20 per hour. No experience required.', 'eligible'),
+])
+def test_first_it_job_requirements(title, text, expected):
+    assert filters_it.assess_fit(title, text) == expected
+
+
+def test_focused_collection_requires_exact_known_board_identities():
+    from tools.verify_accuracy import valid_collection_scope
+    companies = [dict(ats='lever', slug='a'), dict(ats='lever', slug='b')]
+    assert valid_collection_scope(['lever:a'], 1, companies)
+    assert not valid_collection_scope(['lever:unknown'], 1, companies)
+    assert not valid_collection_scope(['lever:a', 'lever:a'], 2, companies)
+    assert not valid_collection_scope(['lever:a'], 2, companies)
+    assert not valid_collection_scope([], 0, companies)
+
+
+def test_focused_refresh_does_not_mistake_pagination_caps_for_failure():
+    from tools.verify_accuracy import usable_snapshot_rate
+    assert usable_snapshot_rate(22, 10, {'result-cap': 10}) == 1
+    assert usable_snapshot_rate(22, 10, {'malformed-response': 10}) < 0.70
+    assert usable_snapshot_rate(22, 10, {'pagination-stalled': 10}) < 0.70
+    assert usable_snapshot_rate(22, 10, {'result-cap': 11}) < 0.70

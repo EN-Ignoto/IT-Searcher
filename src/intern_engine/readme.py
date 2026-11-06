@@ -265,9 +265,9 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
             "Nearby-city coverage includes Orlando, Lake Mary, Sanford, Winter Park, Kissimmee, "
             "and surrounding communities. This is city matching, not a measured driving radius.", "",
             "Remote postings need US or Florida location evidence. Confirm state eligibility on the employer page.", "",
-            "**Stretch** means the title lacks a clear junior, internship, or routine support signal. "
-            "Experience requirements and schedule must be checked in the posting; this is a broad discovery list, "
-            "not a guarantee of eligibility. Senior and management titles are excluded.", "",
+            "Entry-level IT jobs and paid internships only. Generic engineering roles, senior titles, "
+            "postings asking for 2+ years of experience, unpaid roles, and roles without readable "
+            "requirements are excluded. Applications are manual on the employer website.", "",
         ]
     count_phrase = f"{total_open} open roles"
     if shown is not None and shown != total_open:

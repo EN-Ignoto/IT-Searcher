@@ -3,7 +3,7 @@ carried over without refetching, and detail fetches backfill what they can."""
 
 import asyncio
 
-from intern_engine import enrich, sponsorship
+from intern_engine import enrich, filters_it, sponsorship
 from intern_engine.models import Job
 
 
@@ -44,7 +44,7 @@ class TestEnrich:
         job = _job(jid="greenhouse:acme:9", source="greenhouse")
         existing = {"greenhouse:acme:9": {
             "sponsorship": "citizens-only", "enriched_at": "x", "skills": ["Python"],
-            "classifier_v": sponsorship.VERSION,
+            "classifier_v": sponsorship.VERSION, "entry_fit": "eligible", "entry_fit_version": filters_it.FIT_VERSION,
         }}
         enriched, fetched = _run(enrich.enrich_jobs([job], existing, net))
         assert job.sponsorship == "citizens-only"

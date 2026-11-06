@@ -114,7 +114,7 @@ def cmd_update() -> None:
     # otherwise a run the gate would reject could still reach the mirror.
     # Queue, don't send: these roles aren't published until the workflow's
     # commit lands, and an alert for an unpublished role is a broken promise.
-    pending = outbox.queue(new_ids)
+    pending = [] if pipeline.config.load_config().get("opportunity_scope") == "it" else outbox.queue(new_ids)
     print("Update complete:")
     for k, v in stats.items():
         print(f"  {k:<24} {v}")

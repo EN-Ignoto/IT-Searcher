@@ -94,7 +94,9 @@ def write_feed(store_data: dict, data_as_of: str | None = None) -> int:
     entries = []
     for record in store_data.values():
         if config.load_config().get("opportunity_scope") == "it" and (
-            not filters_it.is_opportunity(record.get("title") or "")
+            record.get("entry_fit") != "eligible"
+            or record.get("entry_fit_version") != filters_it.FIT_VERSION
+            or not filters_it.is_opportunity(record.get("title") or "")
             or not filters_it.bucket(record.get("title") or "", record.get("location") or "")
         ):
             continue

@@ -1,4 +1,5 @@
 """US remote IT feed is normalized safely and never closes old rolling-window jobs."""
+
 import asyncio
 
 from intern_engine.connectors import jobicy

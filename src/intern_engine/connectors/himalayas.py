@@ -25,7 +25,11 @@ def _eligible_location(row: dict) -> bool:
         return False
     # Empty = worldwide-eligible; nonempty must explicitly include the US.
     if restrictions and not any(
-        isinstance(v, dict) and str(v.get("alpha2", "")).upper() == "US"
+        (isinstance(v, str) and v.strip().casefold() in
+         {"us", "usa", "united states", "united states of america"})
+        or (isinstance(v, dict) and (
+            str(v.get("alpha2", "")).upper() == "US"
+            or str(v.get("name", "")).casefold() == "united states"))
         for v in restrictions
     ):
         return False

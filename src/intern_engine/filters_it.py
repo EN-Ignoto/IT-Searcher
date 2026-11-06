@@ -13,7 +13,7 @@ ENTRY = re.compile(r"\b(entry[ -]level|junior|jr|associate|trainee|graduate|new 
 SUPPORT = re.compile(r"\b(help[ -]?desk|service desk|desktop support|it support|computer technician|pc technician|it technician|it specialist|technical support|end[ -]user|field support|support technician|support specialist)\b", re.I)
 IT = re.compile(r"\b(information technology|it|help[ -]?desk|service desk|desktop|sysadmin|systems? administrat\w*|network|networking|noc|data cent(?:er|re)|cloud|infrastructure|linux|windows|technical support|computer technician|pc technician|end[ -]user|devops|site reliability|cyber\w*|infosec|soc analyst|information security)\b", re.I)
 EXCLUDE = re.compile(r"\b(sales|marketing|recruit\w*|mechanical|aerospace|electrical|embedded|firmware|software|civil|manufacturing|landscape|construction|financial|data scien\w*|data engineer|machine learning|provider network|social network|security guard|physical security|loss prevention|hvac|commissioning|facilities|electrician|plumbing|phlebotomist|product owner|project coordinator|diagnostic\w*|reporter|scrum master|product line|clinical|veterinary|medical device)\b", re.I)
-CITIES = re.compile(r"\b(orlando|winter park|winter garden|lake mary|sanford|kissimmee|altamonte springs|maitland|apopka|oviedo|longwood|casselberry|lake buena vista|celebration|ocoee|windermere|winter springs|sanford|st[.]? cloud|clermont|tavares|mount dora)\b", re.I)
+CITIES = re.compile(r"\b(orlando|winter park|winter garden|lake mary|sanford|kissimmee|poinciana|davenport|haines city|hunters creek|dr[.]? phillips|buenaventura lakes|four corners|altamonte springs|maitland|apopka|oviedo|longwood|casselberry|lake buena vista|celebration|ocoee|windermere|winter springs|st[.]? cloud|clermont|tavares|mount dora)\b", re.I)
 FL = re.compile(r"\b(fl|florida)\b", re.I)
 OTHER_STATE = re.compile(r",\s*(?:AL|AK|AZ|AR|CA|CO|CT|DE|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY)\b")
 REMOTE_STATE = re.compile(
@@ -42,7 +42,7 @@ def is_opportunity(title: str) -> bool:
                      or re.search(r"\b(?:data cent(?:er|re)|network|noc) technician\b", title, re.I)))
 
 
-FIT_VERSION = 3
+FIT_VERSION = 4
 _EXPERIENCE = re.compile(
     r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)"
     r"\s*(?:\+|(?:-|–|to)\s*\d{1,2})?\s*years?"
@@ -61,7 +61,13 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
     if not is_opportunity(title):
         return "rejected"
     text = strip_html(description or "")
-    if re.search(r"\b(?:unpaid|volunteer|without compensation)\b", title + " " + text, re.I):
+    # Benefits such as volunteer days or unpaid leave do not make a job unpaid.
+    if re.search(r"\bvolunteer\b", title, re.I) or re.search(
+            r"\b(?:unpaid\s+(?:internship|position|role|opportunity)"
+            r"|(?:internship|position|role)\s+(?:is|will be)\s+unpaid"
+            r"|without compensation"
+            r"|volunteer\s+(?:[\w-]+\s+){0,3}(?:opportunity|position|role|internship))\b",
+            title + " " + text, re.I):
         return "rejected"
     # A current undergraduate does not yet meet a completed bachelor's
     # requirement. Preserve student/pursuing wording and preferred degrees.
@@ -80,6 +86,17 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
         value = match.group(1).lower()
         years = int(value) if value.isdigit() else _WORD_NUMBERS[value]
         if years >= 2:
+            # Two years preferred can be a plausible first-job stretch;
+            # an explicit two-year minimum or any 3+ year requirement cannot.
+            left = max(text.rfind(".", 0, match.start()),
+                       text.rfind(";", 0, match.start()))
+            ends = [i for i in (text.find(".", match.end()),
+                                text.find(";", match.end())) if i >= 0]
+            clause = text[left + 1:min(ends) if ends else len(text)]
+            preferred = bool(re.search(r"\b(?:preferred|nice to have|a plus|ideally)\b", clause, re.I))
+            mandatory = bool(re.search(r"\b(?:required|minimum|at least|must have|need to have)\b", clause, re.I))
+            if years == 2 and preferred and not mandatory:
+                continue
             return "rejected"
     if is_internship(title) and not re.search(
             r"\bpaid\b|\$\s*\d|\b(?:USD|hourly rate|hourly wage)\b", text, re.I):

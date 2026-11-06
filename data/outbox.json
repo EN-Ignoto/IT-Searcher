@@ -11,7 +11,10 @@
       "workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289",
       "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
       "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419",
-      "workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051"
+      "workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051",
+      "workday:thinkbrg:/job/Remote---USA/Cybersecurity-Analyst_JR101249",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Junior-Salesforce-Health-Cloud-System-Administrator_R-00196200",
+      "workday:zoetis:/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901"
     ],
     "telegram": [
       "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287",
@@ -24,7 +27,10 @@
       "workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289",
       "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
       "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419",
-      "workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051"
+      "workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051",
+      "workday:thinkbrg:/job/Remote---USA/Cybersecurity-Analyst_JR101249",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Junior-Salesforce-Health-Cloud-System-Administrator_R-00196200",
+      "workday:zoetis:/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901"
     ]
   }
 }

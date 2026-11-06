@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**21 open postings** · Data as of 2026-11-06T11:43:18Z
+**24 open postings** · Data as of 2026-11-06T18:39:58Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -18,10 +18,12 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 
 ## 🖥️ IT Support, Networks & Infrastructure
 
-### Remote — Florida / US  (5 roles)
+### Remote — Florida / US  (7 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| Leidos ✓ 🆁 | Junior Salesforce Health Cloud System Administrator 🆕 | Cloud Platform | 6314 Remote/Teleworker US | No skills listed | Nov 06, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Junior-Salesforce-Health-Cloud-System-Administrator_R-00196200) |
+| Zoetis ✓ 🆁 | Diagnostics Technical Support Representative 🆕 | IT Support / Ops | US Remote | No skills listed | Nov 06, 2026 | [Apply](https://zoetis.wd5.myworkdayjobs.com/zoetis/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901) |
 | CDW Corporation ✓ 🆁 | IT Service Desk- 6AM - 6PM 🆕 | IT Support / Ops | Remote – USA | No skills listed | Nov 05, 2026 | [Apply](https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289) |
 | Pennmutual 🆁 | Information Security Engineer 1 🆕 | Security / IT | Remote - United States | AWS | Nov 05, 2026 | [Apply](https://pennmutual.wd1.myworkdayjobs.com/_penn-careers/job/Remote---United-States/Information-Security-Engineer-1_R-100722) |
 | ADT ✓ 🆁 | Remote Customer Technical Support 🆕 | IT Support / Ops | United States +48 more | No skills listed | Nov 04, 2026 | [Apply](https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642) |
@@ -34,19 +36,20 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 |---|---|---|---|---|---|---|
 | Christie | Network & Wireless Infrastructure Engineer | Network / Telecom | Orlando, Florida, United States | No skills listed | Nov 03, 2026 | [Apply](https://apply.workable.com/christie-lites-3/j/26D143E2E2/) |
 
-### Stretch — remote  (15 roles)
+### Stretch — remote  (16 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| BRG 🆁 | Cybersecurity Analyst 🆕 | Security / IT | Remote - USA | LLMs, Azure | Nov 06, 2026 | [Apply](https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site/job/Remote---USA/Cybersecurity-Analyst_JR101249) |
 | Guidehouse ✓ 🆁 | Cloud Service Provider Costing Specialist 🆕 | Cloud Platform | US - Remote (Any location) | AWS, Azure | Nov 05, 2026 | [Apply](https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051) |
 | Leidos ✓ 🆁 | Site Reliability Engineering Scrum Master 🆕 | IT Support / Ops | 6314 Remote/Teleworker US | Azure | Nov 05, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419) |
 | Leidos ✓ 🆁 | IT Asset Analyst 🇺🇸 🆕 | IT Support / Ops | 6314 Remote/Teleworker US | No skills listed | Nov 04, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/IT-Asset-Analyst_R-00196272) |
 | Equip Health 🆁 | IT Operations Specialist 🆕 | IT Support / Ops | Remote - USA | AWS | Nov 04, 2026 | [Apply](https://jobs.ashbyhq.com/equip/829ff280-4d61-4b23-a754-af75e1282203) |
 | Ciena ✓ 🆁 | Advisor, Regional Services Product Line Management, Global Cloud Networking (GCN) 🆕 | Network / Telecom | Remote-US | No skills listed | Nov 04, 2026 | [Apply](https://ciena.wd5.myworkdayjobs.com/careers/job/Remote-US/Advisor--Regional-Services-Product-Line-Management--Global-Cloud-Networking--GCN-_R031997) |
-| ION Group 🆁 | Freelance Reporter/Analyst – Cybersecurity and AI Law Report and Anti-Corruption Report 🆕 | Security / IT | Remote US | No skills listed | Nov 04, 2026 | [Apply](https://jobs.lever.co/ion/541086b5-9de1-4f65-8038-f9690100b442) |
-| CDW Corporation ✓ 🆁 | Solution Specialist - Networking 🆕 | Network / Telecom | Remote – USA | No skills listed | Nov 04, 2026 | [Apply](https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Solution-Specialist---Networking_R26_00003287) |
+| ION Group 🆁 | Freelance Reporter/Analyst – Cybersecurity and AI Law Report and Anti-Corruption Report | Security / IT | Remote US | No skills listed | Nov 04, 2026 | [Apply](https://jobs.lever.co/ion/541086b5-9de1-4f65-8038-f9690100b442) |
+| CDW Corporation ✓ 🆁 | Solution Specialist - Networking | Network / Telecom | Remote – USA | No skills listed | Nov 04, 2026 | [Apply](https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Solution-Specialist---Networking_R26_00003287) |
 | Render 🆁 | Cloud - Bare Metal Infrastructure Engineer | Cloud Platform | Remote: United States | Python, LLMs, Kubernetes, Linux | Nov 04, 2026 | [Apply](https://jobs.ashbyhq.com/render/a22230e6-803d-4e2e-82f8-ff5f500cdc3d) |
-| CDW Corporation ✓ 🆁 | Microsoft Infrastructure Support Engineer 🆕 | Systems & Cloud Infra | Remote – USA | Azure | Nov 03, 2026 | [Apply](https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232) |
+| CDW Corporation ✓ 🆁 | Microsoft Infrastructure Support Engineer | Systems & Cloud Infra | Remote – USA | Azure | Nov 03, 2026 | [Apply](https://cdw.wd5.myworkdayjobs.com/careers/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232) |
 | Munters 🆁 | Field Service Technician HVAC - Data Center | Systems & Cloud Infra | Remote - Florida | No skills listed | Nov 03, 2026 | [Apply](https://munters.wd3.myworkdayjobs.com/external_careers/job/Remote---Florida/Field-Service-Technician-HVAC---Data-Center_R13936) |
 | Republic Services ✓ 🆁 | Information Security Analyst | Security / IT | USA - Remote | No skills listed | Nov 03, 2026 | [Apply](https://republic.wd5.myworkdayjobs.com/Republic/job/USA---Remote/Information-Security-Analyst_R-187780-1) |
 | Unisys ✓ 🆁 | Level 2 NOC Systems Administrator – Linux/Unix Focus | Network / Telecom | USA Remote | Linux, Python, Bash | Nov 03, 2026 | [Apply](https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786) |

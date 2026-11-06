@@ -5,8 +5,32 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-06T11:43:18Z</updated>
+  <updated>2026-11-06T18:39:58Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:workday:thinkbrg:/job/Remote---USA/Cybersecurity-Analyst_JR101249</id>
+    <title>BRG: Cybersecurity Analyst</title>
+    <link href="https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site/job/Remote---USA/Cybersecurity-Analyst_JR101249"/>
+    <updated>2026-11-06T18:39:58Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · Security / IT · Remote - USA · LLMs, Azure</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Junior-Salesforce-Health-Cloud-System-Administrator_R-00196200</id>
+    <title>Leidos: Junior Salesforce Health Cloud System Administrator</title>
+    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Junior-Salesforce-Health-Cloud-System-Administrator_R-00196200"/>
+    <updated>2026-11-06T18:39:58Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · Cloud Platform · 6314 Remote/Teleworker US · H-1B track record: ~79 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:zoetis:/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901</id>
+    <title>Zoetis: Diagnostics Technical Support Representative</title>
+    <link href="https://zoetis.wd5.myworkdayjobs.com/zoetis/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901"/>
+    <updated>2026-11-06T18:39:58Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · US Remote · H-1B track record: ~100 approvals (FY2022–2023)</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051</id>
     <title>Guidehouse: Cloud Service Provider Costing Specialist</title>

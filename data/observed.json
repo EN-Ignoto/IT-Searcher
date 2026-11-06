@@ -723,9 +723,10 @@
      "first_posted": "2025-11-14",
      "role_ids": [
       "workday:thinkbrg:/job/Remote---USA/Ai-Lab-Infrastructure-Engineer_JR100335",
-      "workday:thinkbrg:/job/Remote---USA/Consultant---Cybersecurity_JR101155"
+      "workday:thinkbrg:/job/Remote---USA/Consultant---Cybersecurity_JR101155",
+      "workday:thinkbrg:/job/Remote---USA/Cybersecurity-Analyst_JR101249"
      ],
-     "count": 2
+     "count": 3
     }
    }
   },
@@ -1971,9 +1972,10 @@
       "workday:leidos:/job/6314-RemoteTeleworker-US/Cloud-Engineering-Intern_R-00194668",
       "workday:leidos:/job/6314-RemoteTeleworker-US/Data-Center-Design-Intern_R-00193261",
       "workday:leidos:/job/6314-RemoteTeleworker-US/IT-Desktop-Engineering-Intern_R-00194524",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Junior-Salesforce-Health-Cloud-System-Administrator_R-00196200",
       "workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057"
      ],
-     "count": 4
+     "count": 5
     },
     "Stretch — remote": {
      "first_posted": "2026-10-06",
@@ -3590,6 +3592,18 @@
     }
    }
   },
+  "zoetis": {
+   "name": "Zoetis",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-06",
+     "role_ids": [
+      "workday:zoetis:/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901"
+     ],
+     "count": 1
+    }
+   }
+  },
   "zoom": {
    "name": "Zoom",
    "cycles": {
@@ -3628,5 +3642,5 @@
    }
   }
  },
- "updated_at": "2026-11-06T11:43:18Z"
+ "updated_at": "2026-11-06T18:39:58Z"
 }

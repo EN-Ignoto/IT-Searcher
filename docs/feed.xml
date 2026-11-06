@@ -5,8 +5,16 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-05T22:39:58Z</updated>
+  <updated>2026-11-06T03:06:05Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419</id>
+    <title>Leidos: Site Reliability Engineering Scrum Master</title>
+    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419"/>
+    <updated>2026-11-06T03:06:05Z</updated>
+    <category term="Stretch — remote"/>
+    <summary>Stretch — remote · IT Support / Ops · 6314 Remote/Teleworker US · Azure · H-1B track record: ~79 approvals (FY2022–2023)</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289</id>
     <title>CDW Corporation: IT Service Desk- 6AM - 6PM</title>

@@ -9,7 +9,8 @@
       "workday:ciena:/job/Remote-US/Advisor--Regional-Services-Product-Line-Management--Global-Cloud-Networking--GCN-_R031997",
       "workday:leidos:/job/6314-RemoteTeleworker-US/IT-Asset-Analyst_R-00196272",
       "workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289",
-      "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722"
+      "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419"
     ],
     "telegram": [
       "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287",
@@ -20,7 +21,8 @@
       "workday:ciena:/job/Remote-US/Advisor--Regional-Services-Product-Line-Management--Global-Cloud-Networking--GCN-_R031997",
       "workday:leidos:/job/6314-RemoteTeleworker-US/IT-Asset-Analyst_R-00196272",
       "workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289",
-      "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722"
+      "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419"
     ]
   }
 }

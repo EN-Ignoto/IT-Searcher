@@ -8,7 +8,7 @@ from . import filters_secnet as legacy
 BUCKETS = ["Orlando area", "Remote — Florida / US"]
 ENTRY_LEVEL = BUCKETS[0]
 INTERNSHIPS = BUCKETS[0]
-SENIOR = re.compile(r"\b(senior|sr\.?|staff|principal|lead|manager|director|head|vp|vice president|architect|intermediate|mid[ -]level|journeyman|expert|sme|ii|iii|iv|[2-9]|tier[ -]?[2-9]|level[ -]?[2-9])\b", re.I)
+SENIOR = re.compile(r"\b(senior|sr\.?|staff|principal|lead|manager|supervisor|director|head|vp|vice president|architect|intermediate|mid[ -]level|journeyman|expert|sme|ii|iii|iv|[2-9]|tier[ -]?[2-9]|level[ -]?[2-9])\b", re.I)
 ENTRY = re.compile(r"\b(entry[ -]level|junior|jr|associate|trainee|graduate|new grad|early career|(?:administrator|engineer|technician|analyst) (?:i|1)|level[ -]?(?:1|i)|tier[ -]?(?:1|i))\b", re.I)
 # Specific first-job operations paths; do not admit generic infrastructure roles.
 FOUNDATION = re.compile(

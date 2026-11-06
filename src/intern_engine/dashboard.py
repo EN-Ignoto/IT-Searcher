@@ -697,6 +697,7 @@ def generate(store_data: dict, stats: dict) -> None:
     <p class="sub">First-job IT candidates and paid internships. Postings mentioning 2+ years, advanced titles, unreadable requirements, and unpaid internships are excluded. Confirm schedule and remote-state eligibility with the employer.</p>
     <p class="sub">Read straight from {stats.get('companies_total', 0):,} employer
     job boards. Data as of {escape(updated)}.</p>
+    <p class="sub">Some remote listings are sourced from <a href="https://himalayas.app/">Himalayas</a>; apply using the original posting link. These are displayed here only, not distributed in RSS, JSON, or CSV exports.</p>
     <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
     · <a href="internships.csv">CSV</a> ·
     <a href="https://github.com/{escape(repo)}">source</a> ·

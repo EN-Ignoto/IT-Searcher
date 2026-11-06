@@ -93,6 +93,9 @@ def write_feed(store_data: dict, data_as_of: str | None = None) -> int:
     )
     entries = []
     for record in store_data.values():
+        # Himalayas licenses on-site display only; never syndicate its job data.
+        if record.get("source") == "himalayas":
+            continue
         if config.load_config().get("opportunity_scope") == "it" and (
             record.get("entry_fit") != "eligible"
             or record.get("entry_fit_version") != filters_it.FIT_VERSION
@@ -251,7 +254,8 @@ _API_FIELDS = (
 
 def write_api(store_data: dict, stats: dict) -> int:
     """Static JSON API: every open role + the latest run metrics."""
-    open_jobs = [r for r in store_data.values() if r.get("is_open")]
+    open_jobs = [r for r in store_data.values()
+                 if r.get("is_open") and r.get("source") != "himalayas"]
     open_jobs.sort(
         key=lambda r: ((r.get("posted_at") or "")[:10], _first_seen(r)), reverse=True
     )

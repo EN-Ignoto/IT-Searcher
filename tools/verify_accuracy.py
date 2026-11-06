@@ -207,9 +207,9 @@ def main() -> None:
         api_jobs = api.get("jobs")
         if not isinstance(api_jobs, list):
             raise ValueError("jobs must be a list")
-        store_ids = {r["id"] for r in open_jobs}
+        store_ids = {r["id"] for r in open_jobs if r.get("source") != "himalayas"}
         api_ids = {r.get("id") for r in api_jobs if isinstance(r, dict)}
-        if api.get("count") != len(open_jobs) or api_ids != store_ids:
+        if api.get("count") != len(store_ids) or api_ids != store_ids:
             problems.append(
                 f"  [api-identity-drift] api has {len(api_ids)} ids/count={api.get('count')}, "
                 f"store has {len(store_ids)} open ids (regenerate outputs)"
@@ -221,7 +221,7 @@ def main() -> None:
         with open(paths.CSV_PATH, newline="", encoding="utf-8") as f:
             csv_rows = list(csv.DictReader(f))
         csv_ids = [row.get("id") for row in csv_rows]
-        store_ids = {r["id"] for r in open_jobs}
+        store_ids = {r["id"] for r in open_jobs if r.get("source") != "himalayas"}
         if len(csv_ids) != len(set(csv_ids)) or set(csv_ids) != store_ids:
             problems.append("  [csv-identity-drift] data/internships.csv differs from store")
     except (OSError, csv.Error):

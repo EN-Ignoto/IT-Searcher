@@ -769,7 +769,9 @@ def generate(store_data: dict, data_as_of: str | None = None) -> dict:
 
     # The CSV is the machine-readable export: EVERY open role belongs in it,
     # not just the rows that survived the README's per-company display cap.
-    _write_csv(sorted(open_jobs, key=lambda r: _date_str(r)[:10], reverse=True))
+    # Himalayas permits display on our website but prohibits redistribution feeds.
+    exportable = [r for r in open_jobs if r.get("source") != "himalayas"]
+    _write_csv(sorted(exportable, key=lambda r: _date_str(r)[:10], reverse=True))
 
     return {"open": shown_total, "companies": employers}
 

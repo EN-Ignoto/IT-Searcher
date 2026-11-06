@@ -1,0 +1,74 @@
+name: Bootstrap validated IT postings
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/bootstrap-request.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: main
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Refresh two directly validated live IT sources
+        run: |
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, "src")
+          import run
+          from intern_engine import pipeline, registry
+
+          original = pipeline._load_companies
+          pipeline._load_companies = lambda: [
+              company for company in registry.load()
+              if company["ats"] in ("himalayas", "jobicy")
+          ]
+          assert len(pipeline._load_companies()) == 2
+          run.cmd_update()
+          pipeline._load_companies = original
+          PY
+      - name: Verify exact roles before publication
+        run: |
+          python tools/verify_accuracy.py
+          python - <<'PY'
+          import json
+          with open("data/stats.json", encoding="utf-8") as source:
+              stats = json.load(source)
+          count = stats["open_total"]
+          print(f"Validated live postings: {count}", flush=True)
+          # Do not publish another empty website; preserve the current public
+          # artifact if these independent sources do not yield actual matches.
+          if count < 1:
+              raise SystemExit("Neither source yielded a verified first-job role.")
+          PY
+      - name: Commit published job listings
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md data/jobs.json data/stats.json data/internships.csv \
+                  data/health.json data/history.jsonl data/rejected_titles.jsonl \
+                  data/observed.json data/known_windows.json data/outbox.json \
+                  docs/index.html docs/feed.xml docs/internships.csv \
+                  docs/radar.ics docs/trends-light.svg docs/trends-dark.svg \
+                  docs/api/jobs.json docs/api/stats.json docs/api/radar.json
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "Publish verified first-job opportunities from live sources"
+          git fetch origin main
+          if [ "$(git rev-parse origin/main)" != "$(git rev-parse HEAD^)" ]; then
+            echo "::error::main advanced; do not overwrite a newer job snapshot"
+            exit 1
+          fi
+          git push origin HEAD:main

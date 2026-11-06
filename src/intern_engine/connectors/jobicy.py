@@ -7,12 +7,13 @@ MUST NEVER be treated as complete for lifecycle deletion.
 Source: https://jobicy.com/jobs-rss-feed
 Attribution and the Jobicy URL are retained for every posting.
 """
+
 from __future__ import annotations
 
 import re
 from urllib.parse import quote
 
-from ..models import Fetch, Job, INCOMPLETE_CAPPED, INCOMPLETE_MALFORMED, clean_listing
+from ..models import INCOMPLETE_CAPPED, INCOMPLETE_MALFORMED, Fetch, Job, clean_listing
 
 _BASE = "https://jobicy.com/api/jobs?count=100&geo=usa&tag="
 _TERMS = (

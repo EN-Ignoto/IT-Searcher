@@ -2,8 +2,8 @@
 
 import asyncio
 
+from intern_engine import models
 from intern_engine.connectors import jobicy
-from intern_engine.models import INCOMPLETE_CAPPED, INCOMPLETE_MALFORMED
 
 
 COMPANY = {"ats": "jobicy", "slug": "us-remote-it", "name": "Jobicy US Remote IT Jobs"}
@@ -41,7 +41,7 @@ def test_remote_support_feed_is_normalized_and_never_complete():
     net = FakeNet(data)
     fetched = asyncio.run(jobicy.fetch(COMPANY, net))
     assert not fetched.complete
-    assert fetched.incomplete_reason == INCOMPLETE_CAPPED
+    assert fetched.incomplete_reason == models.INCOMPLETE_CAPPED
     assert len(fetched.jobs) == 1
     role = fetched.jobs[0]
     assert role.title == "Help Desk Technician"
@@ -57,7 +57,7 @@ def test_malformed_source_does_not_become_complete_empty_board():
     fetched = asyncio.run(jobicy.fetch(COMPANY, net))
     assert fetched.jobs == []
     assert not fetched.complete
-    assert fetched.incomplete_reason == INCOMPLETE_MALFORMED
+    assert fetched.incomplete_reason == models.INCOMPLETE_MALFORMED
 
 
 def test_empty_search_is_not_evidence_that_old_jobs_closed():
@@ -65,11 +65,11 @@ def test_empty_search_is_not_evidence_that_old_jobs_closed():
     fetched = asyncio.run(jobicy.fetch(COMPANY, net))
     assert fetched.jobs == []
     assert not fetched.complete
-    assert fetched.incomplete_reason == INCOMPLETE_CAPPED
+    assert fetched.incomplete_reason == models.INCOMPLETE_CAPPED
 
 
 def test_failed_all_queries_stays_incomplete():
     net = FakeNet(RuntimeError("temporary outage"))
     fetched = asyncio.run(jobicy.fetch(COMPANY, net))
-    assert fetched.incomplete_reason == INCOMPLETE_MALFORMED
+    assert fetched.incomplete_reason == models.INCOMPLETE_MALFORMED
     assert not fetched.complete

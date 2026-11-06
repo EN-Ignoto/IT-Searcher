@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**20 open postings** · Data as of 2026-11-06T03:06:05Z
+**21 open postings** · Data as of 2026-11-06T11:43:18Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -34,10 +34,11 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 |---|---|---|---|---|---|---|
 | Christie | Network & Wireless Infrastructure Engineer | Network / Telecom | Orlando, Florida, United States | No skills listed | Nov 03, 2026 | [Apply](https://apply.workable.com/christie-lites-3/j/26D143E2E2/) |
 
-### Stretch — remote  (14 roles)
+### Stretch — remote  (15 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| Guidehouse ✓ 🆁 | Cloud Service Provider Costing Specialist 🆕 | Cloud Platform | US - Remote (Any location) | AWS, Azure | Nov 05, 2026 | [Apply](https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051) |
 | Leidos ✓ 🆁 | Site Reliability Engineering Scrum Master 🆕 | IT Support / Ops | 6314 Remote/Teleworker US | Azure | Nov 05, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419) |
 | Leidos ✓ 🆁 | IT Asset Analyst 🇺🇸 🆕 | IT Support / Ops | 6314 Remote/Teleworker US | No skills listed | Nov 04, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/IT-Asset-Analyst_R-00196272) |
 | Equip Health 🆁 | IT Operations Specialist 🆕 | IT Support / Ops | Remote - USA | AWS | Nov 04, 2026 | [Apply](https://jobs.ashbyhq.com/equip/829ff280-4d61-4b23-a754-af75e1282203) |

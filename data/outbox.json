@@ -10,7 +10,8 @@
       "workday:leidos:/job/6314-RemoteTeleworker-US/IT-Asset-Analyst_R-00196272",
       "workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289",
       "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
-      "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419"
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419",
+      "workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051"
     ],
     "telegram": [
       "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287",
@@ -22,7 +23,8 @@
       "workday:leidos:/job/6314-RemoteTeleworker-US/IT-Asset-Analyst_R-00196272",
       "workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289",
       "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
-      "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419"
+      "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419",
+      "workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051"
     ]
   }
 }

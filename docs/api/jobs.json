@@ -1,11 +1,35 @@
 {
- "generated_at": "2026-11-06T03:06:05Z",
- "data_as_of": "2026-11-06T03:06:05Z",
- "rendered_at": "2026-11-06T03:06:05Z",
+ "generated_at": "2026-11-06T11:43:18Z",
+ "data_as_of": "2026-11-06T11:43:18Z",
+ "rendered_at": "2026-11-06T11:43:18Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 20,
+ "count": 21,
  "jobs": [
+  {
+   "id": "workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051",
+   "company": "Guidehouse",
+   "title": "Cloud Service Provider Costing Specialist",
+   "season": "Stretch — remote",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "Cloud Platform",
+   "location": "US - Remote (Any location)",
+   "url": "https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051",
+   "posted_at": "2026-11-05T00:00:00Z",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-11-06T11:43:17Z",
+   "sponsorship": "unknown",
+   "salary": null,
+   "skills": [
+    "AWS",
+    "Azure"
+   ],
+   "source": "workday",
+   "h1b_approvals": 68,
+   "program": "Entry-level job",
+   "remote": true
+  },
   {
    "id": "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419",
    "company": "Leidos",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T03:06:05Z",
-  "fetched_at": "2026-11-06T03:06:05Z",
-  "duration_seconds": 2227.2,
+  "generated_at": "2026-11-06T11:43:18Z",
+  "fetched_at": "2026-11-06T11:43:18Z",
+  "duration_seconds": 2753.7,
   "companies_total": 5090,
   "companies_by_source": {
     "greenhouse": 1127,
@@ -17,24 +17,25 @@
     "breezy": 16,
     "eightfold": 1
   },
-  "quarantined": 334,
-  "fetched_ok": 4704,
-  "fetch_errors": 52,
+  "quarantined": 356,
+  "fetched_ok": 4579,
+  "fetch_errors": 155,
   "errors_by_source": {
-    "workday": 19,
-    "workable": 33
+    "workday": 133,
+    "ashby": 2,
+    "lever": 2,
+    "workable": 18
   },
-  "fetch_success_rate": 0.989,
-  "fetch_success_rate_registry": 0.924,
-  "snapshots_complete": 4000,
-  "snapshots_partial": 704,
+  "fetch_success_rate": 0.967,
+  "fetch_success_rate_registry": 0.9,
+  "snapshots_complete": 3923,
+  "snapshots_partial": 656,
   "partial_by_reason": {
-    "result-cap": 687,
-    "malformed-response": 16,
-    "pagination-stalled": 1
+    "result-cap": 618,
+    "malformed-response": 38
   },
-  "degraded_fetches": 17,
-  "roles_matched": 19,
+  "degraded_fetches": 38,
+  "roles_matched": 20,
   "dropped_no_year_in_title": 0,
   "dropped_no_year_undated": 0,
   "dropped_no_year_dated_too_old": 0,
@@ -49,18 +50,18 @@
     "lever": 1,
     "oracle": 2,
     "workable": 1,
-    "workday": 14
+    "workday": 15
   },
   "roles_by_cycle": {
-    "Stretch — remote": 14,
+    "Stretch — remote": 15,
     "Remote — Florida / US": 5,
     "Stretch — Orlando area": 1
   },
   "roles_by_region": {
-    "US": 20
+    "US": 21
   },
   "sponsorship_counts": {
-    "unknown": 19,
+    "unknown": 20,
     "citizens-only": 1
   },
   "posted_date_coverage": 1.0,
@@ -68,7 +69,7 @@
   "enrichment_detail_fetches": 2,
   "purged_this_run": 0,
   "new_this_run": 1,
-  "open_total": 20,
+  "open_total": 21,
   "detection_latency": {
     "median_minutes": 350.2,
     "p95_minutes": 355.8,
@@ -80,5 +81,5 @@
     "median_days": 20.0,
     "sample_size": 108
   },
-  "rendered_at": "2026-11-06T03:06:05Z"
+  "rendered_at": "2026-11-06T11:43:18Z"
 }

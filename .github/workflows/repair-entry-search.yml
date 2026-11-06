@@ -353,7 +353,7 @@ jobs:
                    enriched, fetched = _run(enrich.enrich_jobs([job], existing, net))
                    assert job.sponsorship == "citizens-only"
           diff --git a/tests/test_filters_it.py b/tests/test_filters_it.py
-          index 74ab317d..2f989a90 100644
+          index 74ab317d..e13b439b 100644
           --- a/tests/test_filters_it.py
           +++ b/tests/test_filters_it.py
           @@ -35,9 +35,9 @@ def test_location_scope(location, expected):
@@ -386,7 +386,7 @@ jobs:
            
            
            def test_scope_migrates_local_record_and_closes_nonlocal_record():
-          @@ -72,9 +72,89 @@ def test_scope_migrates_local_record_and_closes_nonlocal_record():
+          @@ -72,9 +72,97 @@ def test_scope_migrates_local_record_and_closes_nonlocal_record():
                    "default_cycle": filters_it.BUCKETS[0],
                })
                records = {loc: {"title": "IT Intern Summer 2027", "location": loc,
@@ -477,6 +477,14 @@ jobs:
           +    assert not valid_collection_scope(['lever:a', 'lever:a'], 2, companies)
           +    assert not valid_collection_scope(['lever:a'], 2, companies)
           +    assert not valid_collection_scope([], 0, companies)
+          +
+          +
+          +def test_focused_refresh_does_not_mistake_pagination_caps_for_failure():
+          +    from tools.verify_accuracy import usable_snapshot_rate
+          +    assert usable_snapshot_rate(22, 10, {'result-cap': 10}) == 1
+          +    assert usable_snapshot_rate(22, 10, {'malformed-response': 10}) < 0.70
+          +    assert usable_snapshot_rate(22, 10, {'pagination-stalled': 10}) < 0.70
+          +    assert usable_snapshot_rate(22, 10, {'result-cap': 11}) < 0.70
           diff --git a/tests/test_freshness.py b/tests/test_freshness.py
           index f59fa47c..804372d0 100644
           --- a/tests/test_freshness.py
@@ -492,13 +500,20 @@ jobs:
                assert not records['intern']['is_open']
                assert not records['undated']['is_open']
           diff --git a/tools/verify_accuracy.py b/tools/verify_accuracy.py
-          index 9fdae36a..4c0d3284 100644
+          index 9fdae36a..f10886a7 100644
           --- a/tools/verify_accuracy.py
           +++ b/tools/verify_accuracy.py
-          @@ -80,6 +80,16 @@ _REQUIRED_STATS = {
+          @@ -80,6 +80,23 @@ _REQUIRED_STATS = {
            }
            
            
+          +def usable_snapshot_rate(complete, partial, reasons):
+          +    """Intentional result caps are usable; malformed/stalled responses are not."""
+          +    capped = reasons.get("result-cap", 0) if isinstance(reasons, dict) else 0
+          +    capped = capped if isinstance(capped, int) and 0 <= capped <= partial else 0
+          +    return (complete + capped) / max(complete + partial, 1)
+          +
+          +
           +def valid_collection_scope(boards, companies_total, companies):
           +    """A focused refresh must name exactly the known boards it measured."""
           +    known = {registry.board_key(c) for c in companies}
@@ -512,7 +527,7 @@ jobs:
            def main() -> None:
                cfg = config.load_config()
                cycles = config.cycles(cfg)
-          @@ -147,6 +157,11 @@ def main() -> None:
+          @@ -147,6 +164,11 @@ def main() -> None:
                        flag(r, "not-a-tech-title")
                    if cfg.get("opportunity_scope") == "it" and season != filters_it.bucket(title, r.get("location") or ""):
                        flag(r, "wrong-local-or-remote-section")
@@ -524,7 +539,22 @@ jobs:
                    posted = (r.get("posted_at") or "")[:10]
                    # Age only disqualifies a role whose cycle we INFERRED, where recency
                    # was the evidence. When the employer stated the cycle, an old posting
-          @@ -372,8 +387,13 @@ def main() -> None:
+          @@ -316,10 +338,12 @@ def main() -> None:
+                   partial_by_reason = stats.get("partial_by_reason")
+                   if isinstance(complete, int) and isinstance(partial, int):
+                       total = complete + partial
+          -            if total and complete / total < _MIN_COMPLETE_SNAPSHOT_RATE:
+          +            # A planned pagination cap is not a broken source. Those boards
+          +            # cannot close missing roles, but the returned postings are valid.
+          +            if total and usable_snapshot_rate(complete, partial, partial_by_reason) < _MIN_COMPLETE_SNAPSHOT_RATE:
+                           gates.append(
+                               f"  [snapshot-quality] only {complete}/{total} sources returned a "
+          -                    f"complete snapshot (floor {_MIN_COMPLETE_SNAPSHOT_RATE:.0%})"
+          +                    f"complete snapshot and too few safely capped (floor {_MIN_COMPLETE_SNAPSHOT_RATE:.0%})"
+                           )
+                       # The health half of the same measurement: boards that answered with
+                       # something we could not parse or could not page through.
+          @@ -372,8 +396,13 @@ def main() -> None:
                            gates.append("  [stats-arithmetic] fetch_success_rate is inconsistent")
                        if stats.get("fetch_success_rate_registry") != expected_registry_rate:
                            gates.append("  [stats-arithmetic] registry success rate is inconsistent")

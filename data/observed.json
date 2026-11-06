@@ -96,6 +96,18 @@
     }
    }
   },
+  "adt via himalayas": {
+   "name": "ADT (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-06",
+     "role_ids": [
+      "himalayas:us-remote-it:0713d893c709bea6aa12"
+     ],
+     "count": 1
+    }
+   }
+  },
   "advanced space": {
    "name": "Advanced Space",
    "cycles": {
@@ -491,6 +503,18 @@
     }
    }
   },
+  "aurrera health group via himalayas": {
+   "name": "Aurrera Health Group (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-27",
+     "role_ids": [
+      "himalayas:us-remote-it:5f2140b1374fe5ef3bb3"
+     ],
+     "count": 1
+    }
+   }
+  },
   "auto owners insurance": {
    "name": "Auto-Owners Insurance",
    "cycles": {
@@ -525,6 +549,18 @@
       "greenhouse:awetomaton:5394074008"
      ],
      "count": 2
+    }
+   }
+  },
+  "axonius via himalayas": {
+   "name": "Axonius (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-17",
+     "role_ids": [
+      "himalayas:us-remote-it:9037ac7cf472b73372e7"
+     ],
+     "count": 1
     }
    }
   },
@@ -598,6 +634,18 @@
      "first_posted": "2026-10-20",
      "role_ids": [
       "workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "blue mantis via himalayas": {
+   "name": "Blue Mantis (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-25",
+     "role_ids": [
+      "himalayas:us-remote-it:988837654fe233d7f329"
      ],
      "count": 1
     }
@@ -895,6 +943,18 @@
     }
    }
   },
+  "centurylink via himalayas": {
+   "name": "CenturyLink (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-17",
+     "role_ids": [
+      "himalayas:us-remote-it:1707f77e2eede9a18229"
+     ],
+     "count": 1
+    }
+   }
+  },
   "cerebras": {
    "name": "Cerebras",
    "cycles": {
@@ -1070,6 +1130,18 @@
     }
    }
   },
+  "constellation energy via himalayas": {
+   "name": "Constellation Energy (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-23",
+     "role_ids": [
+      "himalayas:us-remote-it:5a03e344686c2bc998b8"
+     ],
+     "count": 1
+    }
+   }
+  },
   "continental resources": {
    "name": "Continental Resources",
    "cycles": {
@@ -1134,6 +1206,18 @@
     }
    }
   },
+  "danaher via himalayas": {
+   "name": "Danaher (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-08",
+     "role_ids": [
+      "himalayas:us-remote-it:5eb6e74ea791aee0f914"
+     ],
+     "count": 1
+    }
+   }
+  },
   "deepgram": {
    "name": "Deepgram",
    "cycles": {
@@ -1169,6 +1253,18 @@
       "workday:dmainc:/job/Indianapolis-IN/IT-Support-Intern---Summer-2027_REQ638-1"
      ],
      "count": 2
+    }
+   }
+  },
+  "dmi via himalayas": {
+   "name": "DMI (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-18",
+     "role_ids": [
+      "himalayas:us-remote-it:ebe1c3d11fdd2022f2c3"
+     ],
+     "count": 1
     }
    }
   },
@@ -1305,6 +1401,18 @@
      "first_posted": "2026-10-14",
      "role_ids": [
       "workday:evercommerce:/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "everglade works via himalayas": {
+   "name": "Everglade Works (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-13",
+     "role_ids": [
+      "himalayas:us-remote-it:b7d727e5b4e4920419c0"
      ],
      "count": 1
     }
@@ -1464,6 +1572,18 @@
     }
    }
   },
+  "ges via himalayas": {
+   "name": "GES (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-15",
+     "role_ids": [
+      "himalayas:us-remote-it:75539544cfed611c344b"
+     ],
+     "count": 1
+    }
+   }
+  },
   "gitlab": {
    "name": "GitLab",
    "cycles": {
@@ -1544,6 +1664,19 @@
       "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798"
      ],
      "count": 3
+    }
+   }
+  },
+  "guidepoint security llc via himalayas": {
+   "name": "GuidePoint Security LLC (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-10",
+     "role_ids": [
+      "himalayas:us-remote-it:5b437fbdcec3e0b9c0cc",
+      "himalayas:us-remote-it:f46720c824ca077e179e"
+     ],
+     "count": 2
     }
    }
   },
@@ -1736,6 +1869,18 @@
      "first_posted": "2026-09-09",
      "role_ids": [
       "lever:immuta:3c4cb235-6138-4a50-add2-666a5216427e"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "impact advisors via himalayas": {
+   "name": "Impact Advisors (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-10",
+     "role_ids": [
+      "himalayas:us-remote-it:5db2dc14b548e0d51a9e"
      ],
      "count": 1
     }
@@ -1988,6 +2133,18 @@
     }
    }
   },
+  "leidos via himalayas": {
+   "name": "Leidos (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-24",
+     "role_ids": [
+      "himalayas:us-remote-it:bfeba0456ea8f8414ec0"
+     ],
+     "count": 1
+    }
+   }
+  },
   "leland": {
    "name": "Leland",
    "cycles": {
@@ -2037,6 +2194,18 @@
      "first_posted": "2026-09-14",
      "role_ids": [
       "workday:bcbsla:/job/Corporate---Baton-Rouge-LA/CW-Security-Operation-Center-Engineer-Intern--Fall-2026--Starting-in-December-_R12127"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "lumen technologies via himalayas": {
+   "name": "Lumen Technologies (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-18",
+     "role_ids": [
+      "himalayas:us-remote-it:b6ade422acc07fda9d86"
      ],
      "count": 1
     }
@@ -2695,6 +2864,18 @@
     }
    }
   },
+  "resideo via himalayas": {
+   "name": "Resideo (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-28",
+     "role_ids": [
+      "himalayas:us-remote-it:acb86e623142988b3ebe"
+     ],
+     "count": 1
+    }
+   }
+  },
   "resolve tech solutions": {
    "name": "Resolve Tech Solutions",
    "cycles": {
@@ -3253,6 +3434,18 @@
     }
    }
   },
+  "uniguest via himalayas": {
+   "name": "Uniguest (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-06",
+     "role_ids": [
+      "himalayas:us-remote-it:1b9c688747b81991263b"
+     ],
+     "count": 1
+    }
+   }
+  },
   "unisys": {
    "name": "Unisys",
    "cycles": {
@@ -3380,6 +3573,18 @@
      "first_posted": "2026-10-01",
      "role_ids": [
       "greenhouse:vardaspace:8005821003"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "vc3 via himalayas": {
+   "name": "VC3 (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-25",
+     "role_ids": [
+      "himalayas:us-remote-it:513b9521d06277d48cdf"
      ],
      "count": 1
     }
@@ -3642,5 +3847,5 @@
    }
   }
  },
- "updated_at": "2026-11-06T20:22:36Z"
+ "updated_at": "2026-11-06T23:52:14Z"
 }

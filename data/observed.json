@@ -1,5 +1,18 @@
 {
  "companies": {
+  "1password": {
+   "name": "1Password",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-23",
+     "role_ids": [
+      "ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7",
+      "ashby:1password:bef2e88e-9590-467d-8ba6-821b30529003"
+     ],
+     "count": 2
+    }
+   }
+  },
   "3m": {
    "name": "3M",
    "cycles": {
@@ -360,6 +373,18 @@
      "first_posted": "2026-10-07",
      "role_ids": [
       "workday:applebank:/job/New-York-NY/XMLNAME-2027-Summer-Intern--Information-Security_2026-1416"
+     ],
+     "count": 1
+    }
+   }
+  },
+  "applied information sciences": {
+   "name": "Applied Information Sciences",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-10-29",
+     "role_ids": [
+      "workday:appliedis:/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427"
      ],
      "count": 1
     }
@@ -3847,5 +3872,5 @@
    }
   }
  },
- "updated_at": "2026-11-07T05:53:46Z"
+ "updated_at": "2026-11-07T06:39:00Z"
 }

@@ -5,8 +5,72 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-07T05:53:46Z</updated>
+  <updated>2026-11-07T06:39:00Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7</id>
+    <title>1Password: IT Intern, IT Support - Winter 2027</title>
+    <link href="https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7"/>
+    <updated>2026-11-07T06:39:00Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote (United States | Canada)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:1password:bef2e88e-9590-467d-8ba6-821b30529003</id>
+    <title>1Password: Product Management Intern, End User Experience - Winter 2027</title>
+    <link href="https://jobs.ashbyhq.com/1password/bef2e88e-9590-467d-8ba6-821b30529003"/>
+    <updated>2026-11-07T06:39:00Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote (United States | Canada)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:appliedis:/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427</id>
+    <title>Applied Information Sciences: Cloud Migration Engineer I</title>
+    <link href="https://appliedis.wd5.myworkdayjobs.com/ais_careers/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427"/>
+    <updated>2026-11-07T06:39:00Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · Cloud Platform · USA Remote · $90k–$137k/yr · Python, Bash, AWS, Azure, Terraform</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642</id>
+    <title>ADT: Remote Customer Technical Support</title>
+    <link href="https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642"/>
+    <updated>2026-11-05T00:20:42Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States · $17/hr · H-1B track record: ~39 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:crowdstrike:/job/USA---Remote/Technical-Support_R30773</id>
+    <title>Crowdstrike: Technical Support</title>
+    <link href="https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773"/>
+    <updated>2026-11-02T16:42:52Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · USA - Remote · $70k–$115k/yr · Linux · H-1B track record: ~99 approvals (FY2022–2023)</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f</id>
+    <title>Amplify: Summer 2027: IT Services Intern</title>
+    <link href="https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote - United States · $30 per hour · Linux</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861</id>
+    <title>Nash: Technical Support Specialist , US East Coast</title>
+    <link href="https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote, US · $75K – $95K • Offers Equity</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100</id>
+    <title>BigCommerce: Technical Support Representative - Remote</title>
+    <link href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100"/>
+    <updated>2026-10-21T21:07:04Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · United States - Remote · JavaScript, HTML/CSS · H-1B track record: ~26 approvals (FY2022–2023)</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057</id>
     <title>Leidos: Network Site Design Intern 🇺🇸</title>

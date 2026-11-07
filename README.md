@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**19 open postings** · Data as of 2026-11-07T05:53:46Z
+**27 open postings** · Data as of 2026-11-07T06:39:00Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -18,20 +18,28 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 
 ## 🖥️ IT Support, Networks & Infrastructure
 
-### Remote — Florida / US  (19 roles)
+### Remote — Florida / US  (27 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
 | ADT (via Himalayas) 🆁 | Remote Customer Technical Support 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 06, 2026 | [Apply](https://himalayas.app/companies/adt/jobs/remote-customer-technical-support?utm_source=api) |
 | Uniguest (via Himalayas) 🆁 | Technical Support Representative - Tier I (Remote U.S.) 🆕 | IT Support / Ops | Remote - United States | Linux | Nov 06, 2026 | [Apply](https://himalayas.app/companies/uniguest/jobs/technical-support-representative-tier-i-remote-u-s?utm_source=api) |
+| ADT ✓ 🆁 | Remote Customer Technical Support | IT Support / Ops | United States +48 more | No skills listed | Nov 04, 2026 | [Apply](https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642) |
+| Crowdstrike ✓ 🆁 | Technical Support | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
+| Applied Information Sciences 🆁 | Cloud Migration Engineer I 🆕 | Cloud Platform | USA Remote | Python, Bash, AWS, Azure | Oct 29, 2026 | [Apply](https://appliedis.wd5.myworkdayjobs.com/ais_careers/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427) |
 | Resideo (via Himalayas) 🆁 | Network Technician 🆕 | Network / Telecom | Remote - United States | No skills listed | Oct 28, 2026 | [Apply](https://himalayas.app/companies/resideo/jobs/network-technician?utm_source=api) |
 | GuidePoint Security LLC (via Himalayas) 🆁 | Cybersecurity Presales Intern - GPSU/Heartland (Tulsa) 🆕 | Security / IT | Remote - United States | Python, Bash, AWS, GCP | Oct 28, 2026 | [Apply](https://himalayas.app/companies/guidepoint-security-llc/jobs/cybersecurity-presales-intern-gpsu-heartland-tulsa?utm_source=api) |
 | Aurrera Health Group (via Himalayas) 🆁 | Enterprise Internship, Information Technology 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 27, 2026 | [Apply](https://himalayas.app/companies/aurrera-health-group/jobs/enterprise-internship-information-technology?utm_source=api) |
 | VC3 (via Himalayas) 🆁 | Part-Time NOC Analyst I (Weekends, Evenings & Overnight) 🆕 | Network / Telecom | Remote - United States | Linux | Oct 25, 2026 | [Apply](https://himalayas.app/companies/vc3/jobs/part-time-noc-analyst-i-weekends-evenings-overnight?utm_source=api) |
 | Blue Mantis (via Himalayas) 🆁 | IT EUX Junior Engineer I - Remote US Only 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 25, 2026 | [Apply](https://himalayas.app/companies/blue-mantis/jobs/it-eux-junior-engineer-i-remote-us-only-5215016678?utm_source=api) |
 | Leidos (via Himalayas) 🆁 | Network Site Design Intern 🇺🇸 🆕 | Network / Telecom | Remote - United States | No skills listed | Oct 24, 2026 | [Apply](https://himalayas.app/companies/leidos/jobs/network-site-design-intern?utm_source=api) |
+| 1Password 🆁 | IT Intern, IT Support - Winter 2027 🆕 | IT Support / Ops | Remote (United States / Canada) | No skills listed | Oct 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7) |
+| 1Password 🆁 | Product Management Intern, End User Experience - Winter 2027 🆕 | IT Support / Ops | Remote (United States / Canada) | No skills listed | Oct 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/bef2e88e-9590-467d-8ba6-821b30529003) |
 | Constellation Energy (via Himalayas) 🆁 | 2027 Summer IT Data Engineering Intern 🛂 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 23, 2026 | [Apply](https://himalayas.app/companies/constellation-energy/jobs/2027-summer-it-data-engineering-intern?utm_source=api) |
 | Leidos ✓ 🆁 | Network Site Design Intern 🇺🇸 | Network / Telecom | 6314 Remote/Teleworker US | No skills listed | Oct 21, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057) |
+| Nash 🆁 | Technical Support Specialist , US East Coast | IT Support / Ops | Remote, US | No skills listed | Oct 20, 2026 | [Apply](https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861) |
+| BigCommerce ✓ 🆁 | Technical Support Representative - Remote | IT Support / Ops | United States - Remote | JavaScript, HTML/CSS | Oct 20, 2026 | [Apply](https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100) |
+| Amplify 🆁 | Summer 2027: IT Services Intern | IT Support / Ops | Remote - United States | Linux | Oct 19, 2026 | [Apply](https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f) |
 | Lumen Technologies (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway 🆕 | Security / IT | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/lumen-technologies/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway?utm_source=api) |
 | DMI (via Himalayas) 🆁 | Service Desk Analyst 🇺🇸 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/dmi/jobs/service-desk-analyst?utm_source=api) |
 | CenturyLink (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway (Remote, US 🆕 | Security / IT | Remote - United States | No skills listed | Oct 17, 2026 | [Apply](https://himalayas.app/companies/centurylink/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway-remote-us?utm_source=api) |
@@ -58,27 +66,28 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 _2 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **2** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
 <details>
-<summary><strong>Recently closed</strong>: 24 roles that left the list in the last 14 days</summary>
+<summary><strong>Recently closed</strong>: 25 roles that left the list in the last 14 days</summary>
 
 _Why each one left is in the last column, because the two reasons carry different evidence. **Gone from feed** = two consecutive complete reads of the employer's board no longer returned it (strong, but not the employer telling us directly). **Out of scope** = still posted, but it no longer passes our filters. That's our call, not theirs. **Not recorded** = closed before we started tracking the reason._
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-07 | out of scope |
+| PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
+| Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-07 | out of scope |
+| TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-07 | out of scope |
+| CDW Corporation | IT Service Desk- 6AM - 6PM | Remote — Florida / US | 2026-11-07 | out of scope |
+| Guidehouse | IT Service Desk Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
+| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-07 | out of scope |
+| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-07 | out of scope |
+| Impactadvisors | Cloud ERP Implementation Intern | Remote — Florida / US | 2026-11-07 | out of scope |
+| Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-07 | out of scope |
 | Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-07 | out of scope |
+| Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-07 | out of scope |
+| Zillow | IT Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
 | Corsair | Technical Support Specialist | Remote — Florida / US | 2026-11-06 | out of scope |
-| ADT | Remote Customer Technical Support | Remote — Florida / US | 2026-11-06 | out of scope |
-| CDW Corporation | IT Service Desk- 6AM - 6PM | Remote — Florida / US | 2026-11-06 | out of scope |
-| Crowdstrike | Technical Support | Remote — Florida / US | 2026-11-06 | out of scope |
-| Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-06 | out of scope |
 | Zoetis | Diagnostics Technical Support Representative | Remote — Florida / US | 2026-11-06 | out of scope |
-| Amplify | Summer 2027: IT Services Intern | Remote — Florida / US | 2026-11-02 | out of scope |
-| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-02 | out of scope |
 | Journal Technologies | Intermediate Technical Support Analyst | Remote — Florida / US | 2026-11-02 | out of scope |
-| PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-02 | out of scope |
-| Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-02 | out of scope |
-| TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-02 | out of scope |
-| BigCommerce | Technical Support Representative - Remote | Remote — Florida / US | 2026-11-02 | out of scope |
-| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-02 | out of scope |
 | Tines | Technical Support Engineer II - Federal | Remote — Florida / US | 2026-11-02 | out of scope |
 | BNY | Vice President, Technology Service Desk/On-Site Support | Orlando area | 2026-11-02 | out of scope |
 | Concept Plus | Help Desk Specialist | Remote — Florida / US | 2026-11-02 | out of scope |

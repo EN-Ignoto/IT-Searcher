@@ -236,3 +236,34 @@ def test_first_it_operations_and_asset_jobs_are_eligible_title_scope(title):
 ])
 def test_foundation_expansion_does_not_include_senior_or_generic_roles(title):
     assert not filters_it.is_opportunity(title)
+
+
+@pytest.mark.parametrize("title,description", [
+    ("Technical Support Specialist", "2 - 5+ years in Technical Support, Support Engineering, or related role in SaaS required."),
+    ("Help Desk Technician", "2–5+ years of help desk experience required."),
+    ("IT Support Specialist", "3+ years in IT support required."),
+    ("IT Support Technician", "Must have 2+ years of customer support experience."),
+])
+def test_experienced_jobs_are_not_labeled_first_job_eligible(title, description):
+    assert filters_it.assess_fit(title, description) == "rejected"
+
+
+@pytest.mark.parametrize("title", [
+    "Product Management Intern, End User Experience - Winter 2027",
+    "Cybersecurity Presales Intern",
+    "2027 Summer IT Data Engineering Intern",
+    "Cloud ERP Implementation Intern",
+    "Technical Support Engineer (SkillBridge: On-the-job training)",
+])
+def test_non_foundational_internships_and_special_programs_excluded(title):
+    assert not filters_it.is_opportunity(title)
+
+
+@pytest.mark.parametrize("title", [
+    "Specialist, Technical Support",
+    "Computer Technician I-12 Month",
+    "IT Intern, IT Support - Winter 2027",
+    "Tier I Help Desk Analyst",
+])
+def test_credible_first_it_jobs_remain_in_scope(title):
+    assert filters_it.is_opportunity(title)

@@ -5,3 +5,4 @@ Verify new municipal connector against live City of Kissimmee GovernmentJobs pos
 Reproduce City GovernmentJobs false-zero parser at 2026-11-07T20:22Z.
 Inspect City JobPosting structured data values 2026-11-07T20:23Z.
 Verify municipal locality parsing fix after PR12 at 2026-11-07T20:25Z.
+Verify live City JSON-LD safe parse after PR #13, 2026-11-07T20:27Z.

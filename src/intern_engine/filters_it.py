@@ -76,8 +76,8 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
     # as "two (2) years". Normalize those before enforcing experience gates.
     # Treat "two (2) years" exactly like "2 years", never as no requirement.
     text = re.sub(
-        r"\\b(?:one|two|three|four|five|six|seven|eight|nine|ten)"
-        r"\\s*\\(\\s*(\\d{1,2})\\s*\\)(?=\\s+years?\\b)",
+        r"\b(?:one|two|three|four|five|six|seven|eight|nine|ten)"
+        r"\s*\(\s*(\d{1,2})\s*\)(?=\s+years?\b)",
         lambda match: match.group(1),
         text,
         flags=re.I,

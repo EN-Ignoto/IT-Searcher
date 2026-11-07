@@ -104,12 +104,17 @@ def valencia_job(number: str, title: str, detail: str) -> Job | None:
     )
 
 
+def _school_title(title: str) -> str:
+    """'Support Staff-' denotes school employee classification, not seniority."""
+    return re.sub(r"^Support Staff\\s*[-–:]\\s*", "", title, flags=re.I).strip()
+
+
 def osceola_links(html: str) -> dict[str, str]:
     """Each live employer results page contains distinct /job/<id> anchors."""
     found: dict[str, str] = {}
     for path, title_html in _SCHOOL_JOB.findall(html):
         title = _plain(title_html)
-        if filters_it.is_opportunity(title):
+        if filters_it.is_opportunity(_school_title(title)):
             found.setdefault(path, title)
     return found
 
@@ -123,7 +128,7 @@ def osceola_job(path: str, detail: str) -> Job | None:
             continue
         if not isinstance(payload, dict) or payload.get("@type") != "JobPosting":
             continue
-        title = str(payload.get("title") or "").strip()
+        title = _school_title(str(payload.get("title") or "").strip())
         if not filters_it.is_opportunity(title):
             continue
         raw_location = payload.get("jobLocation") or {}
@@ -194,7 +199,7 @@ async def _fetch_osceola(company: dict, net) -> Fetch:
             break
         found = {
             path: title for path, title in _SCHOOL_JOB.findall(page)
-            if filters_it.is_opportunity(_plain(title))
+            if filters_it.is_opportunity(_school_title(_plain(title)))
         }
         # The page can contain zero matching IT titles and still contain many
         # genuine open non-IT postings. Use ALL job links to detect a final page.

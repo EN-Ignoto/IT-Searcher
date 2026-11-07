@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-11-07T19:46:59Z",
-  "fetched_at": "2026-11-07T19:46:59Z",
-  "duration_seconds": 63.2,
-  "companies_total": 11,
+  "generated_at": "2026-11-07T19:49:37Z",
+  "fetched_at": "2026-11-07T19:49:37Z",
+  "duration_seconds": 62.2,
+  "companies_total": 12,
   "collection_boards": [
     "oracle:eofe.fa.us2.oraclecloud.com:cx_1",
     "oracle:eofe.fa.us2.oraclecloud.com:cx_1001",
     "workday:leidos:external",
+    "ashby:nash",
     "smartrecruiters:nbcuniversal3",
     "workday:disney:disneycareer",
     "workday:disney:disneycareerdc",
@@ -19,24 +20,25 @@
   "companies_by_source": {
     "oracle": 2,
     "workday": 4,
+    "ashby": 1,
     "smartrecruiters": 1,
     "jobicy": 1,
     "himalayas": 1,
     "localboards": 2
   },
   "quarantined": 0,
-  "fetched_ok": 11,
+  "fetched_ok": 12,
   "fetch_errors": 0,
   "errors_by_source": {},
   "fetch_success_rate": 1.0,
   "fetch_success_rate_registry": 1.0,
-  "snapshots_complete": 3,
+  "snapshots_complete": 4,
   "snapshots_partial": 8,
   "partial_by_reason": {
     "result-cap": 8
   },
   "degraded_fetches": 0,
-  "roles_matched": 17,
+  "roles_matched": 18,
   "dropped_no_year_in_title": 0,
   "dropped_no_year_undated": 0,
   "dropped_no_year_dated_too_old": 0,
@@ -67,10 +69,10 @@
     "citizens-only": 3
   },
   "posted_date_coverage": 1.0,
-  "enriched_this_run": 26,
+  "enriched_this_run": 27,
   "enrichment_detail_fetches": 0,
   "purged_this_run": 0,
-  "new_this_run": 1,
+  "new_this_run": 0,
   "open_total": 26,
   "detection_latency": {
     "median_minutes": 316.3,
@@ -83,5 +85,5 @@
     "median_days": 20.0,
     "sample_size": 108
   },
-  "rendered_at": "2026-11-07T19:46:59Z"
+  "rendered_at": "2026-11-07T19:49:37Z"
 }

@@ -6,7 +6,7 @@ remains covered by the slower broad scheduled workflow.
 """
 from __future__ import annotations
 
-FAST_ATS = frozenset({"himalayas", "jobicy", "localboards"})
+FAST_ATS = frozenset({"himalayas", "jobicy", "localboards", "governmentjobs"})
 PRIORITY_EMPLOYERS = frozenset({
     "university of central florida",
     "the walt disney company",

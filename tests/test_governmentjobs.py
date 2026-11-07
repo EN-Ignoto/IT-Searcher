@@ -1,7 +1,5 @@
 """Realistic public municipal search and full posting evidence."""
 import asyncio
-from datetime import UTC, datetime
-
 from intern_engine import fastlane, filters_it, models, registry
 from intern_engine.connectors import governmentjobs
 
@@ -87,4 +85,3 @@ def test_written_number_and_numeric_years_are_equivalent():
     for phrase in ("two (2) years", "two years", "2 years"):
         desc = "Associate's Degree supplemented by " + phrase + " of network operations and support experience."
         assert filters_it.assess_fit("IT Specialist", desc, "Kissimmee, FL") == "rejected"
-    assert datetime.now(UTC).year >= 2026

@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**26 open postings** · Data as of 2026-11-07T19:49:37Z
+**24 open postings** · Data as of 2026-11-07T19:55:32Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -29,13 +29,12 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | Valencia College | Specialist, Technical Support | IT Support / Ops | Orlando, FL 32825 - East Campus | No skills listed | Nov 05, 2026 | [Apply](https://valenciacollege.peopleadmin.com/postings/44244) |
 | School District of Osceola County | Computer Technician I-12 Month | IT Support / Ops | Kissimmee, FL | No skills listed | Oct 29, 2026 | [Apply](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
 
-### Remote — Florida / US  (24 roles)
+### Remote — Florida / US  (22 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
 | Netsmart (via Himalayas) 🆁 | Service Desk Technician - Application Support 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/netsmart/jobs/service-desk-technician-application-support?utm_source=api) |
 | AMERICAN SYSTEMS (via Himalayas) 🆁 | Tier I Part Time Help Desk Analyst – Overnight Monitoring 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/american-systems/jobs/tier-i-part-time-help-desk-analyst-overnight-monitoring?utm_source=api) |
-| NetDocuments 🆁 | Technical Support Engineer 🆕 | IT Support / Ops | Remote - United States (Jobicy: USA) | SQL | Nov 07, 2026 | [Apply](https://jobicy.com/jobs/159499-technical-support-engineer-6) |
 | ADT (via Himalayas) 🆁 | Remote Customer Technical Support 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 06, 2026 | [Apply](https://himalayas.app/companies/adt/jobs/remote-customer-technical-support?utm_source=api) |
 | Uniguest (via Himalayas) 🆁 | Technical Support Representative - Tier I (Remote U.S.) 🆕 | IT Support / Ops | Remote - United States | Linux | Nov 06, 2026 | [Apply](https://himalayas.app/companies/uniguest/jobs/technical-support-representative-tier-i-remote-u-s?utm_source=api) |
 | ADT ✓ 🆁 | Remote Customer Technical Support | IT Support / Ops | United States +48 more | No skills listed | Nov 04, 2026 | [Apply](https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642) |
@@ -48,7 +47,6 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | Leidos (via Himalayas) 🆁 | Network Site Design Intern 🇺🇸 | Network / Telecom | Remote - United States | No skills listed | Oct 24, 2026 | [Apply](https://himalayas.app/companies/leidos/jobs/network-site-design-intern?utm_source=api) |
 | 1Password 🆁 | IT Intern, IT Support - Winter 2027 | IT Support / Ops | Remote (United States / Canada) | No skills listed | Oct 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7) |
 | Leidos ✓ 🆁 | Network Site Design Intern 🇺🇸 | Network / Telecom | 6314 Remote/Teleworker US | No skills listed | Oct 21, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057) |
-| Nash 🆁 | Technical Support Specialist , US East Coast | IT Support / Ops | Remote, US | No skills listed | Oct 20, 2026 | [Apply](https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861) |
 | BigCommerce ✓ 🆁 | Technical Support Representative - Remote | IT Support / Ops | United States - Remote | JavaScript, HTML/CSS | Oct 20, 2026 | [Apply](https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100) |
 | Amplify 🆁 | Summer 2027: IT Services Intern | IT Support / Ops | Remote - United States | Linux | Oct 19, 2026 | [Apply](https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f) |
 | Lumen Technologies (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway | Security / IT | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/lumen-technologies/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway?utm_source=api) |
@@ -76,13 +74,15 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 _4 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **4** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
 <details>
-<summary><strong>Recently closed</strong>: 31 roles that left the list in the last 14 days</summary>
+<summary><strong>Recently closed</strong>: 33 roles that left the list in the last 14 days</summary>
 
 _Why each one left is in the last column, because the two reasons carry different evidence. **Gone from feed** = two consecutive complete reads of the employer's board no longer returned it (strong, but not the employer telling us directly). **Out of scope** = still posted, but it no longer passes our filters. That's our call, not theirs. **Not recorded** = closed before we started tracking the reason._
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-07 | out of scope |
 | Everglade Works (via Himalayas) | IT Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
+| NetDocuments | Technical Support Engineer | Remote — Florida / US | 2026-11-07 | out of scope |
 | Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-07 | out of scope |
 | 1Password | Product Management Intern, End User Experience - Winter 2027 | Remote — Florida / US | 2026-11-07 | out of scope |
 | Constellation Energy (via Himalayas) | 2027 Summer IT Data Engineering Intern | Remote — Florida / US | 2026-11-07 | out of scope |

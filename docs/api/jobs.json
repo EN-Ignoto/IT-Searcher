@@ -1,34 +1,11 @@
 {
- "generated_at": "2026-11-07T19:49:37Z",
- "data_as_of": "2026-11-07T19:49:37Z",
- "rendered_at": "2026-11-07T19:49:37Z",
+ "generated_at": "2026-11-07T19:55:32Z",
+ "data_as_of": "2026-11-07T19:55:32Z",
+ "rendered_at": "2026-11-07T19:55:32Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 11,
+ "count": 9,
  "jobs": [
-  {
-   "id": "jobicy:us-remote-it:159499",
-   "company": "NetDocuments",
-   "title": "Technical Support Engineer",
-   "season": "Remote — Florida / US",
-   "seasons": null,
-   "season_inferred": false,
-   "category": "IT Support / Ops",
-   "location": "Remote - United States (Jobicy: USA)",
-   "url": "https://jobicy.com/jobs/159499-technical-support-engineer-6",
-   "posted_at": "2026-11-07T10:54:59+00:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-07T15:37:18Z",
-   "sponsorship": "unknown",
-   "salary": null,
-   "skills": [
-    "SQL"
-   ],
-   "source": "jobicy",
-   "h1b_approvals": null,
-   "program": "Entry-level job",
-   "remote": true
-  },
   {
    "id": "localboards:valencia:44244",
    "company": "Valencia College",
@@ -184,27 +161,6 @@
    "source": "workday",
    "h1b_approvals": 79,
    "program": "Internship",
-   "remote": true
-  },
-  {
-   "id": "ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861",
-   "company": "Nash",
-   "title": "Technical Support Specialist , US East Coast",
-   "season": "Remote — Florida / US",
-   "seasons": null,
-   "season_inferred": false,
-   "category": "IT Support / Ops",
-   "location": "Remote, US",
-   "url": "https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861",
-   "posted_at": "2026-10-20T16:56:12.059+00:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-10-21T21:07:04Z",
-   "sponsorship": "unknown",
-   "salary": "$75K – $95K • Offers Equity",
-   "skills": [],
-   "source": "ashby",
-   "h1b_approvals": null,
-   "program": "Entry-level job",
    "remote": true
   },
   {

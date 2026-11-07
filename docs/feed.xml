@@ -5,7 +5,7 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-07T19:49:37Z</updated>
+  <updated>2026-11-07T19:55:32Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
   <entry>
     <id>urn:intern-engine:localboards:osceola:993441CCDCCE775901861F2193A33B71</id>
@@ -22,14 +22,6 @@
     <updated>2026-11-07T19:36:06Z</updated>
     <category term="Orlando area"/>
     <summary>Orlando area · IT Support / Ops · Orlando, FL 32825 - East Campus · $19.93 per hour</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:jobicy:us-remote-it:159499</id>
-    <title>NetDocuments: Technical Support Engineer</title>
-    <link href="https://jobicy.com/jobs/159499-technical-support-engineer-6"/>
-    <updated>2026-11-07T15:37:18Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote - United States (Jobicy: USA) · SQL</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7</id>
@@ -70,14 +62,6 @@
     <updated>2026-10-21T21:07:04Z</updated>
     <category term="Remote — Florida / US"/>
     <summary>Remote — Florida / US · IT Support / Ops · Remote - United States · $30 per hour · Linux</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861</id>
-    <title>Nash: Technical Support Specialist , US East Coast</title>
-    <link href="https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861"/>
-    <updated>2026-10-21T21:07:04Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote, US · $75K – $95K • Offers Equity</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100</id>

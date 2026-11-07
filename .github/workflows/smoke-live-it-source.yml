@@ -52,6 +52,38 @@ jobs:
                       print(" -", job.get("title"), "|", job.get("companyName"), "|", job.get("guid"), flush=True)
           print(f"Himalayas relevant candidate titles: {count}", flush=True)
           PY
+      - name: Verify official Kissimmee job board and qualification filters
+        run: |
+          python - <<'PY'
+          import asyncio
+          import sys
+
+          import httpx
+
+          sys.path.insert(0, "src")
+          from intern_engine import filters_it, models
+          from intern_engine.connectors import governmentjobs
+          from intern_engine.net import HostLimiter, Net
+
+          async def main():
+              async with httpx.AsyncClient(timeout=httpx.Timeout(20.0, connect=10.0),
+                                           follow_redirects=True) as session:
+                  result = await governmentjobs.fetch(
+                      {"name": "City of Kissimmee Public Jobs",
+                       "slug": "kissimmee-city", "ats": "governmentjobs"},
+                      Net(session, HostLimiter()),
+                  )
+              if result.incomplete_reason == models.INCOMPLETE_MALFORMED:
+                  raise SystemExit("City of Kissimmee job board could not be parsed.")
+              print(f"City of Kissimmee: {len(result.jobs)} relevant IT-title candidates", flush=True)
+              for job in result.jobs:
+                  verdict = filters_it.assess_fit(job.title, job.description, job.location)
+                  print(job.title, "|", job.posted_at, "|", verdict, "|", job.url, flush=True)
+                  if "it specialist" in job.title.casefold():
+                      # No mandatory 2+ years may silently pass as entry-level.
+                      assert verdict == "rejected", "2-year IT Specialist misclassified"
+          asyncio.run(main())
+          PY
       - name: Fetch live US remote IT support posts
         run: |
           python - <<'PY'

@@ -72,6 +72,16 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
     if not is_opportunity(title):
         return "rejected"
     text = strip_html(description or "")
+    # Government and education job descriptions commonly spell out numbers
+    # as "two (2) years". Normalize those before enforcing experience gates.
+    # Treat "two (2) years" exactly like "2 years", never as no requirement.
+    text = re.sub(
+        r"\\b(?:one|two|three|four|five|six|seven|eight|nine|ten)"
+        r"\\s*\\(\\s*(\\d{1,2})\\s*\\)(?=\\s+years?\\b)",
+        lambda match: match.group(1),
+        text,
+        flags=re.I,
+    )
     # Benefits such as volunteer days or unpaid leave do not make a job unpaid.
     if re.search(r"\bvolunteer\b", title, re.I) or re.search(
             r"\b(?:unpaid\s+(?:internship|position|role|opportunity)"

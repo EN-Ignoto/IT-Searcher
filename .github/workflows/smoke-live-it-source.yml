@@ -86,6 +86,21 @@ jobs:
                         "parsed IT links", len(links), flush=True)
                   for item, title in links.items():
                       detail = await net.get_text("https://www.governmentjobs.com" + item, retries=1)
+                      for script in gov._SCRIPT.findall(detail)[:1]:
+                          import json
+                          try:
+                              payload = json.loads(script)
+                              print("City JSON-LD attributes", json.dumps({
+                                  "type": payload.get("@type"),
+                                  "title": payload.get("title"),
+                                  "employer": payload.get("hiringOrganization"),
+                                  "location": payload.get("jobLocation"),
+                                  "posted": payload.get("datePosted"),
+                                  "expiry": payload.get("validThrough"),
+                                  "description_chars": len(payload.get("description") or ""),
+                              }, default=str)[:1600], flush=True)
+                          except Exception as error:
+                              print("City JSON-LD raw parse error", type(error).__name__, str(error)[:150], flush=True)
                       print("City detail", title, "JSON-LD scripts", len(gov._SCRIPT.findall(detail)),
                             "parse success", gov.city_job(item, detail) is not None,
                             "datePosted", "datePosted" in detail, flush=True)

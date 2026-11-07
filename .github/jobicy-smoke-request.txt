@@ -4,3 +4,4 @@ Inspect exact Himalayas eligibility fields on 2026-11-06.
 Verify new municipal connector against live City of Kissimmee GovernmentJobs postings 2026-11-07.
 Reproduce City GovernmentJobs false-zero parser at 2026-11-07T20:22Z.
 Inspect City JobPosting structured data values 2026-11-07T20:23Z.
+Verify municipal locality parsing fix after PR12 at 2026-11-07T20:25Z.

@@ -40,6 +40,10 @@ jobs:
                       k=html.lower().find(term.lower())
                       if k >= 0:
                           print("MATCH",term, unescape(html[max(0,k-260):k+550]).replace("\n"," ")[:800],flush=True)
+                  for term in ("Posting Start Date", "Posting End Date", "Location(s)", "Salary Range", "Required Qualifications", "Job description", "Date Posted", "Job Posting", "page=2"):
+                      ix = html.find(term)
+                      if ix >= 0:
+                          print("FIELD", term, unescape(html[max(ix-200,0):ix+900]).replace("\\n"," ")[:1100], flush=True)
                   print("JSONLD", re.findall(r'<script[^>]+application/ld\\+json[^>]*>(.*?)</script>',html,re.I|re.S)[:2],flush=True)
               except Exception as exc:
                   print("PROBE ERROR", type(exc).__name__, str(exc)[:200],flush=True)

@@ -2214,11 +2214,6 @@
     "last_attempt_at": "2026-11-06T18:39:58Z",
     "last_error": "malformed-response"
   },
-  "workday:leidos:external": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-06T20:22:36Z",
-    "last_error": "malformed-response"
-  },
   "workday:lighting:jobs-and-careers": {
     "consecutive_failures": 1,
     "last_attempt_at": "2026-11-06T18:39:58Z",

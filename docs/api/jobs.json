@@ -1,9 +1,31 @@
 {
- "generated_at": "2026-11-07T00:27:52Z",
- "data_as_of": "2026-11-07T00:27:52Z",
- "rendered_at": "2026-11-07T00:27:52Z",
+ "generated_at": "2026-11-07T05:53:46Z",
+ "data_as_of": "2026-11-07T05:53:46Z",
+ "rendered_at": "2026-11-07T05:53:46Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 0,
- "jobs": []
+ "count": 1,
+ "jobs": [
+  {
+   "id": "workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057",
+   "company": "Leidos",
+   "title": "Network Site Design Intern",
+   "season": "Remote — Florida / US",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "Network / Telecom",
+   "location": "6314 Remote/Teleworker US",
+   "url": "https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057",
+   "posted_at": "2026-10-21T00:00:00Z",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-10-21T21:07:04Z",
+   "sponsorship": "citizens-only",
+   "salary": null,
+   "skills": [],
+   "source": "workday",
+   "h1b_approvals": 79,
+   "program": "Internship",
+   "remote": true
+  }
+ ]
 }

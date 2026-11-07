@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T00:27:52Z",
-  "fetched_at": "2026-11-07T00:27:52Z",
-  "duration_seconds": 25.3,
+  "generated_at": "2026-11-07T05:53:46Z",
+  "fetched_at": "2026-11-07T05:53:46Z",
+  "duration_seconds": 66.3,
   "companies_total": 9,
   "collection_boards": [
     "oracle:eofe.fa.us2.oraclecloud.com:cx_1",
@@ -21,19 +21,19 @@
     "jobicy": 1,
     "himalayas": 1
   },
-  "quarantined": 1,
-  "fetched_ok": 8,
+  "quarantined": 0,
+  "fetched_ok": 9,
   "fetch_errors": 0,
   "errors_by_source": {},
   "fetch_success_rate": 1.0,
-  "fetch_success_rate_registry": 0.889,
+  "fetch_success_rate_registry": 1.0,
   "snapshots_complete": 3,
-  "snapshots_partial": 5,
+  "snapshots_partial": 6,
   "partial_by_reason": {
-    "result-cap": 5
+    "result-cap": 6
   },
   "degraded_fetches": 0,
-  "roles_matched": 18,
+  "roles_matched": 19,
   "dropped_no_year_in_title": 0,
   "dropped_no_year_undated": 0,
   "dropped_no_year_dated_too_old": 0,
@@ -44,25 +44,26 @@
   "dropped_offcycle_by_text": 0,
   "roles_cycle_inferred": 0,
   "roles_by_source": {
-    "himalayas": 18
+    "himalayas": 18,
+    "workday": 1
   },
   "roles_by_cycle": {
-    "Remote — Florida / US": 18
+    "Remote — Florida / US": 19
   },
   "roles_by_region": {
-    "US": 18
+    "US": 19
   },
   "sponsorship_counts": {
     "unknown": 14,
     "no-sponsorship": 2,
-    "citizens-only": 2
+    "citizens-only": 3
   },
   "posted_date_coverage": 1.0,
-  "enriched_this_run": 27,
-  "enrichment_detail_fetches": 0,
+  "enriched_this_run": 29,
+  "enrichment_detail_fetches": 2,
   "purged_this_run": 0,
   "new_this_run": 0,
-  "open_total": 18,
+  "open_total": 19,
   "detection_latency": {
     "median_minutes": 355.8,
     "p95_minutes": 822.1,
@@ -74,5 +75,5 @@
     "median_days": 20.0,
     "sample_size": 108
   },
-  "rendered_at": "2026-11-07T00:27:52Z"
+  "rendered_at": "2026-11-07T05:53:46Z"
 }

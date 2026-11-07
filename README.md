@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**18 open postings** · Data as of 2026-11-07T00:27:52Z
+**19 open postings** · Data as of 2026-11-07T05:53:46Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -18,7 +18,7 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 
 ## 🖥️ IT Support, Networks & Infrastructure
 
-### Remote — Florida / US  (18 roles)
+### Remote — Florida / US  (19 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -31,6 +31,7 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | Blue Mantis (via Himalayas) 🆁 | IT EUX Junior Engineer I - Remote US Only 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 25, 2026 | [Apply](https://himalayas.app/companies/blue-mantis/jobs/it-eux-junior-engineer-i-remote-us-only-5215016678?utm_source=api) |
 | Leidos (via Himalayas) 🆁 | Network Site Design Intern 🇺🇸 🆕 | Network / Telecom | Remote - United States | No skills listed | Oct 24, 2026 | [Apply](https://himalayas.app/companies/leidos/jobs/network-site-design-intern?utm_source=api) |
 | Constellation Energy (via Himalayas) 🆁 | 2027 Summer IT Data Engineering Intern 🛂 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 23, 2026 | [Apply](https://himalayas.app/companies/constellation-energy/jobs/2027-summer-it-data-engineering-intern?utm_source=api) |
+| Leidos ✓ 🆁 | Network Site Design Intern 🇺🇸 | Network / Telecom | 6314 Remote/Teleworker US | No skills listed | Oct 21, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057) |
 | Lumen Technologies (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway 🆕 | Security / IT | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/lumen-technologies/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway?utm_source=api) |
 | DMI (via Himalayas) 🆁 | Service Desk Analyst 🇺🇸 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/dmi/jobs/service-desk-analyst?utm_source=api) |
 | CenturyLink (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway (Remote, US 🆕 | Security / IT | Remote - United States | No skills listed | Oct 17, 2026 | [Apply](https://himalayas.app/companies/centurylink/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway-remote-us?utm_source=api) |
@@ -57,17 +58,17 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 _2 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **2** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
 <details>
-<summary><strong>Recently closed</strong>: 25 roles that left the list in the last 14 days</summary>
+<summary><strong>Recently closed</strong>: 24 roles that left the list in the last 14 days</summary>
 
 _Why each one left is in the last column, because the two reasons carry different evidence. **Gone from feed** = two consecutive complete reads of the employer's board no longer returned it (strong, but not the employer telling us directly). **Out of scope** = still posted, but it no longer passes our filters. That's our call, not theirs. **Not recorded** = closed before we started tracking the reason._
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-07 | out of scope |
 | Corsair | Technical Support Specialist | Remote — Florida / US | 2026-11-06 | out of scope |
 | ADT | Remote Customer Technical Support | Remote — Florida / US | 2026-11-06 | out of scope |
 | CDW Corporation | IT Service Desk- 6AM - 6PM | Remote — Florida / US | 2026-11-06 | out of scope |
 | Crowdstrike | Technical Support | Remote — Florida / US | 2026-11-06 | out of scope |
-| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-06 | out of scope |
 | Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-06 | out of scope |
 | Zoetis | Diagnostics Technical Support Representative | Remote — Florida / US | 2026-11-06 | out of scope |
 | Amplify | Summer 2027: IT Services Intern | Remote — Florida / US | 2026-11-02 | out of scope |
@@ -77,7 +78,6 @@ _Why each one left is in the last column, because the two reasons carry differen
 | Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-02 | out of scope |
 | TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-02 | out of scope |
 | BigCommerce | Technical Support Representative - Remote | Remote — Florida / US | 2026-11-02 | out of scope |
-| Leidos | Network Site Design Intern | Remote — Florida / US | 2026-11-02 | out of scope |
 | Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-02 | out of scope |
 | Tines | Technical Support Engineer II - Federal | Remote — Florida / US | 2026-11-02 | out of scope |
 | BNY | Vice President, Technology Service Desk/On-Site Support | Orlando area | 2026-11-02 | out of scope |

@@ -76,7 +76,7 @@ def city_job(path: str, detail: str) -> Job | None:
             continue
         city = str(address.get("addressLocality") or "").strip()
         state = str(address.get("addressRegion") or "").strip()
-        if city.casefold() != "kissimmee" or state.upper() not in {"FL", "FLORIDA"}:
+        if city.casefold().replace(", florida", "").replace(", fl", "").strip() != "kissimmee" or state.upper() not in {"FL", "FLORIDA"}:
             continue
         posted = str(data.get("datePosted") or "")[:10]
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", posted):

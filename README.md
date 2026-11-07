@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**29 open postings** · Data as of 2026-11-07T18:01:25Z
+**31 open postings** · Data as of 2026-11-07T19:36:06Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -17,6 +17,13 @@ Remote postings need US or Florida location evidence. Confirm state eligibility 
 Entry-level IT jobs and paid internships only. Generic engineering roles, senior titles, postings asking for 2+ years of experience, unpaid roles, and roles without readable requirements are excluded. Applications are manual on the employer website.
 
 ## 🖥️ IT Support, Networks & Infrastructure
+
+### Orlando area  (2 roles)
+
+| Company | Role | Category | Location | Skills | Posted | Apply |
+|---|---|---|---|---|---|---|
+| Valencia College | Specialist, Technical Support 🆕 | IT Support / Ops | Orlando, FL 32825 - East Campus | No skills listed | Nov 05, 2026 | [Apply](https://valenciacollege.peopleadmin.com/postings/44244) |
+| School District of Osceola County | Computer Technician I-12 Month 🆕 | IT Support / Ops | Kissimmee, FL | No skills listed | Oct 29, 2026 | [Apply](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
 
 ### Remote — Florida / US  (29 roles)
 
@@ -62,10 +69,12 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 
 | Company | Typical opening | Expected this cycle | Status |
 |---|---|---|---|
+| 🎯 School District of Osceola County | Oct 29 | dropped Oct 29 | ✅ [open now](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
+| 🎯 Valencia College | Nov 05 | dropped Nov 05 | ✅ [open now](https://valenciacollege.peopleadmin.com/postings/44244) |
 | 🎯 BNY | Oct 13 | dropped Oct 13 · closed | 🗓️ dropped |
 | 🎯 University of Central Florida | Oct 14 | dropped Oct 14 · closed | 🗓️ dropped |
 
-_2 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **2** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
+_4 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **4** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
 <details>
 <summary><strong>Recently closed</strong>: 25 roles that left the list in the last 14 days</summary>

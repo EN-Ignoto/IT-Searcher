@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-07T18:01:25Z",
- "data_as_of": "2026-11-07T18:01:25Z",
- "rendered_at": "2026-11-07T18:01:25Z",
+ "generated_at": "2026-11-07T19:36:06Z",
+ "data_as_of": "2026-11-07T19:36:06Z",
+ "rendered_at": "2026-11-07T19:36:06Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 10,
+ "count": 12,
  "jobs": [
   {
    "id": "jobicy:us-remote-it:159499",
@@ -28,6 +28,27 @@
    "h1b_approvals": null,
    "program": "Entry-level job",
    "remote": true
+  },
+  {
+   "id": "localboards:valencia:44244",
+   "company": "Valencia College",
+   "title": "Specialist, Technical Support",
+   "season": "Orlando area",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "IT Support / Ops",
+   "location": "Orlando, FL 32825 - East Campus",
+   "url": "https://valenciacollege.peopleadmin.com/postings/44244",
+   "posted_at": "2026-11-05",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-11-07T19:36:06Z",
+   "sponsorship": "unknown",
+   "salary": "$19.93 per hour",
+   "skills": [],
+   "source": "localboards",
+   "h1b_approvals": null,
+   "program": "Entry-level job",
+   "remote": false
   },
   {
    "id": "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642",
@@ -72,6 +93,27 @@
    "h1b_approvals": 99,
    "program": "Entry-level job",
    "remote": true
+  },
+  {
+   "id": "localboards:osceola:993441CCDCCE775901861F2193A33B71",
+   "company": "School District of Osceola County",
+   "title": "Computer Technician I-12 Month",
+   "season": "Orlando area",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "IT Support / Ops",
+   "location": "Kissimmee, FL",
+   "url": "https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71",
+   "posted_at": "2026-10-29",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-11-07T19:36:06Z",
+   "sponsorship": "unknown",
+   "salary": null,
+   "skills": [],
+   "source": "localboards",
+   "h1b_approvals": null,
+   "program": "Entry-level job",
+   "remote": false
   },
   {
    "id": "workday:appliedis:/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427",

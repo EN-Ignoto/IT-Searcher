@@ -5,8 +5,24 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-07T18:01:25Z</updated>
+  <updated>2026-11-07T19:36:06Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:localboards:valencia:44244</id>
+    <title>Valencia College: Specialist, Technical Support</title>
+    <link href="https://valenciacollege.peopleadmin.com/postings/44244"/>
+    <updated>2026-11-07T19:36:06Z</updated>
+    <category term="Orlando area"/>
+    <summary>Orlando area · IT Support / Ops · Orlando, FL 32825 - East Campus · $19.93 per hour</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:localboards:osceola:993441CCDCCE775901861F2193A33B71</id>
+    <title>School District of Osceola County: Computer Technician I-12 Month</title>
+    <link href="https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71"/>
+    <updated>2026-11-07T19:36:06Z</updated>
+    <category term="Orlando area"/>
+    <summary>Orlando area · IT Support / Ops · Kissimmee, FL</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:jobicy:us-remote-it:159499</id>
     <title>NetDocuments: Technical Support Engineer</title>

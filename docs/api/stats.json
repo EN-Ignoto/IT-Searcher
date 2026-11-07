@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-07T18:01:25Z",
- "fetched_at": "2026-11-07T18:01:25Z",
- "duration_seconds": 66.6,
- "companies_total": 9,
+ "generated_at": "2026-11-07T19:36:06Z",
+ "fetched_at": "2026-11-07T19:36:06Z",
+ "duration_seconds": 67.2,
+ "companies_total": 11,
  "collection_boards": [
   "oracle:eofe.fa.us2.oraclecloud.com:cx_1",
   "oracle:eofe.fa.us2.oraclecloud.com:cx_1001",
@@ -12,28 +12,31 @@
   "workday:disney:disneycareerdc",
   "workday:ucf:careers",
   "jobicy:us-remote-it",
-  "himalayas:us-remote-it"
+  "himalayas:us-remote-it",
+  "localboards:valencia",
+  "localboards:osceola-schools"
  ],
  "companies_by_source": {
   "oracle": 2,
   "workday": 4,
   "smartrecruiters": 1,
   "jobicy": 1,
-  "himalayas": 1
+  "himalayas": 1,
+  "localboards": 2
  },
  "quarantined": 0,
- "fetched_ok": 9,
+ "fetched_ok": 11,
  "fetch_errors": 0,
  "errors_by_source": {},
  "fetch_success_rate": 1.0,
  "fetch_success_rate_registry": 1.0,
  "snapshots_complete": 3,
- "snapshots_partial": 6,
+ "snapshots_partial": 8,
  "partial_by_reason": {
-  "result-cap": 6
+  "result-cap": 8
  },
  "degraded_fetches": 0,
- "roles_matched": 19,
+ "roles_matched": 23,
  "dropped_no_year_in_title": 0,
  "dropped_no_year_undated": 0,
  "dropped_no_year_dated_too_old": 0,
@@ -48,25 +51,27 @@
   "himalayas": 19,
   "jobicy": 1,
   "oracle": 1,
-  "workday": 4
+  "workday": 4,
+  "localboards": 2
  },
  "roles_by_cycle": {
-  "Remote — Florida / US": 29
+  "Remote — Florida / US": 29,
+  "Orlando area": 2
  },
  "roles_by_region": {
-  "US": 29
+  "US": 31
  },
  "sponsorship_counts": {
-  "unknown": 24,
+  "unknown": 26,
   "no-sponsorship": 2,
   "citizens-only": 3
  },
  "posted_date_coverage": 1.0,
- "enriched_this_run": 27,
+ "enriched_this_run": 31,
  "enrichment_detail_fetches": 0,
  "purged_this_run": 0,
- "new_this_run": 0,
- "open_total": 29,
+ "new_this_run": 2,
+ "open_total": 31,
  "detection_latency": {
   "median_minutes": 350.2,
   "p95_minutes": 822.1,
@@ -78,5 +83,5 @@
   "median_days": 20.0,
   "sample_size": 108
  },
- "rendered_at": "2026-11-07T18:01:25Z"
+ "rendered_at": "2026-11-07T19:36:06Z"
 }

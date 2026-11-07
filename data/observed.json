@@ -3147,6 +3147,18 @@
     }
    }
   },
+  "school district of osceola county": {
+   "name": "School District of Osceola County",
+   "cycles": {
+    "Orlando area": {
+     "first_posted": "2026-10-29",
+     "role_ids": [
+      "localboards:osceola:993441CCDCCE775901861F2193A33B71"
+     ],
+     "count": 1
+    }
+   }
+  },
   "schroders": {
    "name": "Schroders",
    "cycles": {
@@ -3580,6 +3592,18 @@
     }
    }
   },
+  "valencia college": {
+   "name": "Valencia College",
+   "cycles": {
+    "Orlando area": {
+     "first_posted": "2026-11-05",
+     "role_ids": [
+      "localboards:valencia:44244"
+     ],
+     "count": 1
+    }
+   }
+  },
   "vanguard": {
    "name": "Vanguard",
    "cycles": {
@@ -3896,5 +3920,5 @@
    }
   }
  },
- "updated_at": "2026-11-07T18:01:25Z"
+ "updated_at": "2026-11-07T19:36:06Z"
 }

@@ -1,10 +1,48 @@
 {
- "generated_at": "2026-11-07T18:01:25Z",
- "data_as_of": "2026-11-07T18:01:25Z",
- "rendered_at": "2026-11-07T18:01:25Z",
+ "generated_at": "2026-11-07T19:36:06Z",
+ "data_as_of": "2026-11-07T19:36:06Z",
+ "rendered_at": "2026-11-07T19:36:06Z",
  "cycle": "Orlando area",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "companies": [
+  {
+   "company": "School District of Osceola County",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-29",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-29",
+   "days_until": -9,
+   "status": "open",
+   "url": "https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Orlando area",
+    "observed_on": "2026-10-29"
+   }
+  },
+  {
+   "company": "Valencia College",
+   "last_cycle_posted": "",
+   "posted_on": "2026-11-05",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-11-05",
+   "days_until": -2,
+   "status": "open",
+   "url": "https://valenciacollege.peopleadmin.com/postings/44244",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Orlando area",
+    "observed_on": "2026-11-05"
+   }
+  },
   {
    "company": "BNY",
    "last_cycle_posted": "",
@@ -44,5 +82,5 @@
    }
   }
  ],
- "count": 2
+ "count": 4
 }

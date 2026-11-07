@@ -75,6 +75,21 @@ jobs:
                   )
               if result.incomplete_reason == models.INCOMPLETE_MALFORMED:
                   raise SystemExit("City of Kissimmee job board could not be parsed.")
+              from intern_engine.connectors import governmentjobs as gov
+              import re
+              async with httpx.AsyncClient(timeout=20, follow_redirects=True) as session:
+                  net = Net(session, HostLimiter())
+                  page = await net.get_text(gov._CITY_URL + "1", retries=1)
+                  links = gov.city_links(page)
+                  print("Live city listing: job-item-container", page.count("job-item-container"),
+                        "job-details-link", page.count("job-details-link"),
+                        "parsed IT links", len(links), flush=True)
+                  for item, title in links.items():
+                      detail = await net.get_text("https://www.governmentjobs.com" + item, retries=1)
+                      print("City detail", title, "JSON-LD scripts", len(gov._SCRIPT.findall(detail)),
+                            "parse success", gov.city_job(item, detail) is not None,
+                            "datePosted", "datePosted" in detail, flush=True)
+                  print("Search title mentions", len(re.findall("IT Specialist", page, re.I)), flush=True)
               print(f"City of Kissimmee: {len(result.jobs)} relevant IT-title candidates", flush=True)
               for job in result.jobs:
                   verdict = filters_it.assess_fit(job.title, job.description, job.location)

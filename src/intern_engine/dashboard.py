@@ -245,7 +245,8 @@ def _rows(open_jobs: list[dict]) -> str:
             f"<td>{escape(r.get('category', ''))}</td>"
             f"<td>{loc}</td>"
             f"<td class='muted'>{escape(salary[:36])}</td>"
-            f"<td class='nowrap'>{escape(posted)}</td>"
+            f"<td class='nowrap' title='First detected by this site: "
+            f"{escape(r.get('first_seen_at') or 'unknown')}'>{escape(posted)}</td>"
             f"<td>{apply}</td>"
             "</tr>"
         )

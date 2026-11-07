@@ -259,7 +259,7 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
             "Help desk, desktop support, networking, systems, cloud, and related IT opportunities.", "",
             f"**{total_open} open postings** · Data as of {data_as_of or 'last collection'}", "",
             f"[Search dashboard]({pages}/) · [CSV]({pages}/internships.csv) · [RSS]({pages}/feed.xml)", "",
-            f"Refreshes are scheduled hourly. Listings leave the fresh feed after {config.max_age_days(cfg)} days "
+            f"Priority employer checks are scheduled every 20 minutes; the full registry every four hours. GitHub may delay runs. Listings leave the feed after {config.max_age_days(cfg)} days "
             "based on the employer's posting date, or first discovery if the posting date is unavailable.", "",
             "Use ☆ on the dashboard to save roles for later. Saved details stay in that browser even after a role leaves the feed.", "",
             "Nearby-city coverage includes Orlando, Lake Mary, Sanford, Winter Park, Kissimmee, "

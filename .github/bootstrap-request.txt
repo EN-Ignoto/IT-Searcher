@@ -4,3 +4,4 @@ Verify recurring priority-source scan and fresh-post filters after PR #5 deploym
 2026-11-07: verify new official Valencia/Osceola local IT connectors in live fast scan.
 2026-11-07: verify strict applicant-fit filters and preserve both local jobs after PR #7.
 2026-11-07: final live scan after true-posted freshness label fix.
+2026-11-07: recheck Nash experience false positive and preserve local first-IT roles.

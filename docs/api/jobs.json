@@ -1,11 +1,34 @@
 {
- "generated_at": "2026-11-07T12:53:40Z",
- "data_as_of": "2026-11-07T12:53:40Z",
- "rendered_at": "2026-11-07T12:53:40Z",
+ "generated_at": "2026-11-07T15:37:18Z",
+ "data_as_of": "2026-11-07T15:37:18Z",
+ "rendered_at": "2026-11-07T15:37:18Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 9,
+ "count": 10,
  "jobs": [
+  {
+   "id": "jobicy:us-remote-it:159499",
+   "company": "NetDocuments",
+   "title": "Technical Support Engineer",
+   "season": "Remote — Florida / US",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "IT Support / Ops",
+   "location": "Remote - United States (Jobicy: USA)",
+   "url": "https://jobicy.com/jobs/159499-technical-support-engineer-6",
+   "posted_at": "2026-11-07T10:54:59+00:00",
+   "posted_at_source": "exact",
+   "first_seen_at": "2026-11-07T15:37:18Z",
+   "sponsorship": "unknown",
+   "salary": null,
+   "skills": [
+    "SQL"
+   ],
+   "source": "jobicy",
+   "h1b_approvals": null,
+   "program": "Entry-level job",
+   "remote": true
+  },
   {
    "id": "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642",
    "company": "ADT",

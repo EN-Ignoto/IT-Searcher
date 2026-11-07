@@ -5,8 +5,16 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-07T12:53:40Z</updated>
+  <updated>2026-11-07T15:37:18Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:jobicy:us-remote-it:159499</id>
+    <title>NetDocuments: Technical Support Engineer</title>
+    <link href="https://jobicy.com/jobs/159499-technical-support-engineer-6"/>
+    <updated>2026-11-07T15:37:18Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote - United States (Jobicy: USA) · SQL</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7</id>
     <title>1Password: IT Intern, IT Support - Winter 2027</title>

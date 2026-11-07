@@ -1,4 +1,5 @@
 """Local postings come from official live pages, not hand-seeded vacancies."""
+
 import asyncio
 import json
 from datetime import UTC, datetime, timedelta

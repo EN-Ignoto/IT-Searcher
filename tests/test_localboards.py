@@ -1,4 +1,5 @@
 """Local postings come from official live pages, not hand-seeded vacancies."""
+# ruff: noqa: I001 -- exercise local source fixtures alongside existing imports
 
 import asyncio
 import json

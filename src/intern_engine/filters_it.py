@@ -20,7 +20,7 @@ FOUNDATION = re.compile(
 )
 SUPPORT = re.compile(r"\b(help[ -]?desk|service desk|desktop support|it support|computer technician|pc technician|it technician|it specialist|technical support|end[ -]user|field support|support technician|support specialist)\b", re.I)
 IT = re.compile(r"\b(information technology|it|help[ -]?desk|service desk|desktop|sysadmin|systems? administrat\w*|network|networking|noc|data cent(?:er|re)|cloud|infrastructure|linux|windows|technical support|computer support|technology support|computer technician|pc technician|end[ -]user|devops|site reliability|cyber\w*|infosec|soc analyst|information security)\b", re.I)
-EXCLUDE = re.compile(r"\b(sales|marketing|recruit\w*|mechanical|aerospace|electrical|embedded|firmware|software|civil|manufacturing|landscape|construction|financial|data scien\w*|data engineer|machine learning|provider network|social network|security guard|physical security|loss prevention|hvac|commissioning|facilities|electrician|plumbing|phlebotomist|product owner|project coordinator|diagnostic\w*|reporter|scrum master|product line|clinical|veterinary|medical device)\b", re.I)
+EXCLUDE = re.compile(r"\b(sales|presales|pre-sales|marketing|recruit\w*|mechanical|aerospace|electrical|embedded|firmware|software|civil|manufacturing|landscape|construction|financial|data scien\w*|data engineer(?:ing)?|machine learning|provider network|social network|security guard|physical security|loss prevention|hvac|commissioning|facilities|electrician|plumbing|phlebotomist|product owner|product management|product manager|project coordinator|diagnostic\w*|reporter|scrum master|product line|clinical|veterinary|medical device|skillbridge|erp implementation)\b", re.I)
 CITIES = re.compile(r"\b(orlando|winter park|winter garden|lake mary|sanford|kissimmee|poinciana|davenport|haines city|hunters creek|dr[.]? phillips|buenaventura lakes|four corners|altamonte springs|maitland|apopka|oviedo|longwood|casselberry|lake buena vista|celebration|ocoee|windermere|winter springs|st[.]? cloud|clermont|tavares|mount dora)\b", re.I)
 FL = re.compile(r"\b(fl|florida)\b", re.I)
 OTHER_STATE = re.compile(r",\s*(?:AL|AK|AZ|AR|CA|CO|CT|DE|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY)\b")
@@ -53,8 +53,11 @@ def is_opportunity(title: str) -> bool:
 FIT_VERSION = 5
 _EXPERIENCE = re.compile(
     r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)"
-    r"\s*(?:\+|(?:-|–|to)\s*\d{1,2})?\s*years?"
-    r"(?:['’]s?)?\s+(?:of\s+)?(?:[\w/-]+\s+){0,6}experience\b", re.I)
+    r"\s*(?:\+|(?:-|–|to)\s*\d{1,2}\+?)?\s*years?"
+    r"(?:['’]s?)?\s+(?:(?:of|in|with)\s+)?(?:[\w/-]+\s+){0,8}"
+    r"(?:experience|technical support|support engineering|it support"
+    r"|desktop support|customer support|customer service|networking"
+    r"|help desk|troubleshooting)\b", re.I)
 _WORD_NUMBERS = dict(zip('one two three four five six seven eight nine ten'.split(), range(1, 11), strict=True))
 
 

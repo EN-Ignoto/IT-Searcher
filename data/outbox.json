@@ -1,36 +1,6 @@
 {
   "pending": {
-    "discord": [
-      "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287",
-      "workday:cdw:/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232",
-      "lever:ion:541086b5-9de1-4f65-8038-f9690100b442",
-      "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642",
-      "ashby:equip:829ff280-4d61-4b23-a754-af75e1282203",
-      "workday:ciena:/job/Remote-US/Advisor--Regional-Services-Product-Line-Management--Global-Cloud-Networking--GCN-_R031997",
-      "workday:leidos:/job/6314-RemoteTeleworker-US/IT-Asset-Analyst_R-00196272",
-      "workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289",
-      "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
-      "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419",
-      "workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051",
-      "workday:thinkbrg:/job/Remote---USA/Cybersecurity-Analyst_JR101249",
-      "workday:leidos:/job/6314-RemoteTeleworker-US/Junior-Salesforce-Health-Cloud-System-Administrator_R-00196200",
-      "workday:zoetis:/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901"
-    ],
-    "telegram": [
-      "workday:cdw:/job/Remote--USA/Solution-Specialist---Networking_R26_00003287",
-      "workday:cdw:/job/Remote--USA/Microsoft-Infrastructure-Support-Engineer_R26_00003232",
-      "lever:ion:541086b5-9de1-4f65-8038-f9690100b442",
-      "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642",
-      "ashby:equip:829ff280-4d61-4b23-a754-af75e1282203",
-      "workday:ciena:/job/Remote-US/Advisor--Regional-Services-Product-Line-Management--Global-Cloud-Networking--GCN-_R031997",
-      "workday:leidos:/job/6314-RemoteTeleworker-US/IT-Asset-Analyst_R-00196272",
-      "workday:cdw:/job/Remote--USA/Operations-Analyst-6AM---6PM_R26_00003289",
-      "workday:pennmutual:/job/Remote---United-States/Information-Security-Engineer-1_R-100722",
-      "workday:leidos:/job/6314-RemoteTeleworker-US/Site-Reliability-Engineering-Scrum-Master_R-00196419",
-      "workday:guidehouse:/job/US---Remote-Any-location/Cloud-Service-Provider-Costing-Specialist_46051",
-      "workday:thinkbrg:/job/Remote---USA/Cybersecurity-Analyst_JR101249",
-      "workday:leidos:/job/6314-RemoteTeleworker-US/Junior-Salesforce-Health-Cloud-System-Administrator_R-00196200",
-      "workday:zoetis:/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901"
-    ]
+    "discord": [],
+    "telegram": []
   }
 }

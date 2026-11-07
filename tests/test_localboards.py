@@ -3,9 +3,8 @@ import asyncio
 import json
 from datetime import UTC, datetime, timedelta
 
-from intern_engine import fastlane, filters_it, registry
+from intern_engine import fastlane, filters_it, models, registry
 from intern_engine.connectors import localboards
-from intern_engine.models import INCOMPLETE_CAPPED, INCOMPLETE_MALFORMED
 
 
 _VALENCIA = """
@@ -18,7 +17,7 @@ _VALENCIA_DETAIL = """
 <table>
 <tr><th>Location(s)</th><td>Orlando, FL 32825 - East Campus</td></tr>
 <tr><th>Posting Start Date</th><td>11/05/2026</td></tr>
-<tr><th>Posting End Date</th><td>11/19/2026</td></tr>
+<tr><th>Posting End Date</th><td>12/31/2099</td></tr>
 <tr><th>Salary Range</th><td>19.93 per hour</td></tr>
 <tr><th>Description of Job Function</th><td>Help faculty troubleshoot
 PCs, laptops and printers, plus network connectivity.</td></tr>
@@ -67,7 +66,7 @@ def test_valencia_real_html_structure_and_fit():
 
 
 def test_valencia_closed_and_malformed_postings_not_invented():
-    old = _VALENCIA_DETAIL.replace("11/19/2026", "09/19/2026")
+    old = _VALENCIA_DETAIL.replace("12/31/2099", "09/19/2026")
     assert localboards.valencia_job("44244", "Specialist, Technical Support", old) is None
     assert localboards.valencia_job("44244", "Specialist, Technical Support", "<html></html>") is None
 
@@ -80,7 +79,7 @@ def test_valencia_live_fetch_is_never_complete_for_closure():
     result = asyncio.run(localboards.fetch({"slug": "valencia"}, MockNet(urls)))
     assert len(result.jobs) == 1
     assert not result.complete
-    assert result.incomplete_reason == INCOMPLETE_CAPPED
+    assert result.incomplete_reason == models.INCOMPLETE_CAPPED
 
 
 def test_school_jsonld_real_job_parsing():
@@ -110,14 +109,14 @@ def test_school_page_collection_does_not_close_on_incomplete_pagination():
     result = asyncio.run(localboards.fetch({"slug": "osceola-schools"}, MockNet(urls)))
     assert len(result.jobs) == 1
     assert not result.complete
-    assert result.incomplete_reason == INCOMPLETE_CAPPED
+    assert result.incomplete_reason == models.INCOMPLETE_CAPPED
 
 
 def test_failed_boards_do_not_close_prior_live_postings():
     result = asyncio.run(localboards.fetch({"slug": "valencia"}, MockNet({})))
     assert result.jobs == []
     assert not result.complete
-    assert result.incomplete_reason == INCOMPLETE_MALFORMED
+    assert result.incomplete_reason == models.INCOMPLETE_MALFORMED
 
 
 def test_priority_scan_includes_registered_local_sources():

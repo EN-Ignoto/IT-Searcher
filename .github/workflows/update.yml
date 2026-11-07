@@ -128,6 +128,7 @@ jobs:
             if [ "$attempt" = 3 ]; then exit 1; fi
             sleep $((attempt * 5))
           done
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
 
       # An alert is eligible only after the corresponding listing is on main.
       # Optional Discord and Telegram secrets can be configured in repo settings.

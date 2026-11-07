@@ -8,8 +8,9 @@ on:
     paths:
       - ".github/refresh-request.txt"
   schedule:
-    # Repeat hourly, away from the busiest top-of-hour slot.
-    - cron: "17 * * * *"
+    # Broad ~5,000-board sweep every four hours; the fast-lane workflow
+    # checks high-signal employers between these long scans.
+    - cron: "17 */4 * * *"
   workflow_dispatch:
     inputs:
       render_only:
@@ -127,3 +128,22 @@ jobs:
             if [ "$attempt" = 3 ]; then exit 1; fi
             sleep $((attempt * 5))
           done
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # An alert is eligible only after the corresponding listing is on main.
+      # Optional Discord and Telegram secrets can be configured in repo settings.
+      - name: Notify about newly posted eligible roles
+        if: ${{ steps.publish.outputs.pushed == 'true' }}
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run.py notify-fast
+
+      - name: Persist alert delivery state
+        if: ${{ steps.publish.outputs.pushed == 'true' }}
+        run: |
+          git add data/outbox.json
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "Record early job alert delivery status"
+          git push origin HEAD:main

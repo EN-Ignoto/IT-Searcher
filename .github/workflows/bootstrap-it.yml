@@ -1,6 +1,10 @@
-name: Bootstrap validated IT postings
+name: Fast IT opportunity detection
 
 on:
+  # Check the high-signal boards three times an hour. GitHub cron is
+  # best-effort, not a promise of minute-perfect availability.
+  schedule:
+    - cron: "7,27,47 * * * *"
   push:
     branches: [main]
     paths:
@@ -9,6 +13,12 @@ on:
 
 permissions:
   contents: write
+
+# Share the writer lock with the broad collection: never publish stale
+# snapshots from two concurrent runs over each other.
+concurrency:
+  group: intern-engine-writer
+  cancel-in-progress: false
 
 jobs:
   bootstrap:
@@ -21,28 +31,27 @@ jobs:
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: "3.11"
+      - name: Capture published baseline
+        run: echo "BASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Refresh two directly validated live IT sources
+      - name: Refresh remote sources and priority Orlando employers
         run: |
           python - <<'PY'
           import sys
           sys.path.insert(0, "src")
           import run
-          from intern_engine import pipeline, registry
+          from intern_engine import fastlane, pipeline, registry
 
-          original = pipeline._load_companies
-          pipeline._load_companies = lambda: [
-              company for company in registry.load()
-              if company["ats"] in ("himalayas", "jobicy")
-          ]
-          assert len(pipeline._load_companies()) == 2
+          selected = fastlane.select(registry.load())
+          print(f"Fast scan: {len(selected)} boards", flush=True)
+          pipeline._load_companies = lambda: selected
           run.cmd_update()
-          pipeline._load_companies = original
           PY
       - name: Verify exact roles before publication
         run: |
           python tools/verify_accuracy.py
+          python tools/check_feed_collapse.py
           python - <<'PY'
           import json
           with open("data/stats.json", encoding="utf-8") as source:
@@ -55,6 +64,7 @@ jobs:
               raise SystemExit("Neither source yielded a verified first-job role.")
           PY
       - name: Commit published job listings
+        id: publish
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -64,11 +74,33 @@ jobs:
                   docs/index.html docs/feed.xml docs/internships.csv \
                   docs/radar.ics docs/trends-light.svg docs/trends-dark.svg \
                   docs/api/jobs.json docs/api/stats.json docs/api/radar.json
-          if git diff --staged --quiet; then exit 0; fi
-          git commit -m "Publish verified first-job opportunities from live sources"
+          if git diff --staged --quiet; then
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Publish newly discovered eligible IT opportunities"
           git fetch origin main
           if [ "$(git rev-parse origin/main)" != "$(git rev-parse HEAD^)" ]; then
             echo "::error::main advanced; do not overwrite a newer job snapshot"
             exit 1
           fi
+          git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # Never notify about a run that was blocked or could not publish.
+      # Secrets are optional: absent means no delivery, not a failed scan.
+      - name: Notify about genuinely fresh published jobs
+        if: ${{ steps.publish.outputs.pushed == 'true' }}
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run.py notify-fast
+
+      - name: Persist delivered alert ids
+        if: ${{ steps.publish.outputs.pushed == 'true' }}
+        run: |
+          git add data/outbox.json
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "Record early job alert delivery status"
           git push origin HEAD:main

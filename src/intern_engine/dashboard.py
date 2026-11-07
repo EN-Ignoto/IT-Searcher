@@ -232,6 +232,7 @@ def _rows(open_jobs: list[dict]) -> str:
             f'data-remote="{remote}" '
             f'data-program="{escape(program)}" '
             f'data-posted="{escape(posted if posted != "—" else "")}" '
+            f'data-posted-time="{escape(r.get("posted_at") or "")}" '
             f'data-inferred="{"1" if r.get("season_inferred") else "0"}" '
             f'data-openings="{openings}" '
             f'data-ids="{escape("|".join(r.get("opening_ids") or [jid]))}" '
@@ -418,9 +419,9 @@ def generate(store_data: dict, stats: dict) -> None:
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IT Searcher · Your job workspace</title>
-<meta name="description" content="Summer 2027 & Fall 2026 IT jobs & internships, refreshed every 3 hours. Auto-detected visa sponsorship flags, proven H-1B sponsor badges, email alerts.">
+<meta name="description" content="Entry-level IT jobs and paid internships. Priority job-source checks are scheduled every 20 minutes, with broader employer scans every four hours.">
 <meta property="og:title" content="Internship Engine - Live Dashboard">
-<meta property="og:description" content="{len(open_jobs)} open IT jobs & internships, refreshed every 3 hours. Visa-sponsorship flags + proven H-1B sponsor badges for international students.">
+<meta property="og:description" content="{len(open_jobs)} open entry-level IT jobs and internships. Fast-source checks targeted every 20 minutes; broad scans every four hours.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <link rel="alternate" type="application/atom+xml" title="New internships" href="feed.xml">
@@ -693,7 +694,7 @@ def generate(store_data: dict, stats: dict) -> None:
 </style></head><body><div class="wrap">
   <header class="top">
     <h1>{"Orlando-area" if cfg.get("opportunity_scope") == "it" else escape(region)} IT jobs & internships</h1>
-    <p class="sub">Refresh scheduled hourly. The fresh feed keeps postings for {config.max_age_days(cfg)} days; undated roles expire {config.max_age_days(cfg)} days after first discovery. Start with Last 24 hours or Last 48 hours to apply early.</p>
+    <p class="sub">Priority employer and remote-source scans are scheduled every 20 minutes; broad registry scans every four hours (GitHub may delay starts). The feed keeps postings for {config.max_age_days(cfg)} days; select Posted in last 48 hours to apply early.</p>
     <p class="sub">First-job IT candidates and paid internships. Postings mentioning 2+ years, advanced titles, unreadable requirements, and unpaid internships are excluded. Confirm schedule and remote-state eligibility with the employer.</p>
     <p class="sub">Read straight from {stats.get('companies_total', 0):,} employer
     job boards. Data as of {escape(updated)}.</p>
@@ -711,7 +712,7 @@ def generate(store_data: dict, stats: dict) -> None:
     <p class="muted">Fresh start: {escape(cfg.get('feed_start_date') or 'not set')} · Posted dates come from employers; undated roles use first discovery.</p>
     <p id="freshstatus" role="status"></p>
     <nav class="quick" aria-label="Quick job filters">
-      <button class="ghost" data-view="fresh">New this week</button>
+      <button class="ghost" data-view="fresh">Posted in last 48 hours</button>
       <button class="ghost" data-view="local">Local opportunities</button>
       <button class="ghost" data-view="intern">Internships</button>
       <button class="ghost" data-view="all">All active jobs</button>
@@ -932,7 +933,7 @@ def generate(store_data: dict, stats: dict) -> None:
   document.querySelectorAll('[data-view]').forEach(function(btn) {{
     btn.addEventListener('click', function() {{
       reset();
-      if (btn.dataset.view === 'fresh') age.value = '7';
+      if (btn.dataset.view === 'fresh') age.value = '2';
       if (btn.dataset.view === 'local') cycle.value = 'Orlando area';
       if (btn.dataset.view === 'intern') program.value = 'Internship';
       apply();
@@ -949,7 +950,7 @@ def generate(store_data: dict, stats: dict) -> None:
     !Number.isFinite(lastFetch.getTime()) ? 'Collection time unavailable.' :
     Date.now() - lastFetch.getTime() > 86400000 ?
     'Collection is overdue. Last fetched ' + lastFetch.toLocaleString() + '. Results may be incomplete.' :
-    'Last collection: ' + lastFetch.toLocaleString() + '. Hourly checks are scheduled.';
+    'Last collection: ' + lastFetch.toLocaleString() + '. Priority scans targeted every 20 min; broad scans every 4 hours (GitHub scheduling may delay them).';
   function apply() {{
     rows.sort(function(a,b) {{
       if (sort.value === 'company') return a.cells[1].textContent.localeCompare(b.cells[1].textContent);
@@ -959,7 +960,7 @@ def generate(store_data: dict, stats: dict) -> None:
     rows.forEach(function(tr) {{ document.getElementById('rows').appendChild(tr); }});
     var text = q.value.trim().toLowerCase(), cy = cycle.value, ca = cat.value,
         sp = spon.value, proven = h1b.checked, shown = 0,
-        minPosted = age.value ? cutoffISO(parseInt(age.value, 10)) : '',
+        minPosted = age.value ? Date.now() - parseInt(age.value, 10) * 86400000 : 0,
         statedOnly = stated.checked, prog = program.value,
         remoteOnly = remote.checked, onlySaved = savedonly.checked;
     rows.forEach(function (tr) {{
@@ -975,7 +976,7 @@ def generate(store_data: dict, stats: dict) -> None:
         && (!prog || tr.dataset.program.indexOf(prog) !== -1)
         && (!remoteOnly || tr.dataset.remote === '1')
         && (!onlySaved || !!saved[tr.dataset.id])
-        && (!minPosted || (tr.dataset.posted && tr.dataset.posted >= minPosted))
+        && (!minPosted || (Date.parse(tr.dataset.postedTime || tr.dataset.posted || '') >= minPosted))
         && (!statedOnly || tr.dataset.inferred === '0');
       tr.style.display = ok ? '' : 'none';
       // Count OPENINGS, not rows. A row standing for eight requisitions is

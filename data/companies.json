@@ -29548,5 +29548,10 @@
     "name": "School District of Osceola County",
     "slug": "osceola-schools",
     "ats": "localboards"
+  },
+  {
+    "name": "City of Kissimmee Public Jobs",
+    "slug": "kissimmee-city",
+    "ats": "governmentjobs"
   }
 ]

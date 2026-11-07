@@ -45,6 +45,7 @@ from .connectors import (
     ashby,
     breezy,
     eightfold,
+    governmentjobs,
     greenhouse,
     himalayas,
     icims,
@@ -61,6 +62,7 @@ from .connectors import (
 from .net import HostLimiter, Net
 
 CONNECTORS = {
+    "governmentjobs": governmentjobs.fetch,
     "greenhouse": greenhouse.fetch,
     "himalayas": himalayas.fetch,
     "icims": icims.fetch,

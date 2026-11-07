@@ -3,3 +3,4 @@ Check additional Himalayas US entry-level IT source on November 6, 2026.
 Inspect exact Himalayas eligibility fields on 2026-11-06.
 Verify new municipal connector against live City of Kissimmee GovernmentJobs postings 2026-11-07.
 Reproduce City GovernmentJobs false-zero parser at 2026-11-07T20:22Z.
+Inspect City JobPosting structured data values 2026-11-07T20:23Z.

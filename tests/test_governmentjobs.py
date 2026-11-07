@@ -21,7 +21,7 @@ _CITY_DETAIL = """
 "description":"Troubleshoot all computers and peripherals. Requires an Associate's Degree in computer technology supplemented by two (2) years of network operations and support experience. Prefer CompTIA Network+.",
 "datePosted":"2026-10-30","validThrough":"2099-11-13",
 "hiringOrganization":{"@type":"Organization","name":"City of Kissimmee"},
-"jobLocation":{"@type":"Place","address":{"addressLocality":"Kissimmee","addressRegion":"FL"}}}
+"jobLocation":{"@type":"Place","address":{"addressLocality":"Kissimmee, FL","addressRegion":"FL"}}}
 </script>
 """
 

@@ -106,7 +106,7 @@ def valencia_job(number: str, title: str, detail: str) -> Job | None:
 
 def _school_title(title: str) -> str:
     """'Support Staff-' denotes school employee classification, not seniority."""
-    return re.sub(r"^Support Staff\\s*[-–:]\\s*", "", title, flags=re.I).strip()
+    return re.sub(r"^Support Staff\s*[-–:]\s*", "", title, flags=re.I).strip()
 
 
 def osceola_links(html: str) -> dict[str, str]:

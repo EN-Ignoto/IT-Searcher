@@ -13,6 +13,7 @@ PRIORITY_EMPLOYERS = frozenset({
     "nbcuniversal",
     "leidos",
     "bny",
+    "nash",  # Keep rechecking support-role experience requirements after parser changes.
 })
 
 

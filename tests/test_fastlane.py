@@ -19,3 +19,11 @@ def test_select_fast_lane_keeps_relevant_board_records():
 def test_requires_real_remote_source():
     with pytest.raises(ValueError, match="validated remote IT source"):
         fastlane.select([{"name": "University of Central Florida", "ats": "workday"}])
+
+
+def test_recheck_support_jobs_with_known_experience_requirements():
+    companies = [
+        {"name": "Himalayas US Remote Jobs", "ats": "himalayas", "slug": "us-remote-it"},
+        {"name": "Nash", "ats": "ashby", "slug": "Nash"},
+    ]
+    assert len(fastlane.select(companies)) == 2

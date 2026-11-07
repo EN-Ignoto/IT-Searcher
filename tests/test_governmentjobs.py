@@ -1,4 +1,5 @@
 """Realistic public municipal search and full posting evidence."""
+# ruff: noqa: I001 -- test fixtures group first-party imports, as in test_localboards.py
 import asyncio
 
 from intern_engine import fastlane, filters_it, models, registry

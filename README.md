@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**27 open postings** · Data as of 2026-11-07T06:39:00Z
+**27 open postings** · Data as of 2026-11-07T12:53:40Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -72,6 +72,7 @@ _Why each one left is in the last column, because the two reasons carry differen
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-07 | out of scope |
 | Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-07 | out of scope |
 | PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
 | Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-07 | out of scope |
@@ -82,7 +83,6 @@ _Why each one left is in the last column, because the two reasons carry differen
 | Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-07 | out of scope |
 | Impactadvisors | Cloud ERP Implementation Intern | Remote — Florida / US | 2026-11-07 | out of scope |
 | Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-07 | out of scope |
-| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-07 | out of scope |
 | Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-07 | out of scope |
 | Zillow | IT Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
 | Corsair | Technical Support Specialist | Remote — Florida / US | 2026-11-06 | out of scope |

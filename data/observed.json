@@ -2578,6 +2578,18 @@
     }
    }
   },
+  "netsmart via himalayas": {
+   "name": "Netsmart (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-07",
+     "role_ids": [
+      "himalayas:us-remote-it:2e66e8e2c5987d81fe67"
+     ],
+     "count": 1
+    }
+   }
+  },
   "nissan": {
    "name": "Nissan",
    "cycles": {
@@ -3920,5 +3932,5 @@
    }
   }
  },
- "updated_at": "2026-11-07T19:42:39Z"
+ "updated_at": "2026-11-07T19:46:59Z"
 }

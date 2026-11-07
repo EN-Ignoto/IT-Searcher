@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**25 open postings** · Data as of 2026-11-07T19:42:39Z
+**26 open postings** · Data as of 2026-11-07T19:46:59Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -14,6 +14,10 @@ Nearby-city coverage includes Orlando, Lake Mary, Sanford, Winter Park, Kissimme
 
 Remote postings need US or Florida location evidence. Confirm state eligibility on the employer page.
 
+🆕 means published by the employer within the past 48 hours, not merely found by this searcher. The Posted date may have day-level rather than minute-level precision.
+
+Some third-party listings are dashboard-only and are excluded from CSV/RSS redistribution under their source terms.
+
 Entry-level IT jobs and paid internships only. Generic engineering roles, senior titles, postings asking for 2+ years of experience, unpaid roles, and roles without readable requirements are excluded. Applications are manual on the employer website.
 
 ## 🖥️ IT Support, Networks & Infrastructure
@@ -22,36 +26,37 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
-| Valencia College | Specialist, Technical Support 🆕 | IT Support / Ops | Orlando, FL 32825 - East Campus | No skills listed | Nov 05, 2026 | [Apply](https://valenciacollege.peopleadmin.com/postings/44244) |
-| School District of Osceola County | Computer Technician I-12 Month 🆕 | IT Support / Ops | Kissimmee, FL | No skills listed | Oct 29, 2026 | [Apply](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
+| Valencia College | Specialist, Technical Support | IT Support / Ops | Orlando, FL 32825 - East Campus | No skills listed | Nov 05, 2026 | [Apply](https://valenciacollege.peopleadmin.com/postings/44244) |
+| School District of Osceola County | Computer Technician I-12 Month | IT Support / Ops | Kissimmee, FL | No skills listed | Oct 29, 2026 | [Apply](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
 
-### Remote — Florida / US  (23 roles)
+### Remote — Florida / US  (24 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| Netsmart (via Himalayas) 🆁 | Service Desk Technician - Application Support 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/netsmart/jobs/service-desk-technician-application-support?utm_source=api) |
 | AMERICAN SYSTEMS (via Himalayas) 🆁 | Tier I Part Time Help Desk Analyst – Overnight Monitoring 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/american-systems/jobs/tier-i-part-time-help-desk-analyst-overnight-monitoring?utm_source=api) |
 | NetDocuments 🆁 | Technical Support Engineer 🆕 | IT Support / Ops | Remote - United States (Jobicy: USA) | SQL | Nov 07, 2026 | [Apply](https://jobicy.com/jobs/159499-technical-support-engineer-6) |
 | ADT (via Himalayas) 🆁 | Remote Customer Technical Support 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 06, 2026 | [Apply](https://himalayas.app/companies/adt/jobs/remote-customer-technical-support?utm_source=api) |
 | Uniguest (via Himalayas) 🆁 | Technical Support Representative - Tier I (Remote U.S.) 🆕 | IT Support / Ops | Remote - United States | Linux | Nov 06, 2026 | [Apply](https://himalayas.app/companies/uniguest/jobs/technical-support-representative-tier-i-remote-u-s?utm_source=api) |
 | ADT ✓ 🆁 | Remote Customer Technical Support | IT Support / Ops | United States +48 more | No skills listed | Nov 04, 2026 | [Apply](https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642) |
 | Crowdstrike ✓ 🆁 | Technical Support | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
-| Applied Information Sciences 🆁 | Cloud Migration Engineer I 🆕 | Cloud Platform | USA Remote | Python, Bash, AWS, Azure | Oct 29, 2026 | [Apply](https://appliedis.wd5.myworkdayjobs.com/ais_careers/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427) |
-| Resideo (via Himalayas) 🆁 | Network Technician 🆕 | Network / Telecom | Remote - United States | No skills listed | Oct 28, 2026 | [Apply](https://himalayas.app/companies/resideo/jobs/network-technician?utm_source=api) |
-| Aurrera Health Group (via Himalayas) 🆁 | Enterprise Internship, Information Technology 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 27, 2026 | [Apply](https://himalayas.app/companies/aurrera-health-group/jobs/enterprise-internship-information-technology?utm_source=api) |
-| VC3 (via Himalayas) 🆁 | Part-Time NOC Analyst I (Weekends, Evenings & Overnight) 🆕 | Network / Telecom | Remote - United States | Linux | Oct 25, 2026 | [Apply](https://himalayas.app/companies/vc3/jobs/part-time-noc-analyst-i-weekends-evenings-overnight?utm_source=api) |
-| Blue Mantis (via Himalayas) 🆁 | IT EUX Junior Engineer I - Remote US Only 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 25, 2026 | [Apply](https://himalayas.app/companies/blue-mantis/jobs/it-eux-junior-engineer-i-remote-us-only-5215016678?utm_source=api) |
-| Leidos (via Himalayas) 🆁 | Network Site Design Intern 🇺🇸 🆕 | Network / Telecom | Remote - United States | No skills listed | Oct 24, 2026 | [Apply](https://himalayas.app/companies/leidos/jobs/network-site-design-intern?utm_source=api) |
-| 1Password 🆁 | IT Intern, IT Support - Winter 2027 🆕 | IT Support / Ops | Remote (United States / Canada) | No skills listed | Oct 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7) |
+| Applied Information Sciences 🆁 | Cloud Migration Engineer I | Cloud Platform | USA Remote | Python, Bash, AWS, Azure | Oct 29, 2026 | [Apply](https://appliedis.wd5.myworkdayjobs.com/ais_careers/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427) |
+| Resideo (via Himalayas) 🆁 | Network Technician | Network / Telecom | Remote - United States | No skills listed | Oct 28, 2026 | [Apply](https://himalayas.app/companies/resideo/jobs/network-technician?utm_source=api) |
+| Aurrera Health Group (via Himalayas) 🆁 | Enterprise Internship, Information Technology | IT Support / Ops | Remote - United States | No skills listed | Oct 27, 2026 | [Apply](https://himalayas.app/companies/aurrera-health-group/jobs/enterprise-internship-information-technology?utm_source=api) |
+| VC3 (via Himalayas) 🆁 | Part-Time NOC Analyst I (Weekends, Evenings & Overnight) | Network / Telecom | Remote - United States | Linux | Oct 25, 2026 | [Apply](https://himalayas.app/companies/vc3/jobs/part-time-noc-analyst-i-weekends-evenings-overnight?utm_source=api) |
+| Blue Mantis (via Himalayas) 🆁 | IT EUX Junior Engineer I - Remote US Only | IT Support / Ops | Remote - United States | No skills listed | Oct 25, 2026 | [Apply](https://himalayas.app/companies/blue-mantis/jobs/it-eux-junior-engineer-i-remote-us-only-5215016678?utm_source=api) |
+| Leidos (via Himalayas) 🆁 | Network Site Design Intern 🇺🇸 | Network / Telecom | Remote - United States | No skills listed | Oct 24, 2026 | [Apply](https://himalayas.app/companies/leidos/jobs/network-site-design-intern?utm_source=api) |
+| 1Password 🆁 | IT Intern, IT Support - Winter 2027 | IT Support / Ops | Remote (United States / Canada) | No skills listed | Oct 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7) |
 | Leidos ✓ 🆁 | Network Site Design Intern 🇺🇸 | Network / Telecom | 6314 Remote/Teleworker US | No skills listed | Oct 21, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057) |
 | Nash 🆁 | Technical Support Specialist , US East Coast | IT Support / Ops | Remote, US | No skills listed | Oct 20, 2026 | [Apply](https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861) |
 | BigCommerce ✓ 🆁 | Technical Support Representative - Remote | IT Support / Ops | United States - Remote | JavaScript, HTML/CSS | Oct 20, 2026 | [Apply](https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100) |
 | Amplify 🆁 | Summer 2027: IT Services Intern | IT Support / Ops | Remote - United States | Linux | Oct 19, 2026 | [Apply](https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f) |
-| Lumen Technologies (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway 🆕 | Security / IT | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/lumen-technologies/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway?utm_source=api) |
-| DMI (via Himalayas) 🆁 | Service Desk Analyst 🇺🇸 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/dmi/jobs/service-desk-analyst?utm_source=api) |
-| CenturyLink (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway (Remote, US 🆕 | Security / IT | Remote - United States | No skills listed | Oct 17, 2026 | [Apply](https://himalayas.app/companies/centurylink/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway-remote-us?utm_source=api) |
-| GES (via Himalayas) 🆁 | Cybersecurity Intern 🛂 🆕 | Security / IT | Remote - United States | Azure | Oct 15, 2026 | [Apply](https://himalayas.app/companies/kimballelectronics/jobs/cybersecurity-intern?utm_source=api) |
-| GuidePoint Security LLC (via Himalayas) 🆁 | Cloud Infrastructure Intern - GPSU/NE 🆕 | Cloud Platform | Remote - United States | Python, Bash, LLMs, AWS | Oct 10, 2026 | [Apply](https://himalayas.app/companies/guidepoint-security-llc/jobs/cloud-infrastructure-intern-gpsu-ne?utm_source=api) |
-| Danaher (via Himalayas) 🆁 | IT Analyst Co-op 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 08, 2026 | [Apply](https://himalayas.app/companies/danaher/jobs/it-analyst-co-op?utm_source=api) |
+| Lumen Technologies (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway | Security / IT | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/lumen-technologies/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway?utm_source=api) |
+| DMI (via Himalayas) 🆁 | Service Desk Analyst 🇺🇸 | IT Support / Ops | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/dmi/jobs/service-desk-analyst?utm_source=api) |
+| CenturyLink (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway (Remote, US | Security / IT | Remote - United States | No skills listed | Oct 17, 2026 | [Apply](https://himalayas.app/companies/centurylink/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway-remote-us?utm_source=api) |
+| GES (via Himalayas) 🆁 | Cybersecurity Intern 🛂 | Security / IT | Remote - United States | Azure | Oct 15, 2026 | [Apply](https://himalayas.app/companies/kimballelectronics/jobs/cybersecurity-intern?utm_source=api) |
+| GuidePoint Security LLC (via Himalayas) 🆁 | Cloud Infrastructure Intern - GPSU/NE | Cloud Platform | Remote - United States | Python, Bash, LLMs, AWS | Oct 10, 2026 | [Apply](https://himalayas.app/companies/guidepoint-security-llc/jobs/cloud-infrastructure-intern-gpsu-ne?utm_source=api) |
+| Danaher (via Himalayas) 🆁 | IT Analyst Co-op | IT Support / Ops | Remote - United States | No skills listed | Oct 08, 2026 | [Apply](https://himalayas.app/companies/danaher/jobs/it-analyst-co-op?utm_source=api) |
 
 <a id="drop-radar"></a>
 

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-07T19:55:32Z",
-  "fetched_at": "2026-11-07T19:55:32Z",
-  "duration_seconds": 63.8,
-  "companies_total": 12,
+  "generated_at": "2026-11-07T21:45:01Z",
+  "fetched_at": "2026-11-07T21:45:01Z",
+  "duration_seconds": 62.0,
+  "companies_total": 13,
   "collection_boards": [
     "oracle:eofe.fa.us2.oraclecloud.com:cx_1",
     "oracle:eofe.fa.us2.oraclecloud.com:cx_1001",
@@ -15,7 +15,8 @@
     "jobicy:us-remote-it",
     "himalayas:us-remote-it",
     "localboards:valencia",
-    "localboards:osceola-schools"
+    "localboards:osceola-schools",
+    "governmentjobs:kissimmee-city"
   ],
   "companies_by_source": {
     "oracle": 2,
@@ -24,18 +25,19 @@
     "smartrecruiters": 1,
     "jobicy": 1,
     "himalayas": 1,
-    "localboards": 2
+    "localboards": 2,
+    "governmentjobs": 1
   },
   "quarantined": 0,
-  "fetched_ok": 12,
+  "fetched_ok": 13,
   "fetch_errors": 0,
   "errors_by_source": {},
   "fetch_success_rate": 1.0,
   "fetch_success_rate_registry": 1.0,
   "snapshots_complete": 4,
-  "snapshots_partial": 8,
+  "snapshots_partial": 9,
   "partial_by_reason": {
-    "result-cap": 8
+    "result-cap": 9
   },
   "degraded_fetches": 0,
   "roles_matched": 16,
@@ -68,7 +70,7 @@
     "citizens-only": 3
   },
   "posted_date_coverage": 1.0,
-  "enriched_this_run": 27,
+  "enriched_this_run": 28,
   "enrichment_detail_fetches": 0,
   "purged_this_run": 0,
   "new_this_run": 0,
@@ -84,5 +86,5 @@
     "median_days": 20.0,
     "sample_size": 108
   },
-  "rendered_at": "2026-11-07T19:55:32Z"
+  "rendered_at": "2026-11-07T21:45:02Z"
 }

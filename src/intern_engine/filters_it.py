@@ -97,6 +97,12 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
         value = match.group(1).lower()
         years = int(value) if value.isdigit() else _WORD_NUMBERS[value]
         if years >= 2:
+            # A range beginning at two years is not a two-year preference:
+            # "2 - 5+ years" is an experienced role even if another section
+            # later says "nice to have". Never lower its upper bound to 2.
+            upper = re.search(r"(?:-|–|to)\s*(\d{1,2})", match.group(), re.I)
+            if upper and int(upper.group(1)) > 2:
+                return "rejected"
             # Two years preferred can be a plausible first-job stretch;
             # an explicit two-year minimum or any 3+ year requirement cannot.
             left = max(text.rfind(".", 0, match.start()),
@@ -104,7 +110,11 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
             ends = [i for i in (text.find(".", match.end()),
                                 text.find(";", match.end())) if i >= 0]
             clause = text[left + 1:min(ends) if ends else len(text)]
-            preferred = bool(re.search(r"\b(?:preferred|nice to have|a plus|ideally)\b", clause, re.I))
+            # Limit preference language to the immediate requirement.
+            # A distant "NICE TO HAVE" header cannot turn mandatory years
+            # elsewhere in a flattened description into a preference.
+            nearby = text[max(0, match.start() - 35):match.start()] + " " + text[match.end():match.end() + 35]
+            preferred = bool(re.search(r"\b(?:preferred|nice to have|a plus|ideally)\b", nearby, re.I))
             mandatory = bool(re.search(r"\b(?:required|minimum|at least|must have|need to have)\b", clause, re.I))
             if years == 2 and preferred and not mandatory:
                 continue

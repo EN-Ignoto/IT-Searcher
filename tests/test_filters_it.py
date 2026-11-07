@@ -267,3 +267,19 @@ def test_non_foundational_internships_and_special_programs_excluded(title):
 ])
 def test_credible_first_it_jobs_remain_in_scope(title):
     assert filters_it.is_opportunity(title)
+
+
+@pytest.mark.parametrize("description", [
+    "WHAT WE'RE LOOKING FOR: 2 - 5+ years in Technical Support, Support Engineering, or a related technical role in a SaaS environment. NICE TO HAVE: familiar with Zendesk.",
+    "2–5+ years in technical support required. Nice to have: networking fundamentals.",
+    "Preferred: 2 to 4 years of customer support experience.",
+    "We require 2-6 years of hands-on IT troubleshooting. Benefits include paid volunteer days.",
+])
+def test_multi_year_range_never_becomes_first_job_preference(description):
+    assert filters_it.assess_fit("Technical Support Specialist", description) == "rejected"
+
+
+def test_two_year_preference_remains_possible_even_with_later_benefit_text():
+    description = ("Preferred: 2 years of help desk experience. "
+                   "Benefits: paid volunteer days and unpaid leave.")
+    assert filters_it.assess_fit("Help Desk Technician", description) == "eligible"

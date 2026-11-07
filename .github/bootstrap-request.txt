@@ -2,3 +2,4 @@ Run fast full-classification bootstrap for live IT support sources, requested 20
 Retry bootstrap after fixing actual US location field representation (2026-11-06).
 Verify recurring priority-source scan and fresh-post filters after PR #5 deployment (2026-11-06).
 2026-11-07: verify new official Valencia/Osceola local IT connectors in live fast scan.
+2026-11-07: verify strict applicant-fit filters and preserve both local jobs after PR #7.

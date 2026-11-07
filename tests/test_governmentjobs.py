@@ -51,6 +51,15 @@ def test_city_search_anchors_and_real_date_location():
     assert filters_it.assess_fit(job.title, job.description, job.location) == "rejected"
 
 
+def test_city_jsonld_preserves_encoded_quotes_in_description():
+    # The live City job's HTML-rich JSON contains entities that must stay
+    # encoded until after json.loads; otherwise &quot; breaks JSON string syntax.
+    detail = _CITY_DETAIL.replace("Troubleshoot all computers", "Support &quot;all computers&quot;")
+    job = governmentjobs.city_job(_PATH, detail)
+    assert job is not None
+    assert job.description.startswith('Support "all computers"')
+
+
 def test_city_skips_expired_and_other_employers():
     assert governmentjobs.city_job(_PATH, _CITY_DETAIL.replace("2099-11-13", "2025-01-01")) is None
     assert governmentjobs.city_job(_PATH, _CITY_DETAIL.replace("City of Kissimmee", "Another Employer")) is None

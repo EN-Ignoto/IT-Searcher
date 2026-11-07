@@ -53,7 +53,9 @@ def city_job(path: str, detail: str) -> Job | None:
     """Accept only City of Kissimmee's own dated, valid JobPosting evidence."""
     for body in _SCRIPT.findall(detail):
         try:
-            data = json.loads(unescape(body))
+            # JSON is encoded already. HTML-decoding first turns &quot; in a
+            # job description into unescaped quotes and invalidates the JSON.
+            data = json.loads(body.strip())
         except (TypeError, ValueError):
             continue
         if not isinstance(data, dict) or data.get("@type") != "JobPosting":

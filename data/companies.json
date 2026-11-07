@@ -29538,5 +29538,15 @@
     "name": "Himalayas US Remote Jobs",
     "slug": "us-remote-it",
     "ats": "himalayas"
+  },
+  {
+    "name": "Valencia College",
+    "slug": "valencia",
+    "ats": "localboards"
+  },
+  {
+    "name": "School District of Osceola County",
+    "slug": "osceola-schools",
+    "ats": "localboards"
   }
 ]

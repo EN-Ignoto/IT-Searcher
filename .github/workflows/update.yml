@@ -8,8 +8,9 @@ on:
     paths:
       - ".github/refresh-request.txt"
   schedule:
-    # Repeat hourly, away from the busiest top-of-hour slot.
-    - cron: "17 * * * *"
+    # Broad ~5,000-board sweep every four hours; the fast-lane workflow
+    # checks high-signal employers between these long scans.
+    - cron: "17 */4 * * *"
   workflow_dispatch:
     inputs:
       render_only:

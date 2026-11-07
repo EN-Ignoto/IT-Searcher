@@ -1,0 +1,46 @@
+name: Inspect local employer career pages
+on:
+  push:
+    branches: [main]
+    paths: [".github/probe-local-request.txt"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Probe official local sources (read only)
+        run: |
+          python - <<'PY'
+          import re
+          import urllib.request
+          from html import unescape
+
+          urls = [
+              "https://valenciacollege.peopleadmin.com/postings/search",
+              "https://valenciacollege.peopleadmin.com/postings/44242",
+              "https://jobs.osceolaschools.net/jobs",
+              "https://jobs.osceolaschools.net/jobs/page/5",
+              "https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71",
+          ]
+          for url in urls:
+              print("\nURL:", url, flush=True)
+              try:
+                  req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; IT-Searcher/1.0)"})
+                  with urllib.request.urlopen(req, timeout=15) as response:
+                      html = response.read(600000).decode("utf-8", "replace")
+                      print("STATUS", response.status, "LEN", len(html), "FINAL", response.url, flush=True)
+                  links = re.findall(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',html,re.I | re.S)
+                  interesting = [(unescape(re.sub("<[^>]*>"," ",txt)).strip()[:90], href)
+                                 for href,txt in links if re.search("postings/\\d+|/job/|/jobs/page/|tech|support|computer", href + txt, re.I)]
+                  print("LINKS", interesting[:24],flush=True)
+                  for term in ("Technical Support","Computer Technician","jobs-list","jobPosting","job-title","postings/44242"):
+                      k=html.lower().find(term.lower())
+                      if k >= 0:
+                          print("MATCH",term, unescape(html[max(0,k-260):k+550]).replace("\n"," ")[:800],flush=True)
+                  print("JSONLD", re.findall(r'<script[^>]+application/ld\\+json[^>]*>(.*?)</script>',html,re.I|re.S)[:2],flush=True)
+              except Exception as exc:
+                  print("PROBE ERROR", type(exc).__name__, str(exc)[:200],flush=True)
+          PY

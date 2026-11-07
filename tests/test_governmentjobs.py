@@ -80,6 +80,19 @@ def test_city_fetch_is_partial_and_requires_readable_employer_evidence():
     assert result.jobs[0].posted_at == "2026-10-30"
 
 
+def test_visible_it_title_without_readable_detail_is_not_healthy_empty_result():
+    prefix = governmentjobs._CITY_URL
+    # A 200 HTML response may contain job links, but a changed JSON-LD
+    # schema could otherwise silently empty the local results forever.
+    result = asyncio.run(governmentjobs.fetch({}, FakeNet({
+        prefix + "1": _CITY_SEARCH,
+        "https://www.governmentjobs.com" + _PATH: "<html>detail format changed</html>",
+    })))
+    assert result.jobs == []
+    assert not result.complete
+    assert result.incomplete_reason == models.INCOMPLETE_MALFORMED
+
+
 def test_nonresponsive_government_board_never_closes_old_jobs():
     result = asyncio.run(governmentjobs.fetch({}, FakeNet({})))
     assert result.jobs == []

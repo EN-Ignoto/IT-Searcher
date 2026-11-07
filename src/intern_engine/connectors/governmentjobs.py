@@ -110,6 +110,7 @@ async def fetch(company: dict, net) -> Fetch:
     found: dict[str, Job] = {}
     seen: set[str] = set()
     healthy = 0
+    candidate_titles = 0
     # Usually <15 vacancies. A bounded second page avoids missing postings,
     # without silently treating a truncated search as a full company snapshot.
     for page_num in (1, 2, 3):
@@ -120,6 +121,7 @@ async def fetch(company: dict, net) -> Fetch:
         if "job-item-container" not in page and "Search Results" not in page:
             break
         links = city_links(page)
+        candidate_titles += len(links)
         if not links:
             healthy += 1
             break
@@ -136,6 +138,9 @@ async def fetch(company: dict, net) -> Fetch:
             job = city_job(path, detail)
             if job:
                 found.setdefault(job.id, job)
-    if not healthy:
+    # Search results with IT titles but zero readable job details are NOT a
+    # healthy empty board. Report the parser/provider error while preserving
+    # previous postings: never treat the failed detail reads as closures.
+    if not healthy or (candidate_titles and not found):
         return Fetch([], complete=False, incomplete_reason=INCOMPLETE_MALFORMED)
     return Fetch(list(found.values()), complete=False, incomplete_reason=INCOMPLETE_CAPPED)

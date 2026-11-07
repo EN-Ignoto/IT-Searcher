@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**31 open postings** · Data as of 2026-11-07T19:36:06Z
+**25 open postings** · Data as of 2026-11-07T19:42:39Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -25,7 +25,7 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | Valencia College | Specialist, Technical Support 🆕 | IT Support / Ops | Orlando, FL 32825 - East Campus | No skills listed | Nov 05, 2026 | [Apply](https://valenciacollege.peopleadmin.com/postings/44244) |
 | School District of Osceola County | Computer Technician I-12 Month 🆕 | IT Support / Ops | Kissimmee, FL | No skills listed | Oct 29, 2026 | [Apply](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
 
-### Remote — Florida / US  (29 roles)
+### Remote — Florida / US  (23 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -37,14 +37,11 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | Crowdstrike ✓ 🆁 | Technical Support | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
 | Applied Information Sciences 🆁 | Cloud Migration Engineer I 🆕 | Cloud Platform | USA Remote | Python, Bash, AWS, Azure | Oct 29, 2026 | [Apply](https://appliedis.wd5.myworkdayjobs.com/ais_careers/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427) |
 | Resideo (via Himalayas) 🆁 | Network Technician 🆕 | Network / Telecom | Remote - United States | No skills listed | Oct 28, 2026 | [Apply](https://himalayas.app/companies/resideo/jobs/network-technician?utm_source=api) |
-| GuidePoint Security LLC (via Himalayas) 🆁 | Cybersecurity Presales Intern - GPSU/Heartland (Tulsa) 🆕 | Security / IT | Remote - United States | Python, Bash, AWS, GCP | Oct 28, 2026 | [Apply](https://himalayas.app/companies/guidepoint-security-llc/jobs/cybersecurity-presales-intern-gpsu-heartland-tulsa?utm_source=api) |
 | Aurrera Health Group (via Himalayas) 🆁 | Enterprise Internship, Information Technology 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 27, 2026 | [Apply](https://himalayas.app/companies/aurrera-health-group/jobs/enterprise-internship-information-technology?utm_source=api) |
 | VC3 (via Himalayas) 🆁 | Part-Time NOC Analyst I (Weekends, Evenings & Overnight) 🆕 | Network / Telecom | Remote - United States | Linux | Oct 25, 2026 | [Apply](https://himalayas.app/companies/vc3/jobs/part-time-noc-analyst-i-weekends-evenings-overnight?utm_source=api) |
 | Blue Mantis (via Himalayas) 🆁 | IT EUX Junior Engineer I - Remote US Only 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 25, 2026 | [Apply](https://himalayas.app/companies/blue-mantis/jobs/it-eux-junior-engineer-i-remote-us-only-5215016678?utm_source=api) |
 | Leidos (via Himalayas) 🆁 | Network Site Design Intern 🇺🇸 🆕 | Network / Telecom | Remote - United States | No skills listed | Oct 24, 2026 | [Apply](https://himalayas.app/companies/leidos/jobs/network-site-design-intern?utm_source=api) |
 | 1Password 🆁 | IT Intern, IT Support - Winter 2027 🆕 | IT Support / Ops | Remote (United States / Canada) | No skills listed | Oct 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7) |
-| 1Password 🆁 | Product Management Intern, End User Experience - Winter 2027 🆕 | IT Support / Ops | Remote (United States / Canada) | No skills listed | Oct 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/bef2e88e-9590-467d-8ba6-821b30529003) |
-| Constellation Energy (via Himalayas) 🆁 | 2027 Summer IT Data Engineering Intern 🛂 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 23, 2026 | [Apply](https://himalayas.app/companies/constellation-energy/jobs/2027-summer-it-data-engineering-intern?utm_source=api) |
 | Leidos ✓ 🆁 | Network Site Design Intern 🇺🇸 | Network / Telecom | 6314 Remote/Teleworker US | No skills listed | Oct 21, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057) |
 | Nash 🆁 | Technical Support Specialist , US East Coast | IT Support / Ops | Remote, US | No skills listed | Oct 20, 2026 | [Apply](https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861) |
 | BigCommerce ✓ 🆁 | Technical Support Representative - Remote | IT Support / Ops | United States - Remote | JavaScript, HTML/CSS | Oct 20, 2026 | [Apply](https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100) |
@@ -52,11 +49,8 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | Lumen Technologies (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway 🆕 | Security / IT | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/lumen-technologies/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway?utm_source=api) |
 | DMI (via Himalayas) 🆁 | Service Desk Analyst 🇺🇸 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/dmi/jobs/service-desk-analyst?utm_source=api) |
 | CenturyLink (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway (Remote, US 🆕 | Security / IT | Remote - United States | No skills listed | Oct 17, 2026 | [Apply](https://himalayas.app/companies/centurylink/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway-remote-us?utm_source=api) |
-| Axonius (via Himalayas) 🆁 | Technical Support Engineer (SkillBridge: On-the-job training) 🆕 | IT Support / Ops | Remote - United States | Python, AWS, Linux | Oct 17, 2026 | [Apply](https://himalayas.app/companies/axonius/jobs/technical-support-engineer-skillbridge-on-the-job-training?utm_source=api) |
 | GES (via Himalayas) 🆁 | Cybersecurity Intern 🛂 🆕 | Security / IT | Remote - United States | Azure | Oct 15, 2026 | [Apply](https://himalayas.app/companies/kimballelectronics/jobs/cybersecurity-intern?utm_source=api) |
-| Everglade Works (via Himalayas) 🆁 | IT Support Specialist 🆕 | IT Support / Ops | Remote - United States | Linux | Oct 13, 2026 | [Apply](https://himalayas.app/companies/everglade-works/jobs/it-support-specialist?utm_source=api) |
 | GuidePoint Security LLC (via Himalayas) 🆁 | Cloud Infrastructure Intern - GPSU/NE 🆕 | Cloud Platform | Remote - United States | Python, Bash, LLMs, AWS | Oct 10, 2026 | [Apply](https://himalayas.app/companies/guidepoint-security-llc/jobs/cloud-infrastructure-intern-gpsu-ne?utm_source=api) |
-| Impact Advisors (via Himalayas) 🆁 | Cloud ERP Implementation Intern 🆕 | Cloud Platform | Remote - United States | No skills listed | Oct 10, 2026 | [Apply](https://himalayas.app/companies/impact-advisors/jobs/cloud-erp-implementation-intern?utm_source=api) |
 | Danaher (via Himalayas) 🆁 | IT Analyst Co-op 🆕 | IT Support / Ops | Remote - United States | No skills listed | Oct 08, 2026 | [Apply](https://himalayas.app/companies/danaher/jobs/it-analyst-co-op?utm_source=api) |
 
 <a id="drop-radar"></a>
@@ -77,13 +71,19 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 _4 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **4** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
 <details>
-<summary><strong>Recently closed</strong>: 25 roles that left the list in the last 14 days</summary>
+<summary><strong>Recently closed</strong>: 31 roles that left the list in the last 14 days</summary>
 
 _Why each one left is in the last column, because the two reasons carry different evidence. **Gone from feed** = two consecutive complete reads of the employer's board no longer returned it (strong, but not the employer telling us directly). **Out of scope** = still posted, but it no longer passes our filters. That's our call, not theirs. **Not recorded** = closed before we started tracking the reason._
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Everglade Works (via Himalayas) | IT Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
 | Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-07 | out of scope |
+| 1Password | Product Management Intern, End User Experience - Winter 2027 | Remote — Florida / US | 2026-11-07 | out of scope |
+| Constellation Energy (via Himalayas) | 2027 Summer IT Data Engineering Intern | Remote — Florida / US | 2026-11-07 | out of scope |
+| Impact Advisors (via Himalayas) | Cloud ERP Implementation Intern | Remote — Florida / US | 2026-11-07 | out of scope |
+| Axonius (via Himalayas) | Technical Support Engineer (SkillBridge: On-the-job training) | Remote — Florida / US | 2026-11-07 | out of scope |
+| GuidePoint Security LLC (via Himalayas) | Cybersecurity Presales Intern - GPSU/Heartland (Tulsa) | Remote — Florida / US | 2026-11-07 | out of scope |
 | Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-07 | out of scope |
 | PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
 | Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-07 | out of scope |

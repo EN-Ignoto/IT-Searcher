@@ -5,16 +5,8 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-07T19:36:06Z</updated>
+  <updated>2026-11-07T19:42:39Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
-  <entry>
-    <id>urn:intern-engine:localboards:valencia:44244</id>
-    <title>Valencia College: Specialist, Technical Support</title>
-    <link href="https://valenciacollege.peopleadmin.com/postings/44244"/>
-    <updated>2026-11-07T19:36:06Z</updated>
-    <category term="Orlando area"/>
-    <summary>Orlando area · IT Support / Ops · Orlando, FL 32825 - East Campus · $19.93 per hour</summary>
-  </entry>
   <entry>
     <id>urn:intern-engine:localboards:osceola:993441CCDCCE775901861F2193A33B71</id>
     <title>School District of Osceola County: Computer Technician I-12 Month</title>
@@ -22,6 +14,14 @@
     <updated>2026-11-07T19:36:06Z</updated>
     <category term="Orlando area"/>
     <summary>Orlando area · IT Support / Ops · Kissimmee, FL</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:localboards:valencia:44244</id>
+    <title>Valencia College: Specialist, Technical Support</title>
+    <link href="https://valenciacollege.peopleadmin.com/postings/44244"/>
+    <updated>2026-11-07T19:36:06Z</updated>
+    <category term="Orlando area"/>
+    <summary>Orlando area · IT Support / Ops · Orlando, FL 32825 - East Campus · $19.93 per hour</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:jobicy:us-remote-it:159499</id>
@@ -35,14 +35,6 @@
     <id>urn:intern-engine:ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7</id>
     <title>1Password: IT Intern, IT Support - Winter 2027</title>
     <link href="https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7"/>
-    <updated>2026-11-07T06:39:00Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote (United States | Canada)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:ashby:1password:bef2e88e-9590-467d-8ba6-821b30529003</id>
-    <title>1Password: Product Management Intern, End User Experience - Winter 2027</title>
-    <link href="https://jobs.ashbyhq.com/1password/bef2e88e-9590-467d-8ba6-821b30529003"/>
     <updated>2026-11-07T06:39:00Z</updated>
     <category term="Remote — Florida / US"/>
     <summary>Remote — Florida / US · IT Support / Ops · Remote (United States | Canada)</summary>

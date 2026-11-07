@@ -325,3 +325,23 @@ class TestRadarGuard:
         readme.generate({"a": _rec("a")})
         text = (outputs / "README.md").read_text(encoding="utf-8")
         assert "Drop Radar" in text
+
+
+def test_it_new_badge_requires_actual_recent_employer_posting(monkeypatch):
+    from datetime import UTC, datetime, timedelta
+
+    from intern_engine import config
+
+    monkeypatch.setattr(config, "load_config", lambda: {"opportunity_scope": "it"})
+    now = datetime.now(UTC)
+    recent = (now - timedelta(hours=5)).isoformat()
+    old = (now - timedelta(days=20)).isoformat()
+    fresh_discovered = (now - timedelta(minutes=1)).isoformat()
+    record = {"posted_at": recent, "first_seen_at": fresh_discovered}
+    assert readme._is_new(record)
+    record["posted_at"] = old
+    assert not readme._is_new(record)
+    record["posted_at"] = None
+    assert not readme._is_new(record)
+    record["posted_at"] = (now + timedelta(hours=5)).isoformat()
+    assert not readme._is_new(record)

@@ -120,6 +120,20 @@ def _pretty_date(record: dict) -> str:
 
 
 def _is_new(record: dict, hours: int = 48) -> bool:
+    if config.load_config().get("opportunity_scope") == "it":
+        # For early applications, only the EMPLOYER'S posting timestamp makes
+        # a job new. First discovery can be weeks after publication.
+        published = record.get("posted_at")
+        if not published:
+            return False
+        try:
+            dt = datetime.fromisoformat(published.replace("Z", "+00:00"))
+        except (AttributeError, ValueError):
+            return False
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=UTC)
+        age = datetime.now(UTC) - dt.astimezone(UTC)
+        return timedelta(0) <= age <= timedelta(hours=hours)
     # For a grouped row, "new" means any of its openings is new. The row's
     # representative is the oldest member on purpose (stable id), so reading
     # only its own first_seen would hide a requisition added this morning.
@@ -265,6 +279,10 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
             "Nearby-city coverage includes Orlando, Lake Mary, Sanford, Winter Park, Kissimmee, "
             "and surrounding communities. This is city matching, not a measured driving radius.", "",
             "Remote postings need US or Florida location evidence. Confirm state eligibility on the employer page.", "",
+            "🆕 means published by the employer within the past 48 hours, not merely found by this searcher. "
+            "The Posted date may have day-level rather than minute-level precision.", "",
+            "Some third-party listings are dashboard-only and are excluded from CSV/RSS redistribution "
+            "under their source terms.", "",
             "Entry-level IT jobs and paid internships only. Generic engineering roles, senior titles, "
             "postings asking for 2+ years of experience, unpaid roles, and roles without readable "
             "requirements are excluded. Applications are manual on the employer website.", "",

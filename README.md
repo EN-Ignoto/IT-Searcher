@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**24 open postings** · Data as of 2026-11-07T21:45:01Z
+**23 open postings** · Data as of 2026-11-08T00:17:21Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -29,7 +29,7 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | Valencia College | Specialist, Technical Support | IT Support / Ops | Orlando, FL 32825 - East Campus | No skills listed | Nov 05, 2026 | [Apply](https://valenciacollege.peopleadmin.com/postings/44244) |
 | School District of Osceola County | Computer Technician I-12 Month | IT Support / Ops | Kissimmee, FL | No skills listed | Oct 29, 2026 | [Apply](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
 
-### Remote — Florida / US  (22 roles)
+### Remote — Florida / US  (21 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
@@ -54,7 +54,6 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | CenturyLink (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway (Remote, US | Security / IT | Remote - United States | No skills listed | Oct 17, 2026 | [Apply](https://himalayas.app/companies/centurylink/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway-remote-us?utm_source=api) |
 | GES (via Himalayas) 🆁 | Cybersecurity Intern 🛂 | Security / IT | Remote - United States | Azure | Oct 15, 2026 | [Apply](https://himalayas.app/companies/kimballelectronics/jobs/cybersecurity-intern?utm_source=api) |
 | GuidePoint Security LLC (via Himalayas) 🆁 | Cloud Infrastructure Intern - GPSU/NE | Cloud Platform | Remote - United States | Python, Bash, LLMs, AWS | Oct 10, 2026 | [Apply](https://himalayas.app/companies/guidepoint-security-llc/jobs/cloud-infrastructure-intern-gpsu-ne?utm_source=api) |
-| Danaher (via Himalayas) 🆁 | IT Analyst Co-op | IT Support / Ops | Remote - United States | No skills listed | Oct 08, 2026 | [Apply](https://himalayas.app/companies/danaher/jobs/it-analyst-co-op?utm_source=api) |
 
 <a id="drop-radar"></a>
 
@@ -74,33 +73,34 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 _4 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **4** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
 <details>
-<summary><strong>Recently closed</strong>: 33 roles that left the list in the last 14 days</summary>
+<summary><strong>Recently closed</strong>: 34 roles that left the list in the last 14 days</summary>
 
 _Why each one left is in the last column, because the two reasons carry different evidence. **Gone from feed** = two consecutive complete reads of the employer's board no longer returned it (strong, but not the employer telling us directly). **Out of scope** = still posted, but it no longer passes our filters. That's our call, not theirs. **Not recorded** = closed before we started tracking the reason._
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
-| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-07 | out of scope |
-| Everglade Works (via Himalayas) | IT Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
-| NetDocuments | Technical Support Engineer | Remote — Florida / US | 2026-11-07 | out of scope |
-| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-07 | out of scope |
+| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-08 | out of scope |
+| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-08 | out of scope |
+| Danaher (via Himalayas) | IT Analyst Co-op | Remote — Florida / US | 2026-11-08 | out of scope |
+| Everglade Works (via Himalayas) | IT Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
+| NetDocuments | Technical Support Engineer | Remote — Florida / US | 2026-11-08 | out of scope |
+| PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
+| Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-08 | out of scope |
+| TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-08 | out of scope |
+| Guidehouse | IT Service Desk Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
+| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-08 | out of scope |
+| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-08 | out of scope |
+| Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-08 | out of scope |
+| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-08 | out of scope |
+| Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-08 | out of scope |
+| Zillow | IT Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
 | 1Password | Product Management Intern, End User Experience - Winter 2027 | Remote — Florida / US | 2026-11-07 | out of scope |
 | Constellation Energy (via Himalayas) | 2027 Summer IT Data Engineering Intern | Remote — Florida / US | 2026-11-07 | out of scope |
 | Impact Advisors (via Himalayas) | Cloud ERP Implementation Intern | Remote — Florida / US | 2026-11-07 | out of scope |
 | Axonius (via Himalayas) | Technical Support Engineer (SkillBridge: On-the-job training) | Remote — Florida / US | 2026-11-07 | out of scope |
 | GuidePoint Security LLC (via Himalayas) | Cybersecurity Presales Intern - GPSU/Heartland (Tulsa) | Remote — Florida / US | 2026-11-07 | out of scope |
-| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-07 | out of scope |
-| PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
-| Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-07 | out of scope |
-| TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-07 | out of scope |
 | CDW Corporation | IT Service Desk- 6AM - 6PM | Remote — Florida / US | 2026-11-07 | out of scope |
-| Guidehouse | IT Service Desk Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
-| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-07 | out of scope |
-| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-07 | out of scope |
 | Impactadvisors | Cloud ERP Implementation Intern | Remote — Florida / US | 2026-11-07 | out of scope |
-| Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-07 | out of scope |
-| Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-07 | out of scope |
-| Zillow | IT Support Specialist | Remote — Florida / US | 2026-11-07 | out of scope |
 | Corsair | Technical Support Specialist | Remote — Florida / US | 2026-11-06 | out of scope |
 | Zoetis | Diagnostics Technical Support Representative | Remote — Florida / US | 2026-11-06 | out of scope |
 | Journal Technologies | Intermediate Technical Support Analyst | Remote — Florida / US | 2026-11-02 | out of scope |

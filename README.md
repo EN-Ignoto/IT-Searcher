@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**25 open postings** · Data as of 2026-11-08T07:15:42Z
+**25 open postings** · Data as of 2026-11-08T14:25:39Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -37,8 +37,8 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | NoGigiddy 🆁 | Technical Support Specialist (Remote) - Entry Level, No Degree Required, 15 - 18 🆕 | IT Support / Ops | Remote - United States (Jobicy: USA) | No skills listed | Nov 08, 2026 | [Apply](https://jobicy.com/jobs/148512-technical-support-specialist-remote-entry-level-no-degree-required-15-18) |
 | Netsmart (via Himalayas) 🆁 | Service Desk Technician - Application Support 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/netsmart/jobs/service-desk-technician-application-support?utm_source=api) |
 | AMERICAN SYSTEMS (via Himalayas) 🆁 | Tier I Part Time Help Desk Analyst – Overnight Monitoring 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/american-systems/jobs/tier-i-part-time-help-desk-analyst-overnight-monitoring?utm_source=api) |
-| ADT (via Himalayas) 🆁 | Remote Customer Technical Support 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 06, 2026 | [Apply](https://himalayas.app/companies/adt/jobs/remote-customer-technical-support?utm_source=api) |
-| Uniguest (via Himalayas) 🆁 | Technical Support Representative - Tier I (Remote U.S.) 🆕 | IT Support / Ops | Remote - United States | Linux | Nov 06, 2026 | [Apply](https://himalayas.app/companies/uniguest/jobs/technical-support-representative-tier-i-remote-u-s?utm_source=api) |
+| ADT (via Himalayas) 🆁 | Remote Customer Technical Support | IT Support / Ops | Remote - United States | No skills listed | Nov 06, 2026 | [Apply](https://himalayas.app/companies/adt/jobs/remote-customer-technical-support?utm_source=api) |
+| Uniguest (via Himalayas) 🆁 | Technical Support Representative - Tier I (Remote U.S.) | IT Support / Ops | Remote - United States | Linux | Nov 06, 2026 | [Apply](https://himalayas.app/companies/uniguest/jobs/technical-support-representative-tier-i-remote-u-s?utm_source=api) |
 | ADT ✓ 🆁 | Remote Customer Technical Support | IT Support / Ops | United States +48 more | No skills listed | Nov 04, 2026 | [Apply](https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642) |
 | Crowdstrike ✓ 🆁 | Technical Support | IT Support / Ops | USA - Remote | Linux | Nov 02, 2026 | [Apply](https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773) |
 | Applied Information Sciences 🆁 | Cloud Migration Engineer I | Cloud Platform | USA Remote | Python, Bash, AWS, Azure | Oct 29, 2026 | [Apply](https://appliedis.wd5.myworkdayjobs.com/ais_careers/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427) |

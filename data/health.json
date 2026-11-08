@@ -2714,11 +2714,6 @@
     "last_attempt_at": "2026-11-08T15:53:33Z",
     "last_error": "HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://kohls.wd1.myworkdayjobs.com/wday/cxs/kohls/kohlscareers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/"
   },
-  "workday:leidos:external": {
-    "consecutive_failures": 1,
-    "last_attempt_at": "2026-11-08T15:53:33Z",
-    "last_error": "malformed-response"
-  },
   "workday:lilly:cmp": {
     "consecutive_failures": 31,
     "last_attempt_at": "2026-11-08T15:53:33Z",

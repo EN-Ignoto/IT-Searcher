@@ -2208,6 +2208,18 @@
     }
    }
   },
+  "liberty university via himalayas": {
+   "name": "Liberty University (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-08",
+     "role_ids": [
+      "himalayas:us-remote-it:a80aa2940b2f86d953c8"
+     ],
+     "count": 1
+    }
+   }
+  },
   "link solutions": {
    "name": "Link Solutions",
    "cycles": {
@@ -3956,5 +3968,5 @@
    }
   }
  },
- "updated_at": "2026-11-08T15:53:33Z"
+ "updated_at": "2026-11-08T18:58:22Z"
 }

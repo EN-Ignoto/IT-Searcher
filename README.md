@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**23 open postings** · Data as of 2026-11-08T00:17:21Z
+**23 open postings** · Data as of 2026-11-08T00:56:57Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -79,11 +79,12 @@ _Why each one left is in the last column, because the two reasons carry differen
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
-| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-08 | out of scope |
 | Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-08 | out of scope |
-| Danaher (via Himalayas) | IT Analyst Co-op | Remote — Florida / US | 2026-11-08 | out of scope |
 | Everglade Works (via Himalayas) | IT Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
 | NetDocuments | Technical Support Engineer | Remote — Florida / US | 2026-11-08 | out of scope |
+| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-08 | out of scope |
+| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-08 | out of scope |
+| Danaher (via Himalayas) | IT Analyst Co-op | Remote — Florida / US | 2026-11-08 | out of scope |
 | PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
 | Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-08 | out of scope |
 | TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-08 | out of scope |
@@ -91,7 +92,6 @@ _Why each one left is in the last column, because the two reasons carry differen
 | Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-08 | out of scope |
 | Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-08 | out of scope |
 | Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-08 | out of scope |
-| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-08 | out of scope |
 | Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-08 | out of scope |
 | Zillow | IT Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
 | 1Password | Product Management Intern, End User Experience - Winter 2027 | Remote — Florida / US | 2026-11-07 | out of scope |

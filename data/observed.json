@@ -1216,6 +1216,18 @@
     }
    }
   },
+  "courser via himalayas": {
+   "name": "Courser (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-08",
+     "role_ids": [
+      "himalayas:us-remote-it:e67f7aa9ced12334f689"
+     ],
+     "count": 1
+    }
+   }
+  },
   "cox": {
    "name": "Cox",
    "cycles": {
@@ -2605,6 +2617,18 @@
     }
    }
   },
+  "nogigiddy": {
+   "name": "NoGigiddy",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-08",
+     "role_ids": [
+      "jobicy:us-remote-it:148512"
+     ],
+     "count": 1
+    }
+   }
+  },
   "northab": {
    "name": "NorthAB",
    "cycles": {
@@ -3932,5 +3956,5 @@
    }
   }
  },
- "updated_at": "2026-11-08T00:56:57Z"
+ "updated_at": "2026-11-08T06:45:52Z"
 }

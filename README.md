@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**25 open postings** · Data as of 2026-11-08T06:45:52Z
+**25 open postings** · Data as of 2026-11-08T07:15:42Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -33,8 +33,8 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
-| NoGigiddy 🆁 | Technical Support Specialist (Remote) - Entry Level, No Degree Required, 15 - 18 🆕 | IT Support / Ops | Remote - United States (Jobicy: USA) | No skills listed | Nov 08, 2026 | [Apply](https://jobicy.com/jobs/148512-technical-support-specialist-remote-entry-level-no-degree-required-15-18) |
 | Courser (via Himalayas) 🆁 | IT Support Services I-Quick Fix 🆕 | IT Support / Ops | Remote - United States | AWS, Azure, Linux | Nov 08, 2026 | [Apply](https://himalayas.app/companies/courser/jobs/it-support-services-i-quick-fix?utm_source=api) |
+| NoGigiddy 🆁 | Technical Support Specialist (Remote) - Entry Level, No Degree Required, 15 - 18 🆕 | IT Support / Ops | Remote - United States (Jobicy: USA) | No skills listed | Nov 08, 2026 | [Apply](https://jobicy.com/jobs/148512-technical-support-specialist-remote-entry-level-no-degree-required-15-18) |
 | Netsmart (via Himalayas) 🆁 | Service Desk Technician - Application Support 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/netsmart/jobs/service-desk-technician-application-support?utm_source=api) |
 | AMERICAN SYSTEMS (via Himalayas) 🆁 | Tier I Part Time Help Desk Analyst – Overnight Monitoring 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/american-systems/jobs/tier-i-part-time-help-desk-analyst-overnight-monitoring?utm_source=api) |
 | ADT (via Himalayas) 🆁 | Remote Customer Technical Support 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 06, 2026 | [Apply](https://himalayas.app/companies/adt/jobs/remote-customer-technical-support?utm_source=api) |
@@ -81,15 +81,15 @@ _Why each one left is in the last column, because the two reasons carry differen
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
-| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-08 | out of scope |
 | Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-08 | out of scope |
 | Everglade Works (via Himalayas) | IT Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
 | NetDocuments | Technical Support Engineer | Remote — Florida / US | 2026-11-08 | out of scope |
+| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-08 | out of scope |
+| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-08 | out of scope |
 | PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
 | Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-08 | out of scope |
 | TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-08 | out of scope |
 | Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-08 | out of scope |
-| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-08 | out of scope |
 | Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-08 | out of scope |
 | Zillow | IT Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
 | Danaher (via Himalayas) | IT Analyst Co-op | Remote — Florida / US | 2026-11-08 | out of scope |

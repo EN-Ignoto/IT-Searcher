@@ -3243,6 +3243,18 @@
     }
    }
   },
+  "sierra interactive via himalayas": {
+   "name": "Sierra Interactive (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-09",
+     "role_ids": [
+      "himalayas:us-remote-it:dbe1cf87966fb54e3ac8"
+     ],
+     "count": 1
+    }
+   }
+  },
   "sierra nevada": {
    "name": "Sierra Nevada Corporation",
    "cycles": {
@@ -3980,5 +3992,5 @@
    }
   }
  },
- "updated_at": "2026-11-09T10:26:14Z"
+ "updated_at": "2026-11-09T19:28:43Z"
 }

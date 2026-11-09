@@ -1370,6 +1370,18 @@
     }
    }
   },
+  "effortless office via himalayas": {
+   "name": "Effortless Office (via Himalayas)",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-09",
+     "role_ids": [
+      "himalayas:us-remote-it:133ce5cb51f1c40175cc"
+     ],
+     "count": 1
+    }
+   }
+  },
   "eight sleep": {
    "name": "Eight Sleep",
    "cycles": {
@@ -3968,5 +3980,5 @@
    }
   }
  },
- "updated_at": "2026-11-09T02:37:21Z"
+ "updated_at": "2026-11-09T07:12:49Z"
 }

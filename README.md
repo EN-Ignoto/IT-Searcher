@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**26 open postings** · Data as of 2026-11-08T22:49:54Z
+**26 open postings** · Data as of 2026-11-09T02:37:21Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -82,8 +82,8 @@ _Why each one left is in the last column, because the two reasons carry differen
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
-| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-08 | out of scope |
-| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-08 | out of scope |
+| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-09 | out of scope |
+| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-09 | out of scope |
 | Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-08 | out of scope |
 | Everglade Works (via Himalayas) | IT Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
 | PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |

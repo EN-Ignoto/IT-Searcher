@@ -1,14 +1,6 @@
 {
   "pending": {
-    "discord": [
-      "greenhouse:gleanwork:4734007005",
-      "workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1",
-      "workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541"
-    ],
-    "telegram": [
-      "greenhouse:gleanwork:4734007005",
-      "workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1",
-      "workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541"
-    ]
+    "discord": [],
+    "telegram": []
   }
 }

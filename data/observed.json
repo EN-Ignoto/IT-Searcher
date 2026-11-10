@@ -1658,6 +1658,18 @@
     }
    }
   },
+  "glean": {
+   "name": "Glean",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-10",
+     "role_ids": [
+      "greenhouse:gleanwork:4734007005"
+     ],
+     "count": 1
+    }
+   }
+  },
   "globalfoundries": {
    "name": "GlobalFoundries",
    "cycles": {
@@ -2970,6 +2982,13 @@
       "workday:republic:/job/USA---Remote/Information-Security-Analyst_R-187780-1"
      ],
      "count": 3
+    },
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-10",
+     "role_ids": [
+      "workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1"
+     ],
+     "count": 1
     }
    }
   },
@@ -3531,6 +3550,18 @@
     }
    }
   },
+  "trubridge": {
+   "name": "TruBridge",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-10",
+     "role_ids": [
+      "workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541"
+     ],
+     "count": 1
+    }
+   }
+  },
   "trustage": {
    "name": "TruStage",
    "cycles": {
@@ -4004,5 +4035,5 @@
    }
   }
  },
- "updated_at": "2026-11-10T13:16:05Z"
+ "updated_at": "2026-11-10T22:26:40Z"
 }

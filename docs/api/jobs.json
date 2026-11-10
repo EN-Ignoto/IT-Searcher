@@ -1,11 +1,34 @@
 {
- "generated_at": "2026-11-09T19:28:43Z",
- "data_as_of": "2026-11-09T19:28:43Z",
- "rendered_at": "2026-11-09T19:28:43Z",
+ "generated_at": "2026-11-10T03:21:16Z",
+ "data_as_of": "2026-11-10T03:21:16Z",
+ "rendered_at": "2026-11-10T03:21:16Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 10,
+ "count": 11,
  "jobs": [
+  {
+   "id": "lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220",
+   "company": "Versapay",
+   "title": "Technical Support Specialist",
+   "season": "Remote — Florida / US",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "IT Support / Ops",
+   "location": "United States (Remote)",
+   "url": "https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220",
+   "posted_at": "2026-11-09T16:47:24Z",
+   "posted_at_source": "exact",
+   "first_seen_at": "2026-11-10T03:21:16Z",
+   "sponsorship": "unknown",
+   "salary": "70,000–75,000 USD/yr",
+   "skills": [
+    "SQL"
+   ],
+   "source": "lever",
+   "h1b_approvals": null,
+   "program": "Entry-level job",
+   "remote": true
+  },
   {
    "id": "jobicy:us-remote-it:148512",
    "company": "NoGigiddy",

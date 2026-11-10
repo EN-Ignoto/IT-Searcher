@@ -3788,6 +3788,18 @@
     }
    }
   },
+  "versapay": {
+   "name": "Versapay",
+   "cycles": {
+    "Remote — Florida / US": {
+     "first_posted": "2026-11-09",
+     "role_ids": [
+      "lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220"
+     ],
+     "count": 1
+    }
+   }
+  },
   "voyager technologies": {
    "name": "Voyager Technologies",
    "cycles": {
@@ -3992,5 +4004,5 @@
    }
   }
  },
- "updated_at": "2026-11-09T19:28:43Z"
+ "updated_at": "2026-11-10T03:21:16Z"
 }

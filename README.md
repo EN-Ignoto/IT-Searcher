@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**28 open postings** · Data as of 2026-11-09T19:28:43Z
+**28 open postings** · Data as of 2026-11-10T03:21:16Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -33,11 +33,12 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
+| Versapay 🆁 | Technical Support Specialist 🆕 | IT Support / Ops | United States (Remote) | SQL | Nov 09, 2026 | [Apply](https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220) |
 | Sierra Interactive (via Himalayas) 🆁 | Technical Support Analyst 🆕 | IT Support / Ops | Remote - United States | Python, JavaScript, LLMs, HTML/CSS | Nov 09, 2026 | [Apply](https://himalayas.app/companies/sierra-interactive/jobs/technical-support-analyst?utm_source=api) |
 | Effortless Office (via Himalayas) 🆁 | IT Tech Support - Tier 1 Analyst 🆕 | IT Support / Ops | Remote - United States | Azure | Nov 09, 2026 | [Apply](https://himalayas.app/companies/effortless-office/jobs/it-tech-support-tier-1-analyst?utm_source=api) |
 | Liberty University (via Himalayas) 🆁 | IT Helpdesk Remote Support - Support Specialist I 🆕 | IT Support / Ops | Remote - United States | No skills listed | Nov 08, 2026 | [Apply](https://himalayas.app/companies/liberty-university/jobs/it-helpdesk-remote-support-support-specialist-i?utm_source=api) |
-| Courser (via Himalayas) 🆁 | IT Support Services I-Quick Fix 🆕 | IT Support / Ops | Remote - United States | AWS, Azure, Linux | Nov 08, 2026 | [Apply](https://himalayas.app/companies/courser/jobs/it-support-services-i-quick-fix?utm_source=api) |
-| NoGigiddy 🆁 | Technical Support Specialist (Remote) - Entry Level, No Degree Required, 15 - 18 🆕 | IT Support / Ops | Remote - United States (Jobicy: USA) | No skills listed | Nov 08, 2026 | [Apply](https://jobicy.com/jobs/148512-technical-support-specialist-remote-entry-level-no-degree-required-15-18) |
+| Courser (via Himalayas) 🆁 | IT Support Services I-Quick Fix | IT Support / Ops | Remote - United States | AWS, Azure, Linux | Nov 08, 2026 | [Apply](https://himalayas.app/companies/courser/jobs/it-support-services-i-quick-fix?utm_source=api) |
+| NoGigiddy 🆁 | Technical Support Specialist (Remote) - Entry Level, No Degree Required, 15 - 18 | IT Support / Ops | Remote - United States (Jobicy: USA) | No skills listed | Nov 08, 2026 | [Apply](https://jobicy.com/jobs/148512-technical-support-specialist-remote-entry-level-no-degree-required-15-18) |
 | Netsmart (via Himalayas) 🆁 | Service Desk Technician - Application Support | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/netsmart/jobs/service-desk-technician-application-support?utm_source=api) |
 | AMERICAN SYSTEMS (via Himalayas) 🆁 | Tier I Part Time Help Desk Analyst – Overnight Monitoring | IT Support / Ops | Remote - United States | No skills listed | Nov 07, 2026 | [Apply](https://himalayas.app/companies/american-systems/jobs/tier-i-part-time-help-desk-analyst-overnight-monitoring?utm_source=api) |
 | ADT (via Himalayas) 🆁 | Remote Customer Technical Support | IT Support / Ops | Remote - United States | No skills listed | Nov 06, 2026 | [Apply](https://himalayas.app/companies/adt/jobs/remote-customer-technical-support?utm_source=api) |
@@ -58,7 +59,6 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | DMI (via Himalayas) 🆁 | Service Desk Analyst 🇺🇸 | IT Support / Ops | Remote - United States | No skills listed | Oct 18, 2026 | [Apply](https://himalayas.app/companies/dmi/jobs/service-desk-analyst?utm_source=api) |
 | CenturyLink (via Himalayas) 🆁 | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway (Remote, US | Security / IT | Remote - United States | No skills listed | Oct 17, 2026 | [Apply](https://himalayas.app/companies/centurylink/jobs/cybersecurity-risk-digital-trust-summer-2027-internship-pathway-remote-us?utm_source=api) |
 | GES (via Himalayas) 🆁 | Cybersecurity Intern 🛂 | Security / IT | Remote - United States | Azure | Oct 15, 2026 | [Apply](https://himalayas.app/companies/kimballelectronics/jobs/cybersecurity-intern?utm_source=api) |
-| GuidePoint Security LLC (via Himalayas) 🆁 | Cloud Infrastructure Intern - GPSU/NE | Cloud Platform | Remote - United States | Python, Bash, LLMs, AWS | Oct 10, 2026 | [Apply](https://himalayas.app/companies/guidepoint-security-llc/jobs/cloud-infrastructure-intern-gpsu-ne?utm_source=api) |
 
 <a id="drop-radar"></a>
 
@@ -78,24 +78,25 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 _4 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **4** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
 <details>
-<summary><strong>Recently closed</strong>: 34 roles that left the list in the last 14 days</summary>
+<summary><strong>Recently closed</strong>: 35 roles that left the list in the last 14 days</summary>
 
 _Why each one left is in the last column, because the two reasons carry different evidence. **Gone from feed** = two consecutive complete reads of the employer's board no longer returned it (strong, but not the employer telling us directly). **Out of scope** = still posted, but it no longer passes our filters. That's our call, not theirs. **Not recorded** = closed before we started tracking the reason._
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
-| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-09 | out of scope |
-| PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-09 | out of scope |
-| Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-09 | out of scope |
-| TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-09 | out of scope |
+| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-10 | out of scope |
+| PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-10 | out of scope |
+| Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-10 | out of scope |
+| TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-10 | out of scope |
+| Guidehouse | IT Service Desk Specialist | Remote — Florida / US | 2026-11-10 | out of scope |
+| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-10 | out of scope |
+| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-10 | out of scope |
+| Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-10 | out of scope |
+| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-10 | out of scope |
+| Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-10 | out of scope |
+| Zillow | IT Support Specialist | Remote — Florida / US | 2026-11-10 | out of scope |
+| GuidePoint Security LLC (via Himalayas) | Cloud Infrastructure Intern - GPSU/NE | Remote — Florida / US | 2026-11-10 | out of scope |
 | CDW Corporation | IT Service Desk- 6AM - 6PM | Remote — Florida / US | 2026-11-09 | out of scope |
-| Guidehouse | IT Service Desk Specialist | Remote — Florida / US | 2026-11-09 | out of scope |
-| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-09 | out of scope |
-| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-09 | out of scope |
-| Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-09 | out of scope |
-| Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-09 | out of scope |
-| Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-09 | out of scope |
-| Zillow | IT Support Specialist | Remote — Florida / US | 2026-11-09 | out of scope |
 | Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-08 | out of scope |
 | Everglade Works (via Himalayas) | IT Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
 | NetDocuments | Technical Support Engineer | Remote — Florida / US | 2026-11-08 | out of scope |

@@ -1,6 +1,10 @@
 {
   "pending": {
-    "discord": [],
-    "telegram": []
+    "discord": [
+      "lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220"
+    ],
+    "telegram": [
+      "lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220"
+    ]
   }
 }

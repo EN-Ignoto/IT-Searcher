@@ -18,7 +18,8 @@ FOUNDATION = re.compile(
     r"|it asset (?:analyst|technician|coordinator|specialist)"
     r"|computer support (?:specialist|technician)"
     r"|technology support (?:specialist|technician)"
-    r"|computer systems technician)\b", re.I,
+    r"|computer systems technician|desktop technician"
+    r"|(?:it|information technology) assistant)\b", re.I,
 )
 SUPPORT = re.compile(r"\b(help[ -]?desk|service desk|desktop support|it support|computer technician|pc technician|it technician|it specialist|technical support|end[ -]user|field support|support technician|support specialist)\b", re.I)
 IT = re.compile(r"\b(information technology|it|help[ -]?desk|service desk|desktop|sysadmin|systems? administrat\w*|network|networking|noc|data cent(?:er|re)|cloud|infrastructure|linux|windows|technical support|computer support|technology support|computer technician|pc technician|end[ -]user|devops|site reliability|cyber\w*|infosec|soc analyst|information security)\b", re.I)
@@ -58,7 +59,7 @@ def is_opportunity(title: str) -> bool:
                      or re.search(r"\b(?:data cent(?:er|re)|network|noc) technician\b", title, re.I)))
 
 
-FIT_VERSION = 6
+FIT_VERSION = 7
 _EXPERIENCE = re.compile(
     r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)"
     r"\s*(?:\+|(?:-|–|to)\s*\d{1,2}\+?)?\s*years?"
@@ -80,6 +81,17 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
     if not is_opportunity(title):
         return "rejected"
     text = strip_html(description or "")
+    # An existing clearance is a hard barrier for a first civilian IT job.
+    # Eligibility to obtain one is different and remains in scope.
+    for match in re.finditer(
+            r"\b(?:active|current|maintained)\b[^.;]{0,60}"
+            r"\b(?:secret|ts/sci|top secret)\b[^.;]{0,60}\bclearance\b"
+            r"|\bclearance\s+required\s*:\s*(?:active|current)\b",
+            text, re.I):
+        context = text[max(0, match.start() - 25):match.end() + 35]
+        if re.search(r"\b(?:preferred|a plus|not required|no active|no current)\b", context, re.I):
+            continue
+        return "rejected"
     # Government and education job descriptions commonly spell out numbers
     # as "two (2) years". Normalize those before enforcing experience gates.
     # Treat "two (2) years" exactly like "2 years", never as no requirement.
@@ -105,6 +117,23 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
             text, re.I):
         if not re.search(r"\b(?:pursuing|enrolled|student|toward|preferred)\b", match.group(), re.I):
             return "rejected"
+    # A qualification heading can make a completed degree mandatory without
+    # repeating the word "required" after the degree (TruBridge's live format).
+    for match in re.finditer(
+            r"\b(?:minimum requirements|minimum qualifications|basic qualifications"
+            r"|required qualifications|what you will need)\b[^.]{0,180}"
+            r"\bbachelor\w*(?:['’]s)?[^.]{0,160}", text, re.I):
+        if not re.search(r"\b(?:pursuing|enrolled|student|toward|towards|preferred)\b",
+                         match.group(), re.I):
+            return "rejected"
+    # Some experienced escalation roles state no numeric years at all.
+    # Require explicit specialist evidence rather than treating every mention
+    # of experience (including retail or coursework) as professional IT tenure.
+    if re.search(
+            r"\bproven experience\s+(?:supporting|administering|implementing)\s+"
+            r"(?:enterprise resource planning|erp systems|complex saas platforms)\b",
+            text, re.I):
+        return "rejected"
     if location_group(location, title) == "remote":
         for match in re.finditer(
                 r"\b(?:ability to|must|required to|expected to)\s+(?:work|be|report)"
@@ -146,7 +175,11 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
                 continue
             return "rejected"
     if is_internship(title) and not re.search(
-            r"\bpaid\b|\$\s*\d|\b(?:USD|hourly rate|hourly wage)\b", text, re.I):
+            r"\$\s*\d|\b\d[\d,.]*\s*(?:USD|dollars?\s+(?:per|an)\s+hour)\b"
+            r"|\bpaid[,\s]+(?:(?:remote|full[ -]time|part[ -]time|summer|winter"
+            r"|spring|fall|\d+[ -]week)[,\s]+){0,5}(?:internship|intern|position|role)\b"
+            r"|\b(?:internship|position|role)\s+(?:is|will be)\s+(?:a\s+)?paid\b",
+            text, re.I):
         return "unverified"
     return "eligible" if text.strip() else "unverified"
 

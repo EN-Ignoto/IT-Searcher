@@ -16,7 +16,7 @@ from html import escape
 from . import config, filters, grouping, h1b, paths, radar, registry, sponsorship, trends
 
 
-def _hero(stats: dict, open_jobs: list[dict], proven_roles: int) -> str:
+def _hero(stats: dict, open_jobs: list[dict], proven_roles: int, *, it_scope: bool = False) -> str:
     """The four numbers an applicant actually needs, and nothing else.
 
     This used to be ten equal-weight tiles where "Last run: 402.0s" sat beside
@@ -33,6 +33,11 @@ def _hero(stats: dict, open_jobs: list[dict], proven_roles: int) -> str:
          f"USCIS approved {h1b.BADGE_THRESHOLD}+ petitions"),
         (str(remote), "remote", "the posting's own words say so"),
     ]
+    if it_scope:
+        local = sum(r.get("season") == "Orlando area" for r in open_jobs)
+        interns = sum(filters.is_internship(r.get("title") or "") for r in open_jobs)
+        items[1] = (str(local), "Orlando area", "nearby cities; confirm your commute")
+        items[2] = (str(interns), "internships", "pay evidence found in the posting")
     return "".join(
         f'<div class="hcard"><div class="hnum">{escape(v)}</div>'
         f'<div class="hlbl">{escape(label)}</div>'
@@ -696,15 +701,15 @@ def generate(store_data: dict, stats: dict) -> None:
   <header class="top">
     <h1>{"Orlando-area" if cfg.get("opportunity_scope") == "it" else escape(region)} IT jobs & internships</h1>
     <p class="sub">Full employer-registry scans use the upstream collection workflow. GitHub may delay scheduled starts. The feed keeps postings for {config.max_age_days(cfg)} days; select Posted in last 48 hours to apply early.</p>
-    <p class="sub">First-job IT candidates and paid internships. Required professional IT experience, advanced titles, unreadable requirements, and unpaid internships are excluded; preferred experience is not treated as mandatory. Confirm schedule and remote-state eligibility with the employer.</p>
-    <p class="sub">Employer career feeds plus selected remote sources. Latest collection checked {stats.get('companies_total', 0):,} boards; the complete employer/source registry contains {len(registry.load()):,}. LinkedIn, Handshake, Indeed and ZipRecruiter search results are not imported. Data as of {escape(updated)}.</p>
+    <p class="sub">First-job IT candidates and paid internships. Filters look for beginner IT work and exclude detected experience requirements, existing-clearance requirements, and unpaid internships. A match is a candidate to review, not a guarantee that you meet every requirement. Confirm schedule and remote-state eligibility with the employer.</p>
+    <p class="sub">Official employer career feeds. Latest collection: {stats.get('fetched_ok', 0):,} boards returned data, {stats.get('fetch_errors', 0):,} failed, and {stats.get('quarantined', 0):,} were temporarily skipped. Registry: {len(registry.load()):,} boards. LinkedIn, Handshake, Indeed and ZipRecruiter search results are not imported. Data as of {escape(updated)}.</p>
 
     <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
     · <a href="internships.csv">CSV</a> ·
     <a href="https://github.com/{escape(repo)}">source</a> ·
     <a href="https://github.com/{escape(repo)}/blob/main/METHODOLOGY.md">methodology</a></p>
   </header>
-  <div class="hero">{_hero(stats, open_jobs, proven_roles)}</div>
+  <div class="hero">{_hero(stats, open_jobs, proven_roles, it_scope=cfg.get("opportunity_scope") == "it")}</div>
 
   <section class="workspace" aria-label="Job workspace">
     <h2>Your next IT opportunity</h2>
@@ -1048,12 +1053,6 @@ def generate(store_data: dict, stats: dict) -> None:
 
     os.makedirs(paths.DOCS_DIR, exist_ok=True)
     if cfg.get("opportunity_scope") == "it":
-        local_count = sum(1 for r in open_jobs if r.get("season") in {"Orlando area", "Stretch — Orlando area"})
-        old_hero = _hero(stats, open_jobs, proven_roles)
-        new_hero = old_hero.replace(f'<div class="hnum">{len(open_jobs)}</div><div class="hlbl">with a stated cycle</div>',
-                                   f'<div class="hnum">{local_count}</div><div class="hlbl">Orlando area</div>')
-        new_hero = new_hero.replace("the employer named it, we didn't guess", "nearby cities; entry-level IT only")
-        html_doc = html_doc.replace(old_hero, new_hero)
         html_doc = html_doc.replace("All cycles", "All sections").replace("<th>Cycle</th>", "<th>Section</th>")
         html_doc = html_doc.replace("Internships &amp; co-ops", "All opportunity types")
         html_doc = html_doc.replace('<option value="Internship">Internships</option>',
@@ -1062,6 +1061,7 @@ def generate(store_data: dict, stats: dict) -> None:
                                    'location/fit section assigned by this tracker')
         html_doc = html_doc.replace('employer-stated cycle only', 'assigned section only')
         html_doc = html_doc.replace('Roles by cycle', 'Roles by section')
+        html_doc = html_doc.replace("title='Stated by the employer'", "title='Assigned by this tracker from the employer location'")
     with open(paths.DASHBOARD_PATH, "w", encoding="utf-8") as f:
         f.write(html_doc)
 

@@ -6,7 +6,7 @@ on:
     # globally and the top of the hour is the busiest slot on the platform —
     # measured Aug 3-5, only 32 of 144 expected runs actually fired, averaging
     # 138 minutes apart. Off-peak minutes get dropped less often.
-    - cron: "7,37 */3 * * *"  # every 30 min (UTC) — peak-season cadence
+    - cron: "7,37 */3 * * *"  # twice in every third hour (UTC); GitHub may delay starts
   push:
     branches: [main]
     paths: [".github/rebuild-request.txt"]

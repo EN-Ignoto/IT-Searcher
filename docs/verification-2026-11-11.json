@@ -1,0 +1,118 @@
+{
+  "verified_at": "2026-11-11T23:32:42Z",
+  "full_collection": {
+    "run_url": "https://github.com/EN-Ignoto/IT-Searcher/actions/runs/43064485621",
+    "conclusion": "success",
+    "fetched_at": "2026-11-11T17:56:56Z",
+    "registry_boards": 5384,
+    "returned_data": 4872,
+    "failed": 435,
+    "quarantined": 77
+  },
+  "live_posting_checks": [
+    {
+      "id": "ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f",
+      "title": "Summer 2027: IT Services Intern",
+      "company": "Amplify",
+      "url": "https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f",
+      "fit": "eligible",
+      "checked_at": "2026-11-11T23:30:32.340747+00:00"
+    },
+    {
+      "id": "ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7",
+      "title": "IT Intern, IT Support - Winter 2027",
+      "company": "1Password",
+      "url": "https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7",
+      "fit": "eligible",
+      "checked_at": "2026-11-11T23:30:32.476242+00:00"
+    },
+    {
+      "id": "workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541",
+      "title": "Technical Support Technician - Tech Apps",
+      "company": "TruBridge",
+      "url": "https://cpsi.wd1.myworkdayjobs.com/CPSI/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541",
+      "fit": "rejected",
+      "checked_at": "2026-11-11T23:30:32.606876+00:00"
+    },
+    {
+      "id": "workable:enterfusion:2863A7F0F5",
+      "title": "IT Help Desk Technician",
+      "company": "Enterfusion",
+      "url": "https://apply.workable.com/enterfusion/j/2863A7F0F5/",
+      "fit": "eligible",
+      "checked_at": "2026-11-11T23:30:33.080325+00:00"
+    },
+    {
+      "id": "workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2",
+      "title": "IT Support Specialist",
+      "company": "Zillow",
+      "url": "https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/IT-Support-Specialist_P751346-2",
+      "fit": "eligible",
+      "checked_at": "2026-11-11T23:30:33.269248+00:00"
+    },
+    {
+      "id": "workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057",
+      "title": "Network Site Design Intern",
+      "company": "Leidos",
+      "url": "https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057",
+      "fit": "eligible",
+      "checked_at": "2026-11-11T23:30:33.421315+00:00"
+    },
+    {
+      "id": "workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100",
+      "title": "Technical Support Representative - Remote",
+      "company": "BigCommerce",
+      "url": "https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100",
+      "fit": "eligible",
+      "checked_at": "2026-11-11T23:30:33.649716+00:00"
+    },
+    {
+      "id": "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798",
+      "title": "ServiceNow Help Desk Support",
+      "company": "Guidehouse",
+      "url": "https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798",
+      "fit": "rejected",
+      "checked_at": "2026-11-11T23:30:33.892414+00:00"
+    },
+    {
+      "id": "lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220",
+      "title": "Technical Support Specialist",
+      "company": "Versapay",
+      "url": "https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220",
+      "fit": "rejected",
+      "checked_at": "2026-11-11T23:30:34.045335+00:00"
+    },
+    {
+      "id": "localboards:valencia:44244",
+      "title": "Specialist, Technical Support",
+      "company": "Valencia College",
+      "url": "https://valenciacollege.peopleadmin.com/postings/44244",
+      "fit": "eligible",
+      "checked_at": "2026-11-11T23:30:34.255670+00:00"
+    },
+    {
+      "id": "localboards:osceola:993441CCDCCE775901861F2193A33B71",
+      "title": "Computer Technician I-12 Month",
+      "company": "School District of Osceola County",
+      "url": "https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71",
+      "fit": "eligible",
+      "checked_at": "2026-11-11T23:30:38.918443+00:00"
+    }
+  ],
+  "open_after_review": 8,
+  "local": 3,
+  "remote": 5,
+  "internships": 3,
+  "automated_validation": {
+    "pytest_passed": 829,
+    "saved_role_tests_passed": 4,
+    "ruff": "passed",
+    "actionlint": "passed",
+    "accuracy_gate": "passed"
+  },
+  "limits": [
+    "Employer feeds only; no LinkedIn, Handshake, Indeed or ZipRecruiter search import.",
+    "Nearby city matching, not a verified driving radius.",
+    "Requirements are automatically screened; candidates must confirm fit, work schedule, travel and remote-state eligibility."
+  ]
+}

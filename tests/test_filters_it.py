@@ -318,3 +318,55 @@ def test_first_job_scope_excludes_specialist_migration_and_advisory_jobs():
     assert not filters_it.is_opportunity('Cloud Migration Engineer I')
     assert not filters_it.is_opportunity('Entry-Level IT Advisory Consultant')
     assert filters_it.is_opportunity('IT Support Intern')
+
+
+@pytest.mark.parametrize('title', ['Desktop Technician', 'IT Assistant', 'Information Technology Assistant'])
+def test_beginner_title_variants_are_not_lost(title):
+    assert filters_it.is_opportunity(title)
+    assert not filters_it.is_opportunity('Senior ' + title)
+
+
+@pytest.mark.parametrize('text', [
+    'Clearance Required: Active Secret. What You Will Need: ServiceNow experience.',
+    'An ACTIVE and MAINTAINED "SECRET" Federal or DoD security clearance',
+    'Must hold a current Top Secret security clearance.',
+])
+def test_existing_clearance_is_not_a_first_job_match(text):
+    assert filters_it.assess_fit('Service Desk Analyst', text) == 'rejected'
+
+
+def test_ability_to_obtain_clearance_is_not_existing_clearance():
+    assert filters_it.assess_fit('IT Support Intern',
+        'Paid internship. Must be able to obtain a Secret clearance.') == 'eligible'
+    assert filters_it.assess_fit('IT Support Intern',
+        'Paid internship. Active Secret clearance preferred.') == 'eligible'
+
+
+@pytest.mark.parametrize('text', [
+    'Benefits include paid holidays and paid parental leave.',
+    'Paid volunteer days. Hourly rate will be discussed during interviews.',
+    'Compensation in USD will be discussed.',
+    'Paid parental leave during the internship is included in benefits.',
+])
+def test_benefits_and_currency_names_do_not_prove_intern_pay(text):
+    assert filters_it.assess_fit('IT Intern', text) == 'unverified'
+
+
+def test_amplify_paid_remote_internship_is_positive_pay_evidence():
+    assert filters_it.assess_fit('IT Services Intern',
+        'This paid, remote 10-week internship offers hands-on training.') == 'eligible'
+
+
+def test_minimum_degree_heading_is_a_requirement_without_required_suffix():
+    assert filters_it.assess_fit('Technical Support Technician',
+        "Minimum Requirements Education / Experience / Certification Requirements "
+        "Bachelor's Degree in a technical field of study or equivalent work experience.") == 'rejected'
+    assert filters_it.assess_fit('IT Intern',
+        "Basic Qualifications: Currently enrolled in a bachelor's degree program. Paid internship.") == 'eligible'
+
+
+def test_advanced_erp_support_does_not_need_numeric_years_to_be_experienced():
+    assert filters_it.assess_fit('Technical Support Specialist',
+        'Proven experience supporting ERP systems (SAP, Oracle, NetSuite).') == 'rejected'
+    assert filters_it.assess_fit('Technical Support Specialist',
+        'Customer-facing retail experience is required. Technical support training provided.') == 'eligible'

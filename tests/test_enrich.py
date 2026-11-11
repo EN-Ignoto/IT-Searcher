@@ -2,6 +2,7 @@
 carried over without refetching, and detail fetches backfill what they can."""
 
 import asyncio
+from datetime import UTC, datetime
 
 from intern_engine import enrich, filters_it, sponsorship
 from intern_engine.models import Job
@@ -43,7 +44,7 @@ class TestEnrich:
         net = FakeNet({})
         job = _job(jid="greenhouse:acme:9", source="greenhouse")
         existing = {"greenhouse:acme:9": {
-            "sponsorship": "citizens-only", "enriched_at": "x", "skills": ["Python"],
+            "sponsorship": "citizens-only", "enriched_at": datetime.now(UTC).isoformat(), "skills": ["Python"],
             "classifier_v": sponsorship.VERSION, "entry_fit": "eligible", "entry_fit_version": filters_it.FIT_VERSION,
         }}
         enriched, fetched = _run(enrich.enrich_jobs([job], existing, net))

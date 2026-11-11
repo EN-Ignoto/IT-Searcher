@@ -1,57 +1,11 @@
 {
  "generated_at": "2026-11-11T17:56:56Z",
  "data_as_of": "2026-11-11T17:56:56Z",
- "rendered_at": "2026-11-11T17:56:57Z",
+ "rendered_at": "2026-11-11T23:32:42Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 11,
+ "count": 8,
  "jobs": [
-  {
-   "id": "workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541",
-   "company": "TruBridge",
-   "title": "Technical Support Technician - Tech Apps",
-   "season": "Remote — Florida / US",
-   "seasons": null,
-   "season_inferred": false,
-   "category": "IT Support / Ops",
-   "location": "Remote - US",
-   "url": "https://cpsi.wd1.myworkdayjobs.com/CPSI/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541",
-   "posted_at": "2026-11-10T00:00:00Z",
-   "posted_at_source": "date_only",
-   "first_seen_at": "2026-11-10T22:26:40Z",
-   "sponsorship": "unknown",
-   "salary": null,
-   "skills": [
-    "Linux"
-   ],
-   "source": "workday",
-   "h1b_approvals": null,
-   "program": "Entry-level job",
-   "remote": true
-  },
-  {
-   "id": "lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220",
-   "company": "Versapay",
-   "title": "Technical Support Specialist",
-   "season": "Remote — Florida / US",
-   "seasons": null,
-   "season_inferred": false,
-   "category": "IT Support / Ops",
-   "location": "United States (Remote)",
-   "url": "https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220",
-   "posted_at": "2026-11-09T16:47:24Z",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-10T03:21:16Z",
-   "sponsorship": "unknown",
-   "salary": "70,000–75,000 USD/yr",
-   "skills": [
-    "SQL"
-   ],
-   "source": "lever",
-   "h1b_approvals": null,
-   "program": "Entry-level job",
-   "remote": true
-  },
   {
    "id": "localboards:valencia:44244",
    "company": "Valencia College",
@@ -181,29 +135,6 @@
    "source": "ashby",
    "h1b_approvals": null,
    "program": "Internship",
-   "remote": true
-  },
-  {
-   "id": "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798",
-   "company": "Guidehouse",
-   "title": "ServiceNow Help Desk Support",
-   "season": "Remote — Florida / US",
-   "seasons": null,
-   "season_inferred": false,
-   "category": "IT Support / Ops",
-   "location": "US - Remote (Any location)",
-   "url": "https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798",
-   "posted_at": "2026-09-23T00:00:00Z",
-   "posted_at_source": "date_only",
-   "first_seen_at": "2026-10-21T21:07:04Z",
-   "sponsorship": "unknown",
-   "salary": null,
-   "skills": [
-    "Tableau"
-   ],
-   "source": "workday",
-   "h1b_approvals": 68,
-   "program": "Entry-level job",
    "remote": true
   },
   {

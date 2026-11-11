@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**12 open postings** · Data as of 2026-11-11T08:17:51Z
+**10 open postings** · Data as of 2026-11-11T08:17:51Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -30,19 +30,17 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | School District of Osceola County | Computer Technician I-12 Month | IT Support / Ops | Kissimmee, FL | No skills listed | Oct 29, 2026 | [Apply](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
 | Enterfusion | IT Help Desk Technician | IT Support / Ops | Orlando, United States | AWS, Azure | Aug 20, 2026 | [Apply](https://apply.workable.com/enterfusion/j/2863A7F0F5/) |
 
-### Remote — Florida / US  (9 roles)
+### Remote — Florida / US  (7 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
 | TruBridge 🆁 | Technical Support Technician - Tech Apps 🆕 | IT Support / Ops | Remote - US | Linux | Nov 10, 2026 | [Apply](https://cpsi.wd1.myworkdayjobs.com/CPSI/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541) |
 | Versapay 🆁 | Technical Support Specialist 🆕 | IT Support / Ops | United States (Remote) | SQL | Nov 09, 2026 | [Apply](https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220) |
-| Applied Information Sciences 🆁 | Cloud Migration Engineer I | Cloud Platform | USA Remote | Python, Bash, AWS, Azure | Oct 29, 2026 | [Apply](https://appliedis.wd5.myworkdayjobs.com/ais_careers/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427) |
 | 1Password 🆁 | IT Intern, IT Support - Winter 2027 | IT Support / Ops | Remote (United States / Canada) | No skills listed | Oct 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7) |
 | Leidos ✓ 🆁 | Network Site Design Intern 🇺🇸 | Network / Telecom | 6314 Remote/Teleworker US | No skills listed | Oct 21, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057) |
 | BigCommerce ✓ 🆁 | Technical Support Representative - Remote | IT Support / Ops | United States - Remote | JavaScript, HTML/CSS | Oct 20, 2026 | [Apply](https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100) |
 | Amplify 🆁 | Summer 2027: IT Services Intern | IT Support / Ops | Remote - United States | Linux | Oct 19, 2026 | [Apply](https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f) |
 | Zillow ✓ 🆁 | IT Support Specialist | IT Support / Ops | Remote-USA | No skills listed | Sep 23, 2026 | [Apply](https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/IT-Support-Specialist_P751346-2) |
-| Impactadvisors 🆁 | Entry-Level IT Advisory Consultant 🛂 | IT Support / Ops | US Remote | No skills listed | Sep 02, 2026 | [Apply](https://impactadvisors.wd501.myworkdayjobs.com/impactadvisors/job/US-Remote/Entry-Level-IT-Advisory-Consultant_R101837) |
 
 <a id="drop-radar"></a>
 
@@ -70,6 +68,8 @@ _Why each one left is in the last column, because the two reasons carry differen
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Applied Information Sciences | Cloud Migration Engineer I | Remote — Florida / US | 2026-11-11 | out of scope |
+| Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-11 | out of scope |
 | Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-11 | out of scope |
 | Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-11 | out of scope |
 | Skydio | Technical Support Specialist | Remote — Florida / US | 2026-11-11 | out of scope |
@@ -108,8 +108,6 @@ _Why each one left is in the last column, because the two reasons carry differen
 | TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-10 | out of scope |
 | Leidos | Junior Salesforce Health Cloud System Administrator | Remote — Florida / US | 2026-11-10 | out of scope |
 | GuidePoint Security LLC (via Himalayas) | Cloud Infrastructure Intern - GPSU/NE | Remote — Florida / US | 2026-11-10 | out of scope |
-| Everglade Works (via Himalayas) | IT Support Specialist | Remote — Florida / US | 2026-11-08 | out of scope |
-| NetDocuments | Technical Support Engineer | Remote — Florida / US | 2026-11-08 | out of scope |
 
 </details>
 

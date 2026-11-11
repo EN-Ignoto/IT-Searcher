@@ -283,3 +283,23 @@ def test_two_year_preference_remains_possible_even_with_later_benefit_text():
     description = ("Preferred: 2 years of help desk experience. "
                    "Benefits: paid volunteer days and unpaid leave.")
     assert filters_it.assess_fit("Help Desk Technician", description) == "eligible"
+
+
+def test_first_job_profile_rejects_required_one_year_but_allows_preference():
+    assert filters_it.assess_fit('Help Desk Analyst I',
+        'One year of experience as a Helpdesk Technician or technical experience required.') == 'rejected'
+    assert filters_it.assess_fit('Computer Technician I',
+        'One year of troubleshooting experience preferred. High school diploma required.') == 'eligible'
+
+
+def test_generic_support_engineer_is_not_assumed_to_be_a_first_it_job():
+    assert not filters_it.is_opportunity('Designated Technical Support Engineer - West')
+    assert filters_it.is_opportunity('Junior Technical Support Engineer')
+
+
+def test_osceola_preferred_experience_is_not_a_mandatory_year():
+    description = ('High School Diploma or GED required, completion of one (1) course in post secondary '
+                   'computer electronics, computer networking, or related computer area. '
+                   'One (1) year of experience in computer networking, troubleshooting, or repair of '
+                   'computers preferred, ability to teach computer skills to adults and students.')
+    assert filters_it.assess_fit('Computer Technician I-12 Month', description) == 'eligible'

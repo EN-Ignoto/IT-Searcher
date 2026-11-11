@@ -5,7 +5,7 @@ import asyncio
 import json
 from datetime import UTC, datetime, timedelta
 
-from intern_engine import fastlane, filters_it, models, registry
+from intern_engine import filters_it, models, registry
 from intern_engine.connectors import localboards
 
 
@@ -121,7 +121,7 @@ def test_failed_boards_do_not_close_prior_live_postings():
     assert result.incomplete_reason == models.INCOMPLETE_MALFORMED
 
 
-def test_priority_scan_includes_registered_local_sources():
+def test_full_registry_includes_registered_local_sources():
     companies = registry.load()
-    local = [x for x in fastlane.select(companies) if x["ats"] == "localboards"]
+    local = [x for x in companies if x["ats"] == "localboards"]
     assert {x["slug"] for x in local} >= {"valencia", "osceola-schools"}

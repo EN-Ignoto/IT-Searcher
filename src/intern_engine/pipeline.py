@@ -47,9 +47,7 @@ from .connectors import (
     eightfold,
     governmentjobs,
     greenhouse,
-    himalayas,
     icims,
-    jobicy,
     lever,
     localboards,
     oracle,
@@ -62,13 +60,11 @@ from .connectors import (
 from .net import HostLimiter, Net
 
 CONNECTORS = {
+    "localboards": localboards.fetch,
     "governmentjobs": governmentjobs.fetch,
     "greenhouse": greenhouse.fetch,
-    "himalayas": himalayas.fetch,
     "icims": icims.fetch,
-    "jobicy": jobicy.fetch,
     "lever": lever.fetch,
-    "localboards": localboards.fetch,
     "ashby": ashby.fetch,
     "smartrecruiters": smartrecruiters.fetch,
     "workday": workday.fetch,
@@ -444,7 +440,6 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
     )
 
     existing = existing or {}
-    diagnostic = Counter()
     kept = []
     succeeded: set[str] = set()
     complete: set[str] = set()
@@ -509,18 +504,13 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
         if allowlist_only and not quality.is_recognized(company["name"]):
             continue
         for job in jobs:
-            diagnostic['fetched_listings'] += 1
-            if not (filters_it.is_opportunity(job.title) if cfg.get("opportunity_scope") == "it"
-                    else filters.is_internship(job.title)):
+            if not (filters_it.is_opportunity(job.title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(job.title)):
                 continue
-            diagnostic['title_pass'] += 1
-            if tech_only and not (filters_it.is_relevant(job.title) if cfg.get("opportunity_scope") == "it"
-                                  else filters_secnet.is_relevant(job.title)):
+            if tech_only and not (filters_it.is_relevant(job.title) if cfg.get("opportunity_scope") == "it" else filters_secnet.is_relevant(job.title)):
                 continue
             season = filters_it.bucket(job.title, job.location) if cfg.get("opportunity_scope") == "it" else filters.detect_season(job.title, cycles)
             if cfg.get("opportunity_scope") == "it" and season is None:
                 continue
-            diagnostic['location_pass'] += 1
             inferred = False
             unstated_reason: str | None = None
             if season is None:
@@ -584,29 +574,23 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
             # posted early and is still open and still for Fall 2026. Closing it
             # for being old was us overriding what the company wrote.
             prior = existing.get(stored_owner(job) or job.id) or {}
-            too_old = (freshness.expired(job.posted_at, prior.get("first_seen_at"), max_age)
-                       or _before_feed_start(job.posted_at, prior.get("first_seen_at"), cfg))
-            if ((cfg.get("opportunity_scope") == "it" and too_old)
-                    or (cfg.get("opportunity_scope") != "it" and cutoff and posted_day
-                        and posted_day < cutoff and inferred)):
+            if cfg.get("opportunity_scope") == "it" and (freshness.expired(job.posted_at, prior.get("first_seen_at"), max_age) or _before_feed_start(job.posted_at, prior.get("first_seen_at"), cfg)):
                 continue
-            diagnostic['age_pass'] += 1
+            if cutoff and posted_day and posted_day < cutoff and inferred:
+                continue
             job.season = season
             job.season_inferred = inferred
             if not inferred:
                 # A title can state MORE than one tracked cycle ("Fall 2026/
                 # Summer 2027"); keep the full set so neither cycle loses it.
-                stated_all = filters.detect_seasons(job.title, cycles) if cfg.get("opportunity_scope") != "it" else []
+                stated_all = [] if cfg.get("opportunity_scope") == "it" else filters.detect_seasons(job.title, cycles)
                 if len(stated_all) > 1:
                     job.seasons = stated_all
-            job.category = (filters_it.categorize(job.title) if cfg.get("opportunity_scope") == "it"
-                            else filters_secnet.categorize(job.title))
+            job.category = filters_it.categorize(job.title) if cfg.get("opportunity_scope") == "it" else filters_secnet.categorize(job.title)
             job.company = names.display(job.company, job.company_slug)
             if job.posted_at and not job.posted_at_source:
                 job.posted_at_source = models.date_source(job.posted_at)
             kept.append(job)
-    if cfg.get('opportunity_scope') == 'it':
-        print('IT intake funnel: ' + json.dumps(dict(diagnostic), sort_keys=True), flush=True)
     return (kept, succeeded, complete, seen_ids, errors, errors_by_ats,
             dropped_no_year, dropped_offcycle, rejected)
 
@@ -734,7 +718,8 @@ def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None
             record.get("season_inferred") and posted and posted.date() < infer_cutoff
         )
         rejected = (
-            (cfg.get("opportunity_scope") == "it" and (
+            (bool(record.get("source")) and record["source"] not in CONNECTORS)
+            or (cfg.get("opportunity_scope") == "it" and (
                 record.get("entry_fit") != "eligible"
                 or record.get("entry_fit_version") != filters_it.FIT_VERSION))
             or (bool(title) and not (filters_it.is_opportunity(title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(title)))
@@ -808,9 +793,6 @@ def run_update() -> tuple[dict, dict, list[str]]:
         ts = store.now_iso()
         offcycle = offcycle_sticky
         still = []
-        if cfg.get('opportunity_scope') == 'it':
-            verdicts = dict(Counter(job.entry_fit or 'no-evidence' for job in kept))
-            print('IT requirement verdicts: ' + json.dumps(verdicts, sort_keys=True), flush=True)
         for job in kept:
             if cfg.get("opportunity_scope") == "it" and job.entry_fit != "eligible":
                 record = existing.get(job.id)
@@ -876,12 +858,6 @@ def run_update() -> tuple[dict, dict, list[str]]:
     new_ids = store.upsert(existing, rows, complete_keys, enriched_ids,
                            seen_ids=seen_ids,
                            classifier_version=sponsorship.VERSION)
-    # Upsert preserves authoritative dates and can reopen previously closed rows.
-    # Validate the merged records too, including boards that failed this run and
-    # roles that crossed the age boundary while collection was in progress.
-    _close_out_of_scope(existing, cfg, blocklist)
-    new_ids = [jid for jid in new_ids if existing[jid].get("is_open")]
-    kept = [job for job in kept if existing.get(job.id, {}).get("is_open")]
     purged = store.purge(existing)
     store.save(paths.JOBS_PATH, existing)
 

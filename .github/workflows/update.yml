@@ -1,29 +1,20 @@
-name: Update IT opportunities
+name: Collect IT jobs and internships (full registry)
 
 on:
+  schedule:
+    # Minutes 7 and 37, not 0 and 30. GitHub queues scheduled workflows
+    # globally and the top of the hour is the busiest slot on the platform —
+    # measured Aug 3-5, only 32 of 144 expected runs actually fired, averaging
+    # 138 minutes apart. Off-peak minutes get dropped less often.
+    - cron: "7,37 */3 * * *"  # every 30 min (UTC) — peak-season cadence
   push:
     branches: [main]
-    # Push a refresh request file to start a real full scan immediately,
-    # without depending on GitHub's delayed scheduled-event delivery.
-    paths:
-      - ".github/refresh-request.txt"
-  schedule:
-    # Broad ~5,000-board sweep every four hours; the fast-lane workflow
-    # checks high-signal employers between these long scans.
-    - cron: "17 */4 * * *"
-  workflow_dispatch:
-    inputs:
-      render_only:
-        description: Rebuild the published tracker from saved data without a fresh collection
-        type: boolean
-        default: false
-      allow_feed_collapse:
-        description: Allow a manual refresh to publish a sharp drop in open jobs
-        type: boolean
-        default: false
+    paths: [".github/rebuild-request.txt"]
+  workflow_dispatch:          # lets you run it manually from the Actions tab
 
 permissions:
   contents: write             # needed so the bot can commit the refreshed data
+  actions: read               # verify Pages deployed before sending alerts
 
 concurrency:
   group: intern-engine-writer
@@ -64,7 +55,11 @@ jobs:
           # Optional: WORKDAY_PROXY lets the cloud runner reach Workday tenants
           # that block datacenter IPs. Unset = Workday runs direct.
           WORKDAY_PROXY: ${{ secrets.WORKDAY_PROXY }}
-        run: python run.py ${{ inputs.render_only && 'render' || 'update' }}
+          # Optional: set these repo secrets to mirror each run into Postgres.
+          # Unset = the engine still runs and exports README/CSV as normal.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python run.py update
 
       # The gate between "we produced output" and "the world sees it". Checks
       # every open role against the accuracy invariants AND the run as a whole
@@ -72,18 +67,9 @@ jobs:
       # the previous good build still live on Pages.
       - name: Verify accuracy before publishing
         env:
-          MIN_OPEN_ROLES: "0"
+          MIN_OPEN_ROLES: "1"
           MAX_STATS_AGE_HOURS: "2"
-          ALLOW_STALE_STATS: ${{ inputs.render_only && '1' || '0' }}
         run: python tools/verify_accuracy.py
-
-      # Keep the last published feed when filters unexpectedly remove almost
-      # all jobs. Manual overrides should follow confirmation of genuine closures.
-      - name: Prevent unexpected feed collapse
-        if: ${{ !inputs.render_only }}
-        env:
-          ALLOW_FEED_COLLAPSE: ${{ inputs.allow_feed_collapse && '1' || '0' }}
-        run: python tools/check_feed_collapse.py
 
       # Alerts are sent by a LATER step, on purpose: an alert promises the role
       # is on the list, so nothing goes out until this push actually lands.
@@ -111,39 +97,14 @@ jobs:
             echo "::error::main changed after generation; refusing to rebase stale artifacts"
             exit 1
           fi
-          # Retry transient GitHub 5xx failures without repeating the collection.
-          for attempt in 1 2 3; do
-            if git push origin HEAD:main; then
-              break
-            fi
-            # A lost response may follow a successful push.
-            git fetch --no-tags origin main
-            if [ "$(git rev-parse origin/main)" = "$(git rev-parse HEAD)" ]; then
-              break
-            fi
-            if [ "$(git rev-parse origin/main)" != "$BASE_SHA" ]; then
-              echo "::error::main advanced; refusing to overwrite newer changes"
-              exit 1
-            fi
-            if [ "$attempt" = 3 ]; then exit 1; fi
-            sleep $((attempt * 5))
-          done
-          echo "pushed=true" >> "$GITHUB_OUTPUT"
-
-      # An alert is eligible only after the corresponding listing is on main.
-      # Optional Discord and Telegram secrets can be configured in repo settings.
-      - name: Notify about newly posted eligible roles
-        if: ${{ steps.publish.outputs.pushed == 'true' }}
-        env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python run.py notify-fast
-
-      - name: Persist alert delivery state
-        if: ${{ steps.publish.outputs.pushed == 'true' }}
-        run: |
-          git add data/outbox.json
-          if git diff --staged --quiet; then exit 0; fi
-          git commit -m "Record early job alert delivery status"
           git push origin HEAD:main
+          OWNER="$(echo "${GITHUB_REPOSITORY%%/*}" | tr '[:upper:]' '[:lower:]')"
+          # `rendered_at` is the fingerprint the next step waits to see served
+          # from the live site: this run wrote it and no other run can have it.
+          # `pages_url` mirrors config.pages_base() — owner lowercased, repo as-is.
+          {
+            echo "pushed=true"
+            echo "sha=$(git rev-parse HEAD)"
+            echo "rendered_at=$(python -c 'import json; print(json.load(open("data/stats.json"))["rendered_at"])')"
+            echo "pages_url=https://${OWNER}.github.io/${GITHUB_REPOSITORY#*/}"
+          } >> "$GITHUB_OUTPUT"

@@ -1133,7 +1133,7 @@ def test_local_desktop_job_is_found_beyond_original_it_keywords():
             postings = ([{'title': 'Desktop Support Specialist',
                           'externalPath': '/job/Orlando/Desktop-Support_R123',
                           'locationsText': 'Orlando, FL', 'postedOn': 'Posted Today'}]
-                        if json['searchText'] == 'desktop support' else [])
+                        if json['searchText'] == 'support' else [])
             return {'total': len(postings), 'jobPostings': postings}
     company = dict(name='Local Employer', slug='local', wd='wd5', site='Careers',
                    opportunity_scope='it')

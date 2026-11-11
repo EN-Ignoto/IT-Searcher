@@ -5,7 +5,7 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-11T07:04:26Z</updated>
+  <updated>2026-11-11T07:26:45Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
   <entry>
     <id>urn:intern-engine:workable:enterfusion:2863A7F0F5</id>
@@ -16,22 +16,6 @@
     <summary>Orlando area · IT Support / Ops · Orlando, United States · $48k–$65k/yr · AWS, Azure</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:loewshotels:/job/FL---Orlando---Lakewood-Regional-Support-Bldg/Help-Desk-Analyst-I_R0089374-1</id>
-    <title>Loews Hotels: Help Desk Analyst I</title>
-    <link href="https://loewshotels.wd5.myworkdayjobs.com/loewshotels/job/FL---Orlando---Lakewood-Regional-Support-Bldg/Help-Desk-Analyst-I_R0089374-1"/>
-    <updated>2026-11-11T06:31:34Z</updated>
-    <category term="Orlando area"/>
-    <summary>Orlando area · IT Support / Ops · FL - Orlando - Lakewood Regional Support Bldg</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:greenhouse:gleanwork:4734007005</id>
-    <title>Glean: Designated Technical Support Engineer - West</title>
-    <link href="https://job-boards.greenhouse.io/gleanwork/jobs/4734007005"/>
-    <updated>2026-11-10T22:26:40Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote - US · $143k–$170k/yr · SQL, LLMs, AWS, GCP, Azure</summary>
-  </entry>
-  <entry>
     <id>urn:intern-engine:workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541</id>
     <title>TruBridge: Technical Support Technician - Tech Apps</title>
     <link href="https://cpsi.wd1.myworkdayjobs.com/CPSI/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541"/>
@@ -40,28 +24,12 @@
     <summary>Remote — Florida / US · IT Support / Ops · Remote - US · Linux</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1</id>
-    <title>Republic Services: Service Desk Analyst I</title>
-    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1"/>
-    <updated>2026-11-10T22:26:40Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote - USA · H-1B track record: ~19 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
     <id>urn:intern-engine:lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220</id>
     <title>Versapay: Technical Support Specialist</title>
     <link href="https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220"/>
     <updated>2026-11-10T03:21:16Z</updated>
     <category term="Remote — Florida / US"/>
     <summary>Remote — Florida / US · IT Support / Ops · United States (Remote) · 70,000–75,000 USD/yr · SQL</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:jobicy:us-remote-it:148512</id>
-    <title>NoGigiddy: Technical Support Specialist (Remote) - Entry Level, No Degree Required, 15 - 18</title>
-    <link href="https://jobicy.com/jobs/148512-technical-support-specialist-remote-entry-level-no-degree-required-15-18"/>
-    <updated>2026-11-08T06:45:52Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote - United States (Jobicy: USA) · $15–$18/hr</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:localboards:osceola:993441CCDCCE775901861F2193A33B71</id>
@@ -86,30 +54,6 @@
     <updated>2026-11-07T06:39:00Z</updated>
     <category term="Remote — Florida / US"/>
     <summary>Remote — Florida / US · IT Support / Ops · Remote (United States | Canada)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:appliedis:/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427</id>
-    <title>Applied Information Sciences: Cloud Migration Engineer I</title>
-    <link href="https://appliedis.wd5.myworkdayjobs.com/ais_careers/job/USA-Remote/Cloud-Migration-Engineer-I_JR2026001427"/>
-    <updated>2026-11-07T06:39:00Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · Cloud Platform · USA Remote · $90k–$137k/yr · Python, Bash, AWS, Azure, Terraform</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642</id>
-    <title>ADT: Remote Customer Technical Support</title>
-    <link href="https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642"/>
-    <updated>2026-11-05T00:20:42Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States · $17/hr · H-1B track record: ~39 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
-    <id>urn:intern-engine:workday:crowdstrike:/job/USA---Remote/Technical-Support_R30773</id>
-    <title>Crowdstrike: Technical Support</title>
-    <link href="https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/USA---Remote/Technical-Support_R30773"/>
-    <updated>2026-11-02T16:42:52Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · USA - Remote · $70k–$115k/yr · Linux · H-1B track record: ~99 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f</id>

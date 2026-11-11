@@ -1787,7 +1787,7 @@
     "site": "ankura"
   },
   {
-    "name": "Ann & Robert H. Lurie Children\u2019s Hospital of Chicago",
+    "name": "Ann & Robert H. Lurie Children’s Hospital of Chicago",
     "slug": "luriechildrens",
     "ats": "workday",
     "wd": "wd1",
@@ -2677,7 +2677,7 @@
     "site": "athene_careers"
   },
   {
-    "name": "AtkinsR\u00e9alis",
+    "name": "AtkinsRéalis",
     "slug": "slihrms",
     "ats": "workday",
     "wd": "wd3",
@@ -4161,7 +4161,7 @@
     "site": "CX_1001"
   },
   {
-    "name": "Boar\u2019s Head Brand",
+    "name": "Boar’s Head Brand",
     "slug": "boarshead",
     "ats": "workday",
     "wd": "wd1",
@@ -5843,7 +5843,7 @@
     "ats": "lever"
   },
   {
-    "name": "Cincinnati Children\u2019s Hospital and Medical Center",
+    "name": "Cincinnati Children’s Hospital and Medical Center",
     "slug": "cincinnatichildrens",
     "ats": "workday",
     "wd": "wd5",
@@ -6359,7 +6359,7 @@
     "ats": "ashby"
   },
   {
-    "name": "Cl\u0113nera",
+    "name": "Clēnera",
     "slug": "clenera",
     "ats": "greenhouse"
   },
@@ -10989,7 +10989,7 @@
     "ats": "workable"
   },
   {
-    "name": "Fussball Club Cincinnati LLC (\u201cFC Cincinnati\u201d)",
+    "name": "Fussball Club Cincinnati LLC (“FC Cincinnati”)",
     "slug": "fccincinnati",
     "ats": "greenhouse"
   },
@@ -12897,7 +12897,7 @@
     "ats": "lever"
   },
   {
-    "name": "Hottinger Br\u00fcel & Kjaer (HBK)",
+    "name": "Hottinger Brüel & Kjaer (HBK)",
     "slug": "spectris",
     "ats": "workday",
     "wd": "wd3",
@@ -13149,7 +13149,7 @@
     "site": "hyvecareers"
   },
   {
-    "name": "H\u00f6gan\u00e4s",
+    "name": "Höganäs",
     "slug": "hoganas",
     "ats": "workday",
     "wd": "wd3",
@@ -16108,7 +16108,7 @@
     "site": "Lytx"
   },
   {
-    "name": "L\u00e9ger",
+    "name": "Léger",
     "slug": "Leger2",
     "ats": "smartrecruiters"
   },
@@ -16740,7 +16740,7 @@
     "site": "external"
   },
   {
-    "name": "McCoy\u2019s",
+    "name": "McCoy’s",
     "slug": "mccoys",
     "ats": "workday",
     "wd": "wd1",
@@ -24014,7 +24014,7 @@
     "ats": "greenhouse"
   },
   {
-    "name": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale de Surveillance (SGS)",
+    "name": "Société Générale de Surveillance (SGS)",
     "slug": "SGS",
     "ats": "smartrecruiters"
   },
@@ -26043,7 +26043,7 @@
     "ats": "greenhouse"
   },
   {
-    "name": "The Pok\u00e9mon Company",
+    "name": "The Pokémon Company",
     "slug": "pokemoncareers",
     "ats": "greenhouse"
   },
@@ -29530,16 +29530,6 @@
     "ats": "lever"
   },
   {
-    "name": "Jobicy US Remote IT Jobs",
-    "slug": "us-remote-it",
-    "ats": "jobicy"
-  },
-  {
-    "name": "Himalayas US Remote Jobs",
-    "slug": "us-remote-it",
-    "ats": "himalayas"
-  },
-  {
     "name": "Valencia College",
     "slug": "valencia",
     "ats": "localboards"
@@ -29548,11 +29538,6 @@
     "name": "School District of Osceola County",
     "slug": "osceola-schools",
     "ats": "localboards"
-  },
-  {
-    "name": "City of Kissimmee Public Jobs",
-    "slug": "kissimmee-city",
-    "ats": "governmentjobs"
   },
   {
     "name": "Adler & Allan",
@@ -30523,7 +30508,7 @@
     "ats": "ashby"
   },
   {
-    "name": "Pernod Ricard, cr\u00e9ateurs de convivialit\u00e9",
+    "name": "Pernod Ricard, créateurs de convivialité",
     "slug": "pernodricard",
     "ats": "workday",
     "wd": "wd3",
@@ -31025,5 +31010,10 @@
     "name": "Enterfusion",
     "slug": "enterfusion",
     "ats": "workable"
+  },
+  {
+    "name": "City of Kissimmee Public Jobs",
+    "slug": "kissimmee-city",
+    "ats": "governmentjobs"
   }
 ]

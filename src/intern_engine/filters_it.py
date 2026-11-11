@@ -5,10 +5,7 @@ import re
 
 from . import filters_secnet as legacy
 
-SEARCH_TERMS = ("help desk", "service desk", "IT support", "IT technician",
-                "junior", "entry level", "desktop support", "technical support",
-                "computer technician", "network technician", "information technology",
-                "systems administrator", "IT operations")
+SEARCH_TERMS = ("support", "technician", "administrator", "network", "information technology")
 
 BUCKETS = ["Orlando area", "Remote — Florida / US"]
 ENTRY_LEVEL = BUCKETS[0]
@@ -49,13 +46,15 @@ def is_internship(title: str) -> bool:
 
 def is_opportunity(title: str) -> bool:
     # Generic engineer/admin/analyst titles are not evidence of entry-level fit.
+    if re.search(r"\bsupport engineer\b", title, re.I) and not (ENTRY.search(title) or is_internship(title)):
+        return False
     return bool(is_relevant(title) and not SENIOR.search(title)
                 and (is_internship(title) or ENTRY.search(title)
                      or SUPPORT.search(title) or FOUNDATION.search(title)
                      or re.search(r"\b(?:data cent(?:er|re)|network|noc) technician\b", title, re.I)))
 
 
-FIT_VERSION = 5
+FIT_VERSION = 6
 _EXPERIENCE = re.compile(
     r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)"
     r"\s*(?:\+|(?:-|–|to)\s*\d{1,2}\+?)?\s*years?"
@@ -70,7 +69,7 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
     """Require positive junior evidence; block experienced and unpaid postings.
 
     Unknown descriptions remain unverified, rather than silently claiming fit.
-    Mandatory two-year requirements and 3+ years preferred are excluded.
+    Required professional IT experience and 3+ years preferred are excluded.
     A two-year preference can be considered for a first IT job.
     """
     from .sponsorship import strip_html
@@ -111,7 +110,7 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
     for match in _EXPERIENCE.finditer(text):
         value = match.group(1).lower()
         years = int(value) if value.isdigit() else _WORD_NUMBERS[value]
-        if years >= 2:
+        if years >= 1:
             # A range beginning at two years is not a two-year preference:
             # "2 - 5+ years" is an experienced role even if another section
             # later says "nice to have". Never lower its upper bound to 2.
@@ -124,14 +123,15 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
                        text.rfind(";", 0, match.start()))
             ends = [i for i in (text.find(".", match.end()),
                                 text.find(";", match.end())) if i >= 0]
-            clause = text[left + 1:min(ends) if ends else len(text)]
+
             # Limit preference language to the immediate requirement.
             # A distant "NICE TO HAVE" header cannot turn mandatory years
             # elsewhere in a flattened description into a preference.
-            nearby = text[max(0, match.start() - 35):match.start()] + " " + text[match.end():match.end() + 35]
+            clause_end = min(ends) if ends else len(text)
+            nearby = text[max(left + 1, match.start() - 35):min(clause_end, match.end() + 80)]
             preferred = bool(re.search(r"\b(?:preferred|nice to have|a plus|ideally)\b", nearby, re.I))
-            mandatory = bool(re.search(r"\b(?:required|minimum|at least|must have|need to have)\b", clause, re.I))
-            if years == 2 and preferred and not mandatory:
+            mandatory = bool(re.search(r"\b(?:required|minimum|at least|must have|need to have)\b", nearby, re.I))
+            if years <= 2 and preferred and not mandatory:
                 continue
             return "rejected"
     if is_internship(title) and not re.search(

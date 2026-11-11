@@ -420,9 +420,9 @@ def generate(store_data: dict, stats: dict) -> None:
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IT Searcher · Your job workspace</title>
-<meta name="description" content="Entry-level IT jobs and paid internships. Priority job-source checks are scheduled every 20 minutes, with broader employer scans every four hours.">
+<meta name="description" content="Entry-level IT jobs and paid internships. Full employer-registry collection uses the upstream job tracking workflow.">
 <meta property="og:title" content="Internship Engine - Live Dashboard">
-<meta property="og:description" content="{len(open_jobs)} open entry-level IT jobs and internships. Fast-source checks targeted every 20 minutes; broad scans every four hours.">
+<meta property="og:description" content="{len(open_jobs)} open entry-level IT jobs and internships. Each collection scans the complete employer registry.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <link rel="alternate" type="application/atom+xml" title="New internships" href="feed.xml">
@@ -695,10 +695,10 @@ def generate(store_data: dict, stats: dict) -> None:
 </style></head><body><div class="wrap">
   <header class="top">
     <h1>{"Orlando-area" if cfg.get("opportunity_scope") == "it" else escape(region)} IT jobs & internships</h1>
-    <p class="sub">Priority employer and remote-source scans are scheduled every 20 minutes; broad registry scans every four hours (GitHub may delay starts). The feed keeps postings for {config.max_age_days(cfg)} days; select Posted in last 48 hours to apply early.</p>
-    <p class="sub">First-job IT candidates and paid internships. Mandatory 2+ years of experience, advanced titles, unreadable requirements, and unpaid internships are excluded; 2 years preferred can remain a possible stretch. Confirm schedule and remote-state eligibility with the employer.</p>
+    <p class="sub">Full employer-registry scans use the upstream collection workflow. GitHub may delay scheduled starts. The feed keeps postings for {config.max_age_days(cfg)} days; select Posted in last 48 hours to apply early.</p>
+    <p class="sub">First-job IT candidates and paid internships. Required professional IT experience, advanced titles, unreadable requirements, and unpaid internships are excluded; preferred experience is not treated as mandatory. Confirm schedule and remote-state eligibility with the employer.</p>
     <p class="sub">Employer career feeds plus selected remote sources. Latest collection checked {stats.get('companies_total', 0):,} boards; the complete employer/source registry contains {len(registry.load()):,}. LinkedIn, Handshake, Indeed and ZipRecruiter search results are not imported. Data as of {escape(updated)}.</p>
-    <p class="sub">Some remote listings are sourced from <a href="https://himalayas.app/">Himalayas</a>; apply using the original posting link. These are displayed here only, not distributed in RSS, JSON, or CSV exports.</p>
+
     <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
     · <a href="internships.csv">CSV</a> ·
     <a href="https://github.com/{escape(repo)}">source</a> ·
@@ -950,7 +950,7 @@ def generate(store_data: dict, stats: dict) -> None:
     !Number.isFinite(lastFetch.getTime()) ? 'Collection time unavailable.' :
     Date.now() - lastFetch.getTime() > 86400000 ?
     'Collection is overdue. Last fetched ' + lastFetch.toLocaleString() + '. Results may be incomplete.' :
-    'Last collection: ' + lastFetch.toLocaleString() + '. Priority scans targeted every 20 min; broad scans every 4 hours (GitHub scheduling may delay them).';
+    'Last collection: ' + lastFetch.toLocaleString() + '. Every collection scans the complete employer registry (GitHub scheduling may delay starts).';
   function apply() {{
     rows.sort(function(a,b) {{
       if (sort.value === 'local') {{

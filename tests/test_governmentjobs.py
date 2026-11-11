@@ -2,7 +2,7 @@
 # ruff: noqa: I001 -- test fixtures group first-party imports, as in test_localboards.py
 import asyncio
 
-from intern_engine import fastlane, filters_it, models, registry
+from intern_engine import filters_it, models, registry
 from intern_engine.connectors import governmentjobs
 
 
@@ -100,8 +100,8 @@ def test_nonresponsive_government_board_never_closes_old_jobs():
     assert result.incomplete_reason == models.INCOMPLETE_MALFORMED
 
 
-def test_priority_scan_contains_city_of_kissimmee_source():
-    entries = fastlane.select(registry.load())
+def test_full_registry_contains_city_of_kissimmee_source():
+    entries = registry.load()
     assert any(e.get("ats") == "governmentjobs" and e.get("slug") == "kissimmee-city" for e in entries)
 
 

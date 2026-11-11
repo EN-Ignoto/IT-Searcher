@@ -2139,11 +2139,6 @@
     "last_attempt_at": "2026-11-08T15:53:33Z",
     "last_error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://redfin.wd1.myworkdayjobs.com/wday/cxs/redfin/redfin_careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/We"
   },
-  "workday:republic:republic": {
-    "consecutive_failures": 1,
-    "last_attempt_at": "2026-11-10T22:26:40Z",
-    "last_error": "malformed-response"
-  },
   "workday:rockwellautomation:external_rockwell_automation": {
     "consecutive_failures": 1,
     "last_attempt_at": "2026-11-10T22:26:40Z",

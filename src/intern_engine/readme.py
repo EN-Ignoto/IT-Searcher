@@ -273,7 +273,7 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
             "Help desk, desktop support, networking, systems, cloud, and related IT opportunities.", "",
             f"**{total_open} open postings** · Data as of {data_as_of or 'last collection'}", "",
             f"[Search dashboard]({pages}/) · [CSV]({pages}/internships.csv) · [RSS]({pages}/feed.xml)", "",
-            f"Priority employer checks are scheduled every 20 minutes; the full registry every four hours. GitHub may delay runs. Listings leave the feed after {config.max_age_days(cfg)} days "
+            f"Every scheduled collection scans the full employer registry using the upstream workflow. GitHub may delay runs. Listings leave the feed after {config.max_age_days(cfg)} days "
             "based on the employer's posting date, or first discovery if the posting date is unavailable.", "",
             "Use ☆ on the dashboard to save roles for later. Saved details stay in that browser even after a role leaves the feed.", "",
             "Nearby-city coverage includes Orlando, Lake Mary, Sanford, Winter Park, Kissimmee, "
@@ -281,10 +281,10 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
             "Remote postings need US or Florida location evidence. Confirm state eligibility on the employer page.", "",
             "🆕 means published by the employer within the past 48 hours, not merely found by this searcher. "
             "The Posted date may have day-level rather than minute-level precision.", "",
-            "Some third-party listings are dashboard-only and are excluded from CSV/RSS redistribution "
+            "Roles are collected from employer career feeds "
             "under their source terms.", "",
             "Entry-level IT jobs and paid internships only. Generic engineering roles, senior titles, "
-            "postings asking for 2+ years of experience, unpaid roles, and roles without readable "
+            "postings requiring prior professional IT experience, unpaid roles, and roles without readable "
             "requirements are excluded. Applications are manual on the employer website.", "",
         ]
     count_phrase = f"{total_open} open roles"

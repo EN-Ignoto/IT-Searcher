@@ -7,7 +7,7 @@
     "US"
   ],
   "role_scope": "tech",
-  "max_age_days": 120,
+  "max_age_days": 270,
   "max_per_company": 10,
   "allowlist_only": false,
   "include_international": false,

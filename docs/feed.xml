@@ -5,7 +5,7 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-10T22:26:40Z</updated>
+  <updated>2026-11-11T00:16:45Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
   <entry>
     <id>urn:intern-engine:greenhouse:gleanwork:4734007005</id>
@@ -16,20 +16,20 @@
     <summary>Remote — Florida / US · IT Support / Ops · Remote - US · $143k–$170k/yr · SQL, LLMs, AWS, GCP, Azure</summary>
   </entry>
   <entry>
-    <id>urn:intern-engine:workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1</id>
-    <title>Republic Services: Service Desk Analyst I</title>
-    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1"/>
-    <updated>2026-11-10T22:26:40Z</updated>
-    <category term="Remote — Florida / US"/>
-    <summary>Remote — Florida / US · IT Support / Ops · Remote - USA · H-1B track record: ~19 approvals (FY2022–2023)</summary>
-  </entry>
-  <entry>
     <id>urn:intern-engine:workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541</id>
     <title>TruBridge: Technical Support Technician - Tech Apps</title>
     <link href="https://cpsi.wd1.myworkdayjobs.com/CPSI/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541"/>
     <updated>2026-11-10T22:26:40Z</updated>
     <category term="Remote — Florida / US"/>
     <summary>Remote — Florida / US · IT Support / Ops · Remote - US · Linux</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1</id>
+    <title>Republic Services: Service Desk Analyst I</title>
+    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1"/>
+    <updated>2026-11-10T22:26:40Z</updated>
+    <category term="Remote — Florida / US"/>
+    <summary>Remote — Florida / US · IT Support / Ops · Remote - USA · H-1B track record: ~19 approvals (FY2022–2023)</summary>
   </entry>
   <entry>
     <id>urn:intern-engine:lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220</id>

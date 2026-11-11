@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**31 open postings** · Data as of 2026-11-10T22:26:40Z
+**31 open postings** · Data as of 2026-11-11T00:16:45Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -34,8 +34,8 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
 | Glean 🆁 | Designated Technical Support Engineer - West 🆕 | IT Support / Ops | Remote - US | SQL, LLMs, AWS, GCP | Nov 10, 2026 | [Apply](https://job-boards.greenhouse.io/gleanwork/jobs/4734007005) |
-| Republic Services ✓ 🆁 | Service Desk Analyst I 🆕 | IT Support / Ops | Remote - USA | No skills listed | Nov 10, 2026 | [Apply](https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1) |
 | TruBridge 🆁 | Technical Support Technician - Tech Apps 🆕 | IT Support / Ops | Remote - US | Linux | Nov 10, 2026 | [Apply](https://cpsi.wd1.myworkdayjobs.com/CPSI/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541) |
+| Republic Services ✓ 🆁 | Service Desk Analyst I 🆕 | IT Support / Ops | Remote - USA | No skills listed | Nov 10, 2026 | [Apply](https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1) |
 | Versapay 🆁 | Technical Support Specialist 🆕 | IT Support / Ops | United States (Remote) | SQL | Nov 09, 2026 | [Apply](https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220) |
 | Sierra Interactive (via Himalayas) 🆁 | Technical Support Analyst 🆕 | IT Support / Ops | Remote - United States | Python, JavaScript, LLMs, HTML/CSS | Nov 09, 2026 | [Apply](https://himalayas.app/companies/sierra-interactive/jobs/technical-support-analyst?utm_source=api) |
 | Effortless Office (via Himalayas) 🆁 | IT Tech Support - Tier 1 Analyst 🆕 | IT Support / Ops | Remote - United States | Azure | Nov 09, 2026 | [Apply](https://himalayas.app/companies/effortless-office/jobs/it-tech-support-tier-1-analyst?utm_source=api) |
@@ -87,7 +87,7 @@ _Why each one left is in the last column, because the two reasons carry differen
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
-| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-10 | out of scope |
+| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-11 | out of scope |
 | PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-10 | out of scope |
 | Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-10 | out of scope |
 | CDW Corporation | IT Service Desk- 6AM - 6PM | Remote — Florida / US | 2026-11-10 | out of scope |

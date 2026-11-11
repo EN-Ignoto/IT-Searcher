@@ -697,7 +697,7 @@ def generate(store_data: dict, stats: dict) -> None:
     <h1>{"Orlando-area" if cfg.get("opportunity_scope") == "it" else escape(region)} IT jobs & internships</h1>
     <p class="sub">Priority employer and remote-source scans are scheduled every 20 minutes; broad registry scans every four hours (GitHub may delay starts). The feed keeps postings for {config.max_age_days(cfg)} days; select Posted in last 48 hours to apply early.</p>
     <p class="sub">First-job IT candidates and paid internships. Mandatory 2+ years of experience, advanced titles, unreadable requirements, and unpaid internships are excluded; 2 years preferred can remain a possible stretch. Confirm schedule and remote-state eligibility with the employer.</p>
-    <p class="sub">Employer career feeds plus selected remote sources. This collection checked {stats.get('companies_total', 0):,} boards; the complete registry contains {len(registry.load()):,}. LinkedIn, Handshake, Indeed and ZipRecruiter search results are not imported. Data as of {escape(updated)}.</p>
+    <p class="sub">Employer career feeds plus selected remote sources. Latest collection checked {stats.get('companies_total', 0):,} boards; the complete employer/source registry contains {len(registry.load()):,}. LinkedIn, Handshake, Indeed and ZipRecruiter search results are not imported. Data as of {escape(updated)}.</p>
     <p class="sub">Some remote listings are sourced from <a href="https://himalayas.app/">Himalayas</a>; apply using the original posting link. These are displayed here only, not distributed in RSS, JSON, or CSV exports.</p>
     <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
     · <a href="internships.csv">CSV</a> ·

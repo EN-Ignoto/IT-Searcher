@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-11T08:17:51Z",
- "data_as_of": "2026-11-11T08:17:51Z",
- "rendered_at": "2026-11-11T08:29:24Z",
+ "generated_at": "2026-11-11T17:56:56Z",
+ "data_as_of": "2026-11-11T17:56:56Z",
+ "rendered_at": "2026-11-11T17:56:57Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 10,
+ "count": 11,
  "jobs": [
   {
    "id": "workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541",
@@ -181,6 +181,29 @@
    "source": "ashby",
    "h1b_approvals": null,
    "program": "Internship",
+   "remote": true
+  },
+  {
+   "id": "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798",
+   "company": "Guidehouse",
+   "title": "ServiceNow Help Desk Support",
+   "season": "Remote — Florida / US",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "IT Support / Ops",
+   "location": "US - Remote (Any location)",
+   "url": "https://guidehouse.wd1.myworkdayjobs.com/external/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798",
+   "posted_at": "2026-09-23T00:00:00Z",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-10-21T21:07:04Z",
+   "sponsorship": "unknown",
+   "salary": null,
+   "skills": [
+    "Tableau"
+   ],
+   "source": "workday",
+   "h1b_approvals": 68,
+   "program": "Entry-level job",
    "remote": true
   },
   {

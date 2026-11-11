@@ -13,7 +13,7 @@ import os
 from datetime import UTC, datetime
 from html import escape
 
-from . import registry, config, filters, grouping, h1b, paths, radar, sponsorship, trends
+from . import config, filters, grouping, h1b, paths, radar, registry, sponsorship, trends
 
 
 def _hero(stats: dict, open_jobs: list[dict], proven_roles: int) -> str:

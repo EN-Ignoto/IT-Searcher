@@ -303,3 +303,18 @@ def test_osceola_preferred_experience_is_not_a_mandatory_year():
                    'One (1) year of experience in computer networking, troubleshooting, or repair of '
                    'computers preferred, ability to teach computer skills to adults and students.')
     assert filters_it.assess_fit('Computer Technician I-12 Month', description) == 'eligible'
+
+
+@pytest.mark.parametrize('description', [
+    'Three to five years of infrastructure engineering, systems administration, cloud engineering, or migration experience required.',
+    'Two to four years of IT support experience preferred.',
+    '3-5 years of Windows administration, networking, and cloud migration experience.',
+])
+def test_written_ranges_and_comma_lists_do_not_hide_experience(description):
+    assert filters_it.assess_fit('IT Support Technician', description) == 'rejected'
+
+
+def test_first_job_scope_excludes_specialist_migration_and_advisory_jobs():
+    assert not filters_it.is_opportunity('Cloud Migration Engineer I')
+    assert not filters_it.is_opportunity('Entry-Level IT Advisory Consultant')
+    assert filters_it.is_opportunity('IT Support Intern')

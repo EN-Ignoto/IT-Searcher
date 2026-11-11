@@ -45,6 +45,10 @@ def is_internship(title: str) -> bool:
 
 
 def is_opportunity(title: str) -> bool:
+    # These consulting/migration positions are outside the first-job operations scope.
+    if re.search(r"\b(?:cloud migration engineer|it advisory consultant|implementation consultant)\b",
+                 title, re.I) and not is_internship(title):
+        return False
     # Generic engineer/admin/analyst titles are not evidence of entry-level fit.
     if re.search(r"\bsupport engineer\b", title, re.I) and not (ENTRY.search(title) or is_internship(title)):
         return False
@@ -58,7 +62,7 @@ FIT_VERSION = 6
 _EXPERIENCE = re.compile(
     r"\b(\d{1,2}|one|two|three|four|five|six|seven|eight|nine|ten)"
     r"\s*(?:\+|(?:-|–|to)\s*\d{1,2}\+?)?\s*years?"
-    r"(?:['’]s?)?\s+(?:(?:of|in|with)\s+)?(?:[\w/-]+\s+){0,8}"
+    r"(?:['’]s?)?\s+(?:(?:of|in|with)\s+)?(?:[\w/,&-]+\s+){0,12}"
     r"(?:experience|technical support|support engineering|it support"
     r"|desktop support|customer support|customer service|networking"
     r"|help desk|troubleshooting)\b", re.I)
@@ -107,6 +111,13 @@ def assess_fit(title: str, description: str | None, location: str = "") -> str:
                 r"[^.]{0,30}\bon[ -]?site\b[^.]{0,100}", text, re.I):
             if location_group(match.group()) != "local":
                 return "rejected"
+    # Normalize written ranges and preserve comma-separated skill lists:
+    # "Three to five years of infrastructure engineering, systems administration,
+    # cloud engineering, or migration experience" is an experienced requirement.
+    text = re.sub(
+        r"\b(" + "|".join(_WORD_NUMBERS) + r")\b",
+        lambda match: str(_WORD_NUMBERS[match.group().lower()]), text, flags=re.I,
+    )
     for match in _EXPERIENCE.finditer(text):
         value = match.group(1).lower()
         years = int(value) if value.isdigit() else _WORD_NUMBERS[value]

@@ -10,7 +10,12 @@ on:
   push:
     branches: [main]
     paths: [".github/rebuild-request.txt"]
-  workflow_dispatch:          # lets you run it manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      render_only:
+        description: Reapply scope rules to the last full collection and publish the results
+        type: boolean
+        default: false
 
 permissions:
   contents: write             # needed so the bot can commit the refreshed data
@@ -59,7 +64,7 @@ jobs:
           # Unset = the engine still runs and exports README/CSV as normal.
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-        run: python run.py update
+        run: python run.py ${{ inputs.render_only && 'render' || 'update' }}
 
       # The gate between "we produced output" and "the world sees it". Checks
       # every open role against the accuracy invariants AND the run as a whole
@@ -69,6 +74,7 @@ jobs:
         env:
           MIN_OPEN_ROLES: "1"
           MAX_STATS_AGE_HOURS: "2"
+          ALLOW_STALE_STATS: ${{ inputs.render_only && '1' || '0' }}
         run: python tools/verify_accuracy.py
 
       # Alerts are sent by a LATER step, on purpose: an alert promises the role

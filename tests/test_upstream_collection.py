@@ -5,7 +5,9 @@ from pathlib import Path
 def test_one_scheduled_full_registry_collector():
     root = Path(__file__).resolve().parents[1]
     update = (root / '.github/workflows/update.yml').read_text()
-    assert 'run: python run.py update' in update
+    assert "python run.py" in update
+    assert "'render' || 'update'" in update
+    assert 'default: false' in update
     assert not (root / '.github/workflows/bootstrap-it.yml').exists()
     assert 'fastlane.select' not in update
     assert 'pipeline._load_companies =' not in update

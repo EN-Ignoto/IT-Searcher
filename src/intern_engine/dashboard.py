@@ -13,7 +13,7 @@ import os
 from datetime import UTC, datetime
 from html import escape
 
-from . import config, filters, grouping, h1b, paths, radar, sponsorship, trends
+from . import registry, config, filters, grouping, h1b, paths, radar, sponsorship, trends
 
 
 def _hero(stats: dict, open_jobs: list[dict], proven_roles: int) -> str:
@@ -67,7 +67,7 @@ def _engine_panel(stats: dict, by_category: dict, history: list[dict]) -> str:
          f"{stats.get('fetched_ok', 0):,} of {stats.get('companies_total', 0):,} returned "
          f"successfully ({int(stats.get('fetch_success_rate', 0) * 100)}% of those "
          f"attempted, {int(stats.get('fetch_success_rate_registry', 0) * 100)}% of the "
-         "full registry)"),
+         "collection)"),
         ("Complete snapshots",
          f"{stats.get('snapshots_complete', 0):,} boards returned a provably complete "
          f"list; {partial} were capped by the ATS and so were not allowed to close "
@@ -696,9 +696,8 @@ def generate(store_data: dict, stats: dict) -> None:
   <header class="top">
     <h1>{"Orlando-area" if cfg.get("opportunity_scope") == "it" else escape(region)} IT jobs & internships</h1>
     <p class="sub">Priority employer and remote-source scans are scheduled every 20 minutes; broad registry scans every four hours (GitHub may delay starts). The feed keeps postings for {config.max_age_days(cfg)} days; select Posted in last 48 hours to apply early.</p>
-    <p class="sub">First-job IT candidates and paid internships. Postings mentioning 2+ years, advanced titles, unreadable requirements, and unpaid internships are excluded. Confirm schedule and remote-state eligibility with the employer.</p>
-    <p class="sub">Read straight from {stats.get('companies_total', 0):,} employer
-    job boards. Data as of {escape(updated)}.</p>
+    <p class="sub">First-job IT candidates and paid internships. Mandatory 2+ years of experience, advanced titles, unreadable requirements, and unpaid internships are excluded; 2 years preferred can remain a possible stretch. Confirm schedule and remote-state eligibility with the employer.</p>
+    <p class="sub">Employer career feeds plus selected remote sources. This collection checked {stats.get('companies_total', 0):,} boards; the complete registry contains {len(registry.load()):,}. LinkedIn, Handshake, Indeed and ZipRecruiter search results are not imported. Data as of {escape(updated)}.</p>
     <p class="sub">Some remote listings are sourced from <a href="https://himalayas.app/">Himalayas</a>; apply using the original posting link. These are displayed here only, not distributed in RSS, JSON, or CSV exports.</p>
     <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
     · <a href="internships.csv">CSV</a> ·
@@ -723,7 +722,7 @@ def generate(store_data: dict, stats: dict) -> None:
     showing)</span></h2>
   <div class="filters" id="filters">
     <input id="q" aria-label="Search jobs" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
-    <select id="sort" aria-label="Sort jobs"><option value="new">Newest first</option><option value="company">Company A–Z</option><option value="role">Role A–Z</option></select>
+    <select id="sort" aria-label="Sort jobs"><option value="local">Local first, then newest</option><option value="new">Newest first</option><option value="company">Company A–Z</option><option value="role">Role A–Z</option></select>
     <button id="viewsaved" class="ghost" type="button">Saved for later</button>
     <select id="cycle"><option value="">All cycles</option>{_options(cycles)}</select>
     <label class="chk" title="Show only the roles you've starred (stored in this browser)">
@@ -954,6 +953,10 @@ def generate(store_data: dict, stats: dict) -> None:
     'Last collection: ' + lastFetch.toLocaleString() + '. Priority scans targeted every 20 min; broad scans every 4 hours (GitHub scheduling may delay them).';
   function apply() {{
     rows.sort(function(a,b) {{
+      if (sort.value === 'local') {{
+        var localOrder = Number(b.dataset.cycle === 'Orlando area') - Number(a.dataset.cycle === 'Orlando area');
+        if (localOrder) return localOrder;
+      }}
       if (sort.value === 'company') return a.cells[1].textContent.localeCompare(b.cells[1].textContent);
       if (sort.value === 'role') return a.cells[2].textContent.localeCompare(b.cells[2].textContent);
       return (b.dataset.posted || '').localeCompare(a.dataset.posted || '');

@@ -1125,3 +1125,31 @@ def test_himalayas_malformed_response_does_not_close_existing_jobs():
     assert result.jobs == []
     assert not result.complete
     assert result.incomplete_reason == INCOMPLETE_MALFORMED
+
+
+def test_local_desktop_job_is_found_beyond_original_it_keywords():
+    class SearchNet:
+        async def post_json(self, url, *, json, **kwargs):
+            postings = ([{'title': 'Desktop Support Specialist',
+                          'externalPath': '/job/Orlando/Desktop-Support_R123',
+                          'locationsText': 'Orlando, FL', 'postedOn': 'Posted Today'}]
+                        if json['searchText'] == 'desktop support' else [])
+            return {'total': len(postings), 'jobPostings': postings}
+    company = dict(name='Local Employer', slug='local', wd='wd5', site='Careers',
+                   opportunity_scope='it')
+    result = _fetch(workday.fetch(company, SearchNet()))
+    assert [j.title for j in result.jobs] == ['Desktop Support Specialist']
+    company.pop('opportunity_scope')
+    assert not _fetch(workday.fetch(company, SearchNet())).jobs
+
+
+def test_workable_it_scope_queries_regular_jobs():
+    class WorkableNet:
+        async def post_json(self, url, *, json, **kwargs):
+            return {'results': ([{'shortcode': 'DESKTOP', 'title': 'Desktop Support Technician',
+                                  'location': {'city': 'Orlando', 'countryCode': 'US'}}]
+                                if json['query'] == '' else [])}
+    company = dict(name='Local MSP', slug='local', opportunity_scope='it')
+    assert _fetch(workable.fetch(company, WorkableNet())).jobs[0].title == 'Desktop Support Technician'
+    company.pop('opportunity_scope')
+    assert not _fetch(workable.fetch(company, WorkableNet())).jobs

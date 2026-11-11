@@ -1406,6 +1406,18 @@
     }
    }
   },
+  "enterfusion": {
+   "name": "Enterfusion",
+   "cycles": {
+    "Orlando area": {
+     "first_posted": "2026-08-20",
+     "role_ids": [
+      "workable:enterfusion:2863A7F0F5"
+     ],
+     "count": 1
+    }
+   }
+  },
   "equifax": {
    "name": "Equifax",
    "cycles": {
@@ -2269,6 +2281,18 @@
       "workday:liveoakbancshares:/job/Wilmington-NC/Summer-2027-Intern--Information-Security_R-002647"
      ],
      "count": 2
+    }
+   }
+  },
+  "loews hotels": {
+   "name": "Loews Hotels",
+   "cycles": {
+    "Orlando area": {
+     "first_posted": "2026-11-09",
+     "role_ids": [
+      "workday:loewshotels:/job/FL---Orlando---Lakewood-Regional-Support-Bldg/Help-Desk-Analyst-I_R0089374-1"
+     ],
+     "count": 1
     }
    }
   },
@@ -4035,5 +4059,5 @@
    }
   }
  },
- "updated_at": "2026-11-11T00:16:45Z"
+ "updated_at": "2026-11-11T06:32:15Z"
 }

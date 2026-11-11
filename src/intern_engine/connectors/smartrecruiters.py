@@ -8,6 +8,7 @@ is paginated by offset and advertises incompleteness if its safety cap is hit.
 
 from __future__ import annotations
 
+from ..filters_it import SEARCH_TERMS as IT_SEARCH_TERMS
 from ..models import (
     INCOMPLETE_CAPPED,
     INCOMPLETE_MALFORMED,
@@ -100,7 +101,7 @@ async def fetch(company: dict, net: Net) -> Fetch:
 
     jobs: dict[str, Job] = {}
     incomplete_reason: str | None = None
-    for query in (_QUERIES + (("help desk", "service desk", "IT support", "IT technician", "junior", "entry level")
+    for query in (_QUERIES + (IT_SEARCH_TERMS
                         if company.get("opportunity_scope") == "it" else ())):
         exhausted = False
         trusted_total: int | None = None

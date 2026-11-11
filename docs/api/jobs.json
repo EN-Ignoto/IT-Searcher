@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-11T00:16:45Z",
- "data_as_of": "2026-11-11T00:16:45Z",
- "rendered_at": "2026-11-11T00:16:45Z",
+ "generated_at": "2026-11-11T06:32:15Z",
+ "data_as_of": "2026-11-11T06:32:15Z",
+ "rendered_at": "2026-11-11T06:32:15Z",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "h1b_window": "FY2022–2023",
- "count": 14,
+ "count": 16,
  "jobs": [
   {
    "id": "greenhouse:gleanwork:4734007005",
@@ -79,6 +79,27 @@
    "h1b_approvals": 19,
    "program": "Entry-level job",
    "remote": true
+  },
+  {
+   "id": "workday:loewshotels:/job/FL---Orlando---Lakewood-Regional-Support-Bldg/Help-Desk-Analyst-I_R0089374-1",
+   "company": "Loews Hotels",
+   "title": "Help Desk Analyst I",
+   "season": "Orlando area",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "IT Support / Ops",
+   "location": "FL - Orlando - Lakewood Regional Support Bldg",
+   "url": "https://loewshotels.wd5.myworkdayjobs.com/loewshotels/job/FL---Orlando---Lakewood-Regional-Support-Bldg/Help-Desk-Analyst-I_R0089374-1",
+   "posted_at": "2026-11-09T00:00:00Z",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-11-11T06:31:34Z",
+   "sponsorship": "unknown",
+   "salary": null,
+   "skills": [],
+   "source": "workday",
+   "h1b_approvals": null,
+   "program": "Entry-level job",
+   "remote": false
   },
   {
    "id": "lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220",
@@ -327,6 +348,30 @@
    "h1b_approvals": null,
    "program": "Internship",
    "remote": true
+  },
+  {
+   "id": "workable:enterfusion:2863A7F0F5",
+   "company": "Enterfusion",
+   "title": "IT Help Desk Technician",
+   "season": "Orlando area",
+   "seasons": null,
+   "season_inferred": false,
+   "category": "IT Support / Ops",
+   "location": "Orlando, United States",
+   "url": "https://apply.workable.com/enterfusion/j/2863A7F0F5/",
+   "posted_at": "2026-08-20T00:00:00.000Z",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-11-11T06:32:15Z",
+   "sponsorship": "unknown",
+   "salary": "$48k–$65k/yr",
+   "skills": [
+    "AWS",
+    "Azure"
+   ],
+   "source": "workable",
+   "h1b_approvals": null,
+   "program": "Entry-level job",
+   "remote": false
   }
  ]
 }

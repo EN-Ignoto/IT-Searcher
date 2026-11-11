@@ -5,8 +5,24 @@
   <subtitle>Auto-detected internships, newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://github.com/EN-Ignoto/IT-Searcher"/>
-  <updated>2026-11-11T00:16:45Z</updated>
+  <updated>2026-11-11T06:32:15Z</updated>
   <author><name>Internship Engine</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:intern-engine:workable:enterfusion:2863A7F0F5</id>
+    <title>Enterfusion: IT Help Desk Technician</title>
+    <link href="https://apply.workable.com/enterfusion/j/2863A7F0F5/"/>
+    <updated>2026-11-11T06:32:15Z</updated>
+    <category term="Orlando area"/>
+    <summary>Orlando area · IT Support / Ops · Orlando, United States · $48k–$65k/yr · AWS, Azure</summary>
+  </entry>
+  <entry>
+    <id>urn:intern-engine:workday:loewshotels:/job/FL---Orlando---Lakewood-Regional-Support-Bldg/Help-Desk-Analyst-I_R0089374-1</id>
+    <title>Loews Hotels: Help Desk Analyst I</title>
+    <link href="https://loewshotels.wd5.myworkdayjobs.com/loewshotels/job/FL---Orlando---Lakewood-Regional-Support-Bldg/Help-Desk-Analyst-I_R0089374-1"/>
+    <updated>2026-11-11T06:31:34Z</updated>
+    <category term="Orlando area"/>
+    <summary>Orlando area · IT Support / Ops · FL - Orlando - Lakewood Regional Support Bldg</summary>
+  </entry>
   <entry>
     <id>urn:intern-engine:greenhouse:gleanwork:4734007005</id>
     <title>Glean: Designated Technical Support Engineer - West</title>

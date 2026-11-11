@@ -13,6 +13,16 @@ PRIORITY_EMPLOYERS = frozenset({
     "nbcuniversal",
     "leidos",
     "bny",
+    "massey services",
+    "loews hotels",
+    "enterfusion",
+    "marriott vacations worldwide",
+    "hilton worldwide",
+    "general dynamics information technology",
+    "rtx",
+    "cai",
+    "cdw corporation",
+    "insight global",
     "nash",  # Keep rechecking support-role experience requirements after parser changes.
 })
 

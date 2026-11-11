@@ -1,10 +1,29 @@
 {
- "generated_at": "2026-11-11T00:16:45Z",
- "data_as_of": "2026-11-11T00:16:45Z",
- "rendered_at": "2026-11-11T00:16:45Z",
+ "generated_at": "2026-11-11T06:32:15Z",
+ "data_as_of": "2026-11-11T06:32:15Z",
+ "rendered_at": "2026-11-11T06:32:15Z",
  "cycle": "Orlando area",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "companies": [
+  {
+   "company": "Enterfusion",
+   "last_cycle_posted": "",
+   "posted_on": "2026-08-20",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-08-20",
+   "days_until": -83,
+   "status": "open",
+   "url": "https://apply.workable.com/enterfusion/j/2863A7F0F5/",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Orlando area",
+    "observed_on": "2026-08-20"
+   }
+  },
   {
    "company": "School District of Osceola County",
    "last_cycle_posted": "",
@@ -41,6 +60,25 @@
     "type": "engine-observed",
     "cycle": "Orlando area",
     "observed_on": "2026-11-05"
+   }
+  },
+  {
+   "company": "Loews Hotels",
+   "last_cycle_posted": "",
+   "posted_on": "2026-11-09",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-11-09",
+   "days_until": -2,
+   "status": "open",
+   "url": "https://loewshotels.wd5.myworkdayjobs.com/loewshotels/job/FL---Orlando---Lakewood-Regional-Support-Bldg/Help-Desk-Analyst-I_R0089374-1",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Orlando area",
+    "observed_on": "2026-11-09"
    }
   },
   {
@@ -82,5 +120,5 @@
    }
   }
  ],
- "count": 4
+ "count": 6
 }

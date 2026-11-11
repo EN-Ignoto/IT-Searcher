@@ -21,6 +21,7 @@ import re
 from datetime import datetime
 from urllib.parse import urljoin
 
+from ..filters_it import SEARCH_TERMS as IT_SEARCH_TERMS
 from ..models import (
     INCOMPLETE_CAPPED,
     INCOMPLETE_MALFORMED,
@@ -119,7 +120,7 @@ async def fetch(company: dict, net: Net) -> Fetch:
     jobs: dict[str, Job] = {}   # the two search terms overlap
     incomplete_reason: str | None = None
 
-    for term in (_SEARCH_TERMS + (("help desk", "service desk", "IT support", "IT technician", "junior", "entry level")
+    for term in (_SEARCH_TERMS + (IT_SEARCH_TERMS
                         if company.get("opportunity_scope") == "it" else ())):
         exhausted = False
         seen_pages: set[tuple[str, ...]] = set()

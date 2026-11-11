@@ -5,6 +5,11 @@ import re
 
 from . import filters_secnet as legacy
 
+SEARCH_TERMS = ("help desk", "service desk", "IT support", "IT technician",
+                "junior", "entry level", "desktop support", "technical support",
+                "computer technician", "network technician", "information technology",
+                "systems administrator", "IT operations")
+
 BUCKETS = ["Orlando area", "Remote — Florida / US"]
 ENTRY_LEVEL = BUCKETS[0]
 INTERNSHIPS = BUCKETS[0]

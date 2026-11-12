@@ -42,8 +42,10 @@ def _sort_key(record: dict):
     # Newest first by the day it was posted (or, undated, the day we found it).
     day = (record.get("posted_at") or record.get("first_seen_at") or "")[:10]
     miles = record.get("miles")
+    # The id breaks ties, so the order never depends on how the store happens
+    # to be laid out in memory versus on disk.
     return (day, -(miles if isinstance(miles, (int, float)) else 999.0),
-            record.get("first_seen_at") or "")
+            record.get("first_seen_at") or "", record.get("id") or "")
 
 
 def open_by_section(store_data: dict) -> dict[str, list[dict]]:

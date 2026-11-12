@@ -249,3 +249,13 @@ def test_the_publish_gate_passes_a_real_run_and_catches_a_bad_record(world):
 
     stats["local_sources_ok"] = 0
     assert "local-sources-down" in "\n".join(gate.check(data, stats, cfg))
+
+
+def test_published_order_does_not_depend_on_store_layout():
+    from intern_engine import view
+    rows = {f"x:{i}": {"id": f"x:{i}", "is_open": True, "section": "Remote",
+                       "posted_at": "2026-11-01T00:00:00Z",
+                       "first_seen_at": "2026-11-12T00:00:00Z"} for i in range(6)}
+    forward = [r["id"] for r in view.open_jobs(rows)]
+    backward = [r["id"] for r in view.open_jobs(dict(reversed(list(rows.items()))))]
+    assert forward == backward

@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**6 open postings** · Data as of 2026-11-11T17:56:56Z
+**6 open postings** · Data as of 2026-11-12T02:09:33Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -63,24 +63,24 @@ _Why each one left is in the last column, because the two reasons carry differen
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-12 | out of scope |
+| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-12 | out of scope |
+| Skydio | Technical Support Specialist | Remote — Florida / US | 2026-11-12 | out of scope |
+| Versapay | Technical Support Specialist | Remote — Florida / US | 2026-11-12 | out of scope |
+| ADT | Remote Customer Technical Support | Remote — Florida / US | 2026-11-12 | out of scope |
+| PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-12 | out of scope |
+| Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-12 | out of scope |
+| SOSi | Help Desk Representative | Remote — Florida / US | 2026-11-12 | out of scope |
+| TruBridge | Technical Support Technician - Tech Apps | Remote — Florida / US | 2026-11-12 | out of scope |
+| Crowdstrike | Technical Support | Remote — Florida / US | 2026-11-12 | out of scope |
+| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-12 | out of scope |
+| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-12 | out of scope |
+| Republic Services | Service Desk Analyst I | Remote — Florida / US | 2026-11-12 | out of scope |
 | School District of Osceola County | Computer Technician I-12 Month | Orlando area | 2026-11-12 | out of scope |
 | Valencia College | Specialist, Technical Support | Orlando area | 2026-11-12 | out of scope |
-| Versapay | Technical Support Specialist | Remote — Florida / US | 2026-11-11 | out of scope |
-| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-11 | out of scope |
-| TruBridge | Technical Support Technician - Tech Apps | Remote — Florida / US | 2026-11-11 | out of scope |
-| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-11 | out of scope |
-| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-11 | out of scope |
-| Skydio | Technical Support Specialist | Remote — Florida / US | 2026-11-11 | out of scope |
-| ADT | Remote Customer Technical Support | Remote — Florida / US | 2026-11-11 | out of scope |
-| PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-11 | out of scope |
-| Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-11 | out of scope |
-| SOSi | Help Desk Representative | Remote — Florida / US | 2026-11-11 | out of scope |
 | CDW Corporation | IT Service Desk- 6AM - 6PM | Remote — Florida / US | 2026-11-11 | out of scope |
-| Crowdstrike | Technical Support | Remote — Florida / US | 2026-11-11 | out of scope |
-| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-11 | out of scope |
 | Loews Hotels | Help Desk Analyst I | Orlando area | 2026-11-11 | out of scope |
 | Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-11 | out of scope |
-| Republic Services | Service Desk Analyst I | Remote — Florida / US | 2026-11-11 | out of scope |
 | Applied Information Sciences | Cloud Migration Engineer I | Remote — Florida / US | 2026-11-11 | out of scope |
 | Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-11 | out of scope |
 | Glean | Designated Technical Support Engineer - West | Remote — Florida / US | 2026-11-11 | out of scope |

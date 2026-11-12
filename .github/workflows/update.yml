@@ -77,7 +77,12 @@ jobs:
           # datacenter IPs. Unset = Workday is read directly.
           WORKDAY_PROXY: ${{ secrets.WORKDAY_PROXY }}
           FLAG: ${{ steps.scope.outputs.flag }}
-        run: python run.py update $FLAG
+        run: |
+          if [ "$FLAG" = "--full" ]; then
+            python run.py update --full
+          else
+            python run.py update
+          fi
 
       # The gate between "we produced output" and "the site shows it". If it
       # fails, the job stops here and the previous good build stays live.

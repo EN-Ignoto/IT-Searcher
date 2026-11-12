@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-12T09:58:16Z",
- "fetched_at": "2026-11-12T09:58:16Z",
+ "generated_at": "2026-11-12T18:14:21Z",
+ "fetched_at": "2026-11-12T18:14:21Z",
  "scope": "local",
- "duration_seconds": 267.6,
+ "duration_seconds": 205.9,
  "boards_total": 15,
  "boards_by_source": {
   "nlx": 1,
@@ -19,11 +19,11 @@
  "fetch_success_rate": 0.933,
  "snapshots_complete": 13,
  "snapshots_partial": 1,
- "jobs_seen": 4125,
+ "jobs_seen": 4121,
  "roles_matched": 8,
  "dropped_by_reason": {
   "active-clearance-required": 2,
-  "not-it-role": 4074,
+  "not-it-role": 4070,
   "requires-10-years-experience": 1,
   "requires-2-years-experience": 6,
   "requires-3-years-experience": 3,
@@ -152,7 +152,7 @@
    "key": "nlx:kissimmee-fl",
    "name": "NLx / DEJobs (50 mi of Kissimmee)",
    "ats": "nlx",
-   "jobs": 3927,
+   "jobs": 3916,
    "kept": 8,
    "complete": false,
    "error": null,
@@ -172,7 +172,7 @@
    "key": "workday:cityoforlando:cityoforlandocareers",
    "name": "City of Orlando",
    "ats": "workday",
-   "jobs": 54,
+   "jobs": 57,
    "kept": 0,
    "complete": true,
    "error": null,
@@ -182,7 +182,7 @@
    "key": "workday:ucf:careers",
    "name": "University of Central Florida",
    "ats": "workday",
-   "jobs": 76,
+   "jobs": 80,
    "kept": 0,
    "complete": true,
    "error": null,
@@ -238,5 +238,5 @@
   "jobs_seen": 349327,
   "roles_matched": 52
  },
- "rendered_at": "2026-11-12T09:58:16Z"
+ "rendered_at": "2026-11-12T18:14:21Z"
 }

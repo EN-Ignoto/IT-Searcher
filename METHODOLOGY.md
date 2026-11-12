@@ -75,15 +75,18 @@ once a day.
 
 Every IT-titled role that was considered and dropped is written to
 [`data/rejected.jsonl`](data/rejected.jsonl) with the reason and the posting's
-own sentence. Titles that are simply not IT, and jobs outside the area, are
-counted in `data/stats.json` but not listed line by line.
+own sentence. Local titles judged "not IT" are listed in
+[`data/unmatched_titles.json`](data/unmatched_titles.json), rewritten each run,
+so a missed role can be found by reading it. Jobs outside the area are only
+counted in `data/stats.json`.
 
 ## Open and closed
 
 A role is marked closed only after it is missing from **two consecutive
 complete readings** of its board. A failed request, or a search that was cut
 off by a result cap, closes nothing. For capped boards the posting page itself
-is asked (Workday), and anything not seen for 14 days is retired. A role our
+is asked (Workday), and anything not seen for 3 days on a local source, or 14
+days elsewhere, is retired. A role our
 own rules stop accepting is closed immediately.
 
 ## Dates

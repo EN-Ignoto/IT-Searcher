@@ -19,6 +19,7 @@ COMPANY_NAMES_PATH = os.path.join(DATA_DIR, "company_names.json")  # display-nam
 LOCAL_SOURCES_PATH = os.path.join(DATA_DIR, "local_sources.json")  # Central Florida boards, read every run
 ASSESSED_PATH = os.path.join(DATA_DIR, "assessed.json")      # per-posting verdict cache (one detail read per role)
 REJECTED_PATH = os.path.join(DATA_DIR, "rejected.jsonl")     # IT-titled roles we dropped, with the reason
+UNMATCHED_PATH = os.path.join(DATA_DIR, "unmatched_titles.json")  # local titles judged "not IT" last run
 JOBS_PATH = os.path.join(DATA_DIR, "jobs.json")              # persistent job state
 CSV_PATH = os.path.join(DATA_DIR, "jobs.csv")         # downloadable tracker
 STATS_PATH = os.path.join(DATA_DIR, "stats.json")            # last-run metrics

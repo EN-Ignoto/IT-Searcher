@@ -86,7 +86,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md data/jobs.json data/jobs.csv data/stats.json \
                   data/health.json data/history.jsonl data/rejected.jsonl \
-                  data/assessed.json docs/index.html docs/feed.xml docs/jobs.csv \
+                  data/assessed.json data/unmatched_titles.json docs/index.html docs/feed.xml docs/jobs.csv \
                   docs/api/jobs.json docs/api/stats.json
           if git diff --staged --quiet; then
             echo "No changes."

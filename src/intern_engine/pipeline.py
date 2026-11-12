@@ -87,6 +87,10 @@ _UNVERIFIED_RETRY_HOURS = 24
 _CACHE_KEEP_DAYS = 45
 _UNSEEN_CLOSE_DAYS = 14
 _LIVENESS_CHECKS = 60
+_LOCAL_UNSEEN_CLOSE_DAYS = 3
+# Sources read for their place, not their employer: their "not an IT title"
+# pile is written out in full so missed roles can be found by reading it.
+_LOCAL_KINDS = {"nlx", "neogov", "paradox"}
 
 
 def load_boards(scope: str) -> tuple[list[dict], set[str]]:
@@ -237,6 +241,7 @@ async def classify(results, cfg: dict, cache: dict, net: Net, workday_net: Net,
         "kept": [], "succeeded": set(), "complete": set(), "seen_ids": set(),
         "errors": 0, "errors_by_ats": Counter(), "reasons": Counter(),
         "rejected": [], "jobs_seen": 0, "detail_fetches": 0, "per_board": {},
+        "unmatched": Counter(),
     }
     candidates = []   # (job, company, weak, category, latlon)
 
@@ -271,6 +276,8 @@ async def classify(results, cfg: dict, cache: dict, net: Net, workday_net: Net,
             verdict, detail = filters_it.title_verdict(job.title)
             if verdict == "reject":
                 drop(job, detail or "not-it-role")
+                if detail == "not-it-role" and company.get("ats") in _LOCAL_KINDS:
+                    out["unmatched"][job.title.strip()] += 1
                 continue
             latlon = _coordinates(job, company)
             section, _miles, _remote, _note = filters_it.place(
@@ -374,7 +381,8 @@ def close_out_of_scope(existing: dict) -> int:
 
 
 async def _close_removed(existing: dict, seen_ids: set[str], complete: set[str],
-                         net: Net, now: datetime) -> int:
+                         net: Net, now: datetime, local_keys: set[str],
+                         check_pages: bool) -> int:
     """Close roles on CAPPED boards that we can prove are gone.
 
     A board whose search results are capped can never close a role by
@@ -382,7 +390,11 @@ async def _close_removed(existing: dict, seen_ids: set[str], complete: set[str],
     itself (Workday), and retire anything unseen for two weeks.
     """
     ts = store.now_iso()
-    stale_before = (now - timedelta(days=_UNSEEN_CLOSE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    def cutoff(days: int) -> str:
+        return (now - timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    # Local sources are read every half hour, so three days unseen is ~140
+    # readings; registry boards are read four times a day.
+    stale_local, stale_other = cutoff(_LOCAL_UNSEEN_CLOSE_DAYS), cutoff(_UNSEEN_CLOSE_DAYS)
     pending = []
     closed = 0
     for jid, record in existing.items():
@@ -390,10 +402,12 @@ async def _close_removed(existing: dict, seen_ids: set[str], complete: set[str],
             continue
         if (record.get("board_key") or "") in complete:
             continue   # the two-miss rule in store.upsert owns these
-        if (record.get("last_seen_at") or ts) < stale_before:
-            record.update(is_open=False, closed_at=ts, closed_reason="not-seen-14-days")
+        is_local = (record.get("board_key") or "") in local_keys
+        if (record.get("last_seen_at") or ts) < (stale_local if is_local else stale_other):
+            record.update(is_open=False, closed_at=ts, closed_reason="not-seen-recently")
             closed += 1
-        elif record.get("source") == "workday" and len(pending) < _LIVENESS_CHECKS:
+        elif check_pages and record.get("source") == "workday" \
+                and len(pending) < _LIVENESS_CHECKS:
             pending.append(record)
     gone = await asyncio.gather(*(enrich.posting_gone(r, net) for r in pending))
     for record, is_gone in zip(pending, gone, strict=True):
@@ -432,10 +446,9 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
     async def after(results, net, workday_net):
         found = await classify(results, cfg, cache, net, workday_net, now)
         found["kept"] = dedup(found["kept"], existing)
-        found["removed"] = 0
-        if scope == "full":
-            found["removed"] = await _close_removed(
-                existing, found["seen_ids"], found["complete"], workday_net, now)
+        found["removed"] = await _close_removed(
+            existing, found["seen_ids"], found["complete"], workday_net, now,
+            local_keys, check_pages=scope == "full")
         state.update(found)
 
     results, _ = asyncio.run(_fetch_all(active, after))
@@ -462,6 +475,11 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
     _atomic_write(paths.ASSESSED_PATH,
                   json.dumps(cache, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
     _append_rejected(state["rejected"])
+    if state["unmatched"]:
+        # Rewritten each run: every local title the rules called "not IT".
+        _atomic_write(paths.UNMATCHED_PATH, json.dumps(
+            dict(sorted(state["unmatched"].items(), key=lambda kv: kv[0].lower())),
+            indent=0, ensure_ascii=False) + "\n")
 
     stats = _build_stats(scope, boards, benched, local_keys, state, existing, new_ids,
                          purged, round(time.monotonic() - started, 1))

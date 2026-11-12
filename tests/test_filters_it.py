@@ -33,6 +33,10 @@ def test_entry_it_titles_are_kept(title):
     ("IT Project Manager", "not-it-role"),
     ("IT Intern - Summer 2020", "past-term"),
     ("", "no-title"),
+    # From the first live run: kept, and should not have been.
+    ("Bi-lingual Pharmacy Tech Support/Call Center", "not-it-role"),
+    ("Linux Systems Administrator 2/3 - Top Secret", "active-clearance-required"),
+    ("Building Automation Systems Specialist", "not-it-role"),
 ])
 def test_other_titles_are_rejected_with_a_reason(title, reason):
     assert f.title_verdict(title) == ("reject", reason)

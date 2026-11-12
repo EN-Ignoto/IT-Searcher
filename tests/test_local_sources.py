@@ -53,6 +53,7 @@ def test_local_registry_is_valid_and_complete():
 @pytest.fixture(autouse=True)
 def _no_pause(monkeypatch):
     monkeypatch.setattr(nlx, "_PAUSE_SECONDS", 0)
+    monkeypatch.setattr(nlx, "_RATE_LIMIT_WAIT_SECONDS", 0)
 
 
 # ------------------------------------------------------------------- NLx --

@@ -31,7 +31,7 @@ import re
 from . import filters, geo
 
 # Bump when a rule change should re-read every stored posting.
-VERSION = 2
+VERSION = 3
 
 LOCAL = "Local"
 NEARBY = "Nearby"
@@ -104,6 +104,10 @@ _WEAK_ROLE_RE = re.compile(
     r"technical\s+(?:specialist|analyst|associate)|"
     r"application\s+support|systems?\s+(?:analyst|specialist)|"
     r"operations\s+(?:technician|analyst)|technology\s+(?:analyst|coordinator))\b", _I)
+# Words that mark a "weak" title as some other trade's support job.
+_WEAK_OTHER_RE = re.compile(
+    r"\b(building\s+automation|automation|controls?|turbine|wealth|banking|"
+    r"pharmac\w+|call[\s-]cent(?:er|re)|flight|simulat\w+|avionics|fire|hvac)\b", _I)
 
 _INTERN_RE = re.compile(
     r"\b(intern|interns|internship|co-?op|apprentice(?:ship)?)\b", _I)
@@ -153,6 +157,9 @@ _NOT_IT_RE = re.compile(
 _CUSTOMER_FACING_RE = re.compile(
     r"\b(customer|representative|agent|advisor|product\s+support|client\s+support)\b", _I)
 
+_TITLE_CLEARANCE_RE = re.compile(
+    r"\b(top\s+secret|ts/sci|ts\s*/\s*sci|secret\s+clearance|security\s+clearance|"
+    r"(?:active|current)\s+(?:secret|clearance)|polygraph|cleared)\b", _I)
 _PAST_TERM_RE = re.compile(r"\b(spring|summer|fall|autumn|winter)\s*'?(20\d\d|\d\d)\b", _I)
 
 
@@ -207,7 +214,8 @@ def title_verdict(title: str) -> tuple[str, str | None]:
         return "reject", "no-title"
     category = categorize(title)
     if category is None:
-        if _WEAK_ROLE_RE.search(title) and not _NOT_IT_RE.search(title):
+        if _WEAK_ROLE_RE.search(title) and not _NOT_IT_RE.search(title) \
+                and not _WEAK_OTHER_RE.search(title):
             if title_level(title) >= 3:
                 return "reject", "senior-title"
             return "weak", "IT Support / Technician"
@@ -217,12 +225,16 @@ def title_verdict(title: str) -> tuple[str, str | None]:
     hard_other = re.search(
         r"\b(sales|nurs\w+|software\s+(?:engineer\w*|develop\w+)|developer|"
         r"data\s+(?:scien\w+|engineer\w*)|recruit\w*|account\s+executive|"
-        r"security\s+(?:officer|guard)|(?:product|project|program)\s+manag\w+)\b",
+        r"security\s+(?:officer|guard)|(?:product|project|program)\s+manag\w+|"
+        r"pharmac\w+|call[\s-]cent(?:er|re)|building\s+automation)\b",
         title, _I)
     if hard_other:
         return "reject", "not-it-role"
     if title_level(title) >= 3:
         return "reject", "senior-title"
+    if _TITLE_CLEARANCE_RE.search(title):
+        # A clearance named in the title is one the hire must already hold.
+        return "reject", "active-clearance-required"
     if is_internship(title) and _past_term(title):
         return "reject", "past-term"
     return "keep", category

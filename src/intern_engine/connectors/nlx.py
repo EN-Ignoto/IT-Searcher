@@ -44,21 +44,25 @@ HEADERS = {"x-origin": "dejobs.org", "Accept": "application/json"}
 # Quoted phrases, because the API treats bare words as OR-ish and drops "it"
 # as a stopword. Order is irrelevant; results are unioned by GUID.
 QUERIES = (
+    # Most valuable first: if the API asks us to slow down part-way through,
+    # it is the broad phrases at the end that go unread, not these.
     '"help desk"', '"service desk"', '"desktop support"', '"IT support"',
-    '"technical support"', '"IT technician"', '"IT specialist"',
-    '"support technician"', '"support specialist"', '"support analyst"',
-    '"computer technician"', '"field technician"', '"information technology"',
-    '"network technician"', '"network administrator"', '"network operations"',
-    '"systems administrator"', '"system administrator"', '"data center"',
-    '"end user"', '"IT intern"', '"technology intern"', '"cybersecurity"',
-    '"security analyst"', '"IT analyst"', '"IT associate"', '"IT assistant"',
-    '"technology specialist"', '"technology support"', '"PC technician"',
+    '"IT technician"', '"IT specialist"', '"IT intern"', '"technology intern"',
+    '"support technician"', '"computer technician"', '"PC technician"',
+    '"IT analyst"', '"IT associate"', '"IT assistant"', '"technology support"',
+    '"technology specialist"', '"network technician"', '"network administrator"',
+    '"network operations"', '"systems administrator"', '"system administrator"',
+    '"data center technician"', '"security analyst"', '"cybersecurity analyst"',
+    '"support analyst"', '"support specialist"', '"field technician"',
+    '"technical support"',
 )
 
 # The first live run sent ~300 requests in 15 seconds and the next run was
-# refused with HTTP 429. Two at a time with a pause is about four a second.
-_CONCURRENCY = 2
-_PAUSE_SECONDS = 0.25
+# refused with HTTP 429; four a second was still too fast. One request at a
+# time with a pause, and one patient retry when asked to slow down.
+_CONCURRENCY = 1
+_PAUSE_SECONDS = 0.5
+_RATE_LIMIT_WAIT_SECONDS = 30
 INCOMPLETE_RATE_LIMITED = "rate-limited"
 _MAX_PAGES = 40   # 600 results per phrase; more than that is a runaway query
 
@@ -117,17 +121,24 @@ async def _one_query(query: str, base: dict, company: dict, net: Net,
     jobs: dict[str, Job] = {}
     previous: tuple[str, ...] = ()
     for page in range(1, _MAX_PAGES + 1):
-        try:
-            async with gate:
-                data = await net.get_json(
-                    API, params={**base, "q": query, "page": str(page)}, headers=HEADERS)
-                await asyncio.sleep(_PAUSE_SECONDS)
-        except httpx.HTTPStatusError as exc:
-            if exc.response.status_code == 429:
-                # Asked to slow down. Keep what this phrase already returned;
-                # the snapshot is partial, so it closes nothing.
-                return jobs, INCOMPLETE_RATE_LIMITED
-            raise
+        data = None
+        for attempt in (1, 2):
+            try:
+                async with gate:
+                    data = await net.get_json(
+                        API, params={**base, "q": query, "page": str(page)},
+                        headers=HEADERS, retries=1)
+                    await asyncio.sleep(_PAUSE_SECONDS)
+                break
+            except httpx.HTTPStatusError as exc:
+                if exc.response.status_code != 429:
+                    raise
+                if attempt == 2:
+                    # Still asked to slow down. Keep what this phrase already
+                    # returned; the snapshot is partial, so it closes nothing.
+                    return jobs, INCOMPLETE_RATE_LIMITED
+                async with gate:
+                    await asyncio.sleep(_RATE_LIMIT_WAIT_SECONDS)
         docs = clean_listing(data, "jobs")
         if docs is None:
             if not jobs and page == 1:

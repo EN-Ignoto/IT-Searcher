@@ -1274,6 +1274,28 @@
   "title": "Field Service Technician",
   "v": 3
  },
+ "nlx:kissimmee-fl:D8B8F479DCD64487B37336AFF51E6265": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 26.9,
+   "notes": [],
+   "posted_at": "2026-08-01T03:44:54Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:29:47Z",
+  "location": "Apopka, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 3
+ },
  "nlx:kissimmee-fl:DDAEB1EA359745DE949E6EA4A0B0F453": {
   "a": {
    "category": "IT Support / Technician",

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-12T08:26:00Z",
-  "fetched_at": "2026-11-12T08:26:00Z",
+  "generated_at": "2026-11-12T08:32:55Z",
+  "fetched_at": "2026-11-12T08:32:55Z",
   "scope": "local",
-  "duration_seconds": 245.9,
+  "duration_seconds": 188.4,
   "boards_total": 15,
   "boards_by_source": {
     "nlx": 1,
@@ -19,11 +19,11 @@
   "fetch_success_rate": 0.933,
   "snapshots_complete": 13,
   "snapshots_partial": 1,
-  "jobs_seen": 4123,
+  "jobs_seen": 4121,
   "roles_matched": 7,
   "dropped_by_reason": {
     "active-clearance-required": 2,
-    "not-it-role": 4074,
+    "not-it-role": 4072,
     "requires-10-years-experience": 1,
     "requires-2-years-experience": 5,
     "requires-3-years-experience": 3,
@@ -52,7 +52,7 @@
       "key": "neogov:clermontfl",
       "name": "City of Clermont",
       "ats": "neogov",
-      "jobs": 10,
+      "jobs": 12,
       "kept": 0,
       "complete": true,
       "error": null,
@@ -152,7 +152,7 @@
       "key": "nlx:kissimmee-fl",
       "name": "NLx / DEJobs (50 mi of Kissimmee)",
       "ats": "nlx",
-      "jobs": 3925,
+      "jobs": 3921,
       "kept": 7,
       "complete": false,
       "error": null,
@@ -215,5 +215,5 @@
     "nlx": 7
   },
   "posted_date_coverage": 1.0,
-  "rendered_at": "2026-11-12T08:26:00Z"
+  "rendered_at": "2026-11-12T08:32:55Z"
 }

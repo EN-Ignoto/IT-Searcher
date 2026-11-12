@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-12T08:17:17Z",
-  "fetched_at": "2026-11-12T08:17:17Z",
+  "generated_at": "2026-11-12T08:26:00Z",
+  "fetched_at": "2026-11-12T08:26:00Z",
   "scope": "local",
-  "duration_seconds": 84.0,
+  "duration_seconds": 245.9,
   "boards_total": 15,
   "boards_by_source": {
     "nlx": 1,
@@ -19,24 +19,24 @@
   "fetch_success_rate": 0.933,
   "snapshots_complete": 13,
   "snapshots_partial": 1,
-  "jobs_seen": 2391,
-  "roles_matched": 10,
+  "jobs_seen": 4123,
+  "roles_matched": 7,
   "dropped_by_reason": {
-    "active-clearance-required": 1,
-    "not-it-role": 2342,
+    "active-clearance-required": 2,
+    "not-it-role": 4074,
     "requires-10-years-experience": 1,
     "requires-2-years-experience": 5,
     "requires-3-years-experience": 3,
     "requires-4-years-experience": 3,
     "requires-5-years-experience": 3,
     "requires-8-years-experience": 1,
-    "senior-title": 19,
-    "stale-posting": 3
+    "senior-title": 17,
+    "stale-posting": 7
   },
   "detail_fetches": 0,
   "closed_by_posting_check": 0,
   "purged_this_run": 0,
-  "new_this_run": 10,
+  "new_this_run": 0,
   "local_sources": [
     {
       "key": "neogov:casselberry",
@@ -52,7 +52,7 @@
       "key": "neogov:clermontfl",
       "name": "City of Clermont",
       "ats": "neogov",
-      "jobs": 11,
+      "jobs": 10,
       "kept": 0,
       "complete": true,
       "error": null,
@@ -152,11 +152,11 @@
       "key": "nlx:kissimmee-fl",
       "name": "NLx / DEJobs (50 mi of Kissimmee)",
       "ats": "nlx",
-      "jobs": 2192,
-      "kept": 10,
+      "jobs": 3925,
+      "kept": 7,
       "complete": false,
       "error": null,
-      "partial_reason": "rate-limited"
+      "partial_reason": "result-cap"
     },
     {
       "key": "paradox:osceolaschools",
@@ -191,30 +191,29 @@
   ],
   "local_sources_ok": 14,
   "local_sources_total": 15,
-  "open_total": 10,
+  "open_total": 7,
   "open_by_section": {
-    "Local": 6,
-    "Nearby": 4
+    "Local": 4,
+    "Nearby": 3
   },
   "open_by_fit": {
-    "stretch": 6,
-    "beginner": 4
+    "beginner": 3,
+    "stretch": 4
   },
   "open_by_category": {
     "Help Desk / Service Desk": 2,
-    "IT Support / Technician": 5,
+    "IT Support / Technician": 3,
     "Network / NOC": 1,
-    "Systems / Infrastructure": 2
+    "Systems / Infrastructure": 1
   },
   "open_by_employment": {
-    "Not stated": 6,
-    "Full-time": 2,
+    "Full-time": 1,
     "Temporary / contract": 1,
-    "Part-time": 1
+    "Not stated": 5
   },
   "open_by_source": {
-    "nlx": 10
+    "nlx": 7
   },
   "posted_date_coverage": 1.0,
-  "rendered_at": "2026-11-12T08:17:17Z"
+  "rendered_at": "2026-11-12T08:26:00Z"
 }

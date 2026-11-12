@@ -40,11 +40,33 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Wholesale Payments Dedicated Support Specialist",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:09D679410B004DACB96FE254FA680834": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [],
+   "posted_at": "2026-11-10T02:20:21Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician I",
+  "v": 3
  },
  "nlx:kissimmee-fl:0B4B02309AB148FBA33C8A286AF55A74": {
   "a": {
@@ -62,11 +84,55 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:120798FCE087496FA4B281D51958B409": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 10.6,
+   "notes": [],
+   "posted_at": "2026-08-06T04:46:43Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Lake Buena Vista, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician II",
+  "v": 3
+ },
+ "nlx:kissimmee-fl:1BF8A4C751A5403B9CF04355D244A2C1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 37.5,
+   "notes": [],
+   "posted_at": "2026-10-24T04:20:08Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Bartow, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician II",
+  "v": 3
  },
  "nlx:kissimmee-fl:20D7222323E44E6F82AA7B3EB2103C68": {
   "a": {
@@ -86,11 +152,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Executive IT Support Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:2281E44028434670A0FE728E2B3B4A71": {
   "a": {
@@ -108,11 +174,33 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Associate Field Support Technician",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:2640B0B435274353B950D7263154039F": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 26.9,
+   "notes": [],
+   "posted_at": "2026-10-16T07:06:51Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Apopka, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 3
  },
  "nlx:kissimmee-fl:27CFDC85614A40F1926FB3B2B11118EF": {
   "a": {
@@ -130,11 +218,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "CEI Assistant Contract Support Specialist",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:300132B49AC046BAAAB825605CC6A30F": {
   "a": {
@@ -152,11 +240,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Centerline Planning and Support Engineer (Power Plants)",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:313B1BE4B8DF4B49ACDE1102A037DBAD": {
   "a": {
@@ -174,11 +262,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Set Up and Support Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:3D635F63A15342B69AC82D2CE05413AA": {
   "a": {
@@ -196,11 +284,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "IT Systems Analyst Advisor",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:45E9D281E4F44A78BF9C73C3A3D415B8": {
   "a": {
@@ -240,11 +328,33 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Configuration Support Analyst – Support Services",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:4C689862ABC84EC9B87E6D72678FAD8F": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [],
+   "posted_at": "2026-10-30T02:20:19Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician I",
+  "v": 3
  },
  "nlx:kissimmee-fl:4EA6586511BF4A598DE9CDE38E3397AF": {
   "a": {
@@ -262,11 +372,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Sanford, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:56333412006B4BFEAB8157AF336BE672": {
   "a": {
@@ -284,11 +394,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "ServiceMax Application Support Engineer",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:5B713C96FFEA4AA999C7F143B7BA15D1": {
   "a": {
@@ -306,11 +416,11 @@
    "section": "Nearby",
    "verdict": "keep"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Lake Mary, FL",
   "seen": "2026-11-12",
   "title": "Technology Support Contractor: 0-2 years (Entry) / Contract / Onsite",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:63769345ACA74E34A598FE4171C15D52": {
   "a": {
@@ -328,11 +438,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Intermediate Help Desk Support Service Specialist",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:65A35275CF8D4F4AA424BB5A06DC27DD": {
   "a": {
@@ -350,11 +460,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Altamonte Springs, FL",
   "seen": "2026-11-12",
   "title": "Assistant Operations Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:65DD2C59E77D4408BAF967ABDE085601": {
   "a": {
@@ -374,11 +484,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Network Engineer - E2",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:66AF2C57CB52424AAD1CD455665A13C8": {
   "a": {
@@ -396,11 +506,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Titusville, FL",
   "seen": "2026-11-12",
   "title": "Field Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:679AEE8141F64968ADC9E99814FB3450": {
   "a": {
@@ -418,11 +528,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Access & Support Specialist II",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:6925AE191E7245C2AFF834232A57D1C2": {
   "a": {
@@ -442,11 +552,11 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Help Desk Specialist",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:69D2F167ACE04EC4AC3A6EDBD9E63B09": {
   "a": {
@@ -464,11 +574,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Winter Park, FL",
   "seen": "2026-11-12",
   "title": "Fiduciary Support Specialist II",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:6EA04156FE2B4A549D5EFEA1D56ABC63": {
   "a": {
@@ -486,11 +596,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Fiduciary Support Specialist II",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:720EE66B663D45848DF41A38D05DEF73": {
   "a": {
@@ -508,11 +618,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Cocoa, FL",
   "seen": "2026-11-12",
   "title": "COMSEC Responsible Officer (CRO)/ Tier II Network Technician (NE2) (Government)",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:735DB9ADB8904CC899989A1CF2A1D4CD": {
   "a": {
@@ -530,11 +640,33 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "2026 Associate Computer Systems Analyst - Linux - Pathways Program - Melbourne FL",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:74AE5D0134B54B1BAE30DCCF8AF281AF": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 14.0,
+   "notes": [],
+   "posted_at": "2026-09-10T07:47:30Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Saint Cloud, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Operations Technician",
+  "v": 3
  },
  "nlx:kissimmee-fl:75D0DF5AEFED42DABDE6377E5542065A": {
   "a": {
@@ -552,11 +684,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:77E8632CD52B481FBC33C13F2A2A0F54": {
   "a": {
@@ -574,11 +706,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:7A03CBF19A084B9F8BDC0C88C8150CB8": {
   "a": {
@@ -596,11 +728,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:7C322A01495D4689BE712464EEDE0102": {
   "a": {
@@ -618,11 +750,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "IT Service Desk Support Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:7D8658B3F3AF4C58A50B1D2E63C2DF1D": {
   "a": {
@@ -640,11 +772,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Exhibitor Support Specialist Online Exhibits",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:7DC1507230944B4F9C890DD43B7CF2D8": {
   "a": {
@@ -664,11 +796,33 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Cybersecurity Analyst",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:7EB1F383F08B4C33B60F6FD04C4A2F94": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-06T02:17:46Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 3
  },
  "nlx:kissimmee-fl:81401A2E56A242D6B8DCB17FBBAA076C": {
   "a": {
@@ -686,11 +840,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "AUX Product Definition/Support Engineer (P)",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:8D178883C4ED43B089DF45D66B5B0848": {
   "a": {
@@ -708,11 +862,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:991071019ECE41CFA797E8631AC47983": {
   "a": {
@@ -752,11 +906,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Housing Support Specialist",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:9D3BEDF5DD0540A196C3679F6817FBA8": {
   "a": {
@@ -774,11 +928,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Commercial Service Technician 1 - Orlando, FL",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:A5F54BBB228E41C997986A706EBAB528": {
   "a": {
@@ -796,11 +950,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:A71F566731A84FACB511BDEE962201CE": {
   "a": {
@@ -818,11 +972,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Wholesale Payments Dedicated Support Specialist",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:AC631FAB33674EE09C541B3099744405": {
   "a": {
@@ -840,11 +994,33 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Lakeland, FL",
   "seen": "2026-11-12",
   "title": "Information Technology Analyst",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:B05E968851864B6DBD9E45D4E91C8BE5": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 38.8,
+   "notes": [],
+   "posted_at": "2026-10-20T03:12:37Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Lakeland, FL",
+  "seen": "2026-11-12",
+  "title": "SERVICE TECHNICIAN (FULL TIME)",
+  "v": 3
  },
  "nlx:kissimmee-fl:B74D1386E008487FA05AD7A5CACDCF6C": {
   "a": {
@@ -862,11 +1038,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Merritt Island, FL",
   "seen": "2026-11-12",
   "title": "IT Support Engineer II, Leo IT Services",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:BA300695C674418D983FDDC3B445D250": {
   "a": {
@@ -886,11 +1062,11 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Network Engineer",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:BA38F247D143423F9128A685CDE65234": {
   "a": {
@@ -911,11 +1087,11 @@
    "section": "Nearby",
    "verdict": "keep"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Systems Administrator",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:BB957F3DBEA64D8291C7C2F87DE27610": {
   "a": {
@@ -933,11 +1109,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Cybersecurity Analyst - ISSO - Orlando, Florida",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:C0E0DEDB75D5407EA60607F791DA7A15": {
   "a": {
@@ -963,6 +1139,50 @@
   "title": "Bi-lingual Pharmacy Tech Support/Call Center Rep (Remote Work from Home)",
   "v": 2
  },
+ "nlx:kissimmee-fl:C3595CBD4ADD45BAA6DE4409C481BDF4": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-07T03:54:50Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "SERVICE TECHNICIAN (FULL TIME)",
+  "v": 3
+ },
+ "nlx:kissimmee-fl:C4F1E59F37F74E49AFD8A56655EDB15F": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 26.3,
+   "notes": [],
+   "posted_at": "2026-09-18T03:43:28Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Winter Haven, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 3
+ },
  "nlx:kissimmee-fl:C8E0E27BEA6445E8827427AEA8C3BD9E": {
   "a": {
    "category": "IT Support / Technician",
@@ -982,11 +1202,11 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Systems Analyst II",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:CCBCA7C764794E808B2C0B278446B2D8": {
   "a": {
@@ -1004,11 +1224,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Dade City, FL",
   "seen": "2026-11-12",
   "title": "Recovery Support Specialist II",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:D6772FC99E014DE7B966053D45EBB45D": {
   "a": {
@@ -1026,11 +1246,33 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Lake Mary, FL",
   "seen": "2026-11-12",
   "title": "Desktop Analyst",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:D803C7A8D5DB4341A61EAC5A5C34F6BE": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 34.4,
+   "notes": [],
+   "posted_at": "2026-10-06T02:18:44Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Sanford, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 3
  },
  "nlx:kissimmee-fl:DDAEB1EA359745DE949E6EA4A0B0F453": {
   "a": {
@@ -1052,11 +1294,11 @@
    "section": "Nearby",
    "verdict": "keep"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Lake Mary, FL",
   "seen": "2026-11-12",
   "title": "Data and Technology Specialist",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:DE51AD3ABA47414EBE1B9B645E241526": {
   "a": {
@@ -1074,11 +1316,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Computer Systems Administrator / Spectrum Management Analyst",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:DF20943F82B842B69AE1EB3F4A92131D": {
   "a": {
@@ -1098,11 +1340,33 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Support Engineer",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:EA55476DA3414D75B953297E4E27EA3B": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 2.4,
+   "notes": [],
+   "posted_at": "2026-10-16T07:06:45Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Kissimmee, FL",
+  "seen": "2026-11-12",
+  "title": "Shop Service Technician",
+  "v": 3
  },
  "nlx:kissimmee-fl:EA5B574EC3734624890E9C10E798F0C2": {
   "a": {
@@ -1120,11 +1384,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Commercial Service Technician 2 - Orlando, FL",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:ECB97B4439C848058E7AE55255ED7D92": {
   "a": {
@@ -1142,11 +1406,55 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "ACE Account Service Desk Specialist (Tier 2 - ASD)",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:ED2A02C4B31243D487D608380B7CC41E": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 34.4,
+   "notes": [],
+   "posted_at": "2026-10-24T04:20:08Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Sanford, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician (Laborer)",
+  "v": 3
+ },
+ "nlx:kissimmee-fl:ED8E4F1292334F30B96EB4F94A1FFC47": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-06T02:58:28Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "SERVICE TECHNICIAN (FULL TIME)",
+  "v": 3
  },
  "nlx:kissimmee-fl:F286EB351EF04803836A13B41C3FF6A0": {
   "a": {
@@ -1164,11 +1472,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Lakeland, FL",
   "seen": "2026-11-12",
   "title": "IT Support Engineer I, Operations Infrastructure  Services (OIS)",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:F370A19AEEA54097BB152F6B5BB8BD88": {
   "a": {
@@ -1188,11 +1496,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Network Operations Analyst",
-  "v": 2
+  "v": 3
  },
  "nlx:kissimmee-fl:F44BF8996AF2428B9FE0799F65EAE78D": {
   "a": {
@@ -1210,11 +1518,33 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Support Engineer 1",
-  "v": 2
+  "v": 3
+ },
+ "nlx:kissimmee-fl:F5C67CEF81574B5CBA6CD5CCB4BA5CB3": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-08-10T02:30:29Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:21:54Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Event Technical Specialist, (AUDIO) - KPMG Lakehouse, Lake Nona, FL",
+  "v": 3
  },
  "nlx:kissimmee-fl:FE4182530ABD4FEAB6079422D3494CFF": {
   "a": {
@@ -1232,10 +1562,10 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T08:15:53Z",
+  "at": "2026-11-12T08:21:54Z",
   "location": "Sanford, FL",
   "seen": "2026-11-12",
   "title": "Field Technician",
-  "v": 2
+  "v": 3
  }
 }

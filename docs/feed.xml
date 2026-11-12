@@ -5,15 +5,15 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-12T08:17:17Z</updated>
+  <updated>2026-11-12T08:26:00Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
   <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:6925AE191E7245C2AFF834232A57D1C2</id>
-    <title>[Local] Help Desk Specialist — Chenega Corporation</title>
-    <link href="https://dejobs.org/orlando-fl/help-desk-specialist/6925AE191E7245C2AFF834232A57D1C2/job/"/>
-    <updated>2026-11-12T08:17:17Z</updated>
-    <category term="Local"/>
-    <summary>Orlando, FL · 17 mi · Not stated · Stretch · 1 year required · Shift work mentioned: rotating shift</summary>
+    <id>urn:it-searcher:nlx:kissimmee-fl:0033A1F626214E03B8E519E605AECD4A</id>
+    <title>[Nearby] Linux Systems Administrator 2/3 - Top Secret — Northrop Grumman</title>
+    <link href="https://dejobs.org/melbourne-fl/linux-systems-administrator-23-top-secret/0033A1F626214E03B8E519E605AECD4A/job/"/>
+    <updated>2026-11-12T08:21:54Z</updated>
+    <category term="Nearby"/>
+    <summary>Melbourne, FL · 48 mi · Not stated · Stretch · 0+ years — open to no experience · Bachelor's degree listed · Mentions Security+/Network+ · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:nlx:kissimmee-fl:0B4B02309AB148FBA33C8A286AF55A74</id>
@@ -32,28 +32,20 @@
     <summary>Lake Mary, FL · 33 mi · Temporary / contract · Beginner-friendly · 0+ years — open to no experience</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:C0E0DEDB75D5407EA60607F791DA7A15</id>
-    <title>[Local] Bi-lingual Pharmacy Tech Support/Call Center Rep (Remote Work from Home) — IQVIA</title>
-    <link href="https://dejobs.org/orlando-fl/bi-lingual-pharmacy-tech-supportcall-center-rep-remote-work-from-home/C0E0DEDB75D5407EA60607F791DA7A15/job/"/>
+    <id>urn:it-searcher:nlx:kissimmee-fl:6925AE191E7245C2AFF834232A57D1C2</id>
+    <title>[Local] Help Desk Specialist — Chenega Corporation</title>
+    <link href="https://dejobs.org/orlando-fl/help-desk-specialist/6925AE191E7245C2AFF834232A57D1C2/job/"/>
     <updated>2026-11-12T08:17:17Z</updated>
     <category term="Local"/>
-    <summary>Orlando, FL · 17 mi · remote option · Part-time · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:DDAEB1EA359745DE949E6EA4A0B0F453</id>
-    <title>[Nearby] Data and Technology Specialist — Deloitte</title>
-    <link href="https://dejobs.org/lake-mary-fl/data-and-technology-specialist/DDAEB1EA359745DE949E6EA4A0B0F453/job/"/>
-    <updated>2026-11-12T08:17:17Z</updated>
-    <category term="Nearby"/>
-    <summary>Lake Mary, FL · 33 mi · Not stated · Stretch · 1 year required · Clearance must be obtainable · Asks 4 years customer-service-type experience · Bachelor's degree listed</summary>
+    <summary>Orlando, FL · 17 mi · Not stated · Stretch · 1 year required · Shift work mentioned: rotating shift</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:nlx:kissimmee-fl:991071019ECE41CFA797E8631AC47983</id>
     <title>[Local] Building Automation Systems Specialist — Siemens</title>
     <link href="https://dejobs.org/orlando-fl/building-automation-systems-specialist/991071019ECE41CFA797E8631AC47983/job/"/>
-    <updated>2026-11-12T08:17:17Z</updated>
+    <updated>2026-11-12T08:21:54Z</updated>
     <category term="Local"/>
-    <summary>Orlando, FL · 17 mi · Full-time · Stretch · 1 year required</summary>
+    <summary>Orlando, FL · 17 mi · Full-time · Stretch · 1 year required · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:nlx:kissimmee-fl:BA300695C674418D983FDDC3B445D250</id>
@@ -64,14 +56,6 @@
     <summary>Orlando, FL · 17 mi · Not stated · Stretch · None required — 2 years preferred · Bachelor's degree listed</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:0033A1F626214E03B8E519E605AECD4A</id>
-    <title>[Nearby] Linux Systems Administrator 2/3 - Top Secret — Northrop Grumman</title>
-    <link href="https://dejobs.org/melbourne-fl/linux-systems-administrator-23-top-secret/0033A1F626214E03B8E519E605AECD4A/job/"/>
-    <updated>2026-11-12T08:17:17Z</updated>
-    <category term="Nearby"/>
-    <summary>Melbourne, FL · 48 mi · Not stated · Stretch · 0+ years — open to no experience · Bachelor's degree listed · Mentions Security+/Network+</summary>
-  </entry>
-  <entry>
     <id>urn:it-searcher:nlx:kissimmee-fl:BA38F247D143423F9128A685CDE65234</id>
     <title>[Nearby] Systems Administrator — V2X</title>
     <link href="https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/"/>
@@ -80,11 +64,27 @@
     <summary>Melbourne, FL · 48 mi · Not stated · Beginner-friendly · None required — 5 years preferred · Clearance must be obtainable · Shift work mentioned: 24/7</summary>
   </entry>
   <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:C0E0DEDB75D5407EA60607F791DA7A15</id>
+    <title>[Local] Bi-lingual Pharmacy Tech Support/Call Center Rep (Remote Work from Home) — IQVIA</title>
+    <link href="https://dejobs.org/orlando-fl/bi-lingual-pharmacy-tech-supportcall-center-rep-remote-work-from-home/C0E0DEDB75D5407EA60607F791DA7A15/job/"/>
+    <updated>2026-11-12T08:21:54Z</updated>
+    <category term="Local"/>
+    <summary>Orlando, FL · 17 mi · remote option · Part-time · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · status: closed</summary>
+  </entry>
+  <entry>
     <id>urn:it-searcher:nlx:kissimmee-fl:C8E0E27BEA6445E8827427AEA8C3BD9E</id>
     <title>[Local] Systems Analyst II — CAI</title>
     <link href="https://dejobs.org/orlando-fl/systems-analyst-ii/C8E0E27BEA6445E8827427AEA8C3BD9E/job/"/>
     <updated>2026-11-12T08:17:17Z</updated>
     <category term="Local"/>
     <summary>Orlando, FL · 17 mi · Not stated · Stretch · No years of experience stated · Level II title · Mentions Security+/Network+</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:DDAEB1EA359745DE949E6EA4A0B0F453</id>
+    <title>[Nearby] Data and Technology Specialist — Deloitte</title>
+    <link href="https://dejobs.org/lake-mary-fl/data-and-technology-specialist/DDAEB1EA359745DE949E6EA4A0B0F453/job/"/>
+    <updated>2026-11-12T08:17:17Z</updated>
+    <category term="Nearby"/>
+    <summary>Lake Mary, FL · 33 mi · Not stated · Stretch · 1 year required · Clearance must be obtainable · Asks 4 years customer-service-type experience · Bachelor's degree listed</summary>
   </entry>
 </feed>

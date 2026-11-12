@@ -263,6 +263,7 @@ async def classify(results, cfg: dict, cache: dict, net: Net, workday_net: Net,
             "name": company.get("name"), "ats": company.get("ats"), "jobs": 0,
             "kept": 0, "complete": bool(result.complete), "error": error,
             "partial_reason": result.incomplete_reason,
+            "partial_detail": result.detail,
         })
         if error is not None:
             out["errors"] += 1

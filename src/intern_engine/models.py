@@ -154,6 +154,7 @@ class Fetch:
     jobs: list[Job] = field(default_factory=list)
     complete: bool = True
     incomplete_reason: str | None = None
+    detail: str | None = None   # free text for the run stats, e.g. what was capped
 
     @classmethod
     def of(cls, value) -> Fetch:

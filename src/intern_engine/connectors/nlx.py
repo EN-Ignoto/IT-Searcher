@@ -117,7 +117,7 @@ def _job(doc: dict, company: dict) -> Job | None:
 
 
 async def _one_query(query: str, base: dict, company: dict, net: Net,
-                     gate: asyncio.Semaphore):
+                     gate: asyncio.Semaphore, capped: list[str]):
     jobs: dict[str, Job] = {}
     previous: tuple[str, ...] = ()
     for page in range(1, _MAX_PAGES + 1):
@@ -159,12 +159,10 @@ async def _one_query(query: str, base: dict, company: dict, net: Net,
         more = isinstance(pagination, dict) and bool(pagination.get("has_more_pages"))
         if not docs or not more:
             return jobs, None
-    # Name the phrase: a capped phrase is one that is too broad to be useful,
-    # and the run log is the only place that can be seen.
+    # Name the phrase: a capped phrase is too broad to be useful, and the
+    # run stats are the only place that can be seen.
     total = pagination.get("total") if isinstance(pagination, dict) else None
-    print(f"NLx: {query} still had more after {_MAX_PAGES} pages "
-          f"(reported total: {total}; pagination keys: "
-          f"{sorted(pagination) if isinstance(pagination, dict) else None})", flush=True)
+    capped.append(f"{query} (reported total: {total})")
     return jobs, INCOMPLETE_CAPPED
 
 
@@ -173,19 +171,19 @@ async def fetch(company: dict, net: Net) -> Fetch:
             "r": str(company.get("radius", 50))}
     queries = company.get("queries") or QUERIES
     gate = asyncio.Semaphore(_CONCURRENCY)
+    capped: list[str] = []
     results = await asyncio.gather(
-        *(_one_query(q, base, company, net, gate) for q in queries))
+        *(_one_query(q, base, company, net, gate, capped) for q in queries))
     jobs: dict[str, Job] = {}
     reason: str | None = None
     for found, why in results:
         for jid, job in found.items():
             jobs.setdefault(jid, job)
-        if why == INCOMPLETE_RATE_LIMITED:
-            print("NLx: a phrase was cut short by rate limiting", flush=True)
         if why in (INCOMPLETE_MALFORMED, INCOMPLETE_STALLED):
             reason = why
         elif why and reason is None:
             reason = why
     if not jobs and reason == INCOMPLETE_RATE_LIMITED:
         raise NlxError("rate limited (HTTP 429) before any result was returned")
-    return Fetch(list(jobs.values()), complete=reason is None, incomplete_reason=reason)
+    return Fetch(list(jobs.values()), complete=reason is None, incomplete_reason=reason,
+                 detail=("capped: " + "; ".join(capped)) if capped else None)

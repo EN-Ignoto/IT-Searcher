@@ -56,9 +56,16 @@ jobs:
           CRON: ${{ github.event.schedule }}
           REQUESTED: ${{ inputs.scope }}
         run: |
+          # GitHub drops scheduled runs freely (one fired in the first ten
+          # hours), so the sweep must not depend on its own timer: whichever
+          # run does start goes nationwide when the last sweep is stale.
+          SWEEP_DUE="$(python tools/sweep_due.py)"
           if [ "$EVENT" = "schedule" ] && [ "$CRON" = "52 */6 * * *" ]; then
             echo "flag=--full" >> "$GITHUB_OUTPUT"
           elif [ "$REQUESTED" = "full" ]; then
+            echo "flag=--full" >> "$GITHUB_OUTPUT"
+          elif [ "$EVENT" = "schedule" ] && [ "$SWEEP_DUE" = "yes" ]; then
+            echo "Last nationwide sweep is more than 6 hours old; running it now."
             echo "flag=--full" >> "$GITHUB_OUTPUT"
           else
             echo "flag=" >> "$GITHUB_OUTPUT"

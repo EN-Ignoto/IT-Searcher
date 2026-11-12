@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-12T20:45:25Z",
- "fetched_at": "2026-11-12T20:45:25Z",
+ "generated_at": "2026-11-12T20:50:36Z",
+ "fetched_at": "2026-11-12T20:50:36Z",
  "scope": "local",
- "duration_seconds": 196.2,
+ "duration_seconds": 54.8,
  "boards_total": 16,
  "boards_by_source": {
   "nlx": 1,
@@ -18,21 +18,21 @@
   "paradox": 1
  },
  "fetch_success_rate": 0.938,
- "snapshots_complete": 14,
- "snapshots_partial": 1,
- "jobs_seen": 4133,
+ "snapshots_complete": 15,
+ "snapshots_partial": 0,
+ "jobs_seen": 851,
  "roles_matched": 9,
  "dropped_by_reason": {
   "active-clearance-required": 2,
-  "not-it-role": 4081,
+  "not-it-role": 803,
   "requires-10-years-experience": 1,
-  "requires-2-years-experience": 6,
+  "requires-2-years-experience": 5,
   "requires-3-years-experience": 3,
   "requires-4-years-experience": 3,
   "requires-5-years-experience": 3,
   "requires-8-years-experience": 1,
-  "senior-title": 17,
-  "stale-posting": 7
+  "senior-title": 15,
+  "stale-posting": 6
  },
  "detail_fetches": 1,
  "closed_by_posting_check": 0,
@@ -109,7 +109,7 @@
    "key": "neogov:osceola",
    "name": "Osceola County",
    "ats": "neogov",
-   "jobs": 10,
+   "jobs": 13,
    "kept": 0,
    "complete": true,
    "error": null,
@@ -164,12 +164,12 @@
    "key": "nlx:kissimmee-fl",
    "name": "NLx / DEJobs (50 mi of Kissimmee)",
    "ats": "nlx",
-   "jobs": 3916,
+   "jobs": 631,
    "kept": 8,
-   "complete": false,
+   "complete": true,
    "error": null,
-   "partial_reason": "result-cap",
-   "partial_detail": "capped: \"IT support\" (reported total: 12373); \"IT technician\" (reported total: 1591); \"IT specialist\" (reported total: 1393); \"IT intern\" (reported total: 996); \"IT associate\" (reported total: 7029); \"IT assistant\" (reported total: 10522)"
+   "partial_reason": null,
+   "partial_detail": null
   },
   {
    "key": "paradox:osceolaschools",
@@ -266,5 +266,5 @@
   "jobs_seen": 349327,
   "roles_matched": 52
  },
- "rendered_at": "2026-11-12T20:45:25Z"
+ "rendered_at": "2026-11-12T20:50:36Z"
 }

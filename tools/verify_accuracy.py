@@ -31,9 +31,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 from intern_engine import (  # noqa: E402
     config,
     filters,
-    filters_it,
     filters_secnet,
-    freshness,
     paths,
     quality,
     registry,
@@ -80,23 +78,6 @@ _REQUIRED_STATS = {
 }
 
 
-def usable_snapshot_rate(complete, partial, reasons):
-    """Intentional result caps are usable; malformed/stalled responses are not."""
-    capped = reasons.get("result-cap", 0) if isinstance(reasons, dict) else 0
-    capped = capped if isinstance(capped, int) and 0 <= capped <= partial else 0
-    return (complete + capped) / max(complete + partial, 1)
-
-
-def valid_collection_scope(boards, companies_total, companies):
-    """A focused refresh must name exactly the known boards it measured."""
-    known = {registry.board_key(c) for c in companies}
-    return (isinstance(boards, list) and bool(boards)
-            and all(isinstance(key, str) for key in boards)
-            and len(boards) == companies_total
-            and len(set(boards)) == len(boards)
-            and set(boards) <= known)
-
-
 def main() -> None:
     cfg = config.load_config()
     cycles = config.cycles(cfg)
@@ -141,7 +122,7 @@ def main() -> None:
         if stated is not None and stated != season and stated not in (
                 r.get("seasons") or []):
             flag(r, "title-season-mismatch")
-        if cfg.get("opportunity_scope") != "it" and stated is None and filters.states_explicit_year(title):
+        if stated is None and filters.states_explicit_year(title):
             flag(r, "off-cycle-year-in-title")
         # The two halves of the evidence contract, checked both ways. These
         # are what stop a fabricated cycle from ever reaching the list again:
@@ -158,26 +139,16 @@ def main() -> None:
                 not filters.region_ok(r.get("location") or "",
                                       config.want_us(cfg), config.want_canada(cfg)):
             flag(r, "out-of-region")
-        if not (filters_it.is_opportunity(title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(title)):
+        if not filters.is_internship(title):
             flag(r, "not-an-internship-title")
-        if cfg.get("role_scope", "tech") == "tech" and not (filters_it.is_relevant(title) if cfg.get("opportunity_scope") == "it" else filters_secnet.is_relevant(title)):
+        if cfg.get("role_scope", "tech") == "tech" and not filters_secnet.is_relevant(title):
             flag(r, "not-a-tech-title")
-        if cfg.get("opportunity_scope") == "it" and season != filters_it.bucket(title, r.get("location") or ""):
-            flag(r, "wrong-local-or-remote-section")
-        if cfg.get("opportunity_scope") == "it" and (
-            r.get("entry_fit") != "eligible"
-            or r.get("entry_fit_version") != filters_it.FIT_VERSION
-        ):
-            flag(r, "entry-fit-unverified")
         posted = (r.get("posted_at") or "")[:10]
         # Age only disqualifies a role whose cycle we INFERRED, where recency
         # was the evidence. When the employer stated the cycle, an old posting
         # is just an early one — Amazon's "Fall 2026 (US)" internship opened
         # long before the cycle and is still both open and still Fall 2026.
-        if ((cfg.get("opportunity_scope") == "it" and freshness.expired(
-                r.get("posted_at"), r.get("first_seen_at"), config.max_age_days(cfg)))
-                or (cfg.get("opportunity_scope") != "it" and cutoff and posted
-                    and posted < cutoff and r.get("season_inferred"))):
+        if cutoff and posted and posted < cutoff and r.get("season_inferred"):
             flag(r, "older-than-max-age")
         if not posted:
             # A warning, not a violation: some boards genuinely publish no
@@ -207,9 +178,9 @@ def main() -> None:
         api_jobs = api.get("jobs")
         if not isinstance(api_jobs, list):
             raise ValueError("jobs must be a list")
-        store_ids = {r["id"] for r in open_jobs if r.get("source") != "himalayas"}
+        store_ids = {r["id"] for r in open_jobs}
         api_ids = {r.get("id") for r in api_jobs if isinstance(r, dict)}
-        if api.get("count") != len(store_ids) or api_ids != store_ids:
+        if api.get("count") != len(open_jobs) or api_ids != store_ids:
             problems.append(
                 f"  [api-identity-drift] api has {len(api_ids)} ids/count={api.get('count')}, "
                 f"store has {len(store_ids)} open ids (regenerate outputs)"
@@ -221,7 +192,7 @@ def main() -> None:
         with open(paths.CSV_PATH, newline="", encoding="utf-8") as f:
             csv_rows = list(csv.DictReader(f))
         csv_ids = [row.get("id") for row in csv_rows]
-        store_ids = {r["id"] for r in open_jobs if r.get("source") != "himalayas"}
+        store_ids = {r["id"] for r in open_jobs}
         if len(csv_ids) != len(set(csv_ids)) or set(csv_ids) != store_ids:
             problems.append("  [csv-identity-drift] data/internships.csv differs from store")
     except (OSError, csv.Error):
@@ -338,12 +309,10 @@ def main() -> None:
         partial_by_reason = stats.get("partial_by_reason")
         if isinstance(complete, int) and isinstance(partial, int):
             total = complete + partial
-            # A planned pagination cap is not a broken source. Those boards
-            # cannot close missing roles, but the returned postings are valid.
-            if total and usable_snapshot_rate(complete, partial, partial_by_reason) < _MIN_COMPLETE_SNAPSHOT_RATE:
+            if total and complete / total < _MIN_COMPLETE_SNAPSHOT_RATE:
                 gates.append(
                     f"  [snapshot-quality] only {complete}/{total} sources returned a "
-                    f"complete snapshot and too few safely capped (floor {_MIN_COMPLETE_SNAPSHOT_RATE:.0%})"
+                    f"complete snapshot (floor {_MIN_COMPLETE_SNAPSHOT_RATE:.0%})"
                 )
             # The health half of the same measurement: boards that answered with
             # something we could not parse or could not page through.
@@ -396,16 +365,8 @@ def main() -> None:
                 gates.append("  [stats-arithmetic] fetch_success_rate is inconsistent")
             if stats.get("fetch_success_rate_registry") != expected_registry_rate:
                 gates.append("  [stats-arithmetic] registry success rate is inconsistent")
-            companies = registry.load()
-            registry_total = len(companies)
-            scoped = "collection_boards" in stats
-            valid_scope = valid_collection_scope(stats.get("collection_boards"), companies_total, companies)
-            if scoped and not valid_scope:
-                gates.append("  [collection-scope] invalid, duplicate, or unknown board identities")
-            if not valid_scope and companies_total != registry_total and not (
-                    (os.environ.get("ALLOW_STALE_STATS") or "").lower() in {"1", "true", "yes"}
-                    and companies_total < registry_total
-            ):
+            registry_total = len(registry.load())
+            if companies_total != registry_total:
                 gates.append(
                     f"  [registry-drift] stats describe {companies_total} boards, "
                     f"registry has {registry_total}"

@@ -63,7 +63,7 @@ async def fetch(company: dict, net: Net) -> Fetch:
     token = None
     seen_tokens: set[str] = set()
     for _ in range(_MAX_PAGES):
-        body: dict = {"query": "" if company.get("opportunity_scope") == "it" else "intern", "location": [], "department": [],
+        body: dict = {"query": "intern", "location": [], "department": [],
                       "worktype": [], "remote": []}
         if token:
             body["token"] = token

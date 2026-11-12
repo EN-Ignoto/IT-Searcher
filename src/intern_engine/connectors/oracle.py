@@ -7,7 +7,6 @@ REST endpoint, browser-like headers, paginated by offset.
 
 from __future__ import annotations
 
-from ..filters_it import SEARCH_TERMS as IT_SEARCH_TERMS
 from ..models import (
     INCOMPLETE_CAPPED,
     INCOMPLETE_MALFORMED,
@@ -95,8 +94,7 @@ async def fetch(company: dict, net: Net) -> Fetch:
 
     jobs: dict[str, Job] = {}  # keyed by job id: the keyword searches overlap
     incomplete_reason: str | None = None
-    for keyword in (_KEYWORDS + (IT_SEARCH_TERMS
-                        if company.get("opportunity_scope") == "it" else ())):
+    for keyword in _KEYWORDS:
         exhausted = False
         offset = 0
         trusted_total: int | None = None

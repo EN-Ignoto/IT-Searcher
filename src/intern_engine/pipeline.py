@@ -26,9 +26,7 @@ from . import (
     config,
     enrich,
     filters,
-    filters_it,
     filters_secnet,
-    freshness,
     health,
     models,
     names,
@@ -500,13 +498,11 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
         if allowlist_only and not quality.is_recognized(company["name"]):
             continue
         for job in jobs:
-            if not (filters_it.is_opportunity(job.title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(job.title)):
+            if not filters.is_internship(job.title):
                 continue
-            if tech_only and not (filters_it.is_relevant(job.title) if cfg.get("opportunity_scope") == "it" else filters_secnet.is_relevant(job.title)):
+            if tech_only and not filters_secnet.is_relevant(job.title):
                 continue
-            season = filters_it.bucket(job.title, job.location) if cfg.get("opportunity_scope") == "it" else filters.detect_season(job.title, cycles)
-            if cfg.get("opportunity_scope") == "it" and season is None:
-                continue
+            season = filters.detect_season(job.title, cycles)
             inferred = False
             unstated_reason: str | None = None
             if season is None:
@@ -569,9 +565,6 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
             # "Software Development Engineer Internship - Fall 2026 (US)" was
             # posted early and is still open and still for Fall 2026. Closing it
             # for being old was us overriding what the company wrote.
-            prior = existing.get(stored_owner(job) or job.id) or {}
-            if cfg.get("opportunity_scope") == "it" and (freshness.expired(job.posted_at, prior.get("first_seen_at"), max_age) or _before_feed_start(job.posted_at, prior.get("first_seen_at"), cfg)):
-                continue
             if cutoff and posted_day and posted_day < cutoff and inferred:
                 continue
             job.season = season
@@ -579,10 +572,10 @@ def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[st
             if not inferred:
                 # A title can state MORE than one tracked cycle ("Fall 2026/
                 # Summer 2027"); keep the full set so neither cycle loses it.
-                stated_all = [] if cfg.get("opportunity_scope") == "it" else filters.detect_seasons(job.title, cycles)
+                stated_all = filters.detect_seasons(job.title, cycles)
                 if len(stated_all) > 1:
                     job.seasons = stated_all
-            job.category = filters_it.categorize(job.title) if cfg.get("opportunity_scope") == "it" else filters_secnet.categorize(job.title)
+            job.category = filters_secnet.categorize(job.title)
             job.company = names.display(job.company, job.company_slug)
             if job.posted_at and not job.posted_at_source:
                 job.posted_at_source = models.date_source(job.posted_at)
@@ -659,16 +652,6 @@ def _close_region_out_of_scope(existing: dict, cfg: dict) -> int:
     return n
 
 
-def _before_feed_start(posted_at, first_seen_at, cfg):
-    """A deliberate fresh-start boundary, independent of the rolling age limit."""
-    start = cfg.get("feed_start_date")
-    if not start or cfg.get("opportunity_scope") != "it":
-        return False
-    boundary = datetime.strptime(start, "%Y-%m-%d").date()
-    evidence = _parse_iso(posted_at) or _parse_iso(first_seen_at)
-    return bool(evidence and evidence.date() < boundary)
-
-
 def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None) -> int:
     """Apply every deterministic product-scope rule to the full open store.
 
@@ -693,11 +676,6 @@ def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None
         title = (record.get("title") or "").strip()
         company = (record.get("company") or "").strip()
         location = (record.get("location") or "").strip()
-        if cfg.get("opportunity_scope") == "it" and filters_it.is_opportunity(title):
-            new_bucket = filters_it.bucket(title, location)
-            if new_bucket:
-                record.update(season=new_bucket, seasons=None, season_inferred=False,
-                              category=filters_it.categorize(title))
         assigned = {
             value for value in (record.get("seasons") or [record.get("season")])
             if value
@@ -708,23 +686,17 @@ def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None
         # detect_seasons(), which reports term+year evidence only and returns
         # [] for a bare year — so "2027 IT Intern", accepted by _keep_matching
         # as Summer 2027, was closed here as off-cycle on the next run.
-        explicit_offcycle = (cfg.get("opportunity_scope") != "it"
-                             and filters.states_offcycle_year(title, tuple(cycles)))
+        explicit_offcycle = filters.states_offcycle_year(title, tuple(cycles))
         expired_unstated = bool(
             record.get("season_inferred") and posted and posted.date() < infer_cutoff
         )
         rejected = (
-            (bool(record.get("source")) and record["source"] not in CONNECTORS)
-            or (cfg.get("opportunity_scope") == "it" and (
-                record.get("entry_fit") != "eligible"
-                or record.get("entry_fit_version") != filters_it.FIT_VERSION))
-            or (bool(title) and not (filters_it.is_opportunity(title) if cfg.get("opportunity_scope") == "it" else filters.is_internship(title)))
-            or (bool(title) and tech_only and not (filters_it.is_relevant(title) if cfg.get("opportunity_scope") == "it" else filters_secnet.is_relevant(title)))
+            (bool(title) and not filters.is_internship(title))
+            or (bool(title) and tech_only and not filters_secnet.is_relevant(title))
             or (
                 has_cycle_evidence
                 and not assigned.intersection(cycles | {filters.NOT_STATED})
             )
-            or (cfg.get("opportunity_scope") == "it" and not filters_it.bucket(title, location))
             or explicit_offcycle
             or (
                 restrict and bool(location) and location != "—"
@@ -736,9 +708,6 @@ def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None
                 and not quality.is_recognized(company)
             )
             or expired_unstated
-            or _before_feed_start(record.get("posted_at"), record.get("first_seen_at"), cfg)
-            or (cfg.get("opportunity_scope") == "it" and freshness.expired(
-                record.get("posted_at"), record.get("first_seen_at"), config.max_age_days(cfg)))
         )
         if not rejected:
             continue
@@ -790,20 +759,6 @@ def run_update() -> tuple[dict, dict, list[str]]:
         offcycle = offcycle_sticky
         still = []
         for job in kept:
-            if cfg.get("opportunity_scope") == "it" and job.entry_fit != "eligible":
-                record = existing.get(job.id)
-                if record:
-                    record.update(is_open=False, closed_at=ts, closed_reason="out-of-scope",
-                                  entry_fit=job.entry_fit, entry_fit_version=job.entry_fit_version)
-                continue
-            if cfg.get("opportunity_scope") == "it" and freshness.expired(
-                job.posted_at, (existing.get(job.id) or {}).get("first_seen_at"),
-                config.max_age_days(cfg)
-            ):
-                record = existing.get(job.id)
-                if record:
-                    record.update(is_open=False, closed_at=ts, closed_reason="out-of-scope")
-                continue
             # NOT_STATED survives alongside the tracked cycles: it isn't a
             # cycle claim, it's the absence of one, and those roles have their
             # own section. Only a real OFF-cycle label ("Summer 2026") drops.
@@ -834,7 +789,7 @@ def run_update() -> tuple[dict, dict, list[str]]:
     results, (succeeded, complete_keys, seen_ids, errors, errors_by_ats,
               enriched_ids, detail_fetches, no_year, offcycle,
               rejected_rows) = asyncio.run(
-        _fetch_all([{**c, "opportunity_scope": cfg.get("opportunity_scope")} for c in active], _enrich_stage)
+        _fetch_all(active, _enrich_stage)
     )
     _append_rejected_titles(rejected_rows)
 
@@ -962,7 +917,6 @@ def _build_stats(companies, benched, succeeded, complete_keys, errors, errors_by
         "fetched_at": fetched_at,
         "duration_seconds": duration,
         "companies_total": len(companies),
-        "collection_boards": [registry.board_key(c) for c in companies],
         "companies_by_source": dict(Counter(c["ats"] for c in companies)),
         "quarantined": len(benched),
         "fetched_ok": len(succeeded),

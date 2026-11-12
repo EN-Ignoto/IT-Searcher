@@ -7,9 +7,6 @@ on:
     # measured Aug 3-5, only 32 of 144 expected runs actually fired, averaging
     # 138 minutes apart. Off-peak minutes get dropped less often.
     - cron: "7,37 */3 * * *"  # every 30 min (UTC) — peak-season cadence
-  push:
-    branches: [main]
-    paths: [".github/rebuild-request.txt"]
   workflow_dispatch:          # lets you run it manually from the Actions tab
 
 permissions:
@@ -29,8 +26,7 @@ jobs:
     # by a Runner of type hosted") were a platform incident that no repo-side
     # setting prevents; recovery is handled by retry.yml instead.
     runs-on: ubuntu-24.04
-    # Full scans can exceed 45 minutes; allow collection, enrichment and Pages verification.
-    timeout-minutes: 90
+    timeout-minutes: 45
     steps:
       - name: Checkout
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
@@ -68,7 +64,7 @@ jobs:
       # the previous good build still live on Pages.
       - name: Verify accuracy before publishing
         env:
-          MIN_OPEN_ROLES: "1"
+          MIN_OPEN_ROLES: "5"
           MAX_STATS_AGE_HOURS: "2"
         run: python tools/verify_accuracy.py
 

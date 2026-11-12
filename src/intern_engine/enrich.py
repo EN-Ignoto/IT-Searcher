@@ -3,8 +3,8 @@
 Cost model: this runs ONLY on roles that already passed every filter (a handful
 per run, not thousands). Lever/Ashby/Amazon/Recruitee ship descriptions in their
 list payloads, so those classify for free; Greenhouse/SmartRecruiters/Workday/
-Oracle cache detail-page verdicts for up to 24 hours. Workday details also carry
-the exact posting date, which
+Oracle need one detail request per NEW role, after which the verdict is stored
+and never re-fetched. Workday details also carry the exact posting date, which
 backfills rows the list API only described as "N days ago".
 """
 
@@ -12,24 +12,12 @@ from __future__ import annotations
 
 import asyncio
 import re
-from datetime import UTC, datetime, timedelta
 
-from . import filters, filters_it, skills, sponsorship
+from . import filters, skills, sponsorship
 from .models import Job
 from .net import Net
 
 _CONCURRENCY = 8
-
-
-def _recent_evidence(value: str | None) -> bool:
-    """Job requirements can change while the URL stays the same."""
-    try:
-        stamp = datetime.fromisoformat(value.replace("Z", "+00:00"))
-        age = datetime.now(UTC) - stamp
-        return timedelta(0) <= age < timedelta(hours=24)
-    except (AttributeError, TypeError, ValueError):
-        return False
-
 
 _BROWSER_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -134,7 +122,7 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
 
     Returns (ids classified from fresh text this run, detail requests made).
     Jobs whose stored record already carries a verdict inherit it without any
-    network traffic for up to 24 hours, then requirements are checked again.
+    network traffic — enrichment is a one-time cost per role.
     """
     gate = asyncio.Semaphore(_CONCURRENCY)
     fetched = 0
@@ -143,11 +131,6 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
         nonlocal fetched
         prior = existing.get(job.id) or {}
         has_inline_evidence = job.description is not None
-        fit_current = prior.get("entry_fit_version") == filters_it.FIT_VERSION
-        evidence_current = _recent_evidence(prior.get("enriched_at"))
-        if fit_current and evidence_current:
-            job.entry_fit = prior.get("entry_fit")
-            job.entry_fit_version = filters_it.FIT_VERSION
         # A verdict is settled only while the classifier that produced it is
         # still current. Records stamped with an older classifier_v (or none)
         # are re-read once, so rule improvements reach the WHOLE live list
@@ -156,7 +139,7 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
         settled = current and bool(
             prior.get("enriched_at") or prior.get("sponsorship", "unknown") != "unknown"
         )
-        if settled and fit_current and evidence_current and prior.get("skills") is not None and not has_inline_evidence:
+        if settled and prior.get("skills") is not None and not has_inline_evidence:
             job.sponsorship = prior.get("sponsorship", "unknown")
             return None  # already settled on an earlier run
         # (settled but skills missing = record predates skill tags; re-fetch once)
@@ -188,8 +171,6 @@ async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[st
         # A description carried by the current list payload, or fetched now to
         # backfill old metadata, is fresher evidence than a stored verdict. The
         # old short-circuit froze changed Lever/Ashby-style postings forever.
-        job.entry_fit = filters_it.assess_fit(job.title, text, job.location)
-        job.entry_fit_version = filters_it.FIT_VERSION
         job.sponsorship = sponsorship.classify(text)
         job.skills = skills.extract(text, job.title)
         if not job.salary:

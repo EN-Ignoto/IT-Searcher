@@ -20,12 +20,39 @@ the ones that respond.
 
 A posting must pass all of:
 
-1. **It is a beginner IT role or paid IT internship** — help desk, desktop support, IT support, junior networking, systems, infrastructure, or related IT operations. Senior and unrelated titles are excluded.
-2. **The requirements fit a first IT job** — readable job descriptions are checked for prior professional IT experience, unpaid work, existing clearances, and other hard barriers. Unknown requirements are held out of the published list.
-3. **It is local or eligible remote work** — Orlando-area locations or remote roles available in Florida/the US.
-4. **It belongs to a location section** — `Orlando area` or `Remote — Florida / US`. These labels describe location, not a hiring season.
+1. **It's an internship or co-op** — whole-word match on intern/internship/co-op
+   in the title, and *not* a senior/staff/manager title.
+2. **It's a tech role** — software, data, ML/AI, or security. A bare "engineer"
+   isn't enough (that admits mechanical, civil, aerospace). Two adjacent
+   categories are kept deliberately: **Quant** (quant dev / trading tech, which
+   is software work students filter for) and a small number of **Hardware**
+   roles whose titles are software-first (embedded, firmware). The dashboard's
+   category filter separates all of them, so you can exclude either.
+3. **It's in the configured region** — United States by default.
+4. **It maps to a tracked cycle** — see below.
 
-The collector, dashboard, employer registry, discovery, retries, and publication workflow are copied from [ihrtkaii/test-1](https://github.com/ihrtkaii/test-1). The role profile changes which opportunities pass the filters and which search terms adapters submit. Applications remain on the employer's website.
+The filters are precision-first: we would rather miss a role than list a wrong
+one, because a wrong row costs a reader an application.
+
+## Cycle: stated vs inferred
+
+This is the distinction the whole list is organized around.
+
+| Label | What it means |
+|---|---|
+| `Summer 2027` (plain) | The **employer stated it** — the cycle appears in the job title, or the posting's own text states a term+year. |
+| `not stated` | The posting **never names a cycle** - not in the title, not in the text. We do not guess one. Earlier versions printed `~Summer 2027` here, derived from the posting month; audited against the live postings that guess was confirmed 0 times out of 60 and contradicted every time it was checkable, so it was removed. These roles are still listed (they are recent and real) in their own section. |
+
+Inferred roles are listed in their own section, never mixed into a stated-cycle
+section, and are excluded from the "with a stated cycle" count. They're real,
+current tech internships — we just can't prove which cycle they're for.
+
+A posting that names **two** cycles ("Fall 2026/Summer 2027") is recorded with
+both and appears under each.
+
+When enrichment later reads a posting's text and finds a stated cycle, the guess
+is replaced and the `~` disappears. If the stated cycle turns out to be one we
+don't track, the role leaves the list permanently.
 
 ## Dates
 

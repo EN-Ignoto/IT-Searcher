@@ -125,8 +125,6 @@ class Job:
     # requisition.  Keeping them prevents a board-alias change from looking
     # like a brand-new role (and therefore sending a duplicate alert).
     aliases: list[str] | None = None
-    entry_fit: str | None = None
-    entry_fit_version: int | None = None
 
 
 @dataclass

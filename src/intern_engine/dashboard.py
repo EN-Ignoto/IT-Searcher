@@ -16,7 +16,7 @@ from html import escape
 from . import config, filters, grouping, h1b, paths, radar, sponsorship, trends
 
 
-def _hero(stats: dict, open_jobs: list[dict], proven_roles: int, *, it_scope: bool = False) -> str:
+def _hero(stats: dict, open_jobs: list[dict], proven_roles: int) -> str:
     """The four numbers an applicant actually needs, and nothing else.
 
     This used to be ten equal-weight tiles where "Last run: 402.0s" sat beside
@@ -33,11 +33,6 @@ def _hero(stats: dict, open_jobs: list[dict], proven_roles: int, *, it_scope: bo
          f"USCIS approved {h1b.BADGE_THRESHOLD}+ petitions"),
         (str(remote), "remote", "the posting's own words say so"),
     ]
-    if it_scope:
-        local = sum(r.get("season") == "Orlando area" for r in open_jobs)
-        interns = sum(filters.is_internship(r.get("title") or "") for r in open_jobs)
-        items[1] = (str(local), "Orlando area", "nearby cities; confirm your commute")
-        items[2] = (str(interns), "internships", "pay evidence found in the posting")
     return "".join(
         f'<div class="hcard"><div class="hnum">{escape(v)}</div>'
         f'<div class="hlbl">{escape(label)}</div>'
@@ -418,10 +413,10 @@ def generate(store_data: dict, stats: dict) -> None:
     html_doc = f"""<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IT Searcher - Live Dashboard</title>
-<meta name="description" content="Entry-level IT jobs and paid internships in Orlando and remote US roles. Auto-detected visa sponsorship flags, proven H-1B sponsor badges, email alerts.">
+<title>Internship Engine - Live Dashboard</title>
+<meta name="description" content="Summer 2027 & Fall 2026 tech internships, refreshed every 30 minutes. Auto-detected visa sponsorship flags, proven H-1B sponsor badges, email alerts.">
 <meta property="og:title" content="Internship Engine - Live Dashboard">
-<meta property="og:description" content="{len(open_jobs)} open IT jobs and internships. Visa-sponsorship flags + proven H-1B sponsor badges for international students.">
+<meta property="og:description" content="{len(open_jobs)} open tech internships, refreshed every 30 minutes. Visa-sponsorship flags + proven H-1B sponsor badges for international students.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <link rel="alternate" type="application/atom+xml" title="New internships" href="feed.xml">
@@ -680,7 +675,7 @@ def generate(store_data: dict, stats: dict) -> None:
   }}
 </style></head><body><div class="wrap">
   <header class="top">
-    <h1>{escape(region)} entry-level IT jobs & internships</h1>
+    <h1>{escape(region)} tech internships</h1>
     <p class="sub">Read straight from {stats.get('companies_total', 0):,} employer
     job boards. Data as of {escape(updated)}.</p>
     <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
@@ -688,13 +683,13 @@ def generate(store_data: dict, stats: dict) -> None:
     <a href="https://github.com/{escape(repo)}">source</a> ·
     <a href="https://github.com/{escape(repo)}/blob/main/METHODOLOGY.md">methodology</a></p>
   </header>
-  <div class="hero">{_hero(stats, open_jobs, proven_roles, it_scope=cfg.get("opportunity_scope") == "it")}</div>
+  <div class="hero">{_hero(stats, open_jobs, proven_roles)}</div>
 
   <h2 id="roles">Open roles <span class="muted">(<span id="count">{len(open_jobs)}</span>
     showing)</span></h2>
   <div class="filters" id="filters">
     <input id="q" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
-    <select id="cycle"><option value="">All locations</option>{_options(cycles)}</select>
+    <select id="cycle"><option value="">All cycles</option>{_options(cycles)}</select>
     <label class="chk" title="Show only the roles you've starred (stored in this browser)">
       <input id="savedonly" type="checkbox"><span>★ saved (<span id="savedn">0</span>)</span></label>
     <!-- Secondary filters. A real <details> so phones get a one-tap disclosure

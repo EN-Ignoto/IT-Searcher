@@ -17,7 +17,6 @@ from urllib.parse import quote
 from . import (
     config,
     filters,
-    filters_it,
     filters_secnet,
     grouping,
     h1b,
@@ -120,20 +119,6 @@ def _pretty_date(record: dict) -> str:
 
 
 def _is_new(record: dict, hours: int = 48) -> bool:
-    if config.load_config().get("opportunity_scope") == "it":
-        # For early applications, only the EMPLOYER'S posting timestamp makes
-        # a job new. First discovery can be weeks after publication.
-        published = record.get("posted_at")
-        if not published:
-            return False
-        try:
-            dt = datetime.fromisoformat(published.replace("Z", "+00:00"))
-        except (AttributeError, ValueError):
-            return False
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=UTC)
-        age = datetime.now(UTC) - dt.astimezone(UTC)
-        return timedelta(0) <= age <= timedelta(hours=hours)
     # For a grouped row, "new" means any of its openings is new. The row's
     # representative is the oldest member on purpose (stable id), so reading
     # only its own first_seen would hide a requisition added this morning.
@@ -266,27 +251,6 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
     below. The pitch table links to its anchor, so advertising it when the
     section is absent leaves a link that scrolls nowhere.
     """
-    if cfg.get("opportunity_scope") == "it":
-        pages = config.pages_base()
-        return [
-            "# 🖥️ Orlando IT Jobs & Internships", "",
-            "Help desk, desktop support, networking, systems, cloud, and related IT opportunities.", "",
-            f"**{total_open} open postings** · Data as of {data_as_of or 'last collection'}", "",
-            f"[Search dashboard]({pages}/) · [CSV]({pages}/internships.csv) · [RSS]({pages}/feed.xml)", "",
-            f"Every scheduled collection scans the full employer registry using the upstream workflow. GitHub may delay runs. Listings leave the feed after {config.max_age_days(cfg)} days "
-            "based on the employer's posting date, or first discovery if the posting date is unavailable.", "",
-            "Use ☆ on the dashboard to save roles for later. Saved details stay in that browser even after a role leaves the feed.", "",
-            "Nearby-city coverage includes Orlando, Lake Mary, Sanford, Winter Park, Kissimmee, "
-            "and surrounding communities. This is city matching, not a measured driving radius.", "",
-            "Remote postings need US or Florida location evidence. Confirm state eligibility on the employer page.", "",
-            "🆕 means published by the employer within the past 48 hours, not merely found by this searcher. "
-            "The Posted date may have day-level rather than minute-level precision.", "",
-            "Roles are collected from employer career feeds "
-            "under their source terms.", "",
-            "Entry-level IT jobs and paid internships only. Generic engineering roles, senior titles, "
-            "postings requiring prior professional IT experience, unpaid roles, and roles without readable "
-            "requirements are excluded. Applications are manual on the employer website.", "",
-        ]
     count_phrase = f"{total_open} open roles"
     if shown is not None and shown != total_open:
         count_phrase = f"{total_open} open roles ({shown} listed below)"
@@ -303,10 +267,10 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
     return [
         '<div align="center">',
         "",
-        "# 🔐 Entry-Level IT Jobs & Internships",
+        "# 🔐 Summer 2027 Security & Networking Internships",
         "",
-        "**A self-updating engine that tracks IT support, networking, and "
-        "infrastructure jobs and internships so you don't have to.**",
+        "**A self-updating engine that tracks security, networking, and "
+        "infrastructure internships so you don't have to.**",
         "",
         f"[![CI](https://img.shields.io/github/actions/workflow/status/{repo}/ci.yml"
         f"?branch=main&label=tests&style=flat-square&color=3fb950)]"
@@ -334,7 +298,7 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
         "</div>",
         "",
         "This is my version of an open-source internship tracker, filtered to "
-        "IT support, networking, and infrastructure roles. It reads company hiring "
+        "security, networking, and infrastructure roles. It reads company hiring "
         "feeds every 3 hours and keeps one list with the newest roles on top. "
         f"Browse and search it on the [live dashboard]({pages}/).",
         "",
@@ -383,13 +347,13 @@ def _header(cfg: dict, total_open: int, companies: int, new_week: int,
         "",
         "| | |",
         "|---|---|",
-        "| **Roles** | Help desk, desktop support, junior network engineering, systems/infrastructure, "
-        "and IT operations jobs and internships |",
+        "| **Roles** | Cybersecurity, network engineering, systems/infrastructure, "
+        "and IT operations internships |",
         f"| **Region** | {region}"
         + (" (primary), with a separate International section"
            if config.include_international(cfg) else "")
         + " |",
-        f"| **Sections** | {cycles_phrase} |",
+        f"| **Cycles** | {cycles_phrase} |",
         "",
         "## About",
         "",
@@ -512,7 +476,7 @@ def _footer() -> list[str]:
         "Derived from [zshah101/Automated-List-Of-Summer-2027-and-Fall-2026-Tech-"
         "Internships](https://github.com/zshah101/Automated-List-Of-Summer-2027-"
         "and-Fall-2026-Tech-Internships) (MIT), with a replacement filter module "
-        "for Orlando-area IT opportunities.",
+        "for security and networking titles.",
         "",
     ]
 
@@ -731,22 +695,22 @@ def generate(store_data: dict, data_as_of: str | None = None) -> dict:
         track_sections = [
             (heading, cycle,
              [r for r in rows
-              if track in (filters_it if cfg.get("opportunity_scope") == "it" else filters_secnet).tracks_of(r.get("title") or "")])
+              if track in filters_secnet.tracks_of(r.get("title") or "")])
             for heading, cycle, rows in sections
         ]
         track_sections = [(h, c, r) for h, c, r in track_sections if r]
         track_rolling = [
             r for r in rolling_rows
-            if track in (filters_it if cfg.get("opportunity_scope") == "it" else filters_secnet).tracks_of(r.get("title") or "")
+            if track in filters_secnet.tracks_of(r.get("title") or "")
         ]
         if not track_sections and not track_rolling:
             continue
 
-        lines.append("## 🖥️ IT Support, Networks & Infrastructure" if cfg.get("opportunity_scope") == "it" and track == "network" else f"## {TRACK_TITLES[track]}")
+        lines.append(f"## {TRACK_TITLES[track]}")
         lines.append("")
 
         for heading, cycle, rows in track_sections:
-            lines.append(f"### {heading}  ({len(rows)} roles)" if cfg.get("opportunity_scope") == "it" else f"### {heading}  ({len(rows)} employer-stated)")
+            lines.append(f"### {heading}  ({len(rows)} employer-stated)")
             lines.append("")
             lines.append("| Company | Role | Category | Location | Skills | Posted | Apply |")
             lines.append("|---|---|---|---|---|---|---|")
@@ -758,7 +722,7 @@ def generate(store_data: dict, data_as_of: str | None = None) -> dict:
                 f"### Recently posted — cycle not stated  ({len(track_rolling)} roles)",
                 "",
                 "These postings never name a cycle, not in the title and not in the "
-                "posting text, so neither do we. They're recent IT jobs & internships "
+                "posting text, so neither do we. They're recent tech internships "
                 "(posted within the last few weeks), often exactly the early drops "
                 "worth applying to first; we just can't tell you which cycle "
                 "they're for, and we'd rather say so than guess. The moment a "
@@ -780,7 +744,7 @@ def generate(store_data: dict, data_as_of: str | None = None) -> dict:
 
     lines.extend(radar_lines)
     lines.extend(_closed_section(store_data, cycles, data_as_of=data_as_of))
-    lines.extend(["", "---", "Employer postings can close at any time. Confirm experience, schedule, and location before applying.", "", "Derived from the MIT-licensed internship engine; adapted for Orlando-area IT opportunities.", ""] if cfg.get("opportunity_scope") == "it" else _footer())
+    lines.extend(_footer())
 
     with open(paths.README_PATH, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))

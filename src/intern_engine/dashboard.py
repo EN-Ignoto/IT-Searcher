@@ -13,7 +13,7 @@ import os
 from datetime import UTC, datetime
 from html import escape
 
-from . import config, filters, grouping, h1b, paths, radar, registry, sponsorship, trends
+from . import config, filters, grouping, h1b, paths, radar, sponsorship, trends
 
 
 def _hero(stats: dict, open_jobs: list[dict], proven_roles: int, *, it_scope: bool = False) -> str:
@@ -72,7 +72,7 @@ def _engine_panel(stats: dict, by_category: dict, history: list[dict]) -> str:
          f"{stats.get('fetched_ok', 0):,} of {stats.get('companies_total', 0):,} returned "
          f"successfully ({int(stats.get('fetch_success_rate', 0) * 100)}% of those "
          f"attempted, {int(stats.get('fetch_success_rate_registry', 0) * 100)}% of the "
-         "collection)"),
+         "full registry)"),
         ("Complete snapshots",
          f"{stats.get('snapshots_complete', 0):,} boards returned a provably complete "
          f"list; {partial} were capped by the ATS and so were not allowed to close "
@@ -237,7 +237,6 @@ def _rows(open_jobs: list[dict]) -> str:
             f'data-remote="{remote}" '
             f'data-program="{escape(program)}" '
             f'data-posted="{escape(posted if posted != "—" else "")}" '
-            f'data-posted-time="{escape(r.get("posted_at") or "")}" '
             f'data-inferred="{"1" if r.get("season_inferred") else "0"}" '
             f'data-openings="{openings}" '
             f'data-ids="{escape("|".join(r.get("opening_ids") or [jid]))}" '
@@ -250,8 +249,7 @@ def _rows(open_jobs: list[dict]) -> str:
             f"<td>{escape(r.get('category', ''))}</td>"
             f"<td>{loc}</td>"
             f"<td class='muted'>{escape(salary[:36])}</td>"
-            f"<td class='nowrap' title='First detected by this site: "
-            f"{escape(r.get('first_seen_at') or 'unknown')}'>{escape(posted)}</td>"
+            f"<td class='nowrap'>{escape(posted)}</td>"
             f"<td>{apply}</td>"
             "</tr>"
         )
@@ -322,7 +320,7 @@ def _radar_section(store_data: dict, cfg: dict, data_as_of: datetime | None = No
     drop date to Google/Apple Calendar and get a reminder a week before.</span></p>
   <div class="filters"><input id="rq" type="search"
     placeholder="Search the radar — is your target company on it?" autocomplete="off"></div>
-  <div class="tscroll" tabindex="0" aria-label="Job results, scroll horizontally for more details">
+  <div class="tscroll">
   <table><thead><tr><th>Company</th><th>Typical opening</th><th>Expected</th>
   <th>Confidence</th><th>Status</th>
   </tr></thead><tbody id="rrows">{_radar_rows(rows)}</tbody></table>
@@ -379,11 +377,6 @@ def generate(store_data: dict, stats: dict) -> None:
     # "8 openings" instead of eight rows a reader has to scroll past.
     display_jobs = grouping.group(open_jobs)
     cfg = config.load_config()
-    if cfg.get("opportunity_scope") == "it":
-        # Stable sorting keeps newest-first within each local/remote group.
-        open_jobs.sort(key=lambda r: config.cycles(cfg).index(r.get("season"))
-                       if r.get("season") in config.cycles(cfg) else 99)
-        display_jobs = grouping.group(open_jobs)
     try:
         data_as_of_dt = datetime.strptime(
             (stats.get("fetched_at") or stats.get("generated_at") or "")[:19],
@@ -391,6 +384,7 @@ def generate(store_data: dict, stats: dict) -> None:
         ).replace(tzinfo=UTC)
     except ValueError:
         data_as_of_dt = datetime.now(UTC)
+    data_as_of = data_as_of_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
     updated = data_as_of_dt.strftime("%b %d, %Y at %H:%M UTC")
     if config.include_international(cfg):
         region = "US + International"
@@ -424,10 +418,10 @@ def generate(store_data: dict, stats: dict) -> None:
     html_doc = f"""<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IT Searcher · Your job workspace</title>
-<meta name="description" content="Entry-level IT jobs and paid internships. Full employer-registry collection uses the upstream job tracking workflow.">
+<title>IT Searcher - Live Dashboard</title>
+<meta name="description" content="Entry-level IT jobs and paid internships in Orlando and remote US roles. Auto-detected visa sponsorship flags, proven H-1B sponsor badges, email alerts.">
 <meta property="og:title" content="Internship Engine - Live Dashboard">
-<meta property="og:description" content="{len(open_jobs)} open entry-level IT jobs and internships. Each collection scans the complete employer registry.">
+<meta property="og:description" content="{len(open_jobs)} open IT jobs and internships. Visa-sponsorship flags + proven H-1B sponsor badges for international students.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <link rel="alternate" type="application/atom+xml" title="New internships" href="feed.xml">
@@ -440,15 +434,6 @@ def generate(store_data: dict, stats: dict) -> None:
            --shadow:0 1px 2px #0006, 0 8px 24px -12px #000a;
            --shadow-lift:0 2px 4px #0007, 0 16px 32px -14px #000c;
            --ease:cubic-bezier(.2,.7,.3,1); }}
-  .workspace {{ padding:24px; margin-bottom:24px; background:linear-gradient(120deg,#142b40,#15201f); border:1px solid #315069; border-radius:18px; }}
-  .workspace h2 {{ margin-top:0; font-size:27px; }}
-  .quick {{ display:flex; flex-wrap:wrap; gap:10px; }}
-  .quick button {{ min-height:44px; }}
-  #freshstatus {{ padding:10px 14px; border-left:3px solid var(--star); background:#0003; }}
-  .filters {{ border:1px solid var(--line); border-radius:12px; padding:14px !important; }}
-  .filters select, .filters input, button {{ min-height:40px; }}
-  tbody tr:hover {{ background:#203047; }}
-  a:focus-visible, button:focus-visible {{ outline:3px solid var(--accent); outline-offset:3px; }}
   * {{ box-sizing:border-box; }}
   body {{ margin:0; background:var(--bg); color:var(--txt);
           font:15px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -591,10 +576,6 @@ def generate(store_data: dict, stats: dict) -> None:
               text-transform:uppercase; font-size:11px; letter-spacing:.05em; }}
   .rt {{ font-weight:600; }}
   .nowrap {{ white-space:nowrap; }}
-  .savedpanel {{ margin:24px 0; padding:18px; border:1px solid var(--border); border-radius:12px; }}
-  .savedpanel summary {{ cursor:pointer; font-size:20px; font-weight:650; }}
-  .savedcard {{ padding:16px 0; border-bottom:1px solid var(--border); }}
-  .savedcard p {{ margin:8px 0; }}
   .c-save {{ width:34px; padding-right:0; }}
   .star {{ background:none; border:0; color:#55606f; font-size:17px;
            cursor:pointer; padding:0 2px; line-height:1;
@@ -699,11 +680,9 @@ def generate(store_data: dict, stats: dict) -> None:
   }}
 </style></head><body><div class="wrap">
   <header class="top">
-    <h1>{"Orlando-area" if cfg.get("opportunity_scope") == "it" else escape(region)} IT jobs & internships</h1>
-    <p class="sub">Full employer-registry scans use the upstream collection workflow. GitHub may delay scheduled starts. The feed keeps postings for {config.max_age_days(cfg)} days; select Posted in last 48 hours to apply early.</p>
-    <p class="sub">First-job IT candidates and paid internships. Filters look for beginner IT work and exclude detected experience requirements, existing-clearance requirements, and unpaid internships. A match is a candidate to review, not a guarantee that you meet every requirement. Confirm schedule and remote-state eligibility with the employer.</p>
-    <p class="sub">Official employer career feeds. Latest collection: {stats.get('fetched_ok', 0):,} boards returned data, {stats.get('fetch_errors', 0):,} failed, and {stats.get('quarantined', 0):,} were temporarily skipped. Registry: {len(registry.load()):,} boards. LinkedIn, Handshake, Indeed and ZipRecruiter search results are not imported. Data as of {escape(updated)}.</p>
-
+    <h1>{escape(region)} entry-level IT jobs & internships</h1>
+    <p class="sub">Read straight from {stats.get('companies_total', 0):,} employer
+    job boards. Data as of {escape(updated)}.</p>
     <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
     · <a href="internships.csv">CSV</a> ·
     <a href="https://github.com/{escape(repo)}">source</a> ·
@@ -711,25 +690,11 @@ def generate(store_data: dict, stats: dict) -> None:
   </header>
   <div class="hero">{_hero(stats, open_jobs, proven_roles, it_scope=cfg.get("opportunity_scope") == "it")}</div>
 
-  <section class="workspace" aria-label="Job workspace">
-    <h2>Your next IT opportunity</h2>
-    <p>Find a role, check the employer requirements, and save your shortlist.</p>
-    <p class="muted">Fresh start: {escape(cfg.get('feed_start_date') or 'not set')} · Posted dates come from employers; undated roles use first discovery.</p>
-    <p id="freshstatus" role="status"></p>
-    <nav class="quick" aria-label="Quick job filters">
-      <button class="ghost" data-view="fresh">Posted in last 48 hours</button>
-      <button class="ghost" data-view="local">Local opportunities</button>
-      <button class="ghost" data-view="intern">Internships</button>
-      <button class="ghost" data-view="all">All active jobs</button>
-    </nav>
-  </section>
   <h2 id="roles">Open roles <span class="muted">(<span id="count">{len(open_jobs)}</span>
     showing)</span></h2>
   <div class="filters" id="filters">
-    <input id="q" aria-label="Search jobs" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
-    <select id="sort" aria-label="Sort jobs"><option value="local">Local first, then newest</option><option value="new">Newest first</option><option value="company">Company A–Z</option><option value="role">Role A–Z</option></select>
-    <button id="viewsaved" class="ghost" type="button">Saved for later</button>
-    <select id="cycle"><option value="">All cycles</option>{_options(cycles)}</select>
+    <input id="q" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
+    <select id="cycle"><option value="">All locations</option>{_options(cycles)}</select>
     <label class="chk" title="Show only the roles you've starred (stored in this browser)">
       <input id="savedonly" type="checkbox"><span>★ saved (<span id="savedn">0</span>)</span></label>
     <!-- Secondary filters. A real <details> so phones get a one-tap disclosure
@@ -739,12 +704,11 @@ def generate(store_data: dict, stats: dict) -> None:
       <summary>More filters</summary>
       <div class="fbody">
         <select id="cat"><option value="">All categories</option>{_options(categories)}</select>
-        <select id="age" aria-label="Posting age">
+        <select id="age">
           <option value="">Posted anytime</option>
-          <option value="1">Last 24 hours</option>
           <option value="2">Last 48 hours</option>
           <option value="7">Last 7 days</option>
-          <option value="14">Last 14 days</option>
+          <option value="30">Last 30 days</option>
         </select>
         <select id="spon" title="What the posting itself says about visa sponsorship">
           <option value="">Any sponsorship status</option>
@@ -774,34 +738,24 @@ def generate(store_data: dict, stats: dict) -> None:
   <span class="tag tag-guess">not stated</span> = the posting names no cycle
   anywhere, so we don't guess one<span class="note-long">; a plain tag is the
   cycle the employer actually stated, in the title or the posting text</span>.</p>
-  <div class="tscroll" tabindex="0" aria-label="Job results, scroll horizontally for more details">
+  <div class="tscroll">
   <table><thead><tr><th class="c-save" title="Save"></th><th>Company</th><th>Role</th>
   <th>Cycle</th><th>Category</th>
   <th>Location</th><th>Salary</th><th>Posted</th><th></th></tr></thead>
   <tbody id="rows">{_rows(display_jobs)}</tbody></table>
   </div>
-  <p id="empty" class="muted empty" hidden>No matching jobs yet. Try clearing filters; new postings will appear after a successful collection.
+  <p id="empty" class="muted empty" hidden>No roles match those filters.
     <button class="ghost" type="button" id="reset2">Clear filters</button></p>
 
-  <details id="savedpanel" class="savedpanel">
-    <summary>Saved for later (<span id="savedtotal">0</span>)</summary>
-    <p class="muted">Your saved links stay here even after leaving the fresh feed. Check the employer page before applying.
-    Saved in this browser only; Export saved gives you a CSV backup.</p>
-    <p id="storagewarning" role="status" hidden>Browser storage is unavailable. Export your saved roles before closing this page.</p>
-    <button id="clearsaved" class="ghost" type="button">Clear saved jobs</button><div id="savedlist"></div>
-  </details>
+  {_signup_section(cfg)}
+  {_radar_section(store_data, cfg, data_as_of_dt)}
 
-  {_signup_section(cfg) if cfg.get("opportunity_scope") != "it" else ""}
-  {_radar_section(store_data, cfg, data_as_of_dt) if cfg.get("opportunity_scope") != "it" else ""}
-
-  <section{' hidden' if cfg.get("opportunity_scope") == "it" else ''}>
   <h2>Internships posted per week</h2>
   <p class="muted" style="margin:0 0 8px">Real published dates across every role the
   engine has tracked — watch this spike when {escape(config.cycles(cfg)[0])}
   recruiting opens up.</p>
   {trends.svg_bar_chart(trends.weekly_postings(store_data, now=data_as_of_dt))}
 
-  </section>
   {_engine_panel(stats, by_category, _history_points())}
 
   <footer>Generated by the engine on each run across
@@ -813,7 +767,6 @@ def generate(store_data: dict, stats: dict) -> None:
   Employer Data Hub</a>) — a history, not a promise; no ✓ only means no confident
   match. Roles can close at any time; always confirm on the company's own site.</footer>
 </div>
-<script src="saved-roles.js"></script>
 <script>
 (function () {{
   var q = document.getElementById('q'), cycle = document.getElementById('cycle'),
@@ -832,25 +785,30 @@ def generate(store_data: dict, stats: dict) -> None:
   // Deliberately localStorage and nothing else: a tracker that needs an account
   // is a tracker most people bounce off, and we have no business holding anyone's
   // application list on a server. Everything here stays in this browser.
-  var KEY = 'ie.saved.v1', saved = Object.create(null), currentIds = {{}};
-  function rowSnapshot(tr) {{
-    var td = tr.cells, link = tr.querySelector('a[href]');
-    return {{id: tr.dataset.id, ids: (tr.dataset.ids || tr.dataset.id).split('|'),
-      company: td[1].innerText.trim(), title: td[2].innerText.trim(),
-      season: td[3].innerText.trim(), category: td[4].innerText.trim(),
-      location: td[5].innerText.trim(), salary: td[6].innerText.trim(),
-      posted: tr.dataset.posted || '', url: link ? link.href : ''}};
-  }}
-  try {{ saved = SavedRoleStore.parse(localStorage.getItem(KEY)); }} catch (e) {{
-    document.getElementById('storagewarning').hidden = false;
-  }}
-  var current = rows.map(rowSnapshot);
-  current.forEach(function (row) {{ currentIds[row.id] = true; }});
-  saved = SavedRoleStore.reconcile(saved, current);
-  function persist() {{
-    try {{ localStorage.setItem(KEY, JSON.stringify(saved)); }} catch (e) {{
-      document.getElementById('storagewarning').hidden = false;
+  var KEY = 'ie.saved.v1', saved = {{}};
+  try {{ saved = JSON.parse(localStorage.getItem(KEY) || '{{}}') || {{}}; }} catch (e) {{ saved = {{}}; }}
+  // Remove ids no longer present in the current artifact. Otherwise the badge
+  // counts invisible roles that cannot be viewed, exported, or unstarred.
+  //
+  // A row can stand for several requisitions (an employer that opened the same
+  // job three times). Every one of those ids has to count as present, and a
+  // star on a requisition that is now represented by a sibling has to MOVE to
+  // the surviving row — otherwise folding the display would quietly delete
+  // roles a reader had saved.
+  var currentIds = {{}};
+  rows.forEach(function (tr) {{
+    var ids = (tr.dataset.ids || tr.dataset.id).split('|');
+    ids.forEach(function (id) {{ currentIds[id] = true; }});
+    if (ids.length > 1 && !saved[tr.dataset.id]) {{
+      for (var i = 0; i < ids.length; i++) {{
+        if (saved[ids[i]]) {{ saved[tr.dataset.id] = saved[ids[i]]; break; }}
+      }}
     }}
+    ids.forEach(function (id) {{ if (id !== tr.dataset.id) delete saved[id]; }});
+  }});
+  Object.keys(saved).forEach(function (id) {{ if (!currentIds[id]) delete saved[id]; }});
+  function persist() {{
+    try {{ localStorage.setItem(KEY, JSON.stringify(saved)); }} catch (e) {{ /* private mode */ }}
   }}
   persist();
   function savedCount() {{ return Object.keys(saved).length; }}
@@ -863,35 +821,14 @@ def generate(store_data: dict, stats: dict) -> None:
     }}
     tr.classList.toggle('saved', on);
   }}
-  function paintSavedList() {{
-    var list = document.getElementById('savedlist'); list.replaceChildren();
-    document.getElementById('savedtotal').textContent = savedCount();
-    Object.keys(saved).sort(function (a,b) {{ return saved[b].savedAt - saved[a].savedAt; }}).forEach(function (id) {{
-      var item = saved[id], card = document.createElement('article'); card.className = 'savedcard';
-      var title = document.createElement(item.url ? 'a' : 'strong');
-      title.textContent = (item.company ? item.company + ' — ' : '') + (item.title || 'Saved role');
-      if (item.url) {{ title.href = item.url; title.target = '_blank'; title.rel = 'noopener'; }}
-      var info = document.createElement('p'); info.className = 'muted';
-      info.textContent = [item.location, item.posted ? 'Posted ' + item.posted : 'Posting date unknown',
-        currentIds[id] ? 'In the current fresh feed' : 'No longer in the fresh feed — check employer'].filter(Boolean).join(' · ');
-      var remove = document.createElement('button'); remove.type = 'button'; remove.className = 'ghost';
-      remove.textContent = 'Remove saved role';
-      remove.addEventListener('click', function () {{ delete saved[id]; persist(); paintAll(); apply(); }});
-      card.append(title, info, remove); list.appendChild(card);
-    }});
-    if (!savedCount()) {{ var emptySaved = document.createElement('p'); emptySaved.textContent = 'Click ☆ beside a role to save it here.'; list.appendChild(emptySaved); }}
-  }}
-  function paintAll() {{ rows.forEach(paintRow); savedn.textContent = savedCount(); paintSavedList(); }}
-  document.getElementById('viewsaved').addEventListener('click', function () {{
-    var panel = document.getElementById('savedpanel'); panel.open = true; panel.scrollIntoView({{behavior:'smooth',block:'start'}});
-  }});
+  function paintAll() {{ rows.forEach(paintRow); savedn.textContent = savedCount(); }}
 
   document.getElementById('rows').addEventListener('click', function (ev) {{
     var btn = ev.target.closest ? ev.target.closest('.star') : null;
     if (!btn) return;
     var tr = btn.closest('tr'), id = tr.dataset.id;
-    if (saved[id]) {{ delete saved[id]; }} else {{ saved[id] = SavedRoleStore.snapshot(rowSnapshot(tr)); }}
-    persist(); paintAll();
+    if (saved[id]) {{ delete saved[id]; }} else {{ saved[id] = Date.now(); }}
+    persist(); paintRow(tr); savedn.textContent = savedCount();
     if (savedonly.checked) apply();
   }});
 
@@ -906,21 +843,23 @@ def generate(store_data: dict, stats: dict) -> None:
   document.getElementById('export').addEventListener('click', function () {{
     var head = ['company', 'role', 'cycle', 'category', 'location', 'salary', 'posted', 'url'],
         lines = [head.join(',')];
-    Object.keys(saved).forEach(function (id) {{
-      var item = saved[id];
-      lines.push([item.company, item.title, item.season, item.category, item.location,
-                  item.salary, item.posted, item.url].map(csvCell).join(','));
+    rows.forEach(function (tr) {{
+      if (!saved[tr.dataset.id]) return;
+      var td = tr.cells, link = tr.querySelector('a[href]');
+      lines.push([td[1], td[2], td[3], td[4], td[5], td[6], td[7]]
+        .map(function (c) {{ return csvCell(c.innerText.trim()); }})
+        .concat(csvCell(link ? link.href : '')).join(','));
     }});
     if (lines.length === 1) {{ alert('Star a few roles first — then this exports them.'); return; }}
     var blob = new Blob([lines.join('\\n')], {{ type: 'text/csv;charset=utf-8' }}),
         a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'my-saved-it-roles.csv';
+    a.download = 'my-saved-internships.csv';
     a.click(); URL.revokeObjectURL(a.href);
   }});
 
   function cutoffISO(days) {{
-    var d = new Date(Date.now() - days * 86400000);
+    var d = new Date(new Date({json.dumps(data_as_of)}).getTime() - days * 86400000);
     return d.toISOString().slice(0, 10);
   }}
   // What each sponsorship option actually means. The old single "F-1 friendly"
@@ -935,41 +874,10 @@ def generate(store_data: dict, stats: dict) -> None:
     if (mode === 'restricted') return restricted;
     return true;
   }}
-  document.querySelectorAll('[data-view]').forEach(function(btn) {{
-    btn.addEventListener('click', function() {{
-      reset();
-      if (btn.dataset.view === 'fresh') age.value = '2';
-      if (btn.dataset.view === 'local') cycle.value = 'Orlando area';
-      if (btn.dataset.view === 'intern') program.value = 'Internship';
-      apply();
-    }});
-  }});
-  document.getElementById('clearsaved').addEventListener('click', function() {{
-    if (!savedCount() || !window.confirm('Clear all saved jobs in this browser?')) return;
-    saved = Object.create(null); persist(); paintAll(); apply();
-  }});
-  var sort = document.getElementById('sort');
-  sort.addEventListener('change', apply);
-  var lastFetch = new Date({json.dumps(stats.get('fetched_at') or stats.get('generated_at') or '')});
-  document.getElementById('freshstatus').textContent =
-    !Number.isFinite(lastFetch.getTime()) ? 'Collection time unavailable.' :
-    Date.now() - lastFetch.getTime() > 86400000 ?
-    'Collection is overdue. Last fetched ' + lastFetch.toLocaleString() + '. Results may be incomplete.' :
-    'Last collection: ' + lastFetch.toLocaleString() + '. Every collection scans the complete employer registry (GitHub scheduling may delay starts).';
   function apply() {{
-    rows.sort(function(a,b) {{
-      if (sort.value === 'local') {{
-        var localOrder = Number(b.dataset.cycle === 'Orlando area') - Number(a.dataset.cycle === 'Orlando area');
-        if (localOrder) return localOrder;
-      }}
-      if (sort.value === 'company') return a.cells[1].textContent.localeCompare(b.cells[1].textContent);
-      if (sort.value === 'role') return a.cells[2].textContent.localeCompare(b.cells[2].textContent);
-      return (b.dataset.posted || '').localeCompare(a.dataset.posted || '');
-    }});
-    rows.forEach(function(tr) {{ document.getElementById('rows').appendChild(tr); }});
     var text = q.value.trim().toLowerCase(), cy = cycle.value, ca = cat.value,
         sp = spon.value, proven = h1b.checked, shown = 0,
-        minPosted = age.value ? Date.now() - parseInt(age.value, 10) * 86400000 : 0,
+        minPosted = age.value ? cutoffISO(parseInt(age.value, 10)) : '',
         statedOnly = stated.checked, prog = program.value,
         remoteOnly = remote.checked, onlySaved = savedonly.checked;
     rows.forEach(function (tr) {{
@@ -985,7 +893,7 @@ def generate(store_data: dict, stats: dict) -> None:
         && (!prog || tr.dataset.program.indexOf(prog) !== -1)
         && (!remoteOnly || tr.dataset.remote === '1')
         && (!onlySaved || !!saved[tr.dataset.id])
-        && (!minPosted || (Date.parse(tr.dataset.postedTime || tr.dataset.posted || '') >= minPosted))
+        && (!minPosted || (tr.dataset.posted && tr.dataset.posted >= minPosted))
         && (!statedOnly || tr.dataset.inferred === '0');
       tr.style.display = ok ? '' : 'none';
       // Count OPENINGS, not rows. A row standing for eight requisitions is
@@ -1021,8 +929,7 @@ def generate(store_data: dict, stats: dict) -> None:
     (fit.addEventListener ? fit.addEventListener('change', sync)
                           : fit.addListener(sync));
   }}
-  age.value = '';
-  paintAll(); apply();
+  paintAll();
   // Radar search (separate list, separate box).
   var rq = document.getElementById('rq');
   if (rq) {{
@@ -1052,16 +959,6 @@ def generate(store_data: dict, stats: dict) -> None:
 </body></html>"""
 
     os.makedirs(paths.DOCS_DIR, exist_ok=True)
-    if cfg.get("opportunity_scope") == "it":
-        html_doc = html_doc.replace("All cycles", "All sections").replace("<th>Cycle</th>", "<th>Section</th>")
-        html_doc = html_doc.replace("Internships &amp; co-ops", "All opportunity types")
-        html_doc = html_doc.replace('<option value="Internship">Internships</option>',
-                                   '<option value="Entry-level job">Jobs</option><option value="Internship">Internships</option>')
-        html_doc = html_doc.replace('cycle the employer actually stated, in the title or the posting text',
-                                   'location/fit section assigned by this tracker')
-        html_doc = html_doc.replace('employer-stated cycle only', 'assigned section only')
-        html_doc = html_doc.replace('Roles by cycle', 'Roles by section')
-        html_doc = html_doc.replace("title='Stated by the employer'", "title='Assigned by this tracker from the employer location'")
     with open(paths.DASHBOARD_PATH, "w", encoding="utf-8") as f:
         f.write(html_doc)
 

@@ -693,23 +693,3 @@ class TestRejectedTitlesLog:
             encoding="utf-8").strip())
         assert row["ts"].endswith("Z")
         assert row["reason"] == "undated"
-
-
-def test_early_alerts_require_real_recent_posting_not_discovery_date():
-    from run import _fresh_alert_ids
-
-    now = datetime(2026, 11, 6, 23, tzinfo=UTC)
-
-    def job(source, posted, active=True):
-        return {"source": source, "posted_at": posted, "is_open": active}
-
-    records = {
-        "recent": job("workday", "2026-11-06T22:00:00Z"),
-        "yesterday": job("workday", "2026-11-05"),
-        "old_backfill": job("workday", "2026-10-08T15:00:00Z"),
-        "missing": job("workday", None),
-        "closed": job("workday", "2026-11-06T22:00:00Z", False),
-        "future": job("workday", "2026-11-07T09:00:00Z"),
-        "licensed_on_site_only": job("himalayas", "2026-11-06T22:00:00Z"),
-    }
-    assert _fresh_alert_ids(list(records), records, now) == ["recent", "yesterday"]

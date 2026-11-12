@@ -5439,19 +5439,18 @@
   "roles_cycle_inferred": 0,
   "roles_by_source": {
     "ashby": 2,
-    "localboards": 2,
     "workable": 1,
     "workday": 3
   },
   "roles_by_cycle": {
     "Remote — Florida / US": 5,
-    "Orlando area": 3
+    "Orlando area": 1
   },
   "roles_by_region": {
-    "US": 8
+    "US": 6
   },
   "sponsorship_counts": {
-    "unknown": 7,
+    "unknown": 5,
     "citizens-only": 1
   },
   "posted_date_coverage": 1.0,
@@ -5459,7 +5458,7 @@
   "enrichment_detail_fetches": 4,
   "purged_this_run": 0,
   "new_this_run": 0,
-  "open_total": 8,
+  "open_total": 6,
   "detection_latency": {
     "median_minutes": 281.5,
     "p95_minutes": 822.1,
@@ -5471,6 +5470,6 @@
     "median_days": 20.0,
     "sample_size": 108
   },
-  "rendered_at": "2026-11-11T23:32:42Z",
+  "rendered_at": "2026-11-12T00:01:13Z",
   "stats_basis": "counts recomputed from the store; fetch metrics from the last run"
 }

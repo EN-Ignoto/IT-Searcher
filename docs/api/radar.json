@@ -1,7 +1,7 @@
 {
  "generated_at": "2026-11-11T17:56:56Z",
  "data_as_of": "2026-11-11T17:56:56Z",
- "rendered_at": "2026-11-11T23:32:42Z",
+ "rendered_at": "2026-11-12T00:01:13Z",
  "cycle": "Orlando area",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
  "companies": [
@@ -22,44 +22,6 @@
     "type": "engine-observed",
     "cycle": "Orlando area",
     "observed_on": "2026-08-20"
-   }
-  },
-  {
-   "company": "School District of Osceola County",
-   "last_cycle_posted": "",
-   "posted_on": "2026-10-29",
-   "precision": "day",
-   "rolling": false,
-   "confidence": "verified",
-   "source": "engine",
-   "expected": "2026-10-29",
-   "days_until": -13,
-   "status": "open",
-   "url": "https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71",
-   "note": "",
-   "provenance": {
-    "type": "engine-observed",
-    "cycle": "Orlando area",
-    "observed_on": "2026-10-29"
-   }
-  },
-  {
-   "company": "Valencia College",
-   "last_cycle_posted": "",
-   "posted_on": "2026-11-05",
-   "precision": "day",
-   "rolling": false,
-   "confidence": "verified",
-   "source": "engine",
-   "expected": "2026-11-05",
-   "days_until": -6,
-   "status": "open",
-   "url": "https://valenciacollege.peopleadmin.com/postings/44244",
-   "note": "",
-   "provenance": {
-    "type": "engine-observed",
-    "cycle": "Orlando area",
-    "observed_on": "2026-11-05"
    }
   },
   {
@@ -98,6 +60,44 @@
     "type": "engine-observed",
     "cycle": "Orlando area",
     "observed_on": "2026-10-14"
+   }
+  },
+  {
+   "company": "School District of Osceola County",
+   "last_cycle_posted": "",
+   "posted_on": "2026-10-29",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-10-29",
+   "days_until": -13,
+   "status": "dropped",
+   "url": "",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Orlando area",
+    "observed_on": "2026-10-29"
+   }
+  },
+  {
+   "company": "Valencia College",
+   "last_cycle_posted": "",
+   "posted_on": "2026-11-05",
+   "precision": "day",
+   "rolling": false,
+   "confidence": "verified",
+   "source": "engine",
+   "expected": "2026-11-05",
+   "days_until": -6,
+   "status": "dropped",
+   "url": "",
+   "note": "",
+   "provenance": {
+    "type": "engine-observed",
+    "cycle": "Orlando area",
+    "observed_on": "2026-11-05"
    }
   },
   {

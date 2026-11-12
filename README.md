@@ -2,7 +2,7 @@
 
 Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
 
-**8 open postings** · Data as of 2026-11-11T17:56:56Z
+**6 open postings** · Data as of 2026-11-11T17:56:56Z
 
 [Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
@@ -22,12 +22,10 @@ Entry-level IT jobs and paid internships only. Generic engineering roles, senior
 
 ## 🖥️ IT Support, Networks & Infrastructure
 
-### Orlando area  (3 roles)
+### Orlando area  (1 roles)
 
 | Company | Role | Category | Location | Skills | Posted | Apply |
 |---|---|---|---|---|---|---|
-| Valencia College | Specialist, Technical Support | IT Support / Ops | Orlando, FL 32825 - East Campus | No skills listed | Nov 05, 2026 | [Apply](https://valenciacollege.peopleadmin.com/postings/44244) |
-| School District of Osceola County | Computer Technician I-12 Month | IT Support / Ops | Kissimmee, FL | No skills listed | Oct 29, 2026 | [Apply](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
 | Enterfusion | IT Help Desk Technician | IT Support / Ops | Orlando, United States | AWS, Azure | Aug 20, 2026 | [Apply](https://apply.workable.com/enterfusion/j/2863A7F0F5/) |
 
 ### Remote — Florida / US  (5 roles)
@@ -51,11 +49,10 @@ Stop refreshing career pages. 🎯 = the employer's **own posted date**, read fr
 | Company | Typical opening | Expected this cycle | Status |
 |---|---|---|---|
 | 🎯 Enterfusion | Aug 20 | dropped Aug 20 | ✅ [open now](https://apply.workable.com/enterfusion/j/2863A7F0F5/) |
-| 🎯 School District of Osceola County | Oct 29 | dropped Oct 29 | ✅ [open now](https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71) |
-| 🎯 Valencia College | Nov 05 | dropped Nov 05 | ✅ [open now](https://valenciacollege.peopleadmin.com/postings/44244) |
 | 🎯 BNY | Oct 13 | dropped Oct 13 · closed | 🗓️ dropped |
 | 🎯 University of Central Florida | Oct 14 | dropped Oct 14 · closed | 🗓️ dropped |
-| 🎯 Loews Hotels | Nov 09 | dropped Nov 09 · closed | 🗓️ dropped |
+| 🎯 School District of Osceola County | Oct 29 | dropped Oct 29 · closed | 🗓️ dropped |
+| 🎯 Valencia College | Nov 05 | dropped Nov 05 · closed | 🗓️ dropped |
 
 _6 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **6** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
 
@@ -66,6 +63,8 @@ _Why each one left is in the last column, because the two reasons carry differen
 
 | Company | Role | Cycle | Closed | Why |
 |---|---|---|---|---|
+| School District of Osceola County | Computer Technician I-12 Month | Orlando area | 2026-11-12 | out of scope |
+| Valencia College | Specialist, Technical Support | Orlando area | 2026-11-12 | out of scope |
 | Versapay | Technical Support Specialist | Remote — Florida / US | 2026-11-11 | out of scope |
 | Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-11 | out of scope |
 | TruBridge | Technical Support Technician - Tech Apps | Remote — Florida / US | 2026-11-11 | out of scope |
@@ -104,8 +103,6 @@ _Why each one left is in the last column, because the two reasons carry differen
 | AMERICAN SYSTEMS (via Himalayas) | Tier I Part Time Help Desk Analyst – Overnight Monitoring | Remote — Florida / US | 2026-11-11 | out of scope |
 | DMI (via Himalayas) | Service Desk Analyst | Remote — Florida / US | 2026-11-11 | out of scope |
 | NoGigiddy | Technical Support Specialist (Remote) - Entry Level, No Degree Required, 15 - 18 | Remote — Florida / US | 2026-11-11 | out of scope |
-| Guidehouse | IT Service Desk Specialist | Remote — Florida / US | 2026-11-10 | out of scope |
-| TopDog Law | Jr. IT Helpdesk Specialist (Pacific Standard Time) | Remote — Florida / US | 2026-11-10 | out of scope |
 
 </details>
 

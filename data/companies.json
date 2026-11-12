@@ -6256,11 +6256,6 @@
     "site": "CX_1001"
   },
   {
-    "name": "City of Kissimmee Public Jobs",
-    "slug": "kissimmee-city",
-    "ats": "governmentjobs"
-  },
-  {
     "name": "City of Largo",
     "slug": "largo",
     "ats": "workday",
@@ -9655,11 +9650,6 @@
     "ats": "workday",
     "wd": "wd1",
     "site": "entegriscareers"
-  },
-  {
-    "name": "Enterfusion",
-    "slug": "enterfusion",
-    "ats": "workable"
   },
   {
     "name": "Enterprise Bank & Trust",
@@ -16476,13 +16466,6 @@
     "ats": "greenhouse"
   },
   {
-    "name": "Loews Hotels",
-    "slug": "loewshotels",
-    "ats": "workday",
-    "wd": "wd5",
-    "site": "loewshotels"
-  },
-  {
     "name": "Loft",
     "slug": "knitwellgroup",
     "ats": "workday",
@@ -17297,13 +17280,6 @@
     "name": "Massachusetts School Building Authority",
     "slug": "massschoolbuildings",
     "ats": "lever"
-  },
-  {
-    "name": "Massey Services",
-    "slug": "masseyservices",
-    "ats": "workday",
-    "wd": "wd5",
-    "site": "masseyservices"
   },
   {
     "name": "MassMutual Ascend",
@@ -24270,11 +24246,6 @@
     "ats": "greenhouse"
   },
   {
-    "name": "School District of Osceola County",
-    "slug": "osceola-schools",
-    "ats": "localboards"
-  },
-  {
     "name": "SchoolMint",
     "slug": "schoolmint",
     "ats": "greenhouse"
@@ -29022,11 +28993,6 @@
     "name": "Vacasa",
     "slug": "vacasa",
     "ats": "greenhouse"
-  },
-  {
-    "name": "Valencia College",
-    "slug": "valencia",
-    "ats": "localboards"
   },
   {
     "name": "Valency",

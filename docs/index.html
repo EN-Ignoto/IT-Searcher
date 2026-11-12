@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IT Searcher · Your job workspace</title>
-<meta name="description" content="Entry-level IT jobs and paid internships. Full employer-registry collection uses the upstream job tracking workflow.">
+<title>IT Searcher - Live Dashboard</title>
+<meta name="description" content="Entry-level IT jobs and paid internships in Orlando and remote US roles. Auto-detected visa sponsorship flags, proven H-1B sponsor badges, email alerts.">
 <meta property="og:title" content="Internship Engine - Live Dashboard">
-<meta property="og:description" content="8 open entry-level IT jobs and internships. Each collection scans the complete employer registry.">
+<meta property="og:description" content="6 open IT jobs and internships. Visa-sponsorship flags + proven H-1B sponsor badges for international students.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <link rel="alternate" type="application/atom+xml" title="New internships" href="feed.xml">
@@ -17,15 +17,6 @@
            --shadow:0 1px 2px #0006, 0 8px 24px -12px #000a;
            --shadow-lift:0 2px 4px #0007, 0 16px 32px -14px #000c;
            --ease:cubic-bezier(.2,.7,.3,1); }
-  .workspace { padding:24px; margin-bottom:24px; background:linear-gradient(120deg,#142b40,#15201f); border:1px solid #315069; border-radius:18px; }
-  .workspace h2 { margin-top:0; font-size:27px; }
-  .quick { display:flex; flex-wrap:wrap; gap:10px; }
-  .quick button { min-height:44px; }
-  #freshstatus { padding:10px 14px; border-left:3px solid var(--star); background:#0003; }
-  .filters { border:1px solid var(--line); border-radius:12px; padding:14px !important; }
-  .filters select, .filters input, button { min-height:40px; }
-  tbody tr:hover { background:#203047; }
-  a:focus-visible, button:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--txt);
           font:15px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -168,10 +159,6 @@
               text-transform:uppercase; font-size:11px; letter-spacing:.05em; }
   .rt { font-weight:600; }
   .nowrap { white-space:nowrap; }
-  .savedpanel { margin:24px 0; padding:18px; border:1px solid var(--border); border-radius:12px; }
-  .savedpanel summary { cursor:pointer; font-size:20px; font-weight:650; }
-  .savedcard { padding:16px 0; border-bottom:1px solid var(--border); }
-  .savedcard p { margin:8px 0; }
   .c-save { width:34px; padding-right:0; }
   .star { background:none; border:0; color:#55606f; font-size:17px;
            cursor:pointer; padding:0 2px; line-height:1;
@@ -276,37 +263,21 @@
   }
 </style></head><body><div class="wrap">
   <header class="top">
-    <h1>Orlando-area IT jobs & internships</h1>
-    <p class="sub">Full employer-registry scans use the upstream collection workflow. GitHub may delay scheduled starts. The feed keeps postings for 270 days; select Posted in last 48 hours to apply early.</p>
-    <p class="sub">First-job IT candidates and paid internships. Filters look for beginner IT work and exclude detected experience requirements, existing-clearance requirements, and unpaid internships. A match is a candidate to review, not a guarantee that you meet every requirement. Confirm schedule and remote-state eligibility with the employer.</p>
-    <p class="sub">Official employer career feeds. Latest collection: 4,872 boards returned data, 435 failed, and 77 were temporarily skipped. Registry: 5,384 boards. LinkedIn, Handshake, Indeed and ZipRecruiter search results are not imported. Data as of Nov 11, 2026 at 17:56 UTC.</p>
-
+    <h1>United States entry-level IT jobs & internships</h1>
+    <p class="sub">Read straight from 5,384 employer
+    job boards. Data as of Nov 11, 2026 at 17:56 UTC.</p>
     <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
     · <a href="internships.csv">CSV</a> ·
     <a href="https://github.com/EN-Ignoto/IT-Searcher">source</a> ·
     <a href="https://github.com/EN-Ignoto/IT-Searcher/blob/main/METHODOLOGY.md">methodology</a></p>
   </header>
-  <div class="hero"><div class="hcard"><div class="hnum">8</div><div class="hlbl">open roles</div><div class="hsub">every one linked to the employer</div></div><div class="hcard"><div class="hnum">3</div><div class="hlbl">Orlando area</div><div class="hsub">nearby cities; confirm your commute</div></div><div class="hcard"><div class="hnum">3</div><div class="hlbl">internships</div><div class="hsub">pay evidence found in the posting</div></div><div class="hcard"><div class="hnum">5</div><div class="hlbl">remote</div><div class="hsub">the posting&#x27;s own words say so</div></div></div>
+  <div class="hero"><div class="hcard"><div class="hnum">6</div><div class="hlbl">open roles</div><div class="hsub">every one linked to the employer</div></div><div class="hcard"><div class="hnum">6</div><div class="hlbl">with a stated cycle</div><div class="hsub">the employer named it, we didn&#x27;t guess</div></div><div class="hcard"><div class="hnum">3</div><div class="hlbl">at proven H-1B sponsors</div><div class="hsub">USCIS approved 10+ petitions</div></div><div class="hcard"><div class="hnum">5</div><div class="hlbl">remote</div><div class="hsub">the posting&#x27;s own words say so</div></div></div>
 
-  <section class="workspace" aria-label="Job workspace">
-    <h2>Your next IT opportunity</h2>
-    <p>Find a role, check the employer requirements, and save your shortlist.</p>
-    <p class="muted">Fresh start: not set · Posted dates come from employers; undated roles use first discovery.</p>
-    <p id="freshstatus" role="status"></p>
-    <nav class="quick" aria-label="Quick job filters">
-      <button class="ghost" data-view="fresh">Posted in last 48 hours</button>
-      <button class="ghost" data-view="local">Local opportunities</button>
-      <button class="ghost" data-view="intern">Internships</button>
-      <button class="ghost" data-view="all">All active jobs</button>
-    </nav>
-  </section>
-  <h2 id="roles">Open roles <span class="muted">(<span id="count">8</span>
+  <h2 id="roles">Open roles <span class="muted">(<span id="count">6</span>
     showing)</span></h2>
   <div class="filters" id="filters">
-    <input id="q" aria-label="Search jobs" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
-    <select id="sort" aria-label="Sort jobs"><option value="local">Local first, then newest</option><option value="new">Newest first</option><option value="company">Company A–Z</option><option value="role">Role A–Z</option></select>
-    <button id="viewsaved" class="ghost" type="button">Saved for later</button>
-    <select id="cycle"><option value="">All sections</option><option value="Orlando area">Orlando area</option><option value="Remote — Florida / US">Remote — Florida / US</option></select>
+    <input id="q" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
+    <select id="cycle"><option value="">All cycles</option><option value="Orlando area">Orlando area</option><option value="Remote — Florida / US">Remote — Florida / US</option></select>
     <label class="chk" title="Show only the roles you've starred (stored in this browser)">
       <input id="savedonly" type="checkbox"><span>★ saved (<span id="savedn">0</span>)</span></label>
     <!-- Secondary filters. A real <details> so phones get a one-tap disclosure
@@ -316,12 +287,11 @@
       <summary>More filters</summary>
       <div class="fbody">
         <select id="cat"><option value="">All categories</option><option value="IT Support / Ops">IT Support / Ops</option><option value="Network / Telecom">Network / Telecom</option></select>
-        <select id="age" aria-label="Posting age">
+        <select id="age">
           <option value="">Posted anytime</option>
-          <option value="1">Last 24 hours</option>
           <option value="2">Last 48 hours</option>
           <option value="7">Last 7 days</option>
-          <option value="14">Last 14 days</option>
+          <option value="30">Last 30 days</option>
         </select>
         <select id="spon" title="What the posting itself says about visa sponsorship">
           <option value="">Any sponsorship status</option>
@@ -331,15 +301,15 @@
           <option value="restricted">Explicitly restricted (🇺🇸 / 🛂)</option>
         </select>
         <select id="program">
-          <option value="">All opportunity types</option>
-          <option value="Entry-level job">Jobs</option><option value="Internship">Internships</option>
+          <option value="">Internships &amp; co-ops</option>
+          <option value="Internship">Internships</option>
           <option value="Co-op">Co-ops</option>
         </select>
         <label class="chk"><input id="remote" type="checkbox"><span><span class="rmark">R</span> remote only</span></label>
         <label class="chk"><input id="h1b" type="checkbox">
           <span>✓ proven H-1B sponsors only</span></label>
         <label class="chk" title="Show only roles whose employer named the cycle themselves">
-          <input id="stated" type="checkbox"><span>assigned section only</span></label>
+          <input id="stated" type="checkbox"><span>employer-stated cycle only</span></label>
         <button id="export" class="ghost" type="button" title="Download your saved roles as CSV">
           Export saved</button>
         <button id="reset" class="ghost" type="button">Clear filters</button>
@@ -350,44 +320,54 @@
   class="note-long"> — no account, no sign-in, nothing sent anywhere</span>.
   <span class="tag tag-guess">not stated</span> = the posting names no cycle
   anywhere, so we don't guess one<span class="note-long">; a plain tag is the
-  location/fit section assigned by this tracker</span>.</p>
-  <div class="tscroll" tabindex="0" aria-label="Job results, scroll horizontally for more details">
+  cycle the employer actually stated, in the title or the posting text</span>.</p>
+  <div class="tscroll">
   <table><thead><tr><th class="c-save" title="Save"></th><th>Company</th><th>Role</th>
-  <th>Section</th><th>Category</th>
+  <th>Cycle</th><th>Category</th>
   <th>Location</th><th>Salary</th><th>Posted</th><th></th></tr></thead>
-  <tbody id="rows"><tr data-id="localboards:valencia:44244" data-cycle="Orlando area" data-cycles="Orlando area" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="0" data-program="Entry-level job" data-posted="2026-11-05" data-posted-time="2026-11-05" data-inferred="0" data-openings="1" data-ids="localboards:valencia:44244" data-text="valencia college specialist, technical support orlando, fl 32825 - east campus it support / ops orlando area $19.93 per hour"><td class='c-save'><button class="star" type="button" data-id="localboards:valencia:44244" aria-label="Save this role" title="Save to your list">☆</button></td><td>Valencia College</td><td><span class='rt'>Specialist, Technical Support</span> </td><td><span class='tag' title='Assigned by this tracker from the employer location'>Orlando area</span></td><td>IT Support / Ops</td><td>Orlando, FL 32825 - East Campus</td><td class='muted'>$19.93 per hour</td><td class='nowrap' title='First detected by this site: 2026-11-07T19:36:06Z'>2026-11-05</td><td><a href="https://valenciacollege.peopleadmin.com/postings/44244" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="localboards:osceola:993441CCDCCE775901861F2193A33B71" data-cycle="Orlando area" data-cycles="Orlando area" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="0" data-program="Entry-level job" data-posted="2026-10-29" data-posted-time="2026-10-29" data-inferred="0" data-openings="1" data-ids="localboards:osceola:993441CCDCCE775901861F2193A33B71" data-text="school district of osceola county computer technician i-12 month kissimmee, fl it support / ops orlando area "><td class='c-save'><button class="star" type="button" data-id="localboards:osceola:993441CCDCCE775901861F2193A33B71" aria-label="Save this role" title="Save to your list">☆</button></td><td>School District of Osceola County</td><td><span class='rt'>Computer Technician I-12 Month</span> </td><td><span class='tag' title='Assigned by this tracker from the employer location'>Orlando area</span></td><td>IT Support / Ops</td><td>Kissimmee, FL</td><td class='muted'></td><td class='nowrap' title='First detected by this site: 2026-11-07T19:36:06Z'>2026-10-29</td><td><a href="https://jobs.osceolaschools.net/support-staff-computer-technician-i-12-month/job/993441CCDCCE775901861F2193A33B71" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workable:enterfusion:2863A7F0F5" data-cycle="Orlando area" data-cycles="Orlando area" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="0" data-program="Entry-level job" data-posted="2026-08-20" data-posted-time="2026-08-20T00:00:00.000Z" data-inferred="0" data-openings="1" data-ids="workable:enterfusion:2863A7F0F5" data-text="enterfusion it help desk technician orlando, united states it support / ops orlando area $48k–$65k/yr aws azure"><td class='c-save'><button class="star" type="button" data-id="workable:enterfusion:2863A7F0F5" aria-label="Save this role" title="Save to your list">☆</button></td><td>Enterfusion</td><td><span class='rt'>IT Help Desk Technician</span> <span class="sks"><span class="sk">AWS</span><span class="sk">Azure</span></span></td><td><span class='tag' title='Assigned by this tracker from the employer location'>Orlando area</span></td><td>IT Support / Ops</td><td>Orlando, United States</td><td class='muted'>$48k–$65k/yr</td><td class='nowrap' title='First detected by this site: 2026-11-11T06:32:15Z'>2026-08-20</td><td><a href="https://apply.workable.com/enterfusion/j/2863A7F0F5/" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="1" data-program="Internship" data-posted="2026-10-23" data-posted-time="2026-10-23T13:11:13.440+00:00" data-inferred="0" data-openings="1" data-ids="ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7" data-text="1password it intern, it support - winter 2027 remote (united states | canada) it support / ops remote — florida / us "><td class='c-save'><button class="star" type="button" data-id="ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7" aria-label="Save this role" title="Save to your list">☆</button></td><td>1Password<span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>IT Intern, IT Support - Winter 2027</span> </td><td><span class='tag' title='Assigned by this tracker from the employer location'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>Remote (United States | Canada)</td><td class='muted'></td><td class='nowrap' title='First detected by this site: 2026-11-07T06:39:00Z'>2026-10-23</td><td><a href="https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="Network / Telecom" data-sponsor="citizens-only" data-h1b="1" data-remote="1" data-program="Internship" data-posted="2026-10-21" data-posted-time="2026-10-21T00:00:00Z" data-inferred="0" data-openings="1" data-ids="workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" data-text="leidos network site design intern 6314 remote/teleworker us network / telecom remote — florida / us "><td class='c-save'><button class="star" type="button" data-id="workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" aria-label="Save this role" title="Save to your list">☆</button></td><td>Leidos <span class="ok" title="~79 H-1B approvals (FY2022–2023, USCIS)">✓</span><span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>Network Site Design Intern</span> 🇺🇸</td><td><span class='tag' title='Assigned by this tracker from the employer location'>Remote — Florida / US</span></td><td>Network / Telecom</td><td>6314 Remote/Teleworker US</td><td class='muted'></td><td class='nowrap' title='First detected by this site: 2026-10-21T21:07:04Z'>2026-10-21</td><td><a href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="1" data-remote="1" data-program="Entry-level job" data-posted="2026-10-20" data-posted-time="2026-10-20T00:00:00Z" data-inferred="0" data-openings="1" data-ids="workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100" data-text="bigcommerce technical support representative - remote united states - remote it support / ops remote — florida / us  javascript html/css"><td class='c-save'><button class="star" type="button" data-id="workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100" aria-label="Save this role" title="Save to your list">☆</button></td><td>BigCommerce <span class="ok" title="~26 H-1B approvals (FY2022–2023, USCIS)">✓</span><span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>Technical Support Representative - Remote</span> <span class="sks"><span class="sk">JavaScript</span><span class="sk">HTML/CSS</span></span></td><td><span class='tag' title='Assigned by this tracker from the employer location'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>United States - Remote</td><td class='muted'></td><td class='nowrap' title='First detected by this site: 2026-10-21T21:07:04Z'>2026-10-20</td><td><a href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="1" data-program="Internship" data-posted="2026-10-19" data-posted-time="2026-10-19T19:03:37.769+00:00" data-inferred="0" data-openings="1" data-ids="ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f" data-text="amplify summer 2027: it services intern remote - united states it support / ops remote — florida / us $30 per hour linux"><td class='c-save'><button class="star" type="button" data-id="ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f" aria-label="Save this role" title="Save to your list">☆</button></td><td>Amplify<span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>Summer 2027: IT Services Intern</span> <span class="sks"><span class="sk">Linux</span></span></td><td><span class='tag' title='Assigned by this tracker from the employer location'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>Remote - United States</td><td class='muted'>$30 per hour</td><td class='nowrap' title='First detected by this site: 2026-10-21T21:07:04Z'>2026-10-19</td><td><a href="https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="1" data-remote="1" data-program="Entry-level job" data-posted="2026-09-23" data-posted-time="2026-09-23T00:00:00Z" data-inferred="0" data-openings="1" data-ids="workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2" data-text="zillow it support specialist remote-usa it support / ops remote — florida / us "><td class='c-save'><button class="star" type="button" data-id="workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2" aria-label="Save this role" title="Save to your list">☆</button></td><td>Zillow <span class="ok" title="~257 H-1B approvals (FY2022–2023, USCIS)">✓</span><span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>IT Support Specialist</span> </td><td><span class='tag' title='Assigned by this tracker from the employer location'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>Remote-USA</td><td class='muted'></td><td class='nowrap' title='First detected by this site: 2026-10-21T21:07:04Z'>2026-09-23</td><td><a href="https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/IT-Support-Specialist_P751346-2" target="_blank" rel="noopener">Apply</a></td></tr></tbody></table>
+  <tbody id="rows"><tr data-id="ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="1" data-program="Internship" data-posted="2026-10-23" data-inferred="0" data-openings="1" data-ids="ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7" data-text="1password it intern, it support - winter 2027 remote (united states | canada) it support / ops remote — florida / us "><td class='c-save'><button class="star" type="button" data-id="ashby:1password:71e986eb-3b58-4c3c-adff-aebdb49a34b7" aria-label="Save this role" title="Save to your list">☆</button></td><td>1Password<span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>IT Intern, IT Support - Winter 2027</span> </td><td><span class='tag' title='Stated by the employer'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>Remote (United States | Canada)</td><td class='muted'></td><td class='nowrap'>2026-10-23</td><td><a href="https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="Network / Telecom" data-sponsor="citizens-only" data-h1b="1" data-remote="1" data-program="Internship" data-posted="2026-10-21" data-inferred="0" data-openings="1" data-ids="workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" data-text="leidos network site design intern 6314 remote/teleworker us network / telecom remote — florida / us "><td class='c-save'><button class="star" type="button" data-id="workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" aria-label="Save this role" title="Save to your list">☆</button></td><td>Leidos <span class="ok" title="~79 H-1B approvals (FY2022–2023, USCIS)">✓</span><span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>Network Site Design Intern</span> 🇺🇸</td><td><span class='tag' title='Stated by the employer'>Remote — Florida / US</span></td><td>Network / Telecom</td><td>6314 Remote/Teleworker US</td><td class='muted'></td><td class='nowrap'>2026-10-21</td><td><a href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="1" data-remote="1" data-program="Entry-level job" data-posted="2026-10-20" data-inferred="0" data-openings="1" data-ids="workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100" data-text="bigcommerce technical support representative - remote united states - remote it support / ops remote — florida / us  javascript html/css"><td class='c-save'><button class="star" type="button" data-id="workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100" aria-label="Save this role" title="Save to your list">☆</button></td><td>BigCommerce <span class="ok" title="~26 H-1B approvals (FY2022–2023, USCIS)">✓</span><span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>Technical Support Representative - Remote</span> <span class="sks"><span class="sk">JavaScript</span><span class="sk">HTML/CSS</span></span></td><td><span class='tag' title='Stated by the employer'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>United States - Remote</td><td class='muted'></td><td class='nowrap'>2026-10-20</td><td><a href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="1" data-program="Internship" data-posted="2026-10-19" data-inferred="0" data-openings="1" data-ids="ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f" data-text="amplify summer 2027: it services intern remote - united states it support / ops remote — florida / us $30 per hour linux"><td class='c-save'><button class="star" type="button" data-id="ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f" aria-label="Save this role" title="Save to your list">☆</button></td><td>Amplify<span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>Summer 2027: IT Services Intern</span> <span class="sks"><span class="sk">Linux</span></span></td><td><span class='tag' title='Stated by the employer'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>Remote - United States</td><td class='muted'>$30 per hour</td><td class='nowrap'>2026-10-19</td><td><a href="https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="1" data-remote="1" data-program="Entry-level job" data-posted="2026-09-23" data-inferred="0" data-openings="1" data-ids="workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2" data-text="zillow it support specialist remote-usa it support / ops remote — florida / us "><td class='c-save'><button class="star" type="button" data-id="workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2" aria-label="Save this role" title="Save to your list">☆</button></td><td>Zillow <span class="ok" title="~257 H-1B approvals (FY2022–2023, USCIS)">✓</span><span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>IT Support Specialist</span> </td><td><span class='tag' title='Stated by the employer'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>Remote-USA</td><td class='muted'></td><td class='nowrap'>2026-09-23</td><td><a href="https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/IT-Support-Specialist_P751346-2" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workable:enterfusion:2863A7F0F5" data-cycle="Orlando area" data-cycles="Orlando area" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="0" data-program="Entry-level job" data-posted="2026-08-20" data-inferred="0" data-openings="1" data-ids="workable:enterfusion:2863A7F0F5" data-text="enterfusion it help desk technician orlando, united states it support / ops orlando area $48k–$65k/yr aws azure"><td class='c-save'><button class="star" type="button" data-id="workable:enterfusion:2863A7F0F5" aria-label="Save this role" title="Save to your list">☆</button></td><td>Enterfusion</td><td><span class='rt'>IT Help Desk Technician</span> <span class="sks"><span class="sk">AWS</span><span class="sk">Azure</span></span></td><td><span class='tag' title='Stated by the employer'>Orlando area</span></td><td>IT Support / Ops</td><td>Orlando, United States</td><td class='muted'>$48k–$65k/yr</td><td class='nowrap'>2026-08-20</td><td><a href="https://apply.workable.com/enterfusion/j/2863A7F0F5/" target="_blank" rel="noopener">Apply</a></td></tr></tbody></table>
   </div>
-  <p id="empty" class="muted empty" hidden>No matching jobs yet. Try clearing filters; new postings will appear after a successful collection.
+  <p id="empty" class="muted empty" hidden>No roles match those filters.
     <button class="ghost" type="button" id="reset2">Clear filters</button></p>
 
-  <details id="savedpanel" class="savedpanel">
-    <summary>Saved for later (<span id="savedtotal">0</span>)</summary>
-    <p class="muted">Your saved links stay here even after leaving the fresh feed. Check the employer page before applying.
-    Saved in this browser only; Export saved gives you a CSV backup.</p>
-    <p id="storagewarning" role="status" hidden>Browser storage is unavailable. Export your saved roles before closing this page.</p>
-    <button id="clearsaved" class="ghost" type="button">Clear saved jobs</button><div id="savedlist"></div>
-  </details>
-
   
   
+  <h2 id="radar">📅 Drop Radar — when companies usually post
+    (<span id="rcount">6</span>)</h2>
+  <p class="muted" style="margin:0 0 8px">When each company usually opens — every
+  date either read from the employer's own API or hand-checked.
+  <span class="cf cf-verified">from the API</span> = the employer's own
+  posted date, read from their careers API (🎯); <span class="cf cf-window">typical window</span> =
+  hand-checked opening month for a marquee name;
+  <span class="cf cf-rolling">rolling</span> = posts year-round.
+  "waiting" = not seen in our tracked feeds yet.</p>
+  <p style="margin:0 0 10px"><a href="radar.ics" class="ics">📅 Subscribe in your
+    calendar</a> <span class="muted" style="font-size:12px">— add every expected
+    drop date to Google/Apple Calendar and get a reminder a week before.</span></p>
+  <div class="filters"><input id="rq" type="search"
+    placeholder="Search the radar — is your target company on it?" autocomplete="off"></div>
+  <div class="tscroll">
+  <table><thead><tr><th>Company</th><th>Typical opening</th><th>Expected</th>
+  <th>Confidence</th><th>Status</th>
+  </tr></thead><tbody id="rrows"><tr data-text="enterfusion"><td>🎯 Enterfusion</td><td>Aug 20</td><td>dropped Aug 20</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><a href="https://apply.workable.com/enterfusion/j/2863A7F0F5/" target="_blank" rel="noopener">✅ open now</a></td></tr><tr data-text="bny"><td>🎯 BNY</td><td>Oct 13</td><td>dropped Oct 13 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr><tr data-text="university of central florida"><td>🎯 University of Central Florida</td><td>Oct 14</td><td>dropped Oct 14 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr><tr data-text="school district of osceola county"><td>🎯 School District of Osceola County</td><td>Oct 29</td><td>dropped Oct 29 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr><tr data-text="valencia college"><td>🎯 Valencia College</td><td>Nov 05</td><td>dropped Nov 05 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr><tr data-text="loews hotels"><td>🎯 Loews Hotels</td><td>Nov 09</td><td>dropped Nov 09 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr></tbody></table>
+  </div>
 
-  <section hidden>
+
   <h2>Internships posted per week</h2>
   <p class="muted" style="margin:0 0 8px">Real published dates across every role the
   engine has tracked — watch this spike when Orlando area
   recruiting opens up.</p>
   <svg viewBox="0 0 640 180" class="chart" role="img" aria-label="Internships posted per week, last 16 weeks"><line x1="34" y1="158.0" x2="632" y2="158.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="162.0" text-anchor="end" class="clabel">0</text><line x1="34" y1="88.0" x2="632" y2="88.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="92.0" text-anchor="end" class="clabel">68</text><line x1="34" y1="18.0" x2="632" y2="18.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="22.0" text-anchor="end" class="clabel">136</text><path d="M35.0,158.0 V155.8 Q35.0,151.8 39.0,151.8 H66.4 Q70.4,151.8 70.4,155.8 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Jul 27: 6 roles"><title>week of Jul 27: 6</title></path><text x="52.7" y="174" text-anchor="middle" class="clabel">Jul 27</text><path d="M72.4,158.0 V148.6 Q72.4,144.6 76.4,144.6 H103.8 Q107.8,144.6 107.8,148.6 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 03: 13 roles"><title>week of Aug 03: 13</title></path><path d="M109.8,158.0 V146.6 Q109.8,142.6 113.8,142.6 H141.1 Q145.1,142.6 145.1,146.6 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 10: 15 roles"><title>week of Aug 10: 15</title></path><path d="M147.1,158.0 V99.2 Q147.1,95.2 151.1,95.2 H178.5 Q182.5,95.2 182.5,99.2 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 17: 61 roles"><title>week of Aug 17: 61</title></path><path d="M184.5,158.0 V76.6 Q184.5,72.6 188.5,72.6 H215.9 Q219.9,72.6 219.9,76.6 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 24: 83 roles"><title>week of Aug 24: 83</title></path><text x="202.2" y="174" text-anchor="middle" class="clabel">Aug 24</text><path d="M221.9,158.0 V22.0 Q221.9,18.0 225.9,18.0 H253.2 Q257.2,18.0 257.2,22.0 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 31: 136 roles"><title>week of Aug 31: 136</title></path><text x="239.6" y="13.0" text-anchor="middle" class="cvalue">136</text><path d="M259.2,158.0 V60.1 Q259.2,56.1 263.2,56.1 H290.6 Q294.6,56.1 294.6,60.1 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Sep 07: 99 roles"><title>week of Sep 07: 99</title></path><path d="M296.6,158.0 V65.2 Q296.6,61.2 300.6,61.2 H328.0 Q332.0,61.2 332.0,65.2 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Sep 14: 94 roles"><title>week of Sep 14: 94</title></path><path d="M334.0,158.0 V68.3 Q334.0,64.3 338.0,64.3 H365.4 Q369.4,64.3 369.4,68.3 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Sep 21: 91 roles"><title>week of Sep 21: 91</title></path><text x="351.7" y="174" text-anchor="middle" class="clabel">Sep 21</text><path d="M371.4,158.0 V74.5 Q371.4,70.5 375.4,70.5 H402.8 Q406.8,70.5 406.8,74.5 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Sep 28: 85 roles"><title>week of Sep 28: 85</title></path><path d="M408.8,158.0 V80.7 Q408.8,76.7 412.8,76.7 H440.1 Q444.1,76.7 444.1,80.7 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Oct 05: 79 roles"><title>week of Oct 05: 79</title></path><path d="M446.1,158.0 V80.7 Q446.1,76.7 450.1,76.7 H477.5 Q481.5,76.7 481.5,80.7 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Oct 12: 79 roles"><title>week of Oct 12: 79</title></path><path d="M483.5,158.0 V97.1 Q483.5,93.1 487.5,93.1 H514.9 Q518.9,93.1 518.9,97.1 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Oct 19: 63 roles"><title>week of Oct 19: 63</title></path><text x="501.2" y="174" text-anchor="middle" class="clabel">Oct 19</text><path d="M520.9,158.0 V156.9 Q520.9,152.9 524.9,152.9 H552.2 Q556.2,152.9 556.2,156.9 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Oct 26: 5 roles"><title>week of Oct 26: 5</title></path><path d="M558.2,158.0 V127.0 Q558.2,123.0 562.2,123.0 H589.6 Q593.6,123.0 593.6,127.0 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Nov 02: 34 roles"><title>week of Nov 02: 34</title></path><path d="M595.6,158.0 V154.8 Q595.6,150.8 599.6,150.8 H627.0 Q631.0,150.8 631.0,154.8 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Nov 09: 7 roles"><title>week of Nov 09: 7</title></path><text x="613.3" y="145.8" text-anchor="middle" class="cvalue">7</text><text x="613.3" y="174" text-anchor="middle" class="clabel">Nov 09</text></svg>
 
-  </section>
   
   <details class="engine" id="engine">
     <summary><strong>Engine health</strong> — how this list was actually built</summary>
-    <div class="tscroll"><table class="kv"><tr><th>Boards polled</th><td>4,872 of 5,384 returned successfully (91% of those attempted, 90% of the collection)</td></tr><tr><th>Complete snapshots</th><td>4,148 boards returned a provably complete list; 724 were capped by the ATS and so were not allowed to close any role this run</td></tr><tr><th>Detection latency</th><td>282 min median · 822 min p95 (n=12)</td></tr><tr><th>Median posting lifetime</th><td>20 days (n=108)</td></tr><tr><th>Quarantined boards</th><td>77</td></tr><tr><th>New this run</th><td>0</td></tr><tr><th>Run duration</th><td>3155.8s</td></tr></table></div>
+    <div class="tscroll"><table class="kv"><tr><th>Boards polled</th><td>4,872 of 5,384 returned successfully (91% of those attempted, 90% of the full registry)</td></tr><tr><th>Complete snapshots</th><td>4,148 boards returned a provably complete list; 724 were capped by the ATS and so were not allowed to close any role this run</td></tr><tr><th>Detection latency</th><td>282 min median · 822 min p95 (n=12)</td></tr><tr><th>Median posting lifetime</th><td>20 days (n=108)</td></tr><tr><th>Quarantined boards</th><td>77</td></tr><tr><th>New this run</th><td>0</td></tr><tr><th>Run duration</th><td>3155.8s</td></tr></table></div>
     <div class="panels">
-      <div><h3>Roles by source</h3><div class="bar"><span class="bname">workday</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">3</span></div><div class="bar"><span class="bname">ashby</span><span class="btrack"><span class="bfill" style="width:66%"></span></span><span class="bval">2</span></div><div class="bar"><span class="bname">localboards</span><span class="btrack"><span class="bfill" style="width:66%"></span></span><span class="bval">2</span></div><div class="bar"><span class="bname">workable</span><span class="btrack"><span class="bfill" style="width:33%"></span></span><span class="bval">1</span></div></div>
-      <div><h3>Roles by section</h3><div class="bar"><span class="bname">Remote — Florida / US</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">5</span></div><div class="bar"><span class="bname">Orlando area</span><span class="btrack"><span class="bfill" style="width:60%"></span></span><span class="bval">3</span></div></div>
-      <div><h3>Roles by category</h3><div class="bar"><span class="bname">IT Support / Ops</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">7</span></div><div class="bar"><span class="bname">Network / Telecom</span><span class="btrack"><span class="bfill" style="width:14%"></span></span><span class="bval">1</span></div></div>
-      <div><h3>Sponsorship verdicts</h3><div class="bar"><span class="bname">unknown</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">7</span></div><div class="bar"><span class="bname">citizens-only</span><span class="btrack"><span class="bfill" style="width:14%"></span></span><span class="bval">1</span></div></div>
+      <div><h3>Roles by source</h3><div class="bar"><span class="bname">workday</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">3</span></div><div class="bar"><span class="bname">ashby</span><span class="btrack"><span class="bfill" style="width:66%"></span></span><span class="bval">2</span></div><div class="bar"><span class="bname">workable</span><span class="btrack"><span class="bfill" style="width:33%"></span></span><span class="bval">1</span></div></div>
+      <div><h3>Roles by cycle</h3><div class="bar"><span class="bname">Remote — Florida / US</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">5</span></div><div class="bar"><span class="bname">Orlando area</span><span class="btrack"><span class="bfill" style="width:20%"></span></span><span class="bval">1</span></div></div>
+      <div><h3>Roles by category</h3><div class="bar"><span class="bname">IT Support / Ops</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">5</span></div><div class="bar"><span class="bname">Network / Telecom</span><span class="btrack"><span class="bfill" style="width:20%"></span></span><span class="bval">1</span></div></div>
+      <div><h3>Sponsorship verdicts</h3><div class="bar"><span class="bname">unknown</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">5</span></div><div class="bar"><span class="bname">citizens-only</span><span class="btrack"><span class="bfill" style="width:20%"></span></span><span class="bval">1</span></div></div>
     </div>
     <svg viewBox="0 0 640 80" preserveAspectRatio="none" class="spark" role="img" aria-label="Open roles per run"><polyline fill="none" stroke="var(--accent)" stroke-width="2" points="4.0,9.5 9.3,8.9 14.6,8.5 19.9,8.9 25.2,8.2 30.6,8.5 35.9,8.5 41.2,8.1 46.5,8.3 51.8,8.5 57.1,8.5 62.4,8.3 67.7,8.3 73.0,8.3 78.4,8.3 83.7,8.6 89.0,8.1 94.3,8.1 99.6,8.2 104.9,8.1 110.2,7.3 115.5,7.5 120.8,6.8 126.2,7.4 131.5,7.3 136.8,7.5 142.1,6.5 147.4,5.9 152.7,6.2 158.0,6.2 163.3,6.8 168.6,6.4 173.9,5.6 179.3,5.3 184.6,5.6 189.9,6.3 195.2,6.2 200.5,5.7 205.8,5.6 211.1,5.6 216.4,5.7 221.7,5.8 227.1,5.8 232.4,5.8 237.7,5.8 243.0,5.8 248.3,5.9 253.6,5.9 258.9,5.9 264.2,5.9 269.5,5.9 274.9,6.0 280.2,5.1 285.5,4.8 290.8,4.7 296.1,4.7 301.4,4.2 306.7,4.2 312.0,4.0 317.3,4.1 322.7,4.0 328.0,59.6 333.3,76.0 338.6,76.0 343.9,75.8 349.2,75.5 354.5,75.5 359.8,75.3 365.1,75.0 370.5,74.7 375.8,74.3 381.1,74.0 386.4,74.0 391.7,73.8 397.0,73.7 402.3,73.6 407.6,73.5 412.9,73.1 418.3,75.8 423.6,76.0 428.9,73.8 434.2,73.8 439.5,73.7 444.8,72.7 450.1,72.7 455.4,72.5 460.7,72.5 466.1,72.3 471.4,73.0 476.7,72.9 482.0,72.9 487.3,73.1 492.6,73.1 497.9,73.2 503.2,73.2 508.5,73.0 513.8,73.0 519.2,73.0 524.5,73.0 529.8,72.9 535.1,72.9 540.4,72.9 545.7,72.9 551.0,72.7 556.3,72.7 561.6,72.6 567.0,72.6 572.3,72.6 577.6,72.6 582.9,72.6 588.2,72.3 593.5,72.3 598.8,72.0 604.1,71.9 609.4,71.9 614.8,75.2 620.1,75.0 625.4,74.9 630.7,74.6 636.0,74.7"/></svg><p class="muted spark-caption">Open roles per run since 2026-10-07 — now 11, peak 598.</p>
   </details>
@@ -402,7 +382,6 @@
   Employer Data Hub</a>) — a history, not a promise; no ✓ only means no confident
   match. Roles can close at any time; always confirm on the company's own site.</footer>
 </div>
-<script src="saved-roles.js"></script>
 <script>
 (function () {
   var q = document.getElementById('q'), cycle = document.getElementById('cycle'),
@@ -421,25 +400,30 @@
   // Deliberately localStorage and nothing else: a tracker that needs an account
   // is a tracker most people bounce off, and we have no business holding anyone's
   // application list on a server. Everything here stays in this browser.
-  var KEY = 'ie.saved.v1', saved = Object.create(null), currentIds = {};
-  function rowSnapshot(tr) {
-    var td = tr.cells, link = tr.querySelector('a[href]');
-    return {id: tr.dataset.id, ids: (tr.dataset.ids || tr.dataset.id).split('|'),
-      company: td[1].innerText.trim(), title: td[2].innerText.trim(),
-      season: td[3].innerText.trim(), category: td[4].innerText.trim(),
-      location: td[5].innerText.trim(), salary: td[6].innerText.trim(),
-      posted: tr.dataset.posted || '', url: link ? link.href : ''};
-  }
-  try { saved = SavedRoleStore.parse(localStorage.getItem(KEY)); } catch (e) {
-    document.getElementById('storagewarning').hidden = false;
-  }
-  var current = rows.map(rowSnapshot);
-  current.forEach(function (row) { currentIds[row.id] = true; });
-  saved = SavedRoleStore.reconcile(saved, current);
-  function persist() {
-    try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {
-      document.getElementById('storagewarning').hidden = false;
+  var KEY = 'ie.saved.v1', saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { saved = {}; }
+  // Remove ids no longer present in the current artifact. Otherwise the badge
+  // counts invisible roles that cannot be viewed, exported, or unstarred.
+  //
+  // A row can stand for several requisitions (an employer that opened the same
+  // job three times). Every one of those ids has to count as present, and a
+  // star on a requisition that is now represented by a sibling has to MOVE to
+  // the surviving row — otherwise folding the display would quietly delete
+  // roles a reader had saved.
+  var currentIds = {};
+  rows.forEach(function (tr) {
+    var ids = (tr.dataset.ids || tr.dataset.id).split('|');
+    ids.forEach(function (id) { currentIds[id] = true; });
+    if (ids.length > 1 && !saved[tr.dataset.id]) {
+      for (var i = 0; i < ids.length; i++) {
+        if (saved[ids[i]]) { saved[tr.dataset.id] = saved[ids[i]]; break; }
+      }
     }
+    ids.forEach(function (id) { if (id !== tr.dataset.id) delete saved[id]; });
+  });
+  Object.keys(saved).forEach(function (id) { if (!currentIds[id]) delete saved[id]; });
+  function persist() {
+    try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) { /* private mode */ }
   }
   persist();
   function savedCount() { return Object.keys(saved).length; }
@@ -452,35 +436,14 @@
     }
     tr.classList.toggle('saved', on);
   }
-  function paintSavedList() {
-    var list = document.getElementById('savedlist'); list.replaceChildren();
-    document.getElementById('savedtotal').textContent = savedCount();
-    Object.keys(saved).sort(function (a,b) { return saved[b].savedAt - saved[a].savedAt; }).forEach(function (id) {
-      var item = saved[id], card = document.createElement('article'); card.className = 'savedcard';
-      var title = document.createElement(item.url ? 'a' : 'strong');
-      title.textContent = (item.company ? item.company + ' — ' : '') + (item.title || 'Saved role');
-      if (item.url) { title.href = item.url; title.target = '_blank'; title.rel = 'noopener'; }
-      var info = document.createElement('p'); info.className = 'muted';
-      info.textContent = [item.location, item.posted ? 'Posted ' + item.posted : 'Posting date unknown',
-        currentIds[id] ? 'In the current fresh feed' : 'No longer in the fresh feed — check employer'].filter(Boolean).join(' · ');
-      var remove = document.createElement('button'); remove.type = 'button'; remove.className = 'ghost';
-      remove.textContent = 'Remove saved role';
-      remove.addEventListener('click', function () { delete saved[id]; persist(); paintAll(); apply(); });
-      card.append(title, info, remove); list.appendChild(card);
-    });
-    if (!savedCount()) { var emptySaved = document.createElement('p'); emptySaved.textContent = 'Click ☆ beside a role to save it here.'; list.appendChild(emptySaved); }
-  }
-  function paintAll() { rows.forEach(paintRow); savedn.textContent = savedCount(); paintSavedList(); }
-  document.getElementById('viewsaved').addEventListener('click', function () {
-    var panel = document.getElementById('savedpanel'); panel.open = true; panel.scrollIntoView({behavior:'smooth',block:'start'});
-  });
+  function paintAll() { rows.forEach(paintRow); savedn.textContent = savedCount(); }
 
   document.getElementById('rows').addEventListener('click', function (ev) {
     var btn = ev.target.closest ? ev.target.closest('.star') : null;
     if (!btn) return;
     var tr = btn.closest('tr'), id = tr.dataset.id;
-    if (saved[id]) { delete saved[id]; } else { saved[id] = SavedRoleStore.snapshot(rowSnapshot(tr)); }
-    persist(); paintAll();
+    if (saved[id]) { delete saved[id]; } else { saved[id] = Date.now(); }
+    persist(); paintRow(tr); savedn.textContent = savedCount();
     if (savedonly.checked) apply();
   });
 
@@ -495,21 +458,23 @@
   document.getElementById('export').addEventListener('click', function () {
     var head = ['company', 'role', 'cycle', 'category', 'location', 'salary', 'posted', 'url'],
         lines = [head.join(',')];
-    Object.keys(saved).forEach(function (id) {
-      var item = saved[id];
-      lines.push([item.company, item.title, item.season, item.category, item.location,
-                  item.salary, item.posted, item.url].map(csvCell).join(','));
+    rows.forEach(function (tr) {
+      if (!saved[tr.dataset.id]) return;
+      var td = tr.cells, link = tr.querySelector('a[href]');
+      lines.push([td[1], td[2], td[3], td[4], td[5], td[6], td[7]]
+        .map(function (c) { return csvCell(c.innerText.trim()); })
+        .concat(csvCell(link ? link.href : '')).join(','));
     });
     if (lines.length === 1) { alert('Star a few roles first — then this exports them.'); return; }
     var blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8' }),
         a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'my-saved-it-roles.csv';
+    a.download = 'my-saved-internships.csv';
     a.click(); URL.revokeObjectURL(a.href);
   });
 
   function cutoffISO(days) {
-    var d = new Date(Date.now() - days * 86400000);
+    var d = new Date(new Date("2026-11-11T17:56:56Z").getTime() - days * 86400000);
     return d.toISOString().slice(0, 10);
   }
   // What each sponsorship option actually means. The old single "F-1 friendly"
@@ -524,41 +489,10 @@
     if (mode === 'restricted') return restricted;
     return true;
   }
-  document.querySelectorAll('[data-view]').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      reset();
-      if (btn.dataset.view === 'fresh') age.value = '2';
-      if (btn.dataset.view === 'local') cycle.value = 'Orlando area';
-      if (btn.dataset.view === 'intern') program.value = 'Internship';
-      apply();
-    });
-  });
-  document.getElementById('clearsaved').addEventListener('click', function() {
-    if (!savedCount() || !window.confirm('Clear all saved jobs in this browser?')) return;
-    saved = Object.create(null); persist(); paintAll(); apply();
-  });
-  var sort = document.getElementById('sort');
-  sort.addEventListener('change', apply);
-  var lastFetch = new Date("2026-11-11T17:56:56Z");
-  document.getElementById('freshstatus').textContent =
-    !Number.isFinite(lastFetch.getTime()) ? 'Collection time unavailable.' :
-    Date.now() - lastFetch.getTime() > 86400000 ?
-    'Collection is overdue. Last fetched ' + lastFetch.toLocaleString() + '. Results may be incomplete.' :
-    'Last collection: ' + lastFetch.toLocaleString() + '. Every collection scans the complete employer registry (GitHub scheduling may delay starts).';
   function apply() {
-    rows.sort(function(a,b) {
-      if (sort.value === 'local') {
-        var localOrder = Number(b.dataset.cycle === 'Orlando area') - Number(a.dataset.cycle === 'Orlando area');
-        if (localOrder) return localOrder;
-      }
-      if (sort.value === 'company') return a.cells[1].textContent.localeCompare(b.cells[1].textContent);
-      if (sort.value === 'role') return a.cells[2].textContent.localeCompare(b.cells[2].textContent);
-      return (b.dataset.posted || '').localeCompare(a.dataset.posted || '');
-    });
-    rows.forEach(function(tr) { document.getElementById('rows').appendChild(tr); });
     var text = q.value.trim().toLowerCase(), cy = cycle.value, ca = cat.value,
         sp = spon.value, proven = h1b.checked, shown = 0,
-        minPosted = age.value ? Date.now() - parseInt(age.value, 10) * 86400000 : 0,
+        minPosted = age.value ? cutoffISO(parseInt(age.value, 10)) : '',
         statedOnly = stated.checked, prog = program.value,
         remoteOnly = remote.checked, onlySaved = savedonly.checked;
     rows.forEach(function (tr) {
@@ -574,7 +508,7 @@
         && (!prog || tr.dataset.program.indexOf(prog) !== -1)
         && (!remoteOnly || tr.dataset.remote === '1')
         && (!onlySaved || !!saved[tr.dataset.id])
-        && (!minPosted || (Date.parse(tr.dataset.postedTime || tr.dataset.posted || '') >= minPosted))
+        && (!minPosted || (tr.dataset.posted && tr.dataset.posted >= minPosted))
         && (!statedOnly || tr.dataset.inferred === '0');
       tr.style.display = ok ? '' : 'none';
       // Count OPENINGS, not rows. A row standing for eight requisitions is
@@ -610,8 +544,7 @@
     (fit.addEventListener ? fit.addEventListener('change', sync)
                           : fit.addListener(sync));
   }
-  age.value = '';
-  paintAll(); apply();
+  paintAll();
   // Radar search (separate list, separate box).
   var rq = document.getElementById('rq');
   if (rq) {

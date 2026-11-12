@@ -3,3 +3,4 @@
 {"ts": "2026-11-12T08:26:00Z", "scope": "local", "open": 7, "local": 4, "new": 0, "boards": 15, "ok_rate": 0.933, "secs": 245.9}
 {"ts": "2026-11-12T08:32:55Z", "scope": "local", "open": 7, "local": 4, "new": 0, "boards": 15, "ok_rate": 0.933, "secs": 188.4}
 {"ts": "2026-11-12T09:25:22Z", "scope": "full", "open": 75, "local": 7, "new": 68, "boards": 5392, "ok_rate": 0.932, "secs": 1360.2}
+{"ts": "2026-11-12T09:46:35Z", "scope": "full", "open": 52, "local": 6, "new": 0, "boards": 5392, "ok_rate": 0.991, "secs": 1139.3}

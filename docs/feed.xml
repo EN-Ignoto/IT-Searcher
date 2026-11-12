@@ -5,23 +5,15 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-12T09:25:22Z</updated>
+  <updated>2026-11-12T09:46:35Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
-  <entry>
-    <id>urn:it-searcher:oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642</id>
-    <title>[Remote] Remote Customer Technical Support — ADT</title>
-    <link href="https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States · Not stated · Beginner-friendly · No years of experience stated · Asks 1 year customer-service-type experience</summary>
-  </entry>
   <entry>
     <id>urn:it-searcher:ashby:agave:a263e45f-e86e-4c78-882e-a79da649e861</id>
     <title>[Remote] Technical Support Engineer (TSE) — Agave</title>
     <link href="https://jobs.ashbyhq.com/Agave/a263e45f-e86e-4c78-882e-a79da649e861"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · None required — 2 years preferred · Remote region not stated</summary>
+    <summary>Remote · Not stated · Stretch · None required — 2 years preferred · No experience stated, but this title usually expects some · Remote region not stated</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f</id>
@@ -32,22 +24,6 @@
     <summary>Remote - United States · Internship · Beginner-friendly · Internship — no experience requirement stated</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:rippling:conceptplus:4060476b-d89e-4430-a86a-f6f5bc600b03</id>
-    <title>[Remote] Cyber Analyst — Concept Plus</title>
-    <link href="https://ats.rippling.com/conceptplus/jobs/4060476b-d89e-4430-a86a-f6f5bc600b03"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:rippling:conceptplus:f9ddd964-6bb4-4baf-8826-10e891c5270b</id>
-    <title>[Remote] SOC Analyst (WarU E-ITSS) — Concept Plus</title>
-    <link href="https://ats.rippling.com/conceptplus/jobs/f9ddd964-6bb4-4baf-8826-10e891c5270b"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
-  </entry>
-  <entry>
     <id>urn:it-searcher:ashby:eightsleep:0ae8cdbe-8100-4f59-b702-16d836ab5550</id>
     <title>[Remote] Security &amp; IT Intern — Eight Sleep</title>
     <link href="https://jobs.ashbyhq.com/eightsleep/0ae8cdbe-8100-4f59-b702-16d836ab5550"/>
@@ -56,28 +32,12 @@
     <summary>Remote - US · Internship · Beginner-friendly · Internship — no experience requirement stated</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:lever:firemon:55eed579-a00a-4d3c-a1ae-2e0ef9bd7063</id>
-    <title>[Remote] Customer Support Engineer — Firemon</title>
-    <link href="https://jobs.lever.co/firemon/55eed579-a00a-4d3c-a1ae-2e0ef9bd7063"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>USA, Remote · Not stated · Beginner-friendly · No years of experience stated · Shift work mentioned: 24/7</summary>
-  </entry>
-  <entry>
     <id>urn:it-searcher:ashby:fluidstack:f1811455-d414-4630-b22c-58a585163864</id>
     <title>[Remote] Security Systems Administrator — FluidStack</title>
     <link href="https://jobs.ashbyhq.com/fluidstack/f1811455-d414-4630-b22c-58a585163864"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>U.S. Remote · Not stated · Beginner-friendly · No years of experience stated · Remote region not stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:recruitee:hardrockdigital:2823560</id>
-    <title>[Remote] NOC Engineer — Hard Rock Digital</title>
-    <link href="https://hardrockdigital.recruitee.com/o/noc-engineer-5"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>United States, Florida, United States (Remote) · Not stated · Beginner-friendly · No years of experience stated · Shift work mentioned: 2nd shifts</summary>
+    <summary>U.S. Remote · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Remote region not stated</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861</id>
@@ -88,44 +48,12 @@
     <summary>Remote, US · Not stated · Beginner-friendly · No years of experience stated · Shift work mentioned: 24/7</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:workday:halma:/job/Orlando/Jr-IT-Support-Specialist_JR26_001243</id>
-    <title>[Local] Jr. IT Support Specialist — Ocean Optics</title>
-    <link href="https://halma.wd3.myworkdayjobs.com/halma/job/Orlando/Jr-IT-Support-Specialist_JR26_001243"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Local"/>
-    <summary>Orlando · 17 mi · Not stated · Beginner-friendly · 0+ years — open to no experience</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:rippling:patientnow:19feb150-fa2b-4a72-85a0-f678a7f7c070</id>
-    <title>[Remote] Technical Support Specialist — PatientNow</title>
-    <link href="https://ats.rippling.com/patientnow/jobs/19feb150-fa2b-4a72-85a0-f678a7f7c070"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:oracle:fa-eqpz-saasfaprod1.fa.ocs.oraclecloud.com:2564</id>
-    <title>[Nearby] Utilities Systems Operator I, II, III, IV, V — Polk County</title>
-    <link href="https://fa-eqpz-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2564"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Nearby"/>
-    <summary>Bartow, FL, United States · 38 mi · Not stated · Stretch · 1 year required · Shift work mentioned: on call rotation</summary>
-  </entry>
-  <entry>
     <id>urn:it-searcher:ashby:prefect:6bc102cc-112f-441f-adc8-d53dc83a93ec</id>
     <title>[Remote] Security &amp; IT Operations Engineer — Prefect</title>
     <link href="https://jobs.ashbyhq.com/prefect/6bc102cc-112f-441f-adc8-d53dc83a93ec"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Remote region not stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:rippling:rippling:eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd</id>
-    <title>[Remote] Technical Support Specialist, Platform — Rippling</title>
-    <link href="https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
+    <summary>Remote · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Remote region not stated</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:ashby:skydio:8ba69d85-b786-4399-a5c0-ee0969054315</id>
@@ -139,41 +67,9 @@
     <id>urn:it-searcher:ashby:tensorwave:ffbb8ec2-16e8-4f5c-91ff-bf60786e4f47</id>
     <title>[Remote] Staff Network Engineer — TensorWave</title>
     <link href="https://jobs.ashbyhq.com/TensorWave/ffbb8ec2-16e8-4f5c-91ff-bf60786e4f47"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-12T09:27:36Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Remote region not stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220</id>
-    <title>[Remote] Technical Support Specialist — Versapay</title>
-    <link href="https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>United States (Remote) · Not stated · Beginner-friendly · No years of experience stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:B75F7AE3B57549B480AB4D68852A7C5C</id>
-    <title>[Local] Network &amp; Desk Technician — Marriott</title>
-    <link href="https://dejobs.org/kissimmee-fl/network-desk-technician/B75F7AE3B57549B480AB4D68852A7C5C/job/"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Local"/>
-    <summary>Kissimmee, FL · 2 mi · Full-time · Beginner-friendly · No years of experience stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:accenture:/job/Madrid/Cloud-Infrastructure-Specialist---Azure-Virtual-Desktop---Citrix_14795618</id>
-    <title>[Remote] Cloud Infrastructure Specialist / Azure Virtual Desktop / Citrix — Accenture</title>
-    <link href="https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Madrid/Cloud-Infrastructure-Specialist---Azure-Virtual-Desktop---Citrix_14795618"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>— · Not stated · Beginner-friendly · No years of experience stated · Remote region not stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:acehardware:/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089</id>
-    <title>[Nearby] RSC IT Coordinator, 1st shift — Ace Hardware</title>
-    <link href="https://acehardware.wd1.myworkdayjobs.com/External/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Nearby"/>
-    <summary>FL - Plant City · 47 mi · Not stated · Beginner-friendly · No years of experience stated</summary>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:alpaca:6240586004</id>
@@ -189,7 +85,7 @@
     <link href="https://job-boards.greenhouse.io/alphasense/jobs/8495375002"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote - United States · Not stated · Beginner-friendly · No years of experience stated</summary>
+    <summary>Remote - United States · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:avidxchangeinc:5283540007</id>
@@ -208,44 +104,28 @@
     <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Remote region not stated</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100</id>
-    <title>[Remote] Technical Support Representative - Remote — BigCommerce</title>
-    <link href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>United States - Remote · Not stated · Beginner-friendly · No years of experience stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:bluescopenac:/job/OH-Remote/Information-Security-Analyst--App-Security---AI-Security-_REQ-3166</id>
-    <title>[Remote] Information Security Analyst (App Security) — BlueScope</title>
-    <link href="https://bluescopenac.wd5.myworkdayjobs.com/BNACareers/job/OH-Remote/Information-Security-Analyst--App-Security---AI-Security-_REQ-3166"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>OH-Remote · Not stated · Stretch · 1 year required · Bachelor's degree listed · Mentions Security+/Network+ · Remote region not stated</summary>
-  </entry>
-  <entry>
     <id>urn:it-searcher:greenhouse:correlationone:6234712004</id>
     <title>[Remote] Teaching Assistant: Data Center Technician — Correlation One</title>
     <link href="https://job-boards.greenhouse.io/correlationone/jobs/6234712004"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-12T09:27:36Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Mentions Security+/Network+ · Remote region not stated</summary>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Mentions Security+/Network+ · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:correlationone:6254914004</id>
     <title>[Remote] Teaching Assistant: Data Center Technician (Australia) — Correlation One</title>
     <link href="https://job-boards.greenhouse.io/correlationone/jobs/6254914004"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-12T09:27:36Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Mentions Security+/Network+ · Remote region not stated</summary>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Mentions Security+/Network+ · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:customerio:8246114</id>
     <title>[Remote] Technical Support Engineer, Canada — Customer.io</title>
     <link href="https://job-boards.greenhouse.io/customerio/jobs/8246114"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-12T09:27:36Z</updated>
     <category term="Remote"/>
-    <summary>Americas Remote · Not stated · Beginner-friendly · No years of experience stated</summary>
+    <summary>Americas Remote · Not stated · Beginner-friendly · No years of experience stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:expel:8936554002</id>
@@ -256,20 +136,20 @@
     <summary>Remote · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: 24x7 · Remote region not stated</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:workday:ferguson:/job/Remote/Associate-Systems-Administrator---Supply-Chain-Rapid-Response-Team_R-141717-1</id>
-    <title>[Remote] Associate Systems Administrator - Supply Chain Rapid Response Team — Ferguson</title>
-    <link href="https://ferguson.wd1.myworkdayjobs.com/Ferguson_Experienced/job/Remote/Associate-Systems-Administrator---Supply-Chain-Rapid-Response-Team_R-141717-1"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote · Not stated · Stretch · 1 year required · Mentions Security+/Network+ · Remote region not stated</summary>
-  </entry>
-  <entry>
     <id>urn:it-searcher:greenhouse:galaxydigitalservices:6163325004</id>
     <title>[Remote] Off-Cycle 2026 Cybersecurity Internship — Galaxy</title>
     <link href="https://job-boards.greenhouse.io/galaxydigitalservices/jobs/6163325004"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Internship · Beginner-friendly · Internship — no experience requirement stated · Asks 0 months customer-service-type experience · Remote region not stated</summary>
+    <summary>Remote · Internship · Beginner-friendly · Internship — no experience requirement stated · Remote region not stated</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:greenhouse:gleanwork:4734007005</id>
+    <title>[Remote] Designated Technical Support Engineer - West — Glean</title>
+    <link href="https://job-boards.greenhouse.io/gleanwork/jobs/4734007005"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>Remote - US · Not stated · Beginner-friendly · No years of experience stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:gleanwork:4735026005</id>
@@ -277,23 +157,15 @@
     <link href="https://job-boards.greenhouse.io/gleanwork/jobs/4735026005"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote - US · Not stated · Beginner-friendly · No years of experience stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:greenhouse:gleanwork:4734007005</id>
-    <title>[Remote] Designated Technical Support Engineer - West — Glean</title>
-    <link href="https://job-boards.greenhouse.io/gleanwork/jobs/4734007005"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote - US · Not stated · Beginner-friendly · No years of experience stated</summary>
+    <summary>Remote - US · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:hearst:4466177009</id>
     <title>[Local] Broadcast Systems Technician — Hearst</title>
     <link href="https://job-boards.greenhouse.io/hearst/jobs/4466177009"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-12T09:27:36Z</updated>
     <category term="Local"/>
-    <summary>Winter Park, FL, United States · 22 mi · Not stated · Beginner-friendly · No years of experience stated</summary>
+    <summary>Winter Park, FL, United States · 22 mi · Not stated · Beginner-friendly · No years of experience stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:higherlogic:8033739003</id>
@@ -304,124 +176,12 @@
     <summary>US-Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 2 years customer-service-type experience</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:workday:kla:/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2638091-1</id>
-    <title>[Remote] Customer Support Engineer - Utica, NY — KLA</title>
-    <link href="https://kla.wd1.myworkdayjobs.com/Search/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2638091-1"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Virtual/Remote USA · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Shift work mentioned: 24/7</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:kla:/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2639052</id>
-    <title>[Remote] Customer Support Engineer - Utica, NY — KLA</title>
-    <link href="https://kla.wd1.myworkdayjobs.com/Search/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2639052"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Virtual/Remote USA · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Shift work mentioned: 24/7</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057</id>
-    <title>[Remote] Network Site Design Intern — Leidos</title>
-    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>6314 Remote/Teleworker US · Internship · Beginner-friendly · Internship — no experience requirement stated · Clearance must be obtainable</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:bcbsla:/job/Remote-LA/CW-IT-Service-Management-Intern--Spring-2027-_R12137</id>
-    <title>[Remote] CW IT Service Management Intern (Spring 2027) — Louisiana Blue</title>
-    <link href="https://bcbsla.wd1.myworkdayjobs.com/Generation_Blue/job/Remote-LA/CW-IT-Service-Management-Intern--Spring-2027-_R12137"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote-LA · Internship · Beginner-friendly · Entry-level / no experience required · Remote region not stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:modmed:/job/Remote---USA/Product-Support-Specialist-1_R5073</id>
-    <title>[Remote] Product Support Specialist 1 — Modernizing Medicine</title>
-    <link href="https://modmed.wd501.myworkdayjobs.com/ModMed12/job/Remote---USA/Product-Support-Specialist-1_R5073"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote - USA · Not stated · Stretch · 1 year required · Bachelor's degree listed</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:ncratleos:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Miami--FL---Part-Time-_R1155314</id>
-    <title>[Remote] Field Service Technician II - Miami, FL  (Part Time) — NCR Atleos</title>
-    <link href="https://ncratleos.wd1.myworkdayjobs.com/ext_atleos_us/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Miami--FL---Part-Time-_R1155314"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>FLORIDA VIRTUAL, USA · Part-time · Stretch · No years of experience stated · Level II title</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:ncratleos:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Tallahassee--FL_R1155151</id>
-    <title>[Remote] Field Service Technician II - Tallahassee, FL — NCR Atleos</title>
-    <link href="https://ncratleos.wd1.myworkdayjobs.com/ext_atleos_us/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Tallahassee--FL_R1155151"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>FLORIDA VIRTUAL, USA · Not stated · Stretch · 1 year required · Mentions Security+/Network+ · Shift work mentioned: weekend shifts</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:ncr:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Gainesville--FL_R0158303</id>
-    <title>[Remote] Field Service Technician - Gainesville, FL — NCR Voyix</title>
-    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Gainesville--FL_R0158303"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>FLORIDA VIRTUAL, USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:ncr:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Ft-Lauderdale--FL_R0158306</id>
-    <title>[Remote] Field Service Technician - Ft Lauderdale, FL — NCR Voyix</title>
-    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Ft-Lauderdale--FL_R0158306"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>FLORIDA VIRTUAL, USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:ncr:/job/VIRTUAL-SOUTHEAST-REGION-USA/Field-Service-Technician---Southeast-Region_R0158431-4</id>
-    <title>[Remote] Field Service Technician - Southeast Region — NCR Voyix</title>
-    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/VIRTUAL-SOUTHEAST-REGION-USA/Field-Service-Technician---Southeast-Region_R0158431-4"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>VIRTUAL, SOUTHEAST REGION USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:ncr:/job/VIRTUAL-NORTHWEST-REGION-USA/Field-Service-Technician---Northwest-Region_R0158434-1</id>
-    <title>[Remote] Field Service Technician - Northwest Region — NCR Voyix</title>
-    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/VIRTUAL-NORTHWEST-REGION-USA/Field-Service-Technician---Northwest-Region_R0158434-1"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>VIRTUAL, NORTHWEST REGION USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:ncr:/job/VIRTUAL-NORTHEAST-REGION-USA/Field-Service-Technician---Northeast-Region_R0158425-1</id>
-    <title>[Remote] Field Service Technician - Northeast Region — NCR Voyix</title>
-    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/VIRTUAL-NORTHEAST-REGION-USA/Field-Service-Technician---Northeast-Region_R0158425-1"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>VIRTUAL, NORTHEAST REGION USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:ncr:/job/VIRTUAL-SOUTHWEST-REGION-USA/Field-Service-Technician---Southwest-Region_R0158435</id>
-    <title>[Remote] Field Service Technician - Southwest Region — NCR Voyix</title>
-    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/VIRTUAL-SOUTHWEST-REGION-USA/Field-Service-Technician---Southwest-Region_R0158435"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>VIRTUAL, SOUTHWEST REGION USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:workday:nabancard:/job/US---Remote/POS-Tech-Support-Specialist_JR102005</id>
-    <title>[Remote] POS Tech Support Specialist — NorthAB</title>
-    <link href="https://nabancard.wd1.myworkdayjobs.com/nab/job/US---Remote/POS-Tech-Support-Specialist_JR102005"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>US - Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Shift work mentioned: evening shift</summary>
-  </entry>
-  <entry>
     <id>urn:it-searcher:greenhouse:oneimaging:4484490009</id>
     <title>[Remote] Cloud Systems Administrator — OneImaging</title>
     <link href="https://job-boards.greenhouse.io/oneimaging/jobs/4484490009"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Remote region not stated</summary>
+    <summary>Remote · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Remote region not stated</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:opensesame:8188645</id>
@@ -429,7 +189,7 @@
     <link href="https://boards.greenhouse.io/opensesame/jobs/8188645?gh_jid=8188645"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Remote region not stated</summary>
+    <summary>Remote · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Remote region not stated</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:relativity:8910062002</id>
@@ -440,41 +200,33 @@
     <summary>Cape Canaveral, Florida, United States · 49 mi · Not stated · Stretch · 1 year required · Clearance must be obtainable · Mentions Security+/Network+</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1</id>
-    <title>[Remote] Service Desk Analyst I — Republic Services</title>
-    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote - USA · Not stated · Beginner-friendly · None required — 1 year preferred</summary>
-  </entry>
-  <entry>
     <id>urn:it-searcher:greenhouse:salesloft:8119953</id>
     <title>[Remote] Salesforce Business Systems Administrator — Salesloft</title>
     <link href="https://www.salesloft.com/company/careers?gh_jid=8119953"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-12T09:27:36Z</updated>
     <category term="Remote"/>
-    <summary>United States, Remote · Not stated · Stretch · None required — 2 years preferred · Bachelor's degree listed</summary>
+    <summary>United States, Remote · Not stated · Stretch · None required — 2 years preferred · Bachelor's degree listed · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:samsara:8355516</id>
     <title>[Remote] Technical Support Specialist - German Fluency — Samsara</title>
     <link href="https://www.samsara.com/company/careers/roles/8355516?gh_jid=8355516"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-12T09:27:36Z</updated>
     <category term="Remote"/>
-    <summary>Remote - UK · Not stated · Beginner-friendly · None required — 3 years preferred · Remote region not stated</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:greenhouse:sironamedical:4731579005</id>
-    <title>[Remote] Application Support Specialist - Overnight M-F — Sirona Medical</title>
-    <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4731579005"/>
-    <updated>2026-11-12T09:25:22Z</updated>
-    <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
+    <summary>Remote - UK · Not stated · Beginner-friendly · None required — 3 years preferred · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:sironamedical:4731578005</id>
     <title>[Remote] Application Support Specialist - Second Shift M-F — Sirona Medical</title>
     <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4731578005"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:greenhouse:sironamedical:4731579005</id>
+    <title>[Remote] Application Support Specialist - Overnight M-F — Sirona Medical</title>
+    <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4731579005"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
     <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
@@ -501,15 +253,135 @@
     <link href="https://job-boards.greenhouse.io/togetherai/jobs/5202015007"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Full-time · Beginner-friendly · No years of experience stated · Asks 1 year customer-service-type experience · Shift work mentioned: weekend shift · Remote region not stated</summary>
+    <summary>Remote · Full-time · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Asks 1 year customer-service-type experience · Shift work mentioned: weekend shift · Remote region not stated</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:trace3:8329225</id>
     <title>[Remote] Cloud FinOps Consulting Intern — Trace3</title>
     <link href="https://job-boards.greenhouse.io/trace3/jobs/8329225"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>Remote · Internship · Beginner-friendly · Internship — no experience requirement stated · Remote region not stated · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:lever:firemon:55eed579-a00a-4d3c-a1ae-2e0ef9bd7063</id>
+    <title>[Remote] Customer Support Engineer — Firemon</title>
+    <link href="https://jobs.lever.co/firemon/55eed579-a00a-4d3c-a1ae-2e0ef9bd7063"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Internship · Beginner-friendly · Internship — no experience requirement stated · Remote region not stated</summary>
+    <summary>USA, Remote · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Shift work mentioned: 24/7</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220</id>
+    <title>[Remote] Technical Support Specialist — Versapay</title>
+    <link href="https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>United States (Remote) · Not stated · Beginner-friendly · No years of experience stated</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:B75F7AE3B57549B480AB4D68852A7C5C</id>
+    <title>[Local] Network &amp; Desk Technician — Marriott</title>
+    <link href="https://dejobs.org/kissimmee-fl/network-desk-technician/B75F7AE3B57549B480AB4D68852A7C5C/job/"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Local"/>
+    <summary>Kissimmee, FL · 2 mi · Full-time · Beginner-friendly · No years of experience stated</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:oracle:fa-eqpz-saasfaprod1.fa.ocs.oraclecloud.com:2564</id>
+    <title>[Nearby] Utilities Systems Operator I, II, III, IV, V — Polk County</title>
+    <link href="https://fa-eqpz-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2564"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Nearby"/>
+    <summary>Bartow, FL, United States · 38 mi · Not stated · Stretch · 1 year required · Shift work mentioned: on call rotation · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642</id>
+    <title>[Remote] Remote Customer Technical Support — ADT</title>
+    <link href="https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States · Not stated · Beginner-friendly · No years of experience stated · Asks 1 year customer-service-type experience</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:recruitee:hardrockdigital:2823560</id>
+    <title>[Remote] NOC Engineer — Hard Rock Digital</title>
+    <link href="https://hardrockdigital.recruitee.com/o/noc-engineer-5"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>United States, Florida, United States (Remote) · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Shift work mentioned: 2nd shifts</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:rippling:conceptplus:4060476b-d89e-4430-a86a-f6f5bc600b03</id>
+    <title>[Remote] Cyber Analyst — Concept Plus</title>
+    <link href="https://ats.rippling.com/conceptplus/jobs/4060476b-d89e-4430-a86a-f6f5bc600b03"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:rippling:conceptplus:f9ddd964-6bb4-4baf-8826-10e891c5270b</id>
+    <title>[Remote] SOC Analyst (WarU E-ITSS) — Concept Plus</title>
+    <link href="https://ats.rippling.com/conceptplus/jobs/f9ddd964-6bb4-4baf-8826-10e891c5270b"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:rippling:patientnow:19feb150-fa2b-4a72-85a0-f678a7f7c070</id>
+    <title>[Remote] Technical Support Specialist — PatientNow</title>
+    <link href="https://ats.rippling.com/patientnow/jobs/19feb150-fa2b-4a72-85a0-f678a7f7c070"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:rippling:rippling:eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd</id>
+    <title>[Remote] Technical Support Specialist, Platform — Rippling</title>
+    <link href="https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:accenture:/job/Madrid/Cloud-Infrastructure-Specialist---Azure-Virtual-Desktop---Citrix_14795618</id>
+    <title>[Remote] Cloud Infrastructure Specialist / Azure Virtual Desktop / Citrix — Accenture</title>
+    <link href="https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Madrid/Cloud-Infrastructure-Specialist---Azure-Virtual-Desktop---Citrix_14795618"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>— · Not stated · Beginner-friendly · No years of experience stated · Remote region not stated · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:acehardware:/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089</id>
+    <title>[Nearby] RSC IT Coordinator, 1st shift — Ace Hardware</title>
+    <link href="https://acehardware.wd1.myworkdayjobs.com/External/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Nearby"/>
+    <summary>FL - Plant City · 47 mi · Not stated · Beginner-friendly · No years of experience stated</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:bcbsla:/job/Remote-LA/CW-IT-Service-Management-Intern--Spring-2027-_R12137</id>
+    <title>[Remote] CW IT Service Management Intern (Spring 2027) — Louisiana Blue</title>
+    <link href="https://bcbsla.wd1.myworkdayjobs.com/Generation_Blue/job/Remote-LA/CW-IT-Service-Management-Intern--Spring-2027-_R12137"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>Remote-LA · Internship · Beginner-friendly · Entry-level / no experience required · Remote region not stated · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100</id>
+    <title>[Remote] Technical Support Representative - Remote — BigCommerce</title>
+    <link href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>United States - Remote · Not stated · Beginner-friendly · No years of experience stated</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:bluescopenac:/job/OH-Remote/Information-Security-Analyst--App-Security---AI-Security-_REQ-3166</id>
+    <title>[Remote] Information Security Analyst (App Security) — BlueScope</title>
+    <link href="https://bluescopenac.wd5.myworkdayjobs.com/BNACareers/job/OH-Remote/Information-Security-Analyst--App-Security---AI-Security-_REQ-3166"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>OH-Remote · Not stated · Stretch · 1 year required · Bachelor's degree listed · Mentions Security+/Network+ · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541</id>
@@ -520,12 +392,12 @@
     <summary>Remote - US · Not stated · Beginner-friendly · No years of experience stated · Mentions Security+/Network+</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:workday:unisys:/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786</id>
-    <title>[Remote] Level 2 NOC Systems Administrator – Linux/Unix Focus — Unisys</title>
-    <link href="https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786"/>
+    <id>urn:it-searcher:workday:ferguson:/job/Remote/Associate-Systems-Administrator---Supply-Chain-Rapid-Response-Team_R-141717-1</id>
+    <title>[Remote] Associate Systems Administrator - Supply Chain Rapid Response Team — Ferguson</title>
+    <link href="https://ferguson.wd1.myworkdayjobs.com/Ferguson_Experienced/job/Remote/Associate-Systems-Administrator---Supply-Chain-Rapid-Response-Team_R-141717-1"/>
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>USA Remote · Not stated · Stretch · 2 years required — education/certs may substitute · Shift work mentioned: rotating shifts</summary>
+    <summary>Remote · Not stated · Stretch · 1 year required · Mentions Security+/Network+ · Remote region not stated</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:workday:godirect:/job/United-States-Remote/Summer-2027-Technology-Intern_JR0033187</id>
@@ -534,6 +406,134 @@
     <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
     <summary>United States-Remote · Internship · Beginner-friendly · Internship — no experience requirement stated</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:halma:/job/Orlando/Jr-IT-Support-Specialist_JR26_001243</id>
+    <title>[Local] Jr. IT Support Specialist — Ocean Optics</title>
+    <link href="https://halma.wd3.myworkdayjobs.com/halma/job/Orlando/Jr-IT-Support-Specialist_JR26_001243"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Local"/>
+    <summary>Orlando · 17 mi · Not stated · Beginner-friendly · 0+ years — open to no experience</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:kla:/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2638091-1</id>
+    <title>[Remote] Customer Support Engineer - Utica, NY — KLA</title>
+    <link href="https://kla.wd1.myworkdayjobs.com/Search/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2638091-1"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>Virtual/Remote USA · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Shift work mentioned: 24/7 · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:kla:/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2639052</id>
+    <title>[Remote] Customer Support Engineer - Utica, NY — KLA</title>
+    <link href="https://kla.wd1.myworkdayjobs.com/Search/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2639052"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>Virtual/Remote USA · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Shift work mentioned: 24/7 · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057</id>
+    <title>[Remote] Network Site Design Intern — Leidos</title>
+    <link href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>6314 Remote/Teleworker US · Internship · Beginner-friendly · Internship — no experience requirement stated · Clearance must be obtainable</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:modmed:/job/Remote---USA/Product-Support-Specialist-1_R5073</id>
+    <title>[Remote] Product Support Specialist 1 — Modernizing Medicine</title>
+    <link href="https://modmed.wd501.myworkdayjobs.com/ModMed12/job/Remote---USA/Product-Support-Specialist-1_R5073"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>Remote - USA · Not stated · Stretch · 1 year required · Bachelor's degree listed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:nabancard:/job/US---Remote/POS-Tech-Support-Specialist_JR102005</id>
+    <title>[Remote] POS Tech Support Specialist — NorthAB</title>
+    <link href="https://nabancard.wd1.myworkdayjobs.com/nab/job/US---Remote/POS-Tech-Support-Specialist_JR102005"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>US - Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Shift work mentioned: evening shift</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:ncr:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Ft-Lauderdale--FL_R0158306</id>
+    <title>[Remote] Field Service Technician - Ft Lauderdale, FL — NCR Voyix</title>
+    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Ft-Lauderdale--FL_R0158306"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>FLORIDA VIRTUAL, USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:ncr:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Gainesville--FL_R0158303</id>
+    <title>[Remote] Field Service Technician - Gainesville, FL — NCR Voyix</title>
+    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Gainesville--FL_R0158303"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>FLORIDA VIRTUAL, USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:ncr:/job/VIRTUAL-NORTHEAST-REGION-USA/Field-Service-Technician---Northeast-Region_R0158425-1</id>
+    <title>[Remote] Field Service Technician - Northeast Region — NCR Voyix</title>
+    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/VIRTUAL-NORTHEAST-REGION-USA/Field-Service-Technician---Northeast-Region_R0158425-1"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>VIRTUAL, NORTHEAST REGION USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:ncr:/job/VIRTUAL-NORTHWEST-REGION-USA/Field-Service-Technician---Northwest-Region_R0158434-1</id>
+    <title>[Remote] Field Service Technician - Northwest Region — NCR Voyix</title>
+    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/VIRTUAL-NORTHWEST-REGION-USA/Field-Service-Technician---Northwest-Region_R0158434-1"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>VIRTUAL, NORTHWEST REGION USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:ncr:/job/VIRTUAL-SOUTHEAST-REGION-USA/Field-Service-Technician---Southeast-Region_R0158431-4</id>
+    <title>[Remote] Field Service Technician - Southeast Region — NCR Voyix</title>
+    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/VIRTUAL-SOUTHEAST-REGION-USA/Field-Service-Technician---Southeast-Region_R0158431-4"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>VIRTUAL, SOUTHEAST REGION USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:ncr:/job/VIRTUAL-SOUTHWEST-REGION-USA/Field-Service-Technician---Southwest-Region_R0158435</id>
+    <title>[Remote] Field Service Technician - Southwest Region — NCR Voyix</title>
+    <link href="https://ncr.wd1.myworkdayjobs.com/ext_us/job/VIRTUAL-SOUTHWEST-REGION-USA/Field-Service-Technician---Southwest-Region_R0158435"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>VIRTUAL, SOUTHWEST REGION USA · Not stated · Beginner-friendly · None required — 1 year preferred · Shift work mentioned: weekend shifts · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:ncratleos:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Miami--FL---Part-Time-_R1155314</id>
+    <title>[Remote] Field Service Technician II - Miami, FL  (Part Time) — NCR Atleos</title>
+    <link href="https://ncratleos.wd1.myworkdayjobs.com/ext_atleos_us/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Miami--FL---Part-Time-_R1155314"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>FLORIDA VIRTUAL, USA · Part-time · Stretch · No years of experience stated · Level II title · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:ncratleos:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Tallahassee--FL_R1155151</id>
+    <title>[Remote] Field Service Technician II - Tallahassee, FL — NCR Atleos</title>
+    <link href="https://ncratleos.wd1.myworkdayjobs.com/ext_atleos_us/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Tallahassee--FL_R1155151"/>
+    <updated>2026-11-12T09:27:36Z</updated>
+    <category term="Remote"/>
+    <summary>FLORIDA VIRTUAL, USA · Not stated · Stretch · 1 year required · Mentions Security+/Network+ · Shift work mentioned: weekend shifts · status: closed</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1</id>
+    <title>[Remote] Service Desk Analyst I — Republic Services</title>
+    <link href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>Remote - USA · Not stated · Beginner-friendly · None required — 1 year preferred</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:workday:unisys:/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786</id>
+    <title>[Remote] Level 2 NOC Systems Administrator – Linux/Unix Focus — Unisys</title>
+    <link href="https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786"/>
+    <updated>2026-11-12T09:25:22Z</updated>
+    <category term="Remote"/>
+    <summary>USA Remote · Not stated · Stretch · 2 years required — education/certs may substitute · Shift work mentioned: rotating shifts</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2</id>
@@ -597,7 +597,7 @@
     <link href="https://dejobs.org/orlando-fl/network-engineer/BA300695C674418D983FDDC3B445D250/job/"/>
     <updated>2026-11-12T08:17:17Z</updated>
     <category term="Local"/>
-    <summary>Orlando, FL · 17 mi · Not stated · Stretch · None required — 2 years preferred · Bachelor's degree listed</summary>
+    <summary>Orlando, FL · 17 mi · Not stated · Stretch · None required — 2 years preferred · No experience stated, but this title usually expects some · Bachelor's degree listed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:nlx:kissimmee-fl:BA38F247D143423F9128A685CDE65234</id>
@@ -605,7 +605,7 @@
     <link href="https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/"/>
     <updated>2026-11-12T08:17:17Z</updated>
     <category term="Nearby"/>
-    <summary>Melbourne, FL · 48 mi · Not stated · Beginner-friendly · None required — 5 years preferred · Clearance must be obtainable · Shift work mentioned: 24/7</summary>
+    <summary>Melbourne, FL · 48 mi · Not stated · Stretch · None required — 5 years preferred · Clearance must be obtainable · No experience stated, but this title usually expects some · Shift work mentioned: 24/7</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:nlx:kissimmee-fl:C0E0DEDB75D5407EA60607F791DA7A15</id>

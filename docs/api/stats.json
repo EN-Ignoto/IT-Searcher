@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-12T09:25:22Z",
- "fetched_at": "2026-11-12T09:25:22Z",
+ "generated_at": "2026-11-12T09:46:35Z",
+ "fetched_at": "2026-11-12T09:46:35Z",
  "scope": "full",
- "duration_seconds": 1360.2,
+ "duration_seconds": 1139.3,
  "boards_total": 5392,
  "boards_by_source": {
   "nlx": 1,
@@ -21,46 +21,44 @@
   "breezy": 19,
   "eightfold": 1
  },
- "quarantined": 180,
- "fetched_ok": 4857,
- "fetch_errors": 355,
+ "quarantined": 441,
+ "fetched_ok": 4907,
+ "fetch_errors": 44,
  "errors_by_source": {
   "paradox": 1,
-  "rippling": 4,
-  "workday": 143,
-  "lever": 30,
-  "ashby": 57,
-  "greenhouse": 46,
-  "workable": 74
+  "workday": 20,
+  "workable": 21,
+  "greenhouse": 1,
+  "lever": 1
  },
- "fetch_success_rate": 0.932,
- "snapshots_complete": 4136,
- "snapshots_partial": 721,
- "jobs_seen": 345253,
- "roles_matched": 75,
+ "fetch_success_rate": 0.991,
+ "snapshots_complete": 4170,
+ "snapshots_partial": 737,
+ "jobs_seen": 349327,
+ "roles_matched": 52,
  "dropped_by_reason": {
-  "active-clearance-required": 80,
+  "active-clearance-required": 83,
   "level-2-unverifiable": 1,
-  "not-it-role": 333589,
-  "outside-area": 9120,
+  "not-it-role": 337634,
+  "outside-area": 9085,
   "past-term": 1,
   "remote-not-open-to-florida": 1,
-  "requires-10-years-experience": 2,
+  "requires-10-years-experience": 1,
   "requires-2-years-experience": 16,
   "requires-3-years-experience": 16,
   "requires-4-years-experience": 9,
   "requires-5-years-experience": 14,
   "requires-6-years-experience": 1,
-  "requires-7-years-experience": 2,
-  "requires-8-years-experience": 2,
-  "senior-title": 2276,
-  "stale-posting": 43,
-  "unconfirmed-it-role": 5
+  "requires-7-years-experience": 1,
+  "requires-8-years-experience": 1,
+  "senior-title": 2374,
+  "stale-posting": 34,
+  "unconfirmed-it-role": 3
  },
- "detail_fetches": 125,
+ "detail_fetches": 95,
  "closed_by_posting_check": 0,
  "purged_this_run": 0,
- "new_this_run": 68,
+ "new_this_run": 0,
  "local_sources": [
   {
    "key": "neogov:casselberry",
@@ -215,53 +213,52 @@
  ],
  "local_sources_ok": 14,
  "local_sources_total": 15,
- "open_total": 75,
+ "open_total": 52,
  "open_by_section": {
-  "Local": 7,
-  "Nearby": 6,
-  "Remote": 62
+  "Remote": 41,
+  "Nearby": 5,
+  "Local": 6
  },
  "open_by_fit": {
-  "beginner": 56,
-  "stretch": 15,
+  "stretch": 21,
+  "beginner": 27,
   "unverified": 4
  },
  "open_by_category": {
+  "IT Support / Technician": 24,
+  "IT Operations": 6,
+  "Systems / Infrastructure": 6,
+  "Network / NOC": 4,
+  "Security (entry)": 5,
   "Help Desk / Service Desk": 4,
-  "IT Support / Technician": 37,
-  "Network / NOC": 5,
-  "Systems / Infrastructure": 12,
-  "Technical Support (customer-facing)": 3,
-  "IT Operations": 8,
-  "Security (entry)": 6
+  "Technical Support (customer-facing)": 3
  },
  "open_by_employment": {
+  "Not stated": 43,
+  "Internship": 5,
   "Full-time": 3,
-  "Temporary / contract": 1,
-  "Not stated": 63,
-  "Internship": 7,
-  "Part-time": 1
+  "Temporary / contract": 1
  },
  "open_by_source": {
-  "nlx": 8,
-  "oracle": 2,
-  "ashby": 8,
-  "rippling": 4,
+  "ashby": 7,
+  "greenhouse": 16,
   "lever": 2,
+  "nlx": 8,
+  "oracle": 1,
   "recruitee": 1,
-  "workday": 26,
-  "greenhouse": 24
+  "rippling": 4,
+  "workday": 13
  },
- "posted_date_coverage": 0.947,
+ "posted_date_coverage": 0.923,
  "last_full": {
-  "fetched_at": "2026-11-12T09:25:22Z",
-  "duration_seconds": 1360.2,
+  "fetched_at": "2026-11-12T09:46:35Z",
+  "duration_seconds": 1139.3,
   "boards_total": 5392,
-  "fetched_ok": 4857,
-  "fetch_errors": 355,
-  "fetch_success_rate": 0.932,
-  "jobs_seen": 345253,
-  "roles_matched": 75
+  "fetched_ok": 4907,
+  "fetch_errors": 44,
+  "fetch_success_rate": 0.991,
+  "jobs_seen": 349327,
+  "roles_matched": 52
  },
- "rendered_at": "2026-11-12T09:25:22Z"
+ "rendered_at": "2026-11-12T09:46:35Z"
 }

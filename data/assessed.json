@@ -5,9 +5,10 @@
    "employment": "Not stated",
    "evidence": "2-8 years of experience, ideally in b2b SaaS.",
    "experience": "None required — 2 years preferred",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
    "notes": [
+    "No experience stated, but this title usually expects some",
     "Remote region not stated"
    ],
    "posted_at": "2026-09-01T21:56:00.317+00:00",
@@ -17,11 +18,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Technical Support Engineer (TSE)",
-  "v": 4
+  "v": 5
  },
  "ashby:amplify:4a30a50c-037d-453a-96cf-941a7532c3e4": {
   "a": {
@@ -39,11 +40,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - United States",
   "seen": "2026-11-12",
   "title": "Associate Pilot Support Specialist, STEM",
-  "v": 4
+  "v": 5
  },
  "ashby:amplify:7a41432a-9514-4f9d-90f7-fac0e0ecfdb3": {
   "a": {
@@ -61,11 +62,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - United States",
   "seen": "2026-11-12",
   "title": "Revenue Systems Analyst",
-  "v": 4
+  "v": 5
  },
  "ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f": {
   "a": {
@@ -83,11 +84,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - United States",
   "seen": "2026-11-12",
   "title": "Summer 2027: IT Services Intern",
-  "v": 4
+  "v": 5
  },
  "ashby:ashby:c62ec47a-8de9-4781-b1f7-563a229c4e90": {
   "a": {
@@ -105,11 +106,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
   "seen": "2026-11-12",
   "title": "GTM Systems Analyst",
-  "v": 4
+  "v": 5
  },
  "ashby:check-technologies:4b9f022a-2f7b-46a0-a6ff-bbc63c58a0ab": {
   "a": {
@@ -127,11 +128,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Partner Support Specialist",
-  "v": 4
+  "v": 5
  },
  "ashby:corvus-robotics:52fbad75-35a9-4f22-a1bc-13c8d5ac633a": {
   "a": {
@@ -171,11 +172,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "USA - Remote",
   "seen": "2026-11-12",
   "title": "Revenue Operations Analyst",
-  "v": 4
+  "v": 5
  },
  "ashby:eightsleep:0ae8cdbe-8100-4f59-b702-16d836ab5550": {
   "a": {
@@ -193,11 +194,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
   "seen": "2026-11-12",
   "title": "Security & IT Intern",
-  "v": 4
+  "v": 5
  },
  "ashby:equip:829ff280-4d61-4b23-a754-af75e1282203": {
   "a": {
@@ -215,11 +216,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "IT Operations Specialist",
-  "v": 4
+  "v": 5
  },
  "ashby:exa:f4dd7ae8-cf72-4634-b708-742601b9061c": {
   "a": {
@@ -237,11 +238,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Support Engineer, PAYGO",
-  "v": 4
+  "v": 5
  },
  "ashby:fluidstack:f1811455-d414-4630-b22c-58a585163864": {
   "a": {
@@ -249,9 +250,10 @@
    "employment": "Not stated",
    "evidence": "",
    "experience": "No years of experience stated",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
    "notes": [
+    "No experience stated, but this title usually expects some",
     "Remote region not stated"
    ],
    "posted_at": "2026-10-30T19:47:10.786+00:00",
@@ -261,11 +263,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "U.S. Remote",
   "seen": "2026-11-12",
   "title": "Security Systems Administrator",
-  "v": 4
+  "v": 5
  },
  "ashby:horizon3ai:28bb7a90-e106-424b-92e9-627e6ca843ee": {
   "a": {
@@ -283,11 +285,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US, Remote",
   "seen": "2026-11-12",
   "title": "Procurement Operations Analyst",
-  "v": 4
+  "v": 5
  },
  "ashby:horizon3ai:531e83c1-c9da-4003-99d1-ab45e88917d1": {
   "a": {
@@ -305,11 +307,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US, Remote",
   "seen": "2026-11-12",
   "title": "IT Administrator, Business Applications",
-  "v": 4
+  "v": 5
  },
  "ashby:horizon3ai:abd14bfc-29c0-4668-af1a-aeed9254448e": {
   "a": {
@@ -327,11 +329,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US, Remote",
   "seen": "2026-11-12",
   "title": "IT Analyst (Remote)",
-  "v": 4
+  "v": 5
  },
  "ashby:horizon3ai:efb7a52e-2884-43f6-ad7e-a03b5998aa19": {
   "a": {
@@ -371,11 +373,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US - Remote",
   "seen": "2026-11-12",
   "title": "Technical Support Engineer",
-  "v": 4
+  "v": 5
  },
  "ashby:meridianlink:21d46b5e-a7ec-49c5-b039-c7cee79e847a": {
   "a": {
@@ -393,11 +395,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US Remote",
   "seen": "2026-11-12",
   "title": "Client Support Specialist II",
-  "v": 4
+  "v": 5
  },
  "ashby:meshy:41b56974-51e1-4e15-a5dd-8bc67a41b18c": {
   "a": {
@@ -415,11 +417,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US Remote",
   "seen": "2026-11-12",
   "title": "Customer Technical Support Specialist - US",
-  "v": 4
+  "v": 5
  },
  "ashby:monarchmoney:85e2fa51-0142-4373-9a4c-673ad1db7070": {
   "a": {
@@ -437,11 +439,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "IT Support Engineer",
-  "v": 4
+  "v": 5
  },
  "ashby:mudflap:0f435661-0cae-43c2-a1d9-4b5fdb380c31": {
   "a": {
@@ -459,11 +461,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Customer Support Specialist - English (Morning/Afternoon)",
-  "v": 4
+  "v": 5
  },
  "ashby:mudflap:8edb7190-7a88-40e1-b5a4-7f3b78425f98": {
   "a": {
@@ -481,11 +483,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Customer Support Specialist - English (Evening)",
-  "v": 4
+  "v": 5
  },
  "ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861": {
   "a": {
@@ -505,11 +507,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote, US",
   "seen": "2026-11-12",
   "title": "Technical Support Specialist , US East Coast",
-  "v": 4
+  "v": 5
  },
  "ashby:prefect:6bc102cc-112f-441f-adc8-d53dc83a93ec": {
   "a": {
@@ -517,9 +519,10 @@
    "employment": "Not stated",
    "evidence": "",
    "experience": "No years of experience stated",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
    "notes": [
+    "No experience stated, but this title usually expects some",
     "Remote region not stated"
    ],
    "posted_at": "2026-11-06T16:53:43.969+00:00",
@@ -529,11 +532,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Security & IT Operations Engineer",
-  "v": 4
+  "v": 5
  },
  "ashby:reacher:a94d5011-4a2f-49d1-a98c-98aa4158f150": {
   "a": {
@@ -551,11 +554,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Customer Support Specialist",
-  "v": 4
+  "v": 5
  },
  "ashby:retell-ai:358f4a48-14ad-4c58-b051-2b48a0159e47": {
   "a": {
@@ -573,11 +576,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Support Engineer (Contract)",
-  "v": 4
+  "v": 5
  },
  "ashby:runpod:4843a2de-5094-4157-b2b1-ab7bb8876f67": {
   "a": {
@@ -595,11 +598,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Technical Support Engineer (L2)",
-  "v": 4
+  "v": 5
  },
  "ashby:runpod:f9f9e6f1-4203-4ea9-a9b4-4a108e684372": {
   "a": {
@@ -617,11 +620,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Technical Support Engineer (L1)",
-  "v": 4
+  "v": 5
  },
  "ashby:sewer-ai:f3039dc8-0ea7-4399-8e3d-b2d8bbba65fa": {
   "a": {
@@ -639,11 +642,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Revenue Operations Analyst",
-  "v": 4
+  "v": 5
  },
  "ashby:skydio:3ac81a34-b7fe-4142-9d29-12bcc1376182": {
   "a": {
@@ -661,11 +664,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US Remote",
   "seen": "2026-11-12",
   "title": "Technical Support Specialist",
-  "v": 4
+  "v": 5
  },
  "ashby:skydio:8ba69d85-b786-4399-a5c0-ee0969054315": {
   "a": {
@@ -685,11 +688,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US Remote",
   "seen": "2026-11-12",
   "title": "Network Specialist - Launch Team",
-  "v": 4
+  "v": 5
  },
  "ashby:snowflake:631f5d58-a2e7-4717-9892-3e0fa8c3b464": {
   "a": {
@@ -753,11 +756,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote U.S.",
   "seen": "2026-11-12",
   "title": "AI Agent Support Specialist",
-  "v": 4
+  "v": 5
  },
  "ashby:voleon:eb98b211-9cc8-4785-bc89-2337e531c6a4": {
   "a": {
@@ -775,11 +778,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote, United States",
   "seen": "2026-11-12",
   "title": "Fixed Income Operations Analyst",
-  "v": 4
+  "v": 5
  },
  "greenhouse:abnormalsecurity:8180130003": {
   "a": {
@@ -797,11 +800,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "L1 Technical Support Engineer (Spanish-Speaking)",
-  "v": 4
+  "v": 5
  },
  "greenhouse:alpaca:6240586004": {
   "a": {
@@ -821,11 +824,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - North America",
   "seen": "2026-11-12",
   "title": "IT Operations Specialist",
-  "v": 4
+  "v": 5
  },
  "greenhouse:alphasense:8495375002": {
   "a": {
@@ -833,9 +836,11 @@
    "employment": "Not stated",
    "evidence": "",
    "experience": "No years of experience stated",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
-   "notes": [],
+   "notes": [
+    "No experience stated, but this title usually expects some"
+   ],
    "posted_at": "2026-08-20T12:27:16-04:00",
    "posted_at_source": null,
    "reason": null,
@@ -843,11 +848,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - United States",
   "seen": "2026-11-12",
   "title": "Cloud Support Engineer",
-  "v": 4
+  "v": 5
  },
  "greenhouse:avidxchangeinc:5283540007": {
   "a": {
@@ -867,11 +872,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Virtual",
   "seen": "2026-11-12",
   "title": "Technical Support Specialist I",
-  "v": 4
+  "v": 5
  },
  "greenhouse:avride:4414523009": {
   "a": {
@@ -889,11 +894,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Lakeland, Florida",
   "seen": "2026-11-12",
   "title": "Robot Service Technician Assistant – Part Time Evenings",
-  "v": 4
+  "v": 5
  },
  "greenhouse:axios:8262622": {
   "a": {
@@ -913,11 +918,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "IT Security Specialist",
-  "v": 4
+  "v": 5
  },
  "greenhouse:beyondtrust:8279128": {
   "a": {
@@ -935,11 +940,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote United States",
   "seen": "2026-11-12",
   "title": "Cloud Network Engineer",
-  "v": 4
+  "v": 5
  },
  "greenhouse:bugcrowd:8334498": {
   "a": {
@@ -957,11 +962,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
   "seen": "2026-11-12",
   "title": "Customer Support Engineer",
-  "v": 4
+  "v": 5
  },
  "greenhouse:cadwell:4456577009": {
   "a": {
@@ -979,11 +984,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Product Support Engineer",
-  "v": 4
+  "v": 5
  },
  "greenhouse:coinbase:8335618": {
   "a": {
@@ -1001,11 +1006,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Social Support Specialist I",
-  "v": 4
+  "v": 5
  },
  "greenhouse:coinbase:8335621": {
   "a": {
@@ -1023,11 +1028,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Social Support Specialist I",
-  "v": 4
+  "v": 5
  },
  "greenhouse:correlationone:6234712004": {
   "a": {
@@ -1117,11 +1122,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "United States - Remote",
   "seen": "2026-11-12",
   "title": "Business Systems Analyst, Procure-to-Pay",
-  "v": 4
+  "v": 5
  },
  "greenhouse:dvtrading:4749057005": {
   "a": {
@@ -1139,11 +1144,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Trade Desk Support Engineer (Night Shift)",
-  "v": 4
+  "v": 5
  },
  "greenhouse:expel:8936554002": {
   "a": {
@@ -1164,11 +1169,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Associate SOC Analyst",
-  "v": 4
+  "v": 5
  },
  "greenhouse:farmersmutualhailinsurancecompany:4442700009": {
   "a": {
@@ -1186,11 +1191,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US-Remote",
   "seen": "2026-11-12",
   "title": "Precision Technology Specialist (Illinois/Indiana/Kentucky)",
-  "v": 4
+  "v": 5
  },
  "greenhouse:galaxydigitalservices:6163325004": {
   "a": {
@@ -1201,7 +1206,6 @@
    "fit": "beginner",
    "miles": null,
    "notes": [
-    "Asks 0 months customer-service-type experience",
     "Remote region not stated"
    ],
    "posted_at": "2026-08-25T23:24:00-04:00",
@@ -1211,11 +1215,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Off-Cycle 2026 Cybersecurity Internship",
-  "v": 4
+  "v": 5
  },
  "greenhouse:garnerhealth:6238643004": {
   "a": {
@@ -1233,11 +1237,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Payments Operations Analyst",
-  "v": 4
+  "v": 5
  },
  "greenhouse:gitlab:8654230002": {
   "a": {
@@ -1277,11 +1281,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote, United States",
   "seen": "2026-11-12",
   "title": "Support Engineer, U.S. Government Support (SHIFT)",
-  "v": 4
+  "v": 5
  },
  "greenhouse:gleanwork:4734007005": {
   "a": {
@@ -1311,9 +1315,11 @@
    "employment": "Not stated",
    "evidence": "",
    "experience": "No years of experience stated",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
-   "notes": [],
+   "notes": [
+    "No experience stated, but this title usually expects some"
+   ],
    "posted_at": "2026-09-22T10:10:33-04:00",
    "posted_at_source": null,
    "reason": null,
@@ -1321,11 +1327,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
   "seen": "2026-11-12",
   "title": "Designated Technical Support Engineer - Central/East",
-  "v": 4
+  "v": 5
  },
  "greenhouse:guidepointsecurity:6224196004": {
   "a": {
@@ -1345,11 +1351,11 @@
    "section": null,
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Cybersecurity Presales Intern - GPSU/Heartland (Tulsa)",
-  "v": 4
+  "v": 5
  },
  "greenhouse:hearst:4466177009": {
   "a": {
@@ -1391,11 +1397,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US-Remote",
   "seen": "2026-11-12",
   "title": "Technical Support Specialist",
-  "v": 4
+  "v": 5
  },
  "greenhouse:horacemannservicecorporation:6208478004": {
   "a": {
@@ -1413,11 +1419,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Business System Analyst - Experienced",
-  "v": 4
+  "v": 5
  },
  "greenhouse:horizonindustrieslimited:5422434008": {
   "a": {
@@ -1435,11 +1441,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "REMOTE",
   "seen": "2026-11-12",
   "title": "Cybersecurity Specialist (DISA)",
-  "v": 4
+  "v": 5
  },
  "greenhouse:horizonindustrieslimited:5432964008": {
   "a": {
@@ -1457,11 +1463,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "REMOTE",
   "seen": "2026-11-12",
   "title": "System Administrator  (DISA)",
-  "v": 4
+  "v": 5
  },
  "greenhouse:humansignal:6238086004": {
   "a": {
@@ -1479,11 +1485,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Services Support Specialist",
-  "v": 4
+  "v": 5
  },
  "greenhouse:obsidiansecurity:5449057008": {
   "a": {
@@ -1501,11 +1507,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US Remote (East/Central)",
   "seen": "2026-11-12",
   "title": "Customer Success Operations Analyst",
-  "v": 4
+  "v": 5
  },
  "greenhouse:oneimaging:4484490009": {
   "a": {
@@ -1513,9 +1519,10 @@
    "employment": "Not stated",
    "evidence": "",
    "experience": "No years of experience stated",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
    "notes": [
+    "No experience stated, but this title usually expects some",
     "Remote region not stated"
    ],
    "posted_at": "2026-11-06T23:54:16-05:00",
@@ -1525,11 +1532,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Cloud Systems Administrator",
-  "v": 4
+  "v": 5
  },
  "greenhouse:opensesame:8188645": {
   "a": {
@@ -1537,9 +1544,10 @@
    "employment": "Not stated",
    "evidence": "",
    "experience": "No years of experience stated",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
    "notes": [
+    "No experience stated, but this title usually expects some",
     "Remote region not stated"
    ],
    "posted_at": "2026-09-09T11:11:33-04:00",
@@ -1549,11 +1557,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Systems Administrator",
-  "v": 4
+  "v": 5
  },
  "greenhouse:oscar:8178503": {
   "a": {
@@ -1571,11 +1579,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Provider Network Associate",
-  "v": 4
+  "v": 5
  },
  "greenhouse:precisionaq:6249837004": {
   "a": {
@@ -1593,11 +1601,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote, United States",
   "seen": "2026-11-12",
   "title": "Health IT Specialist, Product Solutions",
-  "v": 4
+  "v": 5
  },
  "greenhouse:rackner:4752874005": {
   "a": {
@@ -1615,11 +1623,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote — United States",
   "seen": "2026-11-12",
   "title": "IT Service Operations Analyst — Federal Health IT",
-  "v": 4
+  "v": 5
  },
  "greenhouse:relativity:8910062002": {
   "a": {
@@ -1640,11 +1648,11 @@
    "section": "Nearby",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Cape Canaveral, Florida, United States",
   "seen": "2026-11-12",
   "title": "IT Associate I",
-  "v": 4
+  "v": 5
  },
  "greenhouse:salesloft:8119953": {
   "a": {
@@ -1713,11 +1721,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Application Support Specialist - Second Shift M-F",
-  "v": 4
+  "v": 5
  },
  "greenhouse:sironamedical:4731579005": {
   "a": {
@@ -1738,11 +1746,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Application Support Specialist - Overnight M-F",
-  "v": 4
+  "v": 5
  },
  "greenhouse:sironamedical:4731580005": {
   "a": {
@@ -1763,11 +1771,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Application Support Specialist - Weekend Days",
-  "v": 4
+  "v": 5
  },
  "greenhouse:sironamedical:4731581005": {
   "a": {
@@ -1788,11 +1796,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Application Support Specialist - Weekend Nights",
-  "v": 4
+  "v": 5
  },
  "greenhouse:spacex:8679658002": {
   "a": {
@@ -1810,11 +1818,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Cape Canaveral, FL",
   "seen": "2026-11-12",
   "title": "OT Network Engineer, Mission Systems",
-  "v": 4
+  "v": 5
  },
  "greenhouse:spacex:8684618002": {
   "a": {
@@ -1832,11 +1840,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Cape Canaveral, FL",
   "seen": "2026-11-12",
   "title": "IT Operations Engineer",
-  "v": 4
+  "v": 5
  },
  "greenhouse:spacex:8918371002": {
   "a": {
@@ -1854,11 +1862,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Cape Canaveral, FL",
   "seen": "2026-11-12",
   "title": "IT Network Infrastructure Technician",
-  "v": 4
+  "v": 5
  },
  "greenhouse:spacex:8922064002": {
   "a": {
@@ -1876,11 +1884,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Cape Canaveral, FL",
   "seen": "2026-11-12",
   "title": "IT Network Engineer",
-  "v": 4
+  "v": 5
  },
  "greenhouse:stripe:8175824": {
   "a": {
@@ -1898,11 +1906,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Risk Operations Analyst - RBO",
-  "v": 4
+  "v": 5
  },
  "greenhouse:supplyhouse:6140301004": {
   "a": {
@@ -1920,11 +1928,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote, Remote, United States",
   "seen": "2026-11-12",
   "title": "Network Engineer",
-  "v": 4
+  "v": 5
  },
  "greenhouse:synack:8353747": {
   "a": {
@@ -1942,11 +1950,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote in the US",
   "seen": "2026-11-12",
   "title": "Customer Support Specialist",
-  "v": 4
+  "v": 5
  },
  "greenhouse:tines:6202989004": {
   "a": {
@@ -1964,11 +1972,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "United States (Remote)",
   "seen": "2026-11-12",
   "title": "GTM Systems Specialist",
-  "v": 4
+  "v": 5
  },
  "greenhouse:tines:6225649004": {
   "a": {
@@ -1986,11 +1994,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "United States (Remote)",
   "seen": "2026-11-12",
   "title": "Technical Support Engineer II - Federal",
-  "v": 4
+  "v": 5
  },
  "greenhouse:togetherai:5202015007": {
   "a": {
@@ -1998,9 +2006,10 @@
    "employment": "Full-time",
    "evidence": "",
    "experience": "No years of experience stated",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
    "notes": [
+    "No experience stated, but this title usually expects some",
     "Asks 1 year customer-service-type experience",
     "Shift work mentioned: weekend shift",
     "Remote region not stated"
@@ -2012,11 +2021,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Technical Support Engineer (GPU Clusters) - US Weekends",
-  "v": 4
+  "v": 5
  },
  "greenhouse:trace3:8329225": {
   "a": {
@@ -2058,11 +2067,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - United States",
   "seen": "2026-11-12",
   "title": "Concur Systems Administrator",
-  "v": 4
+  "v": 5
  },
  "greenhouse:wizinc:4721575006": {
   "a": {
@@ -2080,11 +2089,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Solutions Support Engineer - US East",
-  "v": 4
+  "v": 5
  },
  "lever:daniels-sharpsmart:6bdcbb00-3471-4006-993d-9dd2f0e98fbb": {
   "a": {
@@ -2102,11 +2111,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician - AdventHealth Orlando",
-  "v": 4
+  "v": 5
  },
  "lever:firemon:55eed579-a00a-4d3c-a1ae-2e0ef9bd7063": {
   "a": {
@@ -2114,9 +2123,10 @@
    "employment": "Not stated",
    "evidence": "",
    "experience": "No years of experience stated",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
    "notes": [
+    "No experience stated, but this title usually expects some",
     "Shift work mentioned: 24/7"
    ],
    "posted_at": "2026-10-14T19:52:34Z",
@@ -2126,11 +2136,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "USA, Remote",
   "seen": "2026-11-12",
   "title": "Customer Support Engineer",
-  "v": 4
+  "v": 5
  },
  "lever:makpar:03d7f17e-0b63-4c7d-bbb5-3d2fc7b342b1": {
   "a": {
@@ -2150,11 +2160,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote, US-Based",
   "seen": "2026-11-12",
   "title": "Application Systems Admin (Bilingual-Spanish)",
-  "v": 4
+  "v": 5
  },
  "lever:makpar:54e2c175-5bb1-4347-9d3b-c5a7ff4c087a": {
   "a": {
@@ -2174,11 +2184,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote, US-Based",
   "seen": "2026-11-12",
   "title": "Junior Help Desk Support Agent (Bilingual-Spanish)",
-  "v": 4
+  "v": 5
  },
  "lever:pditechnologies:56f66a9d-8766-40bd-91bc-3be14ba8cd72": {
   "a": {
@@ -2196,11 +2206,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote US",
   "seen": "2026-11-12",
   "title": "Network Operations Analyst II",
-  "v": 4
+  "v": 5
  },
  "lever:pingwind:ab11654f-9f5f-4bf1-9031-9540ba1e54c8": {
   "a": {
@@ -2218,11 +2228,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Help Desk Support Agent (Mid)",
-  "v": 4
+  "v": 5
  },
  "lever:pingwind:af89be43-4d8a-42be-96cb-a87c4738ce53": {
   "a": {
@@ -2240,11 +2250,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Application Systems Analyst II",
-  "v": 4
+  "v": 5
  },
  "lever:tsmg:83579b56-d91e-4b24-8db3-d02f90f11ec5": {
   "a": {
@@ -2262,11 +2272,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Self-Driving Systems Specialist (SDS Specialist)",
-  "v": 4
+  "v": 5
  },
  "lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220": {
   "a": {
@@ -2284,11 +2294,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "United States (Remote)",
   "seen": "2026-11-12",
   "title": "Technical Support Specialist",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:0033A1F626214E03B8E519E605AECD4A": {
   "a": {
@@ -2331,11 +2341,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Wholesale Payments Dedicated Support Specialist",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:09D679410B004DACB96FE254FA680834": {
   "a": {
@@ -2353,11 +2363,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician I",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:0B4B02309AB148FBA33C8A286AF55A74": {
   "a": {
@@ -2375,11 +2385,11 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:120798FCE087496FA4B281D51958B409": {
   "a": {
@@ -2397,11 +2407,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Lake Buena Vista, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician II",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:1BF8A4C751A5403B9CF04355D244A2C1": {
   "a": {
@@ -2419,11 +2429,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Bartow, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician II",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:20D7222323E44E6F82AA7B3EB2103C68": {
   "a": {
@@ -2443,11 +2453,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Executive IT Support Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:2281E44028434670A0FE728E2B3B4A71": {
   "a": {
@@ -2465,11 +2475,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Associate Field Support Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:2640B0B435274353B950D7263154039F": {
   "a": {
@@ -2487,11 +2497,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Apopka, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:27CFDC85614A40F1926FB3B2B11118EF": {
   "a": {
@@ -2509,11 +2519,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "CEI Assistant Contract Support Specialist",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:300132B49AC046BAAAB825605CC6A30F": {
   "a": {
@@ -2531,11 +2541,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Centerline Planning and Support Engineer (Power Plants)",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:313B1BE4B8DF4B49ACDE1102A037DBAD": {
   "a": {
@@ -2553,11 +2563,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Set Up and Support Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:39318C62EE114D79B85FF697B6E2ED4C": {
   "a": {
@@ -2575,11 +2585,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Train Service Technician (Entry-Level) Orlando FL Mobility Customer Services",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:3D635F63A15342B69AC82D2CE05413AA": {
   "a": {
@@ -2597,11 +2607,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "IT Systems Analyst Advisor",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:45E9D281E4F44A78BF9C73C3A3D415B8": {
   "a": {
@@ -2641,11 +2651,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Configuration Support Analyst – Support Services",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:4C689862ABC84EC9B87E6D72678FAD8F": {
   "a": {
@@ -2663,11 +2673,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician I",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:4EA6586511BF4A598DE9CDE38E3397AF": {
   "a": {
@@ -2685,11 +2695,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Sanford, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:553C486B55914816BD999B885D2CE197": {
   "a": {
@@ -2707,11 +2717,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Data Center Services Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:56333412006B4BFEAB8157AF336BE672": {
   "a": {
@@ -2729,11 +2739,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "ServiceMax Application Support Engineer",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:5B713C96FFEA4AA999C7F143B7BA15D1": {
   "a": {
@@ -2751,11 +2761,11 @@
    "section": "Nearby",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Lake Mary, FL",
   "seen": "2026-11-12",
   "title": "Technology Support Contractor: 0-2 years (Entry) / Contract / Onsite",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:63769345ACA74E34A598FE4171C15D52": {
   "a": {
@@ -2773,11 +2783,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Intermediate Help Desk Support Service Specialist",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:65A35275CF8D4F4AA424BB5A06DC27DD": {
   "a": {
@@ -2795,11 +2805,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Altamonte Springs, FL",
   "seen": "2026-11-12",
   "title": "Assistant Operations Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:65DD2C59E77D4408BAF967ABDE085601": {
   "a": {
@@ -2819,11 +2829,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Network Engineer - E2",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:66AF2C57CB52424AAD1CD455665A13C8": {
   "a": {
@@ -2841,11 +2851,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Titusville, FL",
   "seen": "2026-11-12",
   "title": "Field Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:679AEE8141F64968ADC9E99814FB3450": {
   "a": {
@@ -2863,11 +2873,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Access & Support Specialist II",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:6925AE191E7245C2AFF834232A57D1C2": {
   "a": {
@@ -2887,11 +2897,11 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Help Desk Specialist",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:69D2F167ACE04EC4AC3A6EDBD9E63B09": {
   "a": {
@@ -2909,11 +2919,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Winter Park, FL",
   "seen": "2026-11-12",
   "title": "Fiduciary Support Specialist II",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:6EA04156FE2B4A549D5EFEA1D56ABC63": {
   "a": {
@@ -2931,11 +2941,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Fiduciary Support Specialist II",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:720EE66B663D45848DF41A38D05DEF73": {
   "a": {
@@ -2953,11 +2963,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Cocoa, FL",
   "seen": "2026-11-12",
   "title": "COMSEC Responsible Officer (CRO)/ Tier II Network Technician (NE2) (Government)",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:735DB9ADB8904CC899989A1CF2A1D4CD": {
   "a": {
@@ -2975,11 +2985,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "2026 Associate Computer Systems Analyst - Linux - Pathways Program - Melbourne FL",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:74AE5D0134B54B1BAE30DCCF8AF281AF": {
   "a": {
@@ -2997,11 +3007,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Saint Cloud, FL",
   "seen": "2026-11-12",
   "title": "Field Service Operations Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:75D0DF5AEFED42DABDE6377E5542065A": {
   "a": {
@@ -3019,11 +3029,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:77E8632CD52B481FBC33C13F2A2A0F54": {
   "a": {
@@ -3041,11 +3051,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:7A03CBF19A084B9F8BDC0C88C8150CB8": {
   "a": {
@@ -3063,11 +3073,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:7C322A01495D4689BE712464EEDE0102": {
   "a": {
@@ -3085,11 +3095,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "IT Service Desk Support Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:7D8658B3F3AF4C58A50B1D2E63C2DF1D": {
   "a": {
@@ -3107,11 +3117,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Exhibitor Support Specialist Online Exhibits",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:7DC1507230944B4F9C890DD43B7CF2D8": {
   "a": {
@@ -3131,11 +3141,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Cybersecurity Analyst",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:7EB1F383F08B4C33B60F6FD04C4A2F94": {
   "a": {
@@ -3153,11 +3163,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:81401A2E56A242D6B8DCB17FBBAA076C": {
   "a": {
@@ -3175,11 +3185,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "AUX Product Definition/Support Engineer (P)",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:8D178883C4ED43B089DF45D66B5B0848": {
   "a": {
@@ -3197,11 +3207,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:991071019ECE41CFA797E8631AC47983": {
   "a": {
@@ -3241,11 +3251,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Housing Support Specialist",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:9D3BEDF5DD0540A196C3679F6817FBA8": {
   "a": {
@@ -3263,11 +3273,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Commercial Service Technician 1 - Orlando, FL",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:A5F54BBB228E41C997986A706EBAB528": {
   "a": {
@@ -3285,11 +3295,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:A71F566731A84FACB511BDEE962201CE": {
   "a": {
@@ -3307,11 +3317,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Wholesale Payments Dedicated Support Specialist",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:AC631FAB33674EE09C541B3099744405": {
   "a": {
@@ -3329,11 +3339,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Lakeland, FL",
   "seen": "2026-11-12",
   "title": "Information Technology Analyst",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:B05E968851864B6DBD9E45D4E91C8BE5": {
   "a": {
@@ -3351,11 +3361,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Lakeland, FL",
   "seen": "2026-11-12",
   "title": "SERVICE TECHNICIAN (FULL TIME)",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:B74D1386E008487FA05AD7A5CACDCF6C": {
   "a": {
@@ -3373,11 +3383,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Merritt Island, FL",
   "seen": "2026-11-12",
   "title": "IT Support Engineer II, Leo IT Services",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:B75F7AE3B57549B480AB4D68852A7C5C": {
   "a": {
@@ -3395,11 +3405,11 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Kissimmee, FL",
   "seen": "2026-11-12",
   "title": "Network & Desk Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:BA300695C674418D983FDDC3B445D250": {
   "a": {
@@ -3410,6 +3420,7 @@
    "fit": "stretch",
    "miles": 16.7,
    "notes": [
+    "No experience stated, but this title usually expects some",
     "Bachelor's degree listed"
    ],
    "posted_at": "2026-11-04T01:08:32Z",
@@ -3419,11 +3430,11 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Network Engineer",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:BA38F247D143423F9128A685CDE65234": {
   "a": {
@@ -3431,10 +3442,11 @@
    "employment": "Not stated",
    "evidence": "+ 5+ years of Tier 2/3 system support experience.",
    "experience": "None required — 5 years preferred",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": 47.8,
    "notes": [
     "Clearance must be obtainable",
+    "No experience stated, but this title usually expects some",
     "Shift work mentioned: 24/7"
    ],
    "posted_at": "2026-11-03T06:31:44Z",
@@ -3444,11 +3456,11 @@
    "section": "Nearby",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Systems Administrator",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:BB957F3DBEA64D8291C7C2F87DE27610": {
   "a": {
@@ -3466,11 +3478,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Cybersecurity Analyst - ISSO - Orlando, Florida",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:C0E0DEDB75D5407EA60607F791DA7A15": {
   "a": {
@@ -3512,11 +3524,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "SERVICE TECHNICIAN (FULL TIME)",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:C4F1E59F37F74E49AFD8A56655EDB15F": {
   "a": {
@@ -3534,11 +3546,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Winter Haven, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:C8E0E27BEA6445E8827427AEA8C3BD9E": {
   "a": {
@@ -3559,11 +3571,11 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Systems Analyst II",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:CCBCA7C764794E808B2C0B278446B2D8": {
   "a": {
@@ -3581,11 +3593,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Dade City, FL",
   "seen": "2026-11-12",
   "title": "Recovery Support Specialist II",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:D6772FC99E014DE7B966053D45EBB45D": {
   "a": {
@@ -3603,11 +3615,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Lake Mary, FL",
   "seen": "2026-11-12",
   "title": "Desktop Analyst",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:D803C7A8D5DB4341A61EAC5A5C34F6BE": {
   "a": {
@@ -3625,11 +3637,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Sanford, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:D8B8F479DCD64487B37336AFF51E6265": {
   "a": {
@@ -3647,11 +3659,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Apopka, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:DDAEB1EA359745DE949E6EA4A0B0F453": {
   "a": {
@@ -3673,11 +3685,11 @@
    "section": "Nearby",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Lake Mary, FL",
   "seen": "2026-11-12",
   "title": "Data and Technology Specialist",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:DE51AD3ABA47414EBE1B9B645E241526": {
   "a": {
@@ -3695,11 +3707,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
   "seen": "2026-11-12",
   "title": "Computer Systems Administrator / Spectrum Management Analyst",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:DF20943F82B842B69AE1EB3F4A92131D": {
   "a": {
@@ -3719,11 +3731,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Support Engineer",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:EA55476DA3414D75B953297E4E27EA3B": {
   "a": {
@@ -3741,11 +3753,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Kissimmee, FL",
   "seen": "2026-11-12",
   "title": "Shop Service Technician",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:EA5B574EC3734624890E9C10E798F0C2": {
   "a": {
@@ -3763,11 +3775,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Commercial Service Technician 2 - Orlando, FL",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:ECB97B4439C848058E7AE55255ED7D92": {
   "a": {
@@ -3785,11 +3797,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "ACE Account Service Desk Specialist (Tier 2 - ASD)",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:ED2A02C4B31243D487D608380B7CC41E": {
   "a": {
@@ -3807,11 +3819,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Sanford, FL",
   "seen": "2026-11-12",
   "title": "Field Service Technician (Laborer)",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:ED8E4F1292334F30B96EB4F94A1FFC47": {
   "a": {
@@ -3829,11 +3841,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "SERVICE TECHNICIAN (FULL TIME)",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:F286EB351EF04803836A13B41C3FF6A0": {
   "a": {
@@ -3851,11 +3863,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Lakeland, FL",
   "seen": "2026-11-12",
   "title": "IT Support Engineer I, Operations Infrastructure  Services (OIS)",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:F370A19AEEA54097BB152F6B5BB8BD88": {
   "a": {
@@ -3875,11 +3887,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Network Operations Analyst",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:F44BF8996AF2428B9FE0799F65EAE78D": {
   "a": {
@@ -3897,11 +3909,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Support Engineer 1",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:F5C67CEF81574B5CBA6CD5CCB4BA5CB3": {
   "a": {
@@ -3919,11 +3931,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "Event Technical Specialist, (AUDIO) - KPMG Lakehouse, Lake Nona, FL",
-  "v": 4
+  "v": 5
  },
  "nlx:kissimmee-fl:FE4182530ABD4FEAB6079422D3494CFF": {
   "a": {
@@ -3941,11 +3953,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Sanford, FL",
   "seen": "2026-11-12",
   "title": "Field Technician",
-  "v": 4
+  "v": 5
  },
  "oracle:eeho.fa.us2.oraclecloud.com:342496": {
   "a": {
@@ -3965,11 +3977,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL, United States; Kansas City, MO, United States; Nashville, TN, United States",
   "seen": "2026-11-12",
   "title": "Support Engineer",
-  "v": 4
+  "v": 5
  },
  "oracle:eeho.fa.us2.oraclecloud.com:342608": {
   "a": {
@@ -3987,11 +3999,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Nashville, TN, United States; Orlando, FL, United States; Kansas City, MO, United States; United States",
   "seen": "2026-11-12",
   "title": "Support Engineer - Incident",
-  "v": 4
+  "v": 5
  },
  "oracle:eeho.fa.us2.oraclecloud.com:346560": {
   "a": {
@@ -4009,11 +4021,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Kansas City, MO, United States; Orlando, FL, United States; United States; Nashville, TN, United States",
   "seen": "2026-11-12",
   "title": "Support Engineer - Configuration",
-  "v": 4
+  "v": 5
  },
  "oracle:fa-eqpz-saasfaprod1.fa.ocs.oraclecloud.com:2564": {
   "a": {
@@ -4057,11 +4069,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States",
   "seen": "2026-11-12",
   "title": "Remote Customer Technical Support",
-  "v": 4
+  "v": 5
  },
  "oracle:fa-etgw-saasfaprod1.fa.ocs.oraclecloud.com:3004056": {
   "a": {
@@ -4101,11 +4113,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "United States",
   "seen": "2026-11-12",
   "title": "Implementation System Support Representative - Remote",
-  "v": 4
+  "v": 5
  },
  "recruitee:hardrockdigital:2823560": {
   "a": {
@@ -4113,9 +4125,10 @@
    "employment": "Not stated",
    "evidence": "",
    "experience": "No years of experience stated",
-   "fit": "beginner",
+   "fit": "stretch",
    "miles": null,
    "notes": [
+    "No experience stated, but this title usually expects some",
     "Shift work mentioned: 2nd shifts"
    ],
    "posted_at": "2026-11-11 09:56:26 UTC",
@@ -4125,11 +4138,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "United States, Florida, United States (Remote)",
   "seen": "2026-11-12",
   "title": "NOC Engineer",
-  "v": 4
+  "v": 5
  },
  "rippling:conceptplus:4060476b-d89e-4430-a86a-f6f5bc600b03": {
   "a": {
@@ -4147,11 +4160,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote (United States)",
   "seen": "2026-11-12",
   "title": "Cyber Analyst",
-  "v": 4
+  "v": 5
  },
  "rippling:conceptplus:f9ddd964-6bb4-4baf-8826-10e891c5270b": {
   "a": {
@@ -4169,11 +4182,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote (United States)",
   "seen": "2026-11-12",
   "title": "SOC Analyst (WarU E-ITSS)",
-  "v": 4
+  "v": 5
  },
  "rippling:dlb-associates:2ede91cd-77c3-47c8-881c-c93cf9834623": {
   "a": {
@@ -4235,11 +4248,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote (United States)",
   "seen": "2026-11-12",
   "title": "Intermediate Technical Support Analyst",
-  "v": 4
+  "v": 5
  },
  "rippling:nerdio-careers:7f181cf8-2768-44ab-af07-b179e11969c0": {
   "a": {
@@ -4257,11 +4270,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote (United States)",
   "seen": "2026-11-12",
   "title": "Support Engineer – Enterprise",
-  "v": 4
+  "v": 5
  },
  "rippling:patientnow:19feb150-fa2b-4a72-85a0-f678a7f7c070": {
   "a": {
@@ -4279,11 +4292,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote (United States)",
   "seen": "2026-11-12",
   "title": "Technical Support Specialist",
-  "v": 4
+  "v": 5
  },
  "rippling:rippling:c86a2631-f926-418b-b4e1-0f48cd0c5b6b": {
   "a": {
@@ -4301,11 +4314,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote (United States)",
   "seen": "2026-11-12",
   "title": "Benefits Support Analyst, Missed Enrollments (US)",
-  "v": 4
+  "v": 5
  },
  "rippling:rippling:eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd": {
   "a": {
@@ -4323,11 +4336,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote (United States)",
   "seen": "2026-11-12",
   "title": "Technical Support Specialist, Platform",
-  "v": 4
+  "v": 5
  },
  "smartrecruiters:LinkSolutionsInc:744000152736767": {
   "a": {
@@ -4345,11 +4358,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL, United States",
   "seen": "2026-11-12",
   "title": "Information Security Specialist (Intermediate-Level)",
-  "v": 4
+  "v": 5
  },
  "smartrecruiters:LinkSolutionsInc:744000152747719": {
   "a": {
@@ -4367,11 +4380,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL, United States",
   "seen": "2026-11-12",
   "title": "Systems Administrator (Intermediate-Level)",
-  "v": 4
+  "v": 5
  },
  "smartrecruiters:LinkSolutionsInc:744000154130955": {
   "a": {
@@ -4389,11 +4402,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL, United States",
   "seen": "2026-11-12",
   "title": "Network Administrator (Intermediate-Level)",
-  "v": 4
+  "v": 5
  },
  "smartrecruiters:MissionCriticalGroup:3743990015518246": {
   "a": {
@@ -4455,11 +4468,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL, United States",
   "seen": "2026-11-12",
   "title": "Laundry Service Technician",
-  "v": 4
+  "v": 5
  },
  "smartrecruiters:WestgateResorts:744000161175739": {
   "a": {
@@ -4477,11 +4490,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Ocoee, FL, United States",
   "seen": "2026-11-12",
   "title": "Software Support Specialist",
-  "v": 4
+  "v": 5
  },
  "workday:accenture:/job/Madrid/Cloud-Infrastructure-Specialist---Azure-Virtual-Desktop---Citrix_14795618": {
   "a": {
@@ -4523,11 +4536,11 @@
    "section": "Nearby",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "FL - Plant City",
   "seen": "2026-11-12",
   "title": "RSC IT Coordinator, 1st shift",
-  "v": 4
+  "v": 5
  },
  "workday:att:/job/Cocoa-Florida/COMSEC-Responsible-Officer--CRO---Tier-II-Network-Technician--NE2---Government-_R-121156": {
   "a": {
@@ -4635,11 +4648,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "United States - Remote",
   "seen": "2026-11-12",
   "title": "Technical Support Representative - Remote",
-  "v": 4
+  "v": 5
  },
  "workday:bluescopenac:/job/OH-Remote/Information-Security-Analyst--App-Security---AI-Security-_REQ-3166": {
   "a": {
@@ -4667,6 +4680,72 @@
   "title": "Information Security Analyst (App Security)",
   "v": 4
  },
+ "workday:brunswick:/job/Lake-Buena-Vista-FL/Field-Service-Technician-II_JR-051095": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 10.6,
+   "notes": [],
+   "posted_at": "2026-10-20T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lake Buena Vista, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician II",
+  "v": 5
+ },
+ "workday:brunswick:/job/Saint-Cloud-FL/Field-Service-Operations-Technician_JR-051526": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 8.2,
+   "notes": [],
+   "posted_at": "2026-09-09T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Saint Cloud, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Operations Technician",
+  "v": 5
+ },
+ "workday:cableone:/job/Remote-USA/Fleet-Project-Support-Specialist_R-107741": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-11T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote USA",
+  "seen": "2026-11-12",
+  "title": "Fleet Project Support Specialist",
+  "v": 5
+ },
  "workday:chenmed:/job/East-Orlando/Associate-Field-Support-Technician_R0050579-1": {
   "a": {
    "category": "IT Support / Technician",
@@ -4683,11 +4762,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "East Orlando",
   "seen": "2026-11-12",
   "title": "Associate Field Support Technician",
-  "v": 4
+  "v": 5
  },
  "workday:compassion:/job/Remote---USA/Business-Support-Specialist-II_R8754": {
   "a": {
@@ -4705,11 +4784,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Business Support Specialist II",
-  "v": 4
+  "v": 5
  },
  "workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541": {
   "a": {
@@ -4729,11 +4808,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
   "seen": "2026-11-12",
   "title": "Technical Support Technician - Tech Apps",
-  "v": 4
+  "v": 5
  },
  "workday:evercommerce:/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1": {
   "a": {
@@ -4751,11 +4830,11 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, Florida",
   "seen": "2026-11-12",
   "title": "EverPro - Systems Administrator (Orlando, Florida)",
-  "v": 4
+  "v": 5
  },
  "workday:ferguson:/job/Remote/Associate-Systems-Administrator---Supply-Chain-Rapid-Response-Team_R-141717-1": {
   "a": {
@@ -4776,11 +4855,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Associate Systems Administrator - Supply Chain Rapid Response Team",
-  "v": 4
+  "v": 5
  },
  "workday:freudenberg:/job/United-States-of-America---Remote/EB-USA-Field-Service-Technician_R_00108545": {
   "a": {
@@ -4820,11 +4899,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "United States-Remote",
   "seen": "2026-11-12",
   "title": "Summer 2027 Technology Intern",
-  "v": 4
+  "v": 5
  },
  "workday:greystar:/job/Remote-United-States/Business-Systems-Analyst_R0202969": {
   "a": {
@@ -4842,11 +4921,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote, United States",
   "seen": "2026-11-12",
   "title": "Business Systems Analyst",
-  "v": 4
+  "v": 5
  },
  "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44797": {
   "a": {
@@ -4864,11 +4943,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US - Remote (Any location)",
   "seen": "2026-11-12",
   "title": "ServiceNow Help Desk Support",
-  "v": 4
+  "v": 5
  },
  "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798": {
   "a": {
@@ -4886,11 +4965,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US - Remote (Any location)",
   "seen": "2026-11-12",
   "title": "ServiceNow Help Desk Support",
-  "v": 4
+  "v": 5
  },
  "workday:halma:/job/Orlando/Jr-IT-Support-Specialist_JR26_001243": {
   "a": {
@@ -4908,11 +4987,11 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Orlando",
   "seen": "2026-11-12",
   "title": "Jr. IT Support Specialist",
-  "v": 4
+  "v": 5
  },
  "workday:henryschein:/job/Florida-United-States---Remote/Equipment-Service-Technician--Tampa_R133925-1": {
   "a": {
@@ -4930,11 +5009,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Florida, United States - Remote",
   "seen": "2026-11-12",
   "title": "Equipment Service Technician- Venice/Naples area",
-  "v": 4
+  "v": 5
  },
  "workday:kla:/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2638091-1": {
   "a": {
@@ -5004,11 +5083,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "6314 Remote/Teleworker US",
   "seen": "2026-11-12",
   "title": "Network Site Design Intern",
-  "v": 4
+  "v": 5
  },
  "workday:lnw:/job/REMOTE-USA-NY-Buffalo/Field-Service-Technician-1_R322591": {
   "a": {
@@ -5072,11 +5151,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Product Support Specialist 1",
-  "v": 4
+  "v": 5
  },
  "workday:modmed:/job/Remote---USA/Support-Specialist-1_R4991": {
   "a": {
@@ -5094,11 +5173,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Support Specialist 1",
-  "v": 4
+  "v": 5
  },
  "workday:nabancard:/job/US---Remote/POS-Tech-Support-Specialist_JR102005": {
   "a": {
@@ -5119,11 +5198,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US - Remote",
   "seen": "2026-11-12",
   "title": "POS Tech Support Specialist",
-  "v": 4
+  "v": 5
  },
  "workday:ncr:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Ft-Lauderdale--FL_R0158306": {
   "a": {
@@ -5334,11 +5413,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "—",
   "seen": "2026-11-12",
   "title": "Multi-Domain Autonomous System Specialist**This is a (International Assignment) **NO REMOTE WORK**",
-  "v": 4
+  "v": 5
  },
  "workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1": {
   "a": {
@@ -5356,11 +5435,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Service Desk Analyst I",
-  "v": 4
+  "v": 5
  },
  "workday:sharecare:/job/Remote/ROI-Support-Specialist---Remote_R-102114": {
   "a": {
@@ -5378,11 +5457,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "ROI Support Specialist - Remote",
-  "v": 4
+  "v": 5
  },
  "workday:situsamc:/job/Remote/Systems-Administrator---Kiteworks_JR03287": {
   "a": {
@@ -5400,11 +5479,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Systems Administrator – Kiteworks",
-  "v": 4
+  "v": 5
  },
  "workday:talentmanagementsolution:/job/Remote---USA/Customer-Onboarding-and-Learning-Systems-Specialist_R54662-1": {
   "a": {
@@ -5422,11 +5501,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Customer Onboarding and Learning Systems Specialist",
-  "v": 4
+  "v": 5
  },
  "workday:talentmanagementsolution:/job/Remote---USA/ProAdmin-Support-Specialist_R51223": {
   "a": {
@@ -5444,11 +5523,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "ProAdmin Testing & Client Support Specialist",
-  "v": 4
+  "v": 5
  },
  "workday:thinkbrg:/job/Remote---USA/Cybersecurity-Analyst_JR101249": {
   "a": {
@@ -5466,11 +5545,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
   "seen": "2026-11-12",
   "title": "Cybersecurity Analyst",
-  "v": 4
+  "v": 5
  },
  "workday:unisys:/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786": {
   "a": {
@@ -5490,11 +5569,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "USA Remote",
   "seen": "2026-11-12",
   "title": "Level 2 NOC Systems Administrator – Linux/Unix Focus",
-  "v": 4
+  "v": 5
  },
  "workday:usertesting:/job/Remote---US/IT-System-Administrator---AI_R-101222": {
   "a": {
@@ -5512,11 +5591,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
   "seen": "2026-11-12",
   "title": "AI Systems Administrator",
-  "v": 4
+  "v": 5
  },
  "workday:wvumedicine:/job/Remote/Revenue-Cycle-Systems-Analyst_JR26-47419": {
   "a": {
@@ -5534,11 +5613,11 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Revenue Cycle Systems Analyst",
-  "v": 4
+  "v": 5
  },
  "workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2": {
   "a": {
@@ -5556,11 +5635,11 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "Remote-USA",
   "seen": "2026-11-12",
   "title": "IT Support Specialist",
-  "v": 4
+  "v": 5
  },
  "workday:zoetis:/job/US-PR-Remote/Diagnostics-Technical-Specialist_JR00021611-1": {
   "a": {
@@ -5578,11 +5657,11 @@
    "section": null,
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US PR Remote",
   "seen": "2026-11-12",
   "title": "Diagnostics Technical Specialist",
-  "v": 4
+  "v": 5
  },
  "workday:zoetis:/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901": {
   "a": {
@@ -5600,10 +5679,10 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T09:27:36Z",
   "location": "US Remote",
   "seen": "2026-11-12",
   "title": "Diagnostics Technical Support Representative",
-  "v": 4
+  "v": 5
  }
 }

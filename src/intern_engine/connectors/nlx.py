@@ -44,17 +44,19 @@ HEADERS = {"x-origin": "dejobs.org", "Accept": "application/json"}
 # Quoted phrases, because the API treats bare words as OR-ish and drops "it"
 # as a stopword. Order is irrelevant; results are unioned by GUID.
 QUERIES = (
-    # Most valuable first: if the API asks us to slow down part-way through,
-    # it is the broad phrases at the end that go unread, not these.
-    '"help desk"', '"service desk"', '"desktop support"', '"IT support"',
-    '"IT technician"', '"IT specialist"', '"IT intern"', '"technology intern"',
+    # NLx drops "IT" as a stopword: "IT support" searches for "support" and
+    # returns 12,000 jobs. So nothing here leans on that word. Instead, the
+    # second group names things only an IT posting mentions in its text.
+    '"help desk"', '"service desk"', '"desktop support"', '"technology intern"',
     '"support technician"', '"computer technician"', '"PC technician"',
-    '"IT analyst"', '"IT associate"', '"IT assistant"', '"technology support"',
+    '"desktop technician"', '"computer support"', '"technology support"',
     '"technology specialist"', '"network technician"', '"network administrator"',
     '"network operations"', '"systems administrator"', '"system administrator"',
     '"data center technician"', '"security analyst"', '"cybersecurity analyst"',
-    '"support analyst"', '"support specialist"', '"field technician"',
-    '"technical support"',
+    '"support analyst"',
+    '"Active Directory"', '"CompTIA"', '"ticketing system"', '"end user support"',
+    '"information technology"',
+    '"support specialist"', '"field technician"', '"technical support"',
 )
 
 # The first live run sent ~300 requests in 15 seconds and the next run was

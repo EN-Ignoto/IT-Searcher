@@ -15,6 +15,8 @@ LONG = (" The technician answers tickets, resets passwords, images laptops, supp
     "Computer Technician", "Technology Support Specialist", "NOC Technician I",
     "Cybersecurity Intern", "Data Center Technician", "IT Technician I/II/III",
     "Geek Squad Agent",
+    # Found in the first live run's discard pile.
+    "Network & Desk Technician", "Data Center Services Technician",
 ])
 def test_entry_it_titles_are_kept(title):
     assert f.title_verdict(title)[0] == "keep", title

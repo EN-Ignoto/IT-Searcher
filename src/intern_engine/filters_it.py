@@ -31,7 +31,7 @@ import re
 from . import filters, geo
 
 # Bump when a rule change should re-read every stored posting.
-VERSION = 3
+VERSION = 4
 
 LOCAL = "Local"
 NEARBY = "Nearby"
@@ -50,7 +50,7 @@ _I = re.IGNORECASE
 
 _ROLE_PATTERNS: list[tuple[str, re.Pattern]] = [
     ("Help Desk / Service Desk", re.compile(
-        r"\b(help\s?desk|service\s?desk|support\s?desk|"
+        r"\b(help\s?desk|service\s?desk|support\s?desk|desk\s+technician|"
         r"it\s+service\s+cent(?:er|re)|technology\s+service\s+cent(?:er|re))\b", _I)),
     ("Desktop / End-User Support", re.compile(
         r"\b(desktop\s+(?:support|technician|engineer|analyst|administrator|services?|specialist)|"
@@ -65,7 +65,8 @@ _ROLE_PATTERNS: list[tuple[str, re.Pattern]] = [
     ("Systems / Infrastructure", re.compile(
         r"\b(systems?\s+(?:administrator|admin|support|technician|operator)|sys\s?admin|"
         r"infrastructure\s+(?:technician|support|analyst|specialist|intern|associate|operations)|"
-        r"data\s?cent(?:er|re)\s+(?:technician|operator|operations|tech|associate|intern)|"
+        r"data\s?cent(?:er|re)\s+(?:services?\s+)?"
+        r"(?:technician|operator|operations|tech|associate|intern)|"
         r"server\s+(?:technician|support)|cloud\s+(?:support|operations)\s+"
         r"(?:associate|technician|engineer|analyst|intern|specialist)|"
         r"(?:windows|linux|active\s+directory|microsoft\s*365|m365|o365|office\s*365)\s+"

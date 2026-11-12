@@ -1,29 +1,32 @@
 {
- "generated_at": "2026-11-12T18:14:21Z",
- "fetched_at": "2026-11-12T18:14:21Z",
+ "generated_at": "2026-11-12T20:37:05Z",
+ "fetched_at": "2026-11-12T20:37:05Z",
  "scope": "local",
- "duration_seconds": 205.9,
- "boards_total": 15,
+ "duration_seconds": 198.9,
+ "boards_total": 18,
  "boards_by_source": {
   "nlx": 1,
   "neogov": 11,
   "paradox": 1,
+  "peopleadmin": 1,
+  "icims": 2,
   "workday": 2
  },
  "quarantined": 0,
- "fetched_ok": 14,
- "fetch_errors": 1,
+ "fetched_ok": 15,
+ "fetch_errors": 3,
  "errors_by_source": {
-  "paradox": 1
+  "paradox": 1,
+  "icims": 2
  },
- "fetch_success_rate": 0.933,
- "snapshots_complete": 13,
+ "fetch_success_rate": 0.833,
+ "snapshots_complete": 14,
  "snapshots_partial": 1,
- "jobs_seen": 4121,
- "roles_matched": 8,
+ "jobs_seen": 4133,
+ "roles_matched": 9,
  "dropped_by_reason": {
   "active-clearance-required": 2,
-  "not-it-role": 4070,
+  "not-it-role": 4081,
   "requires-10-years-experience": 1,
   "requires-2-years-experience": 6,
   "requires-3-years-experience": 3,
@@ -33,11 +36,31 @@
   "senior-title": 17,
   "stale-posting": 7
  },
- "detail_fetches": 0,
+ "detail_fetches": 1,
  "closed_by_posting_check": 0,
  "purged_this_run": 0,
- "new_this_run": 0,
+ "new_this_run": 1,
  "local_sources": [
+  {
+   "key": "icims:administrators-ocps",
+   "name": "Orange County Public Schools (administrative and technical)",
+   "ats": "icims",
+   "jobs": 0,
+   "kept": 0,
+   "complete": false,
+   "error": "HTTPStatusError: Client error '405 Not Allowed' for url 'https://administrators-ocps.icims.com/jobs/search?ss=1&searchKeyword=help+desk&pr=0&in_iframe=1&format=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405",
+   "partial_reason": null
+  },
+  {
+   "key": "icims:classified-ocps",
+   "name": "Orange County Public Schools (support staff)",
+   "ats": "icims",
+   "jobs": 0,
+   "kept": 0,
+   "complete": false,
+   "error": "HTTPStatusError: Client error '405 Not Allowed' for url 'https://classified-ocps.icims.com/jobs/search?ss=1&searchKeyword=help+desk&pr=0&in_iframe=1&format=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405",
+   "partial_reason": null
+  },
   {
    "key": "neogov:casselberry",
    "name": "City of Casselberry",
@@ -152,7 +175,7 @@
    "key": "nlx:kissimmee-fl",
    "name": "NLx / DEJobs (50 mi of Kissimmee)",
    "ats": "nlx",
-   "jobs": 3916,
+   "jobs": 3913,
    "kept": 8,
    "complete": false,
    "error": null,
@@ -169,10 +192,20 @@
    "partial_reason": null
   },
   {
+   "key": "peopleadmin:valenciacollege",
+   "name": "Valencia College",
+   "ats": "peopleadmin",
+   "jobs": 14,
+   "kept": 1,
+   "complete": true,
+   "error": null,
+   "partial_reason": null
+  },
+  {
    "key": "workday:cityoforlando:cityoforlandocareers",
    "name": "City of Orlando",
    "ats": "workday",
-   "jobs": 57,
+   "jobs": 58,
    "kept": 0,
    "complete": true,
    "error": null,
@@ -189,21 +222,21 @@
    "partial_reason": null
   }
  ],
- "local_sources_ok": 14,
- "local_sources_total": 15,
- "open_total": 52,
+ "local_sources_ok": 15,
+ "local_sources_total": 18,
+ "open_total": 53,
  "open_by_section": {
   "Remote": 41,
   "Nearby": 5,
-  "Local": 6
+  "Local": 7
  },
  "open_by_fit": {
   "stretch": 21,
-  "beginner": 27,
+  "beginner": 28,
   "unverified": 4
  },
  "open_by_category": {
-  "IT Support / Technician": 24,
+  "IT Support / Technician": 25,
   "IT Operations": 6,
   "Systems / Infrastructure": 6,
   "Network / NOC": 4,
@@ -212,7 +245,7 @@
   "Technical Support (customer-facing)": 3
  },
  "open_by_employment": {
-  "Not stated": 43,
+  "Not stated": 44,
   "Internship": 5,
   "Full-time": 3,
   "Temporary / contract": 1
@@ -225,9 +258,10 @@
   "oracle": 1,
   "recruitee": 1,
   "rippling": 4,
-  "workday": 13
+  "workday": 13,
+  "peopleadmin": 1
  },
- "posted_date_coverage": 0.923,
+ "posted_date_coverage": 0.925,
  "last_full": {
   "fetched_at": "2026-11-12T09:46:35Z",
   "duration_seconds": 1139.3,
@@ -238,5 +272,5 @@
   "jobs_seen": 349327,
   "roles_matched": 52
  },
- "rendered_at": "2026-11-12T18:14:21Z"
+ "rendered_at": "2026-11-12T20:37:05Z"
 }

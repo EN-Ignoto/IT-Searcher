@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-12T18:14:21Z",
- "data_as_of": "2026-11-12T18:14:21Z",
- "rendered_at": "2026-11-12T18:14:21Z",
+ "generated_at": "2026-11-12T20:37:05Z",
+ "data_as_of": "2026-11-12T20:37:05Z",
+ "rendered_at": "2026-11-12T20:37:05Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 52,
+ "count": 53,
  "jobs": [
   {
    "id": "workday:halma:/job/Orlando/Jr-IT-Support-Specialist_JR26_001243",
@@ -47,6 +47,29 @@
    "first_seen_at": "2026-11-12T08:17:17Z",
    "salary": null,
    "source": "nlx"
+  },
+  {
+   "id": "peopleadmin:valenciacollege:44244",
+   "section": "Local",
+   "miles": 17.1,
+   "remote": false,
+   "title": "Specialist, Technical Support",
+   "company": "Valencia College",
+   "location": "Orlando, FL (East Campus)",
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "fit": "beginner",
+   "experience": "No years of experience stated",
+   "evidence": "",
+   "notes": [
+    "Mentions Security+/Network+"
+   ],
+   "url": "https://valenciacollege.peopleadmin.com/postings/44244",
+   "posted_at": "2026-11-05T19:03:08-05:00",
+   "posted_at_source": "exact",
+   "first_seen_at": "2026-11-12T20:37:05Z",
+   "salary": null,
+   "source": "peopleadmin"
   },
   {
    "id": "nlx:kissimmee-fl:BA300695C674418D983FDDC3B445D250",

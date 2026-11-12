@@ -754,6 +754,16 @@
     "last_attempt_at": "2026-11-12T09:25:22Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://boards-api.greenhouse.io/v1/boards/withumsmithbrown/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/S"
   },
+  "icims:administrators-ocps": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-12T20:37:05Z",
+    "last_error": "HTTPStatusError: Client error '405 Not Allowed' for url 'https://administrators-ocps.icims.com/jobs/search?ss=1&searchKeyword=help+desk&pr=0&in_iframe=1&format=json'\nFor more information check: https:"
+  },
+  "icims:classified-ocps": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-12T20:37:05Z",
+    "last_error": "HTTPStatusError: Client error '405 Not Allowed' for url 'https://classified-ocps.icims.com/jobs/search?ss=1&searchKeyword=help+desk&pr=0&in_iframe=1&format=json'\nFor more information check: https://de"
+  },
   "lever:aifund": {
     "consecutive_failures": 35,
     "last_attempt_at": "2026-11-12T09:25:22Z",
@@ -1005,8 +1015,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/xpansiv?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   },
   "paradox:osceolaschools": {
-    "consecutive_failures": 8,
-    "last_attempt_at": "2026-11-12T18:14:21Z",
+    "consecutive_failures": 9,
+    "last_attempt_at": "2026-11-12T20:37:05Z",
     "last_error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://jobs.osceolaschools.net/api/get-jobs?page_number=1&enable_kilometers=false'\nFor more information check: https://developer.mozilla.org/en-"
   },
   "recruitee:1x": {

@@ -4119,6 +4119,30 @@
   "title": "Implementation System Support Representative - Remote",
   "v": 5
  },
+ "peopleadmin:valenciacollege:44244": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [
+    "Mentions Security+/Network+"
+   ],
+   "posted_at": "2026-11-05T19:03:08-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T20:33:46Z",
+  "location": "Orlando, FL (East Campus)",
+  "seen": "2026-11-12",
+  "title": "Specialist, Technical Support",
+  "v": 5
+ },
  "recruitee:hardrockdigital:2823560": {
   "a": {
    "category": "Network / NOC",

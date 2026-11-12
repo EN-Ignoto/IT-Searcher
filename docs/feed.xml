@@ -5,8 +5,16 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-12T18:14:21Z</updated>
+  <updated>2026-11-12T20:37:05Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:it-searcher:peopleadmin:valenciacollege:44244</id>
+    <title>[Local] Specialist, Technical Support — Valencia College</title>
+    <link href="https://valenciacollege.peopleadmin.com/postings/44244"/>
+    <updated>2026-11-12T20:37:05Z</updated>
+    <category term="Local"/>
+    <summary>Orlando, FL (East Campus) · 17 mi · Not stated · Beginner-friendly · No years of experience stated · Mentions Security+/Network+</summary>
+  </entry>
   <entry>
     <id>urn:it-searcher:ashby:agave:a263e45f-e86e-4c78-882e-a79da649e861</id>
     <title>[Remote] Technical Support Engineer (TSE) — Agave</title>

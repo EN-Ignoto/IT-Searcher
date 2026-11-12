@@ -1,42 +1,66 @@
 {
- "generated_at": "2026-11-12T08:32:55Z",
- "fetched_at": "2026-11-12T08:32:55Z",
- "scope": "local",
- "duration_seconds": 188.4,
- "boards_total": 15,
+ "generated_at": "2026-11-12T09:25:22Z",
+ "fetched_at": "2026-11-12T09:25:22Z",
+ "scope": "full",
+ "duration_seconds": 1360.2,
+ "boards_total": 5392,
  "boards_by_source": {
   "nlx": 1,
   "neogov": 11,
   "paradox": 1,
-  "workday": 2
+  "workday": 1899,
+  "greenhouse": 1203,
+  "lever": 444,
+  "ashby": 907,
+  "recruitee": 3,
+  "smartrecruiters": 315,
+  "rippling": 184,
+  "workable": 239,
+  "oracle": 164,
+  "amazon": 1,
+  "breezy": 19,
+  "eightfold": 1
  },
- "quarantined": 0,
- "fetched_ok": 14,
- "fetch_errors": 1,
+ "quarantined": 180,
+ "fetched_ok": 4857,
+ "fetch_errors": 355,
  "errors_by_source": {
-  "paradox": 1
+  "paradox": 1,
+  "rippling": 4,
+  "workday": 143,
+  "lever": 30,
+  "ashby": 57,
+  "greenhouse": 46,
+  "workable": 74
  },
- "fetch_success_rate": 0.933,
- "snapshots_complete": 13,
- "snapshots_partial": 1,
- "jobs_seen": 4121,
- "roles_matched": 7,
+ "fetch_success_rate": 0.932,
+ "snapshots_complete": 4136,
+ "snapshots_partial": 721,
+ "jobs_seen": 345253,
+ "roles_matched": 75,
  "dropped_by_reason": {
-  "active-clearance-required": 2,
-  "not-it-role": 4072,
-  "requires-10-years-experience": 1,
-  "requires-2-years-experience": 5,
-  "requires-3-years-experience": 3,
-  "requires-4-years-experience": 3,
-  "requires-5-years-experience": 3,
-  "requires-8-years-experience": 1,
-  "senior-title": 17,
-  "stale-posting": 7
+  "active-clearance-required": 80,
+  "level-2-unverifiable": 1,
+  "not-it-role": 333589,
+  "outside-area": 9120,
+  "past-term": 1,
+  "remote-not-open-to-florida": 1,
+  "requires-10-years-experience": 2,
+  "requires-2-years-experience": 16,
+  "requires-3-years-experience": 16,
+  "requires-4-years-experience": 9,
+  "requires-5-years-experience": 14,
+  "requires-6-years-experience": 1,
+  "requires-7-years-experience": 2,
+  "requires-8-years-experience": 2,
+  "senior-title": 2276,
+  "stale-posting": 43,
+  "unconfirmed-it-role": 5
  },
- "detail_fetches": 0,
+ "detail_fetches": 125,
  "closed_by_posting_check": 0,
  "purged_this_run": 0,
- "new_this_run": 0,
+ "new_this_run": 68,
  "local_sources": [
   {
    "key": "neogov:casselberry",
@@ -152,8 +176,8 @@
    "key": "nlx:kissimmee-fl",
    "name": "NLx / DEJobs (50 mi of Kissimmee)",
    "ats": "nlx",
-   "jobs": 3921,
-   "kept": 7,
+   "jobs": 3926,
+   "kept": 8,
    "complete": false,
    "error": null,
    "partial_reason": "result-cap"
@@ -191,29 +215,53 @@
  ],
  "local_sources_ok": 14,
  "local_sources_total": 15,
- "open_total": 7,
+ "open_total": 75,
  "open_by_section": {
-  "Local": 4,
-  "Nearby": 3
+  "Local": 7,
+  "Nearby": 6,
+  "Remote": 62
  },
  "open_by_fit": {
-  "beginner": 3,
-  "stretch": 4
+  "beginner": 56,
+  "stretch": 15,
+  "unverified": 4
  },
  "open_by_category": {
-  "Help Desk / Service Desk": 2,
-  "IT Support / Technician": 3,
-  "Network / NOC": 1,
-  "Systems / Infrastructure": 1
+  "Help Desk / Service Desk": 4,
+  "IT Support / Technician": 37,
+  "Network / NOC": 5,
+  "Systems / Infrastructure": 12,
+  "Technical Support (customer-facing)": 3,
+  "IT Operations": 8,
+  "Security (entry)": 6
  },
  "open_by_employment": {
-  "Full-time": 1,
+  "Full-time": 3,
   "Temporary / contract": 1,
-  "Not stated": 5
+  "Not stated": 63,
+  "Internship": 7,
+  "Part-time": 1
  },
  "open_by_source": {
-  "nlx": 7
+  "nlx": 8,
+  "oracle": 2,
+  "ashby": 8,
+  "rippling": 4,
+  "lever": 2,
+  "recruitee": 1,
+  "workday": 26,
+  "greenhouse": 24
  },
- "posted_date_coverage": 1.0,
- "rendered_at": "2026-11-12T08:32:55Z"
+ "posted_date_coverage": 0.947,
+ "last_full": {
+  "fetched_at": "2026-11-12T09:25:22Z",
+  "duration_seconds": 1360.2,
+  "boards_total": 5392,
+  "fetched_ok": 4857,
+  "fetch_errors": 355,
+  "fetch_success_rate": 0.932,
+  "jobs_seen": 345253,
+  "roles_matched": 75
+ },
+ "rendered_at": "2026-11-12T09:25:22Z"
 }

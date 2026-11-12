@@ -159,6 +159,12 @@ async def _one_query(query: str, base: dict, company: dict, net: Net,
         more = isinstance(pagination, dict) and bool(pagination.get("has_more_pages"))
         if not docs or not more:
             return jobs, None
+    # Name the phrase: a capped phrase is one that is too broad to be useful,
+    # and the run log is the only place that can be seen.
+    total = pagination.get("total") if isinstance(pagination, dict) else None
+    print(f"NLx: {query} still had more after {_MAX_PAGES} pages "
+          f"(reported total: {total}; pagination keys: "
+          f"{sorted(pagination) if isinstance(pagination, dict) else None})", flush=True)
     return jobs, INCOMPLETE_CAPPED
 
 
@@ -174,6 +180,8 @@ async def fetch(company: dict, net: Net) -> Fetch:
     for found, why in results:
         for jid, job in found.items():
             jobs.setdefault(jid, job)
+        if why == INCOMPLETE_RATE_LIMITED:
+            print("NLx: a phrase was cut short by rate limiting", flush=True)
         if why in (INCOMPLETE_MALFORMED, INCOMPLETE_STALLED):
             reason = why
         elif why and reason is None:

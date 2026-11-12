@@ -24,6 +24,8 @@ from __future__ import annotations
 import asyncio
 import re
 
+import httpx
+
 from .. import geo
 from ..models import (
     INCOMPLETE_CAPPED,
@@ -53,6 +55,11 @@ QUERIES = (
     '"technology specialist"', '"technology support"', '"PC technician"',
 )
 
+# The first live run sent ~300 requests in 15 seconds and the next run was
+# refused with HTTP 429. Two at a time with a pause is about four a second.
+_CONCURRENCY = 2
+_PAUSE_SECONDS = 0.25
+INCOMPLETE_RATE_LIMITED = "rate-limited"
 _MAX_PAGES = 40   # 600 results per phrase; more than that is a runaway query
 
 
@@ -105,12 +112,22 @@ def _job(doc: dict, company: dict) -> Job | None:
     )
 
 
-async def _one_query(query: str, base: dict, company: dict, net: Net):
+async def _one_query(query: str, base: dict, company: dict, net: Net,
+                     gate: asyncio.Semaphore):
     jobs: dict[str, Job] = {}
     previous: tuple[str, ...] = ()
     for page in range(1, _MAX_PAGES + 1):
-        data = await net.get_json(
-            API, params={**base, "q": query, "page": str(page)}, headers=HEADERS)
+        try:
+            async with gate:
+                data = await net.get_json(
+                    API, params={**base, "q": query, "page": str(page)}, headers=HEADERS)
+                await asyncio.sleep(_PAUSE_SECONDS)
+        except httpx.HTTPStatusError as exc:
+            if exc.response.status_code == 429:
+                # Asked to slow down. Keep what this phrase already returned;
+                # the snapshot is partial, so it closes nothing.
+                return jobs, INCOMPLETE_RATE_LIMITED
+            raise
         docs = clean_listing(data, "jobs")
         if docs is None:
             if not jobs and page == 1:
@@ -138,8 +155,9 @@ async def fetch(company: dict, net: Net) -> Fetch:
     base = {"location": company.get("location", geo.HOME_NAME),
             "r": str(company.get("radius", 50))}
     queries = company.get("queries") or QUERIES
-    # Concurrent, but `Net` still caps requests per host.
-    results = await asyncio.gather(*(_one_query(q, base, company, net) for q in queries))
+    gate = asyncio.Semaphore(_CONCURRENCY)
+    results = await asyncio.gather(
+        *(_one_query(q, base, company, net, gate) for q in queries))
     jobs: dict[str, Job] = {}
     reason: str | None = None
     for found, why in results:
@@ -149,4 +167,6 @@ async def fetch(company: dict, net: Net) -> Fetch:
             reason = why
         elif why and reason is None:
             reason = why
+    if not jobs and reason == INCOMPLETE_RATE_LIMITED:
+        raise NlxError("rate limited (HTTP 429) before any result was returned")
     return Fetch(list(jobs.values()), complete=reason is None, incomplete_reason=reason)

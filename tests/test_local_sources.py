@@ -50,6 +50,11 @@ def test_local_registry_is_valid_and_complete():
             assert b.get("whole") is True
 
 
+@pytest.fixture(autouse=True)
+def _no_pause(monkeypatch):
+    monkeypatch.setattr(nlx, "_PAUSE_SECONDS", 0)
+
+
 # ------------------------------------------------------------------- NLx --
 NLX = {"name": "NLx", "slug": "kissimmee-fl", "ats": "nlx", "queries": ['"help desk"']}
 
@@ -216,3 +221,21 @@ def test_pagetext_falls_back_to_the_body_without_scripts():
            "</div></body></html>"
     text, posted = pagetext.extract(page)
     assert posted is None and "Resets passwords" in text and "var x" not in text
+
+
+def test_nlx_rate_limit_keeps_partial_results_and_closes_nothing(monkeypatch):
+    import httpx
+    monkeypatch.setattr(nlx, "_PAUSE_SECONDS", 0)
+    request = httpx.Request("GET", nlx.API)
+    limited = httpx.HTTPStatusError("429", request=request,
+                                    response=httpx.Response(429, request=request))
+
+    def answer(_m, _u, kw):
+        if kw["params"]["page"] == "1":
+            return {"jobs": [_nlx_doc("A")], "pagination": {"has_more_pages": True}}
+        return limited
+    result = run(nlx.fetch(NLX, ScriptedNet(answer)))
+    assert len(result.jobs) == 1 and not result.complete
+    assert result.incomplete_reason == nlx.INCOMPLETE_RATE_LIMITED
+    with pytest.raises(nlx.NlxError, match="rate limited"):
+        asyncio.run(nlx.fetch(NLX, ScriptedNet(lambda *_: limited)))

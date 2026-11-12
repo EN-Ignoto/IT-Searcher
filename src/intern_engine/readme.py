@@ -110,7 +110,7 @@ def generate(store_data: dict, data_as_of: str | None = None) -> dict:
         "",
         "- **Local sources, every 30 minutes**: the National Labor Exchange (NLx) within "
         "50 miles of Kissimmee, eleven city and county governments on GovernmentJobs, the "
-        "School District of Osceola County, UCF and the City of Orlando.",
+        "UCF, Valencia College and the City of Orlando.",
         "- **Nationwide sweep, every 6 hours**: about 5,400 employer job boards, which is "
         "where the remote roles come from.",
         "- Roles that were considered and dropped are logged with the reason in "

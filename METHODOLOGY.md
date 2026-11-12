@@ -43,6 +43,10 @@ name ("City Hall") are placed at the employer's own town.
 A remote role is kept when its location says United States, nationwide,
 Florida, or just "Remote". "Remote - Texas" is not listed. If the posting text
 restricts residence to a list of states that leaves Florida out, it is dropped.
+Also dropped from Remote: roles
+that name another country or a region Florida is not in ("Remote - UK",
+"Northwest Region"), field-service jobs done at customer sites, and titles
+that pin the job to a city in another state ("Support Engineer - Utica, NY").
 A role that is both local and remote is listed under Local with a
 "remote option" marker. Local always outranks Remote.
 
@@ -65,7 +69,9 @@ have") overrides the heading.
 Also not listed: unpaid internships, internships for graduate students only,
 roles that need an **active** security clearance (the ability to obtain one is
 only a note), and non-internship roles that require a bachelor's degree with no
-"or equivalent" wording. A level II title with nothing stated is a Stretch.
+"or equivalent" wording. A level II title with nothing stated is a Stretch. So
+is an "engineer" or "administrator" posting that states no experience at all:
+silence on such a title is not treated as an invitation.
 
 **Check requirements** means the posting text could not be read. Those roles
 are listed only when the title is plainly entry level, and they are re-read

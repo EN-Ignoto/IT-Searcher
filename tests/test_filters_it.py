@@ -39,6 +39,12 @@ def test_entry_it_titles_are_kept(title):
     ("Bi-lingual Pharmacy Tech Support/Call Center", "not-it-role"),
     ("Linux Systems Administrator 2/3 - Top Secret", "active-clearance-required"),
     ("Building Automation Systems Specialist", "not-it-role"),
+    # From the first nationwide sweep.
+    ("Staff Network Engineer", "senior-title"),
+    ("Utilities Systems Operator I, II, III, IV, V", "not-it-role"),
+    ("Teaching Assistant: Data Center Technician", "not-it-role"),
+    ("Salesforce Business Systems Administrator", "not-it-role"),
+    ("Broadcast Systems Technician", "not-it-role"),
 ])
 def test_other_titles_are_rejected_with_a_reason(title, reason):
     assert f.title_verdict(title) == ("reject", reason)
@@ -178,3 +184,39 @@ class TestPlace:
     def test_local_beats_remote(self):
         section, _, remote, _ = f.place("Orlando, FL (Remote)")
         assert section == f.LOCAL and remote
+
+
+@pytest.mark.parametrize("location,title", [
+    ("Remote - UK", "Technical Support Specialist - German Fluency"),
+    ("Americas Remote", "Technical Support Engineer, Canada"),
+    ("Remote-LA", "IT Service Management Intern"),
+    ("OH-Remote", "Information Security Analyst"),
+    ("FLORIDA VIRTUAL, USA", "Field Service Technician - Ft Lauderdale, FL"),
+    ("VIRTUAL, NORTHWEST REGION USA", "Help Desk Technician"),
+    ("Virtual/Remote USA", "Customer Support Engineer - Utica, NY"),
+    ("—", "Cloud Infrastructure Specialist / Azure Virtual Desktop"),
+    ("Remote - US", "Designated Technical Support Engineer - West"),
+])
+def test_remote_roles_a_florida_resident_cannot_take(location, title):
+    assert f.place(location, title)[0] is None
+
+
+@pytest.mark.parametrize("location,title", [
+    ("Remote - USA", "Service Desk Analyst I"),
+    ("US-Remote", "Technical Support Specialist"),
+    ("Remote", "IT Support Specialist (Remote)"),
+    ("Remote - US", "Designated Technical Support Engineer - Central/East"),
+    ("United States", "Help Desk Technician - Remote"),
+    ("Remote, FL", "IT Technician"),
+])
+def test_remote_roles_open_to_florida(location, title):
+    assert f.place(location, title)[0] == f.REMOTE
+
+
+def test_silent_posting_on_an_experienced_title_is_only_a_stretch():
+    body = LONG * 2
+    assert f.assess("Security Systems Administrator", body)["fit"] == f.FIT_STRETCH
+    assert f.assess("Junior Systems Administrator", body)["fit"] == f.FIT_BEGINNER
+    assert f.assess("Help Desk Technician", body)["fit"] == f.FIT_BEGINNER
+    assert f.assess("Systems Administrator", "No experience required." + body)["fit"] \
+        == f.FIT_BEGINNER

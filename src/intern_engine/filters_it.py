@@ -31,7 +31,7 @@ import re
 from . import filters, geo
 
 # Bump when a rule change should re-read every stored posting.
-VERSION = 4
+VERSION = 5
 
 LOCAL = "Local"
 NEARBY = "Nearby"
@@ -122,7 +122,8 @@ _INTERN_IT_RE = re.compile(
 _SENIOR_RE = re.compile(
     r"\b(senior|sr|lead|principal|manager|mgr|director|supervisor|chief|vp|"
     r"vice\s+president|architect|head\s+of|team\s+lead|expert|advanced|"
-    r"staff\s+(?:engineer|analyst|administrator|technician|architect|specialist)|"
+    r"staff\s+(?:\w+\s+){0,2}(?:engineer|analyst|administrator|technician|architect|"
+    r"specialist)|"
     r"(?:level|tier|lvl|grade)\s*[-:]?\s*(?:[3-9]|iii|iv|v)|[lt][3-9])\b", _I)
 _MID_RE = re.compile(
     r"\b(intermediate|mid[\s-]?level|journeyman|experienced|"
@@ -161,6 +162,8 @@ _CUSTOMER_FACING_RE = re.compile(
 _TITLE_CLEARANCE_RE = re.compile(
     r"\b(top\s+secret|ts/sci|ts\s*/\s*sci|secret\s+clearance|security\s+clearance|"
     r"(?:active|current)\s+(?:secret|clearance)|polygraph|cleared)\b", _I)
+_EXPERIENCED_TITLE_RE = re.compile(
+    r"\b(engineer|administrator|admin|sysadmin|sys\s+admin)\b", _I)
 _PAST_TERM_RE = re.compile(r"\b(spring|summer|fall|autumn|winter)\s*'?(20\d\d|\d\d)\b", _I)
 
 
@@ -227,7 +230,9 @@ def title_verdict(title: str) -> tuple[str, str | None]:
         r"\b(sales|nurs\w+|software\s+(?:engineer\w*|develop\w+)|developer|"
         r"data\s+(?:scien\w+|engineer\w*)|recruit\w*|account\s+executive|"
         r"security\s+(?:officer|guard)|(?:product|project|program)\s+manag\w+|"
-        r"pharmac\w+|call[\s-]cent(?:er|re)|building\s+automation)\b",
+        r"pharmac\w+|call[\s-]cent(?:er|re)|building\s+automation|"
+        r"utilit\w+|water|wastewater|broadcast\w*|teaching\s+assistant|instructor|"
+        r"tutor|salesforce|finops)\b",
         title, _I)
     if hard_other:
         return "reject", "not-it-role"
@@ -600,7 +605,14 @@ def assess(title: str, description: str | None, *, level: int | None = None,
         if level >= 2:
             out["fit"] = FIT_STRETCH
             notes.append("Level II title")
-    if found["non_it"]:
+        elif not intern and not explicit and _EXPERIENCED_TITLE_RE.search(title or "") \
+                and not _JUNIOR_RE.search(title or "") \
+                and not re.search(r"\bassociate\b", title or "", _I):
+            # Silence is not an invitation: an "engineer" or "administrator"
+            # posting that states no years still usually expects some.
+            out["fit"] = FIT_STRETCH
+            notes.append("No experience stated, but this title usually expects some")
+    if found["non_it"] and max(found["non_it"])[0] > 0:
         years, _snippet = max(found["non_it"])
         notes.append(f"Asks {_fmt_years(years)} customer-service-type experience")
 
@@ -631,15 +643,32 @@ def assess(title: str, description: str | None, *, level: int | None = None,
 _REMOTE_WORD_RE = re.compile(
     r"\b(remote|virtual|work\s+from\s+home|wfh|telecommut\w*|teleworker?|anywhere|"
     r"home[\s-]based)\b", _I)
+# In a TITLE only unambiguous words count: "Azure Virtual Desktop" is a product.
+_REMOTE_TITLE_RE = re.compile(
+    r"\b(remote|work\s+from\s+home|wfh|telecommut\w*|home[\s-]based)\b", _I)
+_FOREIGN_RE = re.compile(
+    r"\b(uk|u\.k\.|united\s+kingdom|england|ireland|canada|emea|europe\w*|apac|asia|"
+    r"latam|latin\s+america|india|australia|new\s+zealand|germany|german|france|french|"
+    r"spain|portugal|poland|netherlands|mexico|brazil|argentina|colombia|philippines|"
+    r"japan|singapore|israel|dubai|uae|south\s+africa|nigeria|kenya|egypt|pakistan|"
+    r"romania|ukraine|turkey|italy|sweden|denmark|norway|finland|switzerland)\b", _I)
+# A remote job pinned to a part of the country Florida is not in.
+_OTHER_REGION_RE = re.compile(
+    r"\b(north\s?west\w*|south\s?west\w*|north\s?east\w*|mid[\s-]?west\w*|"
+    r"west\s+coast|pacific|mountain|pst|mst)\b|-\s*west\b", _I)
+# Work done at customers' sites is not remote work, whatever the location says.
+_FIELD_WORK_RE = re.compile(r"\bfield\b|\bon[\s-]?site\b|\btravel(?:l?ing)?\b", _I)
+_TITLE_PLACE_RE = re.compile(r"[-–—,(]\s*[A-Z][A-Za-z. ]+,\s*([A-Z]{2})\b")
 _US_WIDE_RE = re.compile(
     r"\b(united\s+states|u\.s\.a?\.?|usa|us|nationwide|anywhere|north\s+america|"
     r"americas)\b", _I)
 _FLORIDA_RE = re.compile(r"(?i:\bflorida\b)|\bFL\b")
 _STATE_NAME_RE = re.compile(
     r"\b(" + "|".join(s for s in filters._US_STATES if s != "florida") + r")\b", _I)
+# Hyphens are separators here: "Remote-LA" and "OH-Remote" name states.
 _STATE_CODE_RE = re.compile(
-    r"(?<![\w-])(" + "|".join(
-        c for c in filters._US_CODES if c not in ("FL", "US", "USA")) + r")(?![\w-])")
+    r"(?<![A-Za-z0-9])(" + "|".join(
+        c for c in filters._US_CODES if c not in ("FL", "US", "USA")) + r")(?![A-Za-z0-9])")
 _RESIDENCY_RE = re.compile(
     r"(?:must\s+(?:reside|live|be\s+located|be\s+based)|residents?\s+of|"
     r"(?:eligible|approved|following)\s+(?:states|locations)|"
@@ -652,8 +681,18 @@ def remote_open_to_florida(location: str, title: str = "",
     """(eligible, note). Only what the posting says: 'Remote - Texas' is not
     a job a Florida resident can take, 'Remote, United States' is."""
     loc = location or ""
-    if not (_REMOTE_WORD_RE.search(loc) or _REMOTE_WORD_RE.search(title or "")):
+    title = title or ""
+    if not (_REMOTE_WORD_RE.search(loc) or _REMOTE_TITLE_RE.search(title)):
         return False, None
+    if _FOREIGN_RE.search(loc) or _FOREIGN_RE.search(title):
+        return False, None
+    if _OTHER_REGION_RE.search(loc) or _OTHER_REGION_RE.search(title):
+        return False, None
+    if _FIELD_WORK_RE.search(title):
+        return False, None
+    named = _TITLE_PLACE_RE.search(title)
+    if named and named.group(1) in filters._US_CODES:
+        return False, None   # "Support Engineer - Utica, NY": the job is in Utica
     note = None
     options = [o.strip() for o in re.split(r"[;|]", loc) if o.strip()] or [loc]
     ok = False

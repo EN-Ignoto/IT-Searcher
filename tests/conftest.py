@@ -11,8 +11,8 @@ from intern_engine import paths  # noqa: E402
 # sandboxed for the whole suite.
 _WRITABLE = (
     "README_PATH", "CSV_PATH", "STATS_PATH", "HISTORY_PATH", "JOBS_PATH",
-    "HEALTH_PATH", "MAIL_STATE_PATH", "OUTBOX_PATH", "OBSERVED_PATH",
-    "DOCS_DIR", "API_DIR", "DASHBOARD_PATH", "FEED_PATH", "RADAR_ICS_PATH",
+    "HEALTH_PATH", "ASSESSED_PATH", "REJECTED_PATH", "UNMATCHED_PATH",
+    "DOCS_DIR", "API_DIR", "DASHBOARD_PATH", "FEED_PATH",
 )
 
 
@@ -41,17 +41,3 @@ def _sandbox_outputs(tmp_path, monkeypatch):
             monkeypatch.setattr(paths, name, str(out / "api"))
         else:
             monkeypatch.setattr(paths, name, str(out / os.path.basename(original)))
-
-
-@pytest.fixture(autouse=True)
-def _legacy_config(tmp_path, monkeypatch):
-    import json
-
-    from intern_engine import config
-
-    path = tmp_path / "config.json"
-    raw = config.load_config()
-    raw.update(opportunity_scope="legacy", cycles=["Summer 2027", "Fall 2026"],
-               default_cycle="Summer 2027", section_limits={"Summer 2027": 300, "Fall 2026": 150})
-    path.write_text(json.dumps(raw))
-    monkeypatch.setattr(paths, "CONFIG_PATH", str(path))

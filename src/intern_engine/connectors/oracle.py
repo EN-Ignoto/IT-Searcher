@@ -7,7 +7,6 @@ REST endpoint, browser-like headers, paginated by offset.
 
 from __future__ import annotations
 
-from ..filters_it import SEARCH_TERMS as IT_SEARCH_TERMS
 from ..models import (
     INCOMPLETE_CAPPED,
     INCOMPLETE_MALFORMED,
@@ -18,6 +17,7 @@ from ..models import (
     source_board_key,
 )
 from ..net import Net
+from ..terms import SEARCH_TERMS
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -28,7 +28,7 @@ HEADERS = {
 _PAGE_SIZE = 50
 _MAX_JOBS = 200  # per keyword
 # Like Workday, the keyword search is literal — "intern" alone drops co-ops.
-_KEYWORDS = ("internship", "co-op", "student", "intern")
+_KEYWORDS = SEARCH_TERMS
 
 _COUNTRIES = {
     "US": "United States", "USA": "United States", "CA": "Canada",
@@ -95,8 +95,7 @@ async def fetch(company: dict, net: Net) -> Fetch:
 
     jobs: dict[str, Job] = {}  # keyed by job id: the keyword searches overlap
     incomplete_reason: str | None = None
-    for keyword in (_KEYWORDS + (IT_SEARCH_TERMS
-                        if company.get("opportunity_scope") == "it" else ())):
+    for keyword in _KEYWORDS:
         exhausted = False
         offset = 0
         trusted_total: int | None = None

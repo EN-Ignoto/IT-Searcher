@@ -1,169 +1,107 @@
 # Methodology
 
-How every number on this list is produced, and what each one does and doesn't
-claim. If something here doesn't match what the code does, that's a bug —
-[open an issue](../../issues/new/choose).
+What each thing on the list claims, and how it is decided. Every rule lives in
+[`src/intern_engine/filters_it.py`](src/intern_engine/filters_it.py) and
+[`src/intern_engine/geo.py`](src/intern_engine/geo.py).
 
-## Where roles come from
+## Who the list is for
 
-Every role is read directly from the employer's own applicant tracking system
-(ATS) — Greenhouse, Lever, Ashby, Workday, Oracle, SmartRecruiters, Workable,
-Breezy, Recruitee, Rippling, Eightfold, and Amazon's jobs API. There are no
-aggregator links, no scraped third-party lists, and no roles copied from other
-GitHub repos. The **Apply** link is the employer's URL.
+A reader with Network+ and Security+, retail and customer-service experience,
+studying computer science, with no professional IT experience. Home is
+Kissimmee, Florida.
 
-The registry of boards to poll (`data/companies.json`) is built by
-`run.py discover` + `run.py harvest`, which probe candidate ATS slugs and keep
-the ones that respond.
+## The four questions every posting is asked
 
-## What counts as a role we list
+1. **Is the title an entry path into IT?** Help desk / service desk, desktop and
+   end-user support, IT technician and IT support, junior network, NOC, systems
+   and data-center work, entry security (SOC analyst, security intern), IT
+   operations, and IT internships. Titles that name a support job without saying
+   it is an IT one ("Support Technician") are kept only when the posting text
+   uses at least four distinct IT-support terms.
+2. **Is it senior?** Senior, lead, manager, architect, principal and level III+
+   titles are dropped. A title offering several levels ("Technician I/II/III")
+   counts at its lowest.
+3. **Can the reader work there?** See *Sections* below.
+4. **Does the posting require something the reader lacks?** Judged from the
+   posting's own text, never from the title. See *Fit*.
 
-A posting must pass all of:
+## Sections
 
-1. **It is a beginner IT role or paid IT internship** — help desk, desktop support, IT support, junior networking, systems, infrastructure, or related IT operations. Senior and unrelated titles are excluded.
-2. **The requirements fit a first IT job** — readable job descriptions are checked for prior professional IT experience, unpaid work, existing clearances, and other hard barriers. Unknown requirements are held out of the published list.
-3. **It is local or eligible remote work** — Orlando-area locations or remote roles available in Florida/the US.
-4. **It belongs to a location section** — `Orlando area` or `Remote — Florida / US`. These labels describe location, not a hiring season.
+| Section | Meaning |
+|---|---|
+| **Local** | 30 miles or less from Kissimmee City Hall, straight-line distance |
+| **Nearby** | more than 30 and up to 50 miles |
+| **Remote** | the posting is remote and open to Florida residents |
 
-The collector, dashboard, employer registry, discovery, retries, and publication workflow are copied from [ihrtkaii/test-1](https://github.com/ihrtkaii/test-1). The role profile changes which opportunities pass the filters and which search terms adapters submit. Applications remain on the employer's website.
+Distance uses the coordinates the source publishes when it has them (NLx, the
+school district). Otherwise the location text is matched against a closed table
+of about 110 Central Florida places. A place that is not in the table is *not
+placed*, which is different from far away, and the role is treated as not local
+instead of guessed. Single-site local employers whose location is a building
+name ("City Hall") are placed at the employer's own town.
+
+A remote role is kept when its location says United States, nationwide,
+Florida, or just "Remote". "Remote - Texas" is not listed. If the posting text
+restricts residence to a list of states that leaves Florida out, it is dropped.
+Also dropped from Remote: roles
+that name another country or a region Florida is not in ("Remote - UK",
+"Northwest Region"), field-service jobs done at customer sites, and titles
+that pin the job to a city in another state ("Support Engineer - Utica, NY").
+A role that is both local and remote is listed under Local with a
+"remote option" marker. Local always outranks Remote.
+
+## Fit
+
+Only **required** years of **IT** experience can exclude a role. The posting is
+read line by line, tracking whether a line sits under a "Required" or a
+"Preferred" heading; wording inside the line ("preferred", "a plus", "must
+have") overrides the heading.
+
+| What the posting requires | Result |
+|---|---|
+| Nothing, or experience is only preferred | **Beginner-friendly**; preferred years shown as a note |
+| Under 2 years | **Stretch** |
+| 2 years, with "or equivalent education / certifications" | **Stretch** |
+| 2 years, no substitute | not listed |
+| 3 years or more | not listed |
+| Years of customer-service, retail or call-center experience | listed; shown as a note |
+
+Also not listed: unpaid internships, internships for graduate students only,
+roles that need an **active** security clearance (the ability to obtain one is
+only a note), and non-internship roles that require a bachelor's degree with no
+"or equivalent" wording. A level II title with nothing stated is a Stretch. So
+is an "engineer" or "administrator" posting that states no experience at all:
+silence on such a title is not treated as an invitation.
+
+**Check requirements** means the posting text could not be read. Those roles
+are listed only when the title is plainly entry level, and they are re-read
+once a day.
+
+## What gets logged
+
+Every IT-titled role that was considered and dropped is written to
+[`data/rejected.jsonl`](data/rejected.jsonl) with the reason and the posting's
+own sentence. Local titles judged "not IT" are listed in
+[`data/unmatched_titles.json`](data/unmatched_titles.json), rewritten each run,
+so a missed role can be found by reading it. Jobs outside the area are only
+counted in `data/stats.json`.
+
+## Open and closed
+
+A role is marked closed only after it is missing from **two consecutive
+complete readings** of its board. A failed request, or a search that was cut
+off by a result cap, closes nothing. For capped boards the posting page itself
+is asked (Workday), and anything not seen for 3 days on a local source, or 14
+days elsewhere, is retired. A role our
+own rules stop accepting is closed immediately.
 
 ## Dates
 
-`posted_at` is the employer's own publication date wherever the board exposes
-one. Each date carries a `posted_at_source` describing how good it is:
+"Nov 3" is the date the employer published. "~Nov 3" is derived from text such
+as "Posted 1 week ago". "found Nov 3" means the source gave no date and that is
+when the engine first saw it. Postings older than 120 days are dropped.
 
-| `posted_at_source` | Meaning |
-|---|---|
-| `exact` | A real timestamp from the source. |
-| `date_only` | The source published a calendar day, no clock time. |
-| `relative_derived` | Computed from relative text ("Posted 6 Days Ago"). Approximate; superseded automatically when the detail page yields a real date. |
+## What this project does not do
 
-A role's date is frozen the first time we see it, so the list behaves like a
-ladder. The **one** exception is precision: a higher-precision date replaces a
-lower-precision one for the same role. It never regresses.
-
-**Detection latency** (in Engine health) measures minutes between publication
-and our first sight of a role. It counts only roles *published inside the
-window* and only those with an `exact` timestamp — a `date_only` date would
-invent up to 24 hours of fake latency. Both p50 and p95 are published with the
-sample size, because a median alone hides the tail.
-
-## Open vs closed
-
-A role is closed for one of two reasons, recorded in `closed_reason`:
-
-- **`gone-from-feed`** — **two consecutive** complete reads of the employer's
-  board no longer return it. One miss only arms the closure (ATS search indexes
-  have transient gaps); the second fires it. Strong evidence the posting is
-  gone; not the same as the employer telling us so.
-- **`out-of-scope`** — it's still posted, but it no longer passes our filters
-  (wrong country, off-cycle, not a tech internship). Our verdict, not theirs.
-
-Several ATS cap how many search results they return. A capped response looks
-identical to "this company has no more roles", so every connector reports
-whether its snapshot was **complete**, and a partial snapshot is never allowed
-to close anything. Typically ~90 of ~3,450 boards hit a cap on a given run;
-their roles simply carry over.
-
-## Visa sponsorship
-
-Detected from the posting's own text by phrase matching, never inferred from the
-company. Four verdicts:
-
-| Verdict | Meaning |
-|---|---|
-| `citizens-only` 🇺🇸 | Requires US citizenship, a clearance, or ITAR/US-person status. |
-| `no-sponsorship` 🛂 | The posting says it won't sponsor a work visa. |
-| `offers` | The posting explicitly says sponsorship is available. |
-| `unknown` | The text says nothing conclusive. **This is most postings.** |
-
-The dashboard filter names each verdict separately on purpose. An earlier
-"F-1 friendly" toggle merely *hid* the explicit negatives, so ~97% of what it
-returned was actually `unknown` — presented as if it had been checked. It
-hadn't.
-
-The classifier is versioned. When its rules change, every stored verdict from an
-older version is re-derived from the posting text, so improvements reach the
-whole live list rather than only roles found after the change.
-
-## The ✓ H-1B badge
-
-✓ means USCIS approved a meaningful number of H-1B petitions for that employer
-in the published fiscal-year window, matched against the public
-[H-1B Employer Data Hub](https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub).
-
-It is **a history, not a promise**. It says nothing about internship
-sponsorship, about current policy, or about this specific role. No ✓ only means
-we couldn't confidently match the employer.
-
-## Drop Radar
-
-A forecast of when companies usually open, from two sources:
-
-- **🎯 verified** — the engine observed the drop itself from the company's
-  careers API. `data/observed.json` records, per company and cycle, the earliest
-  date seen *and the distinct role ids behind it*, so the sample count is
-  auditable rather than a counter that inflates every run.
-- **typical window** — a hand-verified opening *month* for a marquee name.
-  A month, not a promise of a day.
-
-"Waiting" means we haven't seen it in *our tracked feeds*, not that it isn't
-posted somewhere. Only roles whose cycle the employer stated become
-observations; a guess is never projected forward as if it were fact.
-
-## "N openings" on a row
-
-Employers really do open the same job several times. Copart currently has eight
-live `Software Engineering Intern` requisitions for Dallas; GDIT filed
-RQ225450, RQ225456 and RQ225469 for one Annapolis Junction role in a single
-morning. Each one is a separate requisition with its own id and its own
-application, so none of them is a duplicate and we delete none of them.
-
-Showing you eight identical rows is still bad reading, so a row that says
-**"3 openings"** means: *this employer has three separate live requisitions for
-the same title, in the same place, for the same cycle.* Every one of them is
-linked from that row (`Apply`, then `#2`, `#3`, …).
-
-What this is **not**: it is not deduplication and it never merges two things
-that might be different jobs. A different location, a different work mode
-(on-site vs remote), a different cycle, or a closed-vs-open pair are always
-separate rows. The only thing folded is an exact repeat.
-
-The counts do not change. "165 open roles" still counts requisitions, so a row
-saying "3 openings" contributes 3. The CSV and the JSON API are never grouped —
-they always carry one record per requisition, with every id.
-
-Separately, one *genuine* duplicate is removed rather than grouped: when a
-company runs more than one career site on the same ATS tenant, the same
-requisition can appear on both under different URLs. We collapse those only
-when the ATS's own requisition number proves they are one posting.
-
-## Counts you'll see, and what they mean
-
-| Where | Number | Denominator |
-|---|---|---|
-| Hero / API | open roles | every open role in the store |
-| Hero | with a stated cycle | roles whose employer named the cycle |
-| README tables | "listed below" | after a per-company display cap |
-| Any row | "N openings" | separate live requisitions for the same job (see above) |
-| `internships.csv` | every open role | no cap, never grouped — the full export |
-| Engine health | fetch success | shown against *both* boards attempted and the full registry |
-
-## Verifying any of this yourself
-
-```bash
-python -m pytest              # the full test suite, no network
-python tools/verify_accuracy.py   # every open role against every invariant
-```
-
-`verify_accuracy.py` runs in CI **before** anything is published. If it fails,
-the run stops and the previous good build stays live.
-
-## Known limitations
-
-- Most postings never mention sponsorship, so `unknown` dominates — by design.
-- Cycle inference is a heuristic; that's exactly why those roles are separated.
-- The H-1B data lags by fiscal years and matches on employer name.
-- Skill tags come from keyword matching over posting text and will miss things.
-- We only see roles posted to the ATS platforms we support.
-- Region detection reads the location string; unusual formats may be missed.
+It does not apply to jobs, fill in forms, create accounts or contact employers.
+It reads public postings and publishes a list of links.

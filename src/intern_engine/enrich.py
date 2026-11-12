@@ -1,35 +1,20 @@
-"""Enrichment: attach posting text to matched roles and classify sponsorship.
+"""Fetch the posting text for a role whose list payload did not carry it.
 
-Cost model: this runs ONLY on roles that already passed every filter (a handful
-per run, not thousands). Lever/Ashby/Amazon/Recruitee ship descriptions in their
-list payloads, so those classify for free; Greenhouse/SmartRecruiters/Workday/
-Oracle cache detail-page verdicts for up to 24 hours. Workday details also carry
-the exact posting date, which
-backfills rows the list API only described as "N days ago".
+Cost model: this runs ONLY on roles that already passed the title and location
+checks (a handful per run, not thousands). NLx/Lever/Ashby/Amazon/Recruitee
+ship descriptions in their list payloads; Greenhouse/SmartRecruiters/Workday/
+Oracle/Workable/NEOGOV/Paradox need one detail request per NEW role, after
+which the pipeline caches the verdict and never re-fetches. Workday details
+also carry the exact posting date, which corrects "N days ago" approximations.
 """
 
 from __future__ import annotations
 
-import asyncio
 import re
-from datetime import UTC, datetime, timedelta
 
-from . import filters, filters_it, skills, sponsorship
+from .connectors import neogov, paradox
 from .models import Job
 from .net import Net
-
-_CONCURRENCY = 8
-
-
-def _recent_evidence(value: str | None) -> bool:
-    """Job requirements can change while the URL stays the same."""
-    try:
-        stamp = datetime.fromisoformat(value.replace("Z", "+00:00"))
-        age = datetime.now(UTC) - stamp
-        return timedelta(0) <= age < timedelta(hours=24)
-    except (AttributeError, TypeError, ValueError):
-        return False
-
 
 _BROWSER_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -126,85 +111,52 @@ _FETCHERS = {
     "workday": _workday,
     "oracle": _oracle,
     "workable": _workable,
+    "neogov": neogov.description,
+    "paradox": paradox.description,
 }
 
 
-async def enrich_jobs(jobs: list[Job], existing: dict, net: Net) -> tuple[set[str], int]:
-    """Classify sponsorship for every kept job, fetching text only when needed.
+async def describe(job: Job, net: Net) -> tuple[str | None, bool]:
+    """(posting text or None, whether a detail request was made).
 
-    Returns (ids classified from fresh text this run, detail requests made).
-    Jobs whose stored record already carries a verdict inherit it without any
-    network traffic for up to 24 hours, then requirements are checked again.
+    Never raises: a dead detail page must not kill the run. The caller treats
+    missing text as "unverified", which is retried later.
     """
-    gate = asyncio.Semaphore(_CONCURRENCY)
-    fetched = 0
+    if job.description:
+        return job.description, False
+    fetcher = _FETCHERS.get(job.source)
+    if fetcher is None:
+        return None, False
+    try:
+        job.description = await fetcher(job, net)
+    except Exception:  # noqa: BLE001
+        return None, True
+    return job.description, True
 
-    async def _resolve(job: Job) -> str | None:
-        nonlocal fetched
-        prior = existing.get(job.id) or {}
-        has_inline_evidence = job.description is not None
-        fit_current = prior.get("entry_fit_version") == filters_it.FIT_VERSION
-        evidence_current = _recent_evidence(prior.get("enriched_at"))
-        if fit_current and evidence_current:
-            job.entry_fit = prior.get("entry_fit")
-            job.entry_fit_version = filters_it.FIT_VERSION
-        # A verdict is settled only while the classifier that produced it is
-        # still current. Records stamped with an older classifier_v (or none)
-        # are re-read once, so rule improvements reach the WHOLE live list
-        # instead of only roles discovered after the change.
-        current = prior.get("classifier_v") == sponsorship.VERSION
-        settled = current and bool(
-            prior.get("enriched_at") or prior.get("sponsorship", "unknown") != "unknown"
-        )
-        if settled and fit_current and evidence_current and prior.get("skills") is not None and not has_inline_evidence:
-            job.sponsorship = prior.get("sponsorship", "unknown")
-            return None  # already settled on an earlier run
-        # (settled but skills missing = record predates skill tags; re-fetch once)
-        if job.description is None:
-            fetcher = _FETCHERS.get(job.source)
-            if fetcher is not None:
-                try:
-                    async with gate:
-                        job.description = await fetcher(job, net)
-                    fetched += 1
-                except Exception:  # noqa: BLE001 — a dead detail page must not kill the run
-                    return None  # no enriched_at -> retried on the next run
-        if job.source in _FETCHERS:
-            # A 200 whose body carries no text is absence of evidence, not
-            # evidence of absence. Stamping it enriched_at froze an "unknown"
-            # verdict forever off an empty page; leaving it unstamped costs one
-            # detail fetch per run for the handful of boards that do this.
-            evidence = sponsorship.strip_html(job.description) if job.description else ""
-            if not evidence.strip():
-                if settled:
-                    job.sponsorship = prior.get("sponsorship", "unknown")
-                    job.skills = prior.get("skills")
-                return None
-        text = sponsorship.strip_html(job.description) if job.description else ""
-        if settled and not text.strip():
-            job.sponsorship = prior.get("sponsorship", "unknown")
-            job.skills = prior.get("skills")
-            return None
-        # A description carried by the current list payload, or fetched now to
-        # backfill old metadata, is fresher evidence than a stored verdict. The
-        # old short-circuit froze changed Lever/Ashby-style postings forever.
-        job.entry_fit = filters_it.assess_fit(job.title, text, job.location)
-        job.entry_fit_version = filters_it.FIT_VERSION
-        job.sponsorship = sponsorship.classify(text)
-        job.skills = skills.extract(text, job.title)
-        if not job.salary:
-            job.salary = skills.extract_pay(text)
-        if job.season_inferred:
-            # The posting text is ground truth for date-inferred cycles: an
-            # explicitly stated term+year replaces the guess (and un-marks the
-            # row). An off-cycle statement leaves an untracked label behind,
-            # which the pipeline drops. No statement = the inference stands.
-            stated = filters.seasons_from_text(text)
-            if stated:
-                job.season = job.season if job.season in stated else stated[0]
-                job.seasons = stated if len(stated) > 1 else None
-                job.season_inferred = False
-        return job.id
 
-    done = await asyncio.gather(*(_resolve(j) for j in jobs))
-    return {jid for jid in done if jid}, fetched
+async def posting_gone(record: dict, net: Net) -> bool:
+    """True only on the employer's explicit "this posting no longer exists".
+
+    Used for boards whose search results are capped: absence from a capped
+    result proves nothing, so the posting itself is asked. Any other outcome
+    (timeout, block page, 5xx) is "don't know" and keeps the role.
+    """
+    import httpx
+    url = record.get("url") or ""
+    m = _WD_SUB_RE.match(url)
+    if m:
+        tenant, wd, site, path = m.groups()
+        target = f"https://{tenant}.{wd}.myworkdayjobs.com/wday/cxs/{tenant}/{site}{path}"
+    else:
+        m = _WD_SITE_RE.match(url)
+        if not m:
+            return False
+        host, tenant, site, path = m.groups()
+        target = f"https://{host}/wday/cxs/{tenant}/{site}{path}"
+    try:
+        await net.get_json(target, headers=_BROWSER_HEADERS, retries=1)
+    except httpx.HTTPStatusError as exc:
+        return exc.response.status_code in (404, 410)
+    except Exception:  # noqa: BLE001
+        return False
+    return False

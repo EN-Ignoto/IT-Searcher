@@ -1,0 +1,5688 @@
+{
+ "ashby:agave:a263e45f-e86e-4c78-882e-a79da649e861": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "2-8 years of experience, ideally in b2b SaaS.",
+   "experience": "None required — 2 years preferred",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-09-01T21:56:00.317+00:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Technical Support Engineer (TSE)",
+  "v": 5
+ },
+ "ashby:amplify:4a30a50c-037d-453a-96cf-941a7532c3e4": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-10T18:48:25.279+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - United States",
+  "seen": "2026-11-12",
+  "title": "Associate Pilot Support Specialist, STEM",
+  "v": 5
+ },
+ "ashby:amplify:7a41432a-9514-4f9d-90f7-fac0e0ecfdb3": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-15T19:51:49.891+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - United States",
+  "seen": "2026-11-12",
+  "title": "Revenue Systems Analyst",
+  "v": 5
+ },
+ "ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "Internship — no experience requirement stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-19T19:03:37.769+00:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - United States",
+  "seen": "2026-11-12",
+  "title": "Summer 2027: IT Services Intern",
+  "v": 5
+ },
+ "ashby:ashby:c62ec47a-8de9-4781-b1f7-563a229c4e90": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-08-27T15:22:29.182+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - US",
+  "seen": "2026-11-12",
+  "title": "GTM Systems Analyst",
+  "v": 5
+ },
+ "ashby:check-technologies:4b9f022a-2f7b-46a0-a6ff-bbc63c58a0ab": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-08-04T02:26:29.821+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Partner Support Specialist",
+  "v": 5
+ },
+ "ashby:corvus-robotics:52fbad75-35a9-4f22-a1bc-13c8d5ac633a": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-08-11T00:55:55.332+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "US Remote",
+  "seen": "2026-11-12",
+  "title": "Field Technician",
+  "v": 4
+ },
+ "ashby:deepgram:56d0068b-a787-4682-983c-3ae900ec8692": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-20T16:28:36.299+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "USA - Remote",
+  "seen": "2026-11-12",
+  "title": "Revenue Operations Analyst",
+  "v": 5
+ },
+ "ashby:eightsleep:0ae8cdbe-8100-4f59-b702-16d836ab5550": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "Internship — no experience requirement stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-09T17:05:52.446+00:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - US",
+  "seen": "2026-11-12",
+  "title": "Security & IT Intern",
+  "v": 5
+ },
+ "ashby:equip:829ff280-4d61-4b23-a754-af75e1282203": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Not stated",
+   "evidence": "3+ years of professional experience administering, configuring, and supporting enterprise service center, CCaaS, or telephony platforms.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-04T18:24:56.699+00:00",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "IT Operations Specialist",
+  "v": 5
+ },
+ "ashby:exa:f4dd7ae8-cf72-4634-b708-742601b9061c": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-08T04:57:15.133+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Support Engineer, PAYGO",
+  "v": 5
+ },
+ "ashby:fluidstack:f1811455-d414-4630-b22c-58a585163864": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-10-30T19:47:10.786+00:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "U.S. Remote",
+  "seen": "2026-11-12",
+  "title": "Security Systems Administrator",
+  "v": 5
+ },
+ "ashby:horizon3ai:28bb7a90-e106-424b-92e9-627e6ca843ee": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-26T20:51:33.332+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US, Remote",
+  "seen": "2026-11-12",
+  "title": "Procurement Operations Analyst",
+  "v": 5
+ },
+ "ashby:horizon3ai:531e83c1-c9da-4003-99d1-ab45e88917d1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "3+ years of experience in IT, business systems administration, or SaaS platform administration",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-26T18:59:08.204+00:00",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US, Remote",
+  "seen": "2026-11-12",
+  "title": "IT Administrator, Business Applications",
+  "v": 5
+ },
+ "ashby:horizon3ai:abd14bfc-29c0-4668-af1a-aeed9254448e": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "2–4 years of experience in IT support, help desk, or IT operations",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-25T20:33:31.864+00:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US, Remote",
+  "seen": "2026-11-12",
+  "title": "IT Analyst (Remote)",
+  "v": 5
+ },
+ "ashby:horizon3ai:efb7a52e-2884-43f6-ad7e-a03b5998aa19": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "8+ years of hands-on technical experience",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-08-06T17:48:33.736+00:00",
+   "posted_at_source": null,
+   "reason": "requires-8-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "US, Remote",
+  "seen": "2026-11-12",
+  "title": "Staff Technical Support Engineer (Web App)",
+  "v": 4
+ },
+ "ashby:kustomer:f5936ba0-85eb-4409-81ae-979c3d978ba4": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "4+ years experience in technical support, developer support, or support engineering at a B2B SaaS company, including Tier 2/3 or escalation experience",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-29T20:47:14.498+00:00",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US - Remote",
+  "seen": "2026-11-12",
+  "title": "Technical Support Engineer",
+  "v": 5
+ },
+ "ashby:meridianlink:21d46b5e-a7ec-49c5-b039-c7cee79e847a": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-20T12:42:36.477+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US Remote",
+  "seen": "2026-11-12",
+  "title": "Client Support Specialist II",
+  "v": 5
+ },
+ "ashby:meshy:41b56974-51e1-4e15-a5dd-8bc67a41b18c": {
+  "a": {
+   "category": "Technical Support (customer-facing)",
+   "employment": "Not stated",
+   "evidence": "2-5 years of billing or subscription support experience, including at least 2 years supporting a large SaaS company's subscription product.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-09T22:28:06.549+00:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US Remote",
+  "seen": "2026-11-12",
+  "title": "Customer Technical Support Specialist - US",
+  "v": 5
+ },
+ "ashby:monarchmoney:85e2fa51-0142-4373-9a4c-673ad1db7070": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "2+ years of experience in IT support, help desk, or IT operations",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-10T22:24:28.404+00:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "IT Support Engineer",
+  "v": 5
+ },
+ "ashby:mudflap:0f435661-0cae-43c2-a1d9-4b5fdb380c31": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-17T20:25:22.403+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Customer Support Specialist - English (Morning/Afternoon)",
+  "v": 5
+ },
+ "ashby:mudflap:8edb7190-7a88-40e1-b5a4-7f3b78425f98": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-24T21:18:43.616+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Customer Support Specialist - English (Evening)",
+  "v": 5
+ },
+ "ashby:nash:48e32fea-837b-4c7c-8246-c347543d1861": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Shift work mentioned: 24/7"
+   ],
+   "posted_at": "2026-10-20T16:56:12.059+00:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote, US",
+  "seen": "2026-11-12",
+  "title": "Technical Support Specialist , US East Coast",
+  "v": 5
+ },
+ "ashby:prefect:6bc102cc-112f-441f-adc8-d53dc83a93ec": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-06T16:53:43.969+00:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Security & IT Operations Engineer",
+  "v": 5
+ },
+ "ashby:reacher:a94d5011-4a2f-49d1-a98c-98aa4158f150": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-05T01:18:17.007+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Customer Support Specialist",
+  "v": 5
+ },
+ "ashby:retell-ai:358f4a48-14ad-4c58-b051-2b48a0159e47": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Temporary / contract",
+   "evidence": "2-8 years of professional experience in Technical Support Engineering, Customer Success Engineering, Solutions Engineering, Forward Deployed Engineering, Software Engineering, or a",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-20T20:50:00.941+00:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Support Engineer (Contract)",
+  "v": 5
+ },
+ "ashby:runpod:4843a2de-5094-4157-b2b1-ab7bb8876f67": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "At least 5 years professional experience in technical customer support.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-07-30T18:32:03.965+00:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Technical Support Engineer (L2)",
+  "v": 5
+ },
+ "ashby:runpod:f9f9e6f1-4203-4ea9-a9b4-4a108e684372": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "At least 2 years of experience with shell scripting, Python, and SQL.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-26T17:53:08.681+00:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Technical Support Engineer (L1)",
+  "v": 5
+ },
+ "ashby:sewer-ai:f3039dc8-0ea7-4399-8e3d-b2d8bbba65fa": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-09T22:05:37.192+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Revenue Operations Analyst",
+  "v": 5
+ },
+ "ashby:skydio:3ac81a34-b7fe-4142-9d29-12bcc1376182": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "5-7 years of Technical Support experience with drones/UAV/UAS",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-02T03:27:48.716+00:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US Remote",
+  "seen": "2026-11-12",
+  "title": "Technical Support Specialist",
+  "v": 5
+ },
+ "ashby:skydio:8ba69d85-b786-4399-a5c0-ee0969054315": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Mentions Security+/Network+"
+   ],
+   "posted_at": "2026-10-23T16:19:17.220+00:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US Remote",
+  "seen": "2026-11-12",
+  "title": "Network Specialist - Launch Team",
+  "v": 5
+ },
+ "ashby:snowflake:631f5d58-a2e7-4717-9892-3e0fa8c3b464": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "7+ years of experience in Technical Support, Solutions Architecture, Data Engineering, or a similar customer-facing technical role",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-30T16:39:02.682+00:00",
+   "posted_at_source": null,
+   "reason": "requires-7-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "US-TX-Remote",
+  "seen": "2026-11-12",
+  "title": "Staff Designated Support Engineer",
+  "v": 4
+ },
+ "ashby:tensorwave:ffbb8ec2-16e8-4f5c-91ff-bf60786e4f47": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-10-30T17:01:46.616+00:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Staff Network Engineer",
+  "v": 4
+ },
+ "ashby:vanta:f987d41a-d0e1-4260-9129-f64aee6122ae": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-07T16:06:36.133+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote U.S.",
+  "seen": "2026-11-12",
+  "title": "AI Agent Support Specialist",
+  "v": 5
+ },
+ "ashby:voleon:eb98b211-9cc8-4785-bc89-2337e531c6a4": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-29T21:15:38.987+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote, United States",
+  "seen": "2026-11-12",
+  "title": "Fixed Income Operations Analyst",
+  "v": 5
+ },
+ "greenhouse:abnormalsecurity:8180130003": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "With 4+ years of experience, you've developed a track record of supporting enterprise customers, driving technical investigations, and advocating for continuous product improvement",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-10T09:59:20-05:00",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "L1 Technical Support Engineer (Spanish-Speaking)",
+  "v": 5
+ },
+ "greenhouse:alpaca:6240586004": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "Bachelor's degree listed"
+   ],
+   "posted_at": "2026-11-02T10:03:25-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - North America",
+  "seen": "2026-11-12",
+  "title": "IT Operations Specialist",
+  "v": 5
+ },
+ "greenhouse:alphasense:8495375002": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some"
+   ],
+   "posted_at": "2026-08-20T12:27:16-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - United States",
+  "seen": "2026-11-12",
+  "title": "Cloud Support Engineer",
+  "v": 5
+ },
+ "greenhouse:avidxchangeinc:5283540007": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li>At least 1 year of experience troubleshooting software, SaaS applications, or other technical systems.</li>",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-04T12:56:58-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Virtual",
+  "seen": "2026-11-12",
+  "title": "Technical Support Specialist I",
+  "v": 5
+ },
+ "greenhouse:avride:4414523009": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 37.4,
+   "notes": [],
+   "posted_at": "2026-11-09T21:51:53-05:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lakeland, Florida",
+  "seen": "2026-11-12",
+  "title": "Robot Service Technician Assistant – Part Time Evenings",
+  "v": 5
+ },
+ "greenhouse:axios:8262622": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-10-07T14:34:22-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "IT Security Specialist",
+  "v": 5
+ },
+ "greenhouse:beyondtrust:8279128": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "<li>3–5 years of total network administration/engineering experience, including 2+ years hands-on AWS cloud networking work with VPC design, Transit Gateway, VPN/Direct Connect, Ro",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-15T16:38:21-04:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote United States",
+  "seen": "2026-11-12",
+  "title": "Cloud Network Engineer",
+  "v": 5
+ },
+ "greenhouse:bugcrowd:8334498": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-29T13:27:49-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - US",
+  "seen": "2026-11-12",
+  "title": "Customer Support Engineer",
+  "v": 5
+ },
+ "greenhouse:cadwell:4456577009": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li>Approximately 4+ years of experience working with service management teams as a subject matter expert&nbsp;</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-21T11:18:31-04:00",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Product Support Engineer",
+  "v": 5
+ },
+ "greenhouse:coinbase:8335618": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-03T19:52:09-05:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Social Support Specialist I",
+  "v": 5
+ },
+ "greenhouse:coinbase:8335621": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-03T19:54:24-05:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Social Support Specialist I",
+  "v": 5
+ },
+ "greenhouse:correlationone:6234712004": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Mentions Security+/Network+",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-10-26T11:22:48-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Teaching Assistant: Data Center Technician",
+  "v": 4
+ },
+ "greenhouse:correlationone:6254914004": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Mentions Security+/Network+",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-10T16:47:30-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Teaching Assistant: Data Center Technician (Australia)",
+  "v": 4
+ },
+ "greenhouse:customerio:8246114": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-08T13:50:36-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Americas Remote",
+  "seen": "2026-11-12",
+  "title": "Technical Support Engineer, Canada",
+  "v": 4
+ },
+ "greenhouse:doordashusa:8267987": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-09T15:17:17-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "United States - Remote",
+  "seen": "2026-11-12",
+  "title": "Business Systems Analyst, Procure-to-Pay",
+  "v": 5
+ },
+ "greenhouse:dvtrading:4749057005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li data-renderer-start-pos=\"746\" data-local-id=\"e095e464edaf\">Minimum 3 years of relevant experience&nbsp;</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-29T16:35:33-04:00",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Trade Desk Support Engineer (Night Shift)",
+  "v": 5
+ },
+ "greenhouse:expel:8936554002": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "<li>1–2 years of IT or security experience is preferred, but if you’ve got passion, potential, and a compelling story, we want to hear it.</li>",
+   "experience": "None required — 1 year preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Shift work mentioned: 24x7",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-10T12:24:37-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Associate SOC Analyst",
+  "v": 5
+ },
+ "greenhouse:farmersmutualhailinsurancecompany:4442700009": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<p><strong>Experience: </strong>One to three or more years of related crop insurance experience, or equivalent combination of education and/or experience",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-08T22:08:19-04:00",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US-Remote",
+  "seen": "2026-11-12",
+  "title": "Precision Technology Specialist (Illinois/Indiana/Kentucky)",
+  "v": 5
+ },
+ "greenhouse:galaxydigitalservices:6163325004": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "Internship — no experience requirement stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-08-25T23:24:00-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Off-Cycle 2026 Cybersecurity Internship",
+  "v": 5
+ },
+ "greenhouse:garnerhealth:6238643004": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-30T16:11:22-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Payments Operations Analyst",
+  "v": 5
+ },
+ "greenhouse:gitlab:8654230002": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-07-31T14:26:58-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote, Canada; Remote, United States",
+  "seen": "2026-11-12",
+  "title": "Support Engineer (AMER)",
+  "v": 4
+ },
+ "greenhouse:gitlab:8859063002": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-05T15:24:21-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote, United States",
+  "seen": "2026-11-12",
+  "title": "Support Engineer, U.S. Government Support (SHIFT)",
+  "v": 5
+ },
+ "greenhouse:gleanwork:4734007005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-10T12:45:47-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote - US",
+  "seen": "2026-11-12",
+  "title": "Designated Technical Support Engineer - West",
+  "v": 4
+ },
+ "greenhouse:gleanwork:4735026005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some"
+   ],
+   "posted_at": "2026-09-22T10:10:33-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - US",
+  "seen": "2026-11-12",
+  "title": "Designated Technical Support Engineer - Central/East",
+  "v": 5
+ },
+ "greenhouse:guidepointsecurity:6224196004": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "Internship — no experience requirement stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Mentions Security+/Network+"
+   ],
+   "posted_at": "2026-10-14T17:22:54-04:00",
+   "posted_at_source": null,
+   "reason": "remote-not-open-to-florida",
+   "remote": false,
+   "section": null,
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Cybersecurity Presales Intern - GPSU/Heartland (Tulsa)",
+  "v": 5
+ },
+ "greenhouse:hearst:4466177009": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": 21.7,
+   "notes": [],
+   "posted_at": "2026-10-26T11:48:21-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Winter Park, FL, United States",
+  "seen": "2026-11-12",
+  "title": "Broadcast Systems Technician",
+  "v": 4
+ },
+ "greenhouse:higherlogic:8033739003": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 2 years customer-service-type experience"
+   ],
+   "posted_at": "2026-10-16T13:35:02-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US-Remote",
+  "seen": "2026-11-12",
+  "title": "Technical Support Specialist",
+  "v": 5
+ },
+ "greenhouse:horacemannservicecorporation:6208478004": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-05T10:11:02-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Business System Analyst - Experienced",
+  "v": 5
+ },
+ "greenhouse:horizonindustrieslimited:5422434008": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "<li>Seven (7) years of relevant IT experience</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-11T16:35:09-04:00",
+   "posted_at_source": null,
+   "reason": "requires-7-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "REMOTE",
+  "seen": "2026-11-12",
+  "title": "Cybersecurity Specialist (DISA)",
+  "v": 5
+ },
+ "greenhouse:horizonindustrieslimited:5432964008": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "<li>5+ years of experience in system administration, infrastructure support, or a related IT field.</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-23T11:44:20-04:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "REMOTE",
+  "seen": "2026-11-12",
+  "title": "System Administrator  (DISA)",
+  "v": 5
+ },
+ "greenhouse:humansignal:6238086004": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-29T17:12:47-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Services Support Specialist",
+  "v": 5
+ },
+ "greenhouse:obsidiansecurity:5449057008": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-09T13:58:45-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US Remote (East/Central)",
+  "seen": "2026-11-12",
+  "title": "Customer Success Operations Analyst",
+  "v": 5
+ },
+ "greenhouse:oneimaging:4484490009": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-06T23:54:16-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Cloud Systems Administrator",
+  "v": 5
+ },
+ "greenhouse:opensesame:8188645": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-09-09T11:11:33-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Systems Administrator",
+  "v": 5
+ },
+ "greenhouse:oscar:8178503": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "<li>Bachelors Degree or 4+ years of relevant experience</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-10T11:49:06-04:00",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Provider Network Associate",
+  "v": 5
+ },
+ "greenhouse:precisionaq:6249837004": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li>Minimum of 5 years working in design, build, and/or testing expertise and experience with EHR software, including: Epic Beacon, Oracle Health, iKnowMed, OncoEMR tech, preferred",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-10T15:21:54-05:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote, United States",
+  "seen": "2026-11-12",
+  "title": "Health IT Specialist, Product Solutions",
+  "v": 5
+ },
+ "greenhouse:rackner:4752874005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li>Minimum of two years of professional experience in ServiceNow IT Service Management (ITSM) queue operations, including demonstrated capability in ticket triage, routing, servic",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-09T16:10:22-05:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote — United States",
+  "seen": "2026-11-12",
+  "title": "IT Service Operations Analyst — Federal Health IT",
+  "v": 5
+ },
+ "greenhouse:relativity:8910062002": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li style=\"font-family: arial, helvetica, sans-serif; font-size: 10pt;\"><span style=\"font-family: arial, helvetica, sans-serif; font-size: 10pt;\">1+ years of experience in a help d",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": 49.4,
+   "notes": [
+    "Clearance must be obtainable",
+    "Mentions Security+/Network+"
+   ],
+   "posted_at": "2026-10-23T17:26:03-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Cape Canaveral, Florida, United States",
+  "seen": "2026-11-12",
+  "title": "IT Associate I",
+  "v": 5
+ },
+ "greenhouse:salesloft:8119953": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "<li>2-3 years experience administering Salesforce Service Cloud, Salesforce Knowledge, Live Agent, and Customer Communities preferred</li>",
+   "experience": "None required — 2 years preferred",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "Bachelor's degree listed"
+   ],
+   "posted_at": "2026-08-10T14:26:50-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "United States, Remote",
+  "seen": "2026-11-12",
+  "title": "Salesforce Business Systems Administrator",
+  "v": 4
+ },
+ "greenhouse:samsara:8355516": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li><strong>Experience</strong>: 3+ years of experience in a technical product support or specialist role, preferably within SaaS, IoT, or networking environments",
+   "experience": "None required — 3 years preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-11T05:47:33-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote - UK",
+  "seen": "2026-11-12",
+  "title": "Technical Support Specialist - German Fluency",
+  "v": 4
+ },
+ "greenhouse:sironamedical:4731578005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 3 years customer-service-type experience",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-09-06T14:23:17-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Application Support Specialist - Second Shift M-F",
+  "v": 5
+ },
+ "greenhouse:sironamedical:4731579005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 3 years customer-service-type experience",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-09-06T15:33:43-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Application Support Specialist - Overnight M-F",
+  "v": 5
+ },
+ "greenhouse:sironamedical:4731580005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 3 years customer-service-type experience",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-09-06T15:28:44-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Application Support Specialist - Weekend Days",
+  "v": 5
+ },
+ "greenhouse:sironamedical:4731581005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 3 years customer-service-type experience",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-09-06T15:33:27-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Application Support Specialist - Weekend Nights",
+  "v": 5
+ },
+ "greenhouse:spacex:8679658002": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "<li>Bachelor’s degree in computer science, computer engineering, or other STEM discipline and 3+ years of professional network engineering experience;&nbsp;OR 5+ years of professio",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 49.4,
+   "notes": [],
+   "posted_at": "2026-08-06T18:34:05-04:00",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Cape Canaveral, FL",
+  "seen": "2026-11-12",
+  "title": "OT Network Engineer, Mission Systems",
+  "v": 5
+ },
+ "greenhouse:spacex:8684618002": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Not stated",
+   "evidence": "<li>Bachelor’s degree in Information Technology, Computer Science, Engineering or a related technical discipline and 3+ years of professional experience leading technical projects ",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 49.4,
+   "notes": [],
+   "posted_at": "2026-08-05T20:43:18-04:00",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Cape Canaveral, FL",
+  "seen": "2026-11-12",
+  "title": "IT Operations Engineer",
+  "v": 5
+ },
+ "greenhouse:spacex:8918371002": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "<li>2+ years of experience installing, testing, troubleshooting, and repairing: fiber optics, copper cabling (RF, Ethernet), network and telephony installation, and audio/video sys",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 49.4,
+   "notes": [],
+   "posted_at": "2026-10-26T21:54:35-04:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Cape Canaveral, FL",
+  "seen": "2026-11-12",
+  "title": "IT Network Infrastructure Technician",
+  "v": 5
+ },
+ "greenhouse:spacex:8922064002": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "OR 5+ years of professional network engineering experience and high school diploma or equivalency certificate in lieu of a degree.</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 49.4,
+   "notes": [],
+   "posted_at": "2026-10-29T11:42:33-04:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Cape Canaveral, FL",
+  "seen": "2026-11-12",
+  "title": "IT Network Engineer",
+  "v": 5
+ },
+ "greenhouse:stripe:8175824": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-22T16:19:21-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Risk Operations Analyst - RBO",
+  "v": 5
+ },
+ "greenhouse:supplyhouse:6140301004": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "<li>3+ years of experience with designing, implementing, and supporting corporate network environments</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-08-18T14:47:04-04:00",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote, Remote, United States",
+  "seen": "2026-11-12",
+  "title": "Network Engineer",
+  "v": 5
+ },
+ "greenhouse:synack:8353747": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-09T12:21:19-05:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote in the US",
+  "seen": "2026-11-12",
+  "title": "Customer Support Specialist",
+  "v": 5
+ },
+ "greenhouse:tines:6202989004": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-22T04:25:27-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "United States (Remote)",
+  "seen": "2026-11-12",
+  "title": "GTM Systems Specialist",
+  "v": 5
+ },
+ "greenhouse:tines:6225649004": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li><strong>SaaS Support Experience</strong>: 5+ years in technical support roles within SaaS environments, demonstrating progressive responsibility and expertise</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-15T14:20:34-04:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "United States (Remote)",
+  "seen": "2026-11-12",
+  "title": "Technical Support Engineer II - Federal",
+  "v": 5
+ },
+ "greenhouse:togetherai:5202015007": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Asks 1 year customer-service-type experience",
+    "Shift work mentioned: weekend shift",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-08-04T18:24:34-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Technical Support Engineer (GPU Clusters) - US Weekends",
+  "v": 5
+ },
+ "greenhouse:trace3:8329225": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "Internship — no experience requirement stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-10-27T17:17:27-04:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Cloud FinOps Consulting Intern",
+  "v": 4
+ },
+ "greenhouse:voyagertechnologiesinc:4410292009": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "<li>A minimum of five plus years of hands-on experience administering SAP Concur, including configuration and user support.</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-03T19:21:06-04:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - United States",
+  "seen": "2026-11-12",
+  "title": "Concur Systems Administrator",
+  "v": 5
+ },
+ "greenhouse:wizinc:4721575006": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li><span data-markdown-start-index=\"608\">5+ years of hands-on, technical experience in customer support, technical support, system administration, or related customer-facing role.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-27T15:56:54-04:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Solutions Support Engineer - US East",
+  "v": 5
+ },
+ "lever:daniels-sharpsmart:6bdcbb00-3471-4006-993d-9dd2f0e98fbb": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-10-28T20:48:02Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician - AdventHealth Orlando",
+  "v": 5
+ },
+ "lever:firemon:55eed579-a00a-4d3c-a1ae-2e0ef9bd7063": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Shift work mentioned: 24/7"
+   ],
+   "posted_at": "2026-10-14T19:52:34Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "USA, Remote",
+  "seen": "2026-11-12",
+  "title": "Customer Support Engineer",
+  "v": 5
+ },
+ "lever:makpar:03d7f17e-0b63-4c7d-bbb5-3d2fc7b342b1": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "Minimum of four (4) years of experience in Help Desk, Technical Support, System Administration, Application Support, or a related IT support environment.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-08-12T20:30:55Z",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote, US-Based",
+  "seen": "2026-11-12",
+  "title": "Application Systems Admin (Bilingual-Spanish)",
+  "v": 5
+ },
+ "lever:makpar:54e2c175-5bb1-4347-9d3b-c5a7ff4c087a": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "Minimum of two (2) years of Help Desk, Service Desk, Customer Support, or Technical Support experience.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-08-12T19:43:01Z",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote, US-Based",
+  "seen": "2026-11-12",
+  "title": "Junior Help Desk Support Agent (Bilingual-Spanish)",
+  "v": 5
+ },
+ "lever:pditechnologies:56f66a9d-8766-40bd-91bc-3be14ba8cd72": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "3+ years of experience supporting enterprise network environments.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-13T20:02:15Z",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote US",
+  "seen": "2026-11-12",
+  "title": "Network Operations Analyst II",
+  "v": 5
+ },
+ "lever:pingwind:ab11654f-9f5f-4bf1-9031-9540ba1e54c8": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "Required Experience: 4 years",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-08-24T13:09:37Z",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Help Desk Support Agent (Mid)",
+  "v": 5
+ },
+ "lever:pingwind:af89be43-4d8a-42be-96cb-a87c4738ce53": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-28T17:26:55Z",
+   "posted_at_source": null,
+   "reason": "unconfirmed-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Application Systems Analyst II",
+  "v": 5
+ },
+ "lever:tsmg:83579b56-d91e-4b24-8db3-d02f90f11ec5": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "Minimum 3+ years of experience in automotive electronics, diagnostics, embedded systems, robotics, technical support, or complex technical systems.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-09-09T21:00:55Z",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Self-Driving Systems Specialist (SDS Specialist)",
+  "v": 5
+ },
+ "lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-09T16:47:24Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "United States (Remote)",
+  "seen": "2026-11-12",
+  "title": "Technical Support Specialist",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:0033A1F626214E03B8E519E605AECD4A": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "+ Master's Degree with 0 years of relevant experience",
+   "experience": "0+ years — open to no experience",
+   "fit": "stretch",
+   "miles": 47.8,
+   "notes": [
+    "Bachelor's degree listed",
+    "Mentions Security+/Network+"
+   ],
+   "posted_at": "2026-09-30T06:21:43Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T08:15:53Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Linux Systems Administrator 2/3 - Top Secret",
+  "v": 2
+ },
+ "nlx:kissimmee-fl:003CC68B526842178C2A4FDC9E3EFDC4": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-14T05:24:13Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Wholesale Payments Dedicated Support Specialist",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:09D679410B004DACB96FE254FA680834": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [],
+   "posted_at": "2026-11-10T02:20:21Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician I",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:0B4B02309AB148FBA33C8A286AF55A74": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-09T03:59:29Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:120798FCE087496FA4B281D51958B409": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 10.6,
+   "notes": [],
+   "posted_at": "2026-08-06T04:46:43Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lake Buena Vista, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician II",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:1BF8A4C751A5403B9CF04355D244A2C1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 37.5,
+   "notes": [],
+   "posted_at": "2026-10-24T04:20:08Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Bartow, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician II",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:20D7222323E44E6F82AA7B3EB2103C68": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "In lieu of a degree, minimum of 8 years of prior related experience.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-09-03T04:40:53Z",
+   "posted_at_source": null,
+   "reason": "requires-8-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Executive IT Support Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:2281E44028434670A0FE728E2B3B4A71": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "+ A minimum of 2 years’ work experience in Information Technology or a related field required",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-06T03:12:24Z",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Associate Field Support Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:2640B0B435274353B950D7263154039F": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 26.9,
+   "notes": [],
+   "posted_at": "2026-10-16T07:06:51Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Apopka, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:27CFDC85614A40F1926FB3B2B11118EF": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Temporary / contract",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-09-25T04:07:49Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "CEI Assistant Contract Support Specialist",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:300132B49AC046BAAAB825605CC6A30F": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-21T04:28:16Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Centerline Planning and Support Engineer (Power Plants)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:313B1BE4B8DF4B49ACDE1102A037DBAD": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Temporary / contract",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-15T05:07:59Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Set Up and Support Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:39318C62EE114D79B85FF697B6E2ED4C": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-07T06:50:36Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Train Service Technician (Entry-Level) Orlando FL Mobility Customer Services",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:3D635F63A15342B69AC82D2CE05413AA": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-08T03:29:43Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "IT Systems Analyst Advisor",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:45E9D281E4F44A78BF9C73C3A3D415B8": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-04T02:33:45Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T08:15:53Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Traveling Building Automation Systems Specialist",
+  "v": 2
+ },
+ "nlx:kissimmee-fl:47A2A1E06DE84A7796720128F6E4EE4E": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-08-19T04:33:18Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Configuration Support Analyst – Support Services",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:4C689862ABC84EC9B87E6D72678FAD8F": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [],
+   "posted_at": "2026-10-30T02:20:19Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician I",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:4EA6586511BF4A598DE9CDE38E3397AF": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 34.4,
+   "notes": [],
+   "posted_at": "2026-11-07T03:27:49Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Sanford, FL",
+  "seen": "2026-11-12",
+  "title": "Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:553C486B55914816BD999B885D2CE197": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "2+ years of experience in data center operations, structured cabling, telecommunications, field services, or IT infrastructure support.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-16T05:47:00Z",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Data Center Services Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:56333412006B4BFEAB8157AF336BE672": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-09-25T05:32:49Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "ServiceMax Application Support Engineer",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:5B713C96FFEA4AA999C7F143B7BA15D1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Temporary / contract",
+   "evidence": "+ PC Software Support - Entry Level (0-2 years' experience)",
+   "experience": "0+ years — open to no experience",
+   "fit": "beginner",
+   "miles": 32.6,
+   "notes": [],
+   "posted_at": "2026-11-03T06:22:46Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lake Mary, FL",
+  "seen": "2026-11-12",
+  "title": "Technology Support Contractor: 0-2 years (Entry) / Contract / Onsite",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:63769345ACA74E34A598FE4171C15D52": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "+ Minimum of 3 years of IT infrastructure and support experience",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-04T09:03:03Z",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Intermediate Help Desk Support Service Specialist",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:65A35275CF8D4F4AA424BB5A06DC27DD": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 25.8,
+   "notes": [],
+   "posted_at": "2026-11-10T20:53:25Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Altamonte Springs, FL",
+  "seen": "2026-11-12",
+  "title": "Assistant Operations Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:65DD2C59E77D4408BAF967ABDE085601": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "At least five years experience working in enterprise type environments",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-10-27T02:01:22Z",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Network Engineer - E2",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:66AF2C57CB52424AAD1CD455665A13C8": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 39.8,
+   "notes": [],
+   "posted_at": "2026-10-27T02:53:18Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Titusville, FL",
+  "seen": "2026-11-12",
+  "title": "Field Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:679AEE8141F64968ADC9E99814FB3450": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [],
+   "posted_at": "2026-10-10T04:05:31Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Access & Support Specialist II",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:6925AE191E7245C2AFF834232A57D1C2": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "+ 1+ year of IT Help Desk or Technical Customer Support experience.",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": 16.7,
+   "notes": [
+    "Shift work mentioned: rotating shift"
+   ],
+   "posted_at": "2026-08-21T19:49:03Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Help Desk Specialist",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:69D2F167ACE04EC4AC3A6EDBD9E63B09": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 22.2,
+   "notes": [],
+   "posted_at": "2026-09-23T05:49:02Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Winter Park, FL",
+  "seen": "2026-11-12",
+  "title": "Fiduciary Support Specialist II",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:6EA04156FE2B4A549D5EFEA1D56ABC63": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-09-23T05:49:02Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Fiduciary Support Specialist II",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:720EE66B663D45848DF41A38D05DEF73": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "+ Candidate must have 10 years of experience that can be a combination of work history and education",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 40.2,
+   "notes": [],
+   "posted_at": "2026-09-02T04:45:12Z",
+   "posted_at_source": null,
+   "reason": "requires-10-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Cocoa, FL",
+  "seen": "2026-11-12",
+  "title": "COMSEC Responsible Officer (CRO)/ Tier II Network Technician (NE2) (Government)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:735DB9ADB8904CC899989A1CF2A1D4CD": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "OR a High School Diploma/GED with 4 years of experience is required",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [],
+   "posted_at": "2026-11-12T07:15:22Z",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "2026 Associate Computer Systems Analyst - Linux - Pathways Program - Melbourne FL",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:74AE5D0134B54B1BAE30DCCF8AF281AF": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 14.0,
+   "notes": [],
+   "posted_at": "2026-09-10T07:47:30Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Saint Cloud, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Operations Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:75D0DF5AEFED42DABDE6377E5542065A": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-09T06:50:08Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:77E8632CD52B481FBC33C13F2A2A0F54": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-09-15T06:17:43Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:7A03CBF19A084B9F8BDC0C88C8150CB8": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [],
+   "posted_at": "2026-11-07T03:27:49Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:7C322A01495D4689BE712464EEDE0102": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "+ Two (2) + years of documented industry experience.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-07-17T03:31:09Z",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "IT Service Desk Support Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:7D8658B3F3AF4C58A50B1D2E63C2DF1D": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-11T07:42:38Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Exhibitor Support Specialist Online Exhibits",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:7DC1507230944B4F9C890DD43B7CF2D8": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "+ Bachelor’s degree with **4+ years of related experience** Additional experience may be considered in lieu of a degree.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-10-24T02:33:32Z",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Cybersecurity Analyst",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:7EB1F383F08B4C33B60F6FD04C4A2F94": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-06T02:17:46Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:81401A2E56A242D6B8DCB17FBBAA076C": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-09-16T05:44:52Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "AUX Product Definition/Support Engineer (P)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:8D178883C4ED43B089DF45D66B5B0848": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [],
+   "posted_at": "2026-10-15T05:27:34Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:991071019ECE41CFA797E8631AC47983": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "+ 1+ years of experience installing and servicing electronic control or HVAC equipment",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-09-23T07:19:53Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T08:15:53Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Building Automation Systems Specialist",
+  "v": 2
+ },
+ "nlx:kissimmee-fl:9B56ACD2A025450B849EE04D528A5E9F": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-09-19T05:06:19Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Housing Support Specialist",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:9D3BEDF5DD0540A196C3679F6817FBA8": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-03T02:40:43Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Commercial Service Technician 1 - Orlando, FL",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:A5F54BBB228E41C997986A706EBAB528": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Temporary / contract",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-04T05:29:37Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:A71F566731A84FACB511BDEE962201CE": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-14T05:24:14Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Wholesale Payments Dedicated Support Specialist",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:AC631FAB33674EE09C541B3099744405": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "+ 2+ years of experience",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 38.8,
+   "notes": [],
+   "posted_at": "2026-11-05T02:25:18Z",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lakeland, FL",
+  "seen": "2026-11-12",
+  "title": "Information Technology Analyst",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:B05E968851864B6DBD9E45D4E91C8BE5": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 38.8,
+   "notes": [],
+   "posted_at": "2026-10-20T03:12:37Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lakeland, FL",
+  "seen": "2026-11-12",
+  "title": "SERVICE TECHNICIAN (FULL TIME)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:B74D1386E008487FA05AD7A5CACDCF6C": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "4+ years of networking (such as DNS, DHCP, SSL, OSI Model, and TCP/IP) experience",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 44.4,
+   "notes": [],
+   "posted_at": "2026-09-11T06:08:44Z",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Merritt Island, FL",
+  "seen": "2026-11-12",
+  "title": "IT Support Engineer II, Leo IT Services",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:B75F7AE3B57549B480AB4D68852A7C5C": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": 2.4,
+   "notes": [],
+   "posted_at": "2026-09-30T01:49:18Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Kissimmee, FL",
+  "seen": "2026-11-12",
+  "title": "Network & Desk Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:BA300695C674418D983FDDC3B445D250": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "4–6 years of infrastructure-focused technology experience preferred; candidates with 2 or more years of relevant hands-on experience will also be considered.",
+   "experience": "None required — 2 years preferred",
+   "fit": "stretch",
+   "miles": 16.7,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Bachelor's degree listed"
+   ],
+   "posted_at": "2026-11-04T01:08:32Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Network Engineer",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:BA38F247D143423F9128A685CDE65234": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "+ 5+ years of Tier 2/3 system support experience.",
+   "experience": "None required — 5 years preferred",
+   "fit": "stretch",
+   "miles": 47.8,
+   "notes": [
+    "Clearance must be obtainable",
+    "No experience stated, but this title usually expects some",
+    "Shift work mentioned: 24/7"
+   ],
+   "posted_at": "2026-11-03T06:31:44Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Systems Administrator",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:BB957F3DBEA64D8291C7C2F87DE27610": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "+ A Bachelor’s degree in Computer Science or related field and 5 years of Information Systems Administrator or Cyber-Security experience.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-03T04:54:52Z",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Cybersecurity Analyst - ISSO - Orlando, Florida",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:C0E0DEDB75D5407EA60607F791DA7A15": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [
+    "Asks 3 years customer-service-type experience"
+   ],
+   "posted_at": "2026-08-13T05:14:25Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T08:15:53Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Bi-lingual Pharmacy Tech Support/Call Center Rep (Remote Work from Home)",
+  "v": 2
+ },
+ "nlx:kissimmee-fl:C3595CBD4ADD45BAA6DE4409C481BDF4": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-07T03:54:50Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "SERVICE TECHNICIAN (FULL TIME)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:C4F1E59F37F74E49AFD8A56655EDB15F": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 26.3,
+   "notes": [],
+   "posted_at": "2026-09-18T03:43:28Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Winter Haven, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:C8E0E27BEA6445E8827427AEA8C3BD9E": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": 16.7,
+   "notes": [
+    "Level II title",
+    "Mentions Security+/Network+"
+   ],
+   "posted_at": "2026-09-11T06:58:14Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Systems Analyst II",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:CCBCA7C764794E808B2C0B278446B2D8": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 49.2,
+   "notes": [],
+   "posted_at": "2026-10-27T02:28:10Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Dade City, FL",
+  "seen": "2026-11-12",
+  "title": "Recovery Support Specialist II",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:D6772FC99E014DE7B966053D45EBB45D": {
+  "a": {
+   "category": "Desktop / End-User Support",
+   "employment": "Not stated",
+   "evidence": "3-5 years of experience with Active Directory, Windows 10, and Windows 11 administration in a corporate environment",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 32.6,
+   "notes": [],
+   "posted_at": "2026-11-06T06:09:24Z",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lake Mary, FL",
+  "seen": "2026-11-12",
+  "title": "Desktop Analyst",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:D803C7A8D5DB4341A61EAC5A5C34F6BE": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 34.4,
+   "notes": [],
+   "posted_at": "2026-10-06T02:18:44Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Sanford, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:D8B8F479DCD64487B37336AFF51E6265": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 26.9,
+   "notes": [],
+   "posted_at": "2026-08-01T03:44:54Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Apopka, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:DDAEB1EA359745DE949E6EA4A0B0F453": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "+ 1+ years of experience in financial services",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": 32.6,
+   "notes": [
+    "Clearance must be obtainable",
+    "Asks 4 years customer-service-type experience",
+    "Bachelor's degree listed"
+   ],
+   "posted_at": "2026-11-12T02:51:54Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lake Mary, FL",
+  "seen": "2026-11-12",
+  "title": "Data and Technology Specialist",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:DE51AD3ABA47414EBE1B9B645E241526": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "cy, regulatory requirements, and emerging spectrum issues.\nQualifications:\nRequired:\n+ An active Top Secret security clearance with SCI eligibility, which is something only a U.S. ",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 47.8,
+   "notes": [],
+   "posted_at": "2026-11-11T04:20:13Z",
+   "posted_at_source": null,
+   "reason": "active-clearance-required",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Melbourne, FL",
+  "seen": "2026-11-12",
+  "title": "Computer Systems Administrator / Spectrum Management Analyst",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:DF20943F82B842B69AE1EB3F4A92131D": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "+ 3+ years of experience in customer support, technical support, IT services, or healthcare industry",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-08-15T05:10:11Z",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Support Engineer",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:EA55476DA3414D75B953297E4E27EA3B": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 2.4,
+   "notes": [],
+   "posted_at": "2026-10-16T07:06:45Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Kissimmee, FL",
+  "seen": "2026-11-12",
+  "title": "Shop Service Technician",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:EA5B574EC3734624890E9C10E798F0C2": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-03T02:55:57Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Commercial Service Technician 2 - Orlando, FL",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:ECB97B4439C848058E7AE55255ED7D92": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "+ 2+ years of IT Help Desk or Customer Support experience.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-29T19:47:36Z",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "ACE Account Service Desk Specialist (Tier 2 - ASD)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:ED2A02C4B31243D487D608380B7CC41E": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 34.4,
+   "notes": [],
+   "posted_at": "2026-10-24T04:20:08Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Sanford, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician (Laborer)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:ED8E4F1292334F30B96EB4F94A1FFC47": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-10-06T02:58:28Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "SERVICE TECHNICIAN (FULL TIME)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:F286EB351EF04803836A13B41C3FF6A0": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "2+ years of troubleshooting in a multi-user high availability environment experience",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 38.8,
+   "notes": [],
+   "posted_at": "2026-11-04T04:07:57Z",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lakeland, FL",
+  "seen": "2026-11-12",
+  "title": "IT Support Engineer I, Operations Infrastructure  Services (OIS)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:F370A19AEEA54097BB152F6B5BB8BD88": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "+ 5 years of network operations, network engineering, or enterprise communications experience",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-10-10T02:41:02Z",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Network Operations Analyst",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:F44BF8996AF2428B9FE0799F65EAE78D": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-09-30T06:22:40Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Support Engineer 1",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:F5C67CEF81574B5CBA6CD5CCB4BA5CB3": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-08-10T02:30:29Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-12",
+  "title": "Event Technical Specialist, (AUDIO) - KPMG Lakehouse, Lake Nona, FL",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:FE4182530ABD4FEAB6079422D3494CFF": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 34.4,
+   "notes": [],
+   "posted_at": "2026-10-21T06:20:16Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Sanford, FL",
+  "seen": "2026-11-12",
+  "title": "Field Technician",
+  "v": 5
+ },
+ "oracle:eeho.fa.us2.oraclecloud.com:342496": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "3+ years of experience in customer support, technical support, IT services, or healthcare industry",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-08-13",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL, United States; Kansas City, MO, United States; Nashville, TN, United States",
+  "seen": "2026-11-12",
+  "title": "Support Engineer",
+  "v": 5
+ },
+ "oracle:eeho.fa.us2.oraclecloud.com:342608": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-08-14",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Nashville, TN, United States; Orlando, FL, United States; Kansas City, MO, United States; United States",
+  "seen": "2026-11-12",
+  "title": "Support Engineer - Incident",
+  "v": 5
+ },
+ "oracle:eeho.fa.us2.oraclecloud.com:346560": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-09-30",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Kansas City, MO, United States; Orlando, FL, United States; United States; Nashville, TN, United States",
+  "seen": "2026-11-12",
+  "title": "Support Engineer - Configuration",
+  "v": 5
+ },
+ "oracle:fa-eqpz-saasfaprod1.fa.ocs.oraclecloud.com:2564": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "1 year experience (2,080 hrs.) and Florida Departmental of Environmental (FDEP)",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": 38.1,
+   "notes": [
+    "Shift work mentioned: on call rotation"
+   ],
+   "posted_at": "2026-07-16",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Bartow, FL, United States",
+  "seen": "2026-11-12",
+  "title": "Utilities Systems Operator I, II, III, IV, V",
+  "v": 4
+ },
+ "oracle:fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com:3022642": {
+  "a": {
+   "category": "Technical Support (customer-facing)",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 1 year customer-service-type experience"
+   ],
+   "posted_at": "2026-11-04",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States",
+  "seen": "2026-11-12",
+  "title": "Remote Customer Technical Support",
+  "v": 5
+ },
+ "oracle:fa-etgw-saasfaprod1.fa.ocs.oraclecloud.com:3004056": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-21",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Atlanta, GA, United States; Remote Location, United States",
+  "seen": "2026-11-12",
+  "title": "Staff Business Systems Analyst",
+  "v": 4
+ },
+ "oracle:fa-evxo-saasfaprod1.fa.ocs.oraclecloud.com:170113": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "3-5 years of experience in an IT service desk, technical support, or a related role required",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-11",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "United States",
+  "seen": "2026-11-12",
+  "title": "Implementation System Support Representative - Remote",
+  "v": 5
+ },
+ "recruitee:hardrockdigital:2823560": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Shift work mentioned: 2nd shifts"
+   ],
+   "posted_at": "2026-11-11 09:56:26 UTC",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "United States, Florida, United States (Remote)",
+  "seen": "2026-11-12",
+  "title": "NOC Engineer",
+  "v": 5
+ },
+ "rippling:conceptplus:4060476b-d89e-4430-a86a-f6f5bc600b03": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "Posting text unavailable — check requirements",
+   "fit": "unverified",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "Cyber Analyst",
+  "v": 5
+ },
+ "rippling:conceptplus:f9ddd964-6bb4-4baf-8826-10e891c5270b": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "Posting text unavailable — check requirements",
+   "fit": "unverified",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "SOC Analyst (WarU E-ITSS)",
+  "v": 5
+ },
+ "rippling:dlb-associates:2ede91cd-77c3-47c8-881c-c93cf9834623": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": "unconfirmed-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "SkillBridge - Data Center Commissioning Field Technician",
+  "v": 4
+ },
+ "rippling:dlb-associates:ab35eb8e-0915-4932-9833-5a430af19bf9": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": "unconfirmed-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "Skillbridge Commissioning Field Technician",
+  "v": 4
+ },
+ "rippling:journaltech:51940ae6-681d-4d45-bcf1-54028d3ce1d0": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": "level-2-unverifiable",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "Intermediate Technical Support Analyst",
+  "v": 5
+ },
+ "rippling:nerdio-careers:7f181cf8-2768-44ab-af07-b179e11969c0": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": "unconfirmed-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "Support Engineer – Enterprise",
+  "v": 5
+ },
+ "rippling:patientnow:19feb150-fa2b-4a72-85a0-f678a7f7c070": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "Posting text unavailable — check requirements",
+   "fit": "unverified",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "Technical Support Specialist",
+  "v": 5
+ },
+ "rippling:rippling:c86a2631-f926-418b-b4e1-0f48cd0c5b6b": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": "unconfirmed-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "Benefits Support Analyst, Missed Enrollments (US)",
+  "v": 5
+ },
+ "rippling:rippling:eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "Posting text unavailable — check requirements",
+   "fit": "unverified",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "Technical Support Specialist, Platform",
+  "v": 5
+ },
+ "smartrecruiters:LinkSolutionsInc:744000152736767": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "on Security Specialist (Intermediate-Level) to join our team in Orlando, FL.\nU.S. Citizen\nActive DoD Secret Clearance required\nDoD 8570/8140 IAT Level II certification or higher is",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-09-30T17:25:49.611Z",
+   "posted_at_source": null,
+   "reason": "active-clearance-required",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL, United States",
+  "seen": "2026-11-12",
+  "title": "Information Security Specialist (Intermediate-Level)",
+  "v": 5
+ },
+ "smartrecruiters:LinkSolutionsInc:744000152747719": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "Systems Administrator (Intermediate-Level) to join our team in Orlando, FL. \nU.S. Citizen\nActive DoD Secret Clearance \nDoD 8570/8140 IAT Level II certification or higher is require",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-09-30T18:39:20.800Z",
+   "posted_at_source": null,
+   "reason": "active-clearance-required",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL, United States",
+  "seen": "2026-11-12",
+  "title": "Systems Administrator (Intermediate-Level)",
+  "v": 5
+ },
+ "smartrecruiters:LinkSolutionsInc:744000154130955": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "ork Administrator (Intermediate-Level) to join our team in Orlando, FL.\nU.S. Citizen only\nActive DoD Secret Clearance\nDoD 8570/8140 IAT Level II certification or higher is required",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-10-07T14:56:38.628Z",
+   "posted_at_source": null,
+   "reason": "active-clearance-required",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL, United States",
+  "seen": "2026-11-12",
+  "title": "Network Administrator (Intermediate-Level)",
+  "v": 5
+ },
+ "smartrecruiters:MissionCriticalGroup:3743990015518246": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-21T14:23:27.634Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote, , United States (Remote)",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 4
+ },
+ "smartrecruiters:MissionCriticalGroup:3743990015903256": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-05T20:21:23.777Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote, , United States (Remote)",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician",
+  "v": 4
+ },
+ "smartrecruiters:WestgateResorts:744000139200334": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-07-23T04:22:10.549Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, FL, United States",
+  "seen": "2026-11-12",
+  "title": "Laundry Service Technician",
+  "v": 5
+ },
+ "smartrecruiters:WestgateResorts:744000161175739": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "At least 5 years of related business, software testing, application support, technical support, or equivalent professional experience in lieu of a bachelor’s degree.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 20.9,
+   "notes": [],
+   "posted_at": "2026-11-11T22:15:49.557Z",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Ocoee, FL, United States",
+  "seen": "2026-11-12",
+  "title": "Software Support Specialist",
+  "v": 5
+ },
+ "workday:accenture:/job/Madrid/Cloud-Infrastructure-Specialist---Azure-Virtual-Desktop---Citrix_14795618": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-04T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "—",
+  "seen": "2026-11-12",
+  "title": "Cloud Infrastructure Specialist / Azure Virtual Desktop / Citrix",
+  "v": 4
+ },
+ "workday:acehardware:/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": 46.9,
+   "notes": [],
+   "posted_at": "2026-11-11T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "FL - Plant City",
+  "seen": "2026-11-12",
+  "title": "RSC IT Coordinator, 1st shift",
+  "v": 5
+ },
+ "workday:att:/job/Cocoa-Florida/COMSEC-Responsible-Officer--CRO---Tier-II-Network-Technician--NE2---Government-_R-121156": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "Candidate must have 10 years of experience that can be a combination of work history and education",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 41.0,
+   "notes": [],
+   "posted_at": "2026-08-31T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "requires-10-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Cocoa, Florida",
+  "seen": "2026-11-12",
+  "title": "COMSEC Responsible Officer (CRO)/ Tier II Network Technician (NE2) (Government)",
+  "v": 4
+ },
+ "workday:barrywehmiller:/job/Remote---USA/Field-Service-Technician_R023008": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-11T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician - Northeast Region",
+  "v": 4
+ },
+ "workday:bcbsla:/job/Remote-LA/CW-IT-Service-Management-Intern--Spring-2027-_R12137": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Internship",
+   "evidence": "s : Junior or senior level undergraduate, Master’s level or recent graduate in desired area of Computer Science, ISDS, Business Adminis",
+   "experience": "Entry-level / no experience required",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-09-16T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote-LA",
+  "seen": "2026-11-12",
+  "title": "CW IT Service Management Intern (Spring 2027)",
+  "v": 4
+ },
+ "workday:bcbsla:/job/Remote-LA/CW-Value-Based-Operations-Analyst-Intern--Spring-2027-_R12138": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-16T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote-LA",
+  "seen": "2026-11-12",
+  "title": "CW Value Based Operations Analyst Intern (Spring 2027)",
+  "v": 4
+ },
+ "workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100": {
+  "a": {
+   "category": "Technical Support (customer-facing)",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-09T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "United States - Remote",
+  "seen": "2026-11-12",
+  "title": "Technical Support Representative - Remote",
+  "v": 5
+ },
+ "workday:bluescopenac:/job/OH-Remote/Information-Security-Analyst--App-Security---AI-Security-_REQ-3166": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "1-3 years of experience in cybersecurity, information security, application support, software development, systems administration, or a related technology field.",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "Bachelor's degree listed",
+    "Mentions Security+/Network+",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-09T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "OH-Remote",
+  "seen": "2026-11-12",
+  "title": "Information Security Analyst (App Security)",
+  "v": 4
+ },
+ "workday:brunswick:/job/Lake-Buena-Vista-FL/Field-Service-Technician-II_JR-051095": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 10.6,
+   "notes": [],
+   "posted_at": "2026-10-20T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Lake Buena Vista, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician II",
+  "v": 5
+ },
+ "workday:brunswick:/job/Saint-Cloud-FL/Field-Service-Operations-Technician_JR-051526": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 8.2,
+   "notes": [],
+   "posted_at": "2026-09-09T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Saint Cloud, FL",
+  "seen": "2026-11-12",
+  "title": "Field Service Operations Technician",
+  "v": 5
+ },
+ "workday:cableone:/job/Remote-USA/Fleet-Project-Support-Specialist_R-107741": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-11T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote USA",
+  "seen": "2026-11-12",
+  "title": "Fleet Project Support Specialist",
+  "v": 5
+ },
+ "workday:chenmed:/job/East-Orlando/Associate-Field-Support-Technician_R0050579-1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "A minimum of 2 years’ work experience in Information Technology or a related field required",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-11-06T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "East Orlando",
+  "seen": "2026-11-12",
+  "title": "Associate Field Support Technician",
+  "v": 5
+ },
+ "workday:compassion:/job/Remote---USA/Business-Support-Specialist-II_R8754": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-10T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Business Support Specialist II",
+  "v": 5
+ },
+ "workday:cpsi:/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Mentions Security+/Network+"
+   ],
+   "posted_at": "2026-11-10T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - US",
+  "seen": "2026-11-12",
+  "title": "Technical Support Technician - Tech Apps",
+  "v": 5
+ },
+ "workday:evercommerce:/job/Orlando-Florida/EverPro---Systems-Administrator--Orlando--Florida-_R-106554-1": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "Must be willing to travel (~30-35% annually)\nUS Citizenship is required for this position\nMust have a government security clearance (Level Secret or higher)\n Where: Orlando, FL \nTh",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-10-14T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "active-clearance-required",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando, Florida",
+  "seen": "2026-11-12",
+  "title": "EverPro - Systems Administrator (Orlando, Florida)",
+  "v": 5
+ },
+ "workday:ferguson:/job/Remote/Associate-Systems-Administrator---Supply-Chain-Rapid-Response-Team_R-141717-1": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "1–2 years of experience in systems administration, IT support, service desk, desktop support, technical support, or a related technology role.",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "Mentions Security+/Network+",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-10T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Associate Systems Administrator - Supply Chain Rapid Response Team",
+  "v": 5
+ },
+ "workday:freudenberg:/job/United-States-of-America---Remote/EB-USA-Field-Service-Technician_R_00108545": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-27T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "United States of America - Remote",
+  "seen": "2026-11-12",
+  "title": "EB USA Field Service Technician",
+  "v": 4
+ },
+ "workday:godirect:/job/United-States-Remote/Summer-2027-Technology-Intern_JR0033187": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "Internship — no experience requirement stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-11T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "United States-Remote",
+  "seen": "2026-11-12",
+  "title": "Summer 2027 Technology Intern",
+  "v": 5
+ },
+ "workday:greystar:/job/Remote-United-States/Business-Systems-Analyst_R0202969": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-10T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote, United States",
+  "seen": "2026-11-12",
+  "title": "Business Systems Analyst",
+  "v": 5
+ },
+ "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44797": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "S/PAAS/Cloud Application Development\n Travel Required : \nUp to 10%\n Clearance Required : \nActive Secret\n What You Will Do: \nLead ServiceNow initiatives with a primary focus on IT S",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-23T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "active-clearance-required",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US - Remote (Any location)",
+  "seen": "2026-11-12",
+  "title": "ServiceNow Help Desk Support",
+  "v": 5
+ },
+ "workday:guidehouse:/job/US---Remote-Any-location/ServiceNow-Help-Desk-Support_44798": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "S/PAAS/Cloud Application Development\n Travel Required : \nUp to 10%\n Clearance Required : \nActive Secret\n What You Will Do: \nLead ServiceNow initiatives with a primary focus on IT S",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-23T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "active-clearance-required",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US - Remote (Any location)",
+  "seen": "2026-11-12",
+  "title": "ServiceNow Help Desk Support",
+  "v": 5
+ },
+ "workday:halma:/job/Orlando/Jr-IT-Support-Specialist_JR26_001243": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "0 - 2 years of experience in IT support, helpdesk, or technical troubleshooting.",
+   "experience": "0+ years — open to no experience",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-11-11T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Orlando",
+  "seen": "2026-11-12",
+  "title": "Jr. IT Support Specialist",
+  "v": 5
+ },
+ "workday:henryschein:/job/Florida-United-States---Remote/Equipment-Service-Technician--Tampa_R133925-1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-09T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Florida, United States - Remote",
+  "seen": "2026-11-12",
+  "title": "Equipment Service Technician- Venice/Naples area",
+  "v": 5
+ },
+ "workday:kla:/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2638091-1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 3 years customer-service-type experience",
+    "Shift work mentioned: 24/7"
+   ],
+   "posted_at": "2026-08-19T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Virtual/Remote USA",
+  "seen": "2026-11-12",
+  "title": "Customer Support Engineer - Utica, NY",
+  "v": 4
+ },
+ "workday:kla:/job/VirtualRemote-USA/Customer-Support-Engineer---Utica--NY_2639052": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 3 years customer-service-type experience",
+    "Shift work mentioned: 24/7"
+   ],
+   "posted_at": "2026-08-19T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Virtual/Remote USA",
+  "seen": "2026-11-12",
+  "title": "Customer Support Engineer - Utica, NY",
+  "v": 4
+ },
+ "workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "Internship — no experience requirement stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-10-21T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "6314 Remote/Teleworker US",
+  "seen": "2026-11-12",
+  "title": "Network Site Design Intern",
+  "v": 5
+ },
+ "workday:lnw:/job/REMOTE-USA-NY-Buffalo/Field-Service-Technician-1_R322591": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-07T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "REMOTE-USA-NY-Buffalo",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician 1",
+  "v": 4
+ },
+ "workday:lnw:/job/Remote--USA--NY--Fingerlakes/Field-Service-Technician-1_R322985": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-03T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "Remote – USA – NY- Fingerlakes",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician 1",
+  "v": 4
+ },
+ "workday:modmed:/job/Remote---USA/Product-Support-Specialist-1_R5073": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "1-2 years of experience in handling customer support in an Omni Channel Environment.",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "Bachelor's degree listed"
+   ],
+   "posted_at": "2026-10-08T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Product Support Specialist 1",
+  "v": 5
+ },
+ "workday:modmed:/job/Remote---USA/Support-Specialist-1_R4991": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-23T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Support Specialist 1",
+  "v": 5
+ },
+ "workday:nabancard:/job/US---Remote/POS-Tech-Support-Specialist_JR102005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 3 years customer-service-type experience",
+    "Shift work mentioned: evening shift"
+   ],
+   "posted_at": "2026-11-03T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US - Remote",
+  "seen": "2026-11-12",
+  "title": "POS Tech Support Specialist",
+  "v": 5
+ },
+ "workday:ncr:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Ft-Lauderdale--FL_R0158306": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "One or more years of related experience",
+   "experience": "None required — 1 year preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Shift work mentioned: weekend shifts"
+   ],
+   "posted_at": "2026-10-13T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "FLORIDA VIRTUAL, USA",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician - Ft Lauderdale, FL",
+  "v": 4
+ },
+ "workday:ncr:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician---Gainesville--FL_R0158303": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "One or more years of related experience",
+   "experience": "None required — 1 year preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Shift work mentioned: weekend shifts"
+   ],
+   "posted_at": "2026-10-08T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "FLORIDA VIRTUAL, USA",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician - Gainesville, FL",
+  "v": 4
+ },
+ "workday:ncr:/job/VIRTUAL-NORTHEAST-REGION-USA/Field-Service-Technician---Northeast-Region_R0158425-1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "One or more years of related experience",
+   "experience": "None required — 1 year preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Shift work mentioned: weekend shifts"
+   ],
+   "posted_at": "2026-08-26T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "VIRTUAL, NORTHEAST REGION USA",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician - Northeast Region",
+  "v": 4
+ },
+ "workday:ncr:/job/VIRTUAL-NORTHWEST-REGION-USA/Field-Service-Technician---Northwest-Region_R0158434-1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "One or more years of related experience",
+   "experience": "None required — 1 year preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Shift work mentioned: weekend shifts"
+   ],
+   "posted_at": "2026-08-28T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "VIRTUAL, NORTHWEST REGION USA",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician - Northwest Region",
+  "v": 4
+ },
+ "workday:ncr:/job/VIRTUAL-SOUTHEAST-REGION-USA/Field-Service-Technician---Southeast-Region_R0158431-4": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "One or more years of related experience",
+   "experience": "None required — 1 year preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Shift work mentioned: weekend shifts"
+   ],
+   "posted_at": "2026-08-31T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "VIRTUAL, SOUTHEAST REGION USA",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician - Southeast Region",
+  "v": 4
+ },
+ "workday:ncr:/job/VIRTUAL-SOUTHWEST-REGION-USA/Field-Service-Technician---Southwest-Region_R0158435": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "One or more years of related experience",
+   "experience": "None required — 1 year preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Shift work mentioned: weekend shifts"
+   ],
+   "posted_at": "2026-08-26T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "VIRTUAL, SOUTHWEST REGION USA",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician - Southwest Region",
+  "v": 4
+ },
+ "workday:ncratleos:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Miami--FL---Part-Time-_R1155314": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "Level II title"
+   ],
+   "posted_at": "2026-11-06T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "FLORIDA VIRTUAL, USA",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician II - Miami, FL  (Part Time)",
+  "v": 4
+ },
+ "workday:ncratleos:/job/FLORIDA-VIRTUAL-USA/Field-Service-Technician-II---Tallahassee--FL_R1155151": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "One (1) or more years of related experience",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "Mentions Security+/Network+",
+    "Shift work mentioned: weekend shifts"
+   ],
+   "posted_at": "2026-10-21T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:02:41Z",
+  "location": "FLORIDA VIRTUAL, USA",
+  "seen": "2026-11-12",
+  "title": "Field Service Technician II - Tallahassee, FL",
+  "v": 4
+ },
+ "workday:parsons:/job/US---Remote-Any-Location/Multi-Domain-Autonomous-System-Specialist--This-is-a--International-Assignment----NO-REMOTE-WORK--_R182808": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-08-26T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "—",
+  "seen": "2026-11-12",
+  "title": "Multi-Domain Autonomous System Specialist**This is a (International Assignment) **NO REMOTE WORK**",
+  "v": 5
+ },
+ "workday:republic:/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "1+ year of experience in a service desk, help desk, desktop support, or customer support role (IT preferred).",
+   "experience": "None required — 1 year preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-10T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Service Desk Analyst I",
+  "v": 5
+ },
+ "workday:sharecare:/job/Remote/ROI-Support-Specialist---Remote_R-102114": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-04T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "ROI Support Specialist - Remote",
+  "v": 5
+ },
+ "workday:situsamc:/job/Remote/Systems-Administrator---Kiteworks_JR03287": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "Experienced professional with 5+ years of industry and/or relevant experience, typically at a Senior Analyst or Analyst level role or external equivalent.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-05T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Systems Administrator – Kiteworks",
+  "v": 5
+ },
+ "workday:talentmanagementsolution:/job/Remote---USA/Customer-Onboarding-and-Learning-Systems-Specialist_R54662-1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-13T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Customer Onboarding and Learning Systems Specialist",
+  "v": 5
+ },
+ "workday:talentmanagementsolution:/job/Remote---USA/ProAdmin-Support-Specialist_R51223": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-07-23T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "ProAdmin Testing & Client Support Specialist",
+  "v": 5
+ },
+ "workday:thinkbrg:/job/Remote---USA/Cybersecurity-Analyst_JR101249": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "3+ years of experience in cybersecurity operations, cloud security, identity security, security engineering, or a closely related role.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-06T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Cybersecurity Analyst",
+  "v": 5
+ },
+ "workday:unisys:/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "BA/BS degree and 2–4 years of relevant experience OR equivalent combination.",
+   "experience": "2 years required — education/certs may substitute",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "Shift work mentioned: rotating shifts"
+   ],
+   "posted_at": "2026-11-03T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "USA Remote",
+  "seen": "2026-11-12",
+  "title": "Level 2 NOC Systems Administrator – Linux/Unix Focus",
+  "v": 5
+ },
+ "workday:usertesting:/job/Remote---US/IT-System-Administrator---AI_R-101222": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "5+ years of experience with enterprise IT systems in a system administrator capacity.Hands-on experience with MCP server setup and management, AI agent deployment, AI feature confi",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-21T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote - US",
+  "seen": "2026-11-12",
+  "title": "AI Systems Administrator",
+  "v": 5
+ },
+ "workday:wvumedicine:/job/Remote/Revenue-Cycle-Systems-Analyst_JR26-47419": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "High school Diploma or Equivalent AND Six (6) years’ experience revenue cycle software applications.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-27T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "requires-6-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote",
+  "seen": "2026-11-12",
+  "title": "Revenue Cycle Systems Analyst",
+  "v": 5
+ },
+ "workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "0–2 years of experience in desktop support, end-user computing, or a related technical support role.",
+   "experience": "0+ years — open to no experience",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-09-23T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "Remote-USA",
+  "seen": "2026-11-12",
+  "title": "IT Support Specialist",
+  "v": 5
+ },
+ "workday:zoetis:/job/US-PR-Remote/Diagnostics-Technical-Specialist_JR00021611-1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-29T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": false,
+   "section": null,
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US PR Remote",
+  "seen": "2026-11-12",
+  "title": "Diagnostics Technical Specialist",
+  "v": 5
+ },
+ "workday:zoetis:/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901": {
+  "a": {
+   "category": "Technical Support (customer-facing)",
+   "employment": "Not stated",
+   "evidence": "3+ years previous Software Engineering and Software Support experience, preferably in a veterinary setting",
+   "experience": "None required — 3 years preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-06T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-12T09:27:36Z",
+  "location": "US Remote",
+  "seen": "2026-11-12",
+  "title": "Diagnostics Technical Support Representative",
+  "v": 5
+ }
+}

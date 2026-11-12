@@ -20,7 +20,6 @@ from __future__ import annotations
 import re
 from datetime import UTC, datetime, timedelta
 
-from ..filters_it import SEARCH_TERMS as IT_SEARCH_TERMS
 from ..models import (
     INCOMPLETE_CAPPED,
     INCOMPLETE_MALFORMED,
@@ -31,6 +30,7 @@ from ..models import (
     source_board_key,
 )
 from ..net import Net
+from ..terms import SEARCH_TERMS
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -46,10 +46,11 @@ _DAYS_AGO = re.compile(r"(\d+)\s*\+?\s*days?\s+ago", re.IGNORECASE)
 _REQ_ID = re.compile(r"^(?=[A-Za-z0-9-]*\d)[A-Za-z0-9][A-Za-z0-9-]{1,31}$")
 
 _PAGE_SIZE = 20   # hard server-side cap per request
-_MAX_JOBS = 200   # per search term; big tenants list hundreds of "intern" hits
+_MAX_JOBS = 100   # per search term on the big sweep
+_MAX_JOBS_WHOLE = 3000  # a local tenant read in full (`"whole": true`)
 # Workday's searchText is literal enough that "intern" misses "Co-Op Engineer".
 # Our own classifier accepts co-ops, so we have to ask for them explicitly.
-_SEARCH_TERMS = ("intern", "co-op")
+_SEARCH_TERMS = SEARCH_TERMS
 
 
 def _resolve_posted(text: str | None) -> str | None:
@@ -122,12 +123,17 @@ async def fetch(company: dict, net: Net) -> Fetch:
 
     jobs: dict[str, Job] = {}  # keyed by job id: the two searches overlap
     incomplete_reason: str | None = None
-    for term in (_SEARCH_TERMS + (IT_SEARCH_TERMS
-                        if company.get("opportunity_scope") == "it" else ())):
+    # A local employer's board is small enough to read end to end with an
+    # empty search — then nothing depends on which words its titles use, and
+    # the snapshot is complete, so it may close roles.
+    whole = bool(company.get("whole"))
+    terms = ("",) if whole else _SEARCH_TERMS
+    max_jobs = _MAX_JOBS_WHOLE if whole else _MAX_JOBS
+    for term in terms:
         exhausted = False
         trusted_total: int | None = None
         seen_pages: set[tuple[str, ...]] = set()
-        for offset in range(0, _MAX_JOBS, _PAGE_SIZE):
+        for offset in range(0, max_jobs, _PAGE_SIZE):
             body = {"appliedFacets": {}, "limit": _PAGE_SIZE, "offset": offset,
                     "searchText": term}
             data = await net.post_json(api_url, json=body, headers=HEADERS)

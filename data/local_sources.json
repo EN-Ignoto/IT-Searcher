@@ -1,0 +1,21 @@
+[
+  {"name": "NLx / DEJobs (50 mi of Kissimmee)", "slug": "kissimmee-fl", "ats": "nlx",
+   "location": "Kissimmee, FL", "radius": 50, "timeout": 1500},
+  {"name": "Osceola County", "slug": "osceola", "ats": "neogov", "fallback_place": "Kissimmee, FL"},
+  {"name": "City of Kissimmee", "slug": "kissimmeefl", "ats": "neogov", "fallback_place": "Kissimmee, FL"},
+  {"name": "Kissimmee Utility Authority", "slug": "kua", "ats": "neogov", "fallback_place": "Kissimmee, FL"},
+  {"name": "City of St. Cloud", "slug": "stcloud", "ats": "neogov", "fallback_place": "St. Cloud, FL"},
+  {"name": "Seminole County", "slug": "seminolecountyfl", "ats": "neogov", "fallback_place": "Sanford, FL"},
+  {"name": "City of Ocoee", "slug": "ocoee", "ats": "neogov", "fallback_place": "Ocoee, FL"},
+  {"name": "City of Winter Park", "slug": "winterpark", "ats": "neogov", "fallback_place": "Winter Park, FL"},
+  {"name": "City of Oviedo", "slug": "oviedo", "ats": "neogov", "fallback_place": "Oviedo, FL"},
+  {"name": "City of Casselberry", "slug": "casselberry", "ats": "neogov", "fallback_place": "Casselberry, FL"},
+  {"name": "City of Clermont", "slug": "clermontfl", "ats": "neogov", "fallback_place": "Clermont, FL"},
+  {"name": "City of Maitland", "slug": "maitland", "ats": "neogov", "fallback_place": "Maitland, FL"},
+  {"name": "School District of Osceola County", "slug": "osceolaschools", "ats": "paradox",
+   "host": "jobs.osceolaschools.net", "fallback_place": "Kissimmee, FL"},
+  {"name": "University of Central Florida", "slug": "ucf", "ats": "workday", "wd": "wd1",
+   "site": "careers", "whole": true, "fallback_place": "Orlando, FL"},
+  {"name": "City of Orlando", "slug": "cityoforlando", "ats": "workday", "wd": "wd5",
+   "site": "CityofOrlandoCareers", "whole": true, "fallback_place": "Orlando, FL"}
+]

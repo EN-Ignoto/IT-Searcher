@@ -1,1 +1,0 @@
-Restart full IT scan after the 45-minute job timeout; allow 90 minutes.

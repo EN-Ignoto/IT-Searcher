@@ -71,7 +71,7 @@ def _validate_record(jid: str, record: dict) -> None:
         raise StateCorrupt(f"{jid}: a closed record requires closed_at")
     if record["is_open"] and record.get("closed_at"):
         raise StateCorrupt(f"{jid}: an open record cannot carry closed_at")
-    for field in ("seasons", "skills", "aliases"):
+    for field in ("notes", "aliases"):
         value = record.get(field)
         if value is not None and (
             not isinstance(value, list) or not all(isinstance(v, str) for v in value)
@@ -141,15 +141,16 @@ def save(path: str, data: dict) -> None:
 # must never be clobbered by a run that didn't re-enrich.
 _REFRESH_FIELDS = (
     "title", "location", "url",
-    "season", "season_inferred", "seasons", "category", "company", "source",
-    "company_slug", "entry_fit", "entry_fit_version",
+    "category", "company", "source", "company_slug",
+    # The entry-level assessment is recomputed from the posting each time the
+    # rules or the posting change, so the latest verdict always wins.
+    "section", "miles", "remote", "fit", "experience", "evidence", "employment",
+    "notes", "rules_v",
 )
 
 
 def upsert(existing: dict, jobs: list[dict], complete_keys: set[str],
-           enriched_ids: set[str] | None = None,
-           seen_ids: set[str] | None = None,
-           classifier_version: int | None = None) -> list[str]:
+           seen_ids: set[str] | None = None) -> list[str]:
     """Merge freshly-fetched jobs into the existing store.
 
     Returns ids that should be announced: never-before-seen roles plus roles
@@ -166,15 +167,11 @@ def upsert(existing: dict, jobs: list[dict], complete_keys: set[str],
 
     `seen_ids` is every job a successful fetch returned, in scope or not. A
     stored role that came back but no longer passes our filters (wrong country,
-    off-cycle, not a tech internship) is closed as out-of-scope no matter how
+    requires experience, not an entry IT role) is closed as out-of-scope no matter how
     complete the snapshot was: that verdict is ours to make, and it needs no
     evidence from the employer.
-
-    `enriched_ids` are jobs whose sponsorship verdict came from posting text
-    THIS run; those get an enriched_at stamp so enrichment never repeats.
     """
     ts = now_iso()
-    enriched_ids = enriched_ids or set()
     fetched_ids = seen_ids or set()  # everything a fetch returned, kept or not
     kept_ids: set[str] = set()       # the subset that passed our filters
     new_ids: list[str] = []
@@ -208,17 +205,11 @@ def upsert(existing: dict, jobs: list[dict], complete_keys: set[str],
                     record["posted_at_source"] = job.get("posted_at_source")
             if job.get("salary"):
                 record["salary"] = job["salary"]
-            if job.get("skills") is not None:
-                record["skills"] = job["skills"]
-            # A verdict from fresh text this run always lands — including a
-            # downgrade to "unknown", which is how a re-versioned classifier
-            # retracts an old false positive. Otherwise unknown never clobbers.
-            if jid in enriched_ids or job.get("sponsorship", "unknown") != "unknown":
-                record["sponsorship"] = job.get("sponsorship", "unknown")
             if record.get("closed_at"):
                 del record["closed_at"]  # the role came back
                 record.pop("closed_reason", None)
             record.pop("missing_streak", None)  # seen again -> closure disarmed
+            record.pop("gone_checks", None)
             record["last_seen_at"] = ts
             record["is_open"] = True
             # Only an employer-backed disappearance and later return is a new
@@ -234,10 +225,6 @@ def upsert(existing: dict, jobs: list[dict], complete_keys: set[str],
             record["is_open"] = True
             existing[jid] = record
             new_ids.append(jid)
-        if jid in enriched_ids:
-            existing[jid]["enriched_at"] = ts
-            if classifier_version is not None:
-                existing[jid]["classifier_v"] = classifier_version
 
     for jid, record in existing.items():
         if not record.get("is_open") or jid in kept_ids:

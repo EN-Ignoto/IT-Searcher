@@ -1,112 +1,99 @@
-# 🖥️ Orlando IT Jobs & Internships
+# IT Searcher
 
-Help desk, desktop support, networking, systems, cloud, and related IT opportunities.
+Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote roles open to Florida residents. Rebuilt automatically from employers' own postings; every link goes to the posting itself.
 
-**5 open postings** · Data as of 2026-11-12T08:29:11Z
+**[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-[Search dashboard](https://en-ignoto.github.io/IT-Searcher/) · [CSV](https://en-ignoto.github.io/IT-Searcher/internships.csv) · [RSS](https://en-ignoto.github.io/IT-Searcher/feed.xml)
+_Data as of Nov 12, 2026 09:46 UTC · 52 open roles: 6 local, 5 nearby, 41 remote._
 
-Every scheduled collection scans the full employer registry using the upstream workflow. GitHub may delay runs. Listings leave the feed after 270 days based on the employer's posting date, or first discovery if the posting date is unavailable.
+This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
-Use ☆ on the dashboard to save roles for later. Saved details stay in that browser even after a role leaves the feed.
+## Who the list is for
 
-Nearby-city coverage includes Orlando, Lake Mary, Sanford, Winter Park, Kissimmee, and surrounding communities. This is city matching, not a measured driving radius.
+Someone starting in IT: Network+ and Security+, customer-service experience, studying computer science, no professional IT experience yet. A role is listed when its title is an entry path into IT (help desk, desktop support, IT technician, junior network/systems/security work, paid IT internships), it is not senior, and the posting's own text does not *require* experience a beginner lacks. "Preferred" experience never excludes a role; it is shown as a note.
 
-Remote postings need US or Florida location evidence. Confirm state eligibility on the employer page.
+- **Beginner-friendly**: nothing in the posting requires IT experience.
+- **Stretch**: about a year is required, a requirement may be met by education or certifications, or the title is a level II.
+- **Check requirements**: the posting text could not be read; open it before applying.
 
-🆕 means published by the employer within the past 48 hours, not merely found by this searcher. The Posted date may have day-level rather than minute-level precision.
+## Local (6)
 
-Roles are collected from employer career feeds under their source terms.
+_Within 30 miles of Kissimmee._
 
-Entry-level IT jobs and paid internships only. Generic engineering roles, senior titles, postings requiring prior professional IT experience, unpaid roles, and roles without readable requirements are excluded. Applications are manual on the employer website.
-
-## 🖥️ IT Support, Networks & Infrastructure
-
-### Orlando area  (1 roles)
-
-| Company | Role | Category | Location | Skills | Posted | Apply |
+| Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
-| Enterfusion | IT Help Desk Technician | IT Support / Ops | Orlando, United States | AWS, Azure | Aug 20, 2026 | [Apply](https://apply.workable.com/enterfusion/j/2863A7F0F5/) |
+| 🆕 [Jr. IT Support Specialist](https://halma.wd3.myworkdayjobs.com/halma/job/Orlando/Jr-IT-Support-Specialist_JR26_001243) | Ocean Optics | Orlando · 17 mi | Not stated | Beginner-friendly | 0+ years — open to no experience | Nov 11 |
+| 🆕 [eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT](https://dejobs.org/orlando-fl/ecommerce-specialist-internet-help-desk-dc-orlando-fl-bench-ft/0B4B02309AB148FBA33C8A286AF55A74/job/) | The Walt Disney Company | Orlando, FL · 17 mi | Full-time | Beginner-friendly | No years of experience stated | Nov 9 |
+| 🆕 [Network Engineer](https://dejobs.org/orlando-fl/network-engineer/BA300695C674418D983FDDC3B445D250/job/) | Robert Half | Orlando, FL · 17 mi | Not stated | Stretch | None required — 2 years preferred · No experience stated, but this title usually expects some; Bachelor's degree listed | Nov 4 |
+| 🆕 [Network & Desk Technician](https://dejobs.org/kissimmee-fl/network-desk-technician/B75F7AE3B57549B480AB4D68852A7C5C/job/) | Marriott | Kissimmee, FL · 2 mi | Full-time | Beginner-friendly | No years of experience stated | Sep 30 |
+| 🆕 [Systems Analyst II](https://dejobs.org/orlando-fl/systems-analyst-ii/C8E0E27BEA6445E8827427AEA8C3BD9E/job/) | CAI | Orlando, FL · 17 mi | Not stated | Stretch | No years of experience stated · Level II title; Mentions Security+/Network+ | Sep 11 |
+| 🆕 [Help Desk Specialist](https://dejobs.org/orlando-fl/help-desk-specialist/6925AE191E7245C2AFF834232A57D1C2/job/) | Chenega Corporation | Orlando, FL · 17 mi | Not stated | Stretch | 1 year required · Shift work mentioned: rotating shift | Aug 21 |
 
-### Remote — Florida / US  (4 roles)
+## Nearby (5)
 
-| Company | Role | Category | Location | Skills | Posted | Apply |
+_30 to 50 miles from Kissimmee._
+
+| Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
-| Leidos ✓ 🆁 | Network Site Design Intern 🇺🇸 | Network / Telecom | 6314 Remote/Teleworker US | No skills listed | Oct 21, 2026 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057) |
-| BigCommerce ✓ 🆁 | Technical Support Representative - Remote | IT Support / Ops | United States - Remote | JavaScript, HTML/CSS | Oct 20, 2026 | [Apply](https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100) |
-| Amplify 🆁 | Summer 2027: IT Services Intern | IT Support / Ops | Remote - United States | Linux | Oct 19, 2026 | [Apply](https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f) |
-| Zillow ✓ 🆁 | IT Support Specialist | IT Support / Ops | Remote-USA | No skills listed | Sep 23, 2026 | [Apply](https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/IT-Support-Specialist_P751346-2) |
+| 🆕 [Data and Technology Specialist](https://dejobs.org/lake-mary-fl/data-and-technology-specialist/DDAEB1EA359745DE949E6EA4A0B0F453/job/) | Deloitte | Lake Mary, FL · 33 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Asks 4 years customer-service-type experience; Bachelor's degree listed | Nov 12 |
+| 🆕 [RSC IT Coordinator, 1st shift](https://acehardware.wd1.myworkdayjobs.com/External/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089) | Ace Hardware | FL - Plant City · 47 mi | Not stated | Beginner-friendly | No years of experience stated | Nov 11 |
+| 🆕 [Technology Support Contractor: 0-2 years (Entry) / Contract / Onsite](https://dejobs.org/lake-mary-fl/technology-support-contractor-0-2-years-entry-contract-onsite/5B713C96FFEA4AA999C7F143B7BA15D1/job/) | Kelly Services | Lake Mary, FL · 33 mi | Temporary / contract | Beginner-friendly | 0+ years — open to no experience | Nov 3 |
+| 🆕 [Systems Administrator](https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/) | V2X | Melbourne, FL · 48 mi | Not stated | Stretch | None required — 5 years preferred · Clearance must be obtainable; No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 3 |
+| 🆕 [IT Associate I](https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002) | Relativity Space | Cape Canaveral, Florida, United States · 49 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Mentions Security+/Network+ | Oct 23 |
 
-<a id="drop-radar"></a>
+## Remote (41)
 
-## 📅 Drop Radar: when companies usually post for Orlando area
+_Remote, and open to Florida residents._
 
-Stop refreshing career pages. 🎯 = the employer's **own posted date**, read from their careers API. (We may have discovered the role after it went live. The date is the employer's, not our discovery time.) The rest are typical opening **months**, hand-checked against each company's careers page and public recruiting guides. ✅ = already live in the list above.
+| Role | Employer | Where | Type | Fit | What the posting says | Posted |
+|---|---|---|---|---|---|---|
+| 🆕 [Technical Support Specialist, Platform](https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd) | Rippling | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 12 |
+| 🆕 [Technical Support Specialist](https://ats.rippling.com/patientnow/jobs/19feb150-fa2b-4a72-85a0-f678a7f7c070) | PatientNow | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 12 |
+| 🆕 [SOC Analyst (WarU E-ITSS)](https://ats.rippling.com/conceptplus/jobs/f9ddd964-6bb4-4baf-8826-10e891c5270b) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 12 |
+| 🆕 [Cyber Analyst](https://ats.rippling.com/conceptplus/jobs/4060476b-d89e-4430-a86a-f6f5bc600b03) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 12 |
+| 🆕 [NOC Engineer](https://hardrockdigital.recruitee.com/o/noc-engineer-5) | Hard Rock Digital | United States, Florida, United States (Remote) | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: 2nd shifts | found Nov 12 |
+| 🆕 [Service Desk Analyst I](https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1) | Republic Services | Remote - USA | Not stated | Beginner-friendly | None required — 1 year preferred | Nov 10 |
+| 🆕 [Associate Systems Administrator - Supply Chain Rapid Response Team](https://ferguson.wd1.myworkdayjobs.com/Ferguson_Experienced/job/Remote/Associate-Systems-Administrator---Supply-Chain-Rapid-Response-Team_R-141717-1) | Ferguson | Remote | Not stated | Stretch | 1 year required · Mentions Security+/Network+; Remote region not stated | Nov 10 |
+| 🆕 [Technical Support Technician - Tech Apps](https://cpsi.wd1.myworkdayjobs.com/CPSI/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541) | TruBridge | Remote - US | Not stated | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | Nov 10 |
+| 🆕 [Associate SOC Analyst](https://expel.com/about/career-listing/8936554002?gh_jid=8936554002) | Expel | Remote | Not stated | Beginner-friendly | None required — 1 year preferred · Shift work mentioned: 24x7; Remote region not stated | Nov 10 |
+| 🆕 [Technical Support Representative - Remote](https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100) | BigCommerce | United States - Remote | Not stated | Beginner-friendly | No years of experience stated | Nov 9 |
+| 🆕 [Technical Support Specialist](https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220) | Versapay | United States (Remote) | Not stated | Beginner-friendly | No years of experience stated | Nov 9 |
+| 🆕 [Diagnostics Technical Support Representative](https://zoetis.wd5.myworkdayjobs.com/zoetis/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901) | Zoetis | US Remote | Not stated | Beginner-friendly | None required — 3 years preferred | Nov 6 |
+| 🆕 [Cloud Systems Administrator](https://job-boards.greenhouse.io/oneimaging/jobs/4484490009) | OneImaging | Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Remote region not stated | Nov 7 |
+| 🆕 [Security & IT Operations Engineer](https://jobs.ashbyhq.com/prefect/6bc102cc-112f-441f-adc8-d53dc83a93ec) | Prefect | Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Remote region not stated | Nov 6 |
+| 🆕 [Remote Customer Technical Support](https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642) | ADT | United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States | Not stated | Beginner-friendly | No years of experience stated · Asks 1 year customer-service-type experience | Nov 4 |
+| 🆕 [Technical Support Specialist I](https://job-boards.greenhouse.io/avidxchangeinc/jobs/5283540007) | AvidXchange | Virtual | Not stated | Stretch | 1 year required · Remote region not stated | Nov 4 |
+| 🆕 [Level 2 NOC Systems Administrator – Linux/Unix Focus](https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786) | Unisys | USA Remote | Not stated | Stretch | 2 years required — education/certs may substitute · Shift work mentioned: rotating shifts | Nov 3 |
+| 🆕 [POS Tech Support Specialist](https://nabancard.wd1.myworkdayjobs.com/nab/job/US---Remote/POS-Tech-Support-Specialist_JR102005) | NorthAB | US - Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Shift work mentioned: evening shift | Nov 3 |
+| 🆕 [IT Operations Specialist](https://job-boards.greenhouse.io/alpaca/jobs/6240586004) | Alpaca | Remote - North America | Not stated | Stretch | No years of experience stated · Bachelor's degree listed | Nov 2 |
+| 🆕 [Security Systems Administrator](https://jobs.ashbyhq.com/fluidstack/f1811455-d414-4630-b22c-58a585163864) | FluidStack | U.S. Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Remote region not stated | Oct 30 |
+| 🆕 [Network Specialist - Launch Team](https://jobs.ashbyhq.com/skydio/8ba69d85-b786-4399-a5c0-ee0969054315) | Skydio | US Remote | Not stated | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | Oct 23 |
+| 🆕 [Network Site Design Intern](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057) | Leidos | 6314 Remote/Teleworker US | Internship | Beginner-friendly | Internship — no experience requirement stated · Clearance must be obtainable | Oct 21 |
+| 🆕 [Technical Support Specialist , US East Coast](https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861) | Nash | Remote, US | Not stated | Beginner-friendly | No years of experience stated · Shift work mentioned: 24/7 | Oct 20 |
+| 🆕 [Summer 2027: IT Services Intern](https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f) | Amplify | Remote - United States | Internship | Beginner-friendly | Internship — no experience requirement stated | Oct 19 |
+| 🆕 [Technical Support Specialist](https://job-boards.greenhouse.io/higherlogic/jobs/8033739003) | Higher Logic | US-Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 2 years customer-service-type experience | Oct 16 |
+| 🆕 [Customer Support Engineer](https://jobs.lever.co/firemon/55eed579-a00a-4d3c-a1ae-2e0ef9bd7063) | Firemon | USA, Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Oct 14 |
+| 🆕 [Security & IT Intern](https://jobs.ashbyhq.com/eightsleep/0ae8cdbe-8100-4f59-b702-16d836ab5550) | Eight Sleep | Remote - US | Internship | Beginner-friendly | Internship — no experience requirement stated | Oct 9 |
+| 🆕 [Product Support Specialist 1](https://modmed.wd501.myworkdayjobs.com/ModMed12/job/Remote---USA/Product-Support-Specialist-1_R5073) | Modernizing Medicine | Remote - USA | Not stated | Stretch | 1 year required · Bachelor's degree listed | Oct 8 |
+| 🆕 [IT Security Specialist](https://job-boards.greenhouse.io/axios/jobs/8262622) | Axios | Remote | Not stated | Beginner-friendly | No years of experience stated · Remote region not stated | Oct 7 |
+| 🆕 [IT Support Specialist](https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/IT-Support-Specialist_P751346-2) | Zillow | Remote-USA | Not stated | Beginner-friendly | 0+ years — open to no experience | Sep 23 |
+| 🆕 [Designated Technical Support Engineer - Central/East](https://job-boards.greenhouse.io/gleanwork/jobs/4735026005) | Glean | Remote - US | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some | Sep 22 |
+| 🆕 [Summer 2027 Technology Intern](https://godirect.wd5.myworkdayjobs.com/voya_jobs/job/United-States-Remote/Summer-2027-Technology-Intern_JR0033187) | Voya Financial | United States-Remote | Internship | Beginner-friendly | Internship — no experience requirement stated | Sep 11 |
+| 🆕 [Systems Administrator](https://boards.greenhouse.io/opensesame/jobs/8188645?gh_jid=8188645) | OpenSesame | Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Remote region not stated | Sep 9 |
+| 🆕 [Application Support Specialist - Weekend Nights](https://job-boards.greenhouse.io/sironamedical/jobs/4731581005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Sep 6 |
+| 🆕 [Application Support Specialist - Weekend Days](https://job-boards.greenhouse.io/sironamedical/jobs/4731580005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Sep 6 |
+| 🆕 [Application Support Specialist - Overnight M-F](https://job-boards.greenhouse.io/sironamedical/jobs/4731579005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Sep 6 |
+| 🆕 [Application Support Specialist - Second Shift M-F](https://job-boards.greenhouse.io/sironamedical/jobs/4731578005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Sep 6 |
+| 🆕 [Technical Support Engineer (TSE)](https://jobs.ashbyhq.com/Agave/a263e45f-e86e-4c78-882e-a79da649e861) | Agave | Remote | Not stated | Stretch | None required — 2 years preferred · No experience stated, but this title usually expects some; Remote region not stated | Sep 1 |
+| 🆕 [Off-Cycle 2026 Cybersecurity Internship](https://job-boards.greenhouse.io/galaxydigitalservices/jobs/6163325004) | Galaxy | Remote | Internship | Beginner-friendly | Internship — no experience requirement stated · Remote region not stated | Aug 26 |
+| 🆕 [Cloud Support Engineer](https://job-boards.greenhouse.io/alphasense/jobs/8495375002) | AlphaSense | Remote - United States | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some | Aug 20 |
+| 🆕 [Technical Support Engineer (GPU Clusters) - US Weekends](https://job-boards.greenhouse.io/togetherai/jobs/5202015007) | Together AI | Remote | Full-time | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Asks 1 year customer-service-type experience; Shift work mentioned: weekend shift; Remote region not stated | Aug 4 |
 
-> **Heads up:** companies trend *earlier* every cycle, and "~Aug" is a month, not a day. Treat "expected" as when to **start watching**, and "rolling" companies as worth checking year-round.
+## How it works
 
-| Company | Typical opening | Expected this cycle | Status |
-|---|---|---|---|
-| 🎯 Enterfusion | Aug 20 | dropped Aug 20 | ✅ [open now](https://apply.workable.com/enterfusion/j/2863A7F0F5/) |
-| 🎯 BNY | Oct 13 | dropped Oct 13 · closed | 🗓️ dropped |
-| 🎯 University of Central Florida | Oct 14 | dropped Oct 14 · closed | 🗓️ dropped |
-| 🎯 School District of Osceola County | Oct 29 | dropped Oct 29 · closed | 🗓️ dropped |
-| 🎯 Valencia College | Nov 05 | dropped Nov 05 · closed | 🗓️ dropped |
+- **Local sources, every 30 minutes**: the National Labor Exchange (NLx) within 50 miles of Kissimmee, eleven city and county governments on GovernmentJobs, the School District of Osceola County, UCF and the City of Orlando.
+- **Nationwide sweep, every 6 hours**: about 5,400 employer job boards, which is where the remote roles come from.
+- Roles that were considered and dropped are logged with the reason in [`data/rejected.jsonl`](data/rejected.jsonl).
+- A role is marked closed only after it is missing from two complete readings of its board in a row.
 
-_6 companies on the [full radar](https://en-ignoto.github.io/IT-Searcher/#radar). **6** dated from our own live observations 🎯 (this grows every cycle). "~Aug" = hand-verified typical month, not a promise of the day; "rolling" = posts year-round; "waiting" = not seen in our tracked feeds yet, not a guarantee it isn't out somewhere else._
-
-<details>
-<summary><strong>Recently closed</strong>: 40 roles that left the list in the last 14 days</summary>
-
-_Why each one left is in the last column, because the two reasons carry different evidence. **Gone from feed** = two consecutive complete reads of the employer's board no longer returned it (strong, but not the employer telling us directly). **Out of scope** = still posted, but it no longer passes our filters. That's our call, not theirs. **Not recorded** = closed before we started tracking the reason._
-
-| Company | Role | Cycle | Closed | Why |
-|---|---|---|---|---|
-| 1Password | IT Intern, IT Support - Winter 2027 | Remote — Florida / US | 2026-11-12 | gone from feed |
-| Eight Sleep | Security & IT Intern | Remote — Florida / US | 2026-11-12 | out of scope |
-| Nash | Technical Support Specialist , US East Coast | Remote — Florida / US | 2026-11-12 | out of scope |
-| Skydio | Technical Support Specialist | Remote — Florida / US | 2026-11-12 | out of scope |
-| Versapay | Technical Support Specialist | Remote — Florida / US | 2026-11-12 | out of scope |
-| ADT | Remote Customer Technical Support | Remote — Florida / US | 2026-11-12 | out of scope |
-| PatientNow | Technical Support Specialist | Remote — Florida / US | 2026-11-12 | out of scope |
-| Rippling | Technical Support Specialist, Platform | Remote — Florida / US | 2026-11-12 | out of scope |
-| SOSi | Help Desk Representative | Remote — Florida / US | 2026-11-12 | out of scope |
-| TruBridge | Technical Support Technician - Tech Apps | Remote — Florida / US | 2026-11-12 | out of scope |
-| Crowdstrike | Technical Support | Remote — Florida / US | 2026-11-12 | out of scope |
-| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-12 | out of scope |
-| Guidehouse | ServiceNow Help Desk Support | Remote — Florida / US | 2026-11-12 | out of scope |
-| Republic Services | Service Desk Analyst I | Remote — Florida / US | 2026-11-12 | out of scope |
-| School District of Osceola County | Computer Technician I-12 Month | Orlando area | 2026-11-12 | out of scope |
-| Valencia College | Specialist, Technical Support | Orlando area | 2026-11-12 | out of scope |
-| CDW Corporation | IT Service Desk- 6AM - 6PM | Remote — Florida / US | 2026-11-11 | out of scope |
-| Loews Hotels | Help Desk Analyst I | Orlando area | 2026-11-11 | out of scope |
-| Pennmutual | Information Security Engineer 1 | Remote — Florida / US | 2026-11-11 | out of scope |
-| Applied Information Sciences | Cloud Migration Engineer I | Remote — Florida / US | 2026-11-11 | out of scope |
-| Impactadvisors | Entry-Level IT Advisory Consultant | Remote — Florida / US | 2026-11-11 | out of scope |
-| Glean | Designated Technical Support Engineer - West | Remote — Florida / US | 2026-11-11 | out of scope |
-| ADT (via Himalayas) | Remote Customer Technical Support | Remote — Florida / US | 2026-11-11 | out of scope |
-| Effortless Office (via Himalayas) | IT Tech Support - Tier 1 Analyst | Remote — Florida / US | 2026-11-11 | out of scope |
-| CenturyLink (via Himalayas) | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway (Remote, US | Remote — Florida / US | 2026-11-11 | out of scope |
-| Uniguest (via Himalayas) | Technical Support Representative - Tier I (Remote U.S.) | Remote — Florida / US | 2026-11-11 | out of scope |
-| Netsmart (via Himalayas) | Service Desk Technician - Application Support | Remote — Florida / US | 2026-11-11 | out of scope |
-| VC3 (via Himalayas) | Part-Time NOC Analyst I (Weekends, Evenings & Overnight) | Remote — Florida / US | 2026-11-11 | out of scope |
-| Danaher (via Himalayas) | IT Analyst Co-op | Remote — Florida / US | 2026-11-11 | out of scope |
-| Aurrera Health Group (via Himalayas) | Enterprise Internship, Information Technology | Remote — Florida / US | 2026-11-11 | out of scope |
-| GES (via Himalayas) | Cybersecurity Intern | Remote — Florida / US | 2026-11-11 | out of scope |
-| Blue Mantis (via Himalayas) | IT EUX Junior Engineer I - Remote US Only | Remote — Florida / US | 2026-11-11 | out of scope |
-| Liberty University (via Himalayas) | IT Helpdesk Remote Support - Support Specialist I | Remote — Florida / US | 2026-11-11 | out of scope |
-| Resideo (via Himalayas) | Network Technician | Remote — Florida / US | 2026-11-11 | out of scope |
-| Lumen Technologies (via Himalayas) | Cybersecurity, Risk & Digital Trust - Summer 2027 Internship Pathway | Remote — Florida / US | 2026-11-11 | out of scope |
-| Leidos (via Himalayas) | Network Site Design Intern | Remote — Florida / US | 2026-11-11 | out of scope |
-| Sierra Interactive (via Himalayas) | Technical Support Analyst | Remote — Florida / US | 2026-11-11 | out of scope |
-| Courser (via Himalayas) | IT Support Services I-Quick Fix | Remote — Florida / US | 2026-11-11 | out of scope |
-| AMERICAN SYSTEMS (via Himalayas) | Tier I Part Time Help Desk Analyst – Overnight Monitoring | Remote — Florida / US | 2026-11-11 | out of scope |
-| DMI (via Himalayas) | Service Desk Analyst | Remote — Florida / US | 2026-11-11 | out of scope |
-
-</details>
-
-
----
-Employer postings can close at any time. Confirm experience, schedule, and location before applying.
-
-Derived from the MIT-licensed internship engine; adapted for Orlando-area IT opportunities.
+See [METHODOLOGY.md](METHODOLOGY.md) for the rules and [ARCHITECTURE.md](ARCHITECTURE.md) for the code.

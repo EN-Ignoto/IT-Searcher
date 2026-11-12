@@ -3,8 +3,8 @@ import os
 import pytest
 
 from intern_engine import store
+from intern_engine.dedup import dedup as _dedup
 from intern_engine.models import Job
-from intern_engine.pipeline import _dedup
 
 
 def _job_dict(jid, title="Software Engineer Intern"):
@@ -175,18 +175,6 @@ class TestUpsert:
         store.upsert(existing, [shifted], keys)
         assert existing["a"]["posted_at"] == "2026-06-01T00:00:00Z"  # frozen
 
-    def test_sponsorship_verdict_never_clobbered_by_unknown(self):
-        existing: dict = {}
-        keys = {"greenhouse:stripe"}
-        flagged = _job_dict("a") | {"sponsorship": "no-sponsorship"}
-        store.upsert(existing, [flagged], keys, enriched_ids={"a"})
-        assert existing["a"]["sponsorship"] == "no-sponsorship"
-        assert existing["a"]["enriched_at"]
-
-        # Next run didn't re-enrich (verdict already stored) -> stays flagged.
-        unknown = _job_dict("a") | {"sponsorship": "unknown"}
-        store.upsert(existing, [unknown], keys)
-        assert existing["a"]["sponsorship"] == "no-sponsorship"
 
 
 class TestDatePrecision:
@@ -222,29 +210,6 @@ class TestDatePrecision:
         self._seen(existing, "2026-06-20T00:00:00Z", "date_only")
         assert existing["a"]["posted_at"] == "2026-06-01T00:00:00Z"
 
-    def test_classifier_version_is_stamped_on_enrichment(self):
-        existing: dict = {}
-        store.upsert(existing, [_job_dict("a")], self.KEYS,
-                     enriched_ids={"a"}, classifier_version=7)
-        assert existing["a"]["classifier_v"] == 7
-
-    def test_reenrichment_may_retract_a_verdict_to_unknown(self):
-        # A re-versioned classifier must be able to withdraw a false positive.
-        existing: dict = {}
-        flagged = _job_dict("a") | {"sponsorship": "no-sponsorship"}
-        store.upsert(existing, [flagged], self.KEYS, enriched_ids={"a"},
-                     classifier_version=1)
-        retracted = _job_dict("a") | {"sponsorship": "unknown"}
-        store.upsert(existing, [retracted], self.KEYS, enriched_ids={"a"},
-                     classifier_version=2)
-        assert existing["a"]["sponsorship"] == "unknown"
-
-    def test_a_run_that_did_not_reenrich_still_cannot_clobber(self):
-        existing: dict = {}
-        flagged = _job_dict("a") | {"sponsorship": "no-sponsorship"}
-        store.upsert(existing, [flagged], self.KEYS, enriched_ids={"a"})
-        store.upsert(existing, [_job_dict("a")], self.KEYS)  # not re-enriched
-        assert existing["a"]["sponsorship"] == "no-sponsorship"
 
 
 class TestPurge:

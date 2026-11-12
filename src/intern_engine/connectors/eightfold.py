@@ -23,6 +23,7 @@ from ..models import (
     source_board_key,
 )
 from ..net import Net
+from ..terms import SINGLE_TERM
 
 _PAGE = 100
 _MAX = 300  # safety cap; "intern" on one tenant never legitimately needs more
@@ -63,7 +64,7 @@ async def fetch(company: dict, net: Net) -> Fetch:
     while start < _MAX:
         params = {
             "domain": company.get("domain", ""),
-            "query": "" if company.get("opportunity_scope") == "it" else "intern",
+            "query": SINGLE_TERM,
             "num": _PAGE,
             "start": start,
             "sort_by": "timestamp",

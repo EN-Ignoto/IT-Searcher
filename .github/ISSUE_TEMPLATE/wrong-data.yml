@@ -1,5 +1,5 @@
 name: "🔧 Something on the list is wrong"
-description: A role has the wrong country, cycle, sponsorship flag, or is closed/duplicated.
+description: A role is in the wrong section, needs experience, is closed, or is missing.
 title: "[wrong] "
 labels: ["data-correction"]
 body:
@@ -27,15 +27,14 @@ body:
     attributes:
       label: Which field is wrong?
       options:
-        - Country / location (it's not in the US)
-        - Cycle (wrong season or year)
-        - Sponsorship flag (🇺🇸 / 🛂 / missing)
+        - Location or distance (it is not near Kissimmee / not open to Florida)
+        - It requires experience a beginner does not have
+        - It should be listed but is missing (see data/rejected.jsonl)
         - The role is closed but still listed
         - It's a duplicate of another row
-        - It isn't a tech internship
-        - Company name is wrong or malformed
+        - It isn't an entry-level IT role
+        - Job type (internship / part-time / full-time)
         - Posted date
-        - Salary
         - Something else
     validations:
       required: true
@@ -44,7 +43,7 @@ body:
     id: expected
     attributes:
       label: What should it say?
-      placeholder: "Location is Lausanne, Switzerland — not US."
+      placeholder: "The posting requires 3 years of help desk experience."
     validations:
       required: true
 
@@ -57,6 +56,6 @@ body:
         checkable instead of a judgement call — and it's how the rule gets a
         regression test.
       placeholder: >
-        From the posting: "This internship runs June–August 2027 in our Zurich office."
+        From the posting: "Minimum of three years in a service desk role is required."
     validations:
       required: true

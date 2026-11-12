@@ -1,372 +1,222 @@
-"""IT scope regression cases: routine jobs must survive the internship gate."""
+"""The profile rules: which titles are entry IT, and what a posting requires."""
+
 import pytest
 
-from intern_engine import filters_it
+from intern_engine import filters_it as f
 
-
-@pytest.mark.parametrize('title', [
-    'Help Desk Technician', 'Desktop Support Specialist', 'IT Support Intern',
-    'Information Technology Internship Summer 2027', 'Junior Network Engineer',
-    'Systems Administrator I', 'Entry Level Cloud Support Associate',
-    'IT Technician', 'Network Operations Center Intern',
-])
-def test_accept_it_opportunities(title):
-    assert filters_it.is_opportunity(title)
-
-
-@pytest.mark.parametrize('title', [
-    'Senior IT Support Specialist', 'Help Desk Manager', 'Network Engineer III',
-    'Security Guard', 'Software Engineer Intern',
-    'Mechanical Systems Engineering Intern',
-    'Cloud Sales Intern', 'Provider Network Intern',
-    'Data Science Intern - Infrastructure (Summer 2027)',
-])
-def test_reject_unrelated_or_experienced_roles(title):
-    assert not filters_it.is_opportunity(title)
-
-
-@pytest.mark.parametrize("location, expected", [
-    ("Orlando, FL", "local"), ("Lake Mary, Florida", "local"),
-    ("Sanford, NC", None), ("Miami, FL", None),
-    ("Poinciana, FL", "local"), ("Davenport, Florida", "local"),
-    ("Haines City, FL", "local"), ("Hunters Creek, FL", "local"),
-    ("Remote - United States", "remote"), ("Remote, FL", "remote"),
-    ("Remote, CA", None), ("Remote - Canada", None), ("Remote", None),
-])
-def test_location_scope(location, expected):
-    assert filters_it.location_group(location) == expected
-
-
-def test_broad_network_role_is_excluded():
-    assert not filters_it.is_opportunity("Network Engineer")
-    assert filters_it.bucket("Network Engineer", "Orlando, FL") is None
-    assert filters_it.bucket("Help Desk Technician", "Orlando, FL") == "Orlando area"
-
-
-def test_pipeline_accepts_regular_local_job_without_internship_cycle():
-    from intern_engine import config, pipeline
-    from intern_engine.models import Fetch, Job
-
-    cfg = config.validate_config({
-        "opportunity_scope": "it", "cycles": filters_it.BUCKETS,
-        "default_cycle": filters_it.BUCKETS[0], "max_age_days": 0,
-    })
-    company = {"name": "Acme", "slug": "acme", "ats": "greenhouse"}
-    jobs = [Job(f"greenhouse:acme:{i}", "greenhouse", "Acme", "acme", title,
-                location, f"https://example.com/{i}")
-            for i, (title, location) in enumerate([
-                ("Help Desk Technician", "Orlando, FL"),
-                ("Junior Network Engineer", "Lake Mary, FL"),
-                ("IT Intern Summer 2027", "Remote - United States"),
-                ("IT Technician", "Seattle, WA"),
-                ("Senior IT Support Specialist", "Orlando, FL"),
-            ])]
-    kept, *_ = pipeline._keep_matching([(company, Fetch(jobs), None)], cfg, {})
-    assert [j.title for j in kept] == [j.title for j in jobs[:3]]
-    assert [j.season for j in kept] == [filters_it.BUCKETS[i] for i in (0, 0, 1)]
-
-
-def test_scope_migrates_local_record_and_closes_nonlocal_record():
-    from intern_engine import config, pipeline
-
-    cfg = config.validate_config({
-        "opportunity_scope": "it", "cycles": filters_it.BUCKETS,
-        "default_cycle": filters_it.BUCKETS[0],
-    })
-    records = {loc: {"title": "IT Intern Summer 2027", "location": loc,
-                     "company": "Acme", "is_open": True, "season": "Summer 2027",
-                     "entry_fit": "eligible", "entry_fit_version": filters_it.FIT_VERSION}
-               for loc in ("Orlando, FL", "Seattle, WA")}
-    pipeline._close_out_of_scope(records, cfg)
-    assert records["Orlando, FL"]["is_open"]
-    assert records["Orlando, FL"]["season"] == filters_it.BUCKETS[0]
-    assert not records["Seattle, WA"]["is_open"]
-
-
-@pytest.mark.parametrize('title', [
-    'Level 2 NOC Systems Administrator', 'Technical Support Engineer II',
-    'Intermediate Technical Support Analyst', 'Cyber Forensic Analyst Journeyman',
-    'Cloud - Bare Metal Infrastructure Engineer',
-    'Field Service Technician HVAC - Data Center',
-    'Network & Wireless Infrastructure Engineer', 'Senior IT Intern',
-])
-def test_actual_bad_feed_titles_are_rejected(title):
-    assert not filters_it.is_opportunity(title)
-
-
-@pytest.mark.parametrize('text,expected', [
-    ('No experience required. Paid internship.', 'eligible'),
-    ('Paid internship. Qualifications: 0–2 years of IT support experience.', 'eligible'),
-    ('Minimum three years of technical support experience.', 'rejected'),
-    ('Requires 5+ years of experience with Linux.', 'rejected'),
-    ('<p>3–5 years of related experience</p>', 'rejected'),
-    ('This is an unpaid internship.', 'rejected'),
-    ('Volunteer IT support opportunity', 'rejected'),
-    (None, 'unverified'), ('', 'unverified'),
-])
-def test_requirements_override_junior_title(text, expected):
-    assert filters_it.assess_fit('IT Support Intern', text) == expected
-
-
-def test_old_unverified_and_rejected_records_cannot_survive_render():
-    from intern_engine import config, pipeline
-    cfg = config.validate_config({
-        'opportunity_scope': 'it', 'cycles': filters_it.BUCKETS,
-        'default_cycle': filters_it.BUCKETS[0], 'max_age_days': 0,
-    })
-    records = {verdict: dict(title='Help Desk Technician', company='Acme',
-                            location='Orlando, FL', is_open=True,
-                            season=filters_it.BUCKETS[0], entry_fit=verdict,
-                            entry_fit_version=filters_it.FIT_VERSION)
-               for verdict in ('eligible', 'rejected', None)}
-    pipeline._close_out_of_scope(records, cfg)
-    assert records['eligible']['is_open']
-    assert not records['rejected']['is_open']
-    assert not records[None]['is_open']
-
-
-def test_old_sponsorship_cache_must_not_skip_entry_requirements():
-    import asyncio
-
-    from intern_engine import enrich, sponsorship
-    from intern_engine.models import Job
-    job = Job('greenhouse:acme:9', 'greenhouse', 'Acme', 'acme',
-              'Help Desk Technician', 'Orlando, FL', 'https://example.com/9')
-    existing = {job.id: dict(sponsorship='unknown', enriched_at='old', skills=[],
-                            classifier_v=sponsorship.VERSION)}
-    class Net:
-        async def get_json(self, url):
-            return {'content': '<p>Requires 5 years of IT experience.</p>'}
-    asyncio.run(enrich.enrich_jobs([job], existing, Net()))
-    assert job.entry_fit == 'rejected'
-
-
-@pytest.mark.parametrize('title,text,expected', [
-    ('Help Desk Technician', 'Requires 2 years of IT experience.', 'rejected'),
-    ('Help Desk Technician', '0-2 years of experience. Windows troubleshooting.', 'eligible'),
-    ('Diagnostics Technical Support Representative', 'No experience required.', 'rejected'),
-    ('IT Intern', 'Learn networking and Windows administration.', 'unverified'),
-    ('IT Intern', 'Compensation: $20 per hour. No experience required.', 'eligible'),
-])
-def test_first_it_job_requirements(title, text, expected):
-    assert filters_it.assess_fit(title, text) == expected
-
-
-def test_focused_collection_requires_exact_known_board_identities():
-    from tools.verify_accuracy import valid_collection_scope
-    companies = [dict(ats='lever', slug='a'), dict(ats='lever', slug='b')]
-    assert valid_collection_scope(['lever:a'], 1, companies)
-    assert not valid_collection_scope(['lever:unknown'], 1, companies)
-    assert not valid_collection_scope(['lever:a', 'lever:a'], 2, companies)
-    assert not valid_collection_scope(['lever:a'], 2, companies)
-    assert not valid_collection_scope([], 0, companies)
-
-
-def test_focused_refresh_does_not_mistake_pagination_caps_for_failure():
-    from tools.verify_accuracy import usable_snapshot_rate
-    assert usable_snapshot_rate(22, 10, {'result-cap': 10}) == 1
-    assert usable_snapshot_rate(22, 10, {'malformed-response': 10}) < 0.70
-    assert usable_snapshot_rate(22, 10, {'pagination-stalled': 10}) < 0.70
-    assert usable_snapshot_rate(22, 10, {'result-cap': 11}) < 0.70
-
-
-@pytest.mark.parametrize('text,expected', [
-    ('Bachelor or Master Degree in a computer-related field or 1-3 years equivalent work experience required.', 'rejected'),
-    ("Bachelor's degree in IT required.", 'rejected'),
-    ("Bachelor's degree preferred. No prior experience required.", 'eligible'),
-    ("Currently pursuing a bachelor's degree required. Paid internship.", 'eligible'),
-])
-def test_completed_degree_is_not_the_same_as_current_student(text, expected):
-    assert filters_it.assess_fit('IT Support Technician', text) == expected
-
-
-def test_remote_label_cannot_override_required_california_attendance():
-    assert filters_it.assess_fit(
-        'Technical Support Specialist',
-        'Required Skills: Ability to work on-site in Milpitas, California.',
-        'Remote (US), United States') == 'rejected'
-    assert filters_it.assess_fit(
-        'Technical Support Specialist', 'Troubleshoot PCs and Windows.',
-        'Remote (US), United States') == 'eligible'
-
-
-@pytest.mark.parametrize("description,expected", [
-    ("2 years of service desk experience preferred. Troubleshoot Windows PCs.", "eligible"),
-    ("Preferred: 2+ years of IT support experience.", "eligible"),
-    ("2 years of technical support experience is a plus.", "eligible"),
-    ("Minimum 2 years of IT support experience required.", "rejected"),
-    ("Must have 2 years of relevant experience.", "rejected"),
-    ("3+ years of IT support experience preferred.", "rejected"),
-    ("Requires 5+ years of related work experience.", "rejected"),
-])
-def test_preferences_do_not_become_hard_requirements(description, expected):
-    assert filters_it.assess_fit("Help Desk Technician", description) == expected
-
-
-@pytest.mark.parametrize("description,expected", [
-    ("Paid volunteer days and unpaid parental leave are included in benefits.", "eligible"),
-    ("This is an unpaid internship.", "rejected"),
-    ("Volunteer IT support opportunity", "rejected"),
-    ("This position is unpaid.", "rejected"),
-])
-def test_benefit_words_are_not_unpaid_job_evidence(description, expected):
-    assert filters_it.assess_fit("IT Support Intern",
-                                 description + " Compensation: $19 per hour.") == expected
+LONG = (" The technician answers tickets, resets passwords, images laptops, supports "
+        "Windows 11 and Office 365 for end users, and troubleshoots printers and the VPN.")
 
 
 @pytest.mark.parametrize("title", [
-    "IT Operations Specialist",
-    "IT Asset Analyst",
-    "IT Asset Coordinator",
-    "Computer Support Specialist",
-    "Technology Support Technician",
+    "Help Desk Technician", "IT Support Specialist I", "Service Desk Analyst",
+    "Desktop Support Technician", "Network Technician", "Junior Systems Administrator",
+    "SOC Analyst", "IT Intern", "Information Technology Internship - Summer 2099",
+    "Computer Technician", "Technology Support Specialist", "NOC Technician I",
+    "Cybersecurity Intern", "Data Center Technician", "IT Technician I/II/III",
+    "Geek Squad Agent",
+    # Found in the first live run's discard pile.
+    "Network & Desk Technician", "Data Center Services Technician",
 ])
-def test_first_it_operations_and_asset_jobs_are_eligible_title_scope(title):
-    assert filters_it.is_opportunity(title)
-    assert filters_it.bucket(title, "Kissimmee, FL") == "Orlando area"
-    assert filters_it.assess_fit(title, "Troubleshoot Windows workstations; no experience required.") == "eligible"
+def test_entry_it_titles_are_kept(title):
+    assert f.title_verdict(title)[0] == "keep", title
 
 
-@pytest.mark.parametrize("title", [
-    "IT Operations Manager",
-    "IT Asset Analyst II",
-    "Senior Computer Support Specialist",
-    "Cloud Infrastructure Engineer",
-    "Data Center Project Coordinator",
+@pytest.mark.parametrize("title,reason", [
+    ("Senior Help Desk Technician", "senior-title"),
+    ("IT Support Manager", "senior-title"),
+    ("Desktop Support Technician III", "senior-title"),
+    ("Network Engineer Lead", "senior-title"),
+    ("Registered Nurse", "not-it-role"),
+    ("Software Engineer Intern", "not-it-role"),
+    ("Sales Associate", "not-it-role"),
+    ("Security Officer", "not-it-role"),
+    ("Maintenance Technician", "not-it-role"),
+    ("IT Project Manager", "not-it-role"),
+    ("IT Intern - Summer 2020", "past-term"),
+    ("", "no-title"),
+    # From the first live run: kept, and should not have been.
+    ("Bi-lingual Pharmacy Tech Support/Call Center", "not-it-role"),
+    ("Linux Systems Administrator 2/3 - Top Secret", "active-clearance-required"),
+    ("Building Automation Systems Specialist", "not-it-role"),
+    # From the first nationwide sweep.
+    ("Staff Network Engineer", "senior-title"),
+    ("Utilities Systems Operator I, II, III, IV, V", "not-it-role"),
+    ("Teaching Assistant: Data Center Technician", "not-it-role"),
+    ("Salesforce Business Systems Administrator", "not-it-role"),
+    ("Broadcast Systems Technician", "not-it-role"),
 ])
-def test_foundation_expansion_does_not_include_senior_or_generic_roles(title):
-    assert not filters_it.is_opportunity(title)
+def test_other_titles_are_rejected_with_a_reason(title, reason):
+    assert f.title_verdict(title) == ("reject", reason)
 
 
-@pytest.mark.parametrize("title,description", [
-    ("Technical Support Specialist", "2 - 5+ years in Technical Support, Support Engineering, or related role in SaaS required."),
-    ("Help Desk Technician", "2–5+ years of help desk experience required."),
-    ("IT Support Specialist", "3+ years in IT support required."),
-    ("IT Support Technician", "Must have 2+ years of customer support experience."),
+def test_ambiguous_support_titles_need_confirmation_from_the_text():
+    assert f.title_verdict("Support Technician")[0] == "weak"
+    plain = "We fix lawn mowers and small engines for customers across the county. " * 3
+    assert f.assess("Support Technician", plain, weak_title=True)["reason"] == "not-it-role"
+    assert f.assess("Support Technician", "Entry level." + LONG,
+                    weak_title=True)["verdict"] == "keep"
+
+
+def test_title_levels():
+    assert f.title_level("Technician I") == 1
+    assert f.title_level("Technician II") == 2
+    assert f.title_level("Technician I/II/III") == 1
+    assert f.title_level("Senior Technician") == 3
+
+
+class TestExperience:
+    def test_required_years_reject(self):
+        r = f.assess("Help Desk Technician",
+                     "Requirements:\n3 years of help desk experience required." + LONG)
+        assert r["verdict"] == "reject" and r["reason"] == "requires-3-years-experience"
+
+    def test_preferred_years_do_not_reject(self):
+        r = f.assess("Help Desk Technician",
+                     "Preferred Qualifications:\n3 years of help desk experience." + LONG)
+        assert r["verdict"] == "keep" and r["fit"] == f.FIT_BEGINNER
+        assert "preferred" in r["experience"]
+
+    def test_inline_preferred_beats_a_required_section(self):
+        r = f.assess("Help Desk Technician",
+                     "Requirements:\n2 years of IT support experience preferred." + LONG)
+        assert r["verdict"] == "keep" and r["fit"] == f.FIT_BEGINNER
+
+    def test_two_years_required_rejects_unless_substitutable(self):
+        hard = f.assess("IT Technician",
+                        "Minimum 2 years of desktop support experience required." + LONG)
+        soft = f.assess("IT Technician",
+                        "2 years of desktop support experience or equivalent "
+                        "education and certifications." + LONG)
+        assert hard["verdict"] == "reject"
+        assert soft["verdict"] == "keep" and soft["fit"] == f.FIT_STRETCH
+
+    def test_one_year_is_a_stretch(self):
+        r = f.assess("IT Technician", "1 year of IT support experience required." + LONG)
+        assert r["verdict"] == "keep" and r["fit"] == f.FIT_STRETCH
+
+    def test_months_are_converted(self):
+        r = f.assess("IT Technician",
+                     "Six months of IT support experience required." + LONG)
+        assert r["verdict"] == "keep" and "6 months" in r["experience"]
+
+    def test_customer_service_years_are_a_note_not_a_barrier(self):
+        r = f.assess("Help Desk Technician",
+                     "Must have 3 years of customer service experience." + LONG)
+        assert r["verdict"] == "keep"
+        assert any("customer-service" in n for n in r["notes"])
+
+    def test_company_history_is_not_an_experience_requirement(self):
+        r = f.assess("Help Desk Technician",
+                     "We have been serving Central Florida for over 25 years of experience."
+                     + LONG)
+        assert r["verdict"] == "keep" and r["fit"] == f.FIT_BEGINNER
+
+    def test_explicit_entry_level(self):
+        r = f.assess("Help Desk Technician", "No experience required; we will train." + LONG)
+        assert r["experience"].startswith("Entry-level")
+
+
+class TestOtherGates:
+    def test_unpaid_internship_is_rejected(self):
+        r = f.assess("IT Intern", "This is an unpaid internship for academic credit." + LONG)
+        assert r["reason"] == "unpaid"
+
+    def test_active_clearance_rejects_but_obtainable_is_a_note(self):
+        have = f.assess("IT Technician", "Must have an active Secret clearance." + LONG)
+        get = f.assess("IT Technician",
+                       "Must have the ability to obtain a Secret clearance." + LONG)
+        assert have["reason"] == "active-clearance-required"
+        assert get["verdict"] == "keep" and "Clearance must be obtainable" in get["notes"]
+
+    def test_required_bachelors_rejects_for_jobs_not_internships(self):
+        text = "Bachelor's degree in Computer Science required." + LONG
+        assert f.assess("IT Technician", text)["reason"] == "bachelors-degree-required"
+        assert f.assess("IT Intern", text)["verdict"] == "keep"
+
+    def test_degree_or_equivalent_is_fine(self):
+        r = f.assess("IT Technician",
+                     "Bachelor's degree or equivalent experience required." + LONG)
+        assert r["verdict"] == "keep"
+
+    def test_missing_text_is_unverified_for_entry_titles_only(self):
+        assert f.assess("Help Desk Technician", None)["fit"] == f.FIT_UNVERIFIED
+        assert f.assess("Help Desk Technician II", None)["reason"] == "level-2-unverifiable"
+        assert f.assess("Support Technician", None,
+                        weak_title=True)["reason"] == "unconfirmed-it-role"
+
+    def test_employment_type(self):
+        assert f.assess("IT Intern", "x" * 200)["employment"] == "Internship"
+        assert f.assess("Help Desk Technician (Part-Time)", "x" * 200)["employment"] == "Part-time"
+        assert f.employment_type("Help Desk", "", "Full-Time Regular") == "Full-time"
+
+    def test_structure_survives_html(self):
+        html = ("<h3>Minimum Qualifications</h3><ul><li>High school diploma</li></ul>"
+                "<h3>Preferred Qualifications</h3><ul><li>5 years of help desk "
+                "experience</li></ul><p>" + LONG + "</p>")
+        assert f.assess("Help Desk Technician", html)["verdict"] == "keep"
+
+
+class TestPlace:
+    def test_sections_by_distance(self):
+        assert f.place("Kissimmee, FL")[0] == f.LOCAL
+        assert f.place("Orlando, FL")[0] == f.LOCAL
+        assert f.place("Lakeland, FL")[0] == f.NEARBY
+        assert f.place("Tampa, FL")[0] is None
+        assert f.place("Miami, FL")[0] is None
+
+    def test_exact_coordinates_win(self):
+        section, miles, _, _ = f.place("Somewhere unlisted", latlon=(28.30, -81.41))
+        assert section == f.LOCAL and miles < 2
+
+    def test_remote_must_be_open_to_florida(self):
+        assert f.place("Remote, United States")[0] == f.REMOTE
+        assert f.place("Remote - Florida")[0] == f.REMOTE
+        assert f.place("Remote - Texas")[0] is None
+        assert f.place("Remote, Canada")[0] is None
+
+    def test_residency_list_without_florida_blocks_remote(self):
+        text = "Must reside in one of the following states: Texas, Ohio, Georgia."
+        assert f.place("Remote, United States", "", text)[0] is None
+        ok = "Must reside in one of the following states: Texas, Florida, Georgia."
+        assert f.place("Remote, United States", "", ok)[0] == f.REMOTE
+
+    def test_local_beats_remote(self):
+        section, _, remote, _ = f.place("Orlando, FL (Remote)")
+        assert section == f.LOCAL and remote
+
+
+@pytest.mark.parametrize("location,title", [
+    ("Remote - UK", "Technical Support Specialist - German Fluency"),
+    ("Americas Remote", "Technical Support Engineer, Canada"),
+    ("Remote-LA", "IT Service Management Intern"),
+    ("OH-Remote", "Information Security Analyst"),
+    ("FLORIDA VIRTUAL, USA", "Field Service Technician - Ft Lauderdale, FL"),
+    ("VIRTUAL, NORTHWEST REGION USA", "Help Desk Technician"),
+    ("Virtual/Remote USA", "Customer Support Engineer - Utica, NY"),
+    ("—", "Cloud Infrastructure Specialist / Azure Virtual Desktop"),
+    ("Remote - US", "Designated Technical Support Engineer - West"),
 ])
-def test_experienced_jobs_are_not_labeled_first_job_eligible(title, description):
-    assert filters_it.assess_fit(title, description) == "rejected"
+def test_remote_roles_a_florida_resident_cannot_take(location, title):
+    assert f.place(location, title)[0] is None
 
 
-@pytest.mark.parametrize("title", [
-    "Product Management Intern, End User Experience - Winter 2027",
-    "Cybersecurity Presales Intern",
-    "2027 Summer IT Data Engineering Intern",
-    "Cloud ERP Implementation Intern",
-    "Technical Support Engineer (SkillBridge: On-the-job training)",
+@pytest.mark.parametrize("location,title", [
+    ("Remote - USA", "Service Desk Analyst I"),
+    ("US-Remote", "Technical Support Specialist"),
+    ("Remote", "IT Support Specialist (Remote)"),
+    ("Remote - US", "Designated Technical Support Engineer - Central/East"),
+    ("United States", "Help Desk Technician - Remote"),
+    ("Remote, FL", "IT Technician"),
 ])
-def test_non_foundational_internships_and_special_programs_excluded(title):
-    assert not filters_it.is_opportunity(title)
+def test_remote_roles_open_to_florida(location, title):
+    assert f.place(location, title)[0] == f.REMOTE
 
 
-@pytest.mark.parametrize("title", [
-    "Specialist, Technical Support",
-    "Computer Technician I-12 Month",
-    "IT Intern, IT Support - Winter 2027",
-    "Tier I Help Desk Analyst",
-])
-def test_credible_first_it_jobs_remain_in_scope(title):
-    assert filters_it.is_opportunity(title)
-
-
-@pytest.mark.parametrize("description", [
-    "WHAT WE'RE LOOKING FOR: 2 - 5+ years in Technical Support, Support Engineering, or a related technical role in a SaaS environment. NICE TO HAVE: familiar with Zendesk.",
-    "2–5+ years in technical support required. Nice to have: networking fundamentals.",
-    "Preferred: 2 to 4 years of customer support experience.",
-    "We require 2-6 years of hands-on IT troubleshooting. Benefits include paid volunteer days.",
-])
-def test_multi_year_range_never_becomes_first_job_preference(description):
-    assert filters_it.assess_fit("Technical Support Specialist", description) == "rejected"
-
-
-def test_two_year_preference_remains_possible_even_with_later_benefit_text():
-    description = ("Preferred: 2 years of help desk experience. "
-                   "Benefits: paid volunteer days and unpaid leave.")
-    assert filters_it.assess_fit("Help Desk Technician", description) == "eligible"
-
-
-def test_first_job_profile_rejects_required_one_year_but_allows_preference():
-    assert filters_it.assess_fit('Help Desk Analyst I',
-        'One year of experience as a Helpdesk Technician or technical experience required.') == 'rejected'
-    assert filters_it.assess_fit('Computer Technician I',
-        'One year of troubleshooting experience preferred. High school diploma required.') == 'eligible'
-
-
-def test_generic_support_engineer_is_not_assumed_to_be_a_first_it_job():
-    assert not filters_it.is_opportunity('Designated Technical Support Engineer - West')
-    assert filters_it.is_opportunity('Junior Technical Support Engineer')
-
-
-def test_osceola_preferred_experience_is_not_a_mandatory_year():
-    description = ('High School Diploma or GED required, completion of one (1) course in post secondary '
-                   'computer electronics, computer networking, or related computer area. '
-                   'One (1) year of experience in computer networking, troubleshooting, or repair of '
-                   'computers preferred, ability to teach computer skills to adults and students.')
-    assert filters_it.assess_fit('Computer Technician I-12 Month', description) == 'eligible'
-
-
-@pytest.mark.parametrize('description', [
-    'Three to five years of infrastructure engineering, systems administration, cloud engineering, or migration experience required.',
-    'Two to four years of IT support experience preferred.',
-    '3-5 years of Windows administration, networking, and cloud migration experience.',
-])
-def test_written_ranges_and_comma_lists_do_not_hide_experience(description):
-    assert filters_it.assess_fit('IT Support Technician', description) == 'rejected'
-
-
-def test_first_job_scope_excludes_specialist_migration_and_advisory_jobs():
-    assert not filters_it.is_opportunity('Cloud Migration Engineer I')
-    assert not filters_it.is_opportunity('Entry-Level IT Advisory Consultant')
-    assert filters_it.is_opportunity('IT Support Intern')
-
-
-@pytest.mark.parametrize('title', ['Desktop Technician', 'IT Assistant', 'Information Technology Assistant'])
-def test_beginner_title_variants_are_not_lost(title):
-    assert filters_it.is_opportunity(title)
-    assert not filters_it.is_opportunity('Senior ' + title)
-
-
-@pytest.mark.parametrize('text', [
-    'Clearance Required: Active Secret. What You Will Need: ServiceNow experience.',
-    'An ACTIVE and MAINTAINED "SECRET" Federal or DoD security clearance',
-    'Must hold a current Top Secret security clearance.',
-])
-def test_existing_clearance_is_not_a_first_job_match(text):
-    assert filters_it.assess_fit('Service Desk Analyst', text) == 'rejected'
-
-
-def test_ability_to_obtain_clearance_is_not_existing_clearance():
-    assert filters_it.assess_fit('IT Support Intern',
-        'Paid internship. Must be able to obtain a Secret clearance.') == 'eligible'
-    assert filters_it.assess_fit('IT Support Intern',
-        'Paid internship. Active Secret clearance preferred.') == 'eligible'
-
-
-@pytest.mark.parametrize('text', [
-    'Benefits include paid holidays and paid parental leave.',
-    'Paid volunteer days. Hourly rate will be discussed during interviews.',
-    'Compensation in USD will be discussed.',
-    'Paid parental leave during the internship is included in benefits.',
-])
-def test_benefits_and_currency_names_do_not_prove_intern_pay(text):
-    assert filters_it.assess_fit('IT Intern', text) == 'unverified'
-
-
-def test_amplify_paid_remote_internship_is_positive_pay_evidence():
-    assert filters_it.assess_fit('IT Services Intern',
-        'This paid, remote 10-week internship offers hands-on training.') == 'eligible'
-
-
-def test_minimum_degree_heading_is_a_requirement_without_required_suffix():
-    assert filters_it.assess_fit('Technical Support Technician',
-        "Minimum Requirements Education / Experience / Certification Requirements "
-        "Bachelor's Degree in a technical field of study or equivalent work experience.") == 'rejected'
-    assert filters_it.assess_fit('IT Intern',
-        "Basic Qualifications: Currently enrolled in a bachelor's degree program. Paid internship.") == 'eligible'
-
-
-def test_advanced_erp_support_does_not_need_numeric_years_to_be_experienced():
-    assert filters_it.assess_fit('Technical Support Specialist',
-        'Proven experience supporting ERP systems (SAP, Oracle, NetSuite).') == 'rejected'
-    assert filters_it.assess_fit('Technical Support Specialist',
-        'Customer-facing retail experience is required. Technical support training provided.') == 'eligible'
+def test_silent_posting_on_an_experienced_title_is_only_a_stretch():
+    body = LONG * 2
+    assert f.assess("Security Systems Administrator", body)["fit"] == f.FIT_STRETCH
+    assert f.assess("Junior Systems Administrator", body)["fit"] == f.FIT_BEGINNER
+    assert f.assess("Help Desk Technician", body)["fit"] == f.FIT_BEGINNER
+    assert f.assess("Systems Administrator", "No experience required." + body)["fit"] \
+        == f.FIT_BEGINNER

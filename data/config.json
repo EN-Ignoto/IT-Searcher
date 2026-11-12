@@ -1,24 +1,6 @@
 {
-  "cycles": [
-    "Orlando area",
-    "Remote — Florida / US"
-  ],
-  "regions": [
-    "US"
-  ],
-  "role_scope": "tech",
-  "max_age_days": 270,
-  "max_per_company": 10,
-  "allowlist_only": false,
-  "include_international": false,
-  "section_limits": {
-    "Orlando area": 200,
-    "Remote — Florida / US": 200
-  },
-  "supabase_url": "",
-  "supabase_publishable_key": "",
-  "infer_undated": true,
-  "infer_max_age_days": 120,
-  "opportunity_scope": "it",
-  "default_cycle": "Orlando area"
+  "local_radius_miles": 30,
+  "nearby_radius_miles": 50,
+  "max_age_days": 120,
+  "new_hours": 72
 }

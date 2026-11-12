@@ -1,574 +1,118 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IT Searcher - Live Dashboard</title>
-<meta name="description" content="Entry-level IT jobs and paid internships in Orlando and remote US roles. Auto-detected visa sponsorship flags, proven H-1B sponsor badges, email alerts.">
-<meta property="og:title" content="Internship Engine - Live Dashboard">
-<meta property="og:description" content="5 open IT jobs and internships. Visa-sponsorship flags + proven H-1B sponsor badges for international students.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<link rel="alternate" type="application/atom+xml" title="New internships" href="feed.xml">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IT Searcher — entry-level IT jobs near Kissimmee, FL</title>
+<meta name="description" content="Entry-level IT jobs and paid IT internships within 50 miles of Kissimmee, FL, plus remote roles open to Florida.">
+<link rel="alternate" type="application/atom+xml" href="feed.xml" title="New roles">
 <style>
-  :root { --bg:#0b0e14; --card:#141922; --raise:#1b212c; --line:#2a313d;
-           --line-soft:#222833;
-           --txt:#e8eef6; --muted:#8b96a8; --accent:#4d9dff; --accent-deep:#2f81f7;
-           --green:#3fb950; --star:#e3b341;
-           --r:14px; --r-sm:9px;
-           --shadow:0 1px 2px #0006, 0 8px 24px -12px #000a;
-           --shadow-lift:0 2px 4px #0007, 0 16px 32px -14px #000c;
-           --ease:cubic-bezier(.2,.7,.3,1); }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--txt);
-          font:15px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-          -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased;
-          /* A single soft light source at the top so the page has a horizon
-             instead of reading as one flat slab of #0d1117. */
-          background-image:radial-gradient(1100px 420px at 50% -140px,#1b2534 0%,transparent 70%);
-          background-repeat:no-repeat; }
-  .wrap { max-width:1160px; margin:0 auto; padding:40px 20px 72px; }
-  .top { margin-bottom:22px; }
-  h1 { font-size:33px; line-height:1.15; margin:0 0 7px; letter-spacing:-.028em;
-        font-weight:760;
-        background:linear-gradient(180deg,#fff,#b9c6d8);
-        -webkit-background-clip:text; background-clip:text; color:transparent; }
-  .sub { color:var(--muted); margin:0 0 8px; max-width:62ch; }
-  .links { margin:0; font-size:13.5px; color:var(--muted); }
-  .links a { transition:color .15s var(--ease); }
-  /* Hero: four applicant-facing numbers. auto-fit with a 2-col floor keeps
-     phones at 2x2 instead of a ragged orphan row. */
-  .hero { display:grid; gap:12px; margin:0 0 34px;
-           grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); }
-  .hcard { position:relative; overflow:hidden;
-            background:linear-gradient(180deg,var(--raise),var(--card));
-            border:1px solid var(--line); border-radius:var(--r);
-            padding:18px 18px 16px; box-shadow:var(--shadow);
-            transition:transform .2s var(--ease), box-shadow .2s var(--ease),
-                       border-color .2s var(--ease); }
-  /* A 1px specular line along the top edge — the cheapest way to make a flat
-     card read as a lit surface rather than a rectangle. */
-  .hcard::before { content:""; position:absolute; inset:0 0 auto; height:1px;
-      background:linear-gradient(90deg,transparent,#ffffff26 30%,#ffffff26 70%,transparent); }
-  .hcard:hover { transform:translateY(-2px); box-shadow:var(--shadow-lift);
-                  border-color:#3a4453; }
-  .hnum { font-size:35px; font-weight:760; line-height:1; letter-spacing:-.035em;
-           background:linear-gradient(180deg,#fff,#c3cfdf);
-           -webkit-background-clip:text; background-clip:text; color:transparent; }
-  .hlbl { font-size:14px; font-weight:600; margin-top:8px; letter-spacing:-.005em; }
-  .hsub { color:var(--muted); font-size:12.5px; margin-top:3px; line-height:1.45; }
-  @media(max-width:560px) {
-    h1 { font-size:25px; }
-    .hero { grid-template-columns:1fr 1fr; gap:9px; }
-    .hcard { padding:13px; border-radius:11px; }
-    .hnum { font-size:26px; }
-    .hsub { display:none; }   /* the label carries it at this width */
-  }
-  h2 { font-size:19px; margin:34px 0 10px; letter-spacing:-.01em; }
-  h3 { font-size:14px; margin:16px 0 6px; color:var(--txt); }
-  .note { font-size:12.5px; margin:8px 0 0; max-width:76ch; }
-  .empty { margin:20px 0; }
-  .panels { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-  @media(max-width:680px) { .panels { grid-template-columns:1fr; } }
-  .bar { display:flex; align-items:center; gap:10px; margin:6px 0; font-size:13px; }
-  .bname { width:120px; color:var(--muted); }
-  .btrack { flex:1; height:8px; background:#21262d; border-radius:6px; overflow:hidden; }
-  .bfill { display:block; height:100%; background:var(--accent); }
-  .bval { width:36px; text-align:right; }
-  .spark { width:100%; height:80px; display:block; background:var(--card);
-            border:1px solid var(--line); border-radius:10px; }
-  .spark-caption { font-size:12px; margin:6px 0 0; }
-  .chart { width:100%; height:auto; display:block; background:var(--card);
-            border:1px solid var(--line); border-radius:10px; }
-  .cbar { cursor:default; }
-  .cbar:hover { filter:brightness(1.25); }
-  .cvalue { fill:var(--txt); font-size:11px; font-weight:600; }
-  .clabel { fill:var(--muted); font-size:10px; }
-  #tip { position:fixed; display:none; background:#1c2128; color:var(--txt);
-          border:1px solid var(--line); border-radius:6px; padding:4px 9px;
-          font-size:12px; pointer-events:none; z-index:10; white-space:nowrap; }
-  /* The filter bar sticks: on a long list you can retarget the search without
-     scrolling back to the top. */
-  .filters { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 4px;
-      align-items:center; position:sticky; top:0; z-index:5;
-      background:color-mix(in srgb,var(--bg) 88%,transparent);
-      -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
-      padding:10px 0; border-bottom:1px solid var(--line); }
-  .filters input[type=search], .filters select, .ghost {
-      background:var(--card); color:var(--txt); border:1px solid var(--line);
-      border-radius:var(--r-sm); padding:8px 11px; font-size:13.5px;
-      transition:border-color .15s var(--ease), background .15s var(--ease),
-                 box-shadow .15s var(--ease), transform .12s var(--ease); }
-  .filters input[type=search] { flex:1 1 240px; min-width:180px; }
-  .filters select { cursor:pointer; }
-  .filters select:hover, .ghost:hover, .filters input[type=search]:hover {
-      border-color:#3f4a5a; background:var(--raise); }
-  .filters input[type=search]:focus, .filters select:focus, .ghost:focus-visible,
-  .star:focus-visible { outline:none; border-color:var(--accent);
-      box-shadow:0 0 0 3px #4d9dff33; }
-  .star:focus-visible { outline:2px solid var(--accent); outline-offset:2px;
-      border-radius:6px; }
-  /* Buttons get a real pressed state — a control that doesn't move on click
-     reads as broken on touch, where there's no hover to confirm the hit. */
-  .ghost { cursor:pointer; color:var(--muted); font-weight:500; }
-  .ghost:hover { color:var(--txt); }
-  .ghost:active { transform:translateY(1px); }
-  .filters label.chk { color:var(--muted); font-size:13px; display:flex;
-      align-items:center; gap:7px; cursor:pointer; white-space:nowrap;
-      padding:8px 11px; border:1px solid transparent; border-radius:var(--r-sm);
-      transition:color .15s var(--ease), background .15s var(--ease),
-                 border-color .15s var(--ease); }
-  .filters label.chk:hover { color:var(--txt); background:var(--card);
-      border-color:var(--line); }
-  .filters label.chk input { accent-color:var(--accent-deep); cursor:pointer;
-      width:15px; height:15px; margin:0; }
-  /* Secondary filters: a disclosure on phones, always-open and inline above it.
-     `display:contents` lets the inner controls join the .filters flex row, so
-     desktop looks like one continuous bar rather than a nested box.
-     The element ships `open` — a CLOSED <details> hides its children through
-     the UA stylesheet in a way `display:contents` can't override, so the
-     desktop filters would silently vanish. A width check below collapses it
-     on phones instead. */
-  /* `display:contents` was the original approach here and it silently does
-     NOT work on <details> in Chromium — the element keeps its own block box,
-     so every secondary control rendered full-width on its own line instead of
-     joining the bar. Making .fbody a flex row of its own gets the intended
-     layout without depending on that behaviour. */
-  .more { width:100%; }
-  .more > summary { display:none; }
-  .more > .fbody { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
-  @media(max-width:680px) {
-    .more > summary { display:list-item; cursor:pointer; color:var(--muted);
-        font-size:13px; padding:6px 0; list-style-position:inside; }
-    .more > summary:hover { color:var(--txt); }
-    .more > .fbody { padding:8px 0 2px; }
-    .more:not([open]) > .fbody { display:none; }
-  }
-  /* A wide table must scroll inside its OWN box. Without this the 9-column
-     job table set the page width, so at 390px the document came out 731px
-     wide and the whole dashboard scrolled sideways on a phone. */
-  .tscroll { overflow-x:auto; -webkit-overflow-scrolling:touch; margin-top:8px;
-              border:1px solid var(--line); border-radius:var(--r);
-              box-shadow:var(--shadow); background:var(--card); }
-  table { width:100%; border-collapse:collapse; font-size:13.5px; }
-  th,td { text-align:left; padding:11px 13px;
-           border-bottom:1px solid var(--line-soft); vertical-align:top; }
-  tbody tr:last-child td { border-bottom:0; }
-  tbody tr { transition:background .13s var(--ease); }
-  tbody tr:hover { background:#ffffff0b; }
-  thead th { position:sticky; top:0; z-index:1; background:var(--raise);
-              border-bottom:1px solid var(--line);
-              text-transform:uppercase; font-size:11px; letter-spacing:.05em; }
-  .rt { font-weight:600; }
-  .nowrap { white-space:nowrap; }
-  .c-save { width:34px; padding-right:0; }
-  .star { background:none; border:0; color:#55606f; font-size:17px;
-           cursor:pointer; padding:0 2px; line-height:1;
-           transition:color .15s var(--ease), transform .15s var(--ease); }
-  .star:hover { color:var(--star); transform:scale(1.22); }
-  .star:active { transform:scale(.9); }
-  .star.on { color:var(--star); text-shadow:0 0 12px #e3b34166; }
-  /* Saved rows carry a gold edge instead of only a wash, so they're findable
-     while scrolling a long list. */
-  tr.saved { background:#e3b3410f; box-shadow:inset 2px 0 0 var(--star); }
-  .pill { display:inline-block; background:#2ea04322; color:var(--green);
-           border-radius:20px; padding:0 7px; font-size:11px; margin-left:4px; }
-  /* The remote marker, beside the H-1B check. A filled rounded square so it
-     reads as a badge at a glance rather than a stray capital letter — the
-     same shape the README's 🆁 glyph has. Tabular-figure font keeps the R
-     optically centred in the box. */
-  .rmark { display:inline-flex; align-items:center; justify-content:center;
-            width:17px; height:17px; vertical-align:-3px;
-            background:var(--green); color:#07240f; border-radius:5px;
-            font:700 11px/1 ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
-            letter-spacing:0; margin-left:6px; cursor:help;
-            box-shadow:0 0 0 1px #2ea04355; }
-  @media(max-width:680px) {
-    /* Give the columns room to be readable while scrolling, rather than
-       squeezing nine of them into 390px and wrapping every title to four
-       lines. The box scrolls; the page never does. */
-    .tscroll table { min-width:940px; }
-    .tscroll td:nth-child(2) { min-width:150px; }  /* company */
-    .tscroll td:nth-child(3) { min-width:230px; }  /* role */
-    .filters { position:static; }   /* a sticky bar this tall eats the screen */
-    /* Every line before the first job is a line the reader has to scroll past. */
-    .note-long { display:none; }
-    .wrap { padding-top:26px; }
-  }
-  th { color:var(--muted); font-weight:600; }
-  a { color:var(--accent); text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  .tag { display:inline-block; background:#1f6feb26; color:#8ecbff;
-          border:1px solid #1f6feb3d; padding:1px 8px;
-          border-radius:20px; font-size:12px; margin:0 2px 2px 0; white-space:nowrap; }
-  .tag-guess { background:#8b949e14; color:var(--muted); border:1px dashed #3a4453; }
-  .engine { margin-top:38px; border:1px solid var(--line); border-radius:var(--r);
-             background:var(--card); padding:0 18px; box-shadow:var(--shadow);
-             transition:border-color .15s var(--ease); }
-  .engine:hover { border-color:#3a4453; }
-  .engine[open] { padding-bottom:16px; }
-  .engine summary { cursor:pointer; padding:15px 0; font-size:14.5px;
-                     font-weight:550; transition:color .15s var(--ease); }
-  .engine summary:hover { color:var(--accent); }
-  .kv th { width:200px; font-weight:600; color:var(--muted); }
-  .kv td { color:var(--txt); }
-  /* "3 openings" — a fact about the employer's board, not a status of ours,
-     so it is a quiet outline rather than another coloured pill competing
-     with the cycle tags. */
-  .opens { display:inline-block; border:1px solid #d2992255; color:#e3b341;
-            background:#d2992214; padding:0 7px; border-radius:20px;
-            font-size:11.5px; margin-left:6px; white-space:nowrap; cursor:help; }
-  .sks { display:block; margin-top:3px; }
-  .sk { display:inline-block; background:#8b949e1a; color:var(--muted);
-         border:1px solid var(--line); padding:0 6px; border-radius:10px;
-         font-size:11px; margin:1px 3px 0 0; }
-  .cf { padding:2px 9px; border-radius:20px; font-size:11.5px; white-space:nowrap;
-         border:1px solid transparent; }
-  .ics { display:inline-block; padding:9px 16px; font-size:13px; }
-  .cf-verified { background:#2ea04322; color:var(--green); border-color:#2ea04340; }
-  .cf-window { background:#1f6feb22; color:#8ecbff; border-color:#1f6feb40; }
-  .cf-rolling { background:#8b949e1c; color:var(--muted); border-color:#8b949e33; }
-  .muted { color:var(--muted); }
-  .ok { color:var(--green); cursor:help; }
-  .signup { background:linear-gradient(180deg,var(--raise),var(--card));
-             border:1px solid var(--line); border-radius:var(--r);
-             padding:20px; margin:26px 0 6px; box-shadow:var(--shadow);
-             position:relative; overflow:hidden; }
-  .signup::before { content:""; position:absolute; inset:0 0 auto; height:1px;
-      background:linear-gradient(90deg,transparent,#ffffff26 30%,#ffffff26 70%,transparent); }
-  .signup h2 { margin:0; }
-  .signup form { display:flex; gap:9px; flex-wrap:wrap; }
-  .signup input[type=email] { flex:1; min-width:220px; background:var(--bg);
-      color:var(--txt); border:1px solid var(--line); border-radius:var(--r-sm);
-      padding:10px 13px; font-size:14px;
-      transition:border-color .15s var(--ease), box-shadow .15s var(--ease); }
-  .signup input[type=email]:focus { outline:none; border-color:var(--accent);
-      box-shadow:0 0 0 3px #4d9dff33; }
-  /* Primary action: gradient + a lifted shadow in the accent's own hue, so it
-     reads as the one thing on the page you're meant to press. */
-  .signup button, .ics {
-      background:linear-gradient(180deg,var(--accent),var(--accent-deep));
-      color:#fff; border:0; border-radius:var(--r-sm);
-      padding:10px 20px; font-size:14px; font-weight:650; cursor:pointer;
-      box-shadow:0 1px 2px #0006, 0 6px 16px -8px #2f81f7cc;
-      transition:transform .15s var(--ease), box-shadow .15s var(--ease),
-                 filter .15s var(--ease); }
-  .signup button:hover, .ics:hover { transform:translateY(-1px); filter:brightness(1.08);
-      box-shadow:0 2px 4px #0007, 0 12px 22px -8px #2f81f7; text-decoration:none; }
-  .signup button:active, .ics:active { transform:translateY(0); filter:brightness(.97);
-      box-shadow:0 1px 2px #0008; }
-  footer { color:var(--muted); font-size:12px; margin-top:36px; }
-  /* Anyone who asked the OS to stop animations gets no transforms at all. */
-  @media (prefers-reduced-motion:reduce) {
-    * { transition-duration:.01ms !important; animation-duration:.01ms !important; }
-    .hcard:hover, .signup button:hover, .ics:hover { transform:none; }
-  }
+:root{--bg:#f6f7f9;--card:#fff;--ink:#16202b;--muted:#5b6876;--line:#dde2e8;
+--accent:#0b6bcb;--accent-ink:#fff;--good:#11734b;--good-bg:#e2f5ec;--warn:#8a5a00;
+--warn-bg:#fdf1d6;--unk:#55606c;--unk-bg:#e9edf1;--new:#b3261e;--chip:#eef1f5}
+@media (prefers-color-scheme:dark){:root{--bg:#10151b;--card:#19212a;--ink:#e8edf2;
+--muted:#9aa7b4;--line:#2b3642;--accent:#6fb3ff;--accent-ink:#0b1622;--good:#7fdcae;
+--good-bg:#12382a;--warn:#f2c867;--warn-bg:#40300c;--unk:#b4bfca;--unk-bg:#27313c;
+--new:#ff8a80;--chip:#232d38}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header{padding:28px 0 8px}
+h1{font-size:1.7rem;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0;max-width:62ch}
+.asof{color:var(--muted);font-size:.88rem;margin:10px 0 0}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 12px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);
+border-radius:999px;padding:8px 14px;font:inherit;font-weight:600;cursor:pointer}
+.tab b{font-variant-numeric:tabular-nums;color:var(--muted);font-weight:600;margin-left:4px}
+.tab[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.tab[aria-pressed=true] b{color:inherit}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 6px}
+.filters input,.filters select{font:inherit;padding:8px 10px;border:1px solid var(--line);
+border-radius:8px;background:var(--card);color:var(--ink);min-width:0}
+.filters input{flex:1 1 220px}
+.count{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+h2{font-size:1.15rem;margin:28px 0 2px}
+.blurb{color:var(--muted);font-size:.9rem;margin:0 0 12px}
+.job{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:14px 16px;margin:0 0 10px}
+.job h3{font-size:1.05rem;margin:0 0 2px;line-height:1.3}
+.job h3 a{text-decoration:none}
+.job h3 a:hover{text-decoration:underline}
+.meta{color:var(--muted);font-size:.92rem;margin:0}
+.meta strong{color:var(--ink);font-weight:600}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0;padding:0;list-style:none}
+.tags li{font-size:.8rem;padding:3px 9px;border-radius:999px;background:var(--chip);
+color:var(--ink)}
+.tags .beginner{background:var(--good-bg);color:var(--good);font-weight:600}
+.tags .stretch{background:var(--warn-bg);color:var(--warn);font-weight:600}
+.tags .unverified{background:var(--unk-bg);color:var(--unk);font-weight:600}
+.new{color:var(--new);font-size:.75rem;font-weight:700;letter-spacing:.04em;
+text-transform:uppercase;margin-left:8px;white-space:nowrap}
+.exp{margin:10px 0 0;font-size:.93rem}
+.quote{margin:6px 0 0;padding-left:10px;border-left:3px solid var(--line);
+color:var(--muted);font-size:.86rem;overflow-wrap:anywhere}
+.empty{color:var(--muted);padding:14px 0}
+[hidden]{display:none!important}
+footer{color:var(--muted);font-size:.86rem;margin:36px 0 40px;border-top:1px solid var(--line);
+padding-top:16px}
+details{margin:10px 0}
+.srcs{width:100%;border-collapse:collapse;font-size:.84rem;margin-top:8px}
+.srcs td,.srcs th{text-align:left;padding:4px 8px 4px 0;border-bottom:1px solid var(--line);
+vertical-align:top}
+.scroll{overflow-x:auto}
+.bad{color:var(--new)}
 </style></head><body><div class="wrap">
-  <header class="top">
-    <h1>United States entry-level IT jobs & internships</h1>
-    <p class="sub">Read straight from 5,378 employer
-    job boards. Data as of Nov 12, 2026 at 08:29 UTC.</p>
-    <p class="links"><a href="feed.xml">RSS</a> · <a href="api/jobs.json">JSON API</a>
-    · <a href="internships.csv">CSV</a> ·
-    <a href="https://github.com/EN-Ignoto/IT-Searcher">source</a> ·
-    <a href="https://github.com/EN-Ignoto/IT-Searcher/blob/main/METHODOLOGY.md">methodology</a></p>
-  </header>
-  <div class="hero"><div class="hcard"><div class="hnum">5</div><div class="hlbl">open roles</div><div class="hsub">every one linked to the employer</div></div><div class="hcard"><div class="hnum">1</div><div class="hlbl">Orlando area</div><div class="hsub">nearby cities; confirm your commute</div></div><div class="hcard"><div class="hnum">2</div><div class="hlbl">internships</div><div class="hsub">pay evidence found in the posting</div></div><div class="hcard"><div class="hnum">4</div><div class="hlbl">remote</div><div class="hsub">the posting&#x27;s own words say so</div></div></div>
-
-  <h2 id="roles">Open roles <span class="muted">(<span id="count">5</span>
-    showing)</span></h2>
-  <div class="filters" id="filters">
-    <input id="q" type="search" placeholder="Search company, role, location, or skill (try “Python”)…" autocomplete="off">
-    <select id="cycle"><option value="">All locations</option><option value="Orlando area">Orlando area</option><option value="Remote — Florida / US">Remote — Florida / US</option></select>
-    <label class="chk" title="Show only the roles you've starred (stored in this browser)">
-      <input id="savedonly" type="checkbox"><span>★ saved (<span id="savedn">0</span>)</span></label>
-    <!-- Secondary filters. A real <details> so phones get a one-tap disclosure
-         instead of seven stacked rows between the hero and the first job; CSS
-         forces it open (and hides the summary) from 681px up. -->
-    <details class="more" open>
-      <summary>More filters</summary>
-      <div class="fbody">
-        <select id="cat"><option value="">All categories</option><option value="IT Support / Ops">IT Support / Ops</option><option value="Network / Telecom">Network / Telecom</option></select>
-        <select id="age">
-          <option value="">Posted anytime</option>
-          <option value="2">Last 48 hours</option>
-          <option value="7">Last 7 days</option>
-          <option value="30">Last 30 days</option>
-        </select>
-        <select id="spon" title="What the posting itself says about visa sponsorship">
-          <option value="">Any sponsorship status</option>
-          <option value="no-restriction">No explicit restriction found</option>
-          <option value="offers">Explicitly offers sponsorship</option>
-          <option value="unknown">Sponsorship not stated</option>
-          <option value="restricted">Explicitly restricted (🇺🇸 / 🛂)</option>
-        </select>
-        <select id="program">
-          <option value="">Internships &amp; co-ops</option>
-          <option value="Internship">Internships</option>
-          <option value="Co-op">Co-ops</option>
-        </select>
-        <label class="chk"><input id="remote" type="checkbox"><span><span class="rmark">R</span> remote only</span></label>
-        <label class="chk"><input id="h1b" type="checkbox">
-          <span>✓ proven H-1B sponsors only</span></label>
-        <label class="chk" title="Show only roles whose employer named the cycle themselves">
-          <input id="stated" type="checkbox"><span>employer-stated cycle only</span></label>
-        <button id="export" class="ghost" type="button" title="Download your saved roles as CSV">
-          Export saved</button>
-        <button id="reset" class="ghost" type="button">Clear filters</button>
-      </div>
-    </details>
-  </div>
-  <p class="muted note">★ saves to <strong>this browser only</strong><span
-  class="note-long"> — no account, no sign-in, nothing sent anywhere</span>.
-  <span class="tag tag-guess">not stated</span> = the posting names no cycle
-  anywhere, so we don't guess one<span class="note-long">; a plain tag is the
-  cycle the employer actually stated, in the title or the posting text</span>.</p>
-  <div class="tscroll">
-  <table><thead><tr><th class="c-save" title="Save"></th><th>Company</th><th>Role</th>
-  <th>Cycle</th><th>Category</th>
-  <th>Location</th><th>Salary</th><th>Posted</th><th></th></tr></thead>
-  <tbody id="rows"><tr data-id="workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="Network / Telecom" data-sponsor="citizens-only" data-h1b="1" data-remote="1" data-program="Internship" data-posted="2026-10-21" data-inferred="0" data-openings="1" data-ids="workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" data-text="leidos network site design intern 6314 remote/teleworker us network / telecom remote — florida / us "><td class='c-save'><button class="star" type="button" data-id="workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" aria-label="Save this role" title="Save to your list">☆</button></td><td>Leidos <span class="ok" title="~79 H-1B approvals (FY2022–2023, USCIS)">✓</span><span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>Network Site Design Intern</span> 🇺🇸</td><td><span class='tag' title='Stated by the employer'>Remote — Florida / US</span></td><td>Network / Telecom</td><td>6314 Remote/Teleworker US</td><td class='muted'></td><td class='nowrap'>2026-10-21</td><td><a href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="1" data-remote="1" data-program="Entry-level job" data-posted="2026-10-20" data-inferred="0" data-openings="1" data-ids="workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100" data-text="bigcommerce technical support representative - remote united states - remote it support / ops remote — florida / us  javascript html/css"><td class='c-save'><button class="star" type="button" data-id="workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100" aria-label="Save this role" title="Save to your list">☆</button></td><td>BigCommerce <span class="ok" title="~26 H-1B approvals (FY2022–2023, USCIS)">✓</span><span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>Technical Support Representative - Remote</span> <span class="sks"><span class="sk">JavaScript</span><span class="sk">HTML/CSS</span></span></td><td><span class='tag' title='Stated by the employer'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>United States - Remote</td><td class='muted'></td><td class='nowrap'>2026-10-20</td><td><a href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="1" data-program="Internship" data-posted="2026-10-19" data-inferred="0" data-openings="1" data-ids="ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f" data-text="amplify summer 2027: it services intern remote - united states it support / ops remote — florida / us $30 per hour linux"><td class='c-save'><button class="star" type="button" data-id="ashby:amplify:ae648c1a-0973-440e-902d-cc41dc60f52f" aria-label="Save this role" title="Save to your list">☆</button></td><td>Amplify<span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>Summer 2027: IT Services Intern</span> <span class="sks"><span class="sk">Linux</span></span></td><td><span class='tag' title='Stated by the employer'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>Remote - United States</td><td class='muted'>$30 per hour</td><td class='nowrap'>2026-10-19</td><td><a href="https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2" data-cycle="Remote — Florida / US" data-cycles="Remote — Florida / US" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="1" data-remote="1" data-program="Entry-level job" data-posted="2026-09-23" data-inferred="0" data-openings="1" data-ids="workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2" data-text="zillow it support specialist remote-usa it support / ops remote — florida / us "><td class='c-save'><button class="star" type="button" data-id="workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2" aria-label="Save this role" title="Save to your list">☆</button></td><td>Zillow <span class="ok" title="~257 H-1B approvals (FY2022–2023, USCIS)">✓</span><span class='rmark' title='Remote — this role. The posting's location or title says so.'>R</span></td><td><span class='rt'>IT Support Specialist</span> </td><td><span class='tag' title='Stated by the employer'>Remote — Florida / US</span></td><td>IT Support / Ops</td><td>Remote-USA</td><td class='muted'></td><td class='nowrap'>2026-09-23</td><td><a href="https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/IT-Support-Specialist_P751346-2" target="_blank" rel="noopener">Apply</a></td></tr><tr data-id="workable:enterfusion:2863A7F0F5" data-cycle="Orlando area" data-cycles="Orlando area" data-category="IT Support / Ops" data-sponsor="unknown" data-h1b="0" data-remote="0" data-program="Entry-level job" data-posted="2026-08-20" data-inferred="0" data-openings="1" data-ids="workable:enterfusion:2863A7F0F5" data-text="enterfusion it help desk technician orlando, united states it support / ops orlando area $48k–$65k/yr aws azure"><td class='c-save'><button class="star" type="button" data-id="workable:enterfusion:2863A7F0F5" aria-label="Save this role" title="Save to your list">☆</button></td><td>Enterfusion</td><td><span class='rt'>IT Help Desk Technician</span> <span class="sks"><span class="sk">AWS</span><span class="sk">Azure</span></span></td><td><span class='tag' title='Stated by the employer'>Orlando area</span></td><td>IT Support / Ops</td><td>Orlando, United States</td><td class='muted'>$48k–$65k/yr</td><td class='nowrap'>2026-08-20</td><td><a href="https://apply.workable.com/enterfusion/j/2863A7F0F5/" target="_blank" rel="noopener">Apply</a></td></tr></tbody></table>
-  </div>
-  <p id="empty" class="muted empty" hidden>No roles match those filters.
-    <button class="ghost" type="button" id="reset2">Clear filters</button></p>
-
-  
-  
-  <h2 id="radar">📅 Drop Radar — when companies usually post
-    (<span id="rcount">6</span>)</h2>
-  <p class="muted" style="margin:0 0 8px">When each company usually opens — every
-  date either read from the employer's own API or hand-checked.
-  <span class="cf cf-verified">from the API</span> = the employer's own
-  posted date, read from their careers API (🎯); <span class="cf cf-window">typical window</span> =
-  hand-checked opening month for a marquee name;
-  <span class="cf cf-rolling">rolling</span> = posts year-round.
-  "waiting" = not seen in our tracked feeds yet.</p>
-  <p style="margin:0 0 10px"><a href="radar.ics" class="ics">📅 Subscribe in your
-    calendar</a> <span class="muted" style="font-size:12px">— add every expected
-    drop date to Google/Apple Calendar and get a reminder a week before.</span></p>
-  <div class="filters"><input id="rq" type="search"
-    placeholder="Search the radar — is your target company on it?" autocomplete="off"></div>
-  <div class="tscroll">
-  <table><thead><tr><th>Company</th><th>Typical opening</th><th>Expected</th>
-  <th>Confidence</th><th>Status</th>
-  </tr></thead><tbody id="rrows"><tr data-text="enterfusion"><td>🎯 Enterfusion</td><td>Aug 20</td><td>dropped Aug 20</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><a href="https://apply.workable.com/enterfusion/j/2863A7F0F5/" target="_blank" rel="noopener">✅ open now</a></td></tr><tr data-text="bny"><td>🎯 BNY</td><td>Oct 13</td><td>dropped Oct 13 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr><tr data-text="university of central florida"><td>🎯 University of Central Florida</td><td>Oct 14</td><td>dropped Oct 14 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr><tr data-text="school district of osceola county"><td>🎯 School District of Osceola County</td><td>Oct 29</td><td>dropped Oct 29 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr><tr data-text="valencia college"><td>🎯 Valencia College</td><td>Nov 05</td><td>dropped Nov 05 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr><tr data-text="loews hotels"><td>🎯 Loews Hotels</td><td>Nov 09</td><td>dropped Nov 09 · closed</td><td><span class="cf cf-verified" title="The employer&#x27;s own posted date, read from their careers API. We may have discovered the role after it went live — the date is theirs, not our discovery time.">verified</span></td><td><span class="muted">🗓️ dropped</span></td></tr></tbody></table>
-  </div>
-
-
-  <h2>Internships posted per week</h2>
-  <p class="muted" style="margin:0 0 8px">Real published dates across every role the
-  engine has tracked — watch this spike when Orlando area
-  recruiting opens up.</p>
-  <svg viewBox="0 0 640 180" class="chart" role="img" aria-label="Internships posted per week, last 16 weeks"><line x1="34" y1="158.0" x2="632" y2="158.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="162.0" text-anchor="end" class="clabel">0</text><line x1="34" y1="88.0" x2="632" y2="88.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="92.0" text-anchor="end" class="clabel">68</text><line x1="34" y1="18.0" x2="632" y2="18.0" stroke="var(--line)" stroke-width="1"/><text x="28" y="22.0" text-anchor="end" class="clabel">136</text><path d="M35.0,158.0 V155.8 Q35.0,151.8 39.0,151.8 H66.4 Q70.4,151.8 70.4,155.8 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Jul 27: 6 roles"><title>week of Jul 27: 6</title></path><text x="52.7" y="174" text-anchor="middle" class="clabel">Jul 27</text><path d="M72.4,158.0 V148.6 Q72.4,144.6 76.4,144.6 H103.8 Q107.8,144.6 107.8,148.6 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 03: 13 roles"><title>week of Aug 03: 13</title></path><path d="M109.8,158.0 V146.6 Q109.8,142.6 113.8,142.6 H141.1 Q145.1,142.6 145.1,146.6 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 10: 15 roles"><title>week of Aug 10: 15</title></path><path d="M147.1,158.0 V99.2 Q147.1,95.2 151.1,95.2 H178.5 Q182.5,95.2 182.5,99.2 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 17: 61 roles"><title>week of Aug 17: 61</title></path><path d="M184.5,158.0 V76.6 Q184.5,72.6 188.5,72.6 H215.9 Q219.9,72.6 219.9,76.6 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 24: 83 roles"><title>week of Aug 24: 83</title></path><text x="202.2" y="174" text-anchor="middle" class="clabel">Aug 24</text><path d="M221.9,158.0 V22.0 Q221.9,18.0 225.9,18.0 H253.2 Q257.2,18.0 257.2,22.0 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Aug 31: 136 roles"><title>week of Aug 31: 136</title></path><text x="239.6" y="13.0" text-anchor="middle" class="cvalue">136</text><path d="M259.2,158.0 V60.1 Q259.2,56.1 263.2,56.1 H290.6 Q294.6,56.1 294.6,60.1 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Sep 07: 99 roles"><title>week of Sep 07: 99</title></path><path d="M296.6,158.0 V65.2 Q296.6,61.2 300.6,61.2 H328.0 Q332.0,61.2 332.0,65.2 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Sep 14: 94 roles"><title>week of Sep 14: 94</title></path><path d="M334.0,158.0 V68.3 Q334.0,64.3 338.0,64.3 H365.4 Q369.4,64.3 369.4,68.3 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Sep 21: 91 roles"><title>week of Sep 21: 91</title></path><text x="351.7" y="174" text-anchor="middle" class="clabel">Sep 21</text><path d="M371.4,158.0 V74.5 Q371.4,70.5 375.4,70.5 H402.8 Q406.8,70.5 406.8,74.5 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Sep 28: 85 roles"><title>week of Sep 28: 85</title></path><path d="M408.8,158.0 V80.7 Q408.8,76.7 412.8,76.7 H440.1 Q444.1,76.7 444.1,80.7 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Oct 05: 79 roles"><title>week of Oct 05: 79</title></path><path d="M446.1,158.0 V80.7 Q446.1,76.7 450.1,76.7 H477.5 Q481.5,76.7 481.5,80.7 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Oct 12: 79 roles"><title>week of Oct 12: 79</title></path><path d="M483.5,158.0 V97.1 Q483.5,93.1 487.5,93.1 H514.9 Q518.9,93.1 518.9,97.1 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Oct 19: 63 roles"><title>week of Oct 19: 63</title></path><text x="501.2" y="174" text-anchor="middle" class="clabel">Oct 19</text><path d="M520.9,158.0 V156.9 Q520.9,152.9 524.9,152.9 H552.2 Q556.2,152.9 556.2,156.9 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Oct 26: 5 roles"><title>week of Oct 26: 5</title></path><path d="M558.2,158.0 V127.0 Q558.2,123.0 562.2,123.0 H589.6 Q593.6,123.0 593.6,127.0 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Nov 02: 34 roles"><title>week of Nov 02: 34</title></path><path d="M595.6,158.0 V154.8 Q595.6,150.8 599.6,150.8 H627.0 Q631.0,150.8 631.0,154.8 V158.0 Z" fill="var(--accent)" class="cbar" data-tip="week of Nov 09: 7 roles"><title>week of Nov 09: 7</title></path><text x="613.3" y="145.8" text-anchor="middle" class="cvalue">7</text><text x="613.3" y="174" text-anchor="middle" class="clabel">Nov 09</text></svg>
-
-  
-  <details class="engine" id="engine">
-    <summary><strong>Engine health</strong> — how this list was actually built</summary>
-    <div class="tscroll"><table class="kv"><tr><th>Boards polled</th><td>4,742 of 5,378 returned successfully (95% of those attempted, 88% of the full registry)</td></tr><tr><th>Complete snapshots</th><td>4,095 boards returned a provably complete list; 647 were capped by the ATS and so were not allowed to close any role this run</td></tr><tr><th>Detection latency</th><td>282 min median · 822 min p95 (n=12)</td></tr><tr><th>Median posting lifetime</th><td>20 days (n=109)</td></tr><tr><th>Quarantined boards</th><td>416</td></tr><tr><th>New this run</th><td>0</td></tr><tr><th>Run duration</th><td>2736.2s</td></tr></table></div>
-    <div class="panels">
-      <div><h3>Roles by source</h3><div class="bar"><span class="bname">workday</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">3</span></div><div class="bar"><span class="bname">ashby</span><span class="btrack"><span class="bfill" style="width:33%"></span></span><span class="bval">1</span></div><div class="bar"><span class="bname">workable</span><span class="btrack"><span class="bfill" style="width:33%"></span></span><span class="bval">1</span></div></div>
-      <div><h3>Roles by cycle</h3><div class="bar"><span class="bname">Remote — Florida / US</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">4</span></div><div class="bar"><span class="bname">Orlando area</span><span class="btrack"><span class="bfill" style="width:25%"></span></span><span class="bval">1</span></div></div>
-      <div><h3>Roles by category</h3><div class="bar"><span class="bname">IT Support / Ops</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">4</span></div><div class="bar"><span class="bname">Network / Telecom</span><span class="btrack"><span class="bfill" style="width:25%"></span></span><span class="bval">1</span></div></div>
-      <div><h3>Sponsorship verdicts</h3><div class="bar"><span class="bname">unknown</span><span class="btrack"><span class="bfill" style="width:100%"></span></span><span class="bval">4</span></div><div class="bar"><span class="bname">citizens-only</span><span class="btrack"><span class="bfill" style="width:25%"></span></span><span class="bval">1</span></div></div>
-    </div>
-    <svg viewBox="0 0 640 80" preserveAspectRatio="none" class="spark" role="img" aria-label="Open roles per run"><polyline fill="none" stroke="var(--accent)" stroke-width="2" points="4.0,8.5 9.3,8.9 14.6,8.2 19.9,8.5 25.2,8.5 30.6,8.1 35.9,8.3 41.2,8.5 46.5,8.5 51.8,8.3 57.1,8.3 62.4,8.3 67.7,8.3 73.0,8.6 78.4,8.1 83.7,8.1 89.0,8.2 94.3,8.1 99.6,7.3 104.9,7.5 110.2,6.8 115.5,7.4 120.8,7.3 126.2,7.5 131.5,6.5 136.8,5.9 142.1,6.2 147.4,6.2 152.7,6.8 158.0,6.4 163.3,5.6 168.6,5.3 173.9,5.6 179.3,6.3 184.6,6.2 189.9,5.7 195.2,5.6 200.5,5.6 205.8,5.7 211.1,5.8 216.4,5.8 221.7,5.8 227.1,5.8 232.4,5.8 237.7,5.9 243.0,5.9 248.3,5.9 253.6,5.9 258.9,5.9 264.2,6.0 269.5,5.1 274.9,4.8 280.2,4.7 285.5,4.7 290.8,4.2 296.1,4.2 301.4,4.0 306.7,4.1 312.0,4.0 317.3,59.6 322.7,76.0 328.0,76.0 333.3,75.8 338.6,75.5 343.9,75.5 349.2,75.3 354.5,75.0 359.8,74.7 365.1,74.3 370.5,74.0 375.8,74.0 381.1,73.8 386.4,73.7 391.7,73.6 397.0,73.5 402.3,73.1 407.6,75.8 412.9,76.0 418.3,73.8 423.6,73.8 428.9,73.7 434.2,72.7 439.5,72.7 444.8,72.5 450.1,72.5 455.4,72.3 460.7,73.0 466.1,72.9 471.4,72.9 476.7,73.1 482.0,73.1 487.3,73.2 492.6,73.2 497.9,73.0 503.2,73.0 508.5,73.0 513.8,73.0 519.2,72.9 524.5,72.9 529.8,72.9 535.1,72.9 540.4,72.7 545.7,72.7 551.0,72.6 556.3,72.6 561.6,72.6 567.0,72.6 572.3,72.6 577.6,72.3 582.9,72.3 588.2,72.0 593.5,71.9 598.8,71.9 604.1,75.2 609.4,75.0 614.8,74.9 620.1,74.6 625.4,74.7 630.7,75.3 636.0,75.4"/></svg><p class="muted spark-caption">Open roles per run since 2026-10-08 — now 5, peak 598.</p>
-  </details>
-
-
-  <footer>Generated by the engine on each run across
-  12 ATS platforms. Sponsorship flags are
-  auto-detected from posting text — treat them as a strong hint and verify on the
-  posting itself. ✓ = USCIS approved 10+ H-1B petitions for that
-  employer (FY2022–2023, per the public
-  <a href="https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub">
-  Employer Data Hub</a>) — a history, not a promise; no ✓ only means no confident
-  match. Roles can close at any time; always confirm on the company's own site.</footer>
-</div>
-<script>
-(function () {
-  var q = document.getElementById('q'), cycle = document.getElementById('cycle'),
-      cat = document.getElementById('cat'), spon = document.getElementById('spon'),
-      h1b = document.getElementById('h1b'), age = document.getElementById('age'),
-      stated = document.getElementById('stated'),
-      program = document.getElementById('program'),
-      remote = document.getElementById('remote'),
-      savedonly = document.getElementById('savedonly'),
-      savedn = document.getElementById('savedn'),
-      empty = document.getElementById('empty'),
-      rows = Array.prototype.slice.call(document.getElementById('rows').rows),
-      count = document.getElementById('count');
-
-  // --- saved roles -----------------------------------------------------------
-  // Deliberately localStorage and nothing else: a tracker that needs an account
-  // is a tracker most people bounce off, and we have no business holding anyone's
-  // application list on a server. Everything here stays in this browser.
-  var KEY = 'ie.saved.v1', saved = {};
-  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { saved = {}; }
-  // Remove ids no longer present in the current artifact. Otherwise the badge
-  // counts invisible roles that cannot be viewed, exported, or unstarred.
-  //
-  // A row can stand for several requisitions (an employer that opened the same
-  // job three times). Every one of those ids has to count as present, and a
-  // star on a requisition that is now represented by a sibling has to MOVE to
-  // the surviving row — otherwise folding the display would quietly delete
-  // roles a reader had saved.
-  var currentIds = {};
-  rows.forEach(function (tr) {
-    var ids = (tr.dataset.ids || tr.dataset.id).split('|');
-    ids.forEach(function (id) { currentIds[id] = true; });
-    if (ids.length > 1 && !saved[tr.dataset.id]) {
-      for (var i = 0; i < ids.length; i++) {
-        if (saved[ids[i]]) { saved[tr.dataset.id] = saved[ids[i]]; break; }
-      }
-    }
-    ids.forEach(function (id) { if (id !== tr.dataset.id) delete saved[id]; });
-  });
-  Object.keys(saved).forEach(function (id) { if (!currentIds[id]) delete saved[id]; });
-  function persist() {
-    try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) { /* private mode */ }
-  }
-  persist();
-  function savedCount() { return Object.keys(saved).length; }
-  function paintRow(tr) {
-    var on = !!saved[tr.dataset.id], btn = tr.querySelector('.star');
-    if (btn) {
-      btn.textContent = on ? '★' : '☆';
-      btn.classList.toggle('on', on);
-      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-    }
-    tr.classList.toggle('saved', on);
-  }
-  function paintAll() { rows.forEach(paintRow); savedn.textContent = savedCount(); }
-
-  document.getElementById('rows').addEventListener('click', function (ev) {
-    var btn = ev.target.closest ? ev.target.closest('.star') : null;
-    if (!btn) return;
-    var tr = btn.closest('tr'), id = tr.dataset.id;
-    if (saved[id]) { delete saved[id]; } else { saved[id] = Date.now(); }
-    persist(); paintRow(tr); savedn.textContent = savedCount();
-    if (savedonly.checked) apply();
-  });
-
-  // Same formula-injection guard the server-side CSV uses: Excel/Sheets execute
-  // a cell starting with = + - or @, and these cells are third-party job text.
-  // Quoting alone doesn't stop it — the leading apostrophe does.
-  function csvCell(v) {
-    var s = String(v == null ? '' : v);
-    if (/^[=+\-@\t\r]/.test(s)) s = "'" + s;
-    return '"' + s.replace(/"/g, '""') + '"';
-  }
-  document.getElementById('export').addEventListener('click', function () {
-    var head = ['company', 'role', 'cycle', 'category', 'location', 'salary', 'posted', 'url'],
-        lines = [head.join(',')];
-    rows.forEach(function (tr) {
-      if (!saved[tr.dataset.id]) return;
-      var td = tr.cells, link = tr.querySelector('a[href]');
-      lines.push([td[1], td[2], td[3], td[4], td[5], td[6], td[7]]
-        .map(function (c) { return csvCell(c.innerText.trim()); })
-        .concat(csvCell(link ? link.href : '')).join(','));
-    });
-    if (lines.length === 1) { alert('Star a few roles first — then this exports them.'); return; }
-    var blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8' }),
-        a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'my-saved-internships.csv';
-    a.click(); URL.revokeObjectURL(a.href);
-  });
-
-  function cutoffISO(days) {
-    var d = new Date(new Date("2026-11-12T08:29:11Z").getTime() - days * 86400000);
-    return d.toISOString().slice(0, 10);
-  }
-  // What each sponsorship option actually means. The old single "F-1 friendly"
-  // checkbox only HID the explicit negatives, so ~97% of what it returned was
-  // simply postings that never mention sponsorship — shown to students as if
-  // it had been checked. Each verdict is now nameable on its own.
-  function sponsorOK(mode, value) {
-    var restricted = (value === 'citizens-only' || value === 'no-sponsorship');
-    if (mode === 'no-restriction') return !restricted;
-    if (mode === 'offers') return value === 'offers';
-    if (mode === 'unknown') return value === 'unknown' || !value;
-    if (mode === 'restricted') return restricted;
-    return true;
-  }
-  function apply() {
-    var text = q.value.trim().toLowerCase(), cy = cycle.value, ca = cat.value,
-        sp = spon.value, proven = h1b.checked, shown = 0,
-        minPosted = age.value ? cutoffISO(parseInt(age.value, 10)) : '',
-        statedOnly = stated.checked, prog = program.value,
-        remoteOnly = remote.checked, onlySaved = savedonly.checked;
-    rows.forEach(function (tr) {
-      // A multi-cycle posting matches EVERY cycle it states, so filtering to
-      // "Fall 2026" still finds a "Fall 2026/Summer 2027" requisition.
-      var cycles = (tr.dataset.cycles || tr.dataset.cycle || '').split('|');
-      var ok = (!text || tr.dataset.text.indexOf(text) !== -1)
-        && (!cy || cycles.indexOf(cy) !== -1)
-        && (!ca || tr.dataset.category === ca)
-        && sponsorOK(sp, tr.dataset.sponsor)
-        && (!proven || tr.dataset.h1b === '1')
-        // "Internship / Co-op" satisfies either filter — the employer said both.
-        && (!prog || tr.dataset.program.indexOf(prog) !== -1)
-        && (!remoteOnly || tr.dataset.remote === '1')
-        && (!onlySaved || !!saved[tr.dataset.id])
-        && (!minPosted || (tr.dataset.posted && tr.dataset.posted >= minPosted))
-        && (!statedOnly || tr.dataset.inferred === '0');
-      tr.style.display = ok ? '' : 'none';
-      // Count OPENINGS, not rows. A row standing for eight requisitions is
-      // eight jobs you can apply to, and the headline number has to agree
-      // with the one in the hero and the JSON API.
-      if (ok) shown += parseInt(tr.dataset.openings || '1', 10) || 1;
-    });
-    count.textContent = shown;
-    empty.hidden = shown !== 0;
-  }
-  var controls = [q, cycle, cat, age, spon, program, remote, h1b, stated, savedonly];
-  controls.forEach(function (el) {
-    el.addEventListener('input', apply); el.addEventListener('change', apply);
-  });
-  function reset() {
-    controls.forEach(function (el) {
-      if (el.type === 'checkbox') el.checked = false; else el.value = '';
-    });
-    apply();
-  }
-  document.getElementById('reset').addEventListener('click', reset);
-  document.getElementById('reset2').addEventListener('click', reset);
-
-  // The secondary-filter disclosure ships open so desktop (where its summary is
-  // hidden) always shows every control, even with JS off. Phones get it
-  // collapsed — but only if the reader hasn't already opened it themselves.
-  var more = document.querySelector('.more'), touched = false;
-  if (more) {
-    more.addEventListener('toggle', function () { touched = true; });
-    var fit = window.matchMedia('(max-width: 680px)');
-    function sync() { if (!touched) more.open = !fit.matches; }
-    sync();
-    (fit.addEventListener ? fit.addEventListener('change', sync)
-                          : fit.addListener(sync));
-  }
-  paintAll();
-  // Radar search (separate list, separate box).
-  var rq = document.getElementById('rq');
-  if (rq) {
-    var rrows = Array.prototype.slice.call(document.getElementById('rrows').rows),
-        rcount = document.getElementById('rcount');
-    rq.addEventListener('input', function () {
-      var text = rq.value.trim().toLowerCase(), shown = 0;
-      rrows.forEach(function (tr) {
-        var ok = !text || tr.dataset.text.indexOf(text) !== -1;
-        tr.style.display = ok ? '' : 'none';
-        if (ok) shown++;
-      });
-      rcount.textContent = shown;
-    });
-  }
-  // Chart hover tooltip: one floating div fed by each bar's data-tip.
-  var tip = document.createElement('div'); tip.id = 'tip'; document.body.appendChild(tip);
-  document.querySelectorAll('.cbar').forEach(function (bar) {
-    bar.addEventListener('mousemove', function (ev) {
-      tip.textContent = bar.dataset.tip; tip.style.display = 'block';
-      tip.style.left = (ev.clientX + 12) + 'px'; tip.style.top = (ev.clientY - 28) + 'px';
-    });
-    bar.addEventListener('mouseleave', function () { tip.style.display = 'none'; });
-  });
+<header><h1>Entry-level IT jobs near Kissimmee, FL</h1>
+<p class="sub">Help desk, desktop support, IT technician, junior network and security roles,
+and paid IT internships. Local jobs first, then remote roles open to Florida residents.</p>
+<p class="asof">Updated Nov 12, 2026 at 09:46 UTC · 52 open roles ·
+every link opens the employer's own posting</p></header>
+<div class="tabs" role="group" aria-label="Area"><button class="tab" type="button" data-section="all" aria-pressed="true">All<b>52</b></button><button class="tab" type="button" data-section="Local" aria-pressed="false">Local<b>6</b></button><button class="tab" type="button" data-section="Nearby" aria-pressed="false">Nearby<b>5</b></button><button class="tab" type="button" data-section="Remote" aria-pressed="false">Remote<b>41</b></button></div>
+<div class="filters">
+<input id="q" type="search" placeholder="Search title, employer or city" aria-label="Search">
+<select id="fit" aria-label="Fit"><option value="">Any fit</option>
+<option value="beginner">Beginner-friendly</option><option value="stretch">Stretch</option>
+<option value="unverified">Check requirements</option></select>
+<select id="kind" aria-label="Job type"><option value="">Any type</option>
+<option value="Full-time">Full-time</option><option value="Internship">Internship</option><option value="Not stated">Not stated</option><option value="Temporary / contract">Temporary / contract</option></select>
+</div><p class="count" id="count" aria-live="polite"></p>
+<main><section data-section="Local"><h2>Local (6)</h2><p class="blurb">Within 30 miles of Kissimmee</p><article class="job" data-section="Local" data-fit="beginner" data-kind="Not stated" data-text="jr. it support specialist ocean optics orlando it support / technician"><h3><a href="https://halma.wd3.myworkdayjobs.com/halma/job/Orlando/Jr-IT-Support-Specialist_JR26_001243" rel="noopener noreferrer" target="_blank">Jr. IT Support Specialist</a><span class="new">New</span></h3><p class="meta"><strong>Ocean Optics</strong> · Orlando · 17 mi · Nov 11 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li></ul><p class="exp">0+ years — open to no experience</p><p class="quote">“0 - 2 years of experience in IT support, helpdesk, or technical troubleshooting.”</p></article><article class="job" data-section="Local" data-fit="beginner" data-kind="Full-time" data-text="ecommerce specialist-internet help desk, dc (orlando, fl) bench - ft the walt disney company orlando, fl help desk / service desk"><h3><a href="https://dejobs.org/orlando-fl/ecommerce-specialist-internet-help-desk-dc-orlando-fl-bench-ft/0B4B02309AB148FBA33C8A286AF55A74/job/" rel="noopener noreferrer" target="_blank">eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT</a><span class="new">New</span></h3><p class="meta"><strong>The Walt Disney Company</strong> · Orlando, FL · 17 mi · Nov 9 · via NLx / DEJobs</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Full-time</li><li>Help Desk / Service Desk</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Local" data-fit="stretch" data-kind="Not stated" data-text="network engineer robert half orlando, fl network / noc"><h3><a href="https://dejobs.org/orlando-fl/network-engineer/BA300695C674418D983FDDC3B445D250/job/" rel="noopener noreferrer" target="_blank">Network Engineer</a><span class="new">New</span></h3><p class="meta"><strong>Robert Half</strong> · Orlando, FL · 17 mi · Nov 4 · via NLx / DEJobs</p><ul class="tags"><li class="stretch">Stretch</li><li>Network / NOC</li><li>No experience stated, but this title usually expects some</li><li>Bachelor&#x27;s degree listed</li></ul><p class="exp">None required — 2 years preferred</p><p class="quote">“4–6 years of infrastructure-focused technology experience preferred; candidates with 2 or more years of relevant hands-on experience will also be considered.”</p></article><article class="job" data-section="Local" data-fit="beginner" data-kind="Full-time" data-text="network &amp; desk technician marriott kissimmee, fl help desk / service desk"><h3><a href="https://dejobs.org/kissimmee-fl/network-desk-technician/B75F7AE3B57549B480AB4D68852A7C5C/job/" rel="noopener noreferrer" target="_blank">Network &amp; Desk Technician</a><span class="new">New</span></h3><p class="meta"><strong>Marriott</strong> · Kissimmee, FL · 2 mi · Sep 30 · via NLx / DEJobs</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Full-time</li><li>Help Desk / Service Desk</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Local" data-fit="stretch" data-kind="Not stated" data-text="systems analyst ii cai orlando, fl it support / technician"><h3><a href="https://dejobs.org/orlando-fl/systems-analyst-ii/C8E0E27BEA6445E8827427AEA8C3BD9E/job/" rel="noopener noreferrer" target="_blank">Systems Analyst II</a><span class="new">New</span></h3><p class="meta"><strong>CAI</strong> · Orlando, FL · 17 mi · Sep 11 · via NLx / DEJobs</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Support / Technician</li><li>Level II title</li><li>Mentions Security+/Network+</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Local" data-fit="stretch" data-kind="Not stated" data-text="help desk specialist chenega corporation orlando, fl help desk / service desk"><h3><a href="https://dejobs.org/orlando-fl/help-desk-specialist/6925AE191E7245C2AFF834232A57D1C2/job/" rel="noopener noreferrer" target="_blank">Help Desk Specialist</a><span class="new">New</span></h3><p class="meta"><strong>Chenega Corporation</strong> · Orlando, FL · 17 mi · Aug 21 · via NLx / DEJobs</p><ul class="tags"><li class="stretch">Stretch</li><li>Help Desk / Service Desk</li><li>Shift work mentioned: rotating shift</li></ul><p class="exp">1 year required</p><p class="quote">“+ 1+ year of IT Help Desk or Technical Customer Support experience.”</p></article><p class="empty" hidden>No open roles here right now.</p></section><section data-section="Nearby"><h2>Nearby (5)</h2><p class="blurb">30 to 50 miles from Kissimmee</p><article class="job" data-section="Nearby" data-fit="stretch" data-kind="Not stated" data-text="data and technology specialist deloitte lake mary, fl it support / technician"><h3><a href="https://dejobs.org/lake-mary-fl/data-and-technology-specialist/DDAEB1EA359745DE949E6EA4A0B0F453/job/" rel="noopener noreferrer" target="_blank">Data and Technology Specialist</a><span class="new">New</span></h3><p class="meta"><strong>Deloitte</strong> · Lake Mary, FL · 33 mi · Nov 12 · via NLx / DEJobs</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Support / Technician</li><li>Clearance must be obtainable</li><li>Asks 4 years customer-service-type experience</li><li>Bachelor&#x27;s degree listed</li></ul><p class="exp">1 year required</p><p class="quote">“+ 1+ years of experience in financial services”</p></article><article class="job" data-section="Nearby" data-fit="beginner" data-kind="Not stated" data-text="rsc it coordinator, 1st shift ace hardware fl - plant city it support / technician"><h3><a href="https://acehardware.wd1.myworkdayjobs.com/External/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089" rel="noopener noreferrer" target="_blank">RSC IT Coordinator, 1st shift</a><span class="new">New</span></h3><p class="meta"><strong>Ace Hardware</strong> · FL - Plant City · 47 mi · Nov 11 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Nearby" data-fit="beginner" data-kind="Temporary / contract" data-text="technology support contractor: 0-2 years (entry) / contract / onsite kelly services lake mary, fl it support / technician"><h3><a href="https://dejobs.org/lake-mary-fl/technology-support-contractor-0-2-years-entry-contract-onsite/5B713C96FFEA4AA999C7F143B7BA15D1/job/" rel="noopener noreferrer" target="_blank">Technology Support Contractor: 0-2 years (Entry) / Contract / Onsite</a><span class="new">New</span></h3><p class="meta"><strong>Kelly Services</strong> · Lake Mary, FL · 33 mi · Nov 3 · via NLx / DEJobs</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Temporary / contract</li><li>IT Support / Technician</li></ul><p class="exp">0+ years — open to no experience</p><p class="quote">“+ PC Software Support - Entry Level (0-2 years&#x27; experience)”</p></article><article class="job" data-section="Nearby" data-fit="stretch" data-kind="Not stated" data-text="systems administrator v2x melbourne, fl systems / infrastructure"><h3><a href="https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/" rel="noopener noreferrer" target="_blank">Systems Administrator</a><span class="new">New</span></h3><p class="meta"><strong>V2X</strong> · Melbourne, FL · 48 mi · Nov 3 · via NLx / DEJobs</p><ul class="tags"><li class="stretch">Stretch</li><li>Systems / Infrastructure</li><li>Clearance must be obtainable</li><li>No experience stated, but this title usually expects some</li><li>Shift work mentioned: 24/7</li></ul><p class="exp">None required — 5 years preferred</p><p class="quote">“+ 5+ years of Tier 2/3 system support experience.”</p></article><article class="job" data-section="Nearby" data-fit="stretch" data-kind="Not stated" data-text="it associate i relativity space cape canaveral, florida, united states it support / technician"><h3><a href="https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002" rel="noopener noreferrer" target="_blank">IT Associate I</a><span class="new">New</span></h3><p class="meta"><strong>Relativity Space</strong> · Cape Canaveral, Florida, United States · 49 mi · Oct 23 · via Greenhouse</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Support / Technician</li><li>Clearance must be obtainable</li><li>Mentions Security+/Network+</li></ul><p class="exp">1 year required</p><p class="quote">“&lt;li style=&quot;font-family: arial, helvetica, sans-serif; font-size: 10pt;&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif; font-size: 10pt;&quot;&gt;1+ years of experience in a help d”</p></article><p class="empty" hidden>No open roles here right now.</p></section><section data-section="Remote"><h2>Remote (41)</h2><p class="blurb">Remote, and open to Florida residents</p><article class="job" data-section="Remote" data-fit="unverified" data-kind="Not stated" data-text="technical support specialist, platform rippling remote (united states) it support / technician"><h3><a href="https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd" rel="noopener noreferrer" target="_blank">Technical Support Specialist, Platform</a><span class="new">New</span></h3><p class="meta"><strong>Rippling</strong> · Remote (United States) · found Nov 12 · via Rippling</p><ul class="tags"><li class="unverified">Check requirements</li><li>IT Support / Technician</li></ul><p class="exp">Posting text unavailable — check requirements</p></article><article class="job" data-section="Remote" data-fit="unverified" data-kind="Not stated" data-text="technical support specialist patientnow remote (united states) it support / technician"><h3><a href="https://ats.rippling.com/patientnow/jobs/19feb150-fa2b-4a72-85a0-f678a7f7c070" rel="noopener noreferrer" target="_blank">Technical Support Specialist</a><span class="new">New</span></h3><p class="meta"><strong>PatientNow</strong> · Remote (United States) · found Nov 12 · via Rippling</p><ul class="tags"><li class="unverified">Check requirements</li><li>IT Support / Technician</li></ul><p class="exp">Posting text unavailable — check requirements</p></article><article class="job" data-section="Remote" data-fit="unverified" data-kind="Not stated" data-text="soc analyst (waru e-itss) concept plus remote (united states) security (entry)"><h3><a href="https://ats.rippling.com/conceptplus/jobs/f9ddd964-6bb4-4baf-8826-10e891c5270b" rel="noopener noreferrer" target="_blank">SOC Analyst (WarU E-ITSS)</a><span class="new">New</span></h3><p class="meta"><strong>Concept Plus</strong> · Remote (United States) · found Nov 12 · via Rippling</p><ul class="tags"><li class="unverified">Check requirements</li><li>Security (entry)</li></ul><p class="exp">Posting text unavailable — check requirements</p></article><article class="job" data-section="Remote" data-fit="unverified" data-kind="Not stated" data-text="cyber analyst concept plus remote (united states) security (entry)"><h3><a href="https://ats.rippling.com/conceptplus/jobs/4060476b-d89e-4430-a86a-f6f5bc600b03" rel="noopener noreferrer" target="_blank">Cyber Analyst</a><span class="new">New</span></h3><p class="meta"><strong>Concept Plus</strong> · Remote (United States) · found Nov 12 · via Rippling</p><ul class="tags"><li class="unverified">Check requirements</li><li>Security (entry)</li></ul><p class="exp">Posting text unavailable — check requirements</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="noc engineer hard rock digital united states, florida, united states (remote) network / noc"><h3><a href="https://hardrockdigital.recruitee.com/o/noc-engineer-5" rel="noopener noreferrer" target="_blank">NOC Engineer</a><span class="new">New</span></h3><p class="meta"><strong>Hard Rock Digital</strong> · United States, Florida, United States (Remote) · found Nov 12 · via Recruitee</p><ul class="tags"><li class="stretch">Stretch</li><li>Network / NOC</li><li>No experience stated, but this title usually expects some</li><li>Shift work mentioned: 2nd shifts</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="service desk analyst i republic services remote - usa help desk / service desk"><h3><a href="https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1" rel="noopener noreferrer" target="_blank">Service Desk Analyst I</a><span class="new">New</span></h3><p class="meta"><strong>Republic Services</strong> · Remote - USA · Nov 10 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Help Desk / Service Desk</li></ul><p class="exp">None required — 1 year preferred</p><p class="quote">“1+ year of experience in a service desk, help desk, desktop support, or customer support role (IT preferred).”</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="associate systems administrator - supply chain rapid response team ferguson remote systems / infrastructure"><h3><a href="https://ferguson.wd1.myworkdayjobs.com/Ferguson_Experienced/job/Remote/Associate-Systems-Administrator---Supply-Chain-Rapid-Response-Team_R-141717-1" rel="noopener noreferrer" target="_blank">Associate Systems Administrator - Supply Chain Rapid Response Team</a><span class="new">New</span></h3><p class="meta"><strong>Ferguson</strong> · Remote · Nov 10 · via Workday</p><ul class="tags"><li class="stretch">Stretch</li><li>Systems / Infrastructure</li><li>Mentions Security+/Network+</li><li>Remote region not stated</li></ul><p class="exp">1 year required</p><p class="quote">“1–2 years of experience in systems administration, IT support, service desk, desktop support, technical support, or a related technology role.”</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="technical support technician - tech apps trubridge remote - us it support / technician"><h3><a href="https://cpsi.wd1.myworkdayjobs.com/CPSI/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541" rel="noopener noreferrer" target="_blank">Technical Support Technician - Tech Apps</a><span class="new">New</span></h3><p class="meta"><strong>TruBridge</strong> · Remote - US · Nov 10 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li><li>Mentions Security+/Network+</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="associate soc analyst expel remote security (entry)"><h3><a href="https://expel.com/about/career-listing/8936554002?gh_jid=8936554002" rel="noopener noreferrer" target="_blank">Associate SOC Analyst</a><span class="new">New</span></h3><p class="meta"><strong>Expel</strong> · Remote · Nov 10 · via Greenhouse</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Security (entry)</li><li>Shift work mentioned: 24x7</li><li>Remote region not stated</li></ul><p class="exp">None required — 1 year preferred</p><p class="quote">“&lt;li&gt;1–2 years of IT or security experience is preferred, but if you’ve got passion, potential, and a compelling story, we want to hear it.&lt;/li&gt;”</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="technical support representative - remote bigcommerce united states - remote technical support (customer-facing)"><h3><a href="https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100" rel="noopener noreferrer" target="_blank">Technical Support Representative - Remote</a><span class="new">New</span></h3><p class="meta"><strong>BigCommerce</strong> · United States - Remote · Nov 9 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Technical Support (customer-facing)</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="technical support specialist versapay united states (remote) it support / technician"><h3><a href="https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220" rel="noopener noreferrer" target="_blank">Technical Support Specialist</a><span class="new">New</span></h3><p class="meta"><strong>Versapay</strong> · United States (Remote) · Nov 9 · via Lever</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li><li>70,000–75,000 USD/yr</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="diagnostics technical support representative zoetis us remote technical support (customer-facing)"><h3><a href="https://zoetis.wd5.myworkdayjobs.com/zoetis/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901" rel="noopener noreferrer" target="_blank">Diagnostics Technical Support Representative</a><span class="new">New</span></h3><p class="meta"><strong>Zoetis</strong> · US Remote · Nov 6 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Technical Support (customer-facing)</li></ul><p class="exp">None required — 3 years preferred</p><p class="quote">“3+ years previous Software Engineering and Software Support experience, preferably in a veterinary setting”</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="cloud systems administrator oneimaging remote systems / infrastructure"><h3><a href="https://job-boards.greenhouse.io/oneimaging/jobs/4484490009" rel="noopener noreferrer" target="_blank">Cloud Systems Administrator</a><span class="new">New</span></h3><p class="meta"><strong>OneImaging</strong> · Remote · Nov 7 · via Greenhouse</p><ul class="tags"><li class="stretch">Stretch</li><li>Systems / Infrastructure</li><li>No experience stated, but this title usually expects some</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="security &amp; it operations engineer prefect remote it operations"><h3><a href="https://jobs.ashbyhq.com/prefect/6bc102cc-112f-441f-adc8-d53dc83a93ec" rel="noopener noreferrer" target="_blank">Security &amp; IT Operations Engineer</a><span class="new">New</span></h3><p class="meta"><strong>Prefect</strong> · Remote · Nov 6 · via Ashby</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Operations</li><li>$149K – $219K • Offers Equity • Multiple Ranges</li><li>No experience stated, but this title usually expects some</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="remote customer technical support adt united states; nd, united states; oh, united states; ok, united states; sc, united states; tn, united states; ut, united states; va, united states; al, united states; az, united states; ar, united states; de, united states; fl, united states; ga, united states; id, united states; ia, united states; ks, united states; ky, united states; la, united states; in, united states; ms, united states; mo, united states; ne, united states; nh, united states; nc, united states technical support (customer-facing)"><h3><a href="https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642" rel="noopener noreferrer" target="_blank">Remote Customer Technical Support</a><span class="new">New</span></h3><p class="meta"><strong>ADT</strong> · United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States · Nov 4 · via Oracle</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Technical Support (customer-facing)</li><li>Asks 1 year customer-service-type experience</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="technical support specialist i avidxchange virtual it support / technician"><h3><a href="https://job-boards.greenhouse.io/avidxchangeinc/jobs/5283540007" rel="noopener noreferrer" target="_blank">Technical Support Specialist I</a><span class="new">New</span></h3><p class="meta"><strong>AvidXchange</strong> · Virtual · Nov 4 · via Greenhouse</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Support / Technician</li><li>Remote region not stated</li></ul><p class="exp">1 year required</p><p class="quote">“&lt;li&gt;At least 1 year of experience troubleshooting software, SaaS applications, or other technical systems.&lt;/li&gt;”</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="level 2 noc systems administrator – linux/unix focus unisys usa remote network / noc"><h3><a href="https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786" rel="noopener noreferrer" target="_blank">Level 2 NOC Systems Administrator – Linux/Unix Focus</a><span class="new">New</span></h3><p class="meta"><strong>Unisys</strong> · USA Remote · Nov 3 · via Workday</p><ul class="tags"><li class="stretch">Stretch</li><li>Network / NOC</li><li>Shift work mentioned: rotating shifts</li></ul><p class="exp">2 years required — education/certs may substitute</p><p class="quote">“BA/BS degree and 2–4 years of relevant experience OR equivalent combination.”</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="pos tech support specialist northab us - remote it support / technician"><h3><a href="https://nabancard.wd1.myworkdayjobs.com/nab/job/US---Remote/POS-Tech-Support-Specialist_JR102005" rel="noopener noreferrer" target="_blank">POS Tech Support Specialist</a><span class="new">New</span></h3><p class="meta"><strong>NorthAB</strong> · US - Remote · Nov 3 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li><li>Asks 3 years customer-service-type experience</li><li>Shift work mentioned: evening shift</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="it operations specialist alpaca remote - north america it operations"><h3><a href="https://job-boards.greenhouse.io/alpaca/jobs/6240586004" rel="noopener noreferrer" target="_blank">IT Operations Specialist</a><span class="new">New</span></h3><p class="meta"><strong>Alpaca</strong> · Remote - North America · Nov 2 · via Greenhouse</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Operations</li><li>Bachelor&#x27;s degree listed</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="security systems administrator fluidstack u.s. remote systems / infrastructure"><h3><a href="https://jobs.ashbyhq.com/fluidstack/f1811455-d414-4630-b22c-58a585163864" rel="noopener noreferrer" target="_blank">Security Systems Administrator</a><span class="new">New</span></h3><p class="meta"><strong>FluidStack</strong> · U.S. Remote · Oct 30 · via Ashby</p><ul class="tags"><li class="stretch">Stretch</li><li>Systems / Infrastructure</li><li>$182K – $210K</li><li>No experience stated, but this title usually expects some</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="network specialist - launch team skydio us remote network / noc"><h3><a href="https://jobs.ashbyhq.com/skydio/8ba69d85-b786-4399-a5c0-ee0969054315" rel="noopener noreferrer" target="_blank">Network Specialist - Launch Team</a><span class="new">New</span></h3><p class="meta"><strong>Skydio</strong> · US Remote · Oct 23 · via Ashby</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Network / NOC</li><li>Mentions Security+/Network+</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Internship" data-text="network site design intern leidos 6314 remote/teleworker us it operations"><h3><a href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057" rel="noopener noreferrer" target="_blank">Network Site Design Intern</a><span class="new">New</span></h3><p class="meta"><strong>Leidos</strong> · 6314 Remote/Teleworker US · Oct 21 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Internship</li><li>IT Operations</li><li>Clearance must be obtainable</li></ul><p class="exp">Internship — no experience requirement stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="technical support specialist , us east coast nash remote, us it support / technician"><h3><a href="https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861" rel="noopener noreferrer" target="_blank">Technical Support Specialist , US East Coast</a><span class="new">New</span></h3><p class="meta"><strong>Nash</strong> · Remote, US · Oct 20 · via Ashby</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li><li>$75K – $95K • Offers Equity</li><li>Shift work mentioned: 24/7</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Internship" data-text="summer 2027: it services intern amplify remote - united states it operations"><h3><a href="https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f" rel="noopener noreferrer" target="_blank">Summer 2027: IT Services Intern</a><span class="new">New</span></h3><p class="meta"><strong>Amplify</strong> · Remote - United States · Oct 19 · via Ashby</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Internship</li><li>IT Operations</li><li>$30 per hour</li></ul><p class="exp">Internship — no experience requirement stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="technical support specialist higher logic us-remote it support / technician"><h3><a href="https://job-boards.greenhouse.io/higherlogic/jobs/8033739003" rel="noopener noreferrer" target="_blank">Technical Support Specialist</a><span class="new">New</span></h3><p class="meta"><strong>Higher Logic</strong> · US-Remote · Oct 16 · via Greenhouse</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li><li>Asks 2 years customer-service-type experience</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="customer support engineer firemon usa, remote it support / technician"><h3><a href="https://jobs.lever.co/firemon/55eed579-a00a-4d3c-a1ae-2e0ef9bd7063" rel="noopener noreferrer" target="_blank">Customer Support Engineer</a><span class="new">New</span></h3><p class="meta"><strong>Firemon</strong> · USA, Remote · Oct 14 · via Lever</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Support / Technician</li><li>No experience stated, but this title usually expects some</li><li>Shift work mentioned: 24/7</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Internship" data-text="security &amp; it intern eight sleep remote - us it operations"><h3><a href="https://jobs.ashbyhq.com/eightsleep/0ae8cdbe-8100-4f59-b702-16d836ab5550" rel="noopener noreferrer" target="_blank">Security &amp; IT Intern</a><span class="new">New</span></h3><p class="meta"><strong>Eight Sleep</strong> · Remote - US · Oct 9 · via Ashby</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Internship</li><li>IT Operations</li></ul><p class="exp">Internship — no experience requirement stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="product support specialist 1 modernizing medicine remote - usa it support / technician"><h3><a href="https://modmed.wd501.myworkdayjobs.com/ModMed12/job/Remote---USA/Product-Support-Specialist-1_R5073" rel="noopener noreferrer" target="_blank">Product Support Specialist 1</a><span class="new">New</span></h3><p class="meta"><strong>Modernizing Medicine</strong> · Remote - USA · Oct 8 · via Workday</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Support / Technician</li><li>Bachelor&#x27;s degree listed</li></ul><p class="exp">1 year required</p><p class="quote">“1-2 years of experience in handling customer support in an Omni Channel Environment.”</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="it security specialist axios remote security (entry)"><h3><a href="https://job-boards.greenhouse.io/axios/jobs/8262622" rel="noopener noreferrer" target="_blank">IT Security Specialist</a><span class="new">New</span></h3><p class="meta"><strong>Axios</strong> · Remote · Oct 7 · via Greenhouse</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Security (entry)</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="it support specialist zillow remote-usa it support / technician"><h3><a href="https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/IT-Support-Specialist_P751346-2" rel="noopener noreferrer" target="_blank">IT Support Specialist</a><span class="new">New</span></h3><p class="meta"><strong>Zillow</strong> · Remote-USA · Sep 23 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li></ul><p class="exp">0+ years — open to no experience</p><p class="quote">“0–2 years of experience in desktop support, end-user computing, or a related technical support role.”</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="designated technical support engineer - central/east glean remote - us it support / technician"><h3><a href="https://job-boards.greenhouse.io/gleanwork/jobs/4735026005" rel="noopener noreferrer" target="_blank">Designated Technical Support Engineer - Central/East</a><span class="new">New</span></h3><p class="meta"><strong>Glean</strong> · Remote - US · Sep 22 · via Greenhouse</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Support / Technician</li><li>No experience stated, but this title usually expects some</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Internship" data-text="summer 2027 technology intern voya financial united states-remote it operations"><h3><a href="https://godirect.wd5.myworkdayjobs.com/voya_jobs/job/United-States-Remote/Summer-2027-Technology-Intern_JR0033187" rel="noopener noreferrer" target="_blank">Summer 2027 Technology Intern</a><span class="new">New</span></h3><p class="meta"><strong>Voya Financial</strong> · United States-Remote · Sep 11 · via Workday</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Internship</li><li>IT Operations</li></ul><p class="exp">Internship — no experience requirement stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="systems administrator opensesame remote systems / infrastructure"><h3><a href="https://boards.greenhouse.io/opensesame/jobs/8188645?gh_jid=8188645" rel="noopener noreferrer" target="_blank">Systems Administrator</a><span class="new">New</span></h3><p class="meta"><strong>OpenSesame</strong> · Remote · Sep 9 · via Greenhouse</p><ul class="tags"><li class="stretch">Stretch</li><li>Systems / Infrastructure</li><li>No experience stated, but this title usually expects some</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="application support specialist - weekend nights sirona medical remote it support / technician"><h3><a href="https://job-boards.greenhouse.io/sironamedical/jobs/4731581005" rel="noopener noreferrer" target="_blank">Application Support Specialist - Weekend Nights</a><span class="new">New</span></h3><p class="meta"><strong>Sirona Medical</strong> · Remote · Sep 6 · via Greenhouse</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li><li>Asks 3 years customer-service-type experience</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="application support specialist - weekend days sirona medical remote it support / technician"><h3><a href="https://job-boards.greenhouse.io/sironamedical/jobs/4731580005" rel="noopener noreferrer" target="_blank">Application Support Specialist - Weekend Days</a><span class="new">New</span></h3><p class="meta"><strong>Sirona Medical</strong> · Remote · Sep 6 · via Greenhouse</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li><li>Asks 3 years customer-service-type experience</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="application support specialist - overnight m-f sirona medical remote it support / technician"><h3><a href="https://job-boards.greenhouse.io/sironamedical/jobs/4731579005" rel="noopener noreferrer" target="_blank">Application Support Specialist - Overnight M-F</a><span class="new">New</span></h3><p class="meta"><strong>Sirona Medical</strong> · Remote · Sep 6 · via Greenhouse</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li><li>Asks 3 years customer-service-type experience</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Not stated" data-text="application support specialist - second shift m-f sirona medical remote it support / technician"><h3><a href="https://job-boards.greenhouse.io/sironamedical/jobs/4731578005" rel="noopener noreferrer" target="_blank">Application Support Specialist - Second Shift M-F</a><span class="new">New</span></h3><p class="meta"><strong>Sirona Medical</strong> · Remote · Sep 6 · via Greenhouse</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>IT Support / Technician</li><li>Asks 3 years customer-service-type experience</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="technical support engineer (tse) agave remote it support / technician"><h3><a href="https://jobs.ashbyhq.com/Agave/a263e45f-e86e-4c78-882e-a79da649e861" rel="noopener noreferrer" target="_blank">Technical Support Engineer (TSE)</a><span class="new">New</span></h3><p class="meta"><strong>Agave</strong> · Remote · Sep 1 · via Ashby</p><ul class="tags"><li class="stretch">Stretch</li><li>IT Support / Technician</li><li>$100K – $160K • Offers Equity • Offers Bonus • Sign-on bonus, company-based performance bonuss</li><li>No experience stated, but this title usually expects some</li><li>Remote region not stated</li></ul><p class="exp">None required — 2 years preferred</p><p class="quote">“2-8 years of experience, ideally in b2b SaaS.”</p></article><article class="job" data-section="Remote" data-fit="beginner" data-kind="Internship" data-text="off-cycle 2026 cybersecurity internship galaxy remote security (entry)"><h3><a href="https://job-boards.greenhouse.io/galaxydigitalservices/jobs/6163325004" rel="noopener noreferrer" target="_blank">Off-Cycle 2026 Cybersecurity Internship</a><span class="new">New</span></h3><p class="meta"><strong>Galaxy</strong> · Remote · Aug 26 · via Greenhouse</p><ul class="tags"><li class="beginner">Beginner-friendly</li><li>Internship</li><li>Security (entry)</li><li>Remote region not stated</li></ul><p class="exp">Internship — no experience requirement stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Not stated" data-text="cloud support engineer alphasense remote - united states systems / infrastructure"><h3><a href="https://job-boards.greenhouse.io/alphasense/jobs/8495375002" rel="noopener noreferrer" target="_blank">Cloud Support Engineer</a><span class="new">New</span></h3><p class="meta"><strong>AlphaSense</strong> · Remote - United States · Aug 20 · via Greenhouse</p><ul class="tags"><li class="stretch">Stretch</li><li>Systems / Infrastructure</li><li>No experience stated, but this title usually expects some</li></ul><p class="exp">No years of experience stated</p></article><article class="job" data-section="Remote" data-fit="stretch" data-kind="Full-time" data-text="technical support engineer (gpu clusters) - us weekends together ai remote it support / technician"><h3><a href="https://job-boards.greenhouse.io/togetherai/jobs/5202015007" rel="noopener noreferrer" target="_blank">Technical Support Engineer (GPU Clusters) - US Weekends</a><span class="new">New</span></h3><p class="meta"><strong>Together AI</strong> · Remote · Aug 4 · via Greenhouse</p><ul class="tags"><li class="stretch">Stretch</li><li>Full-time</li><li>IT Support / Technician</li><li>No experience stated, but this title usually expects some</li><li>Asks 1 year customer-service-type experience</li><li>Shift work mentioned: weekend shift</li><li>Remote region not stated</li></ul><p class="exp">No years of experience stated</p></article><p class="empty" hidden>No open roles here right now.</p></section></main>
+<footer>
+<p><strong>Beginner-friendly</strong> means nothing in the posting requires IT experience.
+<strong>Stretch</strong> means about a year is required, education or certifications may
+substitute, or the title is a level II. <strong>Check requirements</strong> means the posting
+text could not be read. Preferred experience never hides a role.</p>
+<p>This site only lists jobs. It never applies or contacts employers for you.</p>
+<details><summary>Sources read on the last run</summary><div class="scroll"><table class="srcs"><thead><tr><th>Local source</th><th>Status</th><th>Postings</th><th>Listed</th></tr></thead><tbody><tr><td>City of Casselberry</td><td>read in full</td><td>4</td><td>0</td></tr><tr><td>City of Clermont</td><td>read in full</td><td>12</td><td>0</td></tr><tr><td>City of Kissimmee</td><td>read in full</td><td>0</td><td>0</td></tr><tr><td>Kissimmee Utility Authority</td><td>read in full</td><td>0</td><td>0</td></tr><tr><td>City of Maitland</td><td>read in full</td><td>1</td><td>0</td></tr><tr><td>City of Ocoee</td><td>read in full</td><td>7</td><td>0</td></tr><tr><td>Osceola County</td><td>read in full</td><td>13</td><td>0</td></tr><tr><td>City of Oviedo</td><td>read in full</td><td>2</td><td>0</td></tr><tr><td>Seminole County</td><td>read in full</td><td>19</td><td>0</td></tr><tr><td>City of St. Cloud</td><td>read in full</td><td>5</td><td>0</td></tr><tr><td>City of Winter Park</td><td>read in full</td><td>7</td><td>0</td></tr><tr><td>NLx / DEJobs (50 mi of Kissimmee)</td><td>read in part</td><td>3926</td><td>8</td></tr><tr><td>School District of Osceola County</td><td><span class="bad">failed: HTTPStatusError: Client error &#x27;403 Forbidden&#x27; for url &#x27;https://jobs.osceolaschools.net/api</span></td><td>0</td><td>0</td></tr><tr><td>City of Orlando</td><td>read in full</td><td>54</td><td>0</td></tr><tr><td>University of Central Florida</td><td>read in full</td><td>76</td><td>0</td></tr></tbody></table></div><p>Last nationwide sweep: 2026-11-12T09:46:35Z — 4907 of 5392 boards read, 349327 postings examined.</p></details>
+<p><a href="jobs.csv">CSV</a> · <a href="api/jobs.json">JSON</a> ·
+<a href="feed.xml">Feed</a> · <a href="https://github.com/EN-Ignoto/IT-Searcher">Source and method</a></p>
+</footer></div><script>
+(function(){
+var section='all',q=document.getElementById('q'),fit=document.getElementById('fit'),
+kind=document.getElementById('kind'),tabs=document.querySelectorAll('.tab'),
+jobs=document.querySelectorAll('.job'),count=document.getElementById('count');
+function apply(){
+ var text=(q.value||'').toLowerCase().trim(),shown=0,per={};
+ jobs.forEach(function(el){
+  var ok=(section==='all'||el.dataset.section===section)&&
+   (!fit.value||el.dataset.fit===fit.value)&&
+   (!kind.value||el.dataset.kind===kind.value)&&
+   (!text||el.dataset.text.indexOf(text)>-1);
+  el.hidden=!ok;if(ok){shown++;per[el.dataset.section]=(per[el.dataset.section]||0)+1;}
+ });
+ document.querySelectorAll('section[data-section]').forEach(function(s){
+  var name=s.dataset.section;
+  s.hidden=section!=='all'&&section!==name;
+  s.querySelector('.empty').hidden=!!per[name];
+ });
+ count.textContent=shown+' of '+jobs.length+' roles shown';
+}
+tabs.forEach(function(t){t.addEventListener('click',function(){
+ section=t.dataset.section;
+ tabs.forEach(function(o){o.setAttribute('aria-pressed',o===t?'true':'false');});
+ apply();});});
+[q,fit,kind].forEach(function(el){el.addEventListener('input',apply);});
+apply();
 })();
-</script>
-</body></html>
+</script></body></html>

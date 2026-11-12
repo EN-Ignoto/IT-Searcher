@@ -15,7 +15,7 @@ class RegistryCorrupt(RuntimeError):
 
 _SUPPORTED_ATS = {
     "amazon", "ashby", "breezy", "eightfold", "greenhouse", "icims", "lever",
-    "neogov", "nlx", "oracle", "paradox", "recruitee", "rippling", "smartrecruiters", "workable", "workday",
+    "neogov", "nlx", "oracle", "paradox", "peopleadmin", "recruitee", "rippling", "smartrecruiters", "workable", "workday",
 }
 
 

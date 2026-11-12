@@ -240,3 +240,40 @@ def test_nlx_rate_limit_keeps_partial_results_and_closes_nothing(monkeypatch):
     assert result.incomplete_reason == nlx.INCOMPLETE_RATE_LIMITED
     with pytest.raises(nlx.NlxError, match="rate limited"):
         asyncio.run(nlx.fetch(NLX, ScriptedNet(lambda *_: limited)))
+
+
+# ----------------------------------------------------------- PeopleAdmin --
+def test_peopleadmin_reads_the_atom_feed_and_places_the_campus():
+    from intern_engine.connectors import peopleadmin
+    feed = '''<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Valencia College</title>
+  <entry>
+    <id>tag:valenciacollege.peopleadmin.com,2005:Posting/43222</id>
+    <published>2026-11-03T14:02:11-05:00</published>
+    <link rel="alternate" type="text/html" href="https://valenciacollege.peopleadmin.com/postings/43222"/>
+    <title>Specialist, Technical Support</title>
+    <content type="html">&lt;p&gt;Campus: Osceola Campus&lt;/p&gt;&lt;p&gt;Supports labs.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:valenciacollege.peopleadmin.com,2005:Posting/43300</id>
+    <updated>2026-11-01T09:00:00-05:00</updated>
+    <link href="https://valenciacollege.peopleadmin.com/postings/43300"/>
+    <title>Part-Time Faculty, Speech</title>
+    <summary>Teach.</summary>
+  </entry>
+</feed>'''
+    company = {"name": "Valencia College", "slug": "valenciacollege",
+               "ats": "peopleadmin", "host": "valenciacollege.peopleadmin.com"}
+    net = ScriptedNet(lambda *_: feed)
+    result = run(peopleadmin.fetch(company, net))
+    assert result.complete and len(result.jobs) == 2
+    assert net.calls[0][1].endswith("/postings/all_jobs.atom")
+    job = result.jobs[0]
+    assert job.id == "peopleadmin:valenciacollege:43222"
+    assert job.location == "Kissimmee, FL (Osceola Campus)"
+    assert geo.local_distance(job.location) == 0.0
+    assert job.posted_at.startswith("2026-11-03") and job.description is None
+    assert result.jobs[1].location == "—"
+    with pytest.raises(peopleadmin.PeopleAdminError):
+        asyncio.run(peopleadmin.fetch(company, ScriptedNet(lambda *_: "<html>Sign in</html>")))

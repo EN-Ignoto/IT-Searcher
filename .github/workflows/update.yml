@@ -29,7 +29,8 @@ jobs:
     # by a Runner of type hosted") were a platform incident that no repo-side
     # setting prevents; recovery is handled by retry.yml instead.
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    # Full scans can exceed 45 minutes; allow collection, enrichment and Pages verification.
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0

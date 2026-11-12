@@ -1,1 +1,1 @@
-Full upstream repository copy with personal IT role profile; rebuild 2026-11-12T00:03Z
+Restart full IT scan after the 45-minute job timeout; allow 90 minutes.

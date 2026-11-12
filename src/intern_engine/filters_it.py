@@ -31,7 +31,7 @@ import re
 from . import filters, geo
 
 # Bump when a rule change should re-read every stored posting.
-VERSION = 1
+VERSION = 2
 
 LOCAL = "Local"
 NEARBY = "Nearby"
@@ -345,9 +345,11 @@ _IT_SIGNAL_RE = re.compile(
     r"workstations?|peripherals|operating\s+systems?|information\s+technology|\bmdm\b|"
     r"intune|\bsccm\b|password\s+resets?|remote\s+support", _I)
 
-_PART_TIME_RE = re.compile(r"\bpart[\s-]?time\b|\bPT\b|\bstudent\s+(?:assistant|worker|employee)\b|"
-                           r"\bwork[\s-]study\b|\bOPS\b")
-_FULL_TIME_RE = re.compile(r"\bfull[\s-]?time\b|\bFT\b")
+# Words match in any case; the abbreviations only in capitals ("PT", not "pt").
+_PART_TIME_RE = re.compile(
+    r"(?i:\bpart[\s-]?time\b|\bstudent\s+(?:assistant|worker|employee)\b|"
+    r"\bwork[\s-]study\b)|\bPT\b|\bOPS\b")
+_FULL_TIME_RE = re.compile(r"(?i:\bfull[\s-]?time\b)|\bFT\b")
 _TEMP_RE = re.compile(r"\b(temporary|temp|contract|seasonal|per\s+diem|on[\s-]call)\b", _I)
 _TYPE_STATEMENT_RE = re.compile(
     r"(?:employment\s+type|job\s+type|position\s+type|time\s+type|schedule|status|"
@@ -619,7 +621,7 @@ _REMOTE_WORD_RE = re.compile(
 _US_WIDE_RE = re.compile(
     r"\b(united\s+states|u\.s\.a?\.?|usa|us|nationwide|anywhere|north\s+america|"
     r"americas)\b", _I)
-_FLORIDA_RE = re.compile(r"\bflorida\b|\bFL\b")
+_FLORIDA_RE = re.compile(r"(?i:\bflorida\b)|\bFL\b")
 _STATE_NAME_RE = re.compile(
     r"\b(" + "|".join(s for s in filters._US_STATES if s != "florida") + r")\b", _I)
 _STATE_CODE_RE = re.compile(

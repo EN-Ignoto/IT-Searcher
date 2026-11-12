@@ -17,12 +17,13 @@ from ..models import (
     source_board_key,
 )
 from ..net import Net
+from ..terms import SEARCH_TERMS
 
 URL = "https://api.smartrecruiters.com/v1/companies/{slug}/postings"
 
 _PAGE_SIZE = 100
 _MAX_JOBS = 300
-_QUERIES = ("internship", "co-op", "student", "intern")
+_QUERIES = SEARCH_TERMS
 
 _COUNTRY = {
     "us": "United States", "ca": "Canada", "gb": "United Kingdom",

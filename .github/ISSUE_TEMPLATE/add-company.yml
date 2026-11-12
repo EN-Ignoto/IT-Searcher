@@ -1,5 +1,5 @@
 name: "➕ Add a company"
-description: A company that posts internships isn't being tracked.
+description: An employer that hires entry-level IT staff isn't being tracked.
 title: "[company] "
 labels: ["new-company"]
 body:

@@ -17,6 +17,7 @@ from ..models import (
     source_board_key,
 )
 from ..net import Net
+from ..terms import SEARCH_TERMS
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -27,7 +28,7 @@ HEADERS = {
 _PAGE_SIZE = 50
 _MAX_JOBS = 200  # per keyword
 # Like Workday, the keyword search is literal — "intern" alone drops co-ops.
-_KEYWORDS = ("internship", "co-op", "student", "intern")
+_KEYWORDS = SEARCH_TERMS
 
 _COUNTRIES = {
     "US": "United States", "USA": "United States", "CA": "Canada",

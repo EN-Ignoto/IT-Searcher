@@ -17,6 +17,7 @@ from ..models import (
     source_board_key,
 )
 from ..net import Net
+from ..terms import SINGLE_TERM
 
 # US state/territory codes, for expanding Amazon's "US, MA, Westboro" strings.
 _STATES = {
@@ -111,7 +112,7 @@ async def fetch(company: dict, net: Net) -> Fetch:
     complete = False
     incomplete_reason: str | None = None
     for offset in range(0, _MAX_JOBS, _PAGE_SIZE):
-        params = {"base_query": "intern", "result_limit": _PAGE_SIZE,
+        params = {"base_query": SINGLE_TERM, "result_limit": _PAGE_SIZE,
                   "offset": offset, "sort": "recent"}
         data = await net.get_json(URL, params=params)
         results = clean_listing(data, "jobs")

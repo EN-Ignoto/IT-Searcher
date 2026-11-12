@@ -1,804 +1,129 @@
-"""Render the public-facing README.md (the product) + a CSV tracker.
-
-Plain, professional, human voice. No decorative emojis. Sections are exactly the
-configured cycles, in order. Roles are sorted by their PUBLISHED date (newest on
-top), and that date is frozen per role so the page behaves like a ladder.
-"""
+"""Generate README.md and the CSV from the store."""
 
 from __future__ import annotations
 
 import csv
 import io
-import json
 import os
-from datetime import UTC, datetime, timedelta
-from urllib.parse import quote
 
-from . import (
-    config,
-    filters,
-    filters_secnet,
-    grouping,
-    h1b,
-    paths,
-    priority,
-    radar,
-    skills,
-    sponsorship,
-)
+from . import config, filters_it, geo, paths, view
 
-# Top-level track split: each person cares about one of these, and mixing
-# them under a shared cycle heading buried the split the two roles actually
-# care about (who reads which table) behind the split they don't (cycle).
-TRACK_ORDER = ("security", "network", "other")
-TRACK_TITLES = {
-    "security": "🔐 Security",
-    "network": "🌐 Network & Infrastructure",
-    "other": "🗂️ Other",
-}
+_ROW_CAP = 150
+_CSV_FIELDS = ("section", "miles", "title", "company", "location", "category",
+               "employment", "fit", "experience", "notes", "posted_at",
+               "first_seen_at", "source", "url")
 
 
-def _engine_metrics() -> str:
-    """One-line observability summary from the last run, if available."""
-    try:
-        with open(paths.STATS_PATH, encoding="utf-8") as f:
-            stats = json.load(f)
-    except (OSError, ValueError):
-        return ""
-    sources = len(stats.get("companies_by_source", {}))
-    total = stats.get("companies_total", 0)
-    ok = stats.get("fetched_ok", 0)
-    # Both denominators, because quoting only the attempted-boards rate reads as
-    # "we polled everything" when quarantined endpoints were never tried.
-    line = (
-        f"_Engine (last run): {ok:,} of {total:,} registered boards returned "
-        f"successfully across {sources} ATS platforms "
-        f"({int(stats.get('fetch_success_rate', 0) * 100)}% of boards attempted, "
-        f"{int(stats.get('fetch_success_rate_registry', 0) * 100)}% of the full "
-        f"registry) · completed in {stats.get('duration_seconds', 0)}s"
-    )
-    partial = stats.get("snapshots_partial")
-    if partial:
-        line += (
-            f" · {partial} board(s) returned a capped result set, so their roles "
-            "were not eligible to be closed this run"
-        )
-    coverage = stats.get("posted_date_coverage")
-    if coverage is not None:
-        line += f" · employer or source-derived date on {int(coverage * 100)}% of open roles"
-    return line + "._"
+def _cell(text) -> str:
+    return str(text or "").replace("|", "\\|").replace("\n", " ").strip()
 
 
-def _as_of(value: str | None = None) -> datetime:
-    try:
-        return datetime.strptime((value or "")[:19], "%Y-%m-%dT%H:%M:%S").replace(
-            tzinfo=UTC
-        )
-    except ValueError:
-        return datetime.now(UTC)
+def _row(record: dict, as_of) -> str:
+    new = "🆕 " if view.is_new(record, as_of) else ""
+    fit = view.FIT_LABEL.get(record.get("fit"), "")
+    experience = record.get("experience") or ""
+    notes = "; ".join(record.get("notes") or [])
+    detail = experience + (f" · {notes}" if notes else "")
+    return (f"| {new}[{_cell(record.get('title'))}]({record.get('url')}) "
+            f"| {_cell(record.get('company'))} | {_cell(view.where(record))} "
+            f"| {_cell(record.get('employment'))} | {fit} | {_cell(detail)} "
+            f"| {view.posted_label(record)} |")
 
 
-def _now_str(data_as_of: str | None = None) -> str:
-    return _as_of(data_as_of).strftime("%b %d, %Y at %H:%M UTC")
+def _csv_safe(value):
+    """Neutralize spreadsheet formula injection from third-party text."""
+    if isinstance(value, list):
+        value = "; ".join(str(v) for v in value)
+    if isinstance(value, str) and value[:1] in ("=", "+", "-", "@", "\t", "\r"):
+        return "'" + value
+    return "" if value is None else value
 
 
-def _md_cell(text: str) -> str:
-    return (text or "—").replace("|", "/").replace("\n", " ").strip() or "—"
-
-
-def _short_location(loc: str, limit: int = 40) -> str:
-    loc = _md_cell(loc)
-    if len(loc) <= limit:
-        return loc
-    parts = [p.strip() for p in loc.replace(";", ",").split(",") if p.strip()]
-    if len(parts) > 1:
-        return f"{parts[0]} +{len(parts) - 1} more"
-    return loc[: limit - 1].rstrip() + "…"
-
-
-def _date_str(record: dict) -> str:
-    """The published date string we sort/display by (frozen per role)."""
-    # Display only a REAL published date (no first_seen fallback) — undated -> dash.
-    return record.get("posted_at") or ""
-
-
-def _sort_key(record: dict):
-    # Dated roles first (newest), undated sink to the bottom; first_seen breaks
-    # ties so undated roles still have a stable, newest-first order.
-    return ((record.get("posted_at") or "")[:10], (record.get("first_seen_at") or "")[:19])
-
-
-def _pretty_date(record: dict) -> str:
-    iso = _date_str(record)
-    if not iso:
-        return "—"
-    try:
-        return datetime.strptime(iso[:10], "%Y-%m-%d").strftime("%b %d, %Y")
-    except ValueError:
-        return iso[:10]
-
-
-def _is_new(record: dict, hours: int = 48) -> bool:
-    # For a grouped row, "new" means any of its openings is new. The row's
-    # representative is the oldest member on purpose (stable id), so reading
-    # only its own first_seen would hide a requisition added this morning.
-    seen = (record.get("opening_newest") or record.get("first_seen_at") or "")[:19]
-    if not seen:
-        return False
-    try:
-        seen_dt = datetime.strptime(seen, "%Y-%m-%dT%H:%M:%S").replace(tzinfo=UTC)
-    except ValueError:
-        return False
-    return datetime.now(UTC) - seen_dt <= timedelta(hours=hours)
-
-
-REMOTE_MARK = "🆁"  # U+1F181 — a squared R, so it reads as a badge, not a word
-
-
-def _cells(record: dict) -> tuple[str, str, str, str, str, str, str]:
-    company = _md_cell(record.get("company"))
-    if h1b.badge(h1b.approvals_for(record.get("company") or "")):
-        company += " ✓"
-    # The remote mark sits beside the H-1B ✓ in the first column, where the eye
-    # already goes for row-level markers, instead of trailing a title that can
-    # run 60 characters. Every table row IS one role, so a per-role marker is
-    # unambiguous here — the legend says "this role", not "this company".
-    if filters.is_remote(record.get("location") or "", record.get("title") or ""):
-        company += f" {REMOTE_MARK}"
-    title = _md_cell(record.get("title"))
-    is_open = record.get("is_open", True)
-    badges = " ".join(
-        b for b in (sponsorship.flag(record.get("sponsorship")),
-                    "🆕" if _is_new(record) and is_open else "")
-        if b
-    )
-    if badges:
-        title = f"{title} {badges}"
-    # The employer opened this same job more than once. Say so on the row and
-    # link every requisition, rather than repeating the row N times.
-    openings = record.get("openings") or 1
-    if openings > 1:
-        title += f" _({openings} openings)_"
-    ordered_skills = skills.sort_by_signal(record.get("skills"), record.get("title"))[:4]
-    skill_tags = _md_cell(", ".join(ordered_skills)) if ordered_skills else "No skills listed"
-    url = record.get("url") or ""
-    apply = "Closed" if not is_open else (f"[Apply]({url})" if url else "—")
-    if is_open and url and openings > 1:
-        extra = [u for u in (record.get("opening_urls") or []) if u]
-        apply = " ".join(
-            [f"[Apply]({url})"]
-            + [f"[#{i + 2}]({u})" for i, u in enumerate(extra[:6])]
-        )
-    return (
-        company, title,
-        _md_cell(record.get("category")),
-        _short_location(record.get("location")),
-        skill_tags,
-        _pretty_date(record),
-        apply,
-    )
-
-
-def _row(record: dict, cycle: str | None = None) -> str:
-    company, title, category, location, skill_tags, posted, apply = _cells(record)
-    # A multi-cycle posting appears under each cycle it names. Naming the OTHER
-    # cycles here explains why the same title shows up twice — repeating this
-    # section's own cycle would just be noise.
-    others = [s for s in (record.get("seasons") or []) if s != cycle]
-    if len(record.get("seasons") or []) > 1 and others:
-        title += f" _(also open for {', '.join(others)})_"
-    return (f"| {company} | {title} | {category} | {location} | {skill_tags} | "
-            f"{posted} | {apply} |")
-
-
-def _rolling_row(record: dict) -> str:
-    """A row in the cycle-not-stated lane.
-
-    There is deliberately no "likely cycle" column any more. It used to print
-    `~Summer 2027`, which was a posting-date guess: checked against the live
-    postings it was confirmed 0 times out of 60 and contradicted every time it
-    could be checked. These rows now say what's true — nobody stated a cycle.
-    """
-    company, title, category, location, skill_tags, posted, apply = _cells(record)
-    return (f"| {company} | {title} | {category} | {location} | {skill_tags} | "
-            f"{posted} | {apply} |")
-
-
-def _region_label(cfg: dict) -> str:
-    if not config.restrict_region(cfg):
-        return "Worldwide"
-    parts = []
-    if config.want_us(cfg):
-        parts.append("United States")
-    if config.want_canada(cfg):
-        parts.append("Canada")
-    return " & ".join(parts) if parts else "United States"
-
-
-def _company_count() -> tuple[int, int]:
-    """(board endpoints, unique employers).
-
-    They differ — a company with two ATS accounts is two endpoints — and
-    calling the endpoint count "companies" overstated the employer reach by
-    ~85. Both numbers are real; they just answer different questions.
-    """
-    try:
-        with open(paths.COMPANIES_PATH, encoding="utf-8") as f:
-            companies = json.load(f)
-    except (OSError, ValueError):
-        return 0, 0
-    return len(companies), len({(c.get("name") or "").strip().lower() for c in companies})
-
-
-def _header(cfg: dict, total_open: int, companies: int, new_week: int,
-            employers: int | None = None,
-            shown: int | None = None, stated: int | None = None,
-            inferred: int | None = None,
-            data_as_of: str | None = None,
-            has_radar: bool = True) -> list[str]:
-    """The README's opening block.
-
-    `total_open` is every open role (what the API and dashboard report); `shown`
-    is how many survived the per-company cap in these tables. They differ, and
-    the page used to print only the smaller one under the same wording as the
-    API's larger one — so the two disagreed with no way to tell which was real.
-
-    `stated` / `inferred` split the total by cycle EVIDENCE. Leading with that
-    split is the whole pitch: a smaller number you can trust beats a bigger one
-    that quietly includes 46% guesses.
-
-    `has_radar` says whether the Drop Radar section will actually be rendered
-    below. The pitch table links to its anchor, so advertising it when the
-    section is absent leaves a link that scrolls nowhere.
-    """
-    count_phrase = f"{total_open} open roles"
-    if shown is not None and shown != total_open:
-        count_phrase = f"{total_open} open roles ({shown} listed below)"
-    region = _region_label(cfg)
-    cycles = config.cycles(cfg)
-    cycles_phrase = " and ".join(cycles)
-    pages = config.pages_base()
-
-    repo = config.repo_slug()
-    stats_url = quote(f"{pages}/api/stats.json", safe="")
-    # The masthead is centered HTML: GitHub renders it, and it gives the page a
-    # real header block instead of a left-aligned pile of bold lines. Markdown
-    # inside needs the blank lines around it to keep parsing as markdown.
-    return [
-        '<div align="center">',
-        "",
-        "# 🔐 Summer 2027 Security & Networking Internships",
-        "",
-        "**A self-updating engine that tracks security, networking, and "
-        "infrastructure internships so you don't have to.**",
-        "",
-        f"[![CI](https://img.shields.io/github/actions/workflow/status/{repo}/ci.yml"
-        f"?branch=main&label=tests&style=flat-square&color=3fb950)]"
-        f"(https://github.com/{repo}/actions/workflows/ci.yml)&nbsp;"
-        f"[![Open roles](https://img.shields.io/badge/dynamic/json?label=open%20roles"
-        f"&query=open_total&url={stats_url}&color=2f81f7&style=flat-square)]({pages}/)&nbsp;"
-        "![Updates](https://img.shields.io/badge/updates-every%203%20hours-3fb950"
-        "?style=flat-square)&nbsp;"
-        f"[![RSS](https://img.shields.io/badge/RSS-subscribe-e67e22?style=flat-square)]"
-        f"({pages}/feed.xml)",
-        "",
-        f"### {count_phrase} · {new_week} new this week",
-        "",
-        f"{(employers or companies):,} employers tracked · data as of "
-        f"{_now_str(data_as_of)}",
-        "",
-        (f"_{stated} have a cycle the employer stated · {inferred} are recent "
-         "postings whose cycle isn't stated (listed separately, never mixed in)._"
-         if stated is not None and inferred is not None else ""),
-        "",
-        f"**[🖥️ Live dashboard]({pages}/)** · "
-        f"**[📡 RSS]({pages}/feed.xml)** · "
-        f"**[⚙️ JSON API]({pages}/api/jobs.json)**",
-        "",
-        "</div>",
-        "",
-        "This is my version of an open-source internship tracker, filtered to "
-        "security, networking, and infrastructure roles. It reads company hiring "
-        "feeds every 3 hours and keeps one list with the newest roles on top. "
-        f"Browse and search it on the [live dashboard]({pages}/).",
-        "",
-        "---",
-        "",
-        "## What this is",
-        "",
-        "This is an engine, not a hand-kept list. It polls company career feeds "
-        "every 3 hours, finds the internships, removes duplicates, and "
-        "rebuilds this page on its own.",
-        "",
-        "Every link comes straight from the employer's own job board, so it "
-        "points to a live posting.",
-        "",
-        "## What makes this different",
-        "",
-        # A table, not a bullet list: each row leads with the claim in the left
-        # column so the section can be SKIMMED. As paragraphs these ran four
-        # lines each and the distinguishing word was buried mid-sentence.
-        "| | |",
-        "|---|---|",
-        *(["| 📅 **[Drop Radar](#drop-radar)** | A forecast of **what's coming**. "
-           "Each marquee company's typical opening window, replaced by the real "
-           "drop date the moment the engine catches it live. Windows are estimates "
-           "and labelled as such; only dates the engine saw itself are marked "
-           "verified. |"] if has_radar else []),
-        "| 🛂 **Visa intel, computed** | 🇺🇸 / 🛂 flags detected automatically from "
-        "every job description, plus ✓ for employers with a real H-1B track "
-        "record (USCIS data, FY2022-23: a history, not a promise). The big "
-        "lists crowdsource this by hand; here it's code. Most postings say "
-        "nothing either way, and those show as unknown rather than guessed. |",
-        "| 📆 **A real date on nearly every role** | Taken from the job portal "
-        "itself wherever the portal states one, so newest-first actually means "
-        "newest. The exact coverage figure is printed at the bottom of this "
-        "page every run. |",
-        "| 🧰 **Skill tags + pay, extracted** | Every posting's text is scanned "
-        "for the stack it wants (Python, C++, PyTorch, …) and the pay it "
-        f"states, searchable on the [dashboard]({pages}/), and included in the "
-        "CSV and API. |",
-        f"| ⚙️ **An engine, not a spreadsheet** | {companies:,} job-board "
-        f"endpoints ({(employers or companies):,} distinct employers; some run "
-        "more than one board) polled every 3 hours across 12 ATS platforms. "
-        "Full source and tests in this repo. |",
-        "",
-        "## Scope",
-        "",
-        "| | |",
-        "|---|---|",
-        "| **Roles** | Cybersecurity, network engineering, systems/infrastructure, "
-        "and IT operations internships |",
-        f"| **Region** | {region}"
-        + (" (primary), with a separate International section"
-           if config.include_international(cfg) else "")
-        + " |",
-        f"| **Cycles** | {cycles_phrase} |",
-        "",
-        "## About",
-        "",
-        "This tracks security and networking internships specifically, because "
-        "the major community internship lists filter on software-engineering "
-        "titles and silently discard roles like \"Network Engineer Intern\", "
-        "\"SOC Analyst Intern\", and \"GRC Intern\". Built on zshah101's engine "
-        "with a replacement classifier tuned for these titles.",
-        "",
-        "## How to use",
-        "",
-        # Collapsed by default: it's a reference legend, and expanded it pushed
-        # the first actual role most of a screen further down.
-        "<details>",
-        "<summary><b>Reading the table: flags, dates, and the cycle split</b>"
-        " (click to expand)</summary>",
-        "",
-        "- Roles are grouped by cycle below - **newest posting on top, oldest at the bottom.**",
-        "- A cycle section holds only roles whose **employer stated that cycle** - "
-        "in the title, or in the posting's own text. Postings that name no cycle "
-        "anywhere are in *Recently posted — cycle not stated* further down, with "
-        "**no cycle guessed for them**. Same quality bar, different amount of "
-        "evidence.",
-        "- The **Posted** column is the date the company published the role.",
-        "- **_(3 openings)_ after a role title** = the employer has that many "
-        "separate live requisitions for the same job, in the same place, for "
-        "the same cycle. They're all real and each takes its own application, "
-        "so they're linked individually (**Apply**, then **#2**, **#3**) "
-        "instead of repeating the row. Counts still count requisitions, and "
-        "the CSV export is never grouped.",
-        f"- **{REMOTE_MARK} after a company name** = **this role is remote**: "
-        "the posting's own location or title says so. It marks the role on that "
-        "row, not the whole company.",
-        "- **Flags after a role title:** 🇺🇸 = requires U.S. citizenship or a "
-        "security clearance · 🛂 = the posting says it won't sponsor a work "
-        "visa · 🆕 = spotted in the last 48 hours. Sponsorship flags are "
-        "detected automatically from each job description - treat them as a "
-        "strong hint and confirm on the posting.",
-        f"- **✓ after a company name** = a real H-1B track record: USCIS approved "
-        f"{h1b.BADGE_THRESHOLD}+ petitions for that employer in "
-        f"{h1b.window_label() or 'recent fiscal years'} (matched automatically "
-        "against the official [H-1B Employer Data Hub]"
-        "(https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub)). "
-        "No ✓ doesn't mean they won't sponsor - it means we can't prove they have.",
-        "- Track your applications with [`data/internships.csv`](data/internships.csv) "
-        "(opens in Excel / Google Sheets).",
-        "- Missing a company? Adding one takes a single line, see "
-        "[CONTRIBUTING.md](CONTRIBUTING.md).",
-        "",
-        "</details>",
-        "",
-        "---",
-        "",
-    ]
-
-
-def _footer() -> list[str]:
-    return [
-        "---",
-        "",
-        "## Hiring timeline",
-        "",
-        "Internships posted per week, from each role's real published date - "
-        "redrawn automatically on every run. When this line takes off, "
-        "recruiting season is open:",
-        "",
-        "<picture>",
-        '  <source media="(prefers-color-scheme: dark)" srcset="docs/trends-dark.svg">',
-        '  <img alt="Internships posted per week, drawn from real published dates" '
-        'src="docs/trends-light.svg">',
-        "</picture>",
-        "",
-        "## How it stays current",
-        "",
-        "A small Python engine reads public company hiring feeds directly, keeps the "
-        "roles that match the scope above, de-duplicates across sources, records each "
-        "role's published date once (so it never shifts), and regenerates this page "
-        "through GitHub Actions. It polls every company concurrently (async) with "
-        "retry/backoff and per-host rate limits. The full source is in this repo.",
-        "",
-        _engine_metrics(),
-        "",
-        "## How this list is built",
-        "",
-        "[METHODOLOGY.md](METHODOLOGY.md) documents exactly what every label "
-        "claims: what separates a stated cycle from an inferred one, what the ✓ "
-        "H-1B badge does and doesn't mean, how a role gets closed, and which "
-        "limitations are known. Anything on this page that doesn't match the "
-        "code is a bug worth reporting.",
-        "",
-        "## Contributing",
-        "",
-        "Adding a company takes one line, see [CONTRIBUTING.md](CONTRIBUTING.md), "
-        "or just [open a request](../../issues/new?template=add-company.yml) with "
-        "the board URL. **Spotted something wrong?** "
-        "[Report the exact field](../../issues/new?template=wrong-data.yml): "
-        "wrong country, wrong cycle, closed role, bad sponsorship flag. Those "
-        "reports usually fix a rule, which fixes every other role too.",
-        "",
-        "Also here: [SECURITY.md](SECURITY.md) · "
-        "[ARCHITECTURE.md](ARCHITECTURE.md) · [MIT licensed](LICENSE).",
-        "",
-        "Built by one student with AI assistance, in the open. The part that "
-        "matters isn't who typed it. It's that the rules, the tests, and every "
-        "run's output are all public and checkable.",
-        "",
-        "## Note on dates",
-        "",
-        "The **Posted** column shows when a role was published, with the newest at the "
-        "top. I pull the posting date straight from each job portal, but a lot of them "
-        "don't expose one publicly, so those rows show a dash (—) for now instead of a "
-        "guessed date. The ones that do publish a date are dated. Know the real date for "
-        "a dashed role? Open a PR and I'll merge it.",
-        "",
-        "Roles can close at any time, so always confirm on the company's own site before "
-        "applying.",
-        "",
-        "---",
-        "",
-        "Derived from [zshah101/Automated-List-Of-Summer-2027-and-Fall-2026-Tech-"
-        "Internships](https://github.com/zshah101/Automated-List-Of-Summer-2027-"
-        "and-Fall-2026-Tech-Internships) (MIT), with a replacement filter module "
-        "for security and networking titles.",
-        "",
-    ]
-
-
-def _select(rows: list[dict], limit, per_company) -> list[dict]:
-    """Pick which rows to show, then order them newest-first for display.
-
-    1) cap each company to `per_company` (variety, newest kept),
-    2) if still over `limit`, keep the most sought-after companies first,
-    3) display newest on top.
-    """
-    rows = sorted(rows, key=_sort_key, reverse=True)
-    if per_company:
-        seen: dict[str, int] = {}
-        capped = []
-        for r in rows:
-            c = (r.get("company") or "").strip().lower()
-            if seen.get(c, 0) >= per_company:
-                continue
-            seen[c] = seen.get(c, 0) + 1
-            capped.append(r)
-        rows = capped
-    if limit and len(rows) > limit:
-        rows = sorted(rows, key=lambda r: priority.rank(r.get("company")))[:limit]
-    return sorted(rows, key=lambda r: _date_str(r)[:10], reverse=True)
-
-
-def _region_of(record: dict) -> str:
-    return "US" if filters.is_united_states(record.get("location") or "") else "International"
-
-
-def _new_this_week(open_jobs: list[dict], data_as_of: str | None = None) -> int:
-    cutoff = (_as_of(data_as_of) - timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%S")
-    return sum(1 for r in open_jobs if (r.get("first_seen_at") or "") >= cutoff)
-
-
-def _radar_section(store_data: dict, cycle: str, cap: int = 30,
-                   data_as_of: str | None = None) -> list[str]:
-    """The Drop Radar: which companies haven't posted yet, and when to expect
-    them — from the engine's own observed dates + hand-verified opening windows.
-
-    The README teaser leads with the FORECAST (waiting, soonest first) — that's
-    the radar's unique value; "open now" rows just echo the list above — then
-    shows a few recent drops as proof the forecast is real. The dashboard keeps
-    the full, searchable list."""
-    rows = radar.rows(store_data, cycle, today=_as_of(data_as_of).date())
-    if not rows:
-        return []
-    waiting = [r for r in rows if r["status"] == "waiting" and radar.is_actionable(r)]
-    opened = [r for r in rows if r["status"] == "open"]
-    dropped = [r for r in rows if r["status"] == "dropped"]
-    # Nothing waiting and nothing dropped means there is no forecast to give —
-    # every row would be an "open now" echo of the tables above. That's the
-    # state with no hand-seeded windows and no observed drop date to project
-    # from, and an empty promise reads worse than no section. The radar comes
-    # back on its own once the engine records a real drop date for a company.
-    if not waiting and not dropped:
-        return []
-    # Forecast first (what to watch for), then a handful of recent drops as proof.
-    ordered = waiting + opened[:8] + dropped[:4]
-
-    pages = config.pages_base()
-    verified = sum(1 for r in rows if r.get("source") == "engine")
-    lines = [
-        '<a id="drop-radar"></a>',
-        "",
-        f"## 📅 Drop Radar: when companies usually post for {cycle}",
-        "",
-        "Stop refreshing career pages. 🎯 = the employer's **own posted date**, "
-        "read from their careers API. (We may have discovered the role after it "
-        "went live. The date is the employer's, not our discovery time.) "
-        "The rest are typical opening "
-        "**months**, hand-checked against each company's careers page and "
-        "public recruiting guides. ✅ = already live in the list above.",
-        "",
-        "> **Heads up:** companies trend *earlier* every cycle, and \"~Aug\" is a "
-        "month, not a day. Treat \"expected\" as when to **start watching**, and "
-        "\"rolling\" companies as worth checking year-round.",
-        "",
-        "| Company | Typical opening | Expected this cycle | Status |",
-        "|---|---|---|---|",
-    ]
-    for r in ordered[:cap]:
-        if r["status"] == "open":
-            status = f"✅ [open now]({r['url']})" if r["url"] else "✅ open now"
-        elif r["status"] == "dropped":
-            status = "🗓️ dropped"
-        else:
-            status = "⏳ waiting"
-        mark = "🎯 " if r.get("source") == "engine" else ""
-        lines.append(
-            f"| {mark}{_md_cell(r['company'])} | {radar.pretty_last(r)} | "
-            f"{radar.pretty_expected(r)} | {status} |"
-        )
-    verified_note = (f"**{verified}** dated from our own live observations 🎯 "
-                     "(this grows every cycle). " if verified else "")
-    lines.extend([
-        "",
-        f"_{len(rows)} companies on the [full radar]({pages}/#radar). {verified_note}"
-        "\"~Aug\" = hand-verified typical month, not a promise of the day; "
-        "\"rolling\" = posts year-round; \"waiting\" = not seen in our tracked "
-        "feeds yet, not a guarantee it isn't out somewhere else._",
-        "",
-    ])
-    return lines
-
-
-def _closed_section(store_data: dict, cycles: list[str],
-                    days: int = 14, cap: int = 40,
-                    data_as_of: str | None = None) -> list[str]:
-    """Roles that recently closed, kept visible (collapsed) so nobody wastes an
-    application on a listing that just died. Only tracked cycles appear here —
-    an off-cycle tombstone (text-verified "Summer 2026") was never on the list,
-    so it has no business in its obituary either."""
-    cutoff = (_as_of(data_as_of) - timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%S")
-    closed = [
-        r for r in store_data.values()
-        if not r.get("is_open") and (r.get("closed_at") or "") >= cutoff
-        and r.get("season") in cycles
-    ]
-    if not closed:
-        return []
-    closed.sort(key=lambda r: r.get("closed_at") or "", reverse=True)
-    closed = closed[:cap]
-    lines = [
-        "<details>",
-        f"<summary><strong>Recently closed</strong>: {len(closed)} roles that "
-        f"left the list in the last {days} days</summary>",
-        "",
-        "_Why each one left is in the last column, because the two reasons carry "
-        "different evidence. **Gone from feed** = two consecutive complete reads "
-        "of the employer's board no longer returned it (strong, but not the "
-        "employer telling us directly). **Out of scope** = still posted, but it no longer "
-        "passes our filters. That's our call, not theirs. **Not recorded** = closed "
-        "before we started tracking the reason._",
-        "",
-        "| Company | Role | Cycle | Closed | Why |",
-        "|---|---|---|---|---|",
-    ]
-    _WHY = {
-        "gone-from-feed": "gone from feed",
-        "out-of-scope": "out of scope",
-    }
-    for r in closed:
-        closed_on = (r.get("closed_at") or "")[:10]
-        why = _WHY.get(r.get("closed_reason"), "not recorded")
-        lines.append(
-            f"| {_md_cell(r.get('company'))} | {_md_cell(r.get('title'))} "
-            f"| {_md_cell(r.get('season'))} | {closed_on} | {why} |"
-        )
-    lines.extend(["", "</details>", ""])
-    return lines
+def write_csv(rows: list[dict]) -> None:
+    buffer = io.StringIO(newline="")
+    writer = csv.writer(buffer, lineterminator="\n")
+    writer.writerow(_CSV_FIELDS)
+    for record in rows:
+        writer.writerow([_csv_safe(record.get(f)) for f in _CSV_FIELDS])
+    for target in (paths.CSV_PATH, os.path.join(paths.DOCS_DIR, "jobs.csv")):
+        os.makedirs(os.path.dirname(target), exist_ok=True)
+        with open(target, "w", encoding="utf-8", newline="") as f:
+            f.write(buffer.getvalue())
 
 
 def generate(store_data: dict, data_as_of: str | None = None) -> dict:
     cfg = config.load_config()
-    cycles = config.cycles(cfg)
-    per_company = config.max_per_company(cfg)
+    as_of = view.parse_ts(data_as_of) or view.parse_ts("1970-01-01T00:00:00Z")
+    sections = view.open_by_section(store_data)
+    total = sum(len(v) for v in sections.values())
+    site = config.pages_base()
+    radii = {"local": cfg["local_radius_miles"], "nearby": cfg["nearby_radius_miles"]}
 
-    open_jobs = [r for r in store_data.values() if r.get("is_open")]
-    # The honesty split. A cycle section is a claim ("this role is for Summer
-    # 2027"), so it may only contain roles whose employer actually SAID so.
-    # Date-inferred roles are real, recent, worth applying to — but their cycle
-    # is our guess, and mixing them in presented 46% of the list with more
-    # certainty than the evidence supports. They get their own lane below.
-    stated = [r for r in open_jobs if not r.get("season_inferred")]
-    inferred = [r for r in open_jobs if r.get("season_inferred")]
-
-    groups: dict[tuple[str, str], list[dict]] = {}
-    for r in stated:
-        # A multi-cycle posting ("Fall 2026/Summer 2027") belongs in EVERY
-        # cycle it states — that's the point of keeping the full set.
-        for cyc in (r.get("seasons") or [r.get("season", "")]):
-            groups.setdefault((_region_of(r), cyc), []).append(r)
-
-    sections: list[tuple[str, str, list[dict]]] = []
-    displayed: list[dict] = []
-    seen_display: set[str] = set()
-    for region in ("US", "International"):
-        for cycle in cycles:
-            # Group BEFORE selecting, so an employer that opened one job eight
-            # times spends one row of the per-company budget instead of eight —
-            # the cap exists for variety, and eight copies of one title is the
-            # opposite of variety.
-            rows = _select(
-                grouping.group(groups.get((region, cycle)) or []),
-                config.section_limit(cfg, cycle),
-                per_company,
-            )
-            if rows:
-                heading = cycle if region == "US" else f"{cycle} (International)"
-                sections.append((heading, cycle, rows))
-                for r in rows:
-                    if r.get("id") not in seen_display:
-                        seen_display.add(r.get("id"))
-                        displayed.append(r)
-
-    rolling_rows = _select(grouping.group(inferred), None, per_company)
-    # Count OPENINGS, not rows: a row that says "3 openings" has put three of
-    # the total on the page, and "165 open roles (158 listed below)" would
-    # otherwise under-report what a reader can actually reach.
-    shown_total = sum(
-        r.get("openings") or 1 for r in (*displayed, *rolling_rows)
-    )
-
-    endpoints, employers = _company_count()
-    # Built before the header so the pitch table only advertises the radar when
-    # the radar is actually going to be there to link to.
-    radar_lines = _radar_section(store_data, cycles[0], data_as_of=data_as_of)
-    lines = _header(cfg, len(open_jobs), endpoints,
-                    _new_this_week(open_jobs, data_as_of), employers=employers,
-                    shown=shown_total, stated=len(stated), inferred=len(inferred),
-                    data_as_of=data_as_of, has_radar=bool(radar_lines))
-    
-    for track in TRACK_ORDER:
-        track_sections = [
-            (heading, cycle,
-             [r for r in rows
-              if track in filters_secnet.tracks_of(r.get("title") or "")])
-            for heading, cycle, rows in sections
-        ]
-        track_sections = [(h, c, r) for h, c, r in track_sections if r]
-        track_rolling = [
-            r for r in rolling_rows
-            if track in filters_secnet.tracks_of(r.get("title") or "")
-        ]
-        if not track_sections and not track_rolling:
-            continue
-
-        lines.append(f"## {TRACK_TITLES[track]}")
-        lines.append("")
-
-        for heading, cycle, rows in track_sections:
-            lines.append(f"### {heading}  ({len(rows)} employer-stated)")
-            lines.append("")
-            lines.append("| Company | Role | Category | Location | Skills | Posted | Apply |")
-            lines.append("|---|---|---|---|---|---|---|")
-            lines.extend(_row(r, cycle) for r in rows)
-            lines.append("")
-
-        if track_rolling:
-            lines.extend([
-                f"### Recently posted — cycle not stated  ({len(track_rolling)} roles)",
-                "",
-                "These postings never name a cycle, not in the title and not in the "
-                "posting text, so neither do we. They're recent tech internships "
-                "(posted within the last few weeks), often exactly the early drops "
-                "worth applying to first; we just can't tell you which cycle "
-                "they're for, and we'd rather say so than guess. The moment a "
-                "posting's own text states a cycle, the role moves up into that "
-                "section automatically.",
-                "",
-                "| Company | Role | Category | Location | Skills | Posted | Apply |",
-                "|---|---|---|---|---|---|---|",
-            ])
-            lines.extend(_rolling_row(r) for r in track_rolling)
-            lines.append("")
-
-    if not displayed and not rolling_rows:
-        lines.append(
-            "_No matching roles right now, the list fills as companies post. "
-            "Star it and check back._"
-        )
-        lines.append("")
-
-    lines.extend(radar_lines)
-    lines.extend(_closed_section(store_data, cycles, data_as_of=data_as_of))
-    lines.extend(_footer())
-
-    with open(paths.README_PATH, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
-
-    # The CSV is the machine-readable export: EVERY open role belongs in it,
-    # not just the rows that survived the README's per-company display cap.
-    _write_csv(sorted(open_jobs, key=lambda r: _date_str(r)[:10], reverse=True))
-
-    return {"open": shown_total, "companies": employers}
-
-
-
-def _csv_safe(value):
-    """Neutralize spreadsheet formula injection.
-
-    Excel, Sheets and LibreOffice all execute a cell that opens with =, +, -
-    or @. Job titles and company names come from third parties, so a posting
-    titled `=HYPERLINK(...)` would run in the spreadsheet of anyone who opened
-    our CSV. Prefixing an apostrophe makes the cell inert text; nothing is lost
-    for ordinary values, which never start with those characters.
-    """
-    if isinstance(value, str) and value[:1] in ("=", "+", "-", "@", "\t", "\r"):
-        return "'" + value
-    return value
-
-
-def _write_csv(open_jobs: list[dict]) -> None:
-    fields = [
-        "id", "company", "title", "season", "season_inferred", "seasons", "program",
-        "remote", "category", "location", "sponsorship", "h1b_approvals",
-        "salary", "skills", "posted_at", "posted_at_source", "first_seen_at",
-        "url",
+    lines = [
+        "# IT Searcher",
+        "",
+        f"Entry-level IT jobs and paid IT internships near **{geo.HOME_NAME}**, plus remote "
+        "roles open to Florida residents. Rebuilt automatically from employers' own "
+        "postings; every link goes to the posting itself.",
+        "",
+        f"**[Open the live list →]({site}/)** · [CSV]({site}/jobs.csv) · "
+        f"[JSON]({site}/api/jobs.json) · [Feed]({site}/feed.xml)",
+        "",
+        f"_Data as of {as_of.strftime('%b %d, %Y %H:%M UTC')} · {total} open roles: "
+        + ", ".join(f"{len(sections[name])} {name.lower()}" for name in filters_it.SECTIONS)
+        + "._",
+        "",
+        "This project only finds and lists jobs. It never applies, submits forms, or "
+        "contacts employers on your behalf.",
+        "",
+        "## Who the list is for",
+        "",
+        "Someone starting in IT: Network+ and Security+, customer-service experience, "
+        "studying computer science, no professional IT experience yet. A role is listed "
+        "when its title is an entry path into IT (help desk, desktop support, IT "
+        "technician, junior network/systems/security work, paid IT internships), it is "
+        "not senior, and the posting's own text does not *require* experience a beginner "
+        "lacks. \"Preferred\" experience never excludes a role; it is shown as a note.",
+        "",
+        "- **Beginner-friendly**: nothing in the posting requires IT experience.",
+        "- **Stretch**: about a year is required, a requirement may be met by education "
+        "or certifications, or the title is a level II.",
+        "- **Check requirements**: the posting text could not be read; open it before "
+        "applying.",
+        "",
     ]
-    buffer = io.StringIO()
-    # Keep committed exports byte-stable on Windows and Linux. CSV consumers
-    # accept LF, and it avoids all rows changing under core.autocrlf.
-    writer = csv.DictWriter(buffer, fieldnames=fields, extrasaction="ignore",
-                            lineterminator="\n")
-    writer.writeheader()
-    for r in open_jobs:
-        row = {k: r.get(k, "") for k in fields}
-        row["h1b_approvals"] = h1b.approvals_for(r.get("company") or "") or ""
-        row["skills"] = "; ".join(r.get("skills") or [])
-        row["seasons"] = "; ".join(r.get("seasons") or [])
-        row["program"] = filters.program_type(r.get("title") or "")
-        row["remote"] = "yes" if filters.is_remote(
-            r.get("location") or "", r.get("title") or "") else ""
-        writer.writerow({k: _csv_safe(v) for k, v in row.items()})
-
-    # Written twice: data/ is the repo tracker people clone, docs/ is what
-    # GitHub Pages serves — the dashboard links to the latter, and without the
-    # copy that link 404s.
-    text = buffer.getvalue()
-    os.makedirs(paths.DOCS_DIR, exist_ok=True)
-    for target in (paths.CSV_PATH, os.path.join(paths.DOCS_DIR, "internships.csv")):
-        with open(target, "w", newline="", encoding="utf-8") as f:
-            f.write(text)
+    for name in filters_it.SECTIONS:
+        rows = sections[name]
+        lines += [f"## {name} ({len(rows)})", "",
+                  f"_{view.SECTION_BLURB[name].format(**radii)}._", ""]
+        if not rows:
+            lines += ["No open roles right now.", ""]
+            continue
+        lines += ["| Role | Employer | Where | Type | Fit | What the posting says | Posted |",
+                  "|---|---|---|---|---|---|---|"]
+        lines += [_row(r, as_of) for r in rows[:_ROW_CAP]]
+        if len(rows) > _ROW_CAP:
+            lines.append(f"\n_{len(rows) - _ROW_CAP} more on the [live list]({site}/)._")
+        lines.append("")
+    lines += [
+        "## How it works",
+        "",
+        "- **Local sources, every 30 minutes**: the National Labor Exchange (NLx) within "
+        "50 miles of Kissimmee, eleven city and county governments on GovernmentJobs, the "
+        "School District of Osceola County, UCF and the City of Orlando.",
+        "- **Nationwide sweep, every 6 hours**: about 5,400 employer job boards, which is "
+        "where the remote roles come from.",
+        "- Roles that were considered and dropped are logged with the reason in "
+        "[`data/rejected.jsonl`](data/rejected.jsonl).",
+        "- A role is marked closed only after it is missing from two complete readings "
+        "of its board in a row.",
+        "",
+        "See [METHODOLOGY.md](METHODOLOGY.md) for the rules and "
+        "[ARCHITECTURE.md](ARCHITECTURE.md) for the code.",
+        "",
+    ]
+    os.makedirs(os.path.dirname(paths.README_PATH), exist_ok=True)
+    with open(paths.README_PATH, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(lines))
+    write_csv(view.open_jobs(store_data))
+    return {"open": total, **{name: len(sections[name]) for name in filters_it.SECTIONS}}

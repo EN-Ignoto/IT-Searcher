@@ -17,6 +17,7 @@ from ..models import (
     source_board_key,
 )
 from ..net import Net
+from ..terms import SINGLE_TERM
 
 URL = "https://apply.workable.com/api/v3/accounts/{slug}/jobs"
 
@@ -63,7 +64,7 @@ async def fetch(company: dict, net: Net) -> Fetch:
     token = None
     seen_tokens: set[str] = set()
     for _ in range(_MAX_PAGES):
-        body: dict = {"query": "intern", "location": [], "department": [],
+        body: dict = {"query": SINGLE_TERM, "location": [], "department": [],
                       "worktype": [], "remote": []}
         if token:
             body["token"] = token

@@ -6,6 +6,8 @@ schema-to-Job mapping for every source without hitting the internet.
 
 import asyncio
 
+import pytest
+
 from intern_engine.connectors import (
     amazon,
     ashby,
@@ -28,6 +30,19 @@ from intern_engine.models import (
     Fetch,
     Job,
 )
+
+
+@pytest.fixture(autouse=True)
+def _legacy_search_terms(monkeypatch):
+    """These tests script exact page sequences per search term. They exercise
+    pagination and completeness, not which words are searched, so pin the
+    term lists they were written against."""
+    monkeypatch.setattr(workday, "_SEARCH_TERMS", ("intern", "co-op"))
+    monkeypatch.setattr(icims, "_SEARCH_TERMS", ("intern", "co-op"))
+    monkeypatch.setattr(oracle, "_KEYWORDS", ("internship", "co-op", "student", "intern"))
+    monkeypatch.setattr(smartrecruiters, "_QUERIES",
+                        ("internship", "co-op", "student", "intern"))
+
 
 
 class FakeNet:

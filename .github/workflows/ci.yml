@@ -10,11 +10,9 @@ on:
       - "run.py"
       - "tools/**"
       - "requirements*.txt"
-      - "db/**"
       - "data/config.json"
-      - "data/blocklist.json"
+      - "data/local_sources.json"
       - "data/candidates.json"
-      - "data/known_windows.json"
       # The lint config lives in pyproject.toml; watching a ruff.toml that
       # doesn't exist meant config changes never triggered CI.
       - "pyproject.toml"

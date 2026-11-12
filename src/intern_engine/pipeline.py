@@ -1,11 +1,19 @@
-"""The watcher + spotter.
+"""One run: fetch boards, keep what a beginner can apply to, record the rest.
 
-One async pass per run: quarantine-check every tracked company (circuit
-breaker), fetch the healthy ones concurrently (global + per-host concurrency
-caps), normalize into one shape, keep the roles that match the configured
-scope, de-duplicate across sources, enrich the keepers with posting text
-(sponsorship classification + date backfill), merge into the store (detecting
-what's new and what closed), and record run metrics + a history line.
+    fetch      every board in scope, concurrently, failures isolated
+    title      is this an entry path into IT, and not senior?  (filters_it)
+    place      within 50 miles of Kissimmee, or remote and open to Florida?
+    read       the posting's own text — fetched only for roles that got this far
+    assess     does it REQUIRE experience a beginner lacks?       (filters_it)
+    store      first-seen / closed tracking, two-miss closure rule (store)
+
+Two scopes share this code. `local` reads only data/local_sources.json — a
+dozen Central Florida boards, cheap enough for every half hour. `full` adds
+the nationwide registry (data/companies.json), which is where remote roles
+come from, and runs a few times a day.
+
+A board only ever closes roles on the boards that were read this run, so a
+local run never touches what the last full sweep found.
 """
 
 from __future__ import annotations
@@ -13,8 +21,6 @@ from __future__ import annotations
 import asyncio
 import json
 import os
-import re
-import statistics
 import time
 from collections import Counter
 from dataclasses import asdict
@@ -22,22 +28,7 @@ from datetime import UTC, datetime, timedelta
 
 import httpx
 
-from . import (
-    config,
-    enrich,
-    filters,
-    filters_secnet,
-    health,
-    models,
-    names,
-    observe,
-    paths,
-    quality,
-    registry,
-    sponsorship,
-    store,
-    trends,
-)
+from . import config, enrich, filters_it, geo, health, models, paths, registry, store
 from .connectors import (
     amazon,
     ashby,
@@ -46,13 +37,17 @@ from .connectors import (
     greenhouse,
     icims,
     lever,
+    neogov,
+    nlx,
     oracle,
+    paradox,
     recruitee,
     rippling,
     smartrecruiters,
     workable,
     workday,
 )
+from .dedup import dedup
 from .net import HostLimiter, Net
 
 CONNECTORS = {
@@ -69,101 +64,86 @@ CONNECTORS = {
     "breezy": breezy.fetch,
     "recruitee": recruitee.fetch,
     "eightfold": eightfold.fetch,
+    "nlx": nlx.fetch,
+    "neogov": neogov.fetch,
+    "paradox": paradox.fetch,
 }
 
+SCOPES = ("local", "full")
 GLOBAL_CONCURRENCY = 32
 PER_HOST_CONCURRENCY = 8
-# Workday/Oracle boards live on thousands of independent tenant hosts. Using
-# the per-host value (8) as the whole provider-family cap serialized 1,400+
-# tenants and stretched a historically 5â€“8 minute sweep past 20 minutes. Keep
-# aggregate headroom below the global cap without turning distinct employers
-# into one eight-request queue.
 PER_PROVIDER_CONCURRENCY = GLOBAL_CONCURRENCY
 BOARD_TIMEOUT_SECONDS = 180
-USER_AGENT = f"intern-engine/3.0 (+https://github.com/{config.repo_slug()})"
+DETAIL_CONCURRENCY = 8
+USER_AGENT = f"it-searcher/1.0 (+https://github.com/{config.repo_slug()})"
+
+# Title-level reasons are counted but not logged line by line: a sweep sees
+# tens of thousands of nurses and software engineers, and listing them would
+# bury the rejections worth auditing.
+_COUNT_ONLY = {"not-it-role", "no-title", "outside-area"}
+_REJECTED_KEEP = 4000
+_HISTORY_KEEP = 2000
+_UNVERIFIED_RETRY_HOURS = 24
+_CACHE_KEEP_DAYS = 45
+_UNSEEN_CLOSE_DAYS = 14
+_LIVENESS_CHECKS = 60
 
 
-def _load_companies() -> list[dict]:
-    return registry.load()
+def load_boards(scope: str) -> tuple[list[dict], set[str]]:
+    """(boards to read this run, keys of the local ones)."""
+    if scope not in SCOPES:
+        raise ValueError(f"unknown scope {scope!r}")
+    local = registry.load(paths.LOCAL_SOURCES_PATH, missing_ok=True)
+    local_keys = {registry.board_key(c) for c in local}
+    boards = list(local)
+    if scope == "full":
+        taken = {(c["ats"], c["slug"]) for c in local}
+        boards += [c for c in registry.load(missing_ok=True)
+                   if registry.board_key(c) not in local_keys
+                   and (c["ats"], c["slug"]) not in taken]
+    return boards, local_keys
 
 
+# ---------------------------------------------------------------- fetching --
 async def _fetch_one(company: dict, net: Net):
-    """Return (company, Fetch, error); never raises (failures are isolated).
-
-    A connector may return a bare list (a whole-board read, always complete) or
-    a `models.Fetch` carrying its own completeness verdict — `Fetch.of` unifies
-    them. On error the result is an EMPTY, INCOMPLETE fetch, which is what stops
-    a failed request from reading as "this company has no roles any more".
-    """
+    """(company, Fetch, error); never raises. On error the result is an EMPTY,
+    INCOMPLETE fetch, so a failed request never reads as "no openings"."""
     fetch = CONNECTORS.get(company.get("ats"))
     if fetch is None:
         return company, models.Fetch(complete=False), f"no connector for {company.get('ats')}"
     try:
         result = models.Fetch.of(await fetch(company, net))
         for job in result.jobs:
-            if hasattr(job, "board_key"):
-                job.board_key = registry.board_key(company)
-        if (
-            not result.jobs
-            and result.incomplete_reason
-            in {models.INCOMPLETE_MALFORMED, models.INCOMPLETE_STALLED}
-        ):
+            job.board_key = registry.board_key(company)
+        if not result.jobs and result.incomplete_reason in {
+                models.INCOMPLETE_MALFORMED, models.INCOMPLETE_STALLED}:
             return company, result, result.incomplete_reason
         return company, result, None
     except Exception as exc:  # noqa: BLE001 — one bad endpoint must not stop the run
-        return company, models.Fetch(complete=False), f"{type(exc).__name__}: {exc}"
+        return company, models.Fetch(complete=False), f"{type(exc).__name__}: {exc}"[:300]
 
 
 async def _fetch_bounded(company: dict, net: Net):
-    """One board with a deadline so retries cannot monopolize a worker slot."""
+    limit = int(company.get("timeout") or BOARD_TIMEOUT_SECONDS)
     try:
-        async with asyncio.timeout(BOARD_TIMEOUT_SECONDS):
+        async with asyncio.timeout(limit):
             return await _fetch_one(company, net)
     except TimeoutError:
-        return (
-            company,
-            models.Fetch(complete=False),
-            f"board deadline exceeded ({BOARD_TIMEOUT_SECONDS}s)",
-        )
+        return company, models.Fetch(complete=False), f"board deadline exceeded ({limit}s)"
 
 
-def _fetch_health_error(result: models.Fetch, error: str | None) -> str | None:
-    """Caps are expected; malformed or stalled pagination is a health fault."""
-    if error is not None:
-        return error
-    if result.incomplete_reason in {
-        models.INCOMPLETE_MALFORMED,
-        models.INCOMPLETE_STALLED,
-    }:
-        return result.incomplete_reason
-    return None
-
-
-def _partial_reason_counts(results) -> Counter:
-    """Reasons for usable-but-incomplete snapshots (fatal fetches excluded)."""
-    return Counter(
-        result.incomplete_reason or "unspecified"
-        for _company, result, error in results
-        if error is None and not result.complete
-    )
-
-
-async def _fetch_all(companies: list[dict], enrich_after):
-    """Fetch every company, then run `enrich_after(results, net)` on the same
-    client session so enrichment reuses connections instead of reopening them."""
-    limiter = HostLimiter(
-        PER_HOST_CONCURRENCY, per_provider=PER_PROVIDER_CONCURRENCY,
-    )
+async def _fetch_all(companies: list[dict], after):
+    """Fetch every board, then run `after(results, net, workday_net)` on the
+    same client so detail requests reuse connections."""
+    limiter = HostLimiter(PER_HOST_CONCURRENCY, per_provider=PER_PROVIDER_CONCURRENCY)
     gate = asyncio.Semaphore(GLOBAL_CONCURRENCY)
     proxy = os.environ.get("WORKDAY_PROXY") or None
-
     common = dict(
         limits=httpx.Limits(max_connections=64, max_keepalive_connections=32),
-        timeout=httpx.Timeout(20.0, connect=10.0),
+        timeout=httpx.Timeout(25.0, connect=10.0),
         headers={"User-Agent": USER_AGENT},
         follow_redirects=True,
     )
-
     async with httpx.AsyncClient(**common) as client:
         default_net = Net(client, limiter)
         workday_client = httpx.AsyncClient(proxy=proxy, **common) if proxy else None
@@ -177,539 +157,214 @@ async def _fetch_all(companies: list[dict], enrich_after):
                 result = await _fetch_bounded(company, net)
             completed += 1
             if completed % 250 == 0 or completed == len(companies):
-                print(
-                    f"Fetched boards: {completed}/{len(companies)}",
-                    flush=True,
-                )
+                print(f"Fetched boards: {completed}/{len(companies)}", flush=True)
             return result
 
         try:
             results = await asyncio.gather(*(worker(c) for c in companies))
-            enrich_result = await enrich_after(results, default_net, workday_net)
-            return results, enrich_result
+            extra = await after(results, default_net, workday_net)
+            return results, extra
         finally:
             if workday_client is not None:
                 await workday_client.aclose()
 
 
-def _norm_location(location: str) -> str:
-    """A location reduced to its comparable core, for dedup only.
-
-    Punctuation and casing are noise. Work mode is NOT: an employer that posts
-    "Austin, TX" and "Austin, TX (Remote)" is offering two different jobs, and
-    stripping the remote/hybrid marker merged them. Keeping the mode in the key
-    means two postings only match when they really describe the same place on
-    the same terms.
-    """
-    low = (location or "").lower()
-    mode = ""
-    if re.search(r"\bremote\b", low):
-        mode = " remote"
-    elif re.search(r"\bhybrid\b", low):
-        mode = " hybrid"
-    low = re.sub(r"\(remote\)|\bremote\b|\bhybrid\b|\bon[\s-]?site\b", " ", low)
-    return re.sub(r"[^a-z0-9]+", " ", low).strip() + mode
-
-
-def _job_rank(job) -> tuple[int, int, int, int, str]:
-    """Prefer the copy carrying the strongest useful posting evidence."""
-    precision = models.DATE_PRECISION.get(
-        job.posted_at_source or models.date_source(job.posted_at), 0,
-    )
-    return (
-        precision,
-        int(bool(job.posted_at)),
-        int(bool(job.location and job.location != "—")),
-        int(bool(job.url and str(job.url).startswith(("https://", "http://")))),
-        job.id,
-    )
-
-
-def _existing_owner(existing: dict, ids: set[str]) -> str | None:
-    """Return the oldest stored record that owns any id/alias in ``ids``."""
-    candidates = []
-    for jid, record in existing.items():
-        owned = {jid, *(record.get("aliases") or [])}
-        if owned.intersection(ids):
-            candidates.append(jid)
-    if not candidates:
+# ------------------------------------------------------------- the verdict --
+def _coordinates(job, company: dict) -> tuple[float, float] | None:
+    """Exact coordinates when the source gave them; else the employer's own
+    town for single-site local employers whose location text is a building
+    name ("City Hall") rather than a place."""
+    if job.latlon:
+        return job.latlon
+    fallback = company.get("fallback_place")
+    if not fallback or geo.local_distance(job.location) is not None:
         return None
-    return min(candidates, key=lambda jid: (
-        existing[jid].get("first_seen_at") or "9999",
-        jid,
-    ))
+    if geo.names_other_state(job.location):
+        return None
+    if filters_it._REMOTE_WORD_RE.search(job.location or ""):
+        return None
+    return geo.coords(fallback)
 
 
-def _merge_exact_alias_records(existing: dict, survivor_id: str,
-                               duplicate_ids: set[str]) -> None:
-    """Consolidate stored records whose shared canonical id proves identity."""
-    target = existing.get(survivor_id)
-    if target is None:
-        return
-    aliases = set(target.get("aliases") or [])
-    for duplicate_id in sorted(duplicate_ids - {survivor_id}):
-        duplicate = existing.pop(duplicate_id, None)
-        if duplicate is None:
-            continue
-        aliases.add(duplicate_id)
-        aliases.update(duplicate.get("aliases") or [])
-        target["first_seen_at"] = min(
-            target.get("first_seen_at") or "9999",
-            duplicate.get("first_seen_at") or "9999",
-        )
-        target["last_seen_at"] = max(
-            target.get("last_seen_at") or "",
-            duplicate.get("last_seen_at") or "",
-        )
-        old_rank = models.DATE_PRECISION.get(target.get("posted_at_source"), 0)
-        new_rank = models.DATE_PRECISION.get(duplicate.get("posted_at_source"), 0)
-        if duplicate.get("posted_at") and (
-            not target.get("posted_at") or new_rank > old_rank
-        ):
-            target["posted_at"] = duplicate["posted_at"]
-            target["posted_at_source"] = duplicate.get("posted_at_source")
-        for field in ("salary", "skills", "requisition_id"):
-            if not target.get(field) and duplicate.get(field):
-                target[field] = duplicate[field]
-        if (
-            target.get("sponsorship", "unknown") == "unknown"
-            and duplicate.get("sponsorship", "unknown") != "unknown"
-        ):
-            target["sponsorship"] = duplicate["sponsorship"]
-        if duplicate.get("is_open"):
-            # Consolidating aliases must preserve a continuously-open copy.
-            # Otherwise choosing an older closed id manufactures a reopening
-            # and sends a duplicate alert for a role that never disappeared.
-            target["is_open"] = True
-            target.pop("closed_at", None)
-            target.pop("closed_reason", None)
-    aliases.discard(survivor_id)
-    if aliases:
-        target["aliases"] = sorted(aliases)
+def _too_old(posted_at: str | None, max_age_days: float, now: datetime) -> bool:
+    if not max_age_days or not posted_at:
+        return False
+    try:
+        day = datetime.fromisoformat(posted_at[:10]).replace(tzinfo=UTC)
+    except ValueError:
+        return False
+    return day < now - timedelta(days=max_age_days)
 
 
-def _dedup(jobs: list, existing: dict | None = None) -> list:
-    """Collapse only identities supported by canonical or syndication evidence.
-
-    The only duplicate we can actually prove is one posting syndicated to two
-    ATS: same company, same title, same place, two boards. That collapses, and
-    the copy carrying a real posted date wins.
-
-    A connector-supplied canonical id is stronger than the presentation id.
-    It lets us merge the same Greenhouse/SmartRecruiters requisition across
-    board aliases while retaining every old posting id in ``aliases``.  When a
-    canonical role already exists, its oldest store id survives so a slug or
-    posting-id change cannot reset first-seen time or trigger a duplicate alert.
-
-    Two requisitions on the SAME board are otherwise never merged, even when title and
-    location match. Copart really did open JR109672 and JR109673 — "Software
-    Engineering Intern, Dallas" twice — and an employer that opens two reqs is
-    offering two jobs. The board already told us they're distinct by giving
-    them distinct ids; second-guessing that deletes a real opening.
-    """
-    existing = existing if existing is not None else {}
-
-    # First collapse exact canonical identities. This may safely merge records
-    # that already exist in the store; presentation-only dedup below may not.
-    canonical_groups: dict[tuple[str, str], list] = {}
-    without_canonical = []
-    for job in jobs:
-        if job.canonical_id:
-            canonical_groups.setdefault(
-                (job.source, str(job.canonical_id)), [],
-            ).append(job)
-        else:
-            without_canonical.append(job)
-
-    exact = list(without_canonical)
-    for (source, canonical_id), group in canonical_groups.items():
-        stored_ids = {
-            jid for jid, record in existing.items()
-            if record.get("source") == source
-            and str(record.get("canonical_id") or "") == canonical_id
-        }
-        current_ids = {job.id for job in group}
-        # On the first deployment, legacy records do not yet carry
-        # canonical_id. Current presentation ids (or their stored aliases)
-        # still identify those records, and the connector's shared canonical
-        # id proves that they can now be consolidated.
-        current_owners = {
-            owner
-            for current_id in current_ids
-            if (owner := _existing_owner(existing, {current_id})) is not None
-        }
-        merge_ids = stored_ids | current_owners
-        survivor_id = _existing_owner(existing, merge_ids | current_ids)
-        metadata = max(group, key=_job_rank)
-        original_id = metadata.id
-        if survivor_id is None:
-            survivor_id = metadata.id
-        metadata.id = survivor_id
-        survivor_aliases = set(
-            (existing.get(survivor_id) or {}).get("aliases") or [],
-        )
-        aliases = (
-            set(metadata.aliases or []) | survivor_aliases
-            | merge_ids | current_ids | {original_id}
-        )
-        for stored_id in merge_ids:
-            aliases.update((existing.get(stored_id) or {}).get("aliases") or [])
-        aliases.discard(survivor_id)
-        metadata.aliases = sorted(aliases) or None
-        _merge_exact_alias_records(existing, survivor_id, merge_ids)
-        exact.append(metadata)
-
-    def key_of(job):
-        return (
-            job.company.lower().strip(),
-            re.sub(r"[^a-z0-9]+", "", job.title.lower()),
-            _norm_location(job.location),
-        )
-
-    # Group first, then decide. Only ONE pattern is provably a duplicate:
-    # every source holds exactly one requisition for the key — the classic
-    # single posting syndicated across boards. That collapses to the best copy
-    # (a real posting date wins). The moment ANY source lists two or more reqs
-    # under the key, identity is ambiguous — we can't tell which copy on the
-    # other board mirrors which req — and deleting a real opening is worse
-    # than showing a possible duplicate, so everything is kept.
-    groups: dict[tuple[str, str, str], dict[str, list]] = {}
-    for job in exact:
-        groups.setdefault(key_of(job), {}).setdefault(job.source, []).append(job)
-
-    unique = []
-    for by_source in groups.values():
-        if len(by_source) > 1 and all(len(g) == 1 for g in by_source.values()):
-            candidates = [group[0] for group in by_source.values()]
-            ids = {
-                identity
-                for job in candidates
-                for identity in ({job.id} | set(job.aliases or []))
-            }
-            survivor_id = _existing_owner(existing, ids)
-            best = max(candidates, key=_job_rank)
-            original_id = best.id
-            if survivor_id is not None:
-                best.id = survivor_id
-            survivor_aliases = set(
-                (existing.get(best.id) or {}).get("aliases") or [],
-            )
-            aliases = set(best.aliases or []) | survivor_aliases | ids | {original_id}
-            aliases.discard(best.id)
-            best.aliases = sorted(aliases) or None
-            unique.append(best)
-        else:
-            for group in by_source.values():
-                unique.extend(group)
-    return unique
+def load_cache() -> dict:
+    try:
+        with open(paths.ASSESSED_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except (OSError, ValueError):
+        return {}   # a cache: losing it costs detail requests, never data
 
 
-def _keep_matching(results, cfg, blocklist, existing=None) -> tuple[list, set[str], int, Counter]:
-    """Apply every scope filter; return (kept jobs, succeeded keys, complete
-    keys, errors, errors by ats, dropped-no-year count, dropped-off-cycle count).
+def _cache_hit(cache: dict, job, now: datetime) -> dict | None:
+    entry = cache.get(job.id)
+    if not isinstance(entry, dict) or entry.get("v") != filters_it.VERSION:
+        return None
+    if entry.get("title") != job.title or entry.get("location") != job.location:
+        return None   # the employer edited the posting: read it again
+    result = entry.get("a")
+    if not isinstance(result, dict):
+        return None
+    if result.get("fit") == filters_it.FIT_UNVERIFIED or result.get("reason") in (
+            "unconfirmed-it-role", "level-2-unverifiable"):
+        # We never saw the text. Try again, but not every half hour.
+        try:
+            seen = datetime.fromisoformat(entry["at"].replace("Z", "+00:00"))
+        except (KeyError, ValueError, AttributeError):
+            return None
+        if now - seen > timedelta(hours=_UNVERIFIED_RETRY_HOURS):
+            return None
+    entry["seen"] = now.strftime("%Y-%m-%d")
+    return result
 
-    `succeeded` is every company we got a usable response from (the fetch-health
-    stat). `complete` is the subset whose response was provably the WHOLE list —
-    only those may close roles. See `models.Fetch`.
 
-    `existing` (the store) makes cycle assignment sticky for yearless titles: a
-    season already on record — set by an earlier inference or verified from the
-    posting's own text — is adopted as-is, never re-derived. Without this, a
-    text-verified season would be re-guessed every run, and a role would flip
-    "closed" the day its posting outgrew the inference recency window.
-    """
-    cycles = config.cycles(cfg)
-    tech_only = cfg.get("role_scope", "tech") == "tech"
-    restrict = config.restrict_region(cfg)
-    wants_us = config.want_us(cfg)
-    wants_canada = config.want_canada(cfg)
-    include_intl = config.include_international(cfg)
-    allowlist_only = config.allowlist_only(cfg)
-    infer = config.infer_undated(cfg)
-    infer_age = config.infer_max_age_days(cfg)
-    max_age = config.max_age_days(cfg)
-    cutoff = (
-        (datetime.now(UTC) - timedelta(days=max_age)).strftime("%Y-%m-%d")
-        if max_age else None
-    )
+async def classify(results, cfg: dict, cache: dict, net: Net, workday_net: Net,
+                   now: datetime | None = None) -> dict:
+    """Run every fetched job through title -> place -> text -> assessment."""
+    now = now or datetime.now(UTC)
+    local_r = float(cfg["local_radius_miles"])
+    nearby_r = float(cfg["nearby_radius_miles"])
+    out = {
+        "kept": [], "succeeded": set(), "complete": set(), "seen_ids": set(),
+        "errors": 0, "errors_by_ats": Counter(), "reasons": Counter(),
+        "rejected": [], "jobs_seen": 0, "detail_fetches": 0, "per_board": {},
+    }
+    candidates = []   # (job, company, weak, category, latlon)
 
-    existing = existing or {}
-    kept = []
-    succeeded: set[str] = set()
-    complete: set[str] = set()
-    # Every job id a successful fetch returned, in scope or not. A role we saw
-    # and REJECTED (wrong country, wrong cycle, not tech) must leave the list
-    # even when the snapshot was capped: "we shouldn't have listed this" is a
-    # verdict we can reach on our own, unlike "the employer took it down".
-    seen_ids: set[str] = set()
-    errors = 0
-    errors_by_ats: Counter = Counter()
-    # In-scope internships we skip only because the title has no year, counted
-    # by sub-reason, plus one record per drop for data/rejected_titles.jsonl.
-    dropped_no_year: Counter = Counter()
-    rejected: list[dict] = []
-    dropped_offcycle = 0  # roles whose recorded season is a verified off-cycle label
-
-    # A board alias may return presentation id B for the stored survivor A.
-    # Scope decisions happen before canonical dedup, so resolve that ownership
-    # here as well: seeing and rejecting B is also evidence to close A, even
-    # when the snapshot is capped and cannot prove arbitrary absences.
-    identity_owner: dict[str, str] = {}
-    canonical_owner: dict[tuple[str, str], str] = {}
-    ordered_existing = sorted(
-        existing.items(),
-        key=lambda item: (item[1].get("first_seen_at") or "9999", item[0]),
-    )
-    for jid, record in ordered_existing:
-        identity_owner.setdefault(jid, jid)
-        for alias in record.get("aliases") or []:
-            identity_owner.setdefault(alias, jid)
-        if record.get("canonical_id"):
-            canonical_owner.setdefault(
-                (record.get("source") or "", str(record["canonical_id"])), jid,
-            )
-
-    def stored_owner(job) -> str | None:
-        owner = identity_owner.get(job.id)
-        if owner is None and job.canonical_id:
-            owner = canonical_owner.get((job.source, str(job.canonical_id)))
-        return owner
+    def drop(job, reason: str, evidence: str = "") -> None:
+        out["reasons"][reason] += 1
+        if reason in _COUNT_ONLY:
+            return
+        out["rejected"].append({
+            "reason": reason, "title": job.title, "company": job.company,
+            "location": job.location, "source": job.source, "url": job.url,
+            **({"evidence": evidence} if evidence else {}),
+        })
 
     for company, result, error in results:
-        jobs = result.jobs
-        if error is not None:
-            errors += 1
-            errors_by_ats[company.get("ats", "?")] += 1
-            continue
         key = registry.board_key(company)
-        succeeded.add(key)
+        board = out["per_board"].setdefault(key, {
+            "name": company.get("name"), "ats": company.get("ats"), "jobs": 0,
+            "kept": 0, "complete": bool(result.complete), "error": error,
+        })
+        if error is not None:
+            out["errors"] += 1
+            out["errors_by_ats"][company.get("ats", "?")] += 1
+            continue
+        out["succeeded"].add(key)
         if result.complete:
-            complete.add(key)
-        # Company policy is our verdict, independent of feed completeness.
-        # Capture every returned id before those gates so a blocked role can be
-        # closed immediately even when its board is capped.
-        for job in jobs:
-            seen_ids.add(job.id)
-            owner = stored_owner(job)
-            if owner is not None:
-                seen_ids.add(owner)
-        if quality.is_blocked(company["name"], blocklist):
+            out["complete"].add(key)
+        board["jobs"] = len(result.jobs)
+        out["jobs_seen"] += len(result.jobs)
+        for job in result.jobs:
+            out["seen_ids"].add(job.id)
+            verdict, detail = filters_it.title_verdict(job.title)
+            if verdict == "reject":
+                drop(job, detail or "not-it-role")
+                continue
+            latlon = _coordinates(job, company)
+            section, _miles, _remote, _note = filters_it.place(
+                job.location, job.title, latlon=latlon,
+                local_radius=local_r, nearby_radius=nearby_r)
+            if section is None:
+                drop(job, "outside-area")
+                continue
+            if _too_old(job.posted_at, cfg["max_age_days"], now):
+                drop(job, "stale-posting", f"posted {job.posted_at[:10]}")
+                continue
+            candidates.append((job, company, verdict == "weak", detail, latlon))
+
+    gate = asyncio.Semaphore(DETAIL_CONCURRENCY)
+
+    async def judge(job, company, weak, category, latlon):
+        result = _cache_hit(cache, job, now)
+        text = ""
+        if result is None:
+            use = workday_net if job.source in ("workday", "oracle") else net
+            async with gate:
+                description, fetched = await enrich.describe(job, use)
+            out["detail_fetches"] += int(fetched)
+            if _too_old(job.posted_at, cfg["max_age_days"], now):
+                return job, company, {"verdict": "reject", "reason": "stale-posting",
+                                      "evidence": f"posted {job.posted_at[:10]}"}
+            text = filters_it.to_text(description)
+            result = filters_it.assess(job.title, description, weak_title=weak,
+                                       employment_hint=job.employment_hint)
+            section, miles, remote, note = filters_it.place(
+                job.location, job.title, text, latlon=latlon,
+                local_radius=local_r, nearby_radius=nearby_r)
+            if section is None and result["verdict"] == "keep":
+                # The description restricted where a remote hire may live.
+                result = {**result, "verdict": "reject",
+                          "reason": "remote-not-open-to-florida"}
+            result = {**result, "section": section, "miles": miles,
+                      "remote": bool(remote), "category": category,
+                      "posted_at": job.posted_at,
+                      "posted_at_source": job.posted_at_source}
+            if note and result["verdict"] == "keep":
+                result["notes"] = [*result.get("notes", []), note]
+            cache[job.id] = {
+                "v": filters_it.VERSION, "title": job.title, "location": job.location,
+                "at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "seen": now.strftime("%Y-%m-%d"), "a": result,
+            }
+        return job, company, result
+
+    judged = await asyncio.gather(*(judge(*c) for c in candidates))
+    for job, company, result in judged:
+        if result["verdict"] != "keep":
+            drop(job, result.get("reason") or "rejected", result.get("evidence") or "")
             continue
-        if allowlist_only and not quality.is_recognized(company["name"]):
-            continue
-        for job in jobs:
-            if not filters.is_internship(job.title):
-                continue
-            if tech_only and not filters_secnet.is_relevant(job.title):
-                continue
-            season = filters.detect_season(job.title, cycles)
-            inferred = False
-            unstated_reason: str | None = None
-            if season is None:
-                if filters.states_explicit_year(job.title):
-                    # The title names a year we don't track ("Summer 2026
-                    # Intern"): a hard verdict. Neither a stored season nor a
-                    # posting-date inference may rescue it.
-                    dropped_offcycle += 1
-                    continue
-                owner = stored_owner(job)
-                prior = existing.get(owner or job.id) or {}
-                prior_season = prior.get("season")
-                if prior_season in cycles:
-                    season = prior_season  # sticky (see docstring)
-                    inferred = bool(prior.get("season_inferred"))
-                elif filters.is_cycle_label(prior_season):
-                    # A recorded off-cycle label ("Summer 2026") is a settled
-                    # text-verified verdict: the role stays off the list, and
-                    # is never re-inferred or re-enriched.
-                    dropped_offcycle += 1
-                    continue
-                elif infer:
-                    # Nobody stated a cycle. We used to guess one from the
-                    # posting month; that guess was measured wrong (see
-                    # filters.cycle_unstated_reason). The role is recent and
-                    # real, so it stays — under a label that claims nothing. If
-                    # its posting text names a cycle, enrichment promotes it.
-                    unstated_reason = filters.cycle_unstated_reason(
-                        job.title, job.posted_at, infer_age)
-                    if unstated_reason is None:
-                        season = filters.NOT_STATED
-                        inferred = True
-                else:
-                    unstated_reason = "inference-disabled"
-            if season is None:
-                # Counted by WHY, because the pools are not equally
-                # recoverable: "dated-too-old" comes back if the window widens,
-                # "undated" never does. One lumped number hid that split.
-                reason = unstated_reason or "unknown"
-                dropped_no_year[reason] += 1
-                rejected.append({
-                    "reason": reason,
-                    "title": job.title,
-                    "company": job.company,
-                    "source": job.source,
-                    "posted_at": job.posted_at,
-                    "url": job.url,
-                })
-                continue
-            in_region = filters.region_ok(job.location, wants_us, wants_canada)
-            if restrict and not in_region and not include_intl:
-                continue
-            loc = (job.location or "").strip()
-            if not in_region and (not loc or loc == "—"):
-                continue  # out-of-region roles need a real location
-            posted_day = (job.posted_at or "")[:10]
-            # The age cutoff exists to drop stale evergreen listings whose
-            # recency was the ONLY evidence for their cycle. When the employer
-            # stated the cycle themselves, age proves nothing — Amazon's
-            # "Software Development Engineer Internship - Fall 2026 (US)" was
-            # posted early and is still open and still for Fall 2026. Closing it
-            # for being old was us overriding what the company wrote.
-            if cutoff and posted_day and posted_day < cutoff and inferred:
-                continue
-            job.season = season
-            job.season_inferred = inferred
-            if not inferred:
-                # A title can state MORE than one tracked cycle ("Fall 2026/
-                # Summer 2027"); keep the full set so neither cycle loses it.
-                stated_all = filters.detect_seasons(job.title, cycles)
-                if len(stated_all) > 1:
-                    job.seasons = stated_all
-            job.category = filters_secnet.categorize(job.title)
-            job.company = names.display(job.company, job.company_slug)
-            if job.posted_at and not job.posted_at_source:
-                job.posted_at_source = models.date_source(job.posted_at)
-            kept.append(job)
-    return (kept, succeeded, complete, seen_ids, errors, errors_by_ats,
-            dropped_no_year, dropped_offcycle, rejected)
+        job.section = result["section"]
+        job.miles = result.get("miles")
+        job.remote = bool(result.get("remote"))
+        job.category = result.get("category") or "IT Support / Technician"
+        job.fit = result["fit"]
+        job.experience = result.get("experience") or ""
+        job.evidence = result.get("evidence") or ""
+        job.employment = result.get("employment") or "Not stated"
+        job.notes = list(result.get("notes") or [])
+        job.rules_v = filters_it.VERSION
+        if not job.posted_at and result.get("posted_at"):
+            job.posted_at = result["posted_at"]
+            job.posted_at_source = result.get("posted_at_source")
+        if job.posted_at and not job.posted_at_source:
+            job.posted_at_source = models.date_source(job.posted_at)
+        out["per_board"][registry.board_key(company)]["kept"] += 1
+        out["kept"].append(job)
+    return out
 
 
-def _migrate_date_sources(existing: dict) -> None:
-    """Stamp legacy records' date precision from the value's shape.
+def _prune_cache(cache: dict, now: datetime) -> None:
+    cutoff = (now - timedelta(days=_CACHE_KEEP_DAYS)).strftime("%Y-%m-%d")
+    for jid in [j for j, e in cache.items()
+                if not isinstance(e, dict) or (e.get("seen") or "") < cutoff]:
+        del cache[jid]
 
-    Records written before posted_at_source existed rank as precision 0, so ANY
-    labeled incoming date would "upgrade" over them and shift a frozen Posted
-    date. Deriving the label once from the stored value gives real timestamps
-    exact rank and date-only ones their own — after which the normal
-    only-upgrade rule protects them.
+
+def close_out_of_scope(existing: dict) -> int:
+    """Close open records our CURRENT rules would not list.
+
+    Our own verdict needs no evidence from the employer, so it applies to the
+    whole store — including roles on boards this run did not read.
     """
-    for r in existing.values():
-        if r.get("posted_at") and not r.get("posted_at_source"):
-            r["posted_at_source"] = models.date_source(r["posted_at"])
-
-
-def _retire_guessed_cycles(existing: dict, cfg: dict) -> int:
-    """Strip cycle labels that came from the retired posting-date guess.
-
-    Records written before `cycle_unstated_ok` carry a real cycle label with
-    `season_inferred=True` — e.g. "Summer 2027" derived from nothing but the
-    month the role was posted. The sticky-season path in `_keep_matching`
-    treats any stored label that's in `cycles` as authoritative, so without
-    this sweep those fabricated labels would survive forever and the fix would
-    only apply to roles discovered afterwards.
-
-    `season_inferred=True` is precisely the marker for "no employer said this"
-    — enrichment clears the flag the moment a posting's text confirms a cycle
-    — so every record still carrying it is reset to NOT_STATED and re-enriched.
-    """
-    cycles = set(config.cycles(cfg))
-    n = 0
-    for r in existing.values():
-        if r.get("season_inferred") and r.get("season") in cycles:
-            r["season"] = filters.NOT_STATED
-            r.pop("seasons", None)
-            # Force one re-read: the posting may well state a cycle that the
-            # old (tag-blind) text reader missed.
-            r.pop("enriched_at", None)
-            r.pop("classifier_v", None)
-            n += 1
-    return n
-
-
-def _close_region_out_of_scope(existing: dict, cfg: dict) -> int:
-    """Close OPEN records whose stored location fails the region filter.
-
-    Scope is our own verdict — it needs no fetch evidence. Without this sweep,
-    a foreign role admitted under an older filter could hide forever on a
-    capped board: never re-fetched (beyond the result cap), so never in
-    seen_ids, so never closable. Medtronic's Lausanne role did exactly that.
-    Region only, deliberately: it's the one check that's deterministic from
-    the record alone.
-    """
-    if not config.restrict_region(cfg) or config.include_international(cfg):
-        return 0
     ts = store.now_iso()
-    wants_us, wants_canada = config.want_us(cfg), config.want_canada(cfg)
     n = 0
-    for r in existing.values():
-        if not r.get("is_open"):
-            continue
-        loc = (r.get("location") or "").strip()
-        if loc and loc != "—" and not filters.region_ok(loc, wants_us, wants_canada):
-            r.update(is_open=False, closed_at=ts, closed_reason="out-of-scope")
-            r.pop("missing_streak", None)
-            n += 1
-    return n
-
-
-def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None) -> int:
-    """Apply every deterministic product-scope rule to the full open store.
-
-    This does not rely on a complete ATS snapshot.  A capped feed must not keep
-    a role alive forever after a blocklist, allowlist, tech-scope, cycle, or
-    recent-unstated policy change.
-    """
-    n = _close_region_out_of_scope(existing, cfg)
-    ts = store.now_iso()
-    cycles = set(config.cycles(cfg))
-    tech_only = cfg.get("role_scope", "tech") == "tech"
-    allowlist_only = config.allowlist_only(cfg)
-    restrict = config.restrict_region(cfg) and not config.include_international(cfg)
-    wants_us, wants_canada = config.want_us(cfg), config.want_canada(cfg)
-    infer_cutoff = (
-        datetime.now(UTC) - timedelta(days=config.infer_max_age_days(cfg))
-    ).date()
-
     for record in existing.values():
         if not record.get("is_open"):
             continue
-        title = (record.get("title") or "").strip()
-        company = (record.get("company") or "").strip()
-        location = (record.get("location") or "").strip()
-        assigned = {
-            value for value in (record.get("seasons") or [record.get("season")])
-            if value
-        }
-        has_cycle_evidence = "season" in record or "seasons" in record
-        posted = _parse_iso(record.get("posted_at"))
-        # Must ask the same question intake asked. This used to test
-        # detect_seasons(), which reports term+year evidence only and returns
-        # [] for a bare year — so "2027 IT Intern", accepted by _keep_matching
-        # as Summer 2027, was closed here as off-cycle on the next run.
-        explicit_offcycle = filters.states_offcycle_year(title, tuple(cycles))
-        expired_unstated = bool(
-            record.get("season_inferred") and posted and posted.date() < infer_cutoff
-        )
-        rejected = (
-            (bool(title) and not filters.is_internship(title))
-            or (bool(title) and tech_only and not filters_secnet.is_relevant(title))
-            or (
-                has_cycle_evidence
-                and not assigned.intersection(cycles | {filters.NOT_STATED})
-            )
-            or explicit_offcycle
-            or (
-                restrict and bool(location) and location != "—"
-                and not filters.region_ok(location, wants_us, wants_canada)
-            )
-            or (bool(company) and quality.is_blocked(company, blocklist or {}))
-            or (
-                bool(company) and allowlist_only
-                and not quality.is_recognized(company)
-            )
-            or expired_unstated
-        )
-        if not rejected:
+        verdict, _ = filters_it.title_verdict(record.get("title") or "")
+        if verdict != "reject" and record.get("section") in filters_it.SECTIONS \
+                and record.get("rules_v") == filters_it.VERSION:
             continue
         record.update(is_open=False, closed_at=ts, closed_reason="out-of-scope")
         record.pop("missing_streak", None)
@@ -717,122 +372,174 @@ def _close_out_of_scope(existing: dict, cfg: dict, blocklist: dict | None = None
     return n
 
 
-def run_update() -> tuple[dict, dict, list[str]]:
+async def _close_removed(existing: dict, seen_ids: set[str], complete: set[str],
+                         net: Net, now: datetime) -> int:
+    """Close roles on CAPPED boards that we can prove are gone.
+
+    A board whose search results are capped can never close a role by
+    omission. So for open roles it did not return, ask the posting page
+    itself (Workday), and retire anything unseen for two weeks.
+    """
+    ts = store.now_iso()
+    stale_before = (now - timedelta(days=_UNSEEN_CLOSE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    pending = []
+    closed = 0
+    for jid, record in existing.items():
+        if not record.get("is_open") or jid in seen_ids:
+            continue
+        if (record.get("board_key") or "") in complete:
+            continue   # the two-miss rule in store.upsert owns these
+        if (record.get("last_seen_at") or ts) < stale_before:
+            record.update(is_open=False, closed_at=ts, closed_reason="not-seen-14-days")
+            closed += 1
+        elif record.get("source") == "workday" and len(pending) < _LIVENESS_CHECKS:
+            pending.append(record)
+    gone = await asyncio.gather(*(enrich.posting_gone(r, net) for r in pending))
+    for record, is_gone in zip(pending, gone, strict=True):
+        if not is_gone:
+            record.pop("gone_checks", None)
+            continue
+        checks = int(record.get("gone_checks") or 0) + 1
+        if checks < 2:
+            record["gone_checks"] = checks   # same two-strike rule as the feed
+            continue
+        record.pop("gone_checks", None)
+        record.update(is_open=False, closed_at=ts, closed_reason="posting-removed")
+        closed += 1
+    return closed
+
+
+# ----------------------------------------------------------------- the run --
+def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
     cfg = config.load_config()
-    blocklist = quality.load_blocklist()
-    companies = _load_companies()
+    boards, local_keys = load_boards(scope)
     existing = store.load(paths.JOBS_PATH)
-    # A role already gone from a feed can never receive its new site-aware key
-    # from a connector row. Migrate it before lifecycle closure instead.
-    registry.migrate_store_board_keys(existing, companies)
-    _migrate_date_sources(existing)
-    _retire_guessed_cycles(existing, cfg)
-    _close_out_of_scope(existing, cfg, blocklist)
+    close_out_of_scope(existing)
+    cache = load_cache()
+    now = datetime.now(UTC)
 
     health_data = health.load()
-    health.migrate_legacy_keys(companies, health_data)
-    active, benched = health.partition(companies, health_data)
+    # Local sources are the point of the list: always retry them. The breaker
+    # only benches boards from the big registry.
+    registry_boards = [b for b in boards if registry.board_key(b) not in local_keys]
+    active, benched = health.partition(registry_boards, health_data)
+    active = [b for b in boards if registry.board_key(b) in local_keys] + active
 
     started = time.monotonic()
-    kept: list = []
-    enriched_ids: set[str] = set()
-    detail_fetches = 0
+    state: dict = {}
 
-    async def _enrich_stage(results, net, workday_net):
-        """Filter first (cheap, sync), then enrich only the keepers."""
-        nonlocal kept
-        (kept, succeeded, complete, seen_ids, errors, errors_by_ats, no_year,
-         offcycle_sticky, rejected_rows) = _keep_matching(
-            results, cfg, blocklist, existing)
-        kept = _dedup(kept, existing)
-        # Workday/Oracle enrichment goes through the same proxied client as fetch.
-        wd_jobs = [j for j in kept if j.source in ("workday", "oracle")]
-        other = [j for j in kept if j.source not in ("workday", "oracle")]
-        ids_a, n_a = await enrich.enrich_jobs(other, existing, net)
-        ids_b, n_b = await enrich.enrich_jobs(wd_jobs, existing, workday_net)
-        # Enrichment may have replaced an inferred cycle with the one the
-        # posting text states; anything now off-cycle leaves the list — and the
-        # verdict is written into the store so the role never re-enters (or
-        # pays another detail fetch) on later runs.
-        cycles = config.cycles(cfg)
-        ts = store.now_iso()
-        offcycle = offcycle_sticky
-        still = []
-        for job in kept:
-            # NOT_STATED survives alongside the tracked cycles: it isn't a
-            # cycle claim, it's the absence of one, and those roles have their
-            # own section. Only a real OFF-cycle label ("Summer 2026") drops.
-            if job.season in cycles or job.season == filters.NOT_STATED:
-                still.append(job)
-                continue
-            offcycle += 1
-            record = existing.get(job.id)
-            if record is None:
-                record = {
-                    k: v for k, v in asdict(job).items()
-                    if k not in models.TRANSIENT_FIELDS
-                }
-                record.update(first_seen_at=ts, last_seen_at=ts,
-                              is_open=False, closed_at=ts,
-                              closed_reason="out-of-scope")
-                existing[job.id] = record
-            else:
-                record["season"] = job.season
-                record["seasons"] = [job.season] if job.season else []
-                record["season_inferred"] = False
-                record["closed_reason"] = "out-of-scope"
-            record["enriched_at"] = ts  # settled: never fetch this posting again
-        kept = still
-        return (succeeded, complete, seen_ids, errors, errors_by_ats,
-                ids_a | ids_b, n_a + n_b, no_year, offcycle, rejected_rows)
+    async def after(results, net, workday_net):
+        found = await classify(results, cfg, cache, net, workday_net, now)
+        found["kept"] = dedup(found["kept"], existing)
+        found["removed"] = 0
+        if scope == "full":
+            found["removed"] = await _close_removed(
+                existing, found["seen_ids"], found["complete"], workday_net, now)
+        state.update(found)
 
-    results, (succeeded, complete_keys, seen_ids, errors, errors_by_ats,
-              enriched_ids, detail_fetches, no_year, offcycle,
-              rejected_rows) = asyncio.run(
-        _fetch_all(active, _enrich_stage)
-    )
-    _append_rejected_titles(rejected_rows)
+    results, _ = asyncio.run(_fetch_all(active, after))
 
     for company, result, error in results:
-        health.record(health_data, company, _fetch_health_error(result, error))
+        failure = error
+        if failure is None and result.incomplete_reason in {
+                models.INCOMPLETE_MALFORMED, models.INCOMPLETE_STALLED}:
+            failure = result.incomplete_reason
+        health.record(health_data, company, failure)
     health.save(health_data)
 
     rows = []
-    for job in kept:
+    for job in state["kept"]:
         row = asdict(job)
         for field in models.TRANSIENT_FIELDS:
             row.pop(field, None)
         rows.append(row)
-
-    # Closure uses `complete_keys`, not `succeeded`: a capped or truncated
-    # response is a successful fetch that still doesn't prove a role is gone.
-    new_ids = store.upsert(existing, rows, complete_keys, enriched_ids,
-                           seen_ids=seen_ids,
-                           classifier_version=sponsorship.VERSION)
+    new_ids = store.upsert(existing, rows, state["complete"], seen_ids=state["seen_ids"])
     purged = store.purge(existing)
     store.save(paths.JOBS_PATH, existing)
 
-    # Record the real posted dates we saw straight from the ATS. This is the
-    # engine's own ground truth for the Drop Radar — it accrues every run and
-    # eventually replaces the outside reference dataset entirely.
-    observe.record_run(existing)
+    _prune_cache(cache, now)
+    _atomic_write(paths.ASSESSED_PATH,
+                  json.dumps(cache, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
+    _append_rejected(state["rejected"])
 
-    partial_by_reason = _partial_reason_counts(results)
-    stats = _build_stats(
-        companies, benched, succeeded, complete_keys, errors, errors_by_ats, kept,
-        existing, new_ids, len(enriched_ids), detail_fetches, purged,
-        round(time.monotonic() - started, 1), no_year, offcycle,
-        partial_by_reason,
-    )
+    stats = _build_stats(scope, boards, benched, local_keys, state, existing, new_ids,
+                         purged, round(time.monotonic() - started, 1))
     write_stats(stats)
     _append_history(stats)
     return stats, existing, new_ids
 
 
-def _parse_iso(value: str) -> datetime | None:
-    """Always returns a UTC-aware datetime: ATS feeds mix offset-less strings
-    and date-only strings with full `Z`/`±HH:MM` timestamps, and one naive
-    value next to an aware one makes the subtraction below raise TypeError."""
+def _open_counts(existing: dict) -> dict:
+    open_records = [r for r in existing.values() if r.get("is_open")]
+    dated = sum(1 for r in open_records if r.get("posted_at"))
+    return {
+        "open_total": len(open_records),
+        "open_by_section": dict(Counter(r.get("section") for r in open_records)),
+        "open_by_fit": dict(Counter(r.get("fit") for r in open_records)),
+        "open_by_category": dict(Counter(r.get("category") for r in open_records)),
+        "open_by_employment": dict(Counter(r.get("employment") for r in open_records)),
+        "open_by_source": dict(Counter(r.get("source") for r in open_records)),
+        "posted_date_coverage": round(dated / max(len(open_records), 1), 3),
+    }
+
+
+def _build_stats(scope, boards, benched, local_keys, state, existing, new_ids,
+                 purged, duration) -> dict:
+    previous = {}
+    try:
+        previous = load_stats()
+    except StatsCorrupt:
+        pass
+    fetched_at = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
+    attempted = len(boards) - len(benched)
+    per_board = state["per_board"]
+    local = [{"key": key, **per_board[key]} for key in sorted(local_keys) if key in per_board]
+    stats = {
+        "generated_at": fetched_at,
+        "fetched_at": fetched_at,
+        "scope": scope,
+        "duration_seconds": duration,
+        "boards_total": len(boards),
+        "boards_by_source": dict(Counter(c["ats"] for c in boards)),
+        "quarantined": len(benched),
+        "fetched_ok": len(state["succeeded"]),
+        "fetch_errors": state["errors"],
+        "errors_by_source": dict(state["errors_by_ats"]),
+        "fetch_success_rate": round(len(state["succeeded"]) / max(attempted, 1), 3),
+        "snapshots_complete": len(state["complete"]),
+        "snapshots_partial": len(state["succeeded"]) - len(state["complete"]),
+        "jobs_seen": state["jobs_seen"],
+        "roles_matched": len(state["kept"]),
+        "dropped_by_reason": dict(sorted(state["reasons"].items())),
+        "detail_fetches": state["detail_fetches"],
+        "closed_by_posting_check": state.get("removed", 0),
+        "purged_this_run": purged,
+        "new_this_run": len(new_ids),
+        "local_sources": local,
+        "local_sources_ok": sum(1 for b in local if b["error"] is None),
+        "local_sources_total": len(local_keys),
+        **_open_counts(existing),
+    }
+    # A local run must not erase what the last nationwide sweep reported.
+    if scope == "full":
+        stats["last_full"] = {k: stats[k] for k in (
+            "fetched_at", "duration_seconds", "boards_total", "fetched_ok",
+            "fetch_errors", "fetch_success_rate", "jobs_seen", "roles_matched")}
+    elif isinstance(previous.get("last_full"), dict):
+        stats["last_full"] = previous["last_full"]
+    return stats
+
+
+def restat(existing: dict, stats: dict) -> dict:
+    """Recompute the store-derived counts; fetch metrics stay the last run's."""
+    return {**stats, **_open_counts(existing)}
+
+
+class StatsCorrupt(RuntimeError):
+    """Persisted run metrics cannot support honest publishing."""
+
+
+def _parse_iso(value) -> datetime | None:
     try:
         dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
     except (ValueError, AttributeError):
@@ -840,199 +547,7 @@ def _parse_iso(value: str) -> datetime | None:
     return dt.replace(tzinfo=UTC) if dt.tzinfo is None else dt.astimezone(UTC)
 
 
-def _is_exact_timestamp(value: str) -> bool:
-    """True when a posted_at carries a real clock time, not just a date.
-
-    Most ATS feeds give a bare date (or a relative "3 days ago" we resolve to
-    midnight). Measuring pickup speed in MINUTES against an assumed midnight
-    invents up to 24 hours of latency that never happened, so those roles are
-    excluded from the metric rather than silently inflating it.
-    """
-    dt = _parse_iso(value)
-    if dt is None:
-        return False
-    if len(value) <= 10:  # "2026-07-15" — a date, no time at all
-        return False
-    return not (dt.hour == 0 and dt.minute == 0 and dt.second == 0)
-
-
-def _detection_latency(existing: dict, window_days: int = 7,
-                       now: datetime | None = None) -> dict:
-    """How fast we pick up newly published roles, in minutes.
-
-    Two things this deliberately does NOT do, because the earlier version did
-    both and reported a ~997-minute median off an hourly schedule:
-
-      - `window_days` bounds how recently the role was PUBLISHED, not how big
-        a delay we're willing to count. Bounding the delay instead meant every
-        historical backfill under the ceiling counted as a live detection.
-      - Date-only timestamps are excluded entirely (see _is_exact_timestamp);
-        against an assumed midnight they contribute fake hours.
-
-    The result is a smaller sample measuring one honest thing. p95 ships next to
-    p50 because a median alone hides the tail that actually costs applicants.
-    """
-    now = now or datetime.now(UTC)
-    published_after = now - timedelta(days=window_days)
-    deltas = []
-    for record in existing.values():
-        posted, seen = record.get("posted_at"), record.get("first_seen_at")
-        if not posted or not seen or not _is_exact_timestamp(posted):
-            continue
-        posted_dt, seen_dt = _parse_iso(posted), _parse_iso(seen)
-        if not posted_dt or not seen_dt or posted_dt < published_after:
-            continue
-        minutes = (seen_dt - posted_dt).total_seconds() / 60
-        if minutes >= 0:
-            deltas.append(minutes)
-    deltas.sort()
-    return {
-        "median_minutes": round(statistics.median(deltas), 1) if deltas else None,
-        "p95_minutes": (
-            round(deltas[min(int(len(deltas) * 0.95), len(deltas) - 1)], 1)
-            if deltas else None
-        ),
-        "sample_size": len(deltas),
-        "window_days": window_days,
-        "basis": "roles published in the window with an exact source timestamp",
-    }
-
-
-def _build_stats(companies, benched, succeeded, complete_keys, errors, errors_by_ats,
-                 kept, existing, new_ids, enriched, detail_fetches, purged, duration,
-                 dropped_no_year=None, dropped_offcycle=0,
-                 partial_by_reason: Counter | None = None) -> dict:
-    open_records = [r for r in existing.values() if r.get("is_open")]
-    attempted = len(companies) - len(benched)
-    dated = sum(1 for r in open_records if r.get("posted_at"))
-    partial_by_reason = partial_by_reason or Counter()
-    # Accept a bare int from older callers; the split is what we publish now.
-    no_year_by_reason = (
-        Counter(dropped_no_year) if isinstance(dropped_no_year, dict)
-        else Counter({"unknown": int(dropped_no_year or 0)})
-    )
-    fetched_at = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
-    return {
-        "generated_at": fetched_at,
-        "fetched_at": fetched_at,
-        "duration_seconds": duration,
-        "companies_total": len(companies),
-        "companies_by_source": dict(Counter(c["ats"] for c in companies)),
-        "quarantined": len(benched),
-        "fetched_ok": len(succeeded),
-        "fetch_errors": errors,
-        "errors_by_source": dict(errors_by_ats),
-        # Two rates, because they answer different questions and only quoting
-        # the first one overstates coverage: "of the boards we attempted this
-        # run" vs "of every board on the registry" (quarantined ones included).
-        "fetch_success_rate": round(len(succeeded) / max(attempted, 1), 3),
-        "fetch_success_rate_registry": round(len(succeeded) / max(len(companies), 1), 3),
-        # Boards whose response was provably the complete list. Only these are
-        # allowed to close a role; the rest may have been truncated.
-        "snapshots_complete": len(complete_keys),
-        "snapshots_partial": len(succeeded) - len(complete_keys),
-        "partial_by_reason": dict(partial_by_reason),
-        "degraded_fetches": sum(
-            partial_by_reason.get(reason, 0)
-            for reason in (
-                models.INCOMPLETE_MALFORMED,
-                models.INCOMPLETE_STALLED,
-            )
-        ),
-        # `roles_matched` is a FETCH number: what this run's responses yielded.
-        # Everything below it describes the STORE — the roles actually open and
-        # published. The two differ whenever a capped snapshot kept a role we
-        # didn't re-see, so they must not be mixed: breaking down `open_total`
-        # by a fetch-time count made Summer read 77 against a published 78.
-        "roles_matched": len(kept),
-        # The total, then the same total split by WHY. "dated-too-old" comes
-        # back if infer_max_age_days widens; "undated" cannot be recovered by
-        # any window at all, because the ATS published no date to age.
-        "dropped_no_year_in_title": sum(no_year_by_reason.values()),
-        "dropped_no_year_undated": no_year_by_reason.get("undated", 0),
-        "dropped_no_year_dated_too_old": no_year_by_reason.get("dated-too-old", 0),
-        "dropped_no_year_dated_in_future": no_year_by_reason.get("dated-in-future", 0),
-        "dropped_no_year_unparsable_date": no_year_by_reason.get("unparsable-date", 0),
-        "dropped_no_year_inference_disabled":
-            no_year_by_reason.get("inference-disabled", 0),
-        "dropped_no_year_by_reason": dict(sorted(no_year_by_reason.items())),
-        "dropped_offcycle_by_text": dropped_offcycle,
-        "roles_cycle_inferred": sum(1 for r in open_records if r.get("season_inferred")),
-        "roles_by_source": dict(Counter(r.get("source") for r in open_records)),
-        # Multi-cycle postings count once per cycle they state, matching how
-        # they render — the primary-season-only count under-reported them.
-        "roles_by_cycle": dict(Counter(
-            cyc for r in open_records
-            for cyc in (r.get("seasons") or [r.get("season")]) if cyc
-        )),
-        "roles_by_region": dict(Counter(
-            "US" if filters.is_united_states(r.get("location") or "") else "International"
-            for r in open_records
-        )),
-        "sponsorship_counts": dict(Counter(
-            r.get("sponsorship", "unknown") for r in open_records
-        )),
-        "posted_date_coverage": round(dated / max(len(open_records), 1), 3),
-        "enriched_this_run": enriched,
-        "enrichment_detail_fetches": detail_fetches,
-        "purged_this_run": purged,
-        "new_this_run": len(new_ids),
-        "open_total": len(open_records),
-        "detection_latency": _detection_latency(existing),
-        "posting_lifetime": dict(zip(
-            ("median_days", "sample_size"), trends.median_days_open(existing),
-            strict=True,
-        )),
-    }
-
-
-def restat(existing: dict, stats: dict) -> dict:
-    """Recompute the store-derived counts in `stats` from the current store.
-
-    Two things produce numbers here: this run's FETCH (roles matched, per-source
-    hit counts, error rates) and the resulting STORE (what's open, by cycle, by
-    sponsorship). Only the store half can be recalculated later, and it has to
-    be — after `run.py render` rewrites cycles, the published stats otherwise
-    still describe the dataset from before the audit.
-
-    Fetch metrics are deliberately left alone; inventing them would be worse
-    than showing the last real run's.
-    """
-    stats = dict(stats)
-    open_records = [r for r in existing.values() if r.get("is_open")]
-    dated = sum(1 for r in open_records if r.get("posted_at"))
-    stats.update({
-        "open_total": len(open_records),
-        "roles_by_cycle": dict(Counter(
-            cyc for r in open_records
-            for cyc in (r.get("seasons") or [r.get("season")]) if cyc
-        )),
-        "roles_cycle_inferred": sum(1 for r in open_records if r.get("season_inferred")),
-        "roles_by_source": dict(Counter(r.get("source") for r in open_records)),
-        "roles_by_region": dict(Counter(
-            "US" if filters.is_united_states(r.get("location") or "") else "International"
-            for r in open_records
-        )),
-        "sponsorship_counts": dict(Counter(
-            r.get("sponsorship", "unknown") for r in open_records
-        )),
-        "posted_date_coverage": round(dated / max(len(open_records), 1), 3),
-        "detection_latency": _detection_latency(existing),
-        "posting_lifetime": dict(zip(
-            ("median_days", "sample_size"), trends.median_days_open(existing),
-            strict=True,
-        )),
-        "stats_basis": "counts recomputed from the store; fetch metrics from the last run",
-    })
-    return stats
-
-
-class StatsCorrupt(RuntimeError):
-    """Raised when persisted run metrics cannot support honest publishing."""
-
-
 def load_stats(path: str | None = None) -> dict:
-    """Load metrics without silently replacing bad freshness data with now."""
     path = path or paths.STATS_PATH
     try:
         with open(path, encoding="utf-8") as f:
@@ -1066,63 +581,54 @@ def _atomic_write(path: str, content: str) -> None:
 
 
 def write_stats(stats: dict) -> None:
-    fetched_at = stats.get("fetched_at") or stats.get("generated_at")
-    if _parse_iso(fetched_at) is None:
-        raise StatsCorrupt("refusing to persist stats without a valid fetch timestamp")
-    stats["fetched_at"] = fetched_at
-    stats.setdefault("generated_at", fetched_at)
-    _atomic_write(
-        paths.STATS_PATH,
-        json.dumps(stats, indent=2, ensure_ascii=False) + "\n",
-    )
+    _atomic_write(paths.STATS_PATH, json.dumps(stats, indent=2, ensure_ascii=False) + "\n")
 
 
-_HISTORY_KEEP = 2000  # ~6 weeks at the 30-minute cadence
-_REJECTED_KEEP = 5000  # newest kept; enough to size each pool without bloating the repo
-
-
-def _append_rejected_titles(rows: list[dict]) -> None:
-    """Log every in-scope role dropped for having no stated cycle.
-
-    These roles pass the title filter and then vanish, leaving only a counter —
-    so there was no way to look at what we were throwing away or to judge
-    whether widening the window would recover anything worth having. One line
-    per drop, newest kept, so the file stays a fixed size in the repo.
-    """
-    if not rows:
-        return
-    ts = store.now_iso()
-    lines = []
+def _append_lines(path: str, new_lines: list[str], keep: int) -> None:
+    lines: list[str] = []
     try:
-        with open(paths.REJECTED_TITLES_PATH, encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             lines = f.read().splitlines()
     except OSError:
         pass
-    lines.extend(
-        json.dumps({"ts": ts, **row}, ensure_ascii=False) for row in rows
-    )
-    _atomic_write(
-        paths.REJECTED_TITLES_PATH,
-        "\n".join(lines[-_REJECTED_KEEP:]) + "\n",
-    )
+    lines.extend(new_lines)
+    _atomic_write(path, "\n".join(lines[-keep:]) + "\n")
+
+
+def _append_rejected(rows: list[dict]) -> None:
+    """The audit trail: every IT-titled role we dropped, and why.
+
+    A role re-rejected on every run would flood the file, so a role already
+    logged with the same reason is not logged again.
+    """
+    known: set[tuple[str, str]] = set()
+    try:
+        with open(paths.REJECTED_PATH, encoding="utf-8") as f:
+            for line in f:
+                try:
+                    row = json.loads(line)
+                    known.add((row.get("url"), row.get("reason")))
+                except ValueError:
+                    continue
+    except OSError:
+        pass
+    ts = store.now_iso()
+    fresh = []
+    for row in rows:
+        key = (row.get("url"), row.get("reason"))
+        if key in known:
+            continue
+        known.add(key)
+        fresh.append(json.dumps({"ts": ts, **row}, ensure_ascii=False))
+    if fresh:
+        _append_lines(paths.REJECTED_PATH, fresh, _REJECTED_KEEP)
 
 
 def _append_history(stats: dict) -> None:
-    """One compact line per run — the time series behind the dashboard chart."""
     line = json.dumps({
-        "ts": stats["generated_at"],
-        "open": stats["open_total"],
-        "new": stats["new_this_run"],
-        "companies": stats["companies_total"],
-        "ok_rate": stats["fetch_success_rate"],
-        "quarantined": stats["quarantined"],
-        "secs": stats["duration_seconds"],
+        "ts": stats["generated_at"], "scope": stats["scope"],
+        "open": stats["open_total"], "local": stats["open_by_section"].get("Local", 0),
+        "new": stats["new_this_run"], "boards": stats["boards_total"],
+        "ok_rate": stats["fetch_success_rate"], "secs": stats["duration_seconds"],
     }, ensure_ascii=False)
-    lines = []
-    try:
-        with open(paths.HISTORY_PATH, encoding="utf-8") as f:
-            lines = f.read().splitlines()
-    except OSError:
-        pass
-    lines.append(line)
-    _atomic_write(paths.HISTORY_PATH, "\n".join(lines[-_HISTORY_KEEP:]) + "\n")
+    _append_lines(paths.HISTORY_PATH, [line], _HISTORY_KEEP)

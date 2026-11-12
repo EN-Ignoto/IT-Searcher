@@ -209,3 +209,15 @@ def local_distance(location: str | None) -> float | None:
         if dist is not None and (best is None or dist < best):
             best = dist
     return best
+
+
+def coords(place: str | None) -> tuple[float, float] | None:
+    """Coordinates for a table place name ("Kissimmee, FL" -> its point)."""
+    name = re.sub(r"\s+", " ", (place or "").split(",")[0].strip().lower())
+    return PLACES.get(name)
+
+
+def names_other_state(location: str | None) -> bool:
+    """True when the text names a US state other than Florida."""
+    text = location or ""
+    return not _FL_RE.search(text) and bool(_OTHER_STATE_AFTER.search(text))

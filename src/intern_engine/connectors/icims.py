@@ -31,6 +31,7 @@ from ..models import (
     source_board_key,
 )
 from ..net import Net
+from ..terms import SEARCH_TERMS
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -42,7 +43,7 @@ _PAGE_SIZE = 50    # portal default; the cursor is a page number, not an offset
 _MAX_PAGES = 6     # 300 postings per term is far past any real intern listing
 # iCIMS matches the keyword literally, so "intern" alone misses "Co-Op
 # Technician" — the same split Workday needs.
-_SEARCH_TERMS = ("intern", "co-op")
+_SEARCH_TERMS = SEARCH_TERMS
 
 _ISO_DAY = re.compile(r"^(\d{4}-\d{2}-\d{2})")
 

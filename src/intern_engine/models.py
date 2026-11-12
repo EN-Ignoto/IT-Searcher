@@ -10,7 +10,7 @@ from dataclasses import dataclass, field
 
 # Fields that exist only during a run and must never be written to the store
 # (descriptions are multi-KB blobs; we persist the classification, not the text).
-TRANSIENT_FIELDS = ("description",)
+TRANSIENT_FIELDS = ("description", "latlon", "employment_hint")
 
 
 # How trustworthy a posted_at is, worst to best. Connectors label what they
@@ -104,14 +104,8 @@ class Job:
     url: str
     posted_at: str | None = None   # real publish date, or None when unknown
     posted_at_source: str | None = None  # exact | date_only | relative_derived
-    season: str = "Unspecified"    # primary cycle label, assigned by the pipeline
-    seasons: list[str] | None = None  # ALL tracked cycles the title states, when >1
-    season_inferred: bool = False  # True when the cycle came from the posting
-                                   # date, not a year stated in the title
     category: str = "Other"
-    sponsorship: str = "unknown"   # citizens-only | no-sponsorship | offers | unknown
     salary: str | None = None      # pay text when the ATS exposes it (Ashby/Lever/Breezy)
-    skills: list[str] | None = None  # tags extracted from posting text (None = not yet)
     description: str | None = None  # transient: raw posting text, used for classification
     # New identity metadata lives at the end to preserve the positional shape
     # of every pre-existing optional field.
@@ -125,6 +119,19 @@ class Job:
     # requisition.  Keeping them prevents a board-alias change from looking
     # like a brand-new role (and therefore sending a duplicate alert).
     aliases: list[str] | None = None
+    # --- entry-level IT profile (assigned by the pipeline, see filters_it) ---
+    section: str | None = None      # Local | Nearby | Remote
+    miles: float | None = None      # distance from Kissimmee when placeable
+    remote: bool = False            # remote and open to Florida
+    fit: str | None = None          # beginner | stretch | unverified
+    experience: str | None = None   # what the posting says about experience
+    evidence: str | None = None     # the posting's own sentence behind it
+    employment: str | None = None   # Internship | Part-time | Full-time | ...
+    notes: list[str] | None = None  # short flags worth seeing before applying
+    rules_v: int | None = None      # filters_it.VERSION that produced the above
+    # transient (never stored): exact coordinates and an employment-type hint
+    latlon: tuple[float, float] | None = None
+    employment_hint: str | None = None
 
 
 @dataclass

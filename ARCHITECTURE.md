@@ -14,7 +14,7 @@ data/companies.json ─────┘   (fetch)       filters_it + geo  (enrich
 
 | Run | Reads | When |
 |---|---|---|
-| `python run.py update` | `data/local_sources.json`: NLx within 50 miles of Kissimmee, 11 NEOGOV agencies, Osceola schools, UCF, City of Orlando | every 30 minutes |
+| `python run.py update` | `data/local_sources.json`: NLx within 50 miles of Kissimmee, 11 NEOGOV agencies, Valencia College, UCF, City of Orlando | every 30 minutes |
 | `python run.py update --full` | the above plus `data/companies.json` (about 5,400 employer boards) | every 6 hours |
 
 Both are the one workflow in `.github/workflows/update.yml`. A run closes roles
@@ -28,7 +28,8 @@ found.
 | `connectors/` | One file per source. Each returns `models.Fetch`: normalized `Job`s plus whether the answer was the board's complete list. |
 | `connectors/nlx.py` | National Labor Exchange search API, phrase queries around one place. Jobs carry coordinates, date and full text. |
 | `connectors/neogov.py` | governmentjobs.com agency listings (HTML fragments). |
-| `connectors/paradox.py` | Paradox career sites (Osceola schools). |
+| `connectors/paradox.py` | Paradox career sites (Osceola schools; currently refused by the site). |
+| `connectors/peopleadmin.py` | PeopleAdmin Atom feed (Valencia College). |
 | `connectors/workday.py` | Workday. `"whole": true` reads a small tenant end to end; otherwise keyword searches from `terms.py`. |
 | `net.py` | HTTP with retries, backoff and per-host concurrency caps. |
 | `filters_it.py` | The profile as code: title rules, experience reading, employment type, remote eligibility. |

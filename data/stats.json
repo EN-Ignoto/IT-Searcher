@@ -1,16 +1,188 @@
 {
-  "generated_at": "2026-11-12T08:04:46Z",
-  "fetched_at": "2026-11-12T08:04:46Z",
+  "generated_at": "2026-11-12T08:09:45Z",
+  "fetched_at": "2026-11-12T08:09:45Z",
   "scope": "local",
-  "duration_seconds": 0,
-  "boards_total": 0,
-  "fetched_ok": 0,
-  "fetch_errors": 0,
-  "fetch_success_rate": 0,
-  "local_sources": [],
-  "local_sources_ok": 0,
-  "local_sources_total": 0,
-  "note": "placeholder until the first collection runs",
+  "duration_seconds": 26.3,
+  "boards_total": 15,
+  "boards_by_source": {
+    "nlx": 1,
+    "neogov": 11,
+    "paradox": 1,
+    "workday": 2
+  },
+  "quarantined": 0,
+  "fetched_ok": 13,
+  "fetch_errors": 2,
+  "errors_by_source": {
+    "nlx": 1,
+    "paradox": 1
+  },
+  "fetch_success_rate": 0.867,
+  "snapshots_complete": 13,
+  "snapshots_partial": 0,
+  "jobs_seen": 200,
+  "roles_matched": 0,
+  "dropped_by_reason": {
+    "not-it-role": 200
+  },
+  "detail_fetches": 0,
+  "closed_by_posting_check": 0,
+  "purged_this_run": 0,
+  "new_this_run": 0,
+  "local_sources": [
+    {
+      "key": "neogov:casselberry",
+      "name": "City of Casselberry",
+      "ats": "neogov",
+      "jobs": 4,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:clermontfl",
+      "name": "City of Clermont",
+      "ats": "neogov",
+      "jobs": 12,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:kissimmeefl",
+      "name": "City of Kissimmee",
+      "ats": "neogov",
+      "jobs": 0,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:kua",
+      "name": "Kissimmee Utility Authority",
+      "ats": "neogov",
+      "jobs": 0,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:maitland",
+      "name": "City of Maitland",
+      "ats": "neogov",
+      "jobs": 1,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:ocoee",
+      "name": "City of Ocoee",
+      "ats": "neogov",
+      "jobs": 7,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:osceola",
+      "name": "Osceola County",
+      "ats": "neogov",
+      "jobs": 13,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:oviedo",
+      "name": "City of Oviedo",
+      "ats": "neogov",
+      "jobs": 2,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:seminolecountyfl",
+      "name": "Seminole County",
+      "ats": "neogov",
+      "jobs": 19,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:stcloud",
+      "name": "City of St. Cloud",
+      "ats": "neogov",
+      "jobs": 5,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "neogov:winterpark",
+      "name": "City of Winter Park",
+      "ats": "neogov",
+      "jobs": 7,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "nlx:kissimmee-fl",
+      "name": "NLx / DEJobs (50 mi of Kissimmee)",
+      "ats": "nlx",
+      "jobs": 0,
+      "kept": 0,
+      "complete": false,
+      "error": "HTTPStatusError: Client error '429 Too Many Requests' for url 'https://prod-search-api.jobsyn.org/api/v1/solr/search?location=Kissimmee%2C+FL&r=50&q=%22IT+analyst%22&page=25'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "partial_reason": null
+    },
+    {
+      "key": "paradox:osceolaschools",
+      "name": "School District of Osceola County",
+      "ats": "paradox",
+      "jobs": 0,
+      "kept": 0,
+      "complete": false,
+      "error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://jobs.osceolaschools.net/api/get-jobs?page_number=1&enable_kilometers=false'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
+      "partial_reason": null
+    },
+    {
+      "key": "workday:cityoforlando:cityoforlandocareers",
+      "name": "City of Orlando",
+      "ats": "workday",
+      "jobs": 54,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    },
+    {
+      "key": "workday:ucf:careers",
+      "name": "University of Central Florida",
+      "ats": "workday",
+      "jobs": 76,
+      "kept": 0,
+      "complete": true,
+      "error": null,
+      "partial_reason": null
+    }
+  ],
+  "local_sources_ok": 13,
+  "local_sources_total": 15,
   "open_total": 0,
   "open_by_section": {},
   "open_by_fit": {},
@@ -18,5 +190,5 @@
   "open_by_employment": {},
   "open_by_source": {},
   "posted_date_coverage": 0.0,
-  "rendered_at": "2026-11-12T08:04:46Z"
+  "rendered_at": "2026-11-12T08:09:45Z"
 }

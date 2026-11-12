@@ -1004,6 +1004,16 @@
     "last_attempt_at": "2026-11-09T01:06:27Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/xpansiv?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   },
+  "nlx:kissimmee-fl": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-12T08:09:45Z",
+    "last_error": "HTTPStatusError: Client error '429 Too Many Requests' for url 'https://prod-search-api.jobsyn.org/api/v1/solr/search?location=Kissimmee%2C+FL&r=50&q=%22IT+analyst%22&page=25'\nFor more information chec"
+  },
+  "paradox:osceolaschools": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-12T08:09:45Z",
+    "last_error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://jobs.osceolaschools.net/api/get-jobs?page_number=1&enable_kilometers=false'\nFor more information check: https://developer.mozilla.org/en-"
+  },
   "recruitee:1x": {
     "consecutive_failures": 17,
     "last_attempt_at": "2026-11-09T11:40:07Z",

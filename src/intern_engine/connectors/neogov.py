@@ -129,8 +129,9 @@ async def fetch(company: dict, net: Net) -> Fetch:
     for page in range(1, _MAX_PAGES + 1):
         fragment = await net.get_text(
             f"{BASE}/careers/home/index",
-            params={"agency": agency, "sort": "PostingDate|Descending", "page": str(page)},
-            headers={**HEADERS, "Referer": f"{BASE}/careers/{agency}"})
+            # Exactly the request verified by hand. An extra sort parameter
+            # makes the endpoint answer HTTP 500.
+            params={"agency": agency, "page": str(page)}, headers=HEADERS)
         if fragment.lstrip()[:15].lower().startswith(("<!doctype", "<html")):
             raise NeogovError(f"agency {agency!r} not found (full page returned)")
         found = parse(fragment, company)

@@ -57,7 +57,7 @@ def cmd_update(scope: str) -> None:
     print("  local sources:")
     for board in stats["local_sources"]:
         state = f"ERROR {board['error']}" if board["error"] else (
-            "complete" if board["complete"] else "partial")
+            "complete" if board["complete"] else f"partial ({board.get('partial_reason')})")
         print(f"    {board['name'][:44]:<44} jobs={board['jobs']:<5} "
               f"kept={board['kept']:<3} {state}")
     print(f"  listed                   {summary}")

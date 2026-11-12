@@ -255,6 +255,7 @@ async def classify(results, cfg: dict, cache: dict, net: Net, workday_net: Net,
         board = out["per_board"].setdefault(key, {
             "name": company.get("name"), "ats": company.get("ats"), "jobs": 0,
             "kept": 0, "complete": bool(result.complete), "error": error,
+            "partial_reason": result.incomplete_reason,
         })
         if error is not None:
             out["errors"] += 1

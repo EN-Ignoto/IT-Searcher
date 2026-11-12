@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-12T08:09:45Z",
- "fetched_at": "2026-11-12T08:09:45Z",
+ "generated_at": "2026-11-12T08:17:17Z",
+ "fetched_at": "2026-11-12T08:17:17Z",
  "scope": "local",
- "duration_seconds": 26.3,
+ "duration_seconds": 84.0,
  "boards_total": 15,
  "boards_by_source": {
   "nlx": 1,
@@ -11,24 +11,32 @@
   "workday": 2
  },
  "quarantined": 0,
- "fetched_ok": 13,
- "fetch_errors": 2,
+ "fetched_ok": 14,
+ "fetch_errors": 1,
  "errors_by_source": {
-  "nlx": 1,
   "paradox": 1
  },
- "fetch_success_rate": 0.867,
+ "fetch_success_rate": 0.933,
  "snapshots_complete": 13,
- "snapshots_partial": 0,
- "jobs_seen": 200,
- "roles_matched": 0,
+ "snapshots_partial": 1,
+ "jobs_seen": 2391,
+ "roles_matched": 10,
  "dropped_by_reason": {
-  "not-it-role": 200
+  "active-clearance-required": 1,
+  "not-it-role": 2342,
+  "requires-10-years-experience": 1,
+  "requires-2-years-experience": 5,
+  "requires-3-years-experience": 3,
+  "requires-4-years-experience": 3,
+  "requires-5-years-experience": 3,
+  "requires-8-years-experience": 1,
+  "senior-title": 19,
+  "stale-posting": 3
  },
  "detail_fetches": 0,
  "closed_by_posting_check": 0,
  "purged_this_run": 0,
- "new_this_run": 0,
+ "new_this_run": 10,
  "local_sources": [
   {
    "key": "neogov:casselberry",
@@ -44,7 +52,7 @@
    "key": "neogov:clermontfl",
    "name": "City of Clermont",
    "ats": "neogov",
-   "jobs": 12,
+   "jobs": 11,
    "kept": 0,
    "complete": true,
    "error": null,
@@ -144,11 +152,11 @@
    "key": "nlx:kissimmee-fl",
    "name": "NLx / DEJobs (50 mi of Kissimmee)",
    "ats": "nlx",
-   "jobs": 0,
-   "kept": 0,
+   "jobs": 2192,
+   "kept": 10,
    "complete": false,
-   "error": "HTTPStatusError: Client error '429 Too Many Requests' for url 'https://prod-search-api.jobsyn.org/api/v1/solr/search?location=Kissimmee%2C+FL&r=50&q=%22IT+analyst%22&page=25'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
-   "partial_reason": null
+   "error": null,
+   "partial_reason": "rate-limited"
   },
   {
    "key": "paradox:osceolaschools",
@@ -181,14 +189,32 @@
    "partial_reason": null
   }
  ],
- "local_sources_ok": 13,
+ "local_sources_ok": 14,
  "local_sources_total": 15,
- "open_total": 0,
- "open_by_section": {},
- "open_by_fit": {},
- "open_by_category": {},
- "open_by_employment": {},
- "open_by_source": {},
- "posted_date_coverage": 0.0,
- "rendered_at": "2026-11-12T08:09:45Z"
+ "open_total": 10,
+ "open_by_section": {
+  "Local": 6,
+  "Nearby": 4
+ },
+ "open_by_fit": {
+  "stretch": 6,
+  "beginner": 4
+ },
+ "open_by_category": {
+  "Help Desk / Service Desk": 2,
+  "IT Support / Technician": 5,
+  "Network / NOC": 1,
+  "Systems / Infrastructure": 2
+ },
+ "open_by_employment": {
+  "Not stated": 6,
+  "Full-time": 2,
+  "Temporary / contract": 1,
+  "Part-time": 1
+ },
+ "open_by_source": {
+  "nlx": 10
+ },
+ "posted_date_coverage": 1.0,
+ "rendered_at": "2026-11-12T08:17:17Z"
 }

@@ -14,6 +14,8 @@
   {"name": "City of Maitland", "slug": "maitland", "ats": "neogov", "fallback_place": "Maitland, FL"},
   {"name": "School District of Osceola County", "slug": "osceolaschools", "ats": "paradox",
    "host": "jobs.osceolaschools.net", "fallback_place": "Kissimmee, FL"},
+  {"name": "Valencia College", "slug": "valenciacollege", "ats": "peopleadmin",
+   "host": "valenciacollege.peopleadmin.com", "fallback_place": "Orlando, FL"},
   {"name": "University of Central Florida", "slug": "ucf", "ats": "workday", "wd": "wd1",
    "site": "careers", "whole": true, "fallback_place": "Orlando, FL"},
   {"name": "City of Orlando", "slug": "cityoforlando", "ats": "workday", "wd": "wd5",

@@ -12,7 +12,7 @@ from __future__ import annotations
 
 import re
 
-from .connectors import neogov, paradox
+from .connectors import neogov, paradox, peopleadmin
 from .models import Job
 from .net import Net
 
@@ -113,6 +113,7 @@ _FETCHERS = {
     "workable": _workable,
     "neogov": neogov.description,
     "paradox": paradox.description,
+    "peopleadmin": peopleadmin.description,
 }
 
 

@@ -22,7 +22,7 @@ FIT_LABEL = {
     filters_it.FIT_UNVERIFIED: "Check requirements",
 }
 SOURCE_LABEL = {
-    "nlx": "NLx / DEJobs", "neogov": "GovernmentJobs", "paradox": "District careers site",
+    "nlx": "NLx / DEJobs", "neogov": "GovernmentJobs", "paradox": "District careers site", "peopleadmin": "College careers site",
     "workday": "Workday", "greenhouse": "Greenhouse", "lever": "Lever", "ashby": "Ashby",
     "smartrecruiters": "SmartRecruiters", "oracle": "Oracle", "icims": "iCIMS",
     "workable": "Workable", "rippling": "Rippling", "breezy": "Breezy",

@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-12T20:52:47Z",
- "data_as_of": "2026-11-12T20:52:47Z",
- "rendered_at": "2026-11-12T20:52:48Z",
+ "generated_at": "2026-11-12T20:50:36Z",
+ "data_as_of": "2026-11-12T20:50:36Z",
+ "rendered_at": "2026-11-12T20:50:36Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 49,
+ "count": 53,
  "jobs": [
   {
    "id": "workday:halma:/job/Orlando/Jr-IT-Support-Specialist_JR26_001243",
@@ -47,6 +47,29 @@
    "first_seen_at": "2026-11-12T08:17:17Z",
    "salary": null,
    "source": "nlx"
+  },
+  {
+   "id": "peopleadmin:valenciacollege:44244",
+   "section": "Local",
+   "miles": 17.1,
+   "remote": false,
+   "title": "Specialist, Technical Support",
+   "company": "Valencia College",
+   "location": "Orlando, FL (East Campus)",
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "fit": "beginner",
+   "experience": "No years of experience stated",
+   "evidence": "",
+   "notes": [
+    "Mentions Security+/Network+"
+   ],
+   "url": "https://valenciacollege.peopleadmin.com/postings/44244",
+   "posted_at": "2026-11-05T19:03:08-05:00",
+   "posted_at_source": "exact",
+   "first_seen_at": "2026-11-12T20:37:05Z",
+   "salary": null,
+   "source": "peopleadmin"
   },
   {
    "id": "nlx:kissimmee-fl:BA300695C674418D983FDDC3B445D250",
@@ -278,6 +301,27 @@
    "source": "rippling"
   },
   {
+   "id": "rippling:patientnow:19feb150-fa2b-4a72-85a0-f678a7f7c070",
+   "section": "Remote",
+   "miles": null,
+   "remote": true,
+   "title": "Technical Support Specialist",
+   "company": "PatientNow",
+   "location": "Remote (United States)",
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "fit": "unverified",
+   "experience": "Posting text unavailable — check requirements",
+   "evidence": "",
+   "notes": [],
+   "url": "https://ats.rippling.com/patientnow/jobs/19feb150-fa2b-4a72-85a0-f678a7f7c070",
+   "posted_at": null,
+   "posted_at_source": null,
+   "first_seen_at": "2026-11-12T09:25:22Z",
+   "salary": null,
+   "source": "rippling"
+  },
+  {
    "id": "rippling:conceptplus:f9ddd964-6bb4-4baf-8826-10e891c5270b",
    "section": "Remote",
    "miles": null,
@@ -410,6 +454,30 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": null,
    "source": "workday"
+  },
+  {
+   "id": "greenhouse:expel:8936554002",
+   "section": "Remote",
+   "miles": null,
+   "remote": true,
+   "title": "Associate SOC Analyst",
+   "company": "Expel",
+   "location": "Remote",
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "fit": "beginner",
+   "experience": "None required — 1 year preferred",
+   "evidence": "<li>1–2 years of IT or security experience is preferred, but if you’ve got passion, potential, and a compelling story, we want to hear it.</li>",
+   "notes": [
+    "Shift work mentioned: 24x7",
+    "Remote region not stated"
+   ],
+   "url": "https://expel.com/about/career-listing/8936554002?gh_jid=8936554002",
+   "posted_at": "2026-11-10T12:24:37-05:00",
+   "posted_at_source": "exact",
+   "first_seen_at": "2026-11-12T09:25:22Z",
+   "salary": null,
+   "source": "greenhouse"
   },
   {
    "id": "workday:bigcommerce:/job/United-States---Remote/Technical-Support-Representative--US-_3100",
@@ -751,6 +819,29 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": "$30 per hour",
    "source": "ashby"
+  },
+  {
+   "id": "greenhouse:higherlogic:8033739003",
+   "section": "Remote",
+   "miles": null,
+   "remote": true,
+   "title": "Technical Support Specialist",
+   "company": "Higher Logic",
+   "location": "US-Remote",
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "fit": "beginner",
+   "experience": "No years of experience stated",
+   "evidence": "",
+   "notes": [
+    "Asks 2 years customer-service-type experience"
+   ],
+   "url": "https://job-boards.greenhouse.io/higherlogic/jobs/8033739003",
+   "posted_at": "2026-10-16T13:35:02-04:00",
+   "posted_at_source": "exact",
+   "first_seen_at": "2026-11-12T09:25:22Z",
+   "salary": null,
+   "source": "greenhouse"
   },
   {
    "id": "lever:firemon:55eed579-a00a-4d3c-a1ae-2e0ef9bd7063",

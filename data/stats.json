@@ -1,57 +1,38 @@
 {
-  "generated_at": "2026-11-12T20:52:47Z",
-  "fetched_at": "2026-11-12T20:52:47Z",
-  "scope": "full",
-  "duration_seconds": 1383.2,
-  "boards_total": 5423,
+  "generated_at": "2026-11-12T20:50:36Z",
+  "fetched_at": "2026-11-12T20:50:36Z",
+  "scope": "local",
+  "duration_seconds": 54.8,
+  "boards_total": 16,
   "boards_by_source": {
     "nlx": 1,
     "neogov": 11,
     "paradox": 1,
-    "workday": 1921,
-    "greenhouse": 1206,
-    "lever": 444,
-    "ashby": 911,
-    "recruitee": 3,
-    "smartrecruiters": 315,
-    "rippling": 185,
-    "workable": 240,
-    "oracle": 164,
-    "amazon": 1,
-    "breezy": 19,
-    "eightfold": 1
+    "peopleadmin": 1,
+    "workday": 2
   },
-  "quarantined": 403,
-  "fetched_ok": 5009,
-  "fetch_errors": 11,
+  "quarantined": 0,
+  "fetched_ok": 15,
+  "fetch_errors": 1,
   "errors_by_source": {
-    "paradox": 1,
-    "workday": 9,
-    "ashby": 1
+    "paradox": 1
   },
-  "fetch_success_rate": 0.998,
-  "snapshots_complete": 4230,
-  "snapshots_partial": 779,
-  "jobs_seen": 352933,
-  "roles_matched": 49,
+  "fetch_success_rate": 0.938,
+  "snapshots_complete": 15,
+  "snapshots_partial": 0,
+  "jobs_seen": 851,
+  "roles_matched": 9,
   "dropped_by_reason": {
-    "active-clearance-required": 83,
-    "level-2-unverifiable": 1,
-    "not-it-role": 341073,
-    "outside-area": 9202,
-    "past-term": 1,
-    "remote-not-open-to-florida": 1,
+    "active-clearance-required": 2,
+    "not-it-role": 803,
     "requires-10-years-experience": 1,
-    "requires-2-years-experience": 14,
-    "requires-3-years-experience": 17,
-    "requires-4-years-experience": 9,
-    "requires-5-years-experience": 14,
-    "requires-6-years-experience": 1,
-    "requires-7-years-experience": 1,
+    "requires-2-years-experience": 5,
+    "requires-3-years-experience": 3,
+    "requires-4-years-experience": 3,
+    "requires-5-years-experience": 3,
     "requires-8-years-experience": 1,
-    "senior-title": 2428,
-    "stale-posting": 34,
-    "unconfirmed-it-role": 3
+    "senior-title": 15,
+    "stale-posting": 6
   },
   "detail_fetches": 1,
   "closed_by_posting_check": 0,
@@ -66,7 +47,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:clermontfl",
@@ -76,7 +58,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:kissimmeefl",
@@ -86,7 +69,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:kua",
@@ -96,7 +80,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:maitland",
@@ -106,7 +91,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:ocoee",
@@ -116,17 +102,19 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:osceola",
       "name": "Osceola County",
       "ats": "neogov",
-      "jobs": 10,
+      "jobs": 13,
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:oviedo",
@@ -136,7 +124,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:seminolecountyfl",
@@ -146,7 +135,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:stcloud",
@@ -156,7 +146,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:winterpark",
@@ -166,17 +157,19 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "nlx:kissimmee-fl",
       "name": "NLx / DEJobs (50 mi of Kissimmee)",
       "ats": "nlx",
-      "jobs": 3914,
+      "jobs": 631,
       "kept": 8,
-      "complete": false,
+      "complete": true,
       "error": null,
-      "partial_reason": "result-cap"
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "paradox:osceolaschools",
@@ -186,7 +179,19 @@
       "kept": 0,
       "complete": false,
       "error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://jobs.osceolaschools.net/api/get-jobs?page_number=1&enable_kilometers=false'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
+    },
+    {
+      "key": "peopleadmin:valenciacollege",
+      "name": "Valencia College",
+      "ats": "peopleadmin",
+      "jobs": 14,
+      "kept": 1,
+      "complete": true,
+      "error": null,
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "workday:cityoforlando:cityoforlandocareers",
@@ -196,7 +201,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "workday:ucf:careers",
@@ -206,57 +212,59 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     }
   ],
-  "local_sources_ok": 14,
-  "local_sources_total": 15,
-  "open_total": 49,
+  "local_sources_ok": 15,
+  "local_sources_total": 16,
+  "open_total": 53,
   "open_by_section": {
-    "Remote": 38,
+    "Remote": 41,
     "Nearby": 5,
-    "Local": 6
+    "Local": 7
   },
   "open_by_fit": {
     "stretch": 21,
-    "beginner": 25,
-    "unverified": 3
+    "beginner": 28,
+    "unverified": 4
   },
   "open_by_category": {
-    "IT Support / Technician": 22,
+    "IT Support / Technician": 25,
     "IT Operations": 6,
     "Systems / Infrastructure": 6,
     "Network / NOC": 4,
-    "Security (entry)": 4,
+    "Security (entry)": 5,
     "Help Desk / Service Desk": 4,
     "Technical Support (customer-facing)": 3
   },
   "open_by_employment": {
-    "Not stated": 40,
+    "Not stated": 44,
     "Internship": 5,
     "Full-time": 3,
     "Temporary / contract": 1
   },
   "open_by_source": {
     "ashby": 7,
-    "greenhouse": 14,
+    "greenhouse": 16,
     "lever": 2,
     "nlx": 8,
     "oracle": 1,
+    "peopleadmin": 1,
     "recruitee": 1,
-    "rippling": 3,
+    "rippling": 4,
     "workday": 13
   },
-  "posted_date_coverage": 0.939,
+  "posted_date_coverage": 0.925,
   "last_full": {
-    "fetched_at": "2026-11-12T20:52:47Z",
-    "duration_seconds": 1383.2,
-    "boards_total": 5423,
-    "fetched_ok": 5009,
-    "fetch_errors": 11,
-    "fetch_success_rate": 0.998,
-    "jobs_seen": 352933,
-    "roles_matched": 49
+    "fetched_at": "2026-11-12T09:46:35Z",
+    "duration_seconds": 1139.3,
+    "boards_total": 5392,
+    "fetched_ok": 4907,
+    "fetch_errors": 44,
+    "fetch_success_rate": 0.991,
+    "jobs_seen": 349327,
+    "roles_matched": 52
   },
-  "rendered_at": "2026-11-12T20:52:48Z"
+  "rendered_at": "2026-11-12T20:50:36Z"
 }

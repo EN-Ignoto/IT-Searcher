@@ -44,17 +44,19 @@ HEADERS = {"x-origin": "dejobs.org", "Accept": "application/json"}
 # Quoted phrases, because the API treats bare words as OR-ish and drops "it"
 # as a stopword. Order is irrelevant; results are unioned by GUID.
 QUERIES = (
-    # Most valuable first: if the API asks us to slow down part-way through,
-    # it is the broad phrases at the end that go unread, not these.
-    '"help desk"', '"service desk"', '"desktop support"', '"IT support"',
-    '"IT technician"', '"IT specialist"', '"IT intern"', '"technology intern"',
+    # NLx drops "IT" as a stopword: "IT support" searches for "support" and
+    # returns 12,000 jobs. So nothing here leans on that word. Instead, the
+    # second group names things only an IT posting mentions in its text.
+    '"help desk"', '"service desk"', '"desktop support"', '"technology intern"',
     '"support technician"', '"computer technician"', '"PC technician"',
-    '"IT analyst"', '"IT associate"', '"IT assistant"', '"technology support"',
+    '"desktop technician"', '"computer support"', '"technology support"',
     '"technology specialist"', '"network technician"', '"network administrator"',
     '"network operations"', '"systems administrator"', '"system administrator"',
     '"data center technician"', '"security analyst"', '"cybersecurity analyst"',
-    '"support analyst"', '"support specialist"', '"field technician"',
-    '"technical support"',
+    '"support analyst"',
+    '"Active Directory"', '"CompTIA"', '"ticketing system"', '"end user support"',
+    '"information technology"',
+    '"support specialist"', '"field technician"', '"technical support"',
 )
 
 # The first live run sent ~300 requests in 15 seconds and the next run was
@@ -117,7 +119,7 @@ def _job(doc: dict, company: dict) -> Job | None:
 
 
 async def _one_query(query: str, base: dict, company: dict, net: Net,
-                     gate: asyncio.Semaphore):
+                     gate: asyncio.Semaphore, capped: list[str]):
     jobs: dict[str, Job] = {}
     previous: tuple[str, ...] = ()
     for page in range(1, _MAX_PAGES + 1):
@@ -159,6 +161,10 @@ async def _one_query(query: str, base: dict, company: dict, net: Net,
         more = isinstance(pagination, dict) and bool(pagination.get("has_more_pages"))
         if not docs or not more:
             return jobs, None
+    # Name the phrase: a capped phrase is too broad to be useful, and the
+    # run stats are the only place that can be seen.
+    total = pagination.get("total") if isinstance(pagination, dict) else None
+    capped.append(f"{query} (reported total: {total})")
     return jobs, INCOMPLETE_CAPPED
 
 
@@ -167,8 +173,9 @@ async def fetch(company: dict, net: Net) -> Fetch:
             "r": str(company.get("radius", 50))}
     queries = company.get("queries") or QUERIES
     gate = asyncio.Semaphore(_CONCURRENCY)
+    capped: list[str] = []
     results = await asyncio.gather(
-        *(_one_query(q, base, company, net, gate) for q in queries))
+        *(_one_query(q, base, company, net, gate, capped) for q in queries))
     jobs: dict[str, Job] = {}
     reason: str | None = None
     for found, why in results:
@@ -180,4 +187,5 @@ async def fetch(company: dict, net: Net) -> Fetch:
             reason = why
     if not jobs and reason == INCOMPLETE_RATE_LIMITED:
         raise NlxError("rate limited (HTTP 429) before any result was returned")
-    return Fetch(list(jobs.values()), complete=reason is None, incomplete_reason=reason)
+    return Fetch(list(jobs.values()), complete=reason is None, incomplete_reason=reason,
+                 detail=("capped: " + "; ".join(capped)) if capped else None)

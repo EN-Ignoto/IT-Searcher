@@ -41,6 +41,7 @@ from .connectors import (
     nlx,
     oracle,
     paradox,
+    peopleadmin,
     recruitee,
     rippling,
     smartrecruiters,
@@ -67,6 +68,7 @@ CONNECTORS = {
     "nlx": nlx.fetch,
     "neogov": neogov.fetch,
     "paradox": paradox.fetch,
+    "peopleadmin": peopleadmin.fetch,
 }
 
 SCOPES = ("local", "full")
@@ -90,7 +92,7 @@ _LIVENESS_CHECKS = 60
 _LOCAL_UNSEEN_CLOSE_DAYS = 3
 # Sources read for their place, not their employer: their "not an IT title"
 # pile is written out in full so missed roles can be found by reading it.
-_LOCAL_KINDS = {"nlx", "neogov", "paradox"}
+_LOCAL_KINDS = {"nlx", "neogov", "paradox", "peopleadmin"}
 
 
 def load_boards(scope: str) -> tuple[list[dict], set[str]]:
@@ -261,6 +263,7 @@ async def classify(results, cfg: dict, cache: dict, net: Net, workday_net: Net,
             "name": company.get("name"), "ats": company.get("ats"), "jobs": 0,
             "kept": 0, "complete": bool(result.complete), "error": error,
             "partial_reason": result.incomplete_reason,
+            "partial_detail": result.detail,
         })
         if error is not None:
             out["errors"] += 1

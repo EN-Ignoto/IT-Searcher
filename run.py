@@ -14,7 +14,7 @@ intern_engine/outbox.py.
 
 import os
 import sys
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, datetime
 
 # Make the package under src/ importable without installation.
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "src"))
@@ -101,36 +101,6 @@ def cmd_render() -> None:
     print(f"  radar calendar events  {ics_events}")
 
 
-def _fresh_alert_ids(new_ids: list[str], store_data: dict, now: datetime | None = None) -> list[str]:
-    """Only announce verified first-job openings actually posted in the past 48h.
-
-    'New to our database' and 'newly posted by the employer' differ: a
-    historical backfill may contain hundreds of newly discovered old posts.
-    Himalayas rows can be displayed on our website but are not redistributed
-    as individual job alerts under that provider's data terms.
-    """
-    now = now or datetime.now(UTC)
-    window = now - timedelta(hours=48)
-    fresh = []
-    for jid in new_ids:
-        row = store_data.get(jid) or {}
-        if not row.get("is_open") or row.get("source") == "himalayas":
-            continue
-        published = row.get("posted_at")
-        if not published:
-            continue
-        try:
-            dt = datetime.fromisoformat(published.replace("Z", "+00:00"))
-            if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=UTC)
-            dt = dt.astimezone(UTC)
-        except (TypeError, ValueError, AttributeError):
-            continue
-        if window <= dt <= now:
-            fresh.append(jid)
-    return fresh
-
-
 def cmd_update() -> None:
     # paths.COMPANIES_PATH is absolute; checking a CWD-relative path here made
     # `run.py` work only from the repo root, contradicting what paths.py promises.
@@ -144,10 +114,7 @@ def cmd_update() -> None:
     # otherwise a run the gate would reject could still reach the mirror.
     # Queue, don't send: these roles aren't published until the workflow's
     # commit lands, and an alert for an unpublished role is a broken promise.
-    fresh_ids = (_fresh_alert_ids(new_ids, store_data)
-                 if pipeline.config.load_config().get("opportunity_scope") == "it"
-                 else new_ids)
-    pending = outbox.queue(fresh_ids) if fresh_ids else outbox.load()
+    pending = outbox.queue(new_ids)
     print("Update complete:")
     for k, v in stats.items():
         print(f"  {k:<24} {v}")
@@ -155,21 +122,6 @@ def cmd_update() -> None:
     print(f"  feed entries           {feed_entries}")
     print(f"  radar calendar events  {ics_events}")
     print(f"  queued for alerts      {len(pending)}")
-
-
-def cmd_notify_fast() -> None:
-    """Deliver only already-published fresh-job alerts, not daily email digests."""
-    store_data = store.load(paths.JOBS_PATH)
-    for channel, send, label in (
-        ("discord", notify.send_new_roles, "Discord alert"),
-        ("telegram", telegram.send_new_roles, "Telegram push"),
-    ):
-        pending = outbox.load(channel)
-        if not pending:
-            continue
-        done = send(store_data, pending)
-        still = outbox.drain(done, channel)
-        print(f"  {label:20} {len(done)} handled, {len(still)} awaiting retry")
 
 
 def cmd_notify() -> None:
@@ -221,8 +173,6 @@ def main() -> None:
         cmd_render()
     elif cmd == "notify":
         cmd_notify()
-    elif cmd == "notify-fast":
-        cmd_notify_fast()
     elif cmd == "all":
         cmd_discover()
         cmd_harvest()

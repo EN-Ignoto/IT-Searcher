@@ -1,25 +1,23 @@
 {
-  "generated_at": "2026-11-12T20:37:05Z",
-  "fetched_at": "2026-11-12T20:37:05Z",
+  "generated_at": "2026-11-12T20:45:25Z",
+  "fetched_at": "2026-11-12T20:45:25Z",
   "scope": "local",
-  "duration_seconds": 198.9,
-  "boards_total": 18,
+  "duration_seconds": 196.2,
+  "boards_total": 16,
   "boards_by_source": {
     "nlx": 1,
     "neogov": 11,
     "paradox": 1,
     "peopleadmin": 1,
-    "icims": 2,
     "workday": 2
   },
   "quarantined": 0,
   "fetched_ok": 15,
-  "fetch_errors": 3,
+  "fetch_errors": 1,
   "errors_by_source": {
-    "paradox": 1,
-    "icims": 2
+    "paradox": 1
   },
-  "fetch_success_rate": 0.833,
+  "fetch_success_rate": 0.938,
   "snapshots_complete": 14,
   "snapshots_partial": 1,
   "jobs_seen": 4133,
@@ -39,28 +37,8 @@
   "detail_fetches": 1,
   "closed_by_posting_check": 0,
   "purged_this_run": 0,
-  "new_this_run": 1,
+  "new_this_run": 0,
   "local_sources": [
-    {
-      "key": "icims:administrators-ocps",
-      "name": "Orange County Public Schools (administrative and technical)",
-      "ats": "icims",
-      "jobs": 0,
-      "kept": 0,
-      "complete": false,
-      "error": "HTTPStatusError: Client error '405 Not Allowed' for url 'https://administrators-ocps.icims.com/jobs/search?ss=1&searchKeyword=help+desk&pr=0&in_iframe=1&format=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405",
-      "partial_reason": null
-    },
-    {
-      "key": "icims:classified-ocps",
-      "name": "Orange County Public Schools (support staff)",
-      "ats": "icims",
-      "jobs": 0,
-      "kept": 0,
-      "complete": false,
-      "error": "HTTPStatusError: Client error '405 Not Allowed' for url 'https://classified-ocps.icims.com/jobs/search?ss=1&searchKeyword=help+desk&pr=0&in_iframe=1&format=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405",
-      "partial_reason": null
-    },
     {
       "key": "neogov:casselberry",
       "name": "City of Casselberry",
@@ -69,7 +47,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:clermontfl",
@@ -79,7 +58,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:kissimmeefl",
@@ -89,7 +69,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:kua",
@@ -99,7 +80,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:maitland",
@@ -109,7 +91,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:ocoee",
@@ -119,17 +102,19 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:osceola",
       "name": "Osceola County",
       "ats": "neogov",
-      "jobs": 13,
+      "jobs": 10,
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:oviedo",
@@ -139,7 +124,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:seminolecountyfl",
@@ -149,7 +135,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:stcloud",
@@ -159,7 +146,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "neogov:winterpark",
@@ -169,17 +157,19 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "nlx:kissimmee-fl",
       "name": "NLx / DEJobs (50 mi of Kissimmee)",
       "ats": "nlx",
-      "jobs": 3913,
+      "jobs": 3916,
       "kept": 8,
       "complete": false,
       "error": null,
-      "partial_reason": "result-cap"
+      "partial_reason": "result-cap",
+      "partial_detail": "capped: \"IT support\" (reported total: 12373); \"IT technician\" (reported total: 1591); \"IT specialist\" (reported total: 1393); \"IT intern\" (reported total: 996); \"IT associate\" (reported total: 7029); \"IT assistant\" (reported total: 10522)"
     },
     {
       "key": "paradox:osceolaschools",
@@ -189,7 +179,8 @@
       "kept": 0,
       "complete": false,
       "error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://jobs.osceolaschools.net/api/get-jobs?page_number=1&enable_kilometers=false'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "peopleadmin:valenciacollege",
@@ -199,7 +190,8 @@
       "kept": 1,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "workday:cityoforlando:cityoforlandocareers",
@@ -209,7 +201,8 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     },
     {
       "key": "workday:ucf:careers",
@@ -219,11 +212,12 @@
       "kept": 0,
       "complete": true,
       "error": null,
-      "partial_reason": null
+      "partial_reason": null,
+      "partial_detail": null
     }
   ],
   "local_sources_ok": 15,
-  "local_sources_total": 18,
+  "local_sources_total": 16,
   "open_total": 53,
   "open_by_section": {
     "Remote": 41,
@@ -256,10 +250,10 @@
     "lever": 2,
     "nlx": 8,
     "oracle": 1,
+    "peopleadmin": 1,
     "recruitee": 1,
     "rippling": 4,
-    "workday": 13,
-    "peopleadmin": 1
+    "workday": 13
   },
   "posted_date_coverage": 0.925,
   "last_full": {
@@ -272,5 +266,5 @@
     "jobs_seen": 349327,
     "roles_matched": 52
   },
-  "rendered_at": "2026-11-12T20:37:05Z"
+  "rendered_at": "2026-11-12T20:45:25Z"
 }

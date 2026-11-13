@@ -1030,8 +1030,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/xpansiv?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   },
   "paradox:osceolaschools": {
-    "consecutive_failures": 16,
-    "last_attempt_at": "2026-11-13T20:28:37Z",
+    "consecutive_failures": 17,
+    "last_attempt_at": "2026-11-13T21:24:42Z",
     "last_error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://jobs.osceolaschools.net/api/get-jobs?page_number=1&enable_kilometers=false'\nFor more information check: https://developer.mozilla.org/en-"
   },
   "recruitee:1x": {
@@ -2673,6 +2673,11 @@
     "consecutive_failures": 1,
     "last_attempt_at": "2026-11-13T20:28:37Z",
     "last_error": "malformed-response"
+  },
+  "workday:ucf:careers": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-13T21:24:42Z",
+    "last_error": "pagination-stalled"
   },
   "workday:ummc:umccareers": {
     "consecutive_failures": 1,

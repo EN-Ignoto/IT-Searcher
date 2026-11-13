@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-13T15:11:00Z",
- "data_as_of": "2026-11-13T15:11:00Z",
- "rendered_at": "2026-11-13T15:11:00Z",
+ "generated_at": "2026-11-13T20:28:37Z",
+ "data_as_of": "2026-11-13T20:28:37Z",
+ "rendered_at": "2026-11-13T20:28:37Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 50,
+ "count": 52,
  "jobs": [
   {
    "id": "workday:halma:/job/Orlando/Jr-IT-Support-Specialist_JR26_001243",
@@ -278,6 +278,51 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": null,
    "source": "greenhouse"
+  },
+  {
+   "id": "oracle:hckd.fa.us2.oraclecloud.com:2040172",
+   "section": "Remote",
+   "miles": null,
+   "remote": true,
+   "title": "Cybersecurity Internship (Remote) – Summer 2027 (Undergraduate)",
+   "company": "Molina Healthcare",
+   "location": "United States",
+   "category": "Security (entry)",
+   "employment": "Internship",
+   "fit": "beginner",
+   "experience": "Internship — no experience requirement stated",
+   "evidence": "",
+   "notes": [],
+   "url": "https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2040172",
+   "posted_at": "2026-11-13",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-11-13T20:28:37Z",
+   "salary": null,
+   "source": "oracle"
+  },
+  {
+   "id": "ashby:ashby:80c20b00-c3c3-441b-95bd-56eb870e77fb",
+   "section": "Remote",
+   "miles": null,
+   "remote": true,
+   "title": "Product Support Engineer - NAMER",
+   "company": "Ashby",
+   "location": "Remote - US",
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "fit": "stretch",
+   "experience": "No years of experience stated",
+   "evidence": "",
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Shift work mentioned: 24/7"
+   ],
+   "url": "https://jobs.ashbyhq.com/Ashby/80c20b00-c3c3-441b-95bd-56eb870e77fb",
+   "posted_at": "2026-11-13T19:28:59.743+00:00",
+   "posted_at_source": "exact",
+   "first_seen_at": "2026-11-13T20:28:37Z",
+   "salary": "$75K – $140K • Offers Equity • Multiple Ranges",
+   "source": "ashby"
   },
   {
    "id": "rippling:rippling:eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd",

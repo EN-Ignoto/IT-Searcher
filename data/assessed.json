@@ -90,6 +90,31 @@
   "title": "Summer 2027: IT Services Intern",
   "v": 5
  },
+ "ashby:ashby:80c20b00-c3c3-441b-95bd-56eb870e77fb": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Shift work mentioned: 24/7"
+   ],
+   "posted_at": "2026-11-13T19:28:59.743+00:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-13T20:06:23Z",
+  "location": "Remote - US",
+  "seen": "2026-11-13",
+  "title": "Product Support Engineer - NAMER",
+  "v": 5
+ },
  "ashby:ashby:c62ec47a-8de9-4781-b1f7-563a229c4e90": {
   "a": {
    "category": "IT Support / Technician",
@@ -4159,6 +4184,50 @@
   "title": "Support Engineer - Incident",
   "v": 5
  },
+ "oracle:eeho.fa.us2.oraclecloud.com:350549": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-11-13",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-13T20:06:23Z",
+  "location": "Nashville, TN, United States; Orlando, FL, United States; Kansas City, MO, United States; United States",
+  "seen": "2026-11-13",
+  "title": "Support Engineer - Incident",
+  "v": 5
+ },
+ "oracle:egua.fa.us2.oraclecloud.com:27220": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-13",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-13T20:06:23Z",
+  "location": "Remote US, United States",
+  "seen": "2026-11-13",
+  "title": "Fraud Support Analyst",
+  "v": 5
+ },
  "oracle:fa-eqpz-saasfaprod1.fa.ocs.oraclecloud.com:2564": {
   "a": {
    "category": "Systems / Infrastructure",
@@ -4251,6 +4320,28 @@
   "title": "Implementation System Support Representative - Remote",
   "v": 5
  },
+ "oracle:hckd.fa.us2.oraclecloud.com:2040172": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "Internship — no experience requirement stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-13",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-13T20:06:23Z",
+  "location": "United States",
+  "seen": "2026-11-13",
+  "title": "Cybersecurity Internship (Remote) – Summer 2027 (Undergraduate)",
+  "v": 5
+ },
  "peopleadmin:valenciacollege:44244": {
   "a": {
    "category": "IT Support / Technician",
@@ -4269,7 +4360,7 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-13T14:52:09Z",
+  "at": "2026-11-13T20:06:23Z",
   "location": "Orlando, FL (East Campus)",
   "seen": "2026-11-13",
   "title": "Specialist, Technical Support",
@@ -5309,6 +5400,30 @@
   "title": "Customer Support Engineer - Utica, NY",
   "v": 4
  },
+ "workday:leidos:/job/6314-RemoteTeleworker-US/Network-Engineer_R-00196983": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "Bachelor's degree and 4 years’ experience; additional years of experience accepted in lieu of degree.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-11-13T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "requires-4-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-13T20:06:23Z",
+  "location": "6314 Remote/Teleworker US",
+  "seen": "2026-11-13",
+  "title": "Network Engineer",
+  "v": 5
+ },
  "workday:leidos:/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057": {
   "a": {
    "category": "IT Operations",
@@ -5641,6 +5756,28 @@
   "title": "Field Service Technician II - Tallahassee, FL",
   "v": 4
  },
+ "workday:pae:/job/US-Remote/Cybersecurity-Analyst_R0174750": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "Typically, two to three years of relevant experience with Bachelor’s degree in Computer Science, Information Systems or related field",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-13T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-13T20:06:23Z",
+  "location": "US-Remote",
+  "seen": "2026-11-13",
+  "title": "Cybersecurity Analyst",
+  "v": 5
+ },
  "workday:parsons:/job/US---Remote-Any-Location/Multi-Domain-Autonomous-System-Specialist--This-is-a--International-Assignment----NO-REMOTE-WORK--_R182808": {
   "a": {
    "category": "IT Support / Technician",
@@ -5727,6 +5864,28 @@
   "location": "Remote",
   "seen": "2026-11-13",
   "title": "Systems Administrator – Kiteworks",
+  "v": 5
+ },
+ "workday:southstatebank:/job/Remote-Opportunity---VA-NC-SC-GA--FL-AL-TX--CO/IT-Technical-Analyst_R-06556-1": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-13T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-13T20:06:23Z",
+  "location": "Remote Opportunity - VA, NC, SC, GA,  FL, AL, TX, & CO",
+  "seen": "2026-11-13",
+  "title": "IT Technical Analyst",
   "v": 5
  },
  "workday:southstatebank:/job/Remote-Opportunity---VA-NC-SC-GA--FL-AL-TX--CO/IT-Technical-Analyst_R-06559": {
@@ -5861,6 +6020,28 @@
   "location": "Remote - US",
   "seen": "2026-11-13",
   "title": "AI Systems Administrator",
+  "v": 5
+ },
+ "workday:velera:/job/Remote-USA/Business-System-Analyst-II--API-Agile----REMOTE_9847": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-13T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-13T20:06:23Z",
+  "location": "Remote-USA",
+  "seen": "2026-11-13",
+  "title": "Business System Analyst II (API/Agile) - REMOTE",
   "v": 5
  },
  "workday:wvumedicine:/job/Remote/Revenue-Cycle-Systems-Analyst_JR26-47419": {

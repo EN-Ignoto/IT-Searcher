@@ -2095,6 +2095,28 @@
   "title": "Solutions Support Engineer - US East",
   "v": 5
  },
+ "greenhouse:zscaler:5239098007": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<div><span data-path-to-node=\"7,2,0,0\">3+ years of experience troubleshooting SSL, SAML, HTTP, and TCP/IP, with extensive experience analyzing packet captures and HAR traces to res",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-12T15:00:40-05:00",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T23:50:36Z",
+  "location": "Remote - USA",
+  "seen": "2026-11-12",
+  "title": "Product Support Engineer",
+  "v": 5
+ },
  "lever:daniels-sharpsmart:6bdcbb00-3471-4006-993d-9dd2f0e98fbb": {
   "a": {
    "category": "IT Support / Technician",
@@ -4027,6 +4049,50 @@
   "title": "Support Engineer - Configuration",
   "v": 5
  },
+ "oracle:eeho.fa.us2.oraclecloud.com:350366": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-11-12",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T23:50:36Z",
+  "location": "Kansas City, MO, United States; Orlando, FL, United States; United States; Nashville, TN, United States",
+  "seen": "2026-11-12",
+  "title": "Support Engineer - Configuration",
+  "v": 5
+ },
+ "oracle:eeho.fa.us2.oraclecloud.com:350370": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Part-time",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-11-12",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T23:50:36Z",
+  "location": "Nashville, TN, United States; Orlando, FL, United States; Kansas City, MO, United States; United States",
+  "seen": "2026-11-12",
+  "title": "Support Engineer - Incident",
+  "v": 5
+ },
  "oracle:fa-eqpz-saasfaprod1.fa.ocs.oraclecloud.com:2564": {
   "a": {
    "category": "Systems / Infrastructure",
@@ -4137,7 +4203,7 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-12T20:49:41Z",
+  "at": "2026-11-12T23:50:36Z",
   "location": "Orlando, FL (East Campus)",
   "seen": "2026-11-12",
   "title": "Specialist, Technical Support",
@@ -4366,6 +4432,28 @@
   "title": "Technical Support Specialist, Platform",
   "v": 5
  },
+ "rippling:rippling:f70287c4-efff-49dc-b395-90b219ff11a8": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": null,
+   "posted_at_source": null,
+   "reason": "unconfirmed-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T23:50:36Z",
+  "location": "Remote (United States)",
+  "seen": "2026-11-12",
+  "title": "Customer Support Specialist, Business Unit",
+  "v": 5
+ },
  "smartrecruiters:LinkSolutionsInc:744000152736767": {
   "a": {
    "category": "Security (entry)",
@@ -4582,11 +4670,11 @@
    "section": "Nearby",
    "verdict": "reject"
   },
-  "at": "2026-11-12T09:02:41Z",
+  "at": "2026-11-12T23:50:36Z",
   "location": "Cocoa, Florida",
   "seen": "2026-11-12",
   "title": "COMSEC Responsible Officer (CRO)/ Tier II Network Technician (NE2) (Government)",
-  "v": 4
+  "v": 5
  },
  "workday:barrywehmiller:/job/Remote---USA/Field-Service-Technician_R023008": {
   "a": {
@@ -4770,6 +4858,28 @@
   "title": "Fleet Project Support Specialist",
   "v": 5
  },
+ "workday:cars:/job/United-States-Remote/Customer-Support-Specialist-2_JR11405": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-12T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T23:50:36Z",
+  "location": "United States, Remote",
+  "seen": "2026-11-12",
+  "title": "Customer Support Specialist-2",
+  "v": 5
+ },
  "workday:chenmed:/job/East-Orlando/Associate-Field-Support-Technician_R0050579-1": {
   "a": {
    "category": "IT Support / Technician",
@@ -4907,6 +5017,28 @@
   "title": "EB USA Field Service Technician",
   "v": 4
  },
+ "workday:fullsteam:/job/Remote---US/Technical-Support-Specialist_JR102324": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "Two (2) years technical support and customer-facing experience.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-12T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T23:50:36Z",
+  "location": "Remote - US",
+  "seen": "2026-11-12",
+  "title": "Technical Support Specialist",
+  "v": 5
+ },
  "workday:godirect:/job/United-States-Remote/Summer-2027-Technology-Intern_JR0033187": {
   "a": {
    "category": "IT Operations",
@@ -5015,6 +5147,28 @@
   "location": "Orlando",
   "seen": "2026-11-12",
   "title": "Jr. IT Support Specialist",
+  "v": 5
+ },
+ "workday:henryschein:/job/Florida-United-States---Remote/Equipment-Service-Technician---Tampa-Area_R135628": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-12T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T23:50:36Z",
+  "location": "Florida, United States - Remote",
+  "seen": "2026-11-12",
+  "title": "Equipment Service Technician - Tampa Area",
   "v": 5
  },
  "workday:henryschein:/job/Florida-United-States---Remote/Equipment-Service-Technician--Tampa_R133925-1": {
@@ -5507,6 +5661,28 @@
   "location": "Remote",
   "seen": "2026-11-12",
   "title": "Systems Administrator – Kiteworks",
+  "v": 5
+ },
+ "workday:southstatebank:/job/Remote-Opportunity---VA-NC-SC-GA--FL-AL-TX--CO/IT-Technical-Analyst_R-06559": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-12T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-12T23:50:36Z",
+  "location": "Remote Opportunity - VA, NC, SC, GA,  FL, AL, TX, & CO",
+  "seen": "2026-11-12",
+  "title": "IT Technical Analyst",
   "v": 5
  },
  "workday:talentmanagementsolution:/job/Remote---USA/Customer-Onboarding-and-Learning-Systems-Specialist_R54662-1": {

@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 12, 2026 20:50 UTC · 53 open roles: 7 local, 5 nearby, 41 remote._
+_Data as of Nov 13, 2026 00:09 UTC · 53 open roles: 7 local, 5 nearby, 41 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -92,7 +92,7 @@ _Remote, and open to Florida residents._
 
 ## How it works
 
-- **Local sources, every 30 minutes**: the National Labor Exchange (NLx) within 50 miles of Kissimmee, eleven city and county governments on GovernmentJobs, the School District of Osceola County, UCF and the City of Orlando.
+- **Local sources, every 30 minutes**: the National Labor Exchange (NLx) within 50 miles of Kissimmee, eleven city and county governments on GovernmentJobs, the UCF, Valencia College and the City of Orlando.
 - **Nationwide sweep, every 6 hours**: about 5,400 employer job boards, which is where the remote roles come from.
 - Roles that were considered and dropped are logged with the reason in [`data/rejected.jsonl`](data/rejected.jsonl).
 - A role is marked closed only after it is missing from two complete readings of its board in a row.

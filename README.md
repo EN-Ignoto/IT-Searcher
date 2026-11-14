@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 13, 2026 21:24 UTC · 52 open roles: 7 local, 5 nearby, 40 remote._
+_Data as of Nov 14, 2026 01:45 UTC · 53 open roles: 8 local, 5 nearby, 40 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -16,12 +16,13 @@ Someone starting in IT: Network+ and Security+, customer-service experience, stu
 - **Stretch**: about a year is required, a requirement may be met by education or certifications, or the title is a level II.
 - **Check requirements**: the posting text could not be read; open it before applying.
 
-## Local (7)
+## Local (8)
 
 _Within 30 miles of Kissimmee._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
+| 🆕 [Board Support Specialist](https://www.governmentjobs.com/careers/osceola/jobs/5550112/board-support-specialist) | Osceola County | Department: BOARD SUPPORT SERVICES · 0 mi | Full-time | Beginner-friendly | None required — 3 years preferred | ~Nov 14 |
 | 🆕 [Jr. IT Support Specialist](https://halma.wd3.myworkdayjobs.com/halma/job/Orlando/Jr-IT-Support-Specialist_JR26_001243) | Ocean Optics | Orlando · 17 mi | Not stated | Beginner-friendly | 0+ years — open to no experience | Nov 11 |
 | 🆕 [eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT](https://dejobs.org/orlando-fl/ecommerce-specialist-internet-help-desk-dc-orlando-fl-bench-ft/0B4B02309AB148FBA33C8A286AF55A74/job/) | The Walt Disney Company | Orlando, FL · 17 mi | Full-time | Beginner-friendly | No years of experience stated | Nov 9 |
 | 🆕 [Specialist, Technical Support](https://valenciacollege.peopleadmin.com/postings/44244) | Valencia College | Orlando, FL (East Campus) · 17 mi | Not stated | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | Nov 6 |

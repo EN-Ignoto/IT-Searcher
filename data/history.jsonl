@@ -15,3 +15,4 @@
 {"ts": "2026-11-13T15:11:00Z", "scope": "full", "open": 50, "local": 7, "new": 0, "boards": 5424, "ok_rate": 0.99, "secs": 1131.0}
 {"ts": "2026-11-13T20:28:37Z", "scope": "full", "open": 52, "local": 7, "new": 2, "boards": 5446, "ok_rate": 0.99, "secs": 1333.5}
 {"ts": "2026-11-13T21:24:42Z", "scope": "local", "open": 52, "local": 7, "new": 0, "boards": 16, "ok_rate": 0.938, "secs": 45.3}
+{"ts": "2026-11-14T01:45:11Z", "scope": "local", "open": 53, "local": 8, "new": 1, "boards": 16, "ok_rate": 0.812, "secs": 164.0}

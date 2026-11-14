@@ -2347,6 +2347,28 @@
   "title": "Technical Support Specialist",
   "v": 5
  },
+ "neogov:osceola:5550112": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "Experience: Three (3) years responsible experience in clerical/secretarial support functions, to include meeting scheduling and agenda preparation; applied knowledge in recording m",
+   "experience": "None required — 3 years preferred",
+   "fit": "beginner",
+   "miles": 0.0,
+   "notes": [],
+   "posted_at": "2026-11-14T00:00:00Z",
+   "posted_at_source": "relative_derived",
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-14T01:42:27Z",
+  "location": "Department: BOARD SUPPORT SERVICES",
+  "seen": "2026-11-14",
+  "title": "Board Support Specialist",
+  "v": 5
+ },
  "nlx:kissimmee-fl:0033A1F626214E03B8E519E605AECD4A": {
   "a": {
    "category": "Systems / Infrastructure",
@@ -2390,7 +2412,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Wholesale Payments Dedicated Support Specialist",
   "v": 5
  },
@@ -2412,7 +2434,7 @@
   },
   "at": "2026-11-13T06:27:11Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Wholesale Payments Dedicated Support Specialist",
   "v": 5
  },
@@ -2456,7 +2478,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT",
   "v": 5
  },
@@ -2524,7 +2546,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Executive IT Support Technician",
   "v": 5
  },
@@ -2546,7 +2568,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Associate Field Support Technician",
   "v": 5
  },
@@ -2590,7 +2612,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "CEI Assistant Contract Support Specialist",
   "v": 5
  },
@@ -2634,7 +2656,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Set Up and Support Technician",
   "v": 5
  },
@@ -2722,7 +2744,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Configuration Support Analyst – Support Services",
   "v": 5
  },
@@ -2788,7 +2810,7 @@
   },
   "at": "2026-11-13T06:27:11Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Wholesale Payments Dedicated Support Specialist",
   "v": 5
  },
@@ -2810,7 +2832,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Data Center Services Technician",
   "v": 5
  },
@@ -2854,7 +2876,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Lake Mary, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Technology Support Contractor: 0-2 years (Entry) / Contract / Onsite",
   "v": 5
  },
@@ -2876,7 +2898,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Intermediate Help Desk Support Service Specialist",
   "v": 5
  },
@@ -2922,7 +2944,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Network Engineer - E2",
   "v": 5
  },
@@ -2944,7 +2966,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Titusville, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Field Technician",
   "v": 5
  },
@@ -2966,7 +2988,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Access & Support Specialist II",
   "v": 5
  },
@@ -2990,7 +3012,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Help Desk Specialist",
   "v": 5
  },
@@ -3012,7 +3034,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Winter Park, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Fiduciary Support Specialist II",
   "v": 5
  },
@@ -3034,7 +3056,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Fiduciary Support Specialist II",
   "v": 5
  },
@@ -3056,7 +3078,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Cocoa, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "COMSEC Responsible Officer (CRO)/ Tier II Network Technician (NE2) (Government)",
   "v": 5
  },
@@ -3078,7 +3100,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "2026 Associate Computer Systems Analyst - Linux - Pathways Program - Melbourne FL",
   "v": 5
  },
@@ -3144,7 +3166,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Service Technician",
   "v": 5
  },
@@ -3234,7 +3256,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Cybersecurity Analyst",
   "v": 5
  },
@@ -3344,7 +3366,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Housing Support Specialist",
   "v": 5
  },
@@ -3388,7 +3410,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Field Service Technician",
   "v": 5
  },
@@ -3410,7 +3432,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Wholesale Payments Dedicated Support Specialist",
   "v": 5
  },
@@ -3432,7 +3454,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Lakeland, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Information Technology Analyst",
   "v": 5
  },
@@ -3476,7 +3498,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Merritt Island, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "IT Support Engineer II, Leo IT Services",
   "v": 5
  },
@@ -3498,7 +3520,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Kissimmee, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Network & Desk Technician",
   "v": 5
  },
@@ -3523,7 +3545,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Network Engineer",
   "v": 5
  },
@@ -3549,7 +3571,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Systems Administrator",
   "v": 5
  },
@@ -3571,7 +3593,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Cybersecurity Analyst - ISSO - Orlando, Florida",
   "v": 5
  },
@@ -3664,7 +3686,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Systems Analyst II",
   "v": 5
  },
@@ -3686,7 +3708,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Dade City, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Recovery Support Specialist II",
   "v": 5
  },
@@ -3708,7 +3730,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Lake Mary, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Desktop Analyst",
   "v": 5
  },
@@ -3778,7 +3800,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Lake Mary, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Data and Technology Specialist",
   "v": 5
  },
@@ -3800,7 +3822,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Computer Systems Administrator / Spectrum Management Analyst",
   "v": 5
  },
@@ -3824,7 +3846,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Support Engineer",
   "v": 5
  },
@@ -3890,7 +3912,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "ACE Account Service Desk Specialist (Tier 2 - ASD)",
   "v": 5
  },
@@ -3980,7 +4002,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Network Operations Analyst",
   "v": 5
  },
@@ -4046,7 +4068,7 @@
   },
   "at": "2026-11-13T06:27:11Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "IT Specialist- University of Central Florida",
   "v": 5
  },
@@ -4068,7 +4090,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Sanford, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Field Technician",
   "v": 5
  },
@@ -4360,9 +4382,9 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-13T21:23:57Z",
+  "at": "2026-11-14T01:42:27Z",
   "location": "Orlando, FL (East Campus)",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Specialist, Technical Support",
   "v": 5
  },

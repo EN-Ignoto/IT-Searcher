@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-13T21:24:42Z",
- "fetched_at": "2026-11-13T21:24:42Z",
+ "generated_at": "2026-11-14T01:45:11Z",
+ "fetched_at": "2026-11-14T01:45:11Z",
  "scope": "local",
- "duration_seconds": 45.3,
+ "duration_seconds": 164.0,
  "boards_total": 16,
  "boards_by_source": {
   "nlx": 1,
@@ -12,32 +12,33 @@
   "workday": 2
  },
  "quarantined": 0,
- "fetched_ok": 15,
- "fetch_errors": 1,
+ "fetched_ok": 13,
+ "fetch_errors": 3,
  "errors_by_source": {
-  "paradox": 1
+  "paradox": 1,
+  "workday": 2
  },
- "fetch_success_rate": 0.938,
- "snapshots_complete": 14,
- "snapshots_partial": 1,
- "jobs_seen": 859,
- "roles_matched": 9,
+ "fetch_success_rate": 0.812,
+ "snapshots_complete": 13,
+ "snapshots_partial": 0,
+ "jobs_seen": 726,
+ "roles_matched": 10,
  "dropped_by_reason": {
   "active-clearance-required": 2,
-  "not-it-role": 806,
+  "not-it-role": 672,
   "requires-10-years-experience": 1,
-  "requires-2-years-experience": 5,
+  "requires-2-years-experience": 4,
   "requires-3-years-experience": 3,
   "requires-4-years-experience": 3,
   "requires-5-years-experience": 4,
   "requires-8-years-experience": 1,
   "senior-title": 19,
-  "stale-posting": 6
+  "stale-posting": 7
  },
- "detail_fetches": 1,
+ "detail_fetches": 2,
  "closed_by_posting_check": 0,
  "purged_this_run": 0,
- "new_this_run": 0,
+ "new_this_run": 1,
  "local_sources": [
   {
    "key": "neogov:casselberry",
@@ -109,8 +110,8 @@
    "key": "neogov:osceola",
    "name": "Osceola County",
    "ats": "neogov",
-   "jobs": 10,
-   "kept": 0,
+   "jobs": 14,
+   "kept": 1,
    "complete": true,
    "error": null,
    "partial_reason": null,
@@ -197,10 +198,10 @@
    "key": "workday:cityoforlando:cityoforlandocareers",
    "name": "City of Orlando",
    "ats": "workday",
-   "jobs": 58,
+   "jobs": 0,
    "kept": 0,
-   "complete": true,
-   "error": null,
+   "complete": false,
+   "error": "HTTPStatusError: Server error '521 <none>' for url 'https://cityoforlando.wd5.myworkdayjobs.com/wday/cxs/cityoforlando/CityofOrlandoCareers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/521",
    "partial_reason": null,
    "partial_detail": null
   },
@@ -208,29 +209,29 @@
    "key": "workday:ucf:careers",
    "name": "University of Central Florida",
    "ats": "workday",
-   "jobs": 79,
+   "jobs": 0,
    "kept": 0,
    "complete": false,
-   "error": null,
-   "partial_reason": "pagination-stalled",
+   "error": "HTTPStatusError: Server error '521 <none>' for url 'https://ucf.wd1.myworkdayjobs.com/wday/cxs/ucf/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/521",
+   "partial_reason": null,
    "partial_detail": null
   }
  ],
- "local_sources_ok": 15,
+ "local_sources_ok": 13,
  "local_sources_total": 16,
- "open_total": 52,
+ "open_total": 53,
  "open_by_section": {
   "Remote": 40,
   "Nearby": 5,
-  "Local": 7
+  "Local": 8
  },
  "open_by_fit": {
   "stretch": 22,
-  "beginner": 27,
+  "beginner": 28,
   "unverified": 3
  },
  "open_by_category": {
-  "IT Support / Technician": 24,
+  "IT Support / Technician": 25,
   "IT Operations": 6,
   "Systems / Infrastructure": 6,
   "Network / NOC": 4,
@@ -241,7 +242,7 @@
  "open_by_employment": {
   "Not stated": 42,
   "Internship": 6,
-  "Full-time": 3,
+  "Full-time": 4,
   "Temporary / contract": 1
  },
  "open_by_source": {
@@ -253,9 +254,10 @@
   "peopleadmin": 1,
   "recruitee": 1,
   "rippling": 3,
-  "workday": 13
+  "workday": 13,
+  "neogov": 1
  },
- "posted_date_coverage": 0.942,
+ "posted_date_coverage": 0.943,
  "last_full": {
   "fetched_at": "2026-11-13T20:28:37Z",
   "duration_seconds": 1333.5,
@@ -266,5 +268,5 @@
   "jobs_seen": 345666,
   "roles_matched": 49
  },
- "rendered_at": "2026-11-13T21:24:42Z"
+ "rendered_at": "2026-11-14T01:45:11Z"
 }

@@ -1030,8 +1030,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/xpansiv?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   },
   "paradox:osceolaschools": {
-    "consecutive_failures": 17,
-    "last_attempt_at": "2026-11-13T21:24:42Z",
+    "consecutive_failures": 18,
+    "last_attempt_at": "2026-11-14T01:45:11Z",
     "last_error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://jobs.osceolaschools.net/api/get-jobs?page_number=1&enable_kilometers=false'\nFor more information check: https://developer.mozilla.org/en-"
   },
   "recruitee:1x": {
@@ -2124,6 +2124,11 @@
     "last_attempt_at": "2026-11-12T09:25:22Z",
     "last_error": "HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://chop.wd5.myworkdayjobs.com/wday/cxs/chop/choppreboardonly/jobs'\nFor more information check: https://developer.mozilla.org/en-U"
   },
+  "workday:cityoforlando:cityoforlandocareers": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-14T01:45:11Z",
+    "last_error": "HTTPStatusError: Server error '521 <none>' for url 'https://cityoforlando.wd5.myworkdayjobs.com/wday/cxs/cityoforlando/CityofOrlandoCareers/jobs'\nFor more information check: https://developer.mozilla."
+  },
   "workday:cliftonlarsonallen:cla": {
     "consecutive_failures": 35,
     "last_attempt_at": "2026-11-12T09:25:22Z",
@@ -2675,9 +2680,9 @@
     "last_error": "malformed-response"
   },
   "workday:ucf:careers": {
-    "consecutive_failures": 1,
-    "last_attempt_at": "2026-11-13T21:24:42Z",
-    "last_error": "pagination-stalled"
+    "consecutive_failures": 2,
+    "last_attempt_at": "2026-11-14T01:45:11Z",
+    "last_error": "HTTPStatusError: Server error '521 <none>' for url 'https://ucf.wd1.myworkdayjobs.com/wday/cxs/ucf/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/52"
   },
   "workday:ummc:umccareers": {
     "consecutive_failures": 1,

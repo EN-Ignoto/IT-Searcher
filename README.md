@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 14, 2026 08:54 UTC · 51 open roles: 7 local, 5 nearby, 39 remote._
+_Data as of Nov 14, 2026 15:58 UTC · 50 open roles: 7 local, 5 nearby, 38 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -42,7 +42,7 @@ _30 to 50 miles from Kissimmee._
 | 🆕 [Systems Administrator](https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/) | V2X | Melbourne, FL · 48 mi | Not stated | Stretch | None required — 5 years preferred · Clearance must be obtainable; No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 3 |
 | 🆕 [IT Associate I](https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002) | Relativity Space | Cape Canaveral, Florida, United States · 49 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Mentions Security+/Network+ | Oct 23 |
 
-## Remote (39)
+## Remote (38)
 
 _Remote, and open to Florida residents._
 
@@ -72,7 +72,6 @@ _Remote, and open to Florida residents._
 | 🆕 [Technical Support Specialist , US East Coast](https://jobs.ashbyhq.com/Nash/48e32fea-837b-4c7c-8246-c347543d1861) | Nash | Remote, US | Not stated | Beginner-friendly | No years of experience stated · Shift work mentioned: 24/7 | Oct 20 |
 | 🆕 [Summer 2027: IT Services Intern](https://jobs.ashbyhq.com/amplify/ae648c1a-0973-440e-902d-cc41dc60f52f) | Amplify | Remote - United States | Internship | Beginner-friendly | Internship — no experience requirement stated | Oct 19 |
 | 🆕 [Customer Support Engineer](https://jobs.lever.co/firemon/55eed579-a00a-4d3c-a1ae-2e0ef9bd7063) | Firemon | USA, Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Oct 14 |
-| 🆕 [Security & IT Intern](https://jobs.ashbyhq.com/eightsleep/0ae8cdbe-8100-4f59-b702-16d836ab5550) | Eight Sleep | Remote - US | Internship | Beginner-friendly | Internship — no experience requirement stated | Oct 9 |
 | 🆕 [Product Support Specialist 1](https://modmed.wd501.myworkdayjobs.com/ModMed12/job/Remote---USA/Product-Support-Specialist-1_R5073) | Modernizing Medicine | Remote - USA | Not stated | Stretch | 1 year required · Bachelor's degree listed | Oct 8 |
 | 🆕 [IT Security Specialist](https://job-boards.greenhouse.io/axios/jobs/8262622) | Axios | Remote | Not stated | Beginner-friendly | No years of experience stated · Remote region not stated | Oct 7 |
 | 🆕 [IT Support Specialist](https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External/job/Remote-USA/IT-Support-Specialist_P751346-2) | Zillow | Remote-USA | Not stated | Beginner-friendly | 0+ years — open to no experience | Sep 23 |

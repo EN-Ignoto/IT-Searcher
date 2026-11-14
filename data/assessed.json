@@ -2297,7 +2297,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-13T14:52:09Z",
+  "at": "2026-11-14T15:44:02Z",
   "location": "Remote",
   "seen": "2026-11-14",
   "title": "Application Systems Analyst II",
@@ -4448,7 +4448,7 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-14T08:53:56Z",
+  "at": "2026-11-14T15:44:02Z",
   "location": "Orlando, FL (East Campus)",
   "seen": "2026-11-14",
   "title": "Specialist, Technical Support",
@@ -4495,7 +4495,7 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-13T14:52:09Z",
+  "at": "2026-11-14T15:44:02Z",
   "location": "Remote (United States)",
   "seen": "2026-11-14",
   "title": "Cyber Analyst",
@@ -4517,7 +4517,7 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-13T14:52:09Z",
+  "at": "2026-11-14T15:44:02Z",
   "location": "Remote (United States)",
   "seen": "2026-11-14",
   "title": "SOC Analyst (WarU E-ITSS)",
@@ -4583,7 +4583,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-13T14:52:09Z",
+  "at": "2026-11-14T15:44:02Z",
   "location": "Remote (United States)",
   "seen": "2026-11-14",
   "title": "Intermediate Technical Support Analyst",
@@ -4605,7 +4605,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-13T14:52:09Z",
+  "at": "2026-11-14T15:44:02Z",
   "location": "Remote (United States)",
   "seen": "2026-11-14",
   "title": "Support Engineer – Enterprise",
@@ -4649,7 +4649,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-13T14:52:09Z",
+  "at": "2026-11-14T15:44:02Z",
   "location": "Remote (United States)",
   "seen": "2026-11-14",
   "title": "Benefits Support Analyst, Missed Enrollments (US)",
@@ -4671,7 +4671,7 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-13T14:52:09Z",
+  "at": "2026-11-14T15:44:02Z",
   "location": "Remote (United States)",
   "seen": "2026-11-14",
   "title": "Technical Support Specialist, Platform",
@@ -5077,7 +5077,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Lake Buena Vista, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Field Service Technician II",
   "v": 5
  },
@@ -5099,7 +5099,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Saint Cloud, FL",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Field Service Operations Technician",
   "v": 5
  },
@@ -5121,7 +5121,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote USA",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Fleet Project Support Specialist",
   "v": 5
  },
@@ -5165,7 +5165,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "East Orlando",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Associate Field Support Technician",
   "v": 5
  },
@@ -5187,7 +5187,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Business Support Specialist II",
   "v": 5
  },
@@ -5211,7 +5211,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Technical Support Technician - Tech Apps",
   "v": 5
  },
@@ -5233,7 +5233,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, Florida",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "EverPro - Systems Administrator (Orlando, Florida)",
   "v": 5
  },
@@ -5324,7 +5324,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "United States-Remote",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Summer 2027 Technology Intern",
   "v": 5
  },
@@ -5346,7 +5346,29 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote, United States",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
+  "title": "Business Systems Analyst",
+  "v": 5
+ },
+ "workday:greystar:/job/Remote-United-States/Business-Systems-Analyst_R1126_0206470": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-13T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-14T15:44:02Z",
+  "location": "Remote, United States",
+  "seen": "2026-11-14",
   "title": "Business Systems Analyst",
   "v": 5
  },
@@ -5368,7 +5390,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US - Remote (Any location)",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "ServiceNow Help Desk Support",
   "v": 5
  },
@@ -5390,7 +5412,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US - Remote (Any location)",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "ServiceNow Help Desk Support",
   "v": 5
  },
@@ -5412,7 +5434,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Jr. IT Support Specialist",
   "v": 5
  },
@@ -5434,7 +5456,7 @@
   },
   "at": "2026-11-12T23:50:36Z",
   "location": "Florida, United States - Remote",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Equipment Service Technician - Tampa Area",
   "v": 5
  },
@@ -5456,7 +5478,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Florida, United States - Remote",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Equipment Service Technician- Venice/Naples area",
   "v": 5
  },
@@ -5530,7 +5552,7 @@
   },
   "at": "2026-11-13T20:06:23Z",
   "location": "6314 Remote/Teleworker US",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Network Engineer",
   "v": 5
  },
@@ -5554,7 +5576,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "6314 Remote/Teleworker US",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Network Site Design Intern",
   "v": 5
  },
@@ -5669,7 +5691,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US - Remote",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "POS Tech Support Specialist",
   "v": 5
  },
@@ -5884,7 +5906,7 @@
   },
   "at": "2026-11-13T20:06:23Z",
   "location": "US-Remote",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Cybersecurity Analyst",
   "v": 5
  },
@@ -5906,7 +5928,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "—",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Multi-Domain Autonomous System Specialist**This is a (International Assignment) **NO REMOTE WORK**",
   "v": 5
  },
@@ -5972,7 +5994,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Systems Administrator – Kiteworks",
   "v": 5
  },
@@ -5994,7 +6016,7 @@
   },
   "at": "2026-11-13T20:06:23Z",
   "location": "Remote Opportunity - VA, NC, SC, GA,  FL, AL, TX, & CO",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "IT Technical Analyst",
   "v": 5
  },
@@ -6016,7 +6038,7 @@
   },
   "at": "2026-11-12T23:50:36Z",
   "location": "Remote Opportunity - VA, NC, SC, GA,  FL, AL, TX, & CO",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "IT Technical Analyst",
   "v": 5
  },
@@ -6038,7 +6060,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Customer Onboarding and Learning Systems Specialist",
   "v": 5
  },
@@ -6060,7 +6082,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "ProAdmin Testing & Client Support Specialist",
   "v": 5
  },
@@ -6082,7 +6104,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Cybersecurity Analyst",
   "v": 5
  },
@@ -6106,7 +6128,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "USA Remote",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Level 2 NOC Systems Administrator – Linux/Unix Focus",
   "v": 5
  },
@@ -6150,7 +6172,7 @@
   },
   "at": "2026-11-13T20:06:23Z",
   "location": "Remote-USA",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Business System Analyst II (API/Agile) - REMOTE",
   "v": 5
  },
@@ -6176,6 +6198,28 @@
   "title": "Revenue Cycle Systems Analyst",
   "v": 5
  },
+ "workday:zeissgroup:/job/Orlando/Field-Service-Technician_JR_1054768": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-11-13T00:00:00Z",
+   "posted_at_source": "date_only",
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-14T15:44:02Z",
+  "location": "Orlando",
+  "seen": "2026-11-14",
+  "title": "Field Service Technician",
+  "v": 5
+ },
  "workday:zillow:/job/Remote-USA/IT-Support-Specialist_P751346-2": {
   "a": {
    "category": "IT Support / Technician",
@@ -6194,7 +6238,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote-USA",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "IT Support Specialist",
   "v": 5
  },
@@ -6216,7 +6260,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US PR Remote",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Diagnostics Technical Specialist",
   "v": 5
  },
@@ -6238,7 +6282,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US Remote",
-  "seen": "2026-11-13",
+  "seen": "2026-11-14",
   "title": "Diagnostics Technical Support Representative",
   "v": 5
  }

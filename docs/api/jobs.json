@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-14T08:54:41Z",
- "data_as_of": "2026-11-14T08:54:41Z",
- "rendered_at": "2026-11-14T08:54:41Z",
+ "generated_at": "2026-11-14T15:58:56Z",
+ "data_as_of": "2026-11-14T15:58:56Z",
+ "rendered_at": "2026-11-14T15:58:56Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 51,
+ "count": 50,
  "jobs": [
   {
    "id": "neogov:osceola:5550112",
@@ -818,27 +818,6 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": null,
    "source": "lever"
-  },
-  {
-   "id": "ashby:eightsleep:0ae8cdbe-8100-4f59-b702-16d836ab5550",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Security & IT Intern",
-   "company": "Eight Sleep",
-   "location": "Remote - US",
-   "category": "IT Operations",
-   "employment": "Internship",
-   "fit": "beginner",
-   "experience": "Internship — no experience requirement stated",
-   "evidence": "",
-   "notes": [],
-   "url": "https://jobs.ashbyhq.com/eightsleep/0ae8cdbe-8100-4f59-b702-16d836ab5550",
-   "posted_at": "2026-10-09T17:05:52.446+00:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-12T09:25:22Z",
-   "salary": null,
-   "source": "ashby"
   },
   {
    "id": "workday:modmed:/job/Remote---USA/Product-Support-Specialist-1_R5073",

@@ -1035,8 +1035,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/xpansiv?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   },
   "paradox:osceolaschools": {
-    "consecutive_failures": 19,
-    "last_attempt_at": "2026-11-14T07:10:38Z",
+    "consecutive_failures": 20,
+    "last_attempt_at": "2026-11-14T08:54:41Z",
     "last_error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://jobs.osceolaschools.net/api/get-jobs?page_number=1&enable_kilometers=false'\nFor more information check: https://developer.mozilla.org/en-"
   },
   "recruitee:1x": {
@@ -3815,9 +3815,9 @@
     "last_error": "HTTPStatusError: Server error '521 <none>' for url 'https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/Citi_Early_Careers_Events_Site/jobs'\nFor more information check: https://developer.mozilla.org/en-U"
   },
   "workday:cityoforlando:cityoforlandocareers": {
-    "consecutive_failures": 2,
-    "last_attempt_at": "2026-11-14T07:10:38Z",
-    "last_error": "HTTPStatusError: Server error '521 <none>' for url 'https://cityoforlando.wd5.myworkdayjobs.com/wday/cxs/cityoforlando/CityofOrlandoCareers/jobs'\nFor more information check: https://developer.mozilla."
+    "consecutive_failures": 3,
+    "last_attempt_at": "2026-11-14T08:54:41Z",
+    "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   },
   "workday:cityofvancouver:cov": {
     "consecutive_failures": 1,
@@ -9645,9 +9645,9 @@
     "last_error": "HTTPStatusError: Server error '521 <none>' for url 'https://ucar.wd5.myworkdayjobs.com/wday/cxs/ucar/UCAR_Careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St"
   },
   "workday:ucf:careers": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-14T07:10:38Z",
-    "last_error": "HTTPStatusError: Server error '521 <none>' for url 'https://ucf.wd1.myworkdayjobs.com/wday/cxs/ucf/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/52"
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-14T08:54:41Z",
+    "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   },
   "workday:uchicago:external": {
     "consecutive_failures": 1,

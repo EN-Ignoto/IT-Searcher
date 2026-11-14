@@ -1,64 +1,44 @@
 {
- "generated_at": "2026-11-14T07:10:38Z",
- "fetched_at": "2026-11-14T07:10:38Z",
- "scope": "full",
- "duration_seconds": 269.7,
- "boards_total": 5446,
+ "generated_at": "2026-11-14T08:54:41Z",
+ "fetched_at": "2026-11-14T08:54:41Z",
+ "scope": "local",
+ "duration_seconds": 44.5,
+ "boards_total": 16,
  "boards_by_source": {
   "nlx": 1,
   "neogov": 11,
   "paradox": 1,
   "peopleadmin": 1,
-  "workday": 1928,
-  "greenhouse": 1207,
-  "lever": 445,
-  "ashby": 916,
-  "recruitee": 6,
-  "smartrecruiters": 317,
-  "rippling": 186,
-  "workable": 242,
-  "oracle": 164,
-  "amazon": 1,
-  "breezy": 19,
-  "eightfold": 1
+  "workday": 2
  },
- "quarantined": 409,
- "fetched_ok": 3370,
- "fetch_errors": 1667,
+ "quarantined": 0,
+ "fetched_ok": 13,
+ "fetch_errors": 3,
  "errors_by_source": {
   "paradox": 1,
-  "workday": 1619,
-  "lever": 7,
-  "greenhouse": 7,
-  "ashby": 8,
-  "workable": 25
+  "workday": 2
  },
- "fetch_success_rate": 0.669,
- "snapshots_complete": 3186,
- "snapshots_partial": 184,
- "jobs_seen": 217740,
- "roles_matched": 39,
+ "fetch_success_rate": 0.812,
+ "snapshots_complete": 13,
+ "snapshots_partial": 0,
+ "jobs_seen": 718,
+ "roles_matched": 9,
  "dropped_by_reason": {
-  "active-clearance-required": 27,
-  "level-2-unverifiable": 1,
-  "not-it-role": 210762,
-  "outside-area": 5455,
-  "remote-not-open-to-florida": 1,
+  "active-clearance-required": 2,
+  "not-it-role": 665,
   "requires-10-years-experience": 1,
-  "requires-2-years-experience": 11,
-  "requires-3-years-experience": 14,
-  "requires-4-years-experience": 9,
-  "requires-5-years-experience": 15,
-  "requires-7-years-experience": 1,
+  "requires-2-years-experience": 4,
+  "requires-3-years-experience": 2,
+  "requires-4-years-experience": 3,
+  "requires-5-years-experience": 5,
   "requires-8-years-experience": 1,
-  "senior-title": 1367,
-  "stale-posting": 32,
-  "unconfirmed-it-role": 4
+  "senior-title": 19,
+  "stale-posting": 7
  },
- "detail_fetches": 2,
+ "detail_fetches": 1,
  "closed_by_posting_check": 0,
  "purged_this_run": 0,
- "new_this_run": 1,
+ "new_this_run": 0,
  "local_sources": [
   {
    "key": "neogov:casselberry",
@@ -221,7 +201,7 @@
    "jobs": 0,
    "kept": 0,
    "complete": false,
-   "error": "HTTPStatusError: Server error '521 <none>' for url 'https://cityoforlando.wd5.myworkdayjobs.com/wday/cxs/cityoforlando/CityofOrlandoCareers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/521",
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
    "partial_reason": null,
    "partial_detail": null
   },
@@ -232,22 +212,22 @@
    "jobs": 0,
    "kept": 0,
    "complete": false,
-   "error": "HTTPStatusError: Server error '521 <none>' for url 'https://ucf.wd1.myworkdayjobs.com/wday/cxs/ucf/careers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/521",
+   "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
    "partial_reason": null,
    "partial_detail": null
   }
  ],
  "local_sources_ok": 13,
  "local_sources_total": 16,
- "open_total": 52,
+ "open_total": 51,
  "open_by_section": {
   "Remote": 39,
   "Nearby": 5,
-  "Local": 8
+  "Local": 7
  },
  "open_by_fit": {
   "stretch": 20,
-  "beginner": 29,
+  "beginner": 28,
   "unverified": 3
  },
  "open_by_category": {
@@ -256,13 +236,13 @@
   "Systems / Infrastructure": 6,
   "Network / NOC": 4,
   "Security (entry)": 5,
-  "Help Desk / Service Desk": 4,
+  "Help Desk / Service Desk": 3,
   "Technical Support (customer-facing)": 3
  },
  "open_by_employment": {
   "Not stated": 40,
   "Internship": 7,
-  "Full-time": 4,
+  "Full-time": 3,
   "Temporary / contract": 1
  },
  "open_by_source": {
@@ -270,15 +250,15 @@
   "greenhouse": 12,
   "lever": 2,
   "neogov": 1,
-  "nlx": 8,
+  "nlx": 7,
   "oracle": 2,
   "peopleadmin": 1,
   "recruitee": 1,
   "rippling": 3,
-  "workday": 13,
-  "workable": 1
+  "workable": 1,
+  "workday": 13
  },
- "posted_date_coverage": 0.942,
+ "posted_date_coverage": 0.941,
  "last_full": {
   "fetched_at": "2026-11-14T07:10:38Z",
   "duration_seconds": 269.7,
@@ -289,5 +269,5 @@
   "jobs_seen": 217740,
   "roles_matched": 39
  },
- "rendered_at": "2026-11-14T07:10:38Z"
+ "rendered_at": "2026-11-14T08:54:41Z"
 }

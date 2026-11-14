@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 14, 2026 07:10 UTC · 52 open roles: 8 local, 5 nearby, 39 remote._
+_Data as of Nov 14, 2026 08:54 UTC · 51 open roles: 7 local, 5 nearby, 39 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -16,7 +16,7 @@ Someone starting in IT: Network+ and Security+, customer-service experience, stu
 - **Stretch**: about a year is required, a requirement may be met by education or certifications, or the title is a level II.
 - **Check requirements**: the posting text could not be read; open it before applying.
 
-## Local (8)
+## Local (7)
 
 _Within 30 miles of Kissimmee._
 
@@ -27,7 +27,6 @@ _Within 30 miles of Kissimmee._
 | 🆕 [eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT](https://dejobs.org/orlando-fl/ecommerce-specialist-internet-help-desk-dc-orlando-fl-bench-ft/0B4B02309AB148FBA33C8A286AF55A74/job/) | The Walt Disney Company | Orlando, FL · 17 mi | Full-time | Beginner-friendly | No years of experience stated | Nov 9 |
 | 🆕 [Specialist, Technical Support](https://valenciacollege.peopleadmin.com/postings/44244) | Valencia College | Orlando, FL (East Campus) · 17 mi | Not stated | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | Nov 6 |
 | 🆕 [Network Engineer](https://dejobs.org/orlando-fl/network-engineer/BA300695C674418D983FDDC3B445D250/job/) | Robert Half | Orlando, FL · 17 mi | Not stated | Stretch | None required — 2 years preferred · No experience stated, but this title usually expects some; Bachelor's degree listed | Nov 4 |
-| 🆕 [Network & Desk Technician](https://dejobs.org/kissimmee-fl/network-desk-technician/B75F7AE3B57549B480AB4D68852A7C5C/job/) | Marriott | Kissimmee, FL · 2 mi | Full-time | Beginner-friendly | No years of experience stated | Sep 30 |
 | 🆕 [Systems Analyst II](https://dejobs.org/orlando-fl/systems-analyst-ii/C8E0E27BEA6445E8827427AEA8C3BD9E/job/) | CAI | Orlando, FL · 17 mi | Not stated | Stretch | No years of experience stated · Level II title; Mentions Security+/Network+ | Sep 11 |
 | 🆕 [Help Desk Specialist](https://dejobs.org/orlando-fl/help-desk-specialist/6925AE191E7245C2AFF834232A57D1C2/job/) | Chenega Corporation | Orlando, FL · 17 mi | Not stated | Stretch | 1 year required · Shift work mentioned: rotating shift | Aug 21 |
 

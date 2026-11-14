@@ -5,8 +5,16 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-14T01:45:11Z</updated>
+  <updated>2026-11-14T07:10:38Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:it-searcher:workable:bask-health-1:0F7C20F77C</id>
+    <title>[Remote] Technical Support Intern — Bask Health</title>
+    <link href="https://apply.workable.com/bask-health-1/j/0F7C20F77C/"/>
+    <updated>2026-11-14T07:10:38Z</updated>
+    <category term="Remote"/>
+    <summary>United States (Remote) · Internship · Beginner-friendly · Entry-level / no experience required</summary>
+  </entry>
   <entry>
     <id>urn:it-searcher:neogov:osceola:5550112</id>
     <title>[Local] Board Support Specialist — Osceola County</title>
@@ -107,9 +115,9 @@
     <id>urn:it-searcher:greenhouse:alpaca:6240586004</id>
     <title>[Remote] IT Operations Specialist — Alpaca</title>
     <link href="https://job-boards.greenhouse.io/alpaca/jobs/6240586004"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-14T07:10:38Z</updated>
     <category term="Remote"/>
-    <summary>Remote - North America · Not stated · Stretch · No years of experience stated · Bachelor's degree listed</summary>
+    <summary>Remote - North America · Not stated · Stretch · No years of experience stated · Bachelor's degree listed · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:alphasense:8495375002</id>
@@ -123,9 +131,9 @@
     <id>urn:it-searcher:greenhouse:avidxchangeinc:5283540007</id>
     <title>[Remote] Technical Support Specialist I — AvidXchange</title>
     <link href="https://job-boards.greenhouse.io/avidxchangeinc/jobs/5283540007"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-14T07:10:38Z</updated>
     <category term="Remote"/>
-    <summary>Virtual · Not stated · Stretch · 1 year required · Remote region not stated</summary>
+    <summary>Virtual · Not stated · Stretch · 1 year required · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:axios:8262622</id>

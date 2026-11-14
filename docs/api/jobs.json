@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-14T01:45:11Z",
- "data_as_of": "2026-11-14T01:45:11Z",
- "rendered_at": "2026-11-14T01:45:11Z",
+ "generated_at": "2026-11-14T07:10:38Z",
+ "data_as_of": "2026-11-14T07:10:38Z",
+ "rendered_at": "2026-11-14T07:10:38Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 53,
+ "count": 52,
  "jobs": [
   {
    "id": "neogov:osceola:5550112",
@@ -299,6 +299,27 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": null,
    "source": "greenhouse"
+  },
+  {
+   "id": "workable:bask-health-1:0F7C20F77C",
+   "section": "Remote",
+   "miles": null,
+   "remote": true,
+   "title": "Technical Support Intern",
+   "company": "Bask Health",
+   "location": "United States (Remote)",
+   "category": "IT Support / Technician",
+   "employment": "Internship",
+   "fit": "beginner",
+   "experience": "Entry-level / no experience required",
+   "evidence": "echnical support and customer engineering.\nCurrent student, recent graduate, or early-career candidate interested in technical support,",
+   "notes": [],
+   "url": "https://apply.workable.com/bask-health-1/j/0F7C20F77C/",
+   "posted_at": "2026-11-13T00:00:00.000Z",
+   "posted_at_source": "date_only",
+   "first_seen_at": "2026-11-14T07:10:38Z",
+   "salary": null,
+   "source": "workable"
   },
   {
    "id": "oracle:hckd.fa.us2.oraclecloud.com:2040172",
@@ -635,29 +656,6 @@
    "source": "oracle"
   },
   {
-   "id": "greenhouse:avidxchangeinc:5283540007",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Technical Support Specialist I",
-   "company": "AvidXchange",
-   "location": "Virtual",
-   "category": "IT Support / Technician",
-   "employment": "Not stated",
-   "fit": "stretch",
-   "experience": "1 year required",
-   "evidence": "<li>At least 1 year of experience troubleshooting software, SaaS applications, or other technical systems.</li>",
-   "notes": [
-    "Remote region not stated"
-   ],
-   "url": "https://job-boards.greenhouse.io/avidxchangeinc/jobs/5283540007",
-   "posted_at": "2026-11-04T12:56:58-05:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-12T09:25:22Z",
-   "salary": null,
-   "source": "greenhouse"
-  },
-  {
    "id": "workday:unisys:/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786",
    "section": "Remote",
    "miles": null,
@@ -703,29 +701,6 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": null,
    "source": "workday"
-  },
-  {
-   "id": "greenhouse:alpaca:6240586004",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "IT Operations Specialist",
-   "company": "Alpaca",
-   "location": "Remote - North America",
-   "category": "IT Operations",
-   "employment": "Not stated",
-   "fit": "stretch",
-   "experience": "No years of experience stated",
-   "evidence": "",
-   "notes": [
-    "Bachelor's degree listed"
-   ],
-   "url": "https://job-boards.greenhouse.io/alpaca/jobs/6240586004",
-   "posted_at": "2026-11-02T10:03:25-05:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-12T09:25:22Z",
-   "salary": null,
-   "source": "greenhouse"
   },
   {
    "id": "ashby:fluidstack:f1811455-d414-4630-b22c-58a585163864",

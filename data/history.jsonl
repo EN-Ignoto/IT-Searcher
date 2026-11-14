@@ -20,3 +20,4 @@
 {"ts": "2026-11-14T08:54:41Z", "scope": "local", "open": 51, "local": 7, "new": 0, "boards": 16, "ok_rate": 0.812, "secs": 44.5}
 {"ts": "2026-11-14T15:58:56Z", "scope": "full", "open": 50, "local": 7, "new": 0, "boards": 5454, "ok_rate": 0.914, "secs": 893.7}
 {"ts": "2026-11-14T18:47:07Z", "scope": "full", "open": 50, "local": 7, "new": 0, "boards": 5454, "ok_rate": 0.993, "secs": 896.0}
+{"ts": "2026-11-14T20:39:53Z", "scope": "local", "open": 50, "local": 7, "new": 0, "boards": 16, "ok_rate": 0.938, "secs": 69.0}

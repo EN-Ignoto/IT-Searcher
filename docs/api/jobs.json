@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-17T01:13:38Z",
- "data_as_of": "2026-11-17T01:13:38Z",
- "rendered_at": "2026-11-17T01:13:38Z",
+ "generated_at": "2026-11-17T08:45:38Z",
+ "data_as_of": "2026-11-17T08:45:38Z",
+ "rendered_at": "2026-11-17T08:45:38Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 51,
+ "count": 49,
  "jobs": [
   {
    "id": "neogov:osceola:5550112",
@@ -705,30 +705,6 @@
    "source": "workday"
   },
   {
-   "id": "ashby:fluidstack:f1811455-d414-4630-b22c-58a585163864",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Security Systems Administrator",
-   "company": "FluidStack",
-   "location": "U.S. Remote",
-   "category": "Systems / Infrastructure",
-   "employment": "Not stated",
-   "fit": "stretch",
-   "experience": "No years of experience stated",
-   "evidence": "",
-   "notes": [
-    "No experience stated, but this title usually expects some",
-    "Remote region not stated"
-   ],
-   "url": "https://jobs.ashbyhq.com/fluidstack/f1811455-d414-4630-b22c-58a585163864",
-   "posted_at": "2026-10-30T19:47:10.786+00:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-12T09:25:22Z",
-   "salary": "$182K – $210K",
-   "source": "ashby"
-  },
-  {
    "id": "ashby:skydio:8ba69d85-b786-4399-a5c0-ee0969054315",
    "section": "Remote",
    "miles": null,
@@ -1096,29 +1072,6 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": "$100K – $160K • Offers Equity • Offers Bonus • Sign-on bonus, company-based performance bonuss",
    "source": "ashby"
-  },
-  {
-   "id": "greenhouse:galaxydigitalservices:6163325004",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Off-Cycle 2026 Cybersecurity Internship",
-   "company": "Galaxy",
-   "location": "Remote",
-   "category": "Security (entry)",
-   "employment": "Internship",
-   "fit": "beginner",
-   "experience": "Internship — no experience requirement stated",
-   "evidence": "",
-   "notes": [
-    "Remote region not stated"
-   ],
-   "url": "https://job-boards.greenhouse.io/galaxydigitalservices/jobs/6163325004",
-   "posted_at": "2026-08-25T23:24:00-04:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-12T09:25:22Z",
-   "salary": null,
-   "source": "greenhouse"
   },
   {
    "id": "greenhouse:alphasense:8495375002",

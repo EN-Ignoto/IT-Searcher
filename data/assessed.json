@@ -225,6 +225,28 @@
   "title": "Security & IT Intern",
   "v": 5
  },
+ "ashby:eightsleep:217583eb-e5a8-4889-adc1-01b718e0bd17": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-17T01:32:33.765+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-17T08:34:06Z",
+  "location": "Remote - US",
+  "seen": "2026-11-17",
+  "title": "Customer Support Specialist (Contract or Intern)",
+  "v": 5
+ },
  "ashby:equip:829ff280-4d61-4b23-a754-af75e1282203": {
   "a": {
    "category": "IT Operations",
@@ -2345,7 +2367,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-16T07:12:10Z",
+  "at": "2026-11-17T08:34:06Z",
   "location": "Remote",
   "seen": "2026-11-17",
   "title": "Application Systems Analyst II",
@@ -4518,7 +4540,7 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-17T01:01:56Z",
+  "at": "2026-11-17T08:34:06Z",
   "location": "Orlando, FL (East Campus)",
   "seen": "2026-11-17",
   "title": "Specialist, Technical Support",
@@ -4565,7 +4587,7 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-16T07:12:10Z",
+  "at": "2026-11-17T08:34:06Z",
   "location": "Remote (United States)",
   "seen": "2026-11-17",
   "title": "Cyber Analyst",
@@ -4587,7 +4609,7 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-16T07:12:10Z",
+  "at": "2026-11-17T08:34:06Z",
   "location": "Remote (United States)",
   "seen": "2026-11-17",
   "title": "SOC Analyst (WarU E-ITSS)",
@@ -4675,7 +4697,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-16T07:12:10Z",
+  "at": "2026-11-17T08:34:06Z",
   "location": "Remote (United States)",
   "seen": "2026-11-17",
   "title": "Intermediate Technical Support Analyst",
@@ -4697,7 +4719,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-16T07:12:10Z",
+  "at": "2026-11-17T08:34:06Z",
   "location": "Remote (United States)",
   "seen": "2026-11-17",
   "title": "Support Engineer – Enterprise",
@@ -4741,7 +4763,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-16T07:12:10Z",
+  "at": "2026-11-17T08:34:06Z",
   "location": "Remote (United States)",
   "seen": "2026-11-17",
   "title": "Benefits Support Analyst, Missed Enrollments (US)",
@@ -4763,7 +4785,7 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-16T07:12:10Z",
+  "at": "2026-11-17T08:34:06Z",
   "location": "Remote (United States)",
   "seen": "2026-11-17",
   "title": "Technical Support Specialist, Platform",
@@ -4987,6 +5009,28 @@
   "location": "United States (Remote)",
   "seen": "2026-11-17",
   "title": "Deal Strategy & Operations Analyst",
+  "v": 5
+ },
+ "workable:bask-health-1:D35EDCC191": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-17T00:00:00.000Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-17T08:34:06Z",
+  "location": "United States (Remote)",
+  "seen": "2026-11-17",
+  "title": "Junior Revenue Operations Analyst",
   "v": 5
  },
  "workday:accenture:/job/Madrid/Cloud-Infrastructure-Specialist---Azure-Virtual-Desktop---Citrix_14795618": {

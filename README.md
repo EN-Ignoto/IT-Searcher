@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 16, 2026 07:24 UTC · 50 open roles: 7 local, 5 nearby, 38 remote._
+_Data as of Nov 17, 2026 01:13 UTC · 51 open roles: 7 local, 5 nearby, 39 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -42,15 +42,16 @@ _30 to 50 miles from Kissimmee._
 | [Systems Administrator](https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/) | V2X | Melbourne, FL · 48 mi | Not stated | Stretch | None required — 5 years preferred · Clearance must be obtainable; No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 3 |
 | [IT Associate I](https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002) | Relativity Space | Cape Canaveral, Florida, United States · 49 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Mentions Security+/Network+ | Oct 23 |
 
-## Remote (38)
+## Remote (39)
 
 _Remote, and open to Florida residents._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
+| 🆕 [IT Helpdesk Specialist 2](https://job-boards.greenhouse.io/natera/jobs/6261749004) | Natera | US Remote | Not stated | Stretch | No years of experience stated · Level II title | Nov 16 |
 | 🆕 [Technical Support Intern](https://apply.workable.com/bask-health-1/j/0F7C20F77C/) | Bask Health | United States (Remote) | Internship | Beginner-friendly | Entry-level / no experience required | Nov 13 |
-| 🆕 [Cybersecurity Internship (Remote) – Summer 2027 (Undergraduate)](https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2040172) | Molina Healthcare | United States | Internship | Beginner-friendly | Internship — no experience requirement stated | Nov 13 |
-| 🆕 [Product Support Engineer - NAMER](https://jobs.ashbyhq.com/Ashby/80c20b00-c3c3-441b-95bd-56eb870e77fb) | Ashby | Remote - US | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 13 |
+| [Cybersecurity Internship (Remote) – Summer 2027 (Undergraduate)](https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2040172) | Molina Healthcare | United States | Internship | Beginner-friendly | Internship — no experience requirement stated | Nov 13 |
+| [Product Support Engineer - NAMER](https://jobs.ashbyhq.com/Ashby/80c20b00-c3c3-441b-95bd-56eb870e77fb) | Ashby | Remote - US | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 13 |
 | [Technical Support Specialist, Platform](https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd) | Rippling | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 12 |
 | [SOC Analyst (WarU E-ITSS)](https://ats.rippling.com/conceptplus/jobs/f9ddd964-6bb4-4baf-8826-10e891c5270b) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 12 |
 | [Cyber Analyst](https://ats.rippling.com/conceptplus/jobs/4060476b-d89e-4430-a86a-f6f5bc600b03) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 12 |

@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 17, 2026 09:05 UTC · 49 open roles: 7 local, 5 nearby, 37 remote._
+_Data as of Nov 18, 2026 01:28 UTC · 50 open roles: 7 local, 5 nearby, 38 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -42,12 +42,13 @@ _30 to 50 miles from Kissimmee._
 | [Systems Administrator](https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/) | V2X | Melbourne, FL · 48 mi | Not stated | Stretch | None required — 5 years preferred · Clearance must be obtainable; No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 3 |
 | [IT Associate I](https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002) | Relativity Space | Cape Canaveral, Florida, United States · 49 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Mentions Security+/Network+ | Oct 23 |
 
-## Remote (37)
+## Remote (38)
 
 _Remote, and open to Florida residents._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
+| 🆕 [IT Analyst - SAP BTP - CCM](https://jobs.smartrecruiters.com/Carlisle/3743990016919585) | Carlisle Companies | Remote, U.S.A, , United States (Remote) | Not stated | Beginner-friendly | None required — 3 years preferred | Nov 17 |
 | 🆕 [IT Helpdesk Specialist 2](https://job-boards.greenhouse.io/natera/jobs/6261749004) | Natera | US Remote | Not stated | Stretch | No years of experience stated · Level II title | Nov 16 |
 | [Technical Support Intern](https://apply.workable.com/bask-health-1/j/0F7C20F77C/) | Bask Health | United States (Remote) | Internship | Beginner-friendly | Entry-level / no experience required | Nov 13 |
 | [Cybersecurity Internship (Remote) – Summer 2027 (Undergraduate)](https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2040172) | Molina Healthcare | United States | Internship | Beginner-friendly | Internship — no experience requirement stated | Nov 13 |

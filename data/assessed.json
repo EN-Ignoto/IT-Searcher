@@ -1221,6 +1221,28 @@
   "title": "Trade Desk Support Engineer (Night Shift)",
   "v": 5
  },
+ "greenhouse:engine:8205852003": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li><strong>Experience:</strong> 5+ years of experience in AV, event production or IT support within an enterprise setting",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-18T10:38:15-05:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-18T20:56:07Z",
+  "location": "Remote - US",
+  "seen": "2026-11-18",
+  "title": "IT Support Technician - AV & Workplace Technology",
+  "v": 5
+ },
  "greenhouse:expel:8936554002": {
   "a": {
    "category": "Security (entry)",
@@ -2023,10 +2045,10 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-18T01:16:12Z",
+  "at": "2026-11-18T20:56:07Z",
   "location": "Remote",
   "seen": "2026-11-18",
-  "title": "Risk Operations Analyst - User Operations Policy",
+  "title": "Risk Operations Analyst - Restricted Business Operations",
   "v": 5
  },
  "greenhouse:supplyhouse:6140301004": {
@@ -4426,7 +4448,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Nashville, TN, United States; Orlando, FL, United States; Kansas City, MO, United States; United States",
-  "seen": "2026-11-12",
+  "seen": "2026-11-18",
   "title": "Support Engineer - Incident",
   "v": 5
  },
@@ -4672,7 +4694,7 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-18T09:03:19Z",
+  "at": "2026-11-18T20:56:07Z",
   "location": "Orlando, FL (East Campus)",
   "seen": "2026-11-18",
   "title": "Specialist, Technical Support",
@@ -6484,7 +6506,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
-  "seen": "2026-11-15",
+  "seen": "2026-11-18",
   "title": "AI Systems Administrator",
   "v": 5
  },

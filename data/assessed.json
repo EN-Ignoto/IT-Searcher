@@ -2389,7 +2389,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-17T08:34:06Z",
+  "at": "2026-11-18T09:03:19Z",
   "location": "Remote",
   "seen": "2026-11-18",
   "title": "Application Systems Analyst II",
@@ -2596,6 +2596,28 @@
   "title": "Field Service Technician II",
   "v": 5
  },
+ "nlx:kissimmee-fl:1430D4D91A9A47529A34F054006FA197": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "+ **Experience** : Minimum of two years of IT experience in a business or enterprise environment, including end-user support, hardware and software troubleshooting, incident resolu",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 32.6,
+   "notes": [],
+   "posted_at": "2026-11-18T05:25:11Z",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-18T09:03:19Z",
+  "location": "Lake Mary, FL",
+  "seen": "2026-11-18",
+  "title": "IT Specialist",
+  "v": 5
+ },
  "nlx:kissimmee-fl:1BF8A4C751A5403B9CF04355D244A2C1": {
   "a": {
    "category": "IT Support / Technician",
@@ -2794,6 +2816,28 @@
   "location": "Orlando, FL",
   "seen": "2026-11-12",
   "title": "IT Systems Analyst Advisor",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:45560892642640C7AC2DD9E90F8A124C": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 23.3,
+   "notes": [],
+   "posted_at": "2026-11-18T06:12:43Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-18T09:03:19Z",
+  "location": "Maitland, FL",
+  "seen": "2026-11-18",
+  "title": "Associate Client Service & Product Support Specialist - Agency Notices",
   "v": 5
  },
  "nlx:kissimmee-fl:45E9D281E4F44A78BF9C73C3A3D415B8": {
@@ -3284,6 +3328,28 @@
   "title": "Service Technician",
   "v": 5
  },
+ "nlx:kissimmee-fl:79A50F407E6F41F28FFFFD1AE649D239": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "SI model)\n+ Experience with engineering applications\n+ Strong troubleshooting abilities\n+ Current Secret level security clearance\nWe offer flexible work arrangements, phenomenal le",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 44.4,
+   "notes": [],
+   "posted_at": "2026-11-18T07:15:34Z",
+   "posted_at_source": null,
+   "reason": "active-clearance-required",
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "reject"
+  },
+  "at": "2026-11-18T09:03:19Z",
+  "location": "Merritt Island, FL",
+  "seen": "2026-11-18",
+  "title": "Computer Operations Analyst 2/3 - Windows",
+  "v": 5
+ },
  "nlx:kissimmee-fl:7A03CBF19A084B9F8BDC0C88C8150CB8": {
   "a": {
    "category": "IT Support / Technician",
@@ -3594,6 +3660,28 @@
   "title": "Technical Support Engineer",
   "v": 5
  },
+ "nlx:kissimmee-fl:A7C780FF87DF4DF5AF582EAF8DFBCC35": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-11-18T05:17:38Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-18T09:03:19Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-18",
+  "title": "Wholesale Payments Dedicated Support Specialist",
+  "v": 5
+ },
  "nlx:kissimmee-fl:AC631FAB33674EE09C541B3099744405": {
   "a": {
    "category": "IT Support / Technician",
@@ -3778,6 +3866,28 @@
   "seen": "2026-11-12",
   "title": "Bi-lingual Pharmacy Tech Support/Call Center Rep (Remote Work from Home)",
   "v": 2
+ },
+ "nlx:kissimmee-fl:C2482B5436F14932B153E19DEDC46BFE": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 2.4,
+   "notes": [],
+   "posted_at": "2026-11-18T06:33:36Z",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-18T09:03:19Z",
+  "location": "Kissimmee, FL",
+  "seen": "2026-11-18",
+  "title": "Field Technician",
+  "v": 5
  },
  "nlx:kissimmee-fl:C3595CBD4ADD45BAA6DE4409C481BDF4": {
   "a": {
@@ -4562,7 +4672,7 @@
    "section": "Local",
    "verdict": "keep"
   },
-  "at": "2026-11-18T01:16:12Z",
+  "at": "2026-11-18T09:03:19Z",
   "location": "Orlando, FL (East Campus)",
   "seen": "2026-11-18",
   "title": "Specialist, Technical Support",
@@ -4609,7 +4719,7 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-17T08:34:06Z",
+  "at": "2026-11-18T09:03:19Z",
   "location": "Remote (United States)",
   "seen": "2026-11-18",
   "title": "Cyber Analyst",
@@ -4719,7 +4829,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-17T08:34:06Z",
+  "at": "2026-11-18T09:03:19Z",
   "location": "Remote (United States)",
   "seen": "2026-11-18",
   "title": "Intermediate Technical Support Analyst",
@@ -4741,7 +4851,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-17T08:34:06Z",
+  "at": "2026-11-18T09:03:19Z",
   "location": "Remote (United States)",
   "seen": "2026-11-18",
   "title": "Support Engineer – Enterprise",
@@ -4785,7 +4895,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-17T08:34:06Z",
+  "at": "2026-11-18T09:03:19Z",
   "location": "Remote (United States)",
   "seen": "2026-11-18",
   "title": "Benefits Support Analyst, Missed Enrollments (US)",
@@ -4807,7 +4917,7 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-17T08:34:06Z",
+  "at": "2026-11-18T09:03:19Z",
   "location": "Remote (United States)",
   "seen": "2026-11-18",
   "title": "Technical Support Specialist, Platform",
@@ -5073,7 +5183,7 @@
   },
   "at": "2026-11-17T01:01:56Z",
   "location": "United States (Remote)",
-  "seen": "2026-11-17",
+  "seen": "2026-11-18",
   "title": "Deal Strategy & Operations Analyst",
   "v": 5
  },

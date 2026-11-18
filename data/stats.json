@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-18T01:28:31Z",
-  "fetched_at": "2026-11-18T01:28:31Z",
+  "generated_at": "2026-11-18T09:06:28Z",
+  "fetched_at": "2026-11-18T09:06:28Z",
   "scope": "full",
-  "duration_seconds": 739.5,
+  "duration_seconds": 189.4,
   "boards_total": 5487,
   "boards_by_source": {
     "nlx": 1,
@@ -22,43 +22,40 @@
     "breezy": 19,
     "eightfold": 1
   },
-  "quarantined": 320,
-  "fetched_ok": 3271,
-  "fetch_errors": 1896,
+  "quarantined": 2095,
+  "fetched_ok": 3205,
+  "fetch_errors": 187,
   "errors_by_source": {
     "paradox": 1,
-    "workday": 1759,
-    "greenhouse": 13,
-    "ashby": 9,
-    "workable": 108,
-    "rippling": 4,
-    "lever": 2
+    "workday": 137,
+    "ashby": 2,
+    "workable": 47
   },
-  "fetch_success_rate": 0.633,
-  "snapshots_complete": 3113,
-  "snapshots_partial": 158,
-  "jobs_seen": 209766,
-  "roles_matched": 35,
+  "fetch_success_rate": 0.945,
+  "snapshots_complete": 3050,
+  "snapshots_partial": 155,
+  "jobs_seen": 207461,
+  "roles_matched": 34,
   "dropped_by_reason": {
-    "active-clearance-required": 27,
+    "active-clearance-required": 28,
     "level-2-unverifiable": 1,
-    "not-it-role": 203149,
-    "outside-area": 5167,
+    "not-it-role": 200919,
+    "outside-area": 5105,
     "requires-10-years-experience": 1,
-    "requires-2-years-experience": 10,
+    "requires-2-years-experience": 11,
     "requires-3-years-experience": 14,
     "requires-4-years-experience": 8,
     "requires-5-years-experience": 13,
     "requires-7-years-experience": 1,
     "requires-8-years-experience": 1,
-    "senior-title": 1301,
+    "senior-title": 1287,
     "stale-posting": 33,
     "unconfirmed-it-role": 5
   },
-  "detail_fetches": 5,
+  "detail_fetches": 1,
   "closed_by_posting_check": 0,
   "purged_this_run": 0,
-  "new_this_run": 1,
+  "new_this_run": 0,
   "local_sources": [
     {
       "key": "neogov:casselberry",
@@ -119,7 +116,7 @@
       "key": "neogov:ocoee",
       "name": "City of Ocoee",
       "ats": "neogov",
-      "jobs": 6,
+      "jobs": 4,
       "kept": 0,
       "complete": true,
       "error": null,
@@ -185,7 +182,7 @@
       "key": "nlx:kissimmee-fl",
       "name": "NLx / DEJobs (50 mi of Kissimmee)",
       "ats": "nlx",
-      "jobs": 624,
+      "jobs": 622,
       "kept": 7,
       "complete": true,
       "error": null,
@@ -239,34 +236,34 @@
   ],
   "local_sources_ok": 13,
   "local_sources_total": 16,
-  "open_total": 50,
+  "open_total": 48,
   "open_by_section": {
-    "Remote": 38,
+    "Remote": 36,
     "Nearby": 5,
     "Local": 7
   },
   "open_by_fit": {
-    "stretch": 20,
     "beginner": 27,
-    "unverified": 3
+    "stretch": 19,
+    "unverified": 2
   },
   "open_by_category": {
-    "IT Support / Technician": 26,
     "IT Operations": 4,
+    "IT Support / Technician": 25,
     "Network / NOC": 4,
     "Systems / Infrastructure": 5,
-    "Security (entry)": 4,
+    "Security (entry)": 3,
     "Help Desk / Service Desk": 4,
     "Technical Support (customer-facing)": 3
   },
   "open_by_employment": {
-    "Not stated": 41,
     "Internship": 5,
+    "Not stated": 39,
     "Full-time": 3,
     "Temporary / contract": 1
   },
   "open_by_source": {
-    "ashby": 6,
+    "ashby": 5,
     "greenhouse": 12,
     "lever": 2,
     "neogov": 1,
@@ -274,21 +271,21 @@
     "oracle": 2,
     "peopleadmin": 1,
     "recruitee": 1,
-    "rippling": 3,
+    "rippling": 2,
+    "smartrecruiters": 1,
     "workable": 1,
-    "workday": 13,
-    "smartrecruiters": 1
+    "workday": 13
   },
-  "posted_date_coverage": 0.94,
+  "posted_date_coverage": 0.958,
   "last_full": {
-    "fetched_at": "2026-11-18T01:28:31Z",
-    "duration_seconds": 739.5,
+    "fetched_at": "2026-11-18T09:06:28Z",
+    "duration_seconds": 189.4,
     "boards_total": 5487,
-    "fetched_ok": 3271,
-    "fetch_errors": 1896,
-    "fetch_success_rate": 0.633,
-    "jobs_seen": 209766,
-    "roles_matched": 35
+    "fetched_ok": 3205,
+    "fetch_errors": 187,
+    "fetch_success_rate": 0.945,
+    "jobs_seen": 207461,
+    "roles_matched": 34
   },
-  "rendered_at": "2026-11-18T01:28:31Z"
+  "rendered_at": "2026-11-18T09:06:28Z"
 }

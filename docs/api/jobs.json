@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-18T01:28:31Z",
- "data_as_of": "2026-11-18T01:28:31Z",
- "rendered_at": "2026-11-18T01:28:31Z",
+ "generated_at": "2026-11-18T09:06:28Z",
+ "data_as_of": "2026-11-18T09:06:28Z",
+ "rendered_at": "2026-11-18T09:06:28Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 50,
+ "count": 48,
  "jobs": [
   {
    "id": "neogov:osceola:5550112",
@@ -404,27 +404,6 @@
    "evidence": "",
    "notes": [],
    "url": "https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd",
-   "posted_at": null,
-   "posted_at_source": null,
-   "first_seen_at": "2026-11-12T09:25:22Z",
-   "salary": null,
-   "source": "rippling"
-  },
-  {
-   "id": "rippling:conceptplus:f9ddd964-6bb4-4baf-8826-10e891c5270b",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "SOC Analyst (WarU E-ITSS)",
-   "company": "Concept Plus",
-   "location": "Remote (United States)",
-   "category": "Security (entry)",
-   "employment": "Not stated",
-   "fit": "unverified",
-   "experience": "Posting text unavailable — check requirements",
-   "evidence": "",
-   "notes": [],
-   "url": "https://ats.rippling.com/conceptplus/jobs/f9ddd964-6bb4-4baf-8826-10e891c5270b",
    "posted_at": null,
    "posted_at_source": null,
    "first_seen_at": "2026-11-12T09:25:22Z",
@@ -1069,30 +1048,6 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": null,
    "source": "greenhouse"
-  },
-  {
-   "id": "ashby:agave:a263e45f-e86e-4c78-882e-a79da649e861",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Technical Support Engineer (TSE)",
-   "company": "Agave",
-   "location": "Remote",
-   "category": "IT Support / Technician",
-   "employment": "Not stated",
-   "fit": "stretch",
-   "experience": "None required — 2 years preferred",
-   "evidence": "2-8 years of experience, ideally in b2b SaaS.",
-   "notes": [
-    "No experience stated, but this title usually expects some",
-    "Remote region not stated"
-   ],
-   "url": "https://jobs.ashbyhq.com/Agave/a263e45f-e86e-4c78-882e-a79da649e861",
-   "posted_at": "2026-09-01T21:56:00.317+00:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-12T09:25:22Z",
-   "salary": "$100K – $160K • Offers Equity • Offers Bonus • Sign-on bonus, company-based performance bonuss",
-   "source": "ashby"
   },
   {
    "id": "greenhouse:alphasense:8495375002",

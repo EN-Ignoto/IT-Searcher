@@ -31,3 +31,4 @@
 {"ts": "2026-11-18T09:06:28Z", "scope": "full", "open": 48, "local": 7, "new": 0, "boards": 5487, "ok_rate": 0.945, "secs": 189.4}
 {"ts": "2026-11-18T21:08:08Z", "scope": "full", "open": 48, "local": 7, "new": 0, "boards": 5500, "ok_rate": 0.638, "secs": 721.5}
 {"ts": "2026-11-19T00:17:23Z", "scope": "local", "open": 48, "local": 7, "new": 0, "boards": 16, "ok_rate": 0.812, "secs": 119.6}
+{"ts": "2026-11-19T17:21:49Z", "scope": "full", "open": 46, "local": 7, "new": 1, "boards": 5500, "ok_rate": 0.863, "secs": 234.9}

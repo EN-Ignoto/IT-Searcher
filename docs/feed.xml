@@ -5,8 +5,16 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-19T00:17:23Z</updated>
+  <updated>2026-11-19T17:21:49Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:it-searcher:oracle:edix.fa.us2.oraclecloud.com:9000</id>
+    <title>[Remote] Technical Support Specialist — Corsair</title>
+    <link href="https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/9000"/>
+    <updated>2026-11-19T17:21:49Z</updated>
+    <category term="Remote"/>
+    <summary>Remote (US), United States · Not stated · Beginner-friendly · No years of experience stated</summary>
+  </entry>
   <entry>
     <id>urn:it-searcher:smartrecruiters:Carlisle:3743990016919585</id>
     <title>[Remote] IT Analyst - SAP BTP - CCM — Carlisle Companies</title>
@@ -139,9 +147,9 @@
     <id>urn:it-searcher:greenhouse:alphasense:8495375002</id>
     <title>[Remote] Cloud Support Engineer — AlphaSense</title>
     <link href="https://job-boards.greenhouse.io/alphasense/jobs/8495375002"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-19T17:21:49Z</updated>
     <category term="Remote"/>
-    <summary>Remote - United States · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some</summary>
+    <summary>Remote - United States · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:avidxchangeinc:5283540007</id>
@@ -371,9 +379,9 @@
     <id>urn:it-searcher:rippling:conceptplus:4060476b-d89e-4430-a86a-f6f5bc600b03</id>
     <title>[Remote] Cyber Analyst — Concept Plus</title>
     <link href="https://ats.rippling.com/conceptplus/jobs/4060476b-d89e-4430-a86a-f6f5bc600b03"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-19T17:21:49Z</updated>
     <category term="Remote"/>
-    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
+    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:rippling:conceptplus:f9ddd964-6bb4-4baf-8826-10e891c5270b</id>
@@ -395,9 +403,9 @@
     <id>urn:it-searcher:rippling:rippling:eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd</id>
     <title>[Remote] Technical Support Specialist, Platform — Rippling</title>
     <link href="https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-19T17:21:49Z</updated>
     <category term="Remote"/>
-    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
+    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:workday:accenture:/job/Madrid/Cloud-Infrastructure-Specialist---Azure-Virtual-Desktop---Citrix_14795618</id>

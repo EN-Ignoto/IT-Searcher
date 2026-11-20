@@ -448,6 +448,28 @@
   "title": "Client Support Specialist II",
   "v": 5
  },
+ "ashby:meridianlink:c1cffd2d-4a28-4622-b58f-33825bb0a32e": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-20T17:33:08.096+00:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-20T22:38:13Z",
+  "location": "US Remote",
+  "seen": "2026-11-20",
+  "title": "Client Support Specialist II",
+  "v": 5
+ },
  "ashby:meshy:41b56974-51e1-4e15-a5dd-8bc67a41b18c": {
   "a": {
    "category": "Technical Support (customer-facing)",
@@ -558,6 +580,28 @@
   "location": "Remote, US",
   "seen": "2026-11-20",
   "title": "Technical Support Specialist , US East Coast",
+  "v": 5
+ },
+ "ashby:onebrief:18ce2342-3a10-4525-b862-9530b8ae0a9f": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "3+ years of experience in IT support, help desk, IT operations, or systems administration.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-20T16:46:40.010+00:00",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-20T22:38:13Z",
+  "location": "United States | Remote",
+  "seen": "2026-11-20",
+  "title": "IT Support Specialist",
   "v": 5
  },
  "ashby:prefect:6bc102cc-112f-441f-adc8-d53dc83a93ec": {
@@ -831,6 +875,28 @@
   "title": "Fixed Income Operations Analyst",
   "v": 5
  },
+ "breezy:vetsez:c5c4a8f630d201": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-20T17:29:40.416Z",
+   "posted_at_source": null,
+   "reason": "unconfirmed-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-20T22:38:13Z",
+  "location": "Tampa, FL",
+  "seen": "2026-11-20",
+  "title": "EHRM Ops Support Analyst (Remote Opportunity)",
+  "v": 5
+ },
  "greenhouse:abnormalsecurity:8180130003": {
   "a": {
    "category": "IT Support / Technician",
@@ -1035,6 +1101,30 @@
   "location": "Remote",
   "seen": "2026-11-20",
   "title": "Product Support Engineer",
+  "v": 5
+ },
+ "greenhouse:coherehealth:8208449003": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li>3+ years of experience in payor and provider integration support, implementation, or technical operations, preferably in healthcare.</li>",
+   "experience": "None required — 3 years preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-20T17:28:44-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-20T22:38:13Z",
+  "location": "Remote; United States",
+  "seen": "2026-11-20",
+  "title": "Integration Support Analyst",
   "v": 5
  },
  "greenhouse:coinbase:8335618": {
@@ -1606,6 +1696,30 @@
   "title": "Services Support Specialist",
   "v": 5
  },
+ "greenhouse:localitymediallcdbafirstdue:4514684009": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Full-time",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 1 year customer-service-type experience"
+   ],
+   "posted_at": "2026-11-20T11:26:34-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-20T22:38:13Z",
+  "location": "Remote - US Only",
+  "seen": "2026-11-20",
+  "title": "Associate Support Specialist",
+  "v": 5
+ },
  "greenhouse:natera:6261749004": {
   "a": {
    "category": "Help Desk / Service Desk",
@@ -1746,6 +1860,28 @@
   "location": "Remote",
   "seen": "2026-11-19",
   "title": "Provider Network Associate",
+  "v": 5
+ },
+ "greenhouse:oscar:8286491": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-10-23T17:09:37-04:00",
+   "posted_at_source": null,
+   "reason": "not-it-role",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-20T22:38:13Z",
+  "location": "Remote",
+  "seen": "2026-11-20",
+  "title": "Operations Analyst, Plan Loading",
   "v": 5
  },
  "greenhouse:precisionaq:6249837004": {
@@ -2457,7 +2593,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-19T17:17:54Z",
+  "at": "2026-11-20T22:38:13Z",
   "location": "Remote",
   "seen": "2026-11-20",
   "title": "Application Systems Analyst II",
@@ -4987,7 +5123,7 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-19T17:17:54Z",
+  "at": "2026-11-20T22:38:13Z",
   "location": "Orlando, FL",
   "seen": "2026-11-20",
   "title": "Operations Analyst",
@@ -5009,7 +5145,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-19T17:17:54Z",
+  "at": "2026-11-20T22:38:13Z",
   "location": "Remote (United States)",
   "seen": "2026-11-20",
   "title": "Intermediate Technical Support Analyst",
@@ -5031,7 +5167,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-19T17:17:54Z",
+  "at": "2026-11-20T22:38:13Z",
   "location": "Remote (United States)",
   "seen": "2026-11-20",
   "title": "Support Engineer – Enterprise",
@@ -5119,7 +5255,7 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-19T17:17:54Z",
+  "at": "2026-11-20T22:38:13Z",
   "location": "Remote (United States)",
   "seen": "2026-11-20",
   "title": "Customer Support Specialist, Business Unit",
@@ -5705,6 +5841,28 @@
   "location": "East Orlando",
   "seen": "2026-11-15",
   "title": "Associate Field Support Technician",
+  "v": 5
+ },
+ "workday:cityoforlando:/job/Orlando---FL/Community-Crisis-Support-Specialist--OPD-_R536696": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 17.1,
+   "notes": [],
+   "posted_at": "2026-11-18T00:00:00Z",
+   "posted_at_source": "relative_derived",
+   "reason": "unconfirmed-it-role",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-20T22:38:13Z",
+  "location": "Orlando - FL",
+  "seen": "2026-11-20",
+  "title": "Community Crisis Support Specialist (OPD)",
   "v": 5
  },
  "workday:compassion:/job/Remote---USA/Business-Support-Specialist-II_R8754": {

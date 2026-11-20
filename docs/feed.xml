@@ -5,8 +5,16 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-20T07:11:58Z</updated>
+  <updated>2026-11-20T16:07:06Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:it-searcher:greenhouse:natera:6266803004</id>
+    <title>[Remote] IT Helpdesk Specialist 2 — Natera</title>
+    <link href="https://job-boards.greenhouse.io/natera/jobs/6266803004"/>
+    <updated>2026-11-20T07:11:58Z</updated>
+    <category term="Remote"/>
+    <summary>US Remote · Not stated · Stretch · No years of experience stated · Level II title</summary>
+  </entry>
   <entry>
     <id>urn:it-searcher:neogov:clermontfl:4984675</id>
     <title>[Local] SCADA Network Technician — City of Clermont</title>
@@ -24,20 +32,12 @@
     <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
   </entry>
   <entry>
-    <id>urn:it-searcher:greenhouse:natera:6266803004</id>
-    <title>[Remote] IT Helpdesk Specialist 2 — Natera</title>
-    <link href="https://job-boards.greenhouse.io/natera/jobs/6266803004"/>
-    <updated>2026-11-20T07:11:58Z</updated>
-    <category term="Remote"/>
-    <summary>US Remote · Not stated · Stretch · No years of experience stated · Level II title</summary>
-  </entry>
-  <entry>
     <id>urn:it-searcher:oracle:edix.fa.us2.oraclecloud.com:9000</id>
     <title>[Remote] Technical Support Specialist — Corsair</title>
     <link href="https://edix.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/9000"/>
-    <updated>2026-11-19T17:21:49Z</updated>
+    <updated>2026-11-20T16:07:06Z</updated>
     <category term="Remote"/>
-    <summary>Remote (US), United States · Not stated · Beginner-friendly · No years of experience stated</summary>
+    <summary>Remote (US), United States · Not stated · Beginner-friendly · No years of experience stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:smartrecruiters:Carlisle:3743990016919585</id>
@@ -91,9 +91,9 @@
     <id>urn:it-searcher:peopleadmin:valenciacollege:44244</id>
     <title>[Local] Specialist, Technical Support — Valencia College</title>
     <link href="https://valenciacollege.peopleadmin.com/postings/44244"/>
-    <updated>2026-11-12T20:37:05Z</updated>
+    <updated>2026-11-20T16:07:06Z</updated>
     <category term="Local"/>
-    <summary>Orlando, FL (East Campus) · 17 mi · Not stated · Beginner-friendly · No years of experience stated · Mentions Security+/Network+</summary>
+    <summary>Orlando, FL (East Campus) · 17 mi · Not stated · Beginner-friendly · No years of experience stated · Mentions Security+/Network+ · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:ashby:agave:a263e45f-e86e-4c78-882e-a79da649e861</id>

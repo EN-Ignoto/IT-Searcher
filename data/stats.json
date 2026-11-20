@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T07:11:58Z",
-  "fetched_at": "2026-11-20T07:11:58Z",
+  "generated_at": "2026-11-20T16:07:06Z",
+  "fetched_at": "2026-11-20T16:07:06Z",
   "scope": "full",
-  "duration_seconds": 689.8,
+  "duration_seconds": 211.2,
   "boards_total": 5504,
   "boards_by_source": {
     "nlx": 1,
@@ -22,27 +22,27 @@
     "breezy": 19,
     "eightfold": 1
   },
-  "quarantined": 472,
-  "fetched_ok": 3216,
-  "fetch_errors": 1816,
+  "quarantined": 2215,
+  "fetched_ok": 3211,
+  "fetch_errors": 78,
   "errors_by_source": {
     "paradox": 1,
-    "workday": 1765,
-    "lever": 3,
-    "ashby": 5,
-    "workable": 41,
-    "greenhouse": 1
+    "workday": 46,
+    "lever": 8,
+    "greenhouse": 7,
+    "ashby": 8,
+    "workable": 8
   },
-  "fetch_success_rate": 0.639,
-  "snapshots_complete": 3059,
-  "snapshots_partial": 157,
-  "jobs_seen": 207163,
+  "fetch_success_rate": 0.976,
+  "snapshots_complete": 3053,
+  "snapshots_partial": 158,
+  "jobs_seen": 207065,
   "roles_matched": 28,
   "dropped_by_reason": {
     "active-clearance-required": 29,
     "level-2-unverifiable": 1,
-    "not-it-role": 200506,
-    "outside-area": 5170,
+    "not-it-role": 200414,
+    "outside-area": 5160,
     "requires-10-years-experience": 1,
     "requires-2-years-experience": 10,
     "requires-3-years-experience": 15,
@@ -50,14 +50,14 @@
     "requires-5-years-experience": 13,
     "requires-7-years-experience": 1,
     "requires-8-years-experience": 1,
-    "senior-title": 1344,
+    "senior-title": 1348,
     "stale-posting": 34,
     "unconfirmed-it-role": 4
   },
-  "detail_fetches": 2,
+  "detail_fetches": 0,
   "closed_by_posting_check": 0,
   "purged_this_run": 0,
-  "new_this_run": 3,
+  "new_this_run": 0,
   "local_sources": [
     {
       "key": "neogov:casselberry",
@@ -129,8 +129,8 @@
       "key": "neogov:osceola",
       "name": "Osceola County",
       "ats": "neogov",
-      "jobs": 10,
-      "kept": 0,
+      "jobs": 15,
+      "kept": 1,
       "complete": true,
       "error": null,
       "partial_reason": null,
@@ -184,7 +184,7 @@
       "key": "nlx:kissimmee-fl",
       "name": "NLx / DEJobs (50 mi of Kissimmee)",
       "ats": "nlx",
-      "jobs": 636,
+      "jobs": 635,
       "kept": 7,
       "complete": true,
       "error": null,
@@ -238,29 +238,29 @@
   ],
   "local_sources_ok": 13,
   "local_sources_total": 16,
-  "open_total": 46,
+  "open_total": 44,
   "open_by_section": {
-    "Remote": 33,
+    "Remote": 32,
     "Nearby": 5,
-    "Local": 8
+    "Local": 7
   },
   "open_by_fit": {
-    "beginner": 27,
+    "beginner": 25,
     "stretch": 18,
     "unverified": 1
   },
   "open_by_category": {
     "IT Operations": 4,
-    "IT Support / Technician": 23,
+    "IT Support / Technician": 21,
     "Network / NOC": 5,
     "Security (entry)": 3,
-    "Systems / Infrastructure": 4,
     "Help Desk / Service Desk": 4,
+    "Systems / Infrastructure": 4,
     "Technical Support (customer-facing)": 3
   },
   "open_by_employment": {
     "Internship": 5,
-    "Not stated": 36,
+    "Not stated": 34,
     "Full-time": 4,
     "Temporary / contract": 1
   },
@@ -270,24 +270,23 @@
     "lever": 2,
     "neogov": 2,
     "nlx": 7,
-    "oracle": 3,
-    "peopleadmin": 1,
+    "oracle": 2,
     "recruitee": 1,
+    "rippling": 1,
     "smartrecruiters": 1,
     "workable": 1,
-    "workday": 13,
-    "rippling": 1
+    "workday": 13
   },
-  "posted_date_coverage": 0.957,
+  "posted_date_coverage": 0.955,
   "last_full": {
-    "fetched_at": "2026-11-20T07:11:58Z",
-    "duration_seconds": 689.8,
+    "fetched_at": "2026-11-20T16:07:06Z",
+    "duration_seconds": 211.2,
     "boards_total": 5504,
-    "fetched_ok": 3216,
-    "fetch_errors": 1816,
-    "fetch_success_rate": 0.639,
-    "jobs_seen": 207163,
+    "fetched_ok": 3211,
+    "fetch_errors": 78,
+    "fetch_success_rate": 0.976,
+    "jobs_seen": 207065,
     "roles_matched": 28
   },
-  "rendered_at": "2026-11-20T07:11:58Z"
+  "rendered_at": "2026-11-20T16:07:06Z"
 }

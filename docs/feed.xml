@@ -5,8 +5,32 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-19T17:21:49Z</updated>
+  <updated>2026-11-20T07:11:58Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:it-searcher:neogov:clermontfl:4984675</id>
+    <title>[Local] SCADA Network Technician — City of Clermont</title>
+    <link href="https://www.governmentjobs.com/careers/clermontfl/jobs/4984675/scada-network-technician"/>
+    <updated>2026-11-20T07:11:58Z</updated>
+    <category term="Local"/>
+    <summary>Clermont, FL · 28 mi · Full-time · Beginner-friendly · No years of experience stated · Mentions Security+/Network+</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:rippling:conceptplus:90376de3-25e4-4831-b927-f618ed63c39c</id>
+    <title>[Remote] Cyber Analyst — Concept Plus</title>
+    <link href="https://ats.rippling.com/conceptplus/jobs/90376de3-25e4-4831-b927-f618ed63c39c"/>
+    <updated>2026-11-20T07:11:58Z</updated>
+    <category term="Remote"/>
+    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:greenhouse:natera:6266803004</id>
+    <title>[Remote] IT Helpdesk Specialist 2 — Natera</title>
+    <link href="https://job-boards.greenhouse.io/natera/jobs/6266803004"/>
+    <updated>2026-11-20T07:11:58Z</updated>
+    <category term="Remote"/>
+    <summary>US Remote · Not stated · Stretch · No years of experience stated · Level II title</summary>
+  </entry>
   <entry>
     <id>urn:it-searcher:oracle:edix.fa.us2.oraclecloud.com:9000</id>
     <title>[Remote] Technical Support Specialist — Corsair</title>
@@ -27,9 +51,9 @@
     <id>urn:it-searcher:greenhouse:natera:6261749004</id>
     <title>[Remote] IT Helpdesk Specialist 2 — Natera</title>
     <link href="https://job-boards.greenhouse.io/natera/jobs/6261749004"/>
-    <updated>2026-11-17T01:13:38Z</updated>
+    <updated>2026-11-20T07:11:58Z</updated>
     <category term="Remote"/>
-    <summary>US Remote · Not stated · Stretch · No years of experience stated · Level II title</summary>
+    <summary>US Remote · Not stated · Stretch · No years of experience stated · Level II title · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:workable:bask-health-1:0F7C20F77C</id>
@@ -283,17 +307,17 @@
     <id>urn:it-searcher:greenhouse:sironamedical:4731578005</id>
     <title>[Remote] Application Support Specialist - Second Shift M-F — Sirona Medical</title>
     <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4731578005"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-20T07:11:58Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:sironamedical:4731579005</id>
     <title>[Remote] Application Support Specialist - Overnight M-F — Sirona Medical</title>
     <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4731579005"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-20T07:11:58Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:sironamedical:4731580005</id>

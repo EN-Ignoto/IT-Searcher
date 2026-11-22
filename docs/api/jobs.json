@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-22T07:33:53Z",
- "data_as_of": "2026-11-22T07:33:53Z",
- "rendered_at": "2026-11-22T07:33:53Z",
+ "generated_at": "2026-11-22T07:37:15Z",
+ "data_as_of": "2026-11-22T07:37:15Z",
+ "rendered_at": "2026-11-22T07:37:15Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 44,
+ "count": 43,
  "jobs": [
   {
    "id": "neogov:clermontfl:4984675",
@@ -276,29 +276,6 @@
    "posted_at": "2026-10-23T17:26:03-04:00",
    "posted_at_source": "exact",
    "first_seen_at": "2026-11-12T09:25:22Z",
-   "salary": null,
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:localitymediallcdbafirstdue:4514684009",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Associate Support Specialist",
-   "company": "First Due",
-   "location": "Remote - US Only",
-   "category": "IT Support / Technician",
-   "employment": "Full-time",
-   "fit": "beginner",
-   "experience": "No years of experience stated",
-   "evidence": "",
-   "notes": [
-    "Asks 1 year customer-service-type experience"
-   ],
-   "url": "https://job-boards.greenhouse.io/localitymediallcdbafirstdue/jobs/4514684009",
-   "posted_at": "2026-11-20T11:26:34-05:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-20T22:41:31Z",
    "salary": null,
    "source": "greenhouse"
   },

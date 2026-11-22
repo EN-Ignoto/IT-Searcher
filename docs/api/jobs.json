@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-20T22:41:31Z",
- "data_as_of": "2026-11-20T22:41:31Z",
- "rendered_at": "2026-11-20T22:41:31Z",
+ "generated_at": "2026-11-22T07:33:53Z",
+ "data_as_of": "2026-11-22T07:33:53Z",
+ "rendered_at": "2026-11-22T07:33:53Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 45,
+ "count": 44,
  "jobs": [
   {
    "id": "neogov:clermontfl:4984675",
@@ -408,30 +408,6 @@
    "first_seen_at": "2026-11-13T20:28:37Z",
    "salary": null,
    "source": "oracle"
-  },
-  {
-   "id": "ashby:ashby:80c20b00-c3c3-441b-95bd-56eb870e77fb",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Product Support Engineer - NAMER",
-   "company": "Ashby",
-   "location": "Remote - US",
-   "category": "IT Support / Technician",
-   "employment": "Not stated",
-   "fit": "stretch",
-   "experience": "No years of experience stated",
-   "evidence": "",
-   "notes": [
-    "No experience stated, but this title usually expects some",
-    "Shift work mentioned: 24/7"
-   ],
-   "url": "https://jobs.ashbyhq.com/Ashby/80c20b00-c3c3-441b-95bd-56eb870e77fb",
-   "posted_at": "2026-11-13T19:28:59.743+00:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-13T20:28:37Z",
-   "salary": "$75K – $140K • Offers Equity • Multiple Ranges",
-   "source": "ashby"
   },
   {
    "id": "recruitee:hardrockdigital:2823560",

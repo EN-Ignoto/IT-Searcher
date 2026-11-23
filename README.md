@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 22, 2026 20:02 UTC · 43 open roles: 7 local, 5 nearby, 31 remote._
+_Data as of Nov 23, 2026 11:15 UTC · 44 open roles: 7 local, 5 nearby, 32 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -22,7 +22,7 @@ _Within 30 miles of Kissimmee._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
-| 🆕 [SCADA Network Technician](https://www.governmentjobs.com/careers/clermontfl/jobs/4984675/scada-network-technician) | City of Clermont | Clermont, FL · 28 mi | Full-time | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | found Nov 20 |
+| [SCADA Network Technician](https://www.governmentjobs.com/careers/clermontfl/jobs/4984675/scada-network-technician) | City of Clermont | Clermont, FL · 28 mi | Full-time | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | found Nov 20 |
 | [Board Support Specialist](https://www.governmentjobs.com/careers/osceola/jobs/5550112/board-support-specialist) | Osceola County | Department: BOARD SUPPORT SERVICES · 0 mi | Full-time | Beginner-friendly | None required — 3 years preferred | ~Nov 14 |
 | [Jr. IT Support Specialist](https://halma.wd3.myworkdayjobs.com/halma/job/Orlando/Jr-IT-Support-Specialist_JR26_001243) | Ocean Optics | Orlando · 17 mi | Not stated | Beginner-friendly | 0+ years — open to no experience | Nov 11 |
 | [eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT](https://dejobs.org/orlando-fl/ecommerce-specialist-internet-help-desk-dc-orlando-fl-bench-ft/0B4B02309AB148FBA33C8A286AF55A74/job/) | The Walt Disney Company | Orlando, FL · 17 mi | Full-time | Beginner-friendly | No years of experience stated | Nov 9 |
@@ -42,15 +42,16 @@ _30 to 50 miles from Kissimmee._
 | [Systems Administrator](https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/) | V2X | Melbourne, FL · 48 mi | Not stated | Stretch | None required — 5 years preferred · Clearance must be obtainable; No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 3 |
 | [IT Associate I](https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002) | Relativity Space | Cape Canaveral, Florida, United States · 49 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Mentions Security+/Network+ | Oct 23 |
 
-## Remote (31)
+## Remote (32)
 
 _Remote, and open to Florida residents._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
 | 🆕 [Integration Support Analyst](https://job-boards.greenhouse.io/coherehealth/jobs/8208449003) | Cohere Health | Remote; United States | Not stated | Beginner-friendly | None required — 3 years preferred · Remote region not stated | Nov 20 |
-| 🆕 [Cyber Analyst](https://ats.rippling.com/conceptplus/jobs/90376de3-25e4-4831-b927-f618ed63c39c) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 20 |
+| [Cyber Analyst](https://ats.rippling.com/conceptplus/jobs/90376de3-25e4-4831-b927-f618ed63c39c) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 20 |
 | [IT Analyst - SAP BTP - CCM](https://jobs.smartrecruiters.com/Carlisle/3743990016919585) | Carlisle Companies | Remote, U.S.A, , United States (Remote) | Not stated | Beginner-friendly | None required — 3 years preferred | Nov 17 |
+| 🆕 [Technical Support Engineer- Healthcare](https://merative.wd12.myworkdayjobs.com/External_Career_Site/job/Remote--United-States/Technical-Support-Engineer--Healthcare_JR01756) | Merative | Remote – United States | Not stated | Stretch | None required — 1 year preferred · No experience stated, but this title usually expects some | Nov 16 |
 | [Technical Support Intern](https://apply.workable.com/bask-health-1/j/0F7C20F77C/) | Bask Health | United States (Remote) | Internship | Beginner-friendly | Entry-level / no experience required | Nov 13 |
 | [Cybersecurity Internship (Remote) – Summer 2027 (Undergraduate)](https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2040172) | Molina Healthcare | United States | Internship | Beginner-friendly | Internship — no experience requirement stated | Nov 13 |
 | [NOC Engineer](https://hardrockdigital.recruitee.com/o/noc-engineer-5) | Hard Rock Digital | United States, Florida, United States (Remote) | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: 2nd shifts | found Nov 12 |

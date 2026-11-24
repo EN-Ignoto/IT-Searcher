@@ -1147,6 +1147,31 @@
   "title": "Product Support Engineer",
   "v": 5
  },
+ "greenhouse:chainguard:4728655006": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some",
+    "Shift work mentioned: on-call rotation"
+   ],
+   "posted_at": "2026-11-24T17:31:09-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-24T22:47:44Z",
+  "location": "United States - Remote",
+  "seen": "2026-11-24",
+  "title": "Technical Support Engineer, AMER - East",
+  "v": 5
+ },
  "greenhouse:coherehealth:8208449003": {
   "a": {
    "category": "IT Support / Technician",
@@ -1514,6 +1539,28 @@
   "title": "Payments Operations Analyst",
   "v": 5
  },
+ "greenhouse:geocgi:4522769009": {
+  "a": {
+   "category": "Systems / Infrastructure",
+   "employment": "Not stated",
+   "evidence": "orting Hours:</strong> Monday – Friday 8-5 CST</p>\n<p><strong>Clearance:</strong> Minimum active DoD Secret Clearance</p>\n<p><strong>Travel:</strong> Up to 10%</p>\n<p>&nbsp;</p>\n<p",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-24T16:24:28-05:00",
+   "posted_at_source": null,
+   "reason": "active-clearance-required",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-24T22:47:44Z",
+  "location": "Remote",
+  "seen": "2026-11-24",
+  "title": "Geospatial Systems Administrator",
+  "v": 5
+ },
  "greenhouse:gitlab:8654230002": {
   "a": {
    "category": "IT Support / Technician",
@@ -1828,6 +1875,28 @@
   "location": "Remote - US Only",
   "seen": "2026-11-20",
   "title": "Associate Support Specialist",
+  "v": 5
+ },
+ "greenhouse:lumosfiber:5493128008": {
+  "a": {
+   "category": "Security (entry)",
+   "employment": "Not stated",
+   "evidence": "<li>2+ years of experience with Freshservice or similar ITSM APIs.</li>",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-23T17:57:03-05:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-24T22:47:44Z",
+  "location": "United States of America (USA), Remote",
+  "seen": "2026-11-24",
+  "title": "IT Security Analyst",
   "v": 5
  },
  "greenhouse:natera:6261749004": {
@@ -2803,6 +2872,30 @@
   "location": "Remote",
   "seen": "2026-11-24",
   "title": "Application Systems Analyst II",
+  "v": 5
+ },
+ "lever:servicerocket:781998d2-e40f-4ae2-a87c-c77386a04714": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "3+ years of enterprise technical support experience at a high-growth SaaS technology company",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Clearance must be obtainable"
+   ],
+   "posted_at": "2026-11-17T00:04:03Z",
+   "posted_at_source": null,
+   "reason": "requires-3-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-24T22:47:44Z",
+  "location": "Remote (US), United States",
+  "seen": "2026-11-24",
+  "title": "Docker Support Engineer (Afternoon shift)",
   "v": 5
  },
  "lever:tsmg:83579b56-d91e-4b24-8db3-d02f90f11ec5": {

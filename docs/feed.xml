@@ -5,31 +5,15 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-24T18:53:01Z</updated>
+  <updated>2026-11-24T22:50:16Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
   <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:981A8B9398FA460BB894DEF12A4839BC</id>
-    <title>[Local] Network Engineering Intern- Orlando, FL — Serco</title>
-    <link href="https://dejobs.org/orlando-fl/network-engineering-intern-orlando-fl/981A8B9398FA460BB894DEF12A4839BC/job/"/>
-    <updated>2026-11-24T18:53:01Z</updated>
-    <category term="Local"/>
-    <summary>Orlando, FL · 17 mi · Internship · Beginner-friendly · Internship — no experience requirement stated · Clearance must be obtainable · Mentions Security+/Network+</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:B6E6017983B245F282E1535FE48543FC</id>
-    <title>[Nearby] Onsite IT Support Technician — ManpowerGroup</title>
-    <link href="https://dejobs.org/plant-city-fl/onsite-it-support-technician/B6E6017983B245F282E1535FE48543FC/job/"/>
-    <updated>2026-11-24T18:53:01Z</updated>
-    <category term="Nearby"/>
-    <summary>Plant City, FL · 48 mi · Not stated · Beginner-friendly · None required — 2 years preferred</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:5C2EA8E233374930BFE70DC177C65B95</id>
-    <title>[Nearby] IT Onsite Technical Support — ManpowerGroup</title>
-    <link href="https://dejobs.org/plant-city-fl/it-onsite-technical-support/5C2EA8E233374930BFE70DC177C65B95/job/"/>
-    <updated>2026-11-24T18:53:01Z</updated>
-    <category term="Nearby"/>
-    <summary>Plant City, FL · 48 mi · Not stated · Beginner-friendly · None required — 2 years preferred</summary>
+    <id>urn:it-searcher:greenhouse:chainguard:4728655006</id>
+    <title>[Remote] Technical Support Engineer, AMER - East — Chainguard</title>
+    <link href="https://job-boards.greenhouse.io/chainguard/jobs/4728655006"/>
+    <updated>2026-11-24T22:50:16Z</updated>
+    <category term="Remote"/>
+    <summary>United States - Remote · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Shift work mentioned: on-call rotation</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:colabsoftware:5491010008</id>
@@ -70,6 +54,30 @@
     <updated>2026-11-24T18:53:01Z</updated>
     <category term="Remote"/>
     <summary>United States - East (Remote) · Not stated · Stretch · None required — 2 years preferred · No experience stated, but this title usually expects some</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:5C2EA8E233374930BFE70DC177C65B95</id>
+    <title>[Nearby] IT Onsite Technical Support — ManpowerGroup</title>
+    <link href="https://dejobs.org/plant-city-fl/it-onsite-technical-support/5C2EA8E233374930BFE70DC177C65B95/job/"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Nearby"/>
+    <summary>Plant City, FL · 48 mi · Not stated · Beginner-friendly · None required — 2 years preferred</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:981A8B9398FA460BB894DEF12A4839BC</id>
+    <title>[Local] Network Engineering Intern- Orlando, FL — Serco</title>
+    <link href="https://dejobs.org/orlando-fl/network-engineering-intern-orlando-fl/981A8B9398FA460BB894DEF12A4839BC/job/"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Local"/>
+    <summary>Orlando, FL · 17 mi · Internship · Beginner-friendly · Internship — no experience requirement stated · Clearance must be obtainable · Mentions Security+/Network+</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:B6E6017983B245F282E1535FE48543FC</id>
+    <title>[Nearby] Onsite IT Support Technician — ManpowerGroup</title>
+    <link href="https://dejobs.org/plant-city-fl/onsite-it-support-technician/B6E6017983B245F282E1535FE48543FC/job/"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Nearby"/>
+    <summary>Plant City, FL · 48 mi · Not stated · Beginner-friendly · None required — 2 years preferred</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:workday:merative:/job/Remote--United-States/Technical-Support-Engineer--Healthcare_JR01756</id>
@@ -155,9 +163,9 @@
     <id>urn:it-searcher:neogov:osceola:5550112</id>
     <title>[Local] Board Support Specialist — Osceola County</title>
     <link href="https://www.governmentjobs.com/careers/osceola/jobs/5550112/board-support-specialist"/>
-    <updated>2026-11-14T01:45:11Z</updated>
+    <updated>2026-11-24T22:50:16Z</updated>
     <category term="Local"/>
-    <summary>Department: BOARD SUPPORT SERVICES · 0 mi · Full-time · Beginner-friendly · None required — 3 years preferred</summary>
+    <summary>Department: BOARD SUPPORT SERVICES · 0 mi · Full-time · Beginner-friendly · None required — 3 years preferred · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:ashby:ashby:80c20b00-c3c3-441b-95bd-56eb870e77fb</id>
@@ -411,17 +419,17 @@
     <id>urn:it-searcher:greenhouse:sironamedical:4731580005</id>
     <title>[Remote] Application Support Specialist - Weekend Days — Sirona Medical</title>
     <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4731580005"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-24T22:50:16Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:sironamedical:4731581005</id>
     <title>[Remote] Application Support Specialist - Weekend Nights — Sirona Medical</title>
     <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4731581005"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-24T22:50:16Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:togetherai:5202015007</id>
@@ -443,9 +451,9 @@
     <id>urn:it-searcher:lever:firemon:55eed579-a00a-4d3c-a1ae-2e0ef9bd7063</id>
     <title>[Remote] Customer Support Engineer — Firemon</title>
     <link href="https://jobs.lever.co/firemon/55eed579-a00a-4d3c-a1ae-2e0ef9bd7063"/>
-    <updated>2026-11-12T09:25:22Z</updated>
+    <updated>2026-11-24T22:50:16Z</updated>
     <category term="Remote"/>
-    <summary>USA, Remote · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Shift work mentioned: 24/7</summary>
+    <summary>USA, Remote · Not stated · Stretch · No years of experience stated · No experience stated, but this title usually expects some · Shift work mentioned: 24/7 · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:lever:versapay:764d379d-7cd8-4cf4-8066-377d99f1d220</id>
@@ -739,9 +747,9 @@
     <id>urn:it-searcher:nlx:kissimmee-fl:0B4B02309AB148FBA33C8A286AF55A74</id>
     <title>[Local] eCommerce Specialist-Internet Help Desk, DC (Orlando, FL) Bench - FT — The Walt Disney Company</title>
     <link href="https://dejobs.org/orlando-fl/ecommerce-specialist-internet-help-desk-dc-orlando-fl-bench-ft/0B4B02309AB148FBA33C8A286AF55A74/job/"/>
-    <updated>2026-11-12T08:17:17Z</updated>
+    <updated>2026-11-24T22:50:16Z</updated>
     <category term="Local"/>
-    <summary>Orlando, FL · 17 mi · Full-time · Beginner-friendly · No years of experience stated</summary>
+    <summary>Orlando, FL · 17 mi · Full-time · Beginner-friendly · No years of experience stated · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:nlx:kissimmee-fl:5B713C96FFEA4AA999C7F143B7BA15D1</id>
@@ -798,13 +806,5 @@
     <updated>2026-11-12T08:17:17Z</updated>
     <category term="Local"/>
     <summary>Orlando, FL · 17 mi · Not stated · Stretch · No years of experience stated · Level II title · Mentions Security+/Network+</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:DDAEB1EA359745DE949E6EA4A0B0F453</id>
-    <title>[Nearby] Data and Technology Specialist — Deloitte</title>
-    <link href="https://dejobs.org/lake-mary-fl/data-and-technology-specialist/DDAEB1EA359745DE949E6EA4A0B0F453/job/"/>
-    <updated>2026-11-12T08:17:17Z</updated>
-    <category term="Nearby"/>
-    <summary>Lake Mary, FL · 33 mi · Not stated · Stretch · 1 year required · Clearance must be obtainable · Asks 4 years customer-service-type experience · Bachelor's degree listed</summary>
   </entry>
 </feed>

@@ -42,8 +42,30 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Associate Pilot Support Specialist, STEM",
+  "v": 5
+ },
+ "ashby:amplify:78de2e85-0ae3-4c4c-9597-74436e1b8db5": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "2 years of related experience in application support, technical support, systems support, or a related professional role; equivalent relevant experience may be considered.",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-23T22:09:16.867+00:00",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Remote - United States",
+  "seen": "2026-11-24",
+  "title": "IT Services Analyst",
   "v": 5
  },
  "ashby:amplify:7a41432a-9514-4f9d-90f7-fac0e0ecfdb3": {
@@ -64,7 +86,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Revenue Systems Analyst",
   "v": 5
  },
@@ -86,7 +108,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Summer 2027: IT Services Intern",
   "v": 5
  },
@@ -133,7 +155,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "GTM Systems Analyst",
   "v": 5
  },
@@ -155,7 +177,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Partner Support Specialist",
   "v": 5
  },
@@ -199,7 +221,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "USA - Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Revenue Operations Analyst",
   "v": 5
  },
@@ -243,7 +265,7 @@
   },
   "at": "2026-11-17T08:34:06Z",
   "location": "Remote - US",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Customer Support Specialist (Contract or Intern)",
   "v": 5
  },
@@ -265,7 +287,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Operations Specialist",
   "v": 5
  },
@@ -287,7 +309,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Support Engineer, PAYGO",
   "v": 5
  },
@@ -334,7 +356,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US, Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Procurement Operations Analyst",
   "v": 5
  },
@@ -356,7 +378,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US, Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Administrator, Business Applications",
   "v": 5
  },
@@ -466,7 +488,7 @@
   },
   "at": "2026-11-20T22:38:13Z",
   "location": "US Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Client Support Specialist II",
   "v": 5
  },
@@ -488,7 +510,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Customer Technical Support Specialist - US",
   "v": 5
  },
@@ -510,7 +532,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Support Engineer",
   "v": 5
  },
@@ -532,7 +554,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Customer Support Specialist - English (Morning/Afternoon)",
   "v": 5
  },
@@ -554,7 +576,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Customer Support Specialist - English (Evening)",
   "v": 5
  },
@@ -578,7 +600,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote, US",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technical Support Specialist , US East Coast",
   "v": 5
  },
@@ -600,7 +622,7 @@
   },
   "at": "2026-11-20T22:38:13Z",
   "location": "United States | Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Support Specialist",
   "v": 5
  },
@@ -625,7 +647,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Security & IT Operations Engineer",
   "v": 5
  },
@@ -647,7 +669,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Customer Support Specialist",
   "v": 5
  },
@@ -691,7 +713,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technical Support Engineer (L2)",
   "v": 5
  },
@@ -713,7 +735,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technical Support Engineer (L1)",
   "v": 5
  },
@@ -735,7 +757,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Revenue Operations Analyst",
   "v": 5
  },
@@ -757,7 +779,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technical Support Specialist",
   "v": 5
  },
@@ -781,7 +803,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Network Specialist - Launch Team",
   "v": 5
  },
@@ -849,8 +871,30 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote U.S.",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "AI Agent Support Specialist",
+  "v": 5
+ },
+ "ashby:voleon:98a23a0d-660f-4f57-b887-27b0411f8a67": {
+  "a": {
+   "category": "Network / NOC",
+   "employment": "Not stated",
+   "evidence": "Typically 5–10 years of hands-on network engineering experience, with exceptional candidates below five years considered based on scope and ownership",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-24T13:39:19.896+00:00",
+   "posted_at_source": null,
+   "reason": "requires-5-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Remote, United States",
+  "seen": "2026-11-24",
+  "title": "Network Engineer",
   "v": 5
  },
  "ashby:voleon:eb98b211-9cc8-4785-bc89-2337e531c6a4": {
@@ -871,7 +915,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Fixed Income Operations Analyst",
   "v": 5
  },
@@ -891,9 +935,9 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-23T11:12:18Z",
+  "at": "2026-11-24T18:50:08Z",
   "location": "Tampa, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "EHRM Ops Support Analyst (Remote Opportunity)",
   "v": 5
  },
@@ -915,7 +959,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "L1 Technical Support Engineer (Spanish-Speaking)",
   "v": 5
  },
@@ -1009,7 +1053,7 @@
   },
   "at": "2026-11-17T01:01:56Z",
   "location": "Lakeland, Florida",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Robot Service Technician Assistant – Part-Time Evenings – Contract",
   "v": 5
  },
@@ -1033,7 +1077,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Security Specialist",
   "v": 5
  },
@@ -1055,7 +1099,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Cloud Network Engineer",
   "v": 5
  },
@@ -1077,7 +1121,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Customer Support Engineer",
   "v": 5
  },
@@ -1099,7 +1143,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Product Support Engineer",
   "v": 5
  },
@@ -1123,7 +1167,7 @@
   },
   "at": "2026-11-20T22:38:13Z",
   "location": "Remote; United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Integration Support Analyst",
   "v": 5
  },
@@ -1145,7 +1189,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Social Support Specialist I",
   "v": 5
  },
@@ -1167,8 +1211,30 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Social Support Specialist I",
+  "v": 5
+ },
+ "greenhouse:colabsoftware:5491010008": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li>5+ years of PLM technical support or integration experience, ideally with PTC Windchill",
+   "experience": "None required — 5 years preferred",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-23T13:13:44-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "United States, Remote",
+  "seen": "2026-11-24",
+  "title": "PLM Technical Support Specialist",
   "v": 5
  },
  "greenhouse:correlationone:6234712004": {
@@ -1285,7 +1351,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "United States - Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Business Systems Analyst, Procure-to-Pay",
   "v": 5
  },
@@ -1307,7 +1373,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Trade Desk Support Engineer (Night Shift)",
   "v": 5
  },
@@ -1329,8 +1395,30 @@
   },
   "at": "2026-11-18T20:56:07Z",
   "location": "Remote - US",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Support Technician - AV & Workplace Technology",
+  "v": 5
+ },
+ "greenhouse:engine:8213794003": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li><strong>Experience:</strong> 4+ years of experience in technical support within an enterprise setting",
+   "experience": "",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-23T17:20:35-05:00",
+   "posted_at_source": null,
+   "reason": "requires-4-years-experience",
+   "remote": true,
+   "section": "Remote",
+   "verdict": "reject"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Remote - US",
+  "seen": "2026-11-24",
+  "title": "IT Support Specialist",
   "v": 5
  },
  "greenhouse:expel:8936554002": {
@@ -1376,7 +1464,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US-Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Precision Technology Specialist (Illinois/Indiana/Kentucky)",
   "v": 5
  },
@@ -1422,7 +1510,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Payments Operations Analyst",
   "v": 5
  },
@@ -1466,7 +1554,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Support Engineer, U.S. Government Support (SHIFT)",
   "v": 5
  },
@@ -1512,7 +1600,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - US",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Designated Technical Support Engineer - Central/East",
   "v": 5
  },
@@ -1580,7 +1668,7 @@
   },
   "at": "2026-11-19T17:17:54Z",
   "location": "Winter Park, FL, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Operations Technician",
   "v": 5
  },
@@ -1648,7 +1736,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "REMOTE",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Cybersecurity Specialist (DISA)",
   "v": 5
  },
@@ -1670,7 +1758,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "REMOTE",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "System Administrator  (DISA)",
   "v": 5
  },
@@ -1694,6 +1782,28 @@
   "location": "Remote",
   "seen": "2026-11-23",
   "title": "Services Support Specialist",
+  "v": 5
+ },
+ "greenhouse:industrialelectricmanufacturing:4519601009": {
+  "a": {
+   "category": "Help Desk / Service Desk",
+   "employment": "Not stated",
+   "evidence": "<li>1+ years of experience in a technical support or service desk role.</li>",
+   "experience": "1 year required",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [],
+   "posted_at": "2026-11-23T16:47:49-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "US - Remote",
+  "seen": "2026-11-24",
+  "title": "Service Desk Technician",
   "v": 5
  },
  "greenhouse:localitymediallcdbafirstdue:4514684009": {
@@ -1786,7 +1896,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "US Remote (East/Central)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Customer Success Operations Analyst",
   "v": 5
  },
@@ -1811,7 +1921,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Cloud Systems Administrator",
   "v": 5
  },
@@ -1836,7 +1946,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Systems Administrator",
   "v": 5
  },
@@ -1880,7 +1990,7 @@
   },
   "at": "2026-11-20T22:38:13Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Operations Analyst, Plan Loading",
   "v": 5
  },
@@ -1902,7 +2012,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Health IT Specialist, Product Solutions",
   "v": 5
  },
@@ -1949,7 +2059,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Cape Canaveral, Florida, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Associate I",
   "v": 5
  },
@@ -2047,7 +2157,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-18",
+  "seen": "2026-11-24",
   "title": "Application Support Specialist - Overnight M-F",
   "v": 5
  },
@@ -2101,6 +2211,56 @@
   "title": "Application Support Specialist - Weekend Nights",
   "v": 5
  },
+ "greenhouse:sironamedical:4757748005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 3 years customer-service-type experience",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-23T14:09:15-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Remote",
+  "seen": "2026-11-24",
+  "title": "Application Support Specialist - Weekend Days (Fri, Sat, Sun, Mon)",
+  "v": 5
+ },
+ "greenhouse:sironamedical:4757920005": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "",
+   "experience": "No years of experience stated",
+   "fit": "beginner",
+   "miles": null,
+   "notes": [
+    "Asks 3 years customer-service-type experience",
+    "Remote region not stated"
+   ],
+   "posted_at": "2026-11-23T20:37:55-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Remote",
+  "seen": "2026-11-24",
+  "title": "Application Support Specialist - Weekend Nights (Fri, Sat, Sun, Mon)",
+  "v": 5
+ },
  "greenhouse:spacex:8679658002": {
   "a": {
    "category": "Network / NOC",
@@ -2119,7 +2279,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Cape Canaveral, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "OT Network Engineer, Mission Systems",
   "v": 5
  },
@@ -2141,7 +2301,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Cape Canaveral, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Operations Engineer",
   "v": 5
  },
@@ -2185,7 +2345,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Cape Canaveral, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Network Engineer",
   "v": 5
  },
@@ -2207,7 +2367,7 @@
   },
   "at": "2026-11-18T01:16:12Z",
   "location": "Cape Canaveral, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Network Infrastructure Specialist",
   "v": 5
  },
@@ -2229,7 +2389,7 @@
   },
   "at": "2026-11-23T11:12:18Z",
   "location": "US (Remote)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technical Support Engineer",
   "v": 5
  },
@@ -2249,9 +2409,9 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-18T20:56:07Z",
-  "location": "Remote",
-  "seen": "2026-11-23",
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Chicago, Atlanta, US-Remote, Toro",
+  "seen": "2026-11-24",
   "title": "Risk Operations Analyst - Restricted Business Operations",
   "v": 5
  },
@@ -2273,7 +2433,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote, Remote, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Network Engineer",
   "v": 5
  },
@@ -2295,7 +2455,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote in the US",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Customer Support Specialist",
   "v": 5
  },
@@ -2343,6 +2503,30 @@
   "title": "Technical Support Engineer II - Federal",
   "v": 5
  },
+ "greenhouse:tines:6270033004": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "<li>2+ years of technical support experience within a SaaS environment, ideally in automation or a related field</li>",
+   "experience": "None required — 2 years preferred",
+   "fit": "stretch",
+   "miles": null,
+   "notes": [
+    "No experience stated, but this title usually expects some"
+   ],
+   "posted_at": "2026-11-24T09:05:24-05:00",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": true,
+   "section": "Remote",
+   "verdict": "keep"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "United States - East (Remote)",
+  "seen": "2026-11-24",
+  "title": "Technical Support Engineer I",
+  "v": 5
+ },
  "greenhouse:togetherai:5202015007": {
   "a": {
    "category": "IT Support / Technician",
@@ -2366,7 +2550,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technical Support Engineer (GPU Clusters) - US Weekends",
   "v": 5
  },
@@ -2412,7 +2596,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Concur Systems Administrator",
   "v": 5
  },
@@ -2434,7 +2618,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Solutions Support Engineer - US East",
   "v": 5
  },
@@ -2456,7 +2640,7 @@
   },
   "at": "2026-11-12T23:50:36Z",
   "location": "Remote - USA",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Product Support Engineer",
   "v": 5
  },
@@ -2527,7 +2711,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote, US-Based",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Application Systems Admin (Bilingual-Spanish)",
   "v": 5
  },
@@ -2551,7 +2735,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote, US-Based",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Junior Help Desk Support Agent (Bilingual-Spanish)",
   "v": 5
  },
@@ -2573,7 +2757,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Remote US",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Network Operations Analyst II",
   "v": 5
  },
@@ -2615,9 +2799,9 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-23T11:12:18Z",
+  "at": "2026-11-24T18:50:08Z",
   "location": "Remote",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Application Systems Analyst II",
   "v": 5
  },
@@ -2639,7 +2823,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Self-Driving Systems Specialist (SDS Specialist)",
   "v": 5
  },
@@ -2661,7 +2845,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "United States (Remote)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technical Support Specialist",
   "v": 5
  },
@@ -2685,7 +2869,7 @@
   },
   "at": "2026-11-20T07:00:28Z",
   "location": "Clermont, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "SCADA Network Technician",
   "v": 5
  },
@@ -2754,7 +2938,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Wholesale Payments Dedicated Support Specialist",
   "v": 5
  },
@@ -2776,7 +2960,7 @@
   },
   "at": "2026-11-13T06:27:11Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Wholesale Payments Dedicated Support Specialist",
   "v": 5
  },
@@ -2864,7 +3048,7 @@
   },
   "at": "2026-11-18T09:03:19Z",
   "location": "Lake Mary, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Specialist",
   "v": 5
  },
@@ -2910,7 +3094,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Executive IT Support Technician",
   "v": 5
  },
@@ -2998,7 +3182,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "CEI Assistant Contract Support Specialist",
   "v": 5
  },
@@ -3086,7 +3270,7 @@
   },
   "at": "2026-11-19T17:17:54Z",
   "location": "Maitland, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Operations Support Specialist",
   "v": 5
  },
@@ -3130,7 +3314,7 @@
   },
   "at": "2026-11-18T09:03:19Z",
   "location": "Maitland, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Associate Client Service & Product Support Specialist - Agency Notices",
   "v": 5
  },
@@ -3240,7 +3424,7 @@
   },
   "at": "2026-11-13T06:27:11Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Wholesale Payments Dedicated Support Specialist",
   "v": 5
  },
@@ -3306,8 +3490,30 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Lake Mary, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technology Support Contractor: 0-2 years (Entry) / Contract / Onsite",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:5C2EA8E233374930BFE70DC177C65B95": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "+ Typically 2–5 years of related work experience, preferably in maintenance, quality, or a related field.",
+   "experience": "None required — 2 years preferred",
+   "fit": "beginner",
+   "miles": 47.7,
+   "notes": [],
+   "posted_at": "2026-11-21T07:04:29Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "keep"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Plant City, FL",
+  "seen": "2026-11-24",
+  "title": "IT Onsite Technical Support",
   "v": 5
  },
  "nlx:kissimmee-fl:63769345ACA74E34A598FE4171C15D52": {
@@ -3328,7 +3534,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Intermediate Help Desk Support Service Specialist",
   "v": 5
  },
@@ -3374,7 +3580,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Network Engineer - E2",
   "v": 5
  },
@@ -3396,7 +3602,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Titusville, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Field Technician",
   "v": 5
  },
@@ -3418,7 +3624,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Access & Support Specialist II",
   "v": 5
  },
@@ -3442,7 +3648,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Help Desk Specialist",
   "v": 5
  },
@@ -3464,7 +3670,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Winter Park, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Fiduciary Support Specialist II",
   "v": 5
  },
@@ -3486,7 +3692,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Fiduciary Support Specialist II",
   "v": 5
  },
@@ -3508,7 +3714,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Cocoa, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "COMSEC Responsible Officer (CRO)/ Tier II Network Technician (NE2) (Government)",
   "v": 5
  },
@@ -3552,7 +3758,7 @@
   },
   "at": "2026-11-22T07:22:52Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Direct Sale Support Specialist",
   "v": 5
  },
@@ -3618,7 +3824,7 @@
   },
   "at": "2026-11-14T07:06:08Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Wholesale Payments Client Support Specialist",
   "v": 5
  },
@@ -3640,7 +3846,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Service Technician",
   "v": 5
  },
@@ -3662,7 +3868,7 @@
   },
   "at": "2026-11-18T09:03:19Z",
   "location": "Merritt Island, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Computer Operations Analyst 2/3 - Windows",
   "v": 5
  },
@@ -3840,8 +4046,33 @@
   },
   "at": "2026-11-22T07:22:52Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "System Administrator",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:981A8B9398FA460BB894DEF12A4839BC": {
+  "a": {
+   "category": "IT Operations",
+   "employment": "Internship",
+   "evidence": "",
+   "experience": "Internship — no experience requirement stated",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [
+    "Clearance must be obtainable",
+    "Mentions Security+/Network+"
+   ],
+   "posted_at": "2026-11-24T05:26:33Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Local",
+   "verdict": "keep"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-24",
+  "title": "Network Engineering Intern- Orlando, FL",
   "v": 5
  },
  "nlx:kissimmee-fl:991071019ECE41CFA797E8631AC47983": {
@@ -3884,7 +4115,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Housing Support Specialist",
   "v": 5
  },
@@ -3928,7 +4159,7 @@
   },
   "at": "2026-11-15T07:16:12Z",
   "location": "Kissimmee, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "EHR Support Analyst II",
   "v": 5
  },
@@ -3972,7 +4203,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Wholesale Payments Dedicated Support Specialist",
   "v": 5
  },
@@ -3994,7 +4225,7 @@
   },
   "at": "2026-11-14T07:06:08Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technical Support Engineer",
   "v": 5
  },
@@ -4016,7 +4247,7 @@
   },
   "at": "2026-11-18T09:03:19Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Wholesale Payments Dedicated Support Specialist",
   "v": 5
  },
@@ -4064,6 +4295,28 @@
   "title": "SERVICE TECHNICIAN (FULL TIME)",
   "v": 5
  },
+ "nlx:kissimmee-fl:B6E6017983B245F282E1535FE48543FC": {
+  "a": {
+   "category": "IT Support / Technician",
+   "employment": "Not stated",
+   "evidence": "+ Typically 2–5 years of related work experience, preferably in maintenance, quality, or a related field.",
+   "experience": "None required — 2 years preferred",
+   "fit": "beginner",
+   "miles": 47.7,
+   "notes": [],
+   "posted_at": "2026-11-21T07:04:31Z",
+   "posted_at_source": null,
+   "reason": null,
+   "remote": false,
+   "section": "Nearby",
+   "verdict": "keep"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Plant City, FL",
+  "seen": "2026-11-24",
+  "title": "Onsite IT Support Technician",
+  "v": 5
+ },
  "nlx:kissimmee-fl:B74D1386E008487FA05AD7A5CACDCF6C": {
   "a": {
    "category": "IT Support / Technician",
@@ -4082,7 +4335,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Merritt Island, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Support Engineer II, Leo IT Services",
   "v": 5
  },
@@ -4129,7 +4382,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Network Engineer",
   "v": 5
  },
@@ -4155,7 +4408,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Systems Administrator",
   "v": 5
  },
@@ -4177,7 +4430,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Cybersecurity Analyst - ISSO - Orlando, Florida",
   "v": 5
  },
@@ -4223,7 +4476,7 @@
   },
   "at": "2026-11-18T09:03:19Z",
   "location": "Kissimmee, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Field Technician",
   "v": 5
  },
@@ -4292,7 +4545,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Systems Analyst II",
   "v": 5
  },
@@ -4314,7 +4567,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Dade City, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Recovery Support Specialist II",
   "v": 5
  },
@@ -4406,7 +4659,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Lake Mary, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Data and Technology Specialist",
   "v": 5
  },
@@ -4428,7 +4681,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Melbourne, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Computer Systems Administrator / Spectrum Management Analyst",
   "v": 5
  },
@@ -4518,8 +4771,30 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "ACE Account Service Desk Specialist (Tier 2 - ASD)",
+  "v": 5
+ },
+ "nlx:kissimmee-fl:ED0123B6C4E14F1795B7DA682F10FE12": {
+  "a": {
+   "category": "Desktop / End-User Support",
+   "employment": "Not stated",
+   "evidence": "+ 2 years’ experience within the Information Technology field",
+   "experience": "",
+   "fit": "beginner",
+   "miles": 16.7,
+   "notes": [],
+   "posted_at": "2026-09-22T00:08:14Z",
+   "posted_at_source": null,
+   "reason": "requires-2-years-experience",
+   "remote": false,
+   "section": "Local",
+   "verdict": "reject"
+  },
+  "at": "2026-11-24T18:50:08Z",
+  "location": "Orlando, FL",
+  "seen": "2026-11-24",
+  "title": "Desktop Services Technician",
   "v": 5
  },
  "nlx:kissimmee-fl:ED2A02C4B31243D487D608380B7CC41E": {
@@ -4584,7 +4859,7 @@
   },
   "at": "2026-11-14T07:06:08Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Wholesale Payments Client Support Specialist",
   "v": 5
  },
@@ -4630,7 +4905,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Network Operations Analyst",
   "v": 5
  },
@@ -4718,7 +4993,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Sanford, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Field Technician",
   "v": 5
  },
@@ -4764,7 +5039,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL, United States; Kansas City, MO, United States; Nashville, TN, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Support Engineer",
   "v": 5
  },
@@ -4786,7 +5061,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Nashville, TN, United States; Orlando, FL, United States; Kansas City, MO, United States; United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Support Engineer - Incident",
   "v": 5
  },
@@ -4830,7 +5105,7 @@
   },
   "at": "2026-11-12T23:50:36Z",
   "location": "Kansas City, MO, United States; Orlando, FL, United States; United States; Nashville, TN, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Support Engineer - Configuration",
   "v": 5
  },
@@ -4852,7 +5127,7 @@
   },
   "at": "2026-11-12T23:50:36Z",
   "location": "Nashville, TN, United States; Orlando, FL, United States; Kansas City, MO, United States; United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Support Engineer - Incident",
   "v": 5
  },
@@ -4874,7 +5149,7 @@
   },
   "at": "2026-11-13T20:06:23Z",
   "location": "Nashville, TN, United States; Orlando, FL, United States; Kansas City, MO, United States; United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Support Engineer - Incident",
   "v": 5
  },
@@ -4896,7 +5171,7 @@
   },
   "at": "2026-11-13T20:06:23Z",
   "location": "Remote US, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Fraud Support Analyst",
   "v": 5
  },
@@ -5059,7 +5334,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "United States, Florida, United States (Remote)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "NOC Engineer",
   "v": 5
  },
@@ -5101,9 +5376,9 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-23T11:12:18Z",
+  "at": "2026-11-24T18:50:08Z",
   "location": "Remote (United States)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Cyber Analyst",
   "v": 5
  },
@@ -5189,9 +5464,9 @@
    "section": "Local",
    "verdict": "reject"
   },
-  "at": "2026-11-23T11:12:18Z",
+  "at": "2026-11-24T18:50:08Z",
   "location": "Orlando, FL",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Operations Analyst",
   "v": 5
  },
@@ -5211,9 +5486,9 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-23T11:12:18Z",
+  "at": "2026-11-24T18:50:08Z",
   "location": "Remote (United States)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Intermediate Technical Support Analyst",
   "v": 5
  },
@@ -5299,9 +5574,9 @@
    "section": "Remote",
    "verdict": "keep"
   },
-  "at": "2026-11-18T09:03:19Z",
+  "at": "2026-11-24T18:50:08Z",
   "location": "Remote (United States)",
-  "seen": "2026-11-18",
+  "seen": "2026-11-24",
   "title": "Technical Support Specialist, Platform",
   "v": 5
  },
@@ -5321,9 +5596,9 @@
    "section": "Remote",
    "verdict": "reject"
   },
-  "at": "2026-11-23T11:12:18Z",
+  "at": "2026-11-24T18:50:08Z",
   "location": "Remote (United States)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Customer Support Specialist, Business Unit",
   "v": 5
  },
@@ -5345,7 +5620,7 @@
   },
   "at": "2026-11-18T01:16:12Z",
   "location": "Remote, U.S.A, , United States (Remote)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "IT Analyst - SAP BTP - CCM",
   "v": 5
  },
@@ -5369,7 +5644,7 @@
   },
   "at": "2026-11-19T17:17:54Z",
   "location": "Remote, UNITED STATES, United States (Hybrid)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Radiology System Support Specialist I - DICOM / Linux / Backend",
   "v": 5
  },
@@ -5391,7 +5666,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Information Security Specialist (Intermediate-Level)",
   "v": 5
  },
@@ -5413,7 +5688,7 @@
   },
   "at": "2026-11-12T09:27:36Z",
   "location": "Orlando, FL, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Systems Administrator (Intermediate-Level)",
   "v": 5
  },
@@ -5457,7 +5732,7 @@
   },
   "at": "2026-11-18T01:16:12Z",
   "location": "Orlando, FL, United States",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Network Administrator (Intermediate-Level)",
   "v": 5
  },
@@ -5567,7 +5842,7 @@
   },
   "at": "2026-11-14T07:06:08Z",
   "location": "United States (Remote)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Technical Support Intern",
   "v": 5
  },
@@ -5611,7 +5886,7 @@
   },
   "at": "2026-11-17T08:34:06Z",
   "location": "United States (Remote)",
-  "seen": "2026-11-23",
+  "seen": "2026-11-24",
   "title": "Junior Revenue Operations Analyst",
   "v": 5
  },

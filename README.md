@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 23, 2026 11:15 UTC · 44 open roles: 7 local, 5 nearby, 32 remote._
+_Data as of Nov 24, 2026 18:53 UTC · 54 open roles: 8 local, 7 nearby, 39 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -16,12 +16,13 @@ Someone starting in IT: Network+ and Security+, customer-service experience, stu
 - **Stretch**: about a year is required, a requirement may be met by education or certifications, or the title is a level II.
 - **Check requirements**: the posting text could not be read; open it before applying.
 
-## Local (7)
+## Local (8)
 
 _Within 30 miles of Kissimmee._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
+| 🆕 [Network Engineering Intern- Orlando, FL](https://dejobs.org/orlando-fl/network-engineering-intern-orlando-fl/981A8B9398FA460BB894DEF12A4839BC/job/) | Serco | Orlando, FL · 17 mi | Internship | Beginner-friendly | Internship — no experience requirement stated · Clearance must be obtainable; Mentions Security+/Network+ | Nov 24 |
 | [SCADA Network Technician](https://www.governmentjobs.com/careers/clermontfl/jobs/4984675/scada-network-technician) | City of Clermont | Clermont, FL · 28 mi | Full-time | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | found Nov 20 |
 | [Board Support Specialist](https://www.governmentjobs.com/careers/osceola/jobs/5550112/board-support-specialist) | Osceola County | Department: BOARD SUPPORT SERVICES · 0 mi | Full-time | Beginner-friendly | None required — 3 years preferred | ~Nov 14 |
 | [Jr. IT Support Specialist](https://halma.wd3.myworkdayjobs.com/halma/job/Orlando/Jr-IT-Support-Specialist_JR26_001243) | Ocean Optics | Orlando · 17 mi | Not stated | Beginner-friendly | 0+ years — open to no experience | Nov 11 |
@@ -30,30 +31,38 @@ _Within 30 miles of Kissimmee._
 | [Systems Analyst II](https://dejobs.org/orlando-fl/systems-analyst-ii/C8E0E27BEA6445E8827427AEA8C3BD9E/job/) | CAI | Orlando, FL · 17 mi | Not stated | Stretch | No years of experience stated · Level II title; Mentions Security+/Network+ | Sep 11 |
 | [Help Desk Specialist](https://dejobs.org/orlando-fl/help-desk-specialist/6925AE191E7245C2AFF834232A57D1C2/job/) | Chenega Corporation | Orlando, FL · 17 mi | Not stated | Stretch | 1 year required · Shift work mentioned: rotating shift | Aug 21 |
 
-## Nearby (5)
+## Nearby (7)
 
 _30 to 50 miles from Kissimmee._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
+| 🆕 [Onsite IT Support Technician](https://dejobs.org/plant-city-fl/onsite-it-support-technician/B6E6017983B245F282E1535FE48543FC/job/) | ManpowerGroup | Plant City, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 21 |
+| 🆕 [IT Onsite Technical Support](https://dejobs.org/plant-city-fl/it-onsite-technical-support/5C2EA8E233374930BFE70DC177C65B95/job/) | ManpowerGroup | Plant City, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 21 |
 | [Data and Technology Specialist](https://dejobs.org/lake-mary-fl/data-and-technology-specialist/DDAEB1EA359745DE949E6EA4A0B0F453/job/) | Deloitte | Lake Mary, FL · 33 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Asks 4 years customer-service-type experience; Bachelor's degree listed | Nov 12 |
 | [RSC IT Coordinator, 1st shift](https://acehardware.wd1.myworkdayjobs.com/External/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089) | Ace Hardware | FL - Plant City · 47 mi | Not stated | Beginner-friendly | No years of experience stated | Nov 11 |
 | [Technology Support Contractor: 0-2 years (Entry) / Contract / Onsite](https://dejobs.org/lake-mary-fl/technology-support-contractor-0-2-years-entry-contract-onsite/5B713C96FFEA4AA999C7F143B7BA15D1/job/) | Kelly Services | Lake Mary, FL · 33 mi | Temporary / contract | Beginner-friendly | 0+ years — open to no experience | Nov 3 |
 | [Systems Administrator](https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/) | V2X | Melbourne, FL · 48 mi | Not stated | Stretch | None required — 5 years preferred · Clearance must be obtainable; No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 3 |
 | [IT Associate I](https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002) | Relativity Space | Cape Canaveral, Florida, United States · 49 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Mentions Security+/Network+ | Oct 23 |
 
-## Remote (32)
+## Remote (39)
 
 _Remote, and open to Florida residents._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
-| 🆕 [Integration Support Analyst](https://job-boards.greenhouse.io/coherehealth/jobs/8208449003) | Cohere Health | Remote; United States | Not stated | Beginner-friendly | None required — 3 years preferred · Remote region not stated | Nov 20 |
+| 🆕 [Technical Support Engineer I](https://job-boards.greenhouse.io/tines/jobs/6270033004) | Tines | United States - East (Remote) | Not stated | Stretch | None required — 2 years preferred · No experience stated, but this title usually expects some | Nov 24 |
+| 🆕 [Application Support Specialist - Weekend Nights (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757920005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 24 |
+| 🆕 [Application Support Specialist - Weekend Days (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757748005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 23 |
+| 🆕 [Service Desk Technician](https://job-boards.greenhouse.io/industrialelectricmanufacturing/jobs/4519601009) | IEM | US - Remote | Not stated | Stretch | 1 year required | Nov 23 |
+| 🆕 [PLM Technical Support Specialist](https://job-boards.greenhouse.io/colabsoftware/jobs/5491010008) | CoLab Software | United States, Remote | Not stated | Beginner-friendly | None required — 5 years preferred | Nov 23 |
+| [Integration Support Analyst](https://job-boards.greenhouse.io/coherehealth/jobs/8208449003) | Cohere Health | Remote; United States | Not stated | Beginner-friendly | None required — 3 years preferred · Remote region not stated | Nov 20 |
 | [Cyber Analyst](https://ats.rippling.com/conceptplus/jobs/90376de3-25e4-4831-b927-f618ed63c39c) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 20 |
 | [IT Analyst - SAP BTP - CCM](https://jobs.smartrecruiters.com/Carlisle/3743990016919585) | Carlisle Companies | Remote, U.S.A, , United States (Remote) | Not stated | Beginner-friendly | None required — 3 years preferred | Nov 17 |
 | 🆕 [Technical Support Engineer- Healthcare](https://merative.wd12.myworkdayjobs.com/External_Career_Site/job/Remote--United-States/Technical-Support-Engineer--Healthcare_JR01756) | Merative | Remote – United States | Not stated | Stretch | None required — 1 year preferred · No experience stated, but this title usually expects some | Nov 16 |
 | [Technical Support Intern](https://apply.workable.com/bask-health-1/j/0F7C20F77C/) | Bask Health | United States (Remote) | Internship | Beginner-friendly | Entry-level / no experience required | Nov 13 |
 | [Cybersecurity Internship (Remote) – Summer 2027 (Undergraduate)](https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2040172) | Molina Healthcare | United States | Internship | Beginner-friendly | Internship — no experience requirement stated | Nov 13 |
+| [Technical Support Specialist, Platform](https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd) | Rippling | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 12 |
 | [NOC Engineer](https://hardrockdigital.recruitee.com/o/noc-engineer-5) | Hard Rock Digital | United States, Florida, United States (Remote) | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: 2nd shifts | found Nov 12 |
 | [Service Desk Analyst I](https://republic.wd5.myworkdayjobs.com/Republic/job/Remote---USA/Service-Desk-Analyst-I_R-188253-1) | Republic Services | Remote - USA | Not stated | Beginner-friendly | None required — 1 year preferred | Nov 10 |
 | [Associate Systems Administrator - Supply Chain Rapid Response Team](https://ferguson.wd1.myworkdayjobs.com/Ferguson_Experienced/job/Remote/Associate-Systems-Administrator---Supply-Chain-Rapid-Response-Team_R-141717-1) | Ferguson | Remote | Not stated | Stretch | 1 year required · Mentions Security+/Network+; Remote region not stated | Nov 10 |
@@ -79,6 +88,7 @@ _Remote, and open to Florida residents._
 | [Systems Administrator](https://boards.greenhouse.io/opensesame/jobs/8188645?gh_jid=8188645) | OpenSesame | Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Remote region not stated | Sep 9 |
 | [Application Support Specialist - Weekend Nights](https://job-boards.greenhouse.io/sironamedical/jobs/4731581005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Sep 6 |
 | [Application Support Specialist - Weekend Days](https://job-boards.greenhouse.io/sironamedical/jobs/4731580005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Sep 6 |
+| [Application Support Specialist - Overnight M-F](https://job-boards.greenhouse.io/sironamedical/jobs/4731579005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Sep 6 |
 | [Technical Support Engineer (GPU Clusters) - US Weekends](https://job-boards.greenhouse.io/togetherai/jobs/5202015007) | Together AI | Remote | Full-time | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Asks 1 year customer-service-type experience; Shift work mentioned: weekend shift; Remote region not stated | Aug 4 |
 
 ## How it works

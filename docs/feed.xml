@@ -5,8 +5,72 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-23T11:15:18Z</updated>
+  <updated>2026-11-24T18:53:01Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:981A8B9398FA460BB894DEF12A4839BC</id>
+    <title>[Local] Network Engineering Intern- Orlando, FL — Serco</title>
+    <link href="https://dejobs.org/orlando-fl/network-engineering-intern-orlando-fl/981A8B9398FA460BB894DEF12A4839BC/job/"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Local"/>
+    <summary>Orlando, FL · 17 mi · Internship · Beginner-friendly · Internship — no experience requirement stated · Clearance must be obtainable · Mentions Security+/Network+</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:B6E6017983B245F282E1535FE48543FC</id>
+    <title>[Nearby] Onsite IT Support Technician — ManpowerGroup</title>
+    <link href="https://dejobs.org/plant-city-fl/onsite-it-support-technician/B6E6017983B245F282E1535FE48543FC/job/"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Nearby"/>
+    <summary>Plant City, FL · 48 mi · Not stated · Beginner-friendly · None required — 2 years preferred</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:5C2EA8E233374930BFE70DC177C65B95</id>
+    <title>[Nearby] IT Onsite Technical Support — ManpowerGroup</title>
+    <link href="https://dejobs.org/plant-city-fl/it-onsite-technical-support/5C2EA8E233374930BFE70DC177C65B95/job/"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Nearby"/>
+    <summary>Plant City, FL · 48 mi · Not stated · Beginner-friendly · None required — 2 years preferred</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:greenhouse:colabsoftware:5491010008</id>
+    <title>[Remote] PLM Technical Support Specialist — CoLab Software</title>
+    <link href="https://job-boards.greenhouse.io/colabsoftware/jobs/5491010008"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Remote"/>
+    <summary>United States, Remote · Not stated · Beginner-friendly · None required — 5 years preferred</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:greenhouse:industrialelectricmanufacturing:4519601009</id>
+    <title>[Remote] Service Desk Technician — IEM</title>
+    <link href="https://job-boards.greenhouse.io/industrialelectricmanufacturing/jobs/4519601009"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Remote"/>
+    <summary>US - Remote · Not stated · Stretch · 1 year required</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:greenhouse:sironamedical:4757748005</id>
+    <title>[Remote] Application Support Specialist - Weekend Days (Fri, Sat, Sun, Mon) — Sirona Medical</title>
+    <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4757748005"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Remote"/>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:greenhouse:sironamedical:4757920005</id>
+    <title>[Remote] Application Support Specialist - Weekend Nights (Fri, Sat, Sun, Mon) — Sirona Medical</title>
+    <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4757920005"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Remote"/>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:greenhouse:tines:6270033004</id>
+    <title>[Remote] Technical Support Engineer I — Tines</title>
+    <link href="https://job-boards.greenhouse.io/tines/jobs/6270033004"/>
+    <updated>2026-11-24T18:53:01Z</updated>
+    <category term="Remote"/>
+    <summary>United States - East (Remote) · Not stated · Stretch · None required — 2 years preferred · No experience stated, but this title usually expects some</summary>
+  </entry>
   <entry>
     <id>urn:it-searcher:workday:merative:/job/Remote--United-States/Technical-Support-Engineer--Healthcare_JR01756</id>
     <title>[Remote] Technical Support Engineer- Healthcare — Merative</title>
@@ -339,9 +403,9 @@
     <id>urn:it-searcher:greenhouse:sironamedical:4731579005</id>
     <title>[Remote] Application Support Specialist - Overnight M-F — Sirona Medical</title>
     <link href="https://job-boards.greenhouse.io/sironamedical/jobs/4731579005"/>
-    <updated>2026-11-20T07:11:58Z</updated>
+    <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated · status: closed</summary>
+    <summary>Remote · Not stated · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · Remote region not stated</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:sironamedical:4731580005</id>
@@ -451,9 +515,9 @@
     <id>urn:it-searcher:rippling:rippling:eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd</id>
     <title>[Remote] Technical Support Specialist, Platform — Rippling</title>
     <link href="https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd"/>
-    <updated>2026-11-19T17:21:49Z</updated>
+    <updated>2026-11-12T09:25:22Z</updated>
     <category term="Remote"/>
-    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements · status: closed</summary>
+    <summary>Remote (United States) · Not stated · Check requirements · Posting text unavailable — check requirements</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:workday:accenture:/job/Madrid/Cloud-Infrastructure-Specialist---Azure-Virtual-Desktop---Citrix_14795618</id>

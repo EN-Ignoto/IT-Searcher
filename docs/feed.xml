@@ -5,8 +5,24 @@
   <subtitle>Local first, then remote roles open to Florida. Newest finds first.</subtitle>
   <link href="https://en-ignoto.github.io/IT-Searcher/feed.xml" rel="self"/>
   <link href="https://en-ignoto.github.io/IT-Searcher/"/>
-  <updated>2026-11-24T22:50:16Z</updated>
+  <updated>2026-11-25T22:36:44Z</updated>
   <author><name>IT Searcher</name><uri>https://github.com/EN-Ignoto/IT-Searcher</uri></author>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:209929B0D251439F9B6FD89E1BE95D97</id>
+    <title>[Local] Linux System Administrator — Actalent</title>
+    <link href="https://dejobs.org/orlando-fl/linux-system-administrator/209929B0D251439F9B6FD89E1BE95D97/job/"/>
+    <updated>2026-11-25T22:36:44Z</updated>
+    <category term="Local"/>
+    <summary>Orlando, FL · 17 mi · Temporary / contract · Beginner-friendly · Entry-level / no experience required</summary>
+  </entry>
+  <entry>
+    <id>urn:it-searcher:nlx:kissimmee-fl:D72FF85E7ED347ACAC7E82D2EF4F97FF</id>
+    <title>[Nearby] IT Onsite Technical Support — ManpowerGroup</title>
+    <link href="https://dejobs.org/melbourne-fl/it-onsite-technical-support/D72FF85E7ED347ACAC7E82D2EF4F97FF/job/"/>
+    <updated>2026-11-25T22:36:44Z</updated>
+    <category term="Nearby"/>
+    <summary>Melbourne, FL · 48 mi · Not stated · Beginner-friendly · None required — 2 years preferred</summary>
+  </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:chainguard:4728655006</id>
     <title>[Remote] Technical Support Engineer, AMER - East — Chainguard</title>
@@ -19,9 +35,9 @@
     <id>urn:it-searcher:greenhouse:colabsoftware:5491010008</id>
     <title>[Remote] PLM Technical Support Specialist — CoLab Software</title>
     <link href="https://job-boards.greenhouse.io/colabsoftware/jobs/5491010008"/>
-    <updated>2026-11-24T18:53:01Z</updated>
+    <updated>2026-11-25T22:36:44Z</updated>
     <category term="Remote"/>
-    <summary>United States, Remote · Not stated · Beginner-friendly · None required — 5 years preferred</summary>
+    <summary>United States, Remote · Not stated · Beginner-friendly · None required — 5 years preferred · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:greenhouse:industrialelectricmanufacturing:4519601009</id>
@@ -115,9 +131,9 @@
     <id>urn:it-searcher:neogov:clermontfl:4984675</id>
     <title>[Local] SCADA Network Technician — City of Clermont</title>
     <link href="https://www.governmentjobs.com/careers/clermontfl/jobs/4984675/scada-network-technician"/>
-    <updated>2026-11-20T07:11:58Z</updated>
+    <updated>2026-11-25T22:36:44Z</updated>
     <category term="Local"/>
-    <summary>Clermont, FL · 28 mi · Full-time · Beginner-friendly · No years of experience stated · Mentions Security+/Network+</summary>
+    <summary>Clermont, FL · 28 mi · Full-time · Beginner-friendly · No years of experience stated · Mentions Security+/Network+ · status: closed</summary>
   </entry>
   <entry>
     <id>urn:it-searcher:rippling:conceptplus:90376de3-25e4-4831-b927-f618ed63c39c</id>
@@ -790,21 +806,5 @@
     <updated>2026-11-12T08:17:17Z</updated>
     <category term="Nearby"/>
     <summary>Melbourne, FL · 48 mi · Not stated · Stretch · None required — 5 years preferred · Clearance must be obtainable · No experience stated, but this title usually expects some · Shift work mentioned: 24/7</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:C0E0DEDB75D5407EA60607F791DA7A15</id>
-    <title>[Local] Bi-lingual Pharmacy Tech Support/Call Center Rep (Remote Work from Home) — IQVIA</title>
-    <link href="https://dejobs.org/orlando-fl/bi-lingual-pharmacy-tech-supportcall-center-rep-remote-work-from-home/C0E0DEDB75D5407EA60607F791DA7A15/job/"/>
-    <updated>2026-11-12T08:21:54Z</updated>
-    <category term="Local"/>
-    <summary>Orlando, FL · 17 mi · remote option · Part-time · Beginner-friendly · No years of experience stated · Asks 3 years customer-service-type experience · status: closed</summary>
-  </entry>
-  <entry>
-    <id>urn:it-searcher:nlx:kissimmee-fl:C8E0E27BEA6445E8827427AEA8C3BD9E</id>
-    <title>[Local] Systems Analyst II — CAI</title>
-    <link href="https://dejobs.org/orlando-fl/systems-analyst-ii/C8E0E27BEA6445E8827427AEA8C3BD9E/job/"/>
-    <updated>2026-11-12T08:17:17Z</updated>
-    <category term="Local"/>
-    <summary>Orlando, FL · 17 mi · Not stated · Stretch · No years of experience stated · Level II title · Mentions Security+/Network+</summary>
   </entry>
 </feed>

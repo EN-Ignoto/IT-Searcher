@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 24, 2026 22:50 UTC · 50 open roles: 6 local, 7 nearby, 37 remote._
+_Data as of Nov 25, 2026 22:36 UTC · 50 open roles: 6 local, 8 nearby, 36 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -22,19 +22,20 @@ _Within 30 miles of Kissimmee._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
+| 🆕 [Linux System Administrator](https://dejobs.org/orlando-fl/linux-system-administrator/209929B0D251439F9B6FD89E1BE95D97/job/) | Actalent | Orlando, FL · 17 mi | Temporary / contract | Beginner-friendly | Entry-level / no experience required | Nov 25 |
 | 🆕 [Network Engineering Intern- Orlando, FL](https://dejobs.org/orlando-fl/network-engineering-intern-orlando-fl/981A8B9398FA460BB894DEF12A4839BC/job/) | Serco | Orlando, FL · 17 mi | Internship | Beginner-friendly | Internship — no experience requirement stated · Clearance must be obtainable; Mentions Security+/Network+ | Nov 24 |
-| [SCADA Network Technician](https://www.governmentjobs.com/careers/clermontfl/jobs/4984675/scada-network-technician) | City of Clermont | Clermont, FL · 28 mi | Full-time | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | found Nov 20 |
 | [Jr. IT Support Specialist](https://halma.wd3.myworkdayjobs.com/halma/job/Orlando/Jr-IT-Support-Specialist_JR26_001243) | Ocean Optics | Orlando · 17 mi | Not stated | Beginner-friendly | 0+ years — open to no experience | Nov 11 |
 | [Network Engineer](https://dejobs.org/orlando-fl/network-engineer/BA300695C674418D983FDDC3B445D250/job/) | Robert Half | Orlando, FL · 17 mi | Not stated | Stretch | None required — 2 years preferred · No experience stated, but this title usually expects some; Bachelor's degree listed | Nov 4 |
 | [Systems Analyst II](https://dejobs.org/orlando-fl/systems-analyst-ii/C8E0E27BEA6445E8827427AEA8C3BD9E/job/) | CAI | Orlando, FL · 17 mi | Not stated | Stretch | No years of experience stated · Level II title; Mentions Security+/Network+ | Sep 11 |
 | [Help Desk Specialist](https://dejobs.org/orlando-fl/help-desk-specialist/6925AE191E7245C2AFF834232A57D1C2/job/) | Chenega Corporation | Orlando, FL · 17 mi | Not stated | Stretch | 1 year required · Shift work mentioned: rotating shift | Aug 21 |
 
-## Nearby (7)
+## Nearby (8)
 
 _30 to 50 miles from Kissimmee._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
+| 🆕 [IT Onsite Technical Support](https://dejobs.org/melbourne-fl/it-onsite-technical-support/D72FF85E7ED347ACAC7E82D2EF4F97FF/job/) | ManpowerGroup | Melbourne, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 25 |
 | 🆕 [Onsite IT Support Technician](https://dejobs.org/plant-city-fl/onsite-it-support-technician/B6E6017983B245F282E1535FE48543FC/job/) | ManpowerGroup | Plant City, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 21 |
 | 🆕 [IT Onsite Technical Support](https://dejobs.org/plant-city-fl/it-onsite-technical-support/5C2EA8E233374930BFE70DC177C65B95/job/) | ManpowerGroup | Plant City, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 21 |
 | [Data and Technology Specialist](https://dejobs.org/lake-mary-fl/data-and-technology-specialist/DDAEB1EA359745DE949E6EA4A0B0F453/job/) | Deloitte | Lake Mary, FL · 33 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Asks 4 years customer-service-type experience; Bachelor's degree listed | Nov 12 |
@@ -43,7 +44,7 @@ _30 to 50 miles from Kissimmee._
 | [Systems Administrator](https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/) | V2X | Melbourne, FL · 48 mi | Not stated | Stretch | None required — 5 years preferred · Clearance must be obtainable; No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 3 |
 | [IT Associate I](https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002) | Relativity Space | Cape Canaveral, Florida, United States · 49 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Mentions Security+/Network+ | Oct 23 |
 
-## Remote (37)
+## Remote (36)
 
 _Remote, and open to Florida residents._
 
@@ -54,7 +55,6 @@ _Remote, and open to Florida residents._
 | 🆕 [Application Support Specialist - Weekend Nights (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757920005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 24 |
 | 🆕 [Application Support Specialist - Weekend Days (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757748005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 23 |
 | 🆕 [Service Desk Technician](https://job-boards.greenhouse.io/industrialelectricmanufacturing/jobs/4519601009) | IEM | US - Remote | Not stated | Stretch | 1 year required | Nov 23 |
-| 🆕 [PLM Technical Support Specialist](https://job-boards.greenhouse.io/colabsoftware/jobs/5491010008) | CoLab Software | United States, Remote | Not stated | Beginner-friendly | None required — 5 years preferred | Nov 23 |
 | [Integration Support Analyst](https://job-boards.greenhouse.io/coherehealth/jobs/8208449003) | Cohere Health | Remote; United States | Not stated | Beginner-friendly | None required — 3 years preferred · Remote region not stated | Nov 20 |
 | [Cyber Analyst](https://ats.rippling.com/conceptplus/jobs/90376de3-25e4-4831-b927-f618ed63c39c) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 20 |
 | [IT Analyst - SAP BTP - CCM](https://jobs.smartrecruiters.com/Carlisle/3743990016919585) | Carlisle Companies | Remote, U.S.A, , United States (Remote) | Not stated | Beginner-friendly | None required — 3 years preferred | Nov 17 |

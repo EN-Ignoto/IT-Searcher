@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 26, 2026 04:21 UTC · 49 open roles: 6 local, 7 nearby, 36 remote._
+_Data as of Nov 26, 2026 11:42 UTC · 50 open roles: 6 local, 7 nearby, 37 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -43,7 +43,7 @@ _30 to 50 miles from Kissimmee._
 | [Systems Administrator](https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/) | V2X | Melbourne, FL · 48 mi | Not stated | Stretch | None required — 5 years preferred · Clearance must be obtainable; No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 3 |
 | [IT Associate I](https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002) | Relativity Space | Cape Canaveral, Florida, United States · 49 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Mentions Security+/Network+ | Oct 23 |
 
-## Remote (36)
+## Remote (37)
 
 _Remote, and open to Florida residents._
 
@@ -57,7 +57,7 @@ _Remote, and open to Florida residents._
 | [Integration Support Analyst](https://job-boards.greenhouse.io/coherehealth/jobs/8208449003) | Cohere Health | Remote; United States | Not stated | Beginner-friendly | None required — 3 years preferred · Remote region not stated | Nov 20 |
 | [Cyber Analyst](https://ats.rippling.com/conceptplus/jobs/90376de3-25e4-4831-b927-f618ed63c39c) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 20 |
 | [IT Analyst - SAP BTP - CCM](https://jobs.smartrecruiters.com/Carlisle/3743990016919585) | Carlisle Companies | Remote, U.S.A, , United States (Remote) | Not stated | Beginner-friendly | None required — 3 years preferred | Nov 17 |
-| 🆕 [Technical Support Engineer- Healthcare](https://merative.wd12.myworkdayjobs.com/External_Career_Site/job/Remote--United-States/Technical-Support-Engineer--Healthcare_JR01756) | Merative | Remote – United States | Not stated | Stretch | None required — 1 year preferred · No experience stated, but this title usually expects some | Nov 16 |
+| [Technical Support Engineer- Healthcare](https://merative.wd12.myworkdayjobs.com/External_Career_Site/job/Remote--United-States/Technical-Support-Engineer--Healthcare_JR01756) | Merative | Remote – United States | Not stated | Stretch | None required — 1 year preferred · No experience stated, but this title usually expects some | Nov 16 |
 | [Technical Support Intern](https://apply.workable.com/bask-health-1/j/0F7C20F77C/) | Bask Health | United States (Remote) | Internship | Beginner-friendly | Entry-level / no experience required | Nov 13 |
 | [Cybersecurity Internship (Remote) – Summer 2027 (Undergraduate)](https://hckd.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2040172) | Molina Healthcare | United States | Internship | Beginner-friendly | Internship — no experience requirement stated | Nov 13 |
 | [Technical Support Specialist, Platform](https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd) | Rippling | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 12 |
@@ -67,6 +67,7 @@ _Remote, and open to Florida residents._
 | [Technical Support Technician - Tech Apps](https://cpsi.wd1.myworkdayjobs.com/CPSI/job/Remote---US/Technical-Support-Technican---Tech-Apps_JR102541) | TruBridge | Remote - US | Not stated | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | Nov 10 |
 | [Technical Support Representative - Remote](https://bigcommerce.wd12.myworkdayjobs.com/Commerce/job/United-States---Remote/Technical-Support-Representative--US-_3100) | BigCommerce | United States - Remote | Not stated | Beginner-friendly | No years of experience stated | Nov 9 |
 | [Technical Support Specialist](https://jobs.lever.co/versapay/764d379d-7cd8-4cf4-8066-377d99f1d220) | Versapay | United States (Remote) | Not stated | Beginner-friendly | No years of experience stated | Nov 9 |
+| 🆕 [Customer Support Specialist](https://jobs.ashbyhq.com/pocket/08382d72-a35f-4c4c-a5c2-de8fafb5147d) | Open Vision Engineering | Remote | Not stated | Beginner-friendly | No years of experience stated · Remote region not stated | Nov 6 |
 | [Diagnostics Technical Support Representative](https://zoetis.wd5.myworkdayjobs.com/zoetis/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901) | Zoetis | US Remote | Not stated | Beginner-friendly | None required — 3 years preferred | Nov 6 |
 | [Cloud Systems Administrator](https://job-boards.greenhouse.io/oneimaging/jobs/4484490009) | OneImaging | Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Remote region not stated | Nov 7 |
 | [Security & IT Operations Engineer](https://jobs.ashbyhq.com/prefect/6bc102cc-112f-441f-adc8-d53dc83a93ec) | Prefect | Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Remote region not stated | Nov 6 |

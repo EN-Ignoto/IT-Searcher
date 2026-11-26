@@ -102,6 +102,8 @@ _LIVENESS_CHECKS = 60
 _RATE_LIMITED = "429 Too Many Requests"
 _OUTAGE_MIN_BOARDS = 20
 _CUT_OFF_REFUSALS = 25
+_COOL_DOWNS = 3
+_COOL_DOWN_SECONDS = 90
 _OUTAGE_SHARE = 0.25
 _LOCAL_UNSEEN_CLOSE_DAYS = 3
 # Sources read for their place, not their employer: their "not an IT title"
@@ -201,13 +203,19 @@ async def _fetch_all(companies: list[dict], after, local_keys: set[str] | None =
         completed = 0
 
         refusals: Counter = Counter()   # consecutive 429s per platform, this run
+        pauses: Counter = Counter()     # cool-downs taken per platform, this run
+        resume_at: dict[str, float] = {}
         cut_off: set[str] = set()
+        loop = asyncio.get_running_loop()
 
         async def worker(company: dict):
             nonlocal completed
             ats = company.get("ats") or "?"
             net = workday_net if ats in ("workday", "oracle") else default_net
             local = registry.board_key(company) in local_keys
+            wait = resume_at.get(ats, 0.0) - loop.time()
+            if wait > 0 and not local:
+                await asyncio.sleep(wait)   # the platform asked us to slow down
             if ats in cut_off and not local:
                 # The platform is refusing this machine outright. Asking the
                 # rest of its boards only burns minutes on more refusals.
@@ -220,9 +228,19 @@ async def _fetch_all(companies: list[dict], after, local_keys: set[str] | None =
                 if error and _RATE_LIMITED in error:
                     refusals[ats] += 1
                     if refusals[ats] >= _CUT_OFF_REFUSALS and ats not in cut_off:
-                        cut_off.add(ats)
-                        print(f"{ats}: {refusals[ats]} refusals in a row; skipping its "
-                              "remaining boards this run", flush=True)
+                        refusals[ats] = 0
+                        if pauses[ats] < _COOL_DOWNS:
+                            # Back off and try again: Workday lets requests
+                            # through in bursts, then refuses for a while.
+                            pauses[ats] += 1
+                            resume_at[ats] = loop.time() + _COOL_DOWN_SECONDS
+                            print(f"{ats}: {_CUT_OFF_REFUSALS} refusals in a row; pausing "
+                                  f"{_COOL_DOWN_SECONDS}s (cool-down {pauses[ats]} of "
+                                  f"{_COOL_DOWNS})", flush=True)
+                        else:
+                            cut_off.add(ats)
+                            print(f"{ats}: still refusing after {_COOL_DOWNS} cool-downs; "
+                                  "skipping its remaining boards this run", flush=True)
                 elif error is None:
                     refusals[ats] = 0
             completed += 1

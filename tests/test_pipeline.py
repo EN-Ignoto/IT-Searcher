@@ -333,7 +333,7 @@ def test_platform_wide_failure_benches_nothing(world):
 
 
 def test_a_refusing_platform_is_cut_off_for_the_rest_of_the_run(world):
-    boards = [{"name": f"W{i}", "slug": f"w{i}", "ats": "greenhouse"} for i in range(40)]
+    boards = [{"name": f"W{i}", "slug": f"w{i}", "ats": "greenhouse"} for i in range(150)]
     world["registry"] = boards
     calls = []
     original = pipeline.CONNECTORS["greenhouse"]
@@ -344,8 +344,14 @@ def test_a_refusing_platform_is_cut_off_for_the_rest_of_the_run(world):
             "HTTPStatusError: Client error '429 Too Many Requests' for url 'x'")
         return original(company, net)
     pipeline.CONNECTORS["greenhouse"] = refusing
+    import pytest as _pytest
+    mp = _pytest.MonkeyPatch()
+    mp.setattr(pipeline, "_COOL_DOWN_SECONDS", 0)
     stats, _, _ = pipeline.run_update("full")
-    assert len(calls) < 40, "kept asking a platform that refuses every request"
+    mp.undo()
+    # 25 refusals, pause; three times; then 25 more and it stops asking.
+    rounds = pipeline._COOL_DOWNS + 1
+    assert len(calls) == rounds * pipeline._CUT_OFF_REFUSALS < 150
     assert stats["provider_outages"] == {"greenhouse": 1.0}
     assert "greenhouse" not in stats["provider_last_ok"]
     pipeline.CONNECTORS["greenhouse"] = original

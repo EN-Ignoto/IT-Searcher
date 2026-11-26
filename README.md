@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 26, 2026 12:46 UTC · 50 open roles: 6 local, 7 nearby, 37 remote._
+_Data as of Nov 26, 2026 12:59 UTC · 49 open roles: 6 local, 7 nearby, 36 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -43,7 +43,7 @@ _30 to 50 miles from Kissimmee._
 | [Systems Administrator](https://dejobs.org/melbourne-fl/systems-administrator/BA38F247D143423F9128A685CDE65234/job/) | V2X | Melbourne, FL · 48 mi | Not stated | Stretch | None required — 5 years preferred · Clearance must be obtainable; No experience stated, but this title usually expects some; Shift work mentioned: 24/7 | Nov 3 |
 | [IT Associate I](https://boards.greenhouse.io/relativity/jobs/8910062002?gh_jid=8910062002) | Relativity Space | Cape Canaveral, Florida, United States · 49 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Mentions Security+/Network+ | Oct 23 |
 
-## Remote (37)
+## Remote (36)
 
 _Remote, and open to Florida residents._
 
@@ -72,7 +72,6 @@ _Remote, and open to Florida residents._
 | [Cloud Systems Administrator](https://job-boards.greenhouse.io/oneimaging/jobs/4484490009) | OneImaging | Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Remote region not stated | Nov 7 |
 | [Security & IT Operations Engineer](https://jobs.ashbyhq.com/prefect/6bc102cc-112f-441f-adc8-d53dc83a93ec) | Prefect | Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Remote region not stated | Nov 6 |
 | [Remote Customer Technical Support](https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022642) | ADT | United States; ND, United States; OH, United States; OK, United States; SC, United States; TN, United States; UT, United States; VA, United States; AL, United States; AZ, United States; AR, United States; DE, United States; FL, United States; GA, United States; ID, United States; IA, United States; KS, United States; KY, United States; LA, United States; IN, United States; MS, United States; MO, United States; NE, United States; NH, United States; NC, United States | Not stated | Beginner-friendly | No years of experience stated · Asks 1 year customer-service-type experience | Nov 4 |
-| [Level 2 NOC Systems Administrator – Linux/Unix Focus](https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786) | Unisys | USA Remote | Not stated | Stretch | 2 years required — education/certs may substitute · Shift work mentioned: rotating shifts | Nov 3 |
 | [POS Tech Support Specialist](https://nabancard.wd1.myworkdayjobs.com/nab/job/US---Remote/POS-Tech-Support-Specialist_JR102005) | NorthAB | US - Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Shift work mentioned: evening shift | Nov 3 |
 | [Network Specialist - Launch Team](https://jobs.ashbyhq.com/skydio/8ba69d85-b786-4399-a5c0-ee0969054315) | Skydio | US Remote | Not stated | Beginner-friendly | No years of experience stated · Mentions Security+/Network+ | Oct 23 |
 | [Network Site Design Intern](https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Network-Site-Design-Intern_R-00195057) | Leidos | 6314 Remote/Teleworker US | Internship | Beginner-friendly | Internship — no experience requirement stated · Clearance must be obtainable | Oct 21 |

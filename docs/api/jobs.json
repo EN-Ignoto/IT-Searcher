@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-26T14:21:45Z",
- "data_as_of": "2026-11-26T14:21:45Z",
- "rendered_at": "2026-11-26T14:21:45Z",
+ "generated_at": "2026-11-26T22:09:19Z",
+ "data_as_of": "2026-11-26T22:09:19Z",
+ "rendered_at": "2026-11-26T22:09:19Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 49,
+ "count": 48,
  "jobs": [
   {
    "id": "nlx:kissimmee-fl:209929B0D251439F9B6FD89E1BE95D97",
@@ -701,29 +701,6 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": "70,000–75,000 USD/yr",
    "source": "lever"
-  },
-  {
-   "id": "ashby:pocket:08382d72-a35f-4c4c-a5c2-de8fafb5147d",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Customer Support Specialist",
-   "company": "Open Vision Engineering",
-   "location": "Remote",
-   "category": "IT Support / Technician",
-   "employment": "Not stated",
-   "fit": "beginner",
-   "experience": "No years of experience stated",
-   "evidence": "",
-   "notes": [
-    "Remote region not stated"
-   ],
-   "url": "https://jobs.ashbyhq.com/pocket/08382d72-a35f-4c4c-a5c2-de8fafb5147d",
-   "posted_at": "2026-11-06T14:05:59.050+00:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-26T11:42:38Z",
-   "salary": "$10K – $30K • Offers Bonus",
-   "source": "ashby"
   },
   {
    "id": "workday:zoetis:/job/US-Remote/Diagnostics-Technical-Support-Representative_JR00021901",

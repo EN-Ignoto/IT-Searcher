@@ -1100,58 +1100,58 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/xpansiv?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   },
   "neogov:casselberry": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:clermontfl": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:kissimmeefl": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:kua": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:maitland": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:ocoee": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:osceola": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:oviedo": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:seminolecountyfl": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:stcloud": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "neogov:winterpark": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-26T23:17:00Z",
     "last_error": "ConnectTimeout: "
   },
   "paradox:osceolaschools": {

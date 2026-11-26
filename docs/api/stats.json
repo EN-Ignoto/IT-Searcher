@@ -1,57 +1,38 @@
 {
- "generated_at": "2026-11-26T22:09:19Z",
- "fetched_at": "2026-11-26T22:09:19Z",
- "scope": "full",
- "duration_seconds": 631.8,
- "boards_total": 3857,
+ "generated_at": "2026-11-26T23:17:00Z",
+ "fetched_at": "2026-11-26T23:17:00Z",
+ "scope": "local",
+ "duration_seconds": 83.8,
+ "boards_total": 15,
  "boards_by_source": {
   "nlx": 1,
   "neogov": 11,
   "peopleadmin": 1,
-  "workday": 252,
-  "greenhouse": 1233,
-  "lever": 455,
-  "ashby": 934,
-  "recruitee": 7,
-  "smartrecruiters": 322,
-  "rippling": 198,
-  "workable": 257,
-  "oracle": 164,
-  "amazon": 1,
-  "breezy": 20,
-  "eightfold": 1
+  "workday": 2
  },
- "quarantined": 226,
- "fetched_ok": 3198,
- "fetch_errors": 433,
+ "quarantined": 0,
+ "fetched_ok": 2,
+ "fetch_errors": 13,
  "errors_by_source": {
   "neogov": 11,
-  "workday": 245,
-  "greenhouse": 1,
-  "workable": 173,
-  "ashby": 2,
-  "lever": 1
+  "workday": 2
  },
- "fetch_success_rate": 0.881,
- "snapshots_complete": 3050,
- "snapshots_partial": 148,
- "jobs_seen": 205441,
- "roles_matched": 32,
+ "fetch_success_rate": 0.133,
+ "snapshots_complete": 2,
+ "snapshots_partial": 0,
+ "jobs_seen": 664,
+ "roles_matched": 10,
  "dropped_by_reason": {
-  "active-clearance-required": 30,
-  "level-2-unverifiable": 1,
-  "not-it-role": 198762,
-  "outside-area": 5196,
+  "active-clearance-required": 4,
+  "not-it-role": 613,
   "requires-10-years-experience": 1,
-  "requires-2-years-experience": 11,
-  "requires-3-years-experience": 15,
-  "requires-4-years-experience": 5,
-  "requires-5-years-experience": 15,
-  "requires-7-years-experience": 1,
+  "requires-2-years-experience": 4,
+  "requires-3-years-experience": 1,
+  "requires-4-years-experience": 1,
+  "requires-5-years-experience": 5,
   "requires-8-years-experience": 1,
-  "senior-title": 1333,
-  "stale-posting": 33,
-  "unconfirmed-it-role": 5
+  "senior-title": 17,
+  "stale-posting": 7
  },
  "detail_fetches": 0,
  "closed_by_posting_check": 0,
@@ -183,7 +164,7 @@
    "key": "nlx:kissimmee-fl",
    "name": "NLx / DEJobs (50 mi of Kissimmee)",
    "ats": "nlx",
-   "jobs": 655,
+   "jobs": 654,
    "kept": 10,
    "complete": true,
    "error": null,
@@ -283,10 +264,7 @@
    "lever": 1
   }
  },
- "provider_outages": {
-  "workable": 0.676,
-  "workday": 0.976
- },
+ "provider_outages": {},
  "workday_cursor": 750,
  "provider_last_ok": {
   "greenhouse": "2026-11-26T22:09:19Z",
@@ -301,14 +279,6 @@
   "workday": "2026-11-26T12:46:42Z",
   "workable": "2026-11-26T12:46:42Z"
  },
- "quarantined_by_source": {
-  "greenhouse": 76,
-  "recruitee": 2,
-  "rippling": 8,
-  "ashby": 88,
-  "lever": 50,
-  "workable": 1,
-  "workday": 1
- },
- "rendered_at": "2026-11-26T22:09:19Z"
+ "quarantined_by_source": {},
+ "rendered_at": "2026-11-26T23:17:00Z"
 }

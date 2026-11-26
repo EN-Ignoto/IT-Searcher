@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-26T11:45:45Z",
- "data_as_of": "2026-11-26T11:45:45Z",
- "rendered_at": "2026-11-26T11:45:45Z",
+ "generated_at": "2026-11-26T12:59:45Z",
+ "data_as_of": "2026-11-26T12:59:45Z",
+ "rendered_at": "2026-11-26T12:59:45Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 50,
+ "count": 49,
  "jobs": [
   {
    "id": "nlx:kissimmee-fl:209929B0D251439F9B6FD89E1BE95D97",
@@ -816,29 +816,6 @@
    "first_seen_at": "2026-11-12T09:25:22Z",
    "salary": null,
    "source": "oracle"
-  },
-  {
-   "id": "workday:unisys:/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Level 2 NOC Systems Administrator – Linux/Unix Focus",
-   "company": "Unisys",
-   "location": "USA Remote",
-   "category": "Network / NOC",
-   "employment": "Not stated",
-   "fit": "stretch",
-   "experience": "2 years required — education/certs may substitute",
-   "evidence": "BA/BS degree and 2–4 years of relevant experience OR equivalent combination.",
-   "notes": [
-    "Shift work mentioned: rotating shifts"
-   ],
-   "url": "https://unisys.wd5.myworkdayjobs.com/External/job/USA-Remote/Level-2-NOC-Systems-Administrator---Linux-Unix-Focus_REQ576786",
-   "posted_at": "2026-11-03T00:00:00Z",
-   "posted_at_source": "date_only",
-   "first_seen_at": "2026-11-12T09:25:22Z",
-   "salary": null,
-   "source": "workday"
   },
   {
    "id": "workday:nabancard:/job/US---Remote/POS-Tech-Support-Specialist_JR102005",

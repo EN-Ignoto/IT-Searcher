@@ -10,3 +10,7 @@ SEARCH_TERMS = ("help desk", "service desk", "desktop support", "IT support",
                 "IT intern")
 # For boards where we can afford only one request.
 SINGLE_TERM = "IT support"
+
+# Workday throttles hard, so it gets the three searches that matter most for
+# this list; every phrase is one more request to each of ~1,960 employers.
+WORKDAY_TERMS = ("help desk", "IT support", "IT intern")

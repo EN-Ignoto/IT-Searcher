@@ -30,7 +30,7 @@ from ..models import (
     source_board_key,
 )
 from ..net import Net
-from ..terms import SEARCH_TERMS
+from ..terms import WORKDAY_TERMS
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -50,7 +50,7 @@ _MAX_JOBS = 100   # per search term on the big sweep
 _MAX_JOBS_WHOLE = 3000  # a local tenant read in full (`"whole": true`)
 # Workday's searchText is literal enough that "intern" misses "Co-Op Engineer".
 # Our own classifier accepts co-ops, so we have to ask for them explicitly.
-_SEARCH_TERMS = SEARCH_TERMS
+_SEARCH_TERMS = WORKDAY_TERMS
 
 
 def _resolve_posted(text: str | None) -> str | None:

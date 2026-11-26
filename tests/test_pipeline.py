@@ -300,7 +300,7 @@ def test_workday_has_a_tighter_family_cap():
         wd = await limiter.acquire("acme.wd5.myworkdayjobs.com")
         gh = await limiter.acquire("boards-api.greenhouse.io")
         return wd._semaphores[0]._value, gh._semaphores[0]._value
-    assert asyncio.run(caps()) == (8, 32)
+    assert asyncio.run(caps()) == (pipeline.PROVIDER_LIMITS["workday"], 32)
 
 
 def test_unread_boards_never_retire_their_roles(world, monkeypatch):
@@ -333,7 +333,7 @@ def test_platform_wide_failure_benches_nothing(world):
 
 
 def test_a_refusing_platform_is_cut_off_for_the_rest_of_the_run(world):
-    boards = [{"name": f"W{i}", "slug": f"w{i}", "ats": "greenhouse"} for i in range(40)]
+    boards = [{"name": f"W{i}", "slug": f"w{i}", "ats": "greenhouse"} for i in range(150)]
     world["registry"] = boards
     calls = []
     original = pipeline.CONNECTORS["greenhouse"]
@@ -344,8 +344,14 @@ def test_a_refusing_platform_is_cut_off_for_the_rest_of_the_run(world):
             "HTTPStatusError: Client error '429 Too Many Requests' for url 'x'")
         return original(company, net)
     pipeline.CONNECTORS["greenhouse"] = refusing
+    import pytest as _pytest
+    mp = _pytest.MonkeyPatch()
+    mp.setattr(pipeline, "_COOL_DOWN_SECONDS", 0)
     stats, _, _ = pipeline.run_update("full")
-    assert len(calls) < 40, "kept asking a platform that refuses every request"
+    mp.undo()
+    # 25 refusals, pause; three times; then 25 more and it stops asking.
+    rounds = pipeline._COOL_DOWNS + 1
+    assert len(calls) == rounds * pipeline._CUT_OFF_REFUSALS < 150
     assert stats["provider_outages"] == {"greenhouse": 1.0}
     assert "greenhouse" not in stats["provider_last_ok"]
     pipeline.CONNECTORS["greenhouse"] = original
@@ -353,3 +359,35 @@ def test_a_refusing_platform_is_cut_off_for_the_rest_of_the_run(world):
         world["answers"][b["slug"]] = []
     stats, _, _ = pipeline.run_update("full")
     assert "greenhouse" in stats["provider_last_ok"]
+
+
+def test_workday_is_read_in_rotating_slices():
+    local = [{"name": "UCF", "slug": "ucf", "ats": "workday", "wd": "wd1", "site": "c"}]
+    tenants = [{"name": f"T{i}", "slug": f"t{i:03d}", "ats": "workday", "wd": "wd1",
+                "site": "s"} for i in range(10)]
+    other = [ACME]
+    keys = {registry.board_key(local[0])}
+    seen = []
+    cursor = 0
+    for _ in range(3):
+        chosen, cursor = pipeline.workday_slice(local + tenants + other, keys, cursor, size=4)
+        assert local[0] in chosen and ACME in chosen
+        seen += [b["slug"] for b in chosen if b in tenants]
+    assert len(seen) == 12 and set(seen) == {t["slug"] for t in tenants}
+
+
+def test_workday_requests_are_spaced_out():
+    import asyncio
+    import time
+
+    from intern_engine.net import HostLimiter
+
+    async def go():
+        limiter = HostLimiter(8, per_provider=32, provider_limits={"workday": 2},
+                              provider_pacing={"workday": 0.05})
+        start = time.monotonic()
+        for _ in range(4):
+            async with await limiter.acquire("x.wd1.myworkdayjobs.com"):
+                pass
+        return time.monotonic() - start
+    assert asyncio.run(go()) >= 0.14

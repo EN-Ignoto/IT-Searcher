@@ -592,6 +592,13 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
                          purged, round(time.monotonic() - started, 1))
     stats["provider_outages"] = outages
     stats["provider_last_ok"] = provider_last_ok(results, local_keys, stats, previous_stats)
+    failing = dict(previous_stats.get("provider_failing_since") or {})
+    for ats in outages:
+        failing.setdefault(ats, stats["fetched_at"])
+    for ats, when in stats["provider_last_ok"].items():
+        if when == stats["fetched_at"]:
+            failing.pop(ats, None)
+    stats["provider_failing_since"] = failing
     stats["quarantined_by_source"] = dict(Counter(c["ats"] for c in benched))
     write_stats(stats)
     _append_history(stats)

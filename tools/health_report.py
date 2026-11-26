@@ -36,7 +36,9 @@ MAX_PUBLISH_AGE_H = 12
 MAX_SWEEP_AGE_H = 24
 MIN_SWEEP_SUCCESS = 0.80
 MAX_PROVIDER_GAP_H = 72
-LOCAL_FAIL_STREAK = 3
+# Some local sites refuse some GitHub machines and not others, so a few failed
+# runs in a row is normal. Six (about a day at the usual cadence) is not.
+LOCAL_FAIL_STREAK = 6
 MAX_BENCHED_SHARE = 0.20
 MIN_BOARDS_FOR_SHARE = 20
 COLLAPSE_SHARE = 0.5
@@ -106,11 +108,10 @@ def check(*, published: dict, current: dict, health_data: dict, local: list[dict
         if n < MIN_BOARDS_FOR_SHARE:
             continue
         gap = age_h(last_ok.get(ats))
-        if gap is None and ats in outages:
-            problems.append(f"{ats} ({n} boards) has no successful read on record and is "
-                            "refusing us now. Its listed roles stay up but are not refreshed, "
-                            "and new ones are missed.")
-        elif gap is not None and gap > MAX_PROVIDER_GAP_H:
+        if gap is None:
+            since = (current.get("provider_failing_since") or {}).get(ats)
+            gap = age_h(since) if since else None
+        if gap is not None and gap > MAX_PROVIDER_GAP_H:
             problems.append(f"{ats} ({n} boards) has not been read successfully for "
                             f"{gap / 24:.1f} days. Its listed roles stay up but are not "
                             "refreshed, and new ones are missed.")

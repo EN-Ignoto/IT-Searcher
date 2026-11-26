@@ -42,18 +42,29 @@ def test_each_november_failure_mode_is_caught():
     # ...until it has gone days without a good read, or never had one.
     long_gap = {**refused, "provider_last_ok": {"workday": "2026-11-22T02:00:00Z"}}
     assert any("workday" in p and "days" in p for p in run(current=long_gap))
-    never = {**refused, "provider_last_ok": {}}
-    assert any("no successful read" in p for p in run(current=never))
+    new_failure = {**refused, "provider_last_ok": {},
+                   "provider_failing_since": {"workday": "2026-11-26T02:00:00Z"}}
+    assert run(current=new_failure) == []
+    old_failure = {**new_failure, "provider_failing_since": {"workday": "2026-11-22T02:00:00Z"}}
+    assert any("workday" in p and "days" in p for p in run(current=old_failure))
     stale_sweep = {**GOOD, "last_full": {"fetched_at": "2026-11-24T08:00:00Z"}}
     assert any("nationwide sweep" in p for p in run(current=stale_sweep, published=stale_sweep))
     benched = {f"workday:t{i}:s": {"consecutive_failures": 8,
                                    "last_attempt_at": "2026-11-26T10:00:00Z",
                                    "last_error": "429"} for i in range(20)}
     assert any("workday boards" in p for p in run(health_data=benched))
-    local_down = {"neogov:kissimmeefl": {"consecutive_failures": 4,
+    local_down = {"neogov:kissimmeefl": {"consecutive_failures": 6,
                                          "last_attempt_at": "2026-11-26T10:00:00Z",
                                          "last_error": "ConnectTimeout"}}
     assert any("City of Kissimmee" in p for p in run(health_data=local_down))
     history = [{"ts": "2026-11-24T00:00:00Z", "open": 60}]
     assert any("fell from 60" in p for p in run(history=history,
                                                  current={**GOOD, "open_total": 20}))
+
+
+
+def test_a_few_failed_local_runs_are_not_an_alert():
+    blip = {"neogov:kissimmeefl": {"consecutive_failures": 3,
+                                   "last_attempt_at": "2026-11-26T10:00:00Z",
+                                   "last_error": "ConnectTimeout"}}
+    assert run(health_data=blip) == []

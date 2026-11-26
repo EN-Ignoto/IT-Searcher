@@ -68,7 +68,8 @@ updates it on later runs; when a report passes again it closes the issue. It che
   and Workable refuse some GitHub machines and not others, so one refused run is
   normal; the run skips that platform after 25 refusals in a row and tries again
   next time
-- a local source failing 3 runs in a row
+- a local source failing 6 runs in a row (about a day; single failed runs are
+  common because some sites refuse some GitHub machines)
 - more than 20% of one platform's boards benched by the failure breaker
 - the open count halving within a week
 

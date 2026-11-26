@@ -1,58 +1,41 @@
 {
-  "generated_at": "2026-11-26T12:59:45Z",
-  "fetched_at": "2026-11-26T12:59:45Z",
-  "scope": "full",
-  "duration_seconds": 606.7,
-  "boards_total": 3847,
+  "generated_at": "2026-11-26T14:21:45Z",
+  "fetched_at": "2026-11-26T14:21:45Z",
+  "scope": "local",
+  "duration_seconds": 64.3,
+  "boards_total": 15,
   "boards_by_source": {
     "nlx": 1,
     "neogov": 11,
     "peopleadmin": 1,
-    "workday": 252,
-    "greenhouse": 1231,
-    "lever": 455,
-    "ashby": 930,
-    "recruitee": 7,
-    "smartrecruiters": 322,
-    "rippling": 196,
-    "workable": 255,
-    "oracle": 164,
-    "amazon": 1,
-    "breezy": 20,
-    "eightfold": 1
+    "workday": 2
   },
-  "quarantined": 229,
-  "fetched_ok": 3202,
-  "fetch_errors": 416,
+  "quarantined": 0,
+  "fetched_ok": 3,
+  "fetch_errors": 12,
   "errors_by_source": {
     "neogov": 11,
-    "workday": 233,
-    "greenhouse": 1,
-    "workable": 171
+    "workday": 1
   },
-  "fetch_success_rate": 0.885,
-  "snapshots_complete": 3053,
-  "snapshots_partial": 149,
-  "jobs_seen": 205312,
-  "roles_matched": 34,
+  "fetch_success_rate": 0.2,
+  "snapshots_complete": 3,
+  "snapshots_partial": 0,
+  "jobs_seen": 712,
+  "roles_matched": 10,
   "dropped_by_reason": {
-    "active-clearance-required": 30,
-    "level-2-unverifiable": 1,
-    "not-it-role": 198631,
-    "outside-area": 5194,
+    "active-clearance-required": 4,
+    "not-it-role": 661,
     "requires-10-years-experience": 1,
-    "requires-2-years-experience": 11,
-    "requires-3-years-experience": 15,
-    "requires-4-years-experience": 5,
-    "requires-5-years-experience": 15,
-    "requires-7-years-experience": 1,
+    "requires-2-years-experience": 4,
+    "requires-3-years-experience": 1,
+    "requires-4-years-experience": 1,
+    "requires-5-years-experience": 5,
     "requires-8-years-experience": 1,
-    "senior-title": 1335,
-    "stale-posting": 33,
-    "unconfirmed-it-role": 5
+    "senior-title": 17,
+    "stale-posting": 7
   },
   "detail_fetches": 0,
-  "closed_by_posting_check": 1,
+  "closed_by_posting_check": 0,
   "purged_this_run": 0,
   "new_this_run": 0,
   "local_sources": [
@@ -181,7 +164,7 @@
       "key": "nlx:kissimmee-fl",
       "name": "NLx / DEJobs (50 mi of Kissimmee)",
       "ats": "nlx",
-      "jobs": 652,
+      "jobs": 655,
       "kept": 10,
       "complete": true,
       "error": null,
@@ -203,10 +186,10 @@
       "key": "workday:cityoforlando:cityoforlandocareers",
       "name": "City of Orlando",
       "ats": "workday",
-      "jobs": 0,
+      "jobs": 47,
       "kept": 0,
-      "complete": false,
-      "error": "HTTPStatusError: Client error '429 Too Many Requests' for url 'https://cityoforlando.wd5.myworkdayjobs.com/wday/cxs/cityoforlando/CityofOrlandoCareers/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "complete": true,
+      "error": null,
       "partial_reason": null,
       "partial_detail": null
     },
@@ -222,7 +205,7 @@
       "partial_detail": null
     }
   ],
-  "local_sources_ok": 2,
+  "local_sources_ok": 3,
   "local_sources_total": 15,
   "open_total": 49,
   "open_by_section": {
@@ -279,10 +262,7 @@
       "workable": 171
     }
   },
-  "provider_outages": {
-    "workable": 0.673,
-    "workday": 0.928
-  },
+  "provider_outages": {},
   "workday_cursor": 500,
   "provider_last_ok": {
     "greenhouse": "2026-11-26T12:59:45Z",
@@ -297,14 +277,6 @@
     "workday": "2026-11-26T12:46:42Z",
     "workable": "2026-11-26T12:46:42Z"
   },
-  "quarantined_by_source": {
-    "greenhouse": 76,
-    "recruitee": 2,
-    "rippling": 8,
-    "ashby": 90,
-    "lever": 51,
-    "workday": 1,
-    "workable": 1
-  },
-  "rendered_at": "2026-11-26T12:59:45Z"
+  "quarantined_by_source": {},
+  "rendered_at": "2026-11-26T14:21:45Z"
 }

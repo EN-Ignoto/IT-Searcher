@@ -79,7 +79,12 @@ PER_PROVIDER_CONCURRENCY = GLOBAL_CONCURRENCY
 # requests the IT searches (5 phrases x ~2,000 tenants) drew HTTP 429 on whole
 # sweeps, and the breaker then benched 1,890 healthy boards. 8 keeps a sweep
 # to roughly ten minutes of Workday traffic.
-PROVIDER_LIMITS = {"workday": 8, "oracle": 8}
+PROVIDER_LIMITS = {"workday": 2, "oracle": 8}
+# Workday answers HTTP 429 ("slow down") to GitHub's machines. So it is asked
+# the way a person browsing would be: two at a time, at most ~3 requests a
+# second, and only a slice of its ~1,960 employers per run (see below).
+PROVIDER_PACING = {"workday": 0.35}
+WORKDAY_SLICE = 250
 BOARD_TIMEOUT_SECONDS = 180
 DETAIL_CONCURRENCY = 8
 USER_AGENT = f"it-searcher/1.0 (+https://github.com/{config.repo_slug()})"
@@ -102,6 +107,28 @@ _LOCAL_UNSEEN_CLOSE_DAYS = 3
 # Sources read for their place, not their employer: their "not an IT title"
 # pile is written out in full so missed roles can be found by reading it.
 _LOCAL_KINDS = {"nlx", "neogov", "paradox", "peopleadmin"}
+
+
+def workday_slice(boards: list[dict], local_keys: set[str], cursor: int,
+                  size: int = WORKDAY_SLICE) -> tuple[list[dict], int]:
+    """Keep every non-Workday board and local Workday board, plus `size`
+    registry Workday tenants starting at `cursor` (wrapping). Returns the
+    boards and the cursor for the next run.
+
+    Reading all ~1,960 tenants at once is what drew Workday's refusals. A
+    slice per run covers them all over several runs; a tenant left out of a
+    run is simply not read, which retires nothing and benches nothing.
+    """
+    tenants = sorted((b for b in boards if b.get("ats") == "workday"
+                      and registry.board_key(b) not in local_keys),
+                     key=registry.board_key)
+    if not tenants:
+        return boards, 0
+    start = cursor % len(tenants)
+    chosen = {registry.board_key(b) for b in (tenants + tenants)[start:start + size]}
+    kept = [b for b in boards if b.get("ats") != "workday"
+            or registry.board_key(b) in local_keys or registry.board_key(b) in chosen]
+    return kept, (start + size) % len(tenants)
 
 
 def load_boards(scope: str) -> tuple[list[dict], set[str]]:
@@ -158,7 +185,7 @@ async def _fetch_all(companies: list[dict], after, local_keys: set[str] | None =
     """
     local_keys = local_keys or set()
     limiter = HostLimiter(PER_HOST_CONCURRENCY, per_provider=PER_PROVIDER_CONCURRENCY,
-                          provider_limits=PROVIDER_LIMITS)
+                          provider_limits=PROVIDER_LIMITS, provider_pacing=PROVIDER_PACING)
     gate = asyncio.Semaphore(GLOBAL_CONCURRENCY)
     proxy = os.environ.get("WORKDAY_PROXY") or None
     common = dict(
@@ -523,6 +550,12 @@ async def _close_removed(existing: dict, seen_ids: set[str], complete: set[str],
 def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
     cfg = config.load_config()
     boards, local_keys = load_boards(scope)
+    try:
+        previous_stats = load_stats()
+    except StatsCorrupt:
+        previous_stats = {}
+    boards, next_cursor = workday_slice(
+        boards, local_keys, int(previous_stats.get("workday_cursor") or 0))
     existing = store.load(paths.JOBS_PATH)
     close_out_of_scope(existing)
     cache = load_cache()
@@ -584,13 +617,11 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
             dict(sorted(state["unmatched"].items(), key=lambda kv: kv[0].lower())),
             indent=0, ensure_ascii=False) + "\n")
 
-    try:
-        previous_stats = load_stats()
-    except StatsCorrupt:
-        previous_stats = {}
     stats = _build_stats(scope, boards, benched, local_keys, state, existing, new_ids,
                          purged, round(time.monotonic() - started, 1))
     stats["provider_outages"] = outages
+    stats["workday_cursor"] = next_cursor if scope == "full" else int(
+        previous_stats.get("workday_cursor") or 0)
     stats["provider_last_ok"] = provider_last_ok(results, local_keys, stats, previous_stats)
     failing = dict(previous_stats.get("provider_failing_since") or {})
     for ats in outages:

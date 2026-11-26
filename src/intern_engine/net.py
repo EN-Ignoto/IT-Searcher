@@ -34,13 +34,34 @@ def _provider(host: str) -> str:
     return next((name for suffix, name in families.items() if lowered.endswith(suffix)), lowered)
 
 
+class _Pace:
+    """Spaces request starts at least `interval` seconds apart."""
+
+    def __init__(self, interval: float) -> None:
+        self.interval = interval
+        self._lock = asyncio.Lock()
+        self._next = 0.0
+
+    async def wait(self) -> None:
+        async with self._lock:
+            loop = asyncio.get_running_loop()
+            delay = self._next - loop.time()
+            if delay > 0:
+                await asyncio.sleep(delay)
+            self._next = loop.time() + self.interval
+
+
 class _Permit:
-    def __init__(self, semaphores: tuple[asyncio.Semaphore, ...]) -> None:
+    def __init__(self, semaphores: tuple[asyncio.Semaphore, ...],
+                 pace: _Pace | None = None) -> None:
         self._semaphores = semaphores
+        self._pace = pace
 
     async def __aenter__(self):
         for semaphore in self._semaphores:
             await semaphore.acquire()
+        if self._pace is not None:
+            await self._pace.wait()
         return self
 
     async def __aexit__(self, *_exc):
@@ -57,12 +78,14 @@ class HostLimiter:
     """
 
     def __init__(self, per_host: int = 8, per_provider: int | None = None,
-                 provider_limits: dict[str, int] | None = None) -> None:
+                 provider_limits: dict[str, int] | None = None,
+                 provider_pacing: dict[str, float] | None = None) -> None:
         self._per_host = per_host
         self._per_provider = per_provider or per_host
         # Some providers rate-limit by CALLER IP across all their customers'
         # hosts; those get a tighter family-wide cap (see pipeline).
         self._provider_limits = dict(provider_limits or {})
+        self._paces = {name: _Pace(gap) for name, gap in (provider_pacing or {}).items()}
         self._sems: dict[str, asyncio.Semaphore] = {}
         self._provider_sems: dict[str, asyncio.Semaphore] = {}
         self._lock = asyncio.Lock()
@@ -81,7 +104,7 @@ class HostLimiter:
                 self._provider_sems[provider] = provider_sem
             # A shared host already enforces both scopes.  Avoid acquiring the
             # same semaphore twice if future configuration aliases them.
-            return _Permit((provider_sem, sem))
+            return _Permit((provider_sem, sem), self._paces.get(provider))
 
 
 def _backoff(attempt: int, response: httpx.Response | None = None) -> float:

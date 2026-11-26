@@ -14,7 +14,7 @@ from intern_engine import (
     registry,
     store,
 )
-from intern_engine.models import Job
+from intern_engine.models import Fetch, Job
 
 BODY = (" Answers tickets, resets passwords, images laptops, supports Windows 11 and "
         "Office 365 for end users and troubleshoots printers and the VPN. ")
@@ -247,8 +247,10 @@ def test_the_publish_gate_passes_a_real_run_and_catches_a_bad_record(world):
     problems = "\n".join(gate.check(data, stats, cfg))
     assert "title-not-entry-it" in problems and "local-distance" in problems
 
+    # A local outage closes nothing, so it must not block publishing; the
+    # health report raises it instead.
     stats["local_sources_ok"] = 0
-    assert "local-sources-down" in "\n".join(gate.check(data, stats, cfg))
+    assert "local-sources" not in "\n".join(gate.check(data, stats, cfg))
 
 
 def test_published_order_does_not_depend_on_store_layout():
@@ -259,3 +261,95 @@ def test_published_order_does_not_depend_on_store_layout():
     forward = [r["id"] for r in view.open_jobs(rows)]
     backward = [r["id"] for r in view.open_jobs(dict(reversed(list(rows.items()))))]
     assert forward == backward
+
+
+def test_local_sources_are_read_before_the_registry(world, monkeypatch):
+    order = []
+    original = pipeline.CONNECTORS["greenhouse"]
+
+    def tracking(company, net):
+        order.append(company["slug"])
+        return original(company, net)
+    monkeypatch.setattr(pipeline, "CONNECTORS",
+                        {k: tracking for k in ("nlx", "neogov", "greenhouse")})
+    world["registry"] = [ACME, {**ACME, "slug": "acme2", "name": "Acme 2"}]
+    pipeline.run_update("full")
+    assert order[:2] == ["kissimmee-fl", "kissimmeefl"]
+    assert set(order[2:]) == {"acme", "acme2"}
+
+
+def test_rate_limiting_does_not_bench_a_board(world):
+    from intern_engine import health
+    world["answers"]["acme"] = RuntimeError(
+        "HTTPStatusError: Client error '429 Too Many Requests' for url 'x'")
+    for _ in range(6):
+        pipeline.run_update("full")
+    assert registry.board_key(ACME) not in health.load()
+    world["answers"]["acme"] = RuntimeError("HTTPStatusError: '404 Not Found'")
+    pipeline.run_update("full")
+    assert health.load()[registry.board_key(ACME)]["consecutive_failures"] == 1
+
+
+def test_workday_has_a_tighter_family_cap():
+    import asyncio
+
+    from intern_engine.net import HostLimiter
+
+    async def caps():
+        limiter = HostLimiter(8, per_provider=32, provider_limits=pipeline.PROVIDER_LIMITS)
+        wd = await limiter.acquire("acme.wd5.myworkdayjobs.com")
+        gh = await limiter.acquire("boards-api.greenhouse.io")
+        return wd._semaphores[0]._value, gh._semaphores[0]._value
+    assert asyncio.run(caps()) == (8, 32)
+
+
+def test_unread_boards_never_retire_their_roles(world, monkeypatch):
+    world["answers"]["acme"] = [
+        job(ACME, "r1", "Service Desk Analyst", "Remote, United States", "Entry level." + BODY)]
+    pipeline.run_update("full")
+    data = store.load(paths.JOBS_PATH)
+    for record in data.values():
+        record["last_seen_at"] = "2026-01-01T00:00:00Z"   # unseen for months
+    store.save(paths.JOBS_PATH, data)
+    world["answers"]["acme"] = RuntimeError("ConnectTimeout")
+    _, data, _ = pipeline.run_update("full")
+    assert all(r["is_open"] for r in data.values()), "a failed read retired a role"
+    world["answers"]["acme"] = Fetch([], complete=False, incomplete_reason="result-cap")
+    _, data, _ = pipeline.run_update("full")
+    assert not any(r["is_open"] for r in data.values()), "a real read must still retire it"
+
+
+def test_platform_wide_failure_benches_nothing(world):
+    from intern_engine import health
+    boards = [{"name": f"B{i}", "slug": f"b{i}", "ats": "greenhouse"} for i in range(25)]
+    world["registry"] = boards
+    for b in boards:
+        world["answers"][b["slug"]] = RuntimeError("HTTPStatusError: '503 Service Unavailable'")
+    for _ in range(4):
+        stats, _, _ = pipeline.run_update("full")
+    assert stats["provider_outages"] == {"greenhouse": 1.0}
+    assert not any(k.startswith("greenhouse") for k in health.load())
+
+
+
+def test_a_refusing_platform_is_cut_off_for_the_rest_of_the_run(world):
+    boards = [{"name": f"W{i}", "slug": f"w{i}", "ats": "greenhouse"} for i in range(40)]
+    world["registry"] = boards
+    calls = []
+    original = pipeline.CONNECTORS["greenhouse"]
+
+    def refusing(company, net):
+        calls.append(company["slug"])
+        world["answers"][company["slug"]] = RuntimeError(
+            "HTTPStatusError: Client error '429 Too Many Requests' for url 'x'")
+        return original(company, net)
+    pipeline.CONNECTORS["greenhouse"] = refusing
+    stats, _, _ = pipeline.run_update("full")
+    assert len(calls) < 40, "kept asking a platform that refuses every request"
+    assert stats["provider_outages"] == {"greenhouse": 1.0}
+    assert "greenhouse" not in stats["provider_last_ok"]
+    pipeline.CONNECTORS["greenhouse"] = original
+    for b in boards:
+        world["answers"][b["slug"]] = []
+    stats, _, _ = pipeline.run_update("full")
+    assert "greenhouse" in stats["provider_last_ok"]

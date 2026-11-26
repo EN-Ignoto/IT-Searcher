@@ -41,7 +41,7 @@ def test_local_registry_is_valid_and_complete():
     boards = registry.load(None if False else __import__(
         "intern_engine.paths", fromlist=["x"]).LOCAL_SOURCES_PATH)
     kinds = {b["ats"] for b in boards}
-    assert {"nlx", "neogov", "paradox", "workday"} <= kinds
+    assert {"nlx", "neogov", "peopleadmin", "workday"} <= kinds
     assert sum(b["ats"] == "neogov" for b in boards) == 11
     for b in boards:
         if b.get("fallback_place"):

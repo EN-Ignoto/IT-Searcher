@@ -16,6 +16,7 @@ on:
 permissions:
   contents: write             # the bot commits the refreshed data
   actions: read
+  issues: write               # the health report opens/closes one alert issue
 
 # One writer at a time, across both schedules: two runs committing the same
 # data files would race, and the loser's push is refused.
@@ -87,6 +88,7 @@ jobs:
       # The gate between "we produced output" and "the site shows it". If it
       # fails, the job stops here and the previous good build stays live.
       - name: Verify before publishing
+        id: gate
         env:
           MAX_STATS_AGE_HOURS: "2"
         run: python tools/verify_accuracy.py
@@ -143,3 +145,24 @@ jobs:
             sleep 10
           done
           echo "::warning::Pages is still serving an older build after 10 minutes"
+
+      # Runs after EVERY run, failed ones included. A failing report opens
+      # (or updates) one `searcher-health` issue, which emails the owner; a
+      # passing one closes it. This is what was missing in November 2026,
+      # when half the runs failed for twelve days unnoticed.
+      - name: Health report
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GATE: ${{ steps.gate.outcome }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git show HEAD:data/stats.json > "$RUNNER_TEMP/published.json" 2>/dev/null \
+            || cp data/stats.json "$RUNNER_TEMP/published.json"
+          status=0
+          python tools/health_report.py --published "$RUNNER_TEMP/published.json" \
+            --gate "$GATE" --out "$RUNNER_TEMP/health.md" || status=$?
+          cat "$RUNNER_TEMP/health.md" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$BRANCH" = "$DEFAULT_BRANCH" ]; then
+            tools/health_issue.sh "$RUNNER_TEMP/health.md" "$status"
+          fi

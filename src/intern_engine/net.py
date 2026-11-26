@@ -56,9 +56,13 @@ class HostLimiter:
     while different hosts still run in parallel.
     """
 
-    def __init__(self, per_host: int = 8, per_provider: int | None = None) -> None:
+    def __init__(self, per_host: int = 8, per_provider: int | None = None,
+                 provider_limits: dict[str, int] | None = None) -> None:
         self._per_host = per_host
         self._per_provider = per_provider or per_host
+        # Some providers rate-limit by CALLER IP across all their customers'
+        # hosts; those get a tighter family-wide cap (see pipeline).
+        self._provider_limits = dict(provider_limits or {})
         self._sems: dict[str, asyncio.Semaphore] = {}
         self._provider_sems: dict[str, asyncio.Semaphore] = {}
         self._lock = asyncio.Lock()
@@ -72,7 +76,8 @@ class HostLimiter:
             provider = _provider(host)
             provider_sem = self._provider_sems.get(provider)
             if provider_sem is None:
-                provider_sem = asyncio.Semaphore(self._per_provider)
+                provider_sem = asyncio.Semaphore(
+                    self._provider_limits.get(provider, self._per_provider))
                 self._provider_sems[provider] = provider_sem
             # A shared host already enforces both scopes.  Avoid acquiring the
             # same semaphore twice if future configuration aliases them.

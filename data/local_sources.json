@@ -12,8 +12,6 @@
   {"name": "City of Casselberry", "slug": "casselberry", "ats": "neogov", "fallback_place": "Casselberry, FL"},
   {"name": "City of Clermont", "slug": "clermontfl", "ats": "neogov", "fallback_place": "Clermont, FL"},
   {"name": "City of Maitland", "slug": "maitland", "ats": "neogov", "fallback_place": "Maitland, FL"},
-  {"name": "School District of Osceola County", "slug": "osceolaschools", "ats": "paradox",
-   "host": "jobs.osceolaschools.net", "fallback_place": "Kissimmee, FL"},
   {"name": "Valencia College", "slug": "valenciacollege", "ats": "peopleadmin",
    "host": "valenciacollege.peopleadmin.com", "fallback_place": "Orlando, FL"},
   {"name": "University of Central Florida", "slug": "ucf", "ats": "workday", "wd": "wd1",

@@ -75,6 +75,11 @@ SCOPES = ("local", "full")
 GLOBAL_CONCURRENCY = 32
 PER_HOST_CONCURRENCY = 8
 PER_PROVIDER_CONCURRENCY = GLOBAL_CONCURRENCY
+# Workday throttles by caller IP across every tenant. At 32 concurrent
+# requests the IT searches (5 phrases x ~2,000 tenants) drew HTTP 429 on whole
+# sweeps, and the breaker then benched 1,890 healthy boards. 8 keeps a sweep
+# to roughly ten minutes of Workday traffic.
+PROVIDER_LIMITS = {"workday": 8, "oracle": 8}
 BOARD_TIMEOUT_SECONDS = 180
 DETAIL_CONCURRENCY = 8
 USER_AGENT = f"it-searcher/1.0 (+https://github.com/{config.repo_slug()})"
@@ -89,6 +94,10 @@ _UNVERIFIED_RETRY_HOURS = 24
 _CACHE_KEEP_DAYS = 45
 _UNSEEN_CLOSE_DAYS = 14
 _LIVENESS_CHECKS = 60
+_RATE_LIMITED = "429 Too Many Requests"
+_OUTAGE_MIN_BOARDS = 20
+_CUT_OFF_REFUSALS = 25
+_OUTAGE_SHARE = 0.25
 _LOCAL_UNSEEN_CLOSE_DAYS = 3
 # Sources read for their place, not their employer: their "not an IT title"
 # pile is written out in full so missed roles can be found by reading it.
@@ -138,10 +147,18 @@ async def _fetch_bounded(company: dict, net: Net):
         return company, models.Fetch(complete=False), f"board deadline exceeded ({limit}s)"
 
 
-async def _fetch_all(companies: list[dict], after):
+async def _fetch_all(companies: list[dict], after, local_keys: set[str] | None = None):
     """Fetch every board, then run `after(results, net, workday_net)` on the
-    same client so detail requests reuse connections."""
-    limiter = HostLimiter(PER_HOST_CONCURRENCY, per_provider=PER_PROVIDER_CONCURRENCY)
+    same client so detail requests reuse connections.
+
+    Local sources are read FIRST and on their own. Read alongside thousands of
+    registry boards they were starved: every NEOGOV agency timed out on
+    connect and Workday answered UCF and the City of Orlando with HTTP 429,
+    while the same sources answered normally in local-only runs.
+    """
+    local_keys = local_keys or set()
+    limiter = HostLimiter(PER_HOST_CONCURRENCY, per_provider=PER_PROVIDER_CONCURRENCY,
+                          provider_limits=PROVIDER_LIMITS)
     gate = asyncio.Semaphore(GLOBAL_CONCURRENCY)
     proxy = os.environ.get("WORKDAY_PROXY") or None
     common = dict(
@@ -156,18 +173,41 @@ async def _fetch_all(companies: list[dict], after):
         workday_net = Net(workday_client, limiter) if workday_client else default_net
         completed = 0
 
+        refusals: Counter = Counter()   # consecutive 429s per platform, this run
+        cut_off: set[str] = set()
+
         async def worker(company: dict):
             nonlocal completed
-            net = workday_net if company.get("ats") in ("workday", "oracle") else default_net
-            async with gate:
-                result = await _fetch_bounded(company, net)
+            ats = company.get("ats") or "?"
+            net = workday_net if ats in ("workday", "oracle") else default_net
+            local = registry.board_key(company) in local_keys
+            if ats in cut_off and not local:
+                # The platform is refusing this machine outright. Asking the
+                # rest of its boards only burns minutes on more refusals.
+                result = (company, models.Fetch(complete=False),
+                          f"skipped: {ats} refusing this runner ({_RATE_LIMITED})")
+            else:
+                async with gate:
+                    result = await _fetch_bounded(company, net)
+                error = result[2]
+                if error and _RATE_LIMITED in error:
+                    refusals[ats] += 1
+                    if refusals[ats] >= _CUT_OFF_REFUSALS and ats not in cut_off:
+                        cut_off.add(ats)
+                        print(f"{ats}: {refusals[ats]} refusals in a row; skipping its "
+                              "remaining boards this run", flush=True)
+                elif error is None:
+                    refusals[ats] = 0
             completed += 1
             if completed % 250 == 0 or completed == len(companies):
                 print(f"Fetched boards: {completed}/{len(companies)}", flush=True)
             return result
 
         try:
-            results = await asyncio.gather(*(worker(c) for c in companies))
+            first = [c for c in companies if registry.board_key(c) in local_keys]
+            rest = [c for c in companies if registry.board_key(c) not in local_keys]
+            results = list(await asyncio.gather(*(worker(c) for c in first)))
+            results += await asyncio.gather(*(worker(c) for c in rest))
             extra = await after(results, default_net, workday_net)
             return results, extra
         finally:
@@ -200,6 +240,52 @@ def _too_old(posted_at: str | None, max_age_days: float, now: datetime) -> bool:
     except ValueError:
         return False
     return day < now - timedelta(days=max_age_days)
+
+
+def provider_outages(results, local_keys: set[str] | None = None) -> dict[str, float]:
+    """Platforms where so many boards failed at once that the platform (or our
+    access to it) is the problem, not the boards. {ats: failure share}.
+
+    The breaker benches a board after three straight failures. That is right
+    for one dead board and badly wrong when a whole platform is throttling
+    or down: it would bench hundreds of healthy boards for up to three days.
+    """
+    local_keys = local_keys or set()
+    tried: Counter = Counter()
+    failed: Counter = Counter()
+    for company, _result, error in results:
+        if registry.board_key(company) in local_keys:
+            continue
+        ats = company.get("ats") or "?"
+        tried[ats] += 1
+        if error:
+            failed[ats] += 1
+    return {ats: round(failed[ats] / tried[ats], 3) for ats in tried
+            if tried[ats] >= _OUTAGE_MIN_BOARDS
+            and failed[ats] / tried[ats] >= _OUTAGE_SHARE}
+
+
+def provider_last_ok(results, local_keys: set[str], stats: dict,
+                     previous: dict) -> dict[str, str]:
+    """{ats: when its boards were last read successfully}, carried across runs.
+
+    A platform counts as read when 75%+ of the boards we asked answered.
+    Some platforms refuse GitHub's machines on some runs and not others, so a
+    single bad run means little; days without a good read is what matters.
+    """
+    last = dict(previous.get("provider_last_ok") or {})
+    tried: Counter = Counter()
+    failed: Counter = Counter()
+    for company, _result, error in results:
+        if registry.board_key(company) in local_keys:
+            continue
+        ats = company.get("ats") or "?"
+        tried[ats] += 1
+        failed[ats] += bool(error)
+    for ats, n in tried.items():
+        if n >= _OUTAGE_MIN_BOARDS and failed[ats] / n < _OUTAGE_SHARE:
+            last[ats] = stats["fetched_at"]
+    return last
 
 
 def load_cache() -> dict:
@@ -385,7 +471,7 @@ def close_out_of_scope(existing: dict) -> int:
 
 async def _close_removed(existing: dict, seen_ids: set[str], complete: set[str],
                          net: Net, now: datetime, local_keys: set[str],
-                         check_pages: bool) -> int:
+                         check_pages: bool, succeeded: set[str] | None = None) -> int:
     """Close roles on CAPPED boards that we can prove are gone.
 
     A board whose search results are capped can never close a role by
@@ -406,7 +492,13 @@ async def _close_removed(existing: dict, seen_ids: set[str], complete: set[str],
         if (record.get("board_key") or "") in complete:
             continue   # the two-miss rule in store.upsert owns these
         is_local = (record.get("board_key") or "") in local_keys
-        if (record.get("last_seen_at") or ts) < (stale_local if is_local else stale_other):
+        # Only a board we actually READ this run can testify that a role is
+        # missing. A benched, failing or throttled board says nothing: in
+        # November 1,890 throttled Workday boards would otherwise have had
+        # every listed role retired as "not seen" while still open.
+        was_read = succeeded is None or (record.get("board_key") or "") in succeeded
+        if was_read and (record.get("last_seen_at") or ts) < (
+                stale_local if is_local else stale_other):
             record.update(is_open=False, closed_at=ts, closed_reason="not-seen-recently")
             closed += 1
         elif check_pages and record.get("source") == "workday" \
@@ -451,12 +543,20 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
         found["kept"] = dedup(found["kept"], existing)
         found["removed"] = await _close_removed(
             existing, found["seen_ids"], found["complete"], workday_net, now,
-            local_keys, check_pages=scope == "full")
+            local_keys, check_pages=scope == "full", succeeded=found["succeeded"])
         state.update(found)
 
-    results, _ = asyncio.run(_fetch_all(active, after))
+    results, _ = asyncio.run(_fetch_all(active, after, local_keys))
 
+    outages = provider_outages(results, local_keys)
     for company, result, error in results:
+        if error and company.get("ats") in outages \
+                and registry.board_key(company) not in local_keys:
+            continue   # the platform failed, not this board: bench nothing
+        if error and _RATE_LIMITED in error:
+            # Throttling is about US (the runner's IP), not the board: it is
+            # no evidence the board is broken, so it must not bench it.
+            continue
         failure = error
         if failure is None and result.incomplete_reason in {
                 models.INCOMPLETE_MALFORMED, models.INCOMPLETE_STALLED}:
@@ -484,8 +584,22 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
             dict(sorted(state["unmatched"].items(), key=lambda kv: kv[0].lower())),
             indent=0, ensure_ascii=False) + "\n")
 
+    try:
+        previous_stats = load_stats()
+    except StatsCorrupt:
+        previous_stats = {}
     stats = _build_stats(scope, boards, benched, local_keys, state, existing, new_ids,
                          purged, round(time.monotonic() - started, 1))
+    stats["provider_outages"] = outages
+    stats["provider_last_ok"] = provider_last_ok(results, local_keys, stats, previous_stats)
+    failing = dict(previous_stats.get("provider_failing_since") or {})
+    for ats in outages:
+        failing.setdefault(ats, stats["fetched_at"])
+    for ats, when in stats["provider_last_ok"].items():
+        if when == stats["fetched_at"]:
+            failing.pop(ats, None)
+    stats["provider_failing_since"] = failing
+    stats["quarantined_by_source"] = dict(Counter(c["ats"] for c in benched))
     write_stats(stats)
     _append_history(stats)
     return stats, existing, new_ids
@@ -546,7 +660,8 @@ def _build_stats(scope, boards, benched, local_keys, state, existing, new_ids,
     if scope == "full":
         stats["last_full"] = {k: stats[k] for k in (
             "fetched_at", "duration_seconds", "boards_total", "fetched_ok",
-            "fetch_errors", "fetch_success_rate", "jobs_seen", "roles_matched")}
+            "fetch_errors", "fetch_success_rate", "jobs_seen", "roles_matched",
+            "errors_by_source")}
     elif isinstance(previous.get("last_full"), dict):
         stats["last_full"] = previous["last_full"]
     return stats

@@ -71,9 +71,9 @@ def check(data: dict, stats: dict, cfg: dict, *, allow_stale: bool = False,
         age = (datetime.now(UTC) - fetched).total_seconds() / 3600
         if age > max_stats_age_hours:
             problems.append(f"  [stats-stale] last fetch was {age:.1f}h ago")
-    total, ok = stats.get("local_sources_total", 0), stats.get("local_sources_ok", 0)
-    if total and ok * 2 < total:
-        problems.append(f"  [local-sources-down] only {ok} of {total} local sources answered")
+    # Local sources failing is NOT a reason to withhold publishing: a failed
+    # fetch closes nothing, so the data is still correct, and blocking only
+    # made the whole site stale. tools/health_report.py raises it instead.
     if stats.get("open_total") != len(open_jobs):
         problems.append(f"  [stats-drift] stats say {stats.get('open_total')} open, "
                         f"store has {len(open_jobs)}")
@@ -117,6 +117,9 @@ def main() -> None:
         max_stats_age_hours=float(os.environ.get("MAX_STATS_AGE_HOURS", "2")),
         min_open=int(os.environ.get("MIN_OPEN_ROLES", "0")),
     )
+    total, ok = stats.get("local_sources_total", 0), stats.get("local_sources_ok", 0)
+    if total and ok < total:
+        print(f"note: {ok} of {total} local sources answered (see the health report)")
     open_total = sum(1 for r in data.values() if r.get("is_open"))
     if problems:
         print(f"FAILED: {len(problems)} problem(s) across {open_total} open roles")

@@ -95,6 +95,8 @@ _CACHE_KEEP_DAYS = 45
 _UNSEEN_CLOSE_DAYS = 14
 _LIVENESS_CHECKS = 60
 _RATE_LIMITED = "429 Too Many Requests"
+_OUTAGE_MIN_BOARDS = 20
+_OUTAGE_SHARE = 0.25
 _LOCAL_UNSEEN_CLOSE_DAYS = 3
 # Sources read for their place, not their employer: their "not an IT title"
 # pile is written out in full so missed roles can be found by reading it.
@@ -217,6 +219,29 @@ def _too_old(posted_at: str | None, max_age_days: float, now: datetime) -> bool:
     except ValueError:
         return False
     return day < now - timedelta(days=max_age_days)
+
+
+def provider_outages(results, local_keys: set[str] | None = None) -> dict[str, float]:
+    """Platforms where so many boards failed at once that the platform (or our
+    access to it) is the problem, not the boards. {ats: failure share}.
+
+    The breaker benches a board after three straight failures. That is right
+    for one dead board and badly wrong when a whole platform is throttling
+    or down: it would bench hundreds of healthy boards for up to three days.
+    """
+    local_keys = local_keys or set()
+    tried: Counter = Counter()
+    failed: Counter = Counter()
+    for company, _result, error in results:
+        if registry.board_key(company) in local_keys:
+            continue
+        ats = company.get("ats") or "?"
+        tried[ats] += 1
+        if error:
+            failed[ats] += 1
+    return {ats: round(failed[ats] / tried[ats], 3) for ats in tried
+            if tried[ats] >= _OUTAGE_MIN_BOARDS
+            and failed[ats] / tried[ats] >= _OUTAGE_SHARE}
 
 
 def load_cache() -> dict:
@@ -402,7 +427,7 @@ def close_out_of_scope(existing: dict) -> int:
 
 async def _close_removed(existing: dict, seen_ids: set[str], complete: set[str],
                          net: Net, now: datetime, local_keys: set[str],
-                         check_pages: bool) -> int:
+                         check_pages: bool, succeeded: set[str] | None = None) -> int:
     """Close roles on CAPPED boards that we can prove are gone.
 
     A board whose search results are capped can never close a role by
@@ -423,7 +448,13 @@ async def _close_removed(existing: dict, seen_ids: set[str], complete: set[str],
         if (record.get("board_key") or "") in complete:
             continue   # the two-miss rule in store.upsert owns these
         is_local = (record.get("board_key") or "") in local_keys
-        if (record.get("last_seen_at") or ts) < (stale_local if is_local else stale_other):
+        # Only a board we actually READ this run can testify that a role is
+        # missing. A benched, failing or throttled board says nothing: in
+        # November 1,890 throttled Workday boards would otherwise have had
+        # every listed role retired as "not seen" while still open.
+        was_read = succeeded is None or (record.get("board_key") or "") in succeeded
+        if was_read and (record.get("last_seen_at") or ts) < (
+                stale_local if is_local else stale_other):
             record.update(is_open=False, closed_at=ts, closed_reason="not-seen-recently")
             closed += 1
         elif check_pages and record.get("source") == "workday" \
@@ -468,12 +499,16 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
         found["kept"] = dedup(found["kept"], existing)
         found["removed"] = await _close_removed(
             existing, found["seen_ids"], found["complete"], workday_net, now,
-            local_keys, check_pages=scope == "full")
+            local_keys, check_pages=scope == "full", succeeded=found["succeeded"])
         state.update(found)
 
     results, _ = asyncio.run(_fetch_all(active, after, local_keys))
 
+    outages = provider_outages(results, local_keys)
     for company, result, error in results:
+        if error and company.get("ats") in outages \
+                and registry.board_key(company) not in local_keys:
+            continue   # the platform failed, not this board: bench nothing
         if error and _RATE_LIMITED in error:
             # Throttling is about US (the runner's IP), not the board: it is
             # no evidence the board is broken, so it must not bench it.
@@ -507,6 +542,8 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
 
     stats = _build_stats(scope, boards, benched, local_keys, state, existing, new_ids,
                          purged, round(time.monotonic() - started, 1))
+    stats["provider_outages"] = outages
+    stats["quarantined_by_source"] = dict(Counter(c["ats"] for c in benched))
     write_stats(stats)
     _append_history(stats)
     return stats, existing, new_ids
@@ -567,7 +604,8 @@ def _build_stats(scope, boards, benched, local_keys, state, existing, new_ids,
     if scope == "full":
         stats["last_full"] = {k: stats[k] for k in (
             "fetched_at", "duration_seconds", "boards_total", "fetched_ok",
-            "fetch_errors", "fetch_success_rate", "jobs_seen", "roles_matched")}
+            "fetch_errors", "fetch_success_rate", "jobs_seen", "roles_matched",
+            "errors_by_source")}
     elif isinstance(previous.get("last_full"), dict):
         stats["last_full"] = previous["last_full"]
     return stats

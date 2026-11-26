@@ -14,7 +14,7 @@ from intern_engine import (
     registry,
     store,
 )
-from intern_engine.models import Job
+from intern_engine.models import Fetch, Job
 
 BODY = (" Answers tickets, resets passwords, images laptops, supports Windows 11 and "
         "Office 365 for end users and troubleshoots printers and the VPN. ")
@@ -247,8 +247,10 @@ def test_the_publish_gate_passes_a_real_run_and_catches_a_bad_record(world):
     problems = "\n".join(gate.check(data, stats, cfg))
     assert "title-not-entry-it" in problems and "local-distance" in problems
 
+    # A local outage closes nothing, so it must not block publishing; the
+    # health report raises it instead.
     stats["local_sources_ok"] = 0
-    assert "local-sources-down" in "\n".join(gate.check(data, stats, cfg))
+    assert "local-sources" not in "\n".join(gate.check(data, stats, cfg))
 
 
 def test_published_order_does_not_depend_on_store_layout():
@@ -299,3 +301,31 @@ def test_workday_has_a_tighter_family_cap():
         gh = await limiter.acquire("boards-api.greenhouse.io")
         return wd._semaphores[0]._value, gh._semaphores[0]._value
     assert asyncio.run(caps()) == (8, 32)
+
+
+def test_unread_boards_never_retire_their_roles(world, monkeypatch):
+    world["answers"]["acme"] = [
+        job(ACME, "r1", "Service Desk Analyst", "Remote, United States", "Entry level." + BODY)]
+    pipeline.run_update("full")
+    data = store.load(paths.JOBS_PATH)
+    for record in data.values():
+        record["last_seen_at"] = "2026-01-01T00:00:00Z"   # unseen for months
+    store.save(paths.JOBS_PATH, data)
+    world["answers"]["acme"] = RuntimeError("ConnectTimeout")
+    _, data, _ = pipeline.run_update("full")
+    assert all(r["is_open"] for r in data.values()), "a failed read retired a role"
+    world["answers"]["acme"] = Fetch([], complete=False, incomplete_reason="result-cap")
+    _, data, _ = pipeline.run_update("full")
+    assert not any(r["is_open"] for r in data.values()), "a real read must still retire it"
+
+
+def test_platform_wide_failure_benches_nothing(world):
+    from intern_engine import health
+    boards = [{"name": f"B{i}", "slug": f"b{i}", "ats": "greenhouse"} for i in range(25)]
+    world["registry"] = boards
+    for b in boards:
+        world["answers"][b["slug"]] = RuntimeError("HTTPStatusError: '503 Service Unavailable'")
+    for _ in range(4):
+        stats, _, _ = pipeline.run_update("full")
+    assert stats["provider_outages"] == {"greenhouse": 1.0}
+    assert not any(k.startswith("greenhouse") for k in health.load())

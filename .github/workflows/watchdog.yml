@@ -1,0 +1,38 @@
+name: Watchdog
+
+# An independent daily check that the searcher is still publishing. The update
+# workflow reports on itself after each run, but if GitHub stops starting it
+# altogether there is no run to report; this catches that case.
+on:
+  schedule:
+    - cron: "17 13 * * *"     # daily, 13:17 UTC (morning in Florida)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Health report
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          status=0
+          python tools/health_report.py --out "$RUNNER_TEMP/health.md" || status=$?
+          cat "$RUNNER_TEMP/health.md" >> "$GITHUB_STEP_SUMMARY"
+          tools/health_issue.sh "$RUNNER_TEMP/health.md" "$status"

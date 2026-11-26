@@ -60,6 +60,8 @@ text-transform:uppercase;margin-left:8px;white-space:nowrap}
 .quote{margin:6px 0 0;padding-left:10px;border-left:3px solid var(--line);
 color:var(--muted);font-size:.86rem;overflow-wrap:anywhere}
 .empty{color:var(--muted);padding:14px 0}
+.stale{margin:10px 0 0;padding:10px 12px;border-radius:8px;background:var(--warn-bg);
+color:var(--warn);font-size:.92rem}
 [hidden]{display:none!important}
 footer{color:var(--muted);font-size:.86rem;margin:36px 0 40px;border-top:1px solid var(--line);
 padding-top:16px}
@@ -72,6 +74,12 @@ vertical-align:top}
 """
 
 _JS = """
+(function(){
+ var a=document.getElementById('asof'),s=document.getElementById('stale');
+ var h=(Date.now()-Date.parse(a.dataset.asof))/36e5;
+ if(h>24){s.hidden=false;s.textContent='This list was last updated '+Math.floor(h/24)+
+  ' day(s) ago, so some roles may have closed. Open a posting before relying on it.';}
+})();
 (function(){
 var section='all',q=document.getElementById('q'),fit=document.getElementById('fit'),
 kind=document.getElementById('kind'),tabs=document.querySelectorAll('.tab'),
@@ -191,8 +199,10 @@ def generate(store_data: dict, stats: dict) -> None:
 <header><h1>Entry-level IT jobs near {escape(geo.HOME_NAME)}</h1>
 <p class="sub">Help desk, desktop support, IT technician, junior network and security roles,
 and paid IT internships. Local jobs first, then remote roles open to Florida residents.</p>
-<p class="asof">Updated {as_of.strftime('%b %d, %Y at %H:%M UTC')} · {total} open roles ·
-every link opens the employer's own posting</p></header>
+<p class="asof" id="asof" data-asof="{as_of.strftime('%Y-%m-%dT%H:%M:%SZ')}">Updated
+{as_of.strftime('%b %d, %Y at %H:%M UTC')} · {total} open roles ·
+every link opens the employer's own posting</p>
+<p class="stale" id="stale" hidden></p></header>
 <div class="tabs" role="group" aria-label="Area">{''.join(tabs)}</div>
 <div class="filters">
 <input id="q" type="search" placeholder="Search title, employer or city" aria-label="Search">

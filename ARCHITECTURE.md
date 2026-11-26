@@ -54,11 +54,32 @@ found.
 | `data/stats.json` | Last run's metrics, including per-source status |
 | `data/health.json`, `data/history.jsonl` | Breaker state; one line per run |
 
+## Health alerts
+
+`tools/health_report.py` runs after every update (failed ones included) and once a
+day from `.github/workflows/watchdog.yml`. When something is wrong it opens one
+GitHub issue labelled `searcher-health`, which emails the repository owner, and
+updates it on later runs; when a report passes again it closes the issue. It checks:
+
+- nothing published for 12 hours, or the publish gate rejected a run
+- no nationwide sweep for 24 hours, or a sweep that read under 80% of its boards
+- a local source failing 3 runs in a row
+- more than 20% of one platform's boards benched by the failure breaker
+- the open count halving within a week
+
 ## Safety properties
 
-- A failed or truncated fetch is never read as "no openings".
+- A failed or truncated fetch is never read as "no openings", and a board that
+  was not read this run (failed, throttled or benched) never retires a role.
+- Local sources are read before the nationwide sweep starts, so the sweep's load
+  cannot starve them.
+- Workday and Oracle are limited to 8 requests at a time across all tenants;
+  both throttle by caller IP.
+- HTTP 429 (throttling) never benches a board, and when a quarter or more of one
+  platform's boards fail in the same run, nothing on that platform is benched.
 - `tools/verify_accuracy.py` runs before every commit; if any open role breaks
-  a rule, or most local sources failed, nothing is published.
+  a rule, nothing is published. A local-source outage does not block publishing
+  (it closes nothing); the health report raises it instead.
 - Third-party text is HTML-escaped on the page and formula-escaped in the CSV.
 - The engine only issues read requests to public job listings.
 

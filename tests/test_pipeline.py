@@ -259,3 +259,43 @@ def test_published_order_does_not_depend_on_store_layout():
     forward = [r["id"] for r in view.open_jobs(rows)]
     backward = [r["id"] for r in view.open_jobs(dict(reversed(list(rows.items()))))]
     assert forward == backward
+
+
+def test_local_sources_are_read_before_the_registry(world, monkeypatch):
+    order = []
+    original = pipeline.CONNECTORS["greenhouse"]
+
+    def tracking(company, net):
+        order.append(company["slug"])
+        return original(company, net)
+    monkeypatch.setattr(pipeline, "CONNECTORS",
+                        {k: tracking for k in ("nlx", "neogov", "greenhouse")})
+    world["registry"] = [ACME, {**ACME, "slug": "acme2", "name": "Acme 2"}]
+    pipeline.run_update("full")
+    assert order[:2] == ["kissimmee-fl", "kissimmeefl"]
+    assert set(order[2:]) == {"acme", "acme2"}
+
+
+def test_rate_limiting_does_not_bench_a_board(world):
+    from intern_engine import health
+    world["answers"]["acme"] = RuntimeError(
+        "HTTPStatusError: Client error '429 Too Many Requests' for url 'x'")
+    for _ in range(6):
+        pipeline.run_update("full")
+    assert registry.board_key(ACME) not in health.load()
+    world["answers"]["acme"] = RuntimeError("HTTPStatusError: '404 Not Found'")
+    pipeline.run_update("full")
+    assert health.load()[registry.board_key(ACME)]["consecutive_failures"] == 1
+
+
+def test_workday_has_a_tighter_family_cap():
+    import asyncio
+
+    from intern_engine.net import HostLimiter
+
+    async def caps():
+        limiter = HostLimiter(8, per_provider=32, provider_limits=pipeline.PROVIDER_LIMITS)
+        wd = await limiter.acquire("acme.wd5.myworkdayjobs.com")
+        gh = await limiter.acquire("boards-api.greenhouse.io")
+        return wd._semaphores[0]._value, gh._semaphores[0]._value
+    assert asyncio.run(caps()) == (8, 32)

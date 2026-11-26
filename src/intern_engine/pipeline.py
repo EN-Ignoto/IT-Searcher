@@ -75,6 +75,11 @@ SCOPES = ("local", "full")
 GLOBAL_CONCURRENCY = 32
 PER_HOST_CONCURRENCY = 8
 PER_PROVIDER_CONCURRENCY = GLOBAL_CONCURRENCY
+# Workday throttles by caller IP across every tenant. At 32 concurrent
+# requests the IT searches (5 phrases x ~2,000 tenants) drew HTTP 429 on whole
+# sweeps, and the breaker then benched 1,890 healthy boards. 8 keeps a sweep
+# to roughly ten minutes of Workday traffic.
+PROVIDER_LIMITS = {"workday": 8, "oracle": 8}
 BOARD_TIMEOUT_SECONDS = 180
 DETAIL_CONCURRENCY = 8
 USER_AGENT = f"it-searcher/1.0 (+https://github.com/{config.repo_slug()})"
@@ -89,6 +94,7 @@ _UNVERIFIED_RETRY_HOURS = 24
 _CACHE_KEEP_DAYS = 45
 _UNSEEN_CLOSE_DAYS = 14
 _LIVENESS_CHECKS = 60
+_RATE_LIMITED = "429 Too Many Requests"
 _LOCAL_UNSEEN_CLOSE_DAYS = 3
 # Sources read for their place, not their employer: their "not an IT title"
 # pile is written out in full so missed roles can be found by reading it.
@@ -138,10 +144,18 @@ async def _fetch_bounded(company: dict, net: Net):
         return company, models.Fetch(complete=False), f"board deadline exceeded ({limit}s)"
 
 
-async def _fetch_all(companies: list[dict], after):
+async def _fetch_all(companies: list[dict], after, local_keys: set[str] | None = None):
     """Fetch every board, then run `after(results, net, workday_net)` on the
-    same client so detail requests reuse connections."""
-    limiter = HostLimiter(PER_HOST_CONCURRENCY, per_provider=PER_PROVIDER_CONCURRENCY)
+    same client so detail requests reuse connections.
+
+    Local sources are read FIRST and on their own. Read alongside thousands of
+    registry boards they were starved: every NEOGOV agency timed out on
+    connect and Workday answered UCF and the City of Orlando with HTTP 429,
+    while the same sources answered normally in local-only runs.
+    """
+    local_keys = local_keys or set()
+    limiter = HostLimiter(PER_HOST_CONCURRENCY, per_provider=PER_PROVIDER_CONCURRENCY,
+                          provider_limits=PROVIDER_LIMITS)
     gate = asyncio.Semaphore(GLOBAL_CONCURRENCY)
     proxy = os.environ.get("WORKDAY_PROXY") or None
     common = dict(
@@ -167,7 +181,10 @@ async def _fetch_all(companies: list[dict], after):
             return result
 
         try:
-            results = await asyncio.gather(*(worker(c) for c in companies))
+            first = [c for c in companies if registry.board_key(c) in local_keys]
+            rest = [c for c in companies if registry.board_key(c) not in local_keys]
+            results = list(await asyncio.gather(*(worker(c) for c in first)))
+            results += await asyncio.gather(*(worker(c) for c in rest))
             extra = await after(results, default_net, workday_net)
             return results, extra
         finally:
@@ -454,9 +471,13 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
             local_keys, check_pages=scope == "full")
         state.update(found)
 
-    results, _ = asyncio.run(_fetch_all(active, after))
+    results, _ = asyncio.run(_fetch_all(active, after, local_keys))
 
     for company, result, error in results:
+        if error and _RATE_LIMITED in error:
+            # Throttling is about US (the runner's IP), not the board: it is
+            # no evidence the board is broken, so it must not bench it.
+            continue
         failure = error
         if failure is None and result.incomplete_reason in {
                 models.INCOMPLETE_MALFORMED, models.INCOMPLETE_STALLED}:

@@ -96,6 +96,7 @@ _UNSEEN_CLOSE_DAYS = 14
 _LIVENESS_CHECKS = 60
 _RATE_LIMITED = "429 Too Many Requests"
 _OUTAGE_MIN_BOARDS = 20
+_CUT_OFF_REFUSALS = 25
 _OUTAGE_SHARE = 0.25
 _LOCAL_UNSEEN_CLOSE_DAYS = 3
 # Sources read for their place, not their employer: their "not an IT title"
@@ -172,11 +173,31 @@ async def _fetch_all(companies: list[dict], after, local_keys: set[str] | None =
         workday_net = Net(workday_client, limiter) if workday_client else default_net
         completed = 0
 
+        refusals: Counter = Counter()   # consecutive 429s per platform, this run
+        cut_off: set[str] = set()
+
         async def worker(company: dict):
             nonlocal completed
-            net = workday_net if company.get("ats") in ("workday", "oracle") else default_net
-            async with gate:
-                result = await _fetch_bounded(company, net)
+            ats = company.get("ats") or "?"
+            net = workday_net if ats in ("workday", "oracle") else default_net
+            local = registry.board_key(company) in local_keys
+            if ats in cut_off and not local:
+                # The platform is refusing this machine outright. Asking the
+                # rest of its boards only burns minutes on more refusals.
+                result = (company, models.Fetch(complete=False),
+                          f"skipped: {ats} refusing this runner ({_RATE_LIMITED})")
+            else:
+                async with gate:
+                    result = await _fetch_bounded(company, net)
+                error = result[2]
+                if error and _RATE_LIMITED in error:
+                    refusals[ats] += 1
+                    if refusals[ats] >= _CUT_OFF_REFUSALS and ats not in cut_off:
+                        cut_off.add(ats)
+                        print(f"{ats}: {refusals[ats]} refusals in a row; skipping its "
+                              "remaining boards this run", flush=True)
+                elif error is None:
+                    refusals[ats] = 0
             completed += 1
             if completed % 250 == 0 or completed == len(companies):
                 print(f"Fetched boards: {completed}/{len(companies)}", flush=True)
@@ -242,6 +263,29 @@ def provider_outages(results, local_keys: set[str] | None = None) -> dict[str, f
     return {ats: round(failed[ats] / tried[ats], 3) for ats in tried
             if tried[ats] >= _OUTAGE_MIN_BOARDS
             and failed[ats] / tried[ats] >= _OUTAGE_SHARE}
+
+
+def provider_last_ok(results, local_keys: set[str], stats: dict,
+                     previous: dict) -> dict[str, str]:
+    """{ats: when its boards were last read successfully}, carried across runs.
+
+    A platform counts as read when 75%+ of the boards we asked answered.
+    Some platforms refuse GitHub's machines on some runs and not others, so a
+    single bad run means little; days without a good read is what matters.
+    """
+    last = dict(previous.get("provider_last_ok") or {})
+    tried: Counter = Counter()
+    failed: Counter = Counter()
+    for company, _result, error in results:
+        if registry.board_key(company) in local_keys:
+            continue
+        ats = company.get("ats") or "?"
+        tried[ats] += 1
+        failed[ats] += bool(error)
+    for ats, n in tried.items():
+        if n >= _OUTAGE_MIN_BOARDS and failed[ats] / n < _OUTAGE_SHARE:
+            last[ats] = stats["fetched_at"]
+    return last
 
 
 def load_cache() -> dict:
@@ -540,9 +584,14 @@ def run_update(scope: str = "local") -> tuple[dict, dict, list[str]]:
             dict(sorted(state["unmatched"].items(), key=lambda kv: kv[0].lower())),
             indent=0, ensure_ascii=False) + "\n")
 
+    try:
+        previous_stats = load_stats()
+    except StatsCorrupt:
+        previous_stats = {}
     stats = _build_stats(scope, boards, benched, local_keys, state, existing, new_ids,
                          purged, round(time.monotonic() - started, 1))
     stats["provider_outages"] = outages
+    stats["provider_last_ok"] = provider_last_ok(results, local_keys, stats, previous_stats)
     stats["quarantined_by_source"] = dict(Counter(c["ats"] for c in benched))
     write_stats(stats)
     _append_history(stats)

@@ -35,6 +35,15 @@ def test_each_november_failure_mode_is_caught():
     weak = {**GOOD, "last_full": {"fetched_at": "2026-11-26T08:00:00Z",
                                   "fetch_success_rate": 0.6}}
     assert any("60%" in p for p in run(current=weak))
+    # A platform refusing us on one run is a fact, not an alert...
+    refused = {**weak, "provider_outages": {"workday": 0.95},
+               "provider_last_ok": {"workday": "2026-11-26T02:00:00Z"}}
+    assert run(current=refused) == []
+    # ...until it has gone days without a good read, or never had one.
+    long_gap = {**refused, "provider_last_ok": {"workday": "2026-11-22T02:00:00Z"}}
+    assert any("workday" in p and "days" in p for p in run(current=long_gap))
+    never = {**refused, "provider_last_ok": {}}
+    assert any("no successful read" in p for p in run(current=never))
     stale_sweep = {**GOOD, "last_full": {"fetched_at": "2026-11-24T08:00:00Z"}}
     assert any("nationwide sweep" in p for p in run(current=stale_sweep, published=stale_sweep))
     benched = {f"workday:t{i}:s": {"consecutive_failures": 8,

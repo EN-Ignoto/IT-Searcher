@@ -63,6 +63,11 @@ updates it on later runs; when a report passes again it closes the issue. It che
 
 - nothing published for 12 hours, or the publish gate rejected a run
 - no nationwide sweep for 24 hours, or a sweep that read under 80% of its boards
+  with no single platform to blame
+- a platform (Workday, Greenhouse, ...) not read successfully for 3 days. Workday
+  and Workable refuse some GitHub machines and not others, so one refused run is
+  normal; the run skips that platform after 25 refusals in a row and tries again
+  next time
 - a local source failing 3 runs in a row
 - more than 20% of one platform's boards benched by the failure breaker
 - the open count halving within a week

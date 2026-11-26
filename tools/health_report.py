@@ -35,6 +35,7 @@ from intern_engine import health, registry  # noqa: E402
 MAX_PUBLISH_AGE_H = 12
 MAX_SWEEP_AGE_H = 24
 MIN_SWEEP_SUCCESS = 0.80
+MAX_PROVIDER_GAP_H = 72
 LOCAL_FAIL_STREAK = 3
 MAX_BENCHED_SHARE = 0.20
 MIN_BOARDS_FOR_SHARE = 20
@@ -90,16 +91,31 @@ def check(*, published: dict, current: dict, health_data: dict, local: list[dict
     if sweep_age is None or sweep_age > MAX_SWEEP_AGE_H:
         problems.append(f"No nationwide sweep for over {MAX_SWEEP_AGE_H} hours, so remote "
                         "roles are not being refreshed.")
+    outages = current.get("provider_outages") or {}
     rate = sweep.get("fetch_success_rate")
-    if isinstance(rate, (int, float)) and rate < MIN_SWEEP_SUCCESS:
+    if isinstance(rate, (int, float)) and rate < MIN_SWEEP_SUCCESS and not outages:
         problems.append(f"The last sweep read only {rate:.0%} of the boards it tried "
-                        f"(limit {MIN_SWEEP_SUCCESS:.0%}). Failures by platform: "
-                        f"{sweep.get('errors_by_source', 'not recorded')}; benched boards are "
-                        "not counted as tried.")
-    for ats, share in (current.get("provider_outages") or {}).items():
-        problems.append(f"{ats}: {share:.0%} of its boards failed in one run. Treated as a "
-                        "platform-wide problem (nothing was benched), but if it repeats, "
-                        "the connector or our access to it needs a look.")
+                        f"(limit {MIN_SWEEP_SUCCESS:.0%}) with no single platform to blame. "
+                        f"Failures by platform: {sweep.get('errors_by_source', 'not recorded')}.")
+    for ats, share in outages.items():
+        facts.append(f"{ats} refused {share:.0%} of its boards on the latest run (nothing "
+                     "was benched or closed because of it)")
+    last_ok = current.get("provider_last_ok") or published.get("provider_last_ok") or {}
+    sizes = Counter(c.get("ats") for c in registry_boards)
+    for ats, n in sorted(sizes.items()):
+        if n < MIN_BOARDS_FOR_SHARE:
+            continue
+        gap = age_h(last_ok.get(ats))
+        if gap is None and ats in outages:
+            problems.append(f"{ats} ({n} boards) has no successful read on record and is "
+                            "refusing us now. Its listed roles stay up but are not refreshed, "
+                            "and new ones are missed.")
+        elif gap is not None and gap > MAX_PROVIDER_GAP_H:
+            problems.append(f"{ats} ({n} boards) has not been read successfully for "
+                            f"{gap / 24:.1f} days. Its listed roles stay up but are not "
+                            "refreshed, and new ones are missed.")
+    facts.append("Last good read per platform: " + (", ".join(
+        f"{a} {v}" for a, v in sorted(last_ok.items())) or "none recorded yet"))
 
     failing = []
     for company in local:

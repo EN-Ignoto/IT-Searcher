@@ -329,3 +329,27 @@ def test_platform_wide_failure_benches_nothing(world):
         stats, _, _ = pipeline.run_update("full")
     assert stats["provider_outages"] == {"greenhouse": 1.0}
     assert not any(k.startswith("greenhouse") for k in health.load())
+
+
+
+def test_a_refusing_platform_is_cut_off_for_the_rest_of_the_run(world):
+    boards = [{"name": f"W{i}", "slug": f"w{i}", "ats": "greenhouse"} for i in range(40)]
+    world["registry"] = boards
+    calls = []
+    original = pipeline.CONNECTORS["greenhouse"]
+
+    def refusing(company, net):
+        calls.append(company["slug"])
+        world["answers"][company["slug"]] = RuntimeError(
+            "HTTPStatusError: Client error '429 Too Many Requests' for url 'x'")
+        return original(company, net)
+    pipeline.CONNECTORS["greenhouse"] = refusing
+    stats, _, _ = pipeline.run_update("full")
+    assert len(calls) < 40, "kept asking a platform that refuses every request"
+    assert stats["provider_outages"] == {"greenhouse": 1.0}
+    assert "greenhouse" not in stats["provider_last_ok"]
+    pipeline.CONNECTORS["greenhouse"] = original
+    for b in boards:
+        world["answers"][b["slug"]] = []
+    stats, _, _ = pipeline.run_update("full")
+    assert "greenhouse" in stats["provider_last_ok"]

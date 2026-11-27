@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 27, 2026 15:41 UTC · 47 open roles: 6 local, 7 nearby, 34 remote._
+_Data as of Nov 27, 2026 21:50 UTC · 47 open roles: 6 local, 7 nearby, 34 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -23,7 +23,7 @@ _Within 30 miles of Kissimmee._
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
 | 🆕 [Linux System Administrator](https://dejobs.org/orlando-fl/linux-system-administrator/209929B0D251439F9B6FD89E1BE95D97/job/) | Actalent | Orlando, FL · 17 mi | Temporary / contract | Beginner-friendly | Entry-level / no experience required | Nov 25 |
-| 🆕 [Network Engineering Intern- Orlando, FL](https://dejobs.org/orlando-fl/network-engineering-intern-orlando-fl/981A8B9398FA460BB894DEF12A4839BC/job/) | Serco | Orlando, FL · 17 mi | Internship | Beginner-friendly | Internship — no experience requirement stated · Clearance must be obtainable; Mentions Security+/Network+ | Nov 24 |
+| [Network Engineering Intern- Orlando, FL](https://dejobs.org/orlando-fl/network-engineering-intern-orlando-fl/981A8B9398FA460BB894DEF12A4839BC/job/) | Serco | Orlando, FL · 17 mi | Internship | Beginner-friendly | Internship — no experience requirement stated · Clearance must be obtainable; Mentions Security+/Network+ | Nov 24 |
 | [Jr. IT Support Specialist](https://halma.wd3.myworkdayjobs.com/halma/job/Orlando/Jr-IT-Support-Specialist_JR26_001243) | Ocean Optics | Orlando · 17 mi | Not stated | Beginner-friendly | 0+ years — open to no experience | Nov 11 |
 | [Network Engineer](https://dejobs.org/orlando-fl/network-engineer/BA300695C674418D983FDDC3B445D250/job/) | Robert Half | Orlando, FL · 17 mi | Not stated | Stretch | None required — 2 years preferred · No experience stated, but this title usually expects some; Bachelor's degree listed | Nov 4 |
 | [Systems Analyst II](https://dejobs.org/orlando-fl/systems-analyst-ii/C8E0E27BEA6445E8827427AEA8C3BD9E/job/) | CAI | Orlando, FL · 17 mi | Not stated | Stretch | No years of experience stated · Level II title; Mentions Security+/Network+ | Sep 11 |
@@ -36,7 +36,7 @@ _30 to 50 miles from Kissimmee._
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
 | 🆕 [IT Onsite Technical Support](https://dejobs.org/melbourne-fl/it-onsite-technical-support/D72FF85E7ED347ACAC7E82D2EF4F97FF/job/) | ManpowerGroup | Melbourne, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 25 |
-| 🆕 [Onsite IT Support Technician](https://dejobs.org/plant-city-fl/onsite-it-support-technician/B6E6017983B245F282E1535FE48543FC/job/) | ManpowerGroup | Plant City, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 21 |
+| [Onsite IT Support Technician](https://dejobs.org/plant-city-fl/onsite-it-support-technician/B6E6017983B245F282E1535FE48543FC/job/) | ManpowerGroup | Plant City, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 21 |
 | [Data and Technology Specialist](https://dejobs.org/lake-mary-fl/data-and-technology-specialist/DDAEB1EA359745DE949E6EA4A0B0F453/job/) | Deloitte | Lake Mary, FL · 33 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Asks 4 years customer-service-type experience; Bachelor's degree listed | Nov 12 |
 | [RSC IT Coordinator, 1st shift](https://acehardware.wd1.myworkdayjobs.com/External/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089) | Ace Hardware | FL - Plant City · 47 mi | Not stated | Beginner-friendly | No years of experience stated | Nov 11 |
 | [Technology Support Contractor: 0-2 years (Entry) / Contract / Onsite](https://dejobs.org/lake-mary-fl/technology-support-contractor-0-2-years-entry-contract-onsite/5B713C96FFEA4AA999C7F143B7BA15D1/job/) | Kelly Services | Lake Mary, FL · 33 mi | Temporary / contract | Beginner-friendly | 0+ years — open to no experience | Nov 3 |
@@ -50,9 +50,9 @@ _Remote, and open to Florida residents._
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
 | 🆕 [Technical Support Engineer, AMER - East](https://job-boards.greenhouse.io/chainguard/jobs/4728655006) | Chainguard | United States - Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: on-call rotation | Nov 24 |
-| 🆕 [Application Support Specialist - Weekend Nights (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757920005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 24 |
-| 🆕 [Application Support Specialist - Weekend Days (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757748005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 23 |
-| 🆕 [Service Desk Technician](https://job-boards.greenhouse.io/industrialelectricmanufacturing/jobs/4519601009) | IEM | US - Remote | Not stated | Stretch | 1 year required | Nov 23 |
+| [Application Support Specialist - Weekend Nights (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757920005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 24 |
+| [Application Support Specialist - Weekend Days (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757748005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 23 |
+| [Service Desk Technician](https://job-boards.greenhouse.io/industrialelectricmanufacturing/jobs/4519601009) | IEM | US - Remote | Not stated | Stretch | 1 year required | Nov 23 |
 | [Integration Support Analyst](https://job-boards.greenhouse.io/coherehealth/jobs/8208449003) | Cohere Health | Remote; United States | Not stated | Beginner-friendly | None required — 3 years preferred · Remote region not stated | Nov 20 |
 | [Cyber Analyst](https://ats.rippling.com/conceptplus/jobs/90376de3-25e4-4831-b927-f618ed63c39c) | Concept Plus | Remote (United States) | Not stated | Check requirements | Posting text unavailable — check requirements | found Nov 20 |
 | [IT Analyst - SAP BTP - CCM](https://jobs.smartrecruiters.com/Carlisle/3743990016919585) | Carlisle Companies | Remote, U.S.A, , United States (Remote) | Not stated | Beginner-friendly | None required — 3 years preferred | Nov 17 |

@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-26T23:17:00Z",
- "data_as_of": "2026-11-26T23:17:00Z",
- "rendered_at": "2026-11-26T23:17:00Z",
+ "generated_at": "2026-11-27T05:28:09Z",
+ "data_as_of": "2026-11-27T05:28:09Z",
+ "rendered_at": "2026-11-27T05:28:09Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 48,
+ "count": 47,
  "jobs": [
   {
    "id": "nlx:kissimmee-fl:209929B0D251439F9B6FD89E1BE95D97",
@@ -322,29 +322,6 @@
    "posted_at": "2026-11-24T17:31:09-05:00",
    "posted_at_source": "exact",
    "first_seen_at": "2026-11-24T22:50:16Z",
-   "salary": null,
-   "source": "greenhouse"
-  },
-  {
-   "id": "greenhouse:tines:6270033004",
-   "section": "Remote",
-   "miles": null,
-   "remote": true,
-   "title": "Technical Support Engineer I",
-   "company": "Tines",
-   "location": "United States - East (Remote)",
-   "category": "IT Support / Technician",
-   "employment": "Not stated",
-   "fit": "stretch",
-   "experience": "None required — 2 years preferred",
-   "evidence": "<li>2+ years of technical support experience within a SaaS environment, ideally in automation or a related field</li>",
-   "notes": [
-    "No experience stated, but this title usually expects some"
-   ],
-   "url": "https://job-boards.greenhouse.io/tines/jobs/6270033004",
-   "posted_at": "2026-11-24T09:05:24-05:00",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-24T18:53:01Z",
    "salary": null,
    "source": "greenhouse"
   },

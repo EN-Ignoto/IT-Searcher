@@ -1,38 +1,56 @@
 {
-  "generated_at": "2026-11-26T23:17:00Z",
-  "fetched_at": "2026-11-26T23:17:00Z",
-  "scope": "local",
-  "duration_seconds": 83.8,
-  "boards_total": 15,
+  "generated_at": "2026-11-27T05:28:09Z",
+  "fetched_at": "2026-11-27T05:28:09Z",
+  "scope": "full",
+  "duration_seconds": 571.2,
+  "boards_total": 3857,
   "boards_by_source": {
     "nlx": 1,
     "neogov": 11,
     "peopleadmin": 1,
-    "workday": 2
+    "workday": 252,
+    "greenhouse": 1233,
+    "lever": 455,
+    "ashby": 934,
+    "recruitee": 7,
+    "smartrecruiters": 322,
+    "rippling": 198,
+    "workable": 257,
+    "oracle": 164,
+    "amazon": 1,
+    "breezy": 20,
+    "eightfold": 1
   },
-  "quarantined": 0,
-  "fetched_ok": 2,
-  "fetch_errors": 13,
+  "quarantined": 228,
+  "fetched_ok": 3202,
+  "fetch_errors": 427,
   "errors_by_source": {
     "neogov": 11,
-    "workday": 2
+    "workday": 240,
+    "workable": 173,
+    "ashby": 2,
+    "greenhouse": 1
   },
-  "fetch_success_rate": 0.133,
-  "snapshots_complete": 2,
-  "snapshots_partial": 0,
-  "jobs_seen": 664,
-  "roles_matched": 10,
+  "fetch_success_rate": 0.882,
+  "snapshots_complete": 3053,
+  "snapshots_partial": 149,
+  "jobs_seen": 205740,
+  "roles_matched": 32,
   "dropped_by_reason": {
-    "active-clearance-required": 4,
-    "not-it-role": 613,
+    "active-clearance-required": 30,
+    "level-2-unverifiable": 1,
+    "not-it-role": 199047,
+    "outside-area": 5205,
     "requires-10-years-experience": 1,
-    "requires-2-years-experience": 4,
-    "requires-3-years-experience": 1,
-    "requires-4-years-experience": 1,
-    "requires-5-years-experience": 5,
+    "requires-2-years-experience": 11,
+    "requires-3-years-experience": 15,
+    "requires-4-years-experience": 5,
+    "requires-5-years-experience": 14,
+    "requires-7-years-experience": 1,
     "requires-8-years-experience": 1,
-    "senior-title": 17,
-    "stale-posting": 7
+    "senior-title": 1338,
+    "stale-posting": 34,
+    "unconfirmed-it-role": 5
   },
   "detail_fetches": 0,
   "closed_by_posting_check": 0,
@@ -164,7 +182,7 @@
       "key": "nlx:kissimmee-fl",
       "name": "NLx / DEJobs (50 mi of Kissimmee)",
       "ats": "nlx",
-      "jobs": 654,
+      "jobs": 657,
       "kept": 10,
       "complete": true,
       "error": null,
@@ -207,20 +225,20 @@
   ],
   "local_sources_ok": 2,
   "local_sources_total": 15,
-  "open_total": 48,
+  "open_total": 47,
   "open_by_section": {
-    "Remote": 35,
+    "Remote": 34,
     "Nearby": 7,
     "Local": 6
   },
   "open_by_fit": {
     "beginner": 28,
-    "stretch": 18,
+    "stretch": 17,
     "unverified": 2
   },
   "open_by_category": {
     "IT Operations": 5,
-    "IT Support / Technician": 26,
+    "IT Support / Technician": 25,
     "Network / NOC": 3,
     "Security (entry)": 3,
     "Help Desk / Service Desk": 3,
@@ -229,13 +247,13 @@
   },
   "open_by_employment": {
     "Internship": 6,
-    "Not stated": 39,
+    "Not stated": 38,
     "Full-time": 1,
     "Temporary / contract": 2
   },
   "open_by_source": {
     "ashby": 4,
-    "greenhouse": 13,
+    "greenhouse": 12,
     "lever": 1,
     "nlx": 10,
     "oracle": 2,
@@ -245,40 +263,50 @@
     "workable": 1,
     "workday": 13
   },
-  "posted_date_coverage": 0.958,
+  "posted_date_coverage": 0.957,
   "last_full": {
-    "fetched_at": "2026-11-26T22:09:19Z",
-    "duration_seconds": 631.8,
+    "fetched_at": "2026-11-27T05:28:09Z",
+    "duration_seconds": 571.2,
     "boards_total": 3857,
-    "fetched_ok": 3198,
-    "fetch_errors": 433,
-    "fetch_success_rate": 0.881,
-    "jobs_seen": 205441,
+    "fetched_ok": 3202,
+    "fetch_errors": 427,
+    "fetch_success_rate": 0.882,
+    "jobs_seen": 205740,
     "roles_matched": 32,
     "errors_by_source": {
       "neogov": 11,
-      "workday": 245,
-      "greenhouse": 1,
+      "workday": 240,
       "workable": 173,
       "ashby": 2,
-      "lever": 1
+      "greenhouse": 1
     }
   },
-  "provider_outages": {},
-  "workday_cursor": 750,
+  "provider_outages": {
+    "workable": 0.676,
+    "workday": 0.96
+  },
+  "workday_cursor": 1000,
   "provider_last_ok": {
-    "greenhouse": "2026-11-26T22:09:19Z",
-    "lever": "2026-11-26T22:09:19Z",
-    "ashby": "2026-11-26T22:09:19Z",
-    "smartrecruiters": "2026-11-26T22:09:19Z",
-    "rippling": "2026-11-26T22:09:19Z",
-    "oracle": "2026-11-26T22:09:19Z",
-    "breezy": "2026-11-26T22:09:19Z"
+    "greenhouse": "2026-11-27T05:28:09Z",
+    "lever": "2026-11-27T05:28:09Z",
+    "ashby": "2026-11-27T05:28:09Z",
+    "smartrecruiters": "2026-11-27T05:28:09Z",
+    "rippling": "2026-11-27T05:28:09Z",
+    "oracle": "2026-11-27T05:28:09Z",
+    "breezy": "2026-11-27T05:28:09Z"
   },
   "provider_failing_since": {
     "workday": "2026-11-26T12:46:42Z",
     "workable": "2026-11-26T12:46:42Z"
   },
-  "quarantined_by_source": {},
-  "rendered_at": "2026-11-26T23:17:00Z"
+  "quarantined_by_source": {
+    "greenhouse": 76,
+    "recruitee": 2,
+    "rippling": 8,
+    "ashby": 88,
+    "lever": 51,
+    "workable": 1,
+    "workday": 2
+  },
+  "rendered_at": "2026-11-27T05:28:09Z"
 }

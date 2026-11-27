@@ -52,3 +52,4 @@
 {"ts": "2026-11-26T23:17:00Z", "scope": "local", "open": 48, "local": 6, "new": 0, "boards": 15, "ok_rate": 0.133, "secs": 83.8}
 {"ts": "2026-11-27T05:28:09Z", "scope": "full", "open": 47, "local": 6, "new": 0, "boards": 3857, "ok_rate": 0.882, "secs": 571.2}
 {"ts": "2026-11-27T09:20:11Z", "scope": "full", "open": 47, "local": 6, "new": 0, "boards": 3857, "ok_rate": 0.888, "secs": 616.3}
+{"ts": "2026-11-27T15:41:53Z", "scope": "full", "open": 47, "local": 6, "new": 0, "boards": 3857, "ok_rate": 0.882, "secs": 611.0}

@@ -30,8 +30,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/beaconsoftware?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/"
   },
   "ashby:brightstar-ai": {
-    "consecutive_failures": 1,
-    "last_attempt_at": "2026-11-27T09:20:11Z",
+    "consecutive_failures": 2,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/brightstar-ai?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/e"
   },
   "ashby:browserbase": {
@@ -180,8 +180,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/jerry?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/en-US/doc"
   },
   "ashby:karman": {
-    "consecutive_failures": 4,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 5,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/karman?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/en-US/do"
   },
   "ashby:kikoff": {
@@ -475,8 +475,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://boards-api.greenhouse.io/v1/boards/amplitude/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/4"
   },
   "greenhouse:aperaaiinc": {
-    "consecutive_failures": 4,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 5,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://boards-api.greenhouse.io/v1/boards/aperaaiinc/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/"
   },
   "greenhouse:appliedintuition": {
@@ -1040,8 +1040,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/saronic?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   },
   "lever:secureframe": {
-    "consecutive_failures": 4,
-    "last_attempt_at": "2026-11-26T22:09:19Z",
+    "consecutive_failures": 5,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/secureframe?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   },
   "lever:sensortower": {
@@ -1103,6 +1103,61 @@
     "consecutive_failures": 39,
     "last_attempt_at": "2026-11-25T22:36:44Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/xpansiv?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  "neogov:casselberry": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:clermontfl": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:kissimmeefl": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:kua": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:maitland": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:ocoee": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:osceola": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:oviedo": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:seminolecountyfl": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:stcloud": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:winterpark": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-27T15:41:53Z",
+    "last_error": "ConnectTimeout: "
   },
   "paradox:osceolaschools": {
     "consecutive_failures": 45,

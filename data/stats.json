@@ -1,56 +1,37 @@
 {
-  "generated_at": "2026-11-27T21:50:38Z",
-  "fetched_at": "2026-11-27T21:50:38Z",
-  "scope": "full",
-  "duration_seconds": 594.7,
-  "boards_total": 3861,
+  "generated_at": "2026-11-27T23:42:30Z",
+  "fetched_at": "2026-11-27T23:42:30Z",
+  "scope": "local",
+  "duration_seconds": 63.8,
+  "boards_total": 15,
   "boards_by_source": {
     "nlx": 1,
     "neogov": 11,
     "peopleadmin": 1,
-    "workday": 252,
-    "greenhouse": 1235,
-    "lever": 455,
-    "ashby": 935,
-    "recruitee": 7,
-    "smartrecruiters": 322,
-    "rippling": 198,
-    "workable": 258,
-    "oracle": 164,
-    "amazon": 1,
-    "breezy": 20,
-    "eightfold": 1
+    "workday": 2
   },
-  "quarantined": 208,
-  "fetched_ok": 3215,
-  "fetch_errors": 438,
+  "quarantined": 0,
+  "fetched_ok": 13,
+  "fetch_errors": 2,
   "errors_by_source": {
-    "workday": 241,
-    "lever": 8,
-    "greenhouse": 7,
-    "ashby": 8,
-    "workable": 174
+    "workday": 2
   },
-  "fetch_success_rate": 0.88,
-  "snapshots_complete": 3064,
-  "snapshots_partial": 151,
-  "jobs_seen": 205839,
-  "roles_matched": 32,
+  "fetch_success_rate": 0.867,
+  "snapshots_complete": 13,
+  "snapshots_partial": 0,
+  "jobs_seen": 723,
+  "roles_matched": 10,
   "dropped_by_reason": {
-    "active-clearance-required": 30,
-    "level-2-unverifiable": 1,
-    "not-it-role": 199163,
-    "outside-area": 5187,
+    "active-clearance-required": 4,
+    "not-it-role": 672,
     "requires-10-years-experience": 1,
-    "requires-2-years-experience": 11,
-    "requires-3-years-experience": 15,
-    "requires-4-years-experience": 5,
-    "requires-5-years-experience": 14,
-    "requires-7-years-experience": 1,
+    "requires-2-years-experience": 4,
+    "requires-3-years-experience": 1,
+    "requires-4-years-experience": 1,
+    "requires-5-years-experience": 5,
     "requires-8-years-experience": 1,
-    "senior-title": 1339,
-    "stale-posting": 34,
-    "unconfirmed-it-role": 5
+    "senior-title": 17,
+    "stale-posting": 7
   },
   "detail_fetches": 0,
   "closed_by_posting_check": 0,
@@ -72,7 +53,7 @@
       "key": "neogov:clermontfl",
       "name": "City of Clermont",
       "ats": "neogov",
-      "jobs": 11,
+      "jobs": 10,
       "kept": 0,
       "complete": true,
       "error": null,
@@ -182,7 +163,7 @@
       "key": "nlx:kissimmee-fl",
       "name": "NLx / DEJobs (50 mi of Kissimmee)",
       "ats": "nlx",
-      "jobs": 658,
+      "jobs": 657,
       "kept": 10,
       "complete": true,
       "error": null,
@@ -281,10 +262,7 @@
       "workable": 174
     }
   },
-  "provider_outages": {
-    "workable": 0.677,
-    "workday": 0.96
-  },
+  "provider_outages": {},
   "workday_cursor": 1750,
   "provider_last_ok": {
     "greenhouse": "2026-11-27T21:50:38Z",
@@ -299,14 +277,6 @@
     "workday": "2026-11-26T12:46:42Z",
     "workable": "2026-11-26T12:46:42Z"
   },
-  "quarantined_by_source": {
-    "greenhouse": 70,
-    "recruitee": 2,
-    "rippling": 8,
-    "ashby": 83,
-    "lever": 43,
-    "workable": 1,
-    "workday": 1
-  },
-  "rendered_at": "2026-11-27T21:50:38Z"
+  "quarantined_by_source": {},
+  "rendered_at": "2026-11-27T23:42:30Z"
 }

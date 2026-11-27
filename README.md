@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 27, 2026 21:50 UTC · 47 open roles: 6 local, 7 nearby, 34 remote._
+_Data as of Nov 27, 2026 23:42 UTC · 47 open roles: 6 local, 7 nearby, 34 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -49,7 +49,7 @@ _Remote, and open to Florida residents._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
-| 🆕 [Technical Support Engineer, AMER - East](https://job-boards.greenhouse.io/chainguard/jobs/4728655006) | Chainguard | United States - Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: on-call rotation | Nov 24 |
+| [Technical Support Engineer, AMER - East](https://job-boards.greenhouse.io/chainguard/jobs/4728655006) | Chainguard | United States - Remote | Not stated | Stretch | No years of experience stated · No experience stated, but this title usually expects some; Shift work mentioned: on-call rotation | Nov 24 |
 | [Application Support Specialist - Weekend Nights (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757920005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 24 |
 | [Application Support Specialist - Weekend Days (Fri, Sat, Sun, Mon)](https://job-boards.greenhouse.io/sironamedical/jobs/4757748005) | Sirona Medical | Remote | Not stated | Beginner-friendly | No years of experience stated · Asks 3 years customer-service-type experience; Remote region not stated | Nov 23 |
 | [Service Desk Technician](https://job-boards.greenhouse.io/industrialelectricmanufacturing/jobs/4519601009) | IEM | US - Remote | Not stated | Stretch | 1 year required | Nov 23 |

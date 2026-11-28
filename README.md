@@ -4,7 +4,7 @@ Entry-level IT jobs and paid IT internships near **Kissimmee, FL**, plus remote 
 
 **[Open the live list →](https://en-ignoto.github.io/IT-Searcher/)** · [CSV](https://en-ignoto.github.io/IT-Searcher/jobs.csv) · [JSON](https://en-ignoto.github.io/IT-Searcher/api/jobs.json) · [Feed](https://en-ignoto.github.io/IT-Searcher/feed.xml)
 
-_Data as of Nov 28, 2026 07:44 UTC · 47 open roles: 6 local, 7 nearby, 34 remote._
+_Data as of Nov 28, 2026 08:39 UTC · 46 open roles: 6 local, 6 nearby, 34 remote._
 
 This project only finds and lists jobs. It never applies, submits forms, or contacts employers on your behalf.
 
@@ -29,13 +29,12 @@ _Within 30 miles of Kissimmee._
 | [Systems Analyst II](https://dejobs.org/orlando-fl/systems-analyst-ii/C8E0E27BEA6445E8827427AEA8C3BD9E/job/) | CAI | Orlando, FL · 17 mi | Not stated | Stretch | No years of experience stated · Level II title; Mentions Security+/Network+ | Sep 11 |
 | [Help Desk Specialist](https://dejobs.org/orlando-fl/help-desk-specialist/6925AE191E7245C2AFF834232A57D1C2/job/) | Chenega Corporation | Orlando, FL · 17 mi | Not stated | Stretch | 1 year required · Shift work mentioned: rotating shift | Aug 21 |
 
-## Nearby (7)
+## Nearby (6)
 
 _30 to 50 miles from Kissimmee._
 
 | Role | Employer | Where | Type | Fit | What the posting says | Posted |
 |---|---|---|---|---|---|---|
-| 🆕 [IT Onsite Technical Support](https://dejobs.org/melbourne-fl/it-onsite-technical-support/D72FF85E7ED347ACAC7E82D2EF4F97FF/job/) | ManpowerGroup | Melbourne, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 25 |
 | [Onsite IT Support Technician](https://dejobs.org/plant-city-fl/onsite-it-support-technician/B6E6017983B245F282E1535FE48543FC/job/) | ManpowerGroup | Plant City, FL · 48 mi | Not stated | Beginner-friendly | None required — 2 years preferred | Nov 21 |
 | [Data and Technology Specialist](https://dejobs.org/lake-mary-fl/data-and-technology-specialist/DDAEB1EA359745DE949E6EA4A0B0F453/job/) | Deloitte | Lake Mary, FL · 33 mi | Not stated | Stretch | 1 year required · Clearance must be obtainable; Asks 4 years customer-service-type experience; Bachelor's degree listed | Nov 12 |
 | [RSC IT Coordinator, 1st shift](https://acehardware.wd1.myworkdayjobs.com/External/job/FL---Plant-City/RSC-IT-Coordinator--1st-shift_REQ-35089) | Ace Hardware | FL - Plant City · 47 mi | Not stated | Beginner-friendly | No years of experience stated | Nov 11 |

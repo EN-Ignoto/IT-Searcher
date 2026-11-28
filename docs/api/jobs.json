@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-28T07:44:01Z",
- "data_as_of": "2026-11-28T07:44:01Z",
- "rendered_at": "2026-11-28T07:44:02Z",
+ "generated_at": "2026-11-28T08:39:16Z",
+ "data_as_of": "2026-11-28T08:39:16Z",
+ "rendered_at": "2026-11-28T08:39:16Z",
  "home": "Kissimmee, FL",
  "source": "https://github.com/EN-Ignoto/IT-Searcher",
- "count": 47,
+ "count": 46,
  "jobs": [
   {
    "id": "nlx:kissimmee-fl:209929B0D251439F9B6FD89E1BE95D97",
@@ -140,27 +140,6 @@
    "posted_at": "2026-08-21T19:49:03Z",
    "posted_at_source": "exact",
    "first_seen_at": "2026-11-12T08:17:17Z",
-   "salary": null,
-   "source": "nlx"
-  },
-  {
-   "id": "nlx:kissimmee-fl:D72FF85E7ED347ACAC7E82D2EF4F97FF",
-   "section": "Nearby",
-   "miles": 47.8,
-   "remote": false,
-   "title": "IT Onsite Technical Support",
-   "company": "ManpowerGroup",
-   "location": "Melbourne, FL",
-   "category": "IT Support / Technician",
-   "employment": "Not stated",
-   "fit": "beginner",
-   "experience": "None required — 2 years preferred",
-   "evidence": "+ Typically 2–5 years of related work experience, preferably in maintenance, quality, or a related field.",
-   "notes": [],
-   "url": "https://dejobs.org/melbourne-fl/it-onsite-technical-support/D72FF85E7ED347ACAC7E82D2EF4F97FF/job/",
-   "posted_at": "2026-11-25T05:48:15Z",
-   "posted_at_source": "exact",
-   "first_seen_at": "2026-11-25T22:36:44Z",
    "salary": null,
    "source": "nlx"
   },

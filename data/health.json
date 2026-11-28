@@ -1,7 +1,7 @@
 {
   "ashby:aditude": {
-    "consecutive_failures": 6,
-    "last_attempt_at": "2026-11-25T22:36:44Z",
+    "consecutive_failures": 7,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/aditude?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/en-US/d"
   },
   "ashby:airspace-intelligence": {
@@ -30,8 +30,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/beaconsoftware?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/"
   },
   "ashby:brightstar-ai": {
-    "consecutive_failures": 3,
-    "last_attempt_at": "2026-11-27T21:50:37Z",
+    "consecutive_failures": 4,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/brightstar-ai?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/e"
   },
   "ashby:browserbase": {
@@ -85,8 +85,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/evenup?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/en-US/do"
   },
   "ashby:f7d8749a-72d6-407c-bf98-292ea630c73a": {
-    "consecutive_failures": 5,
-    "last_attempt_at": "2026-11-27T05:28:09Z",
+    "consecutive_failures": 6,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/f7d8749a-72d6-407c-bf98-292ea630c73a?includeCompensation=true'\nFor more information check: https://"
   },
   "ashby:fanvue": {
@@ -195,8 +195,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/klarity-ai?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/en-U"
   },
   "ashby:kobalt": {
-    "consecutive_failures": 6,
-    "last_attempt_at": "2026-11-25T22:36:44Z",
+    "consecutive_failures": 7,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/kobalt?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/en-US/do"
   },
   "ashby:kos": {
@@ -230,8 +230,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/mach?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/en-US/docs"
   },
   "ashby:magical": {
-    "consecutive_failures": 5,
-    "last_attempt_at": "2026-11-27T05:28:09Z",
+    "consecutive_failures": 6,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.ashbyhq.com/posting-api/job-board/magical?includeCompensation=true'\nFor more information check: https://developer.mozilla.org/en-US/d"
   },
   "ashby:makermaker": {
@@ -760,8 +760,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://boards-api.greenhouse.io/v1/boards/seamlessai/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/"
   },
   "greenhouse:shein": {
-    "consecutive_failures": 6,
-    "last_attempt_at": "2026-11-25T22:36:44Z",
+    "consecutive_failures": 7,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://boards-api.greenhouse.io/v1/boards/shein/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
   },
   "greenhouse:shyftsolutionsllc": {
@@ -790,8 +790,8 @@
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://boards-api.greenhouse.io/v1/boards/temporaltechnologies/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT"
   },
   "greenhouse:thoughtworksreferral": {
-    "consecutive_failures": 5,
-    "last_attempt_at": "2026-11-27T05:28:09Z",
+    "consecutive_failures": 6,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://boards-api.greenhouse.io/v1/boards/thoughtworksreferral/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HT"
   },
   "greenhouse:threatlocker": {
@@ -1103,6 +1103,66 @@
     "consecutive_failures": 39,
     "last_attempt_at": "2026-11-25T22:36:44Z",
     "last_error": "HTTPStatusError: Client error '404 Not Found' for url 'https://api.lever.co/v0/postings/xpansiv?mode=json'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  },
+  "neogov:casselberry": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:clermontfl": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:kissimmeefl": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:kua": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:maitland": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:ocoee": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:osceola": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:oviedo": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:seminolecountyfl": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:stcloud": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "neogov:winterpark": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "ConnectTimeout: "
+  },
+  "oracle:eofd.fa.us6.oraclecloud.com:cx_1001": {
+    "consecutive_failures": 1,
+    "last_attempt_at": "2026-11-28T07:44:01Z",
+    "last_error": "HTTPStatusError: Client error '403 Forbidden' for url 'https://eofd.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocatio"
   },
   "paradox:osceolaschools": {
     "consecutive_failures": 45,
